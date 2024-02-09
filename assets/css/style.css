@@ -608,11 +608,42 @@ html, body {
   padding: 100px 0;
 }
 
+.section-clients {
+  background-color: #196fc2;;
+}
+
 .site-section h2 {
   font-family: "Varela", sans-serif;
   margin: 0;
   font-size: 32px;
   color: #196fc2;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.section-history h2 {
+  font-family: "Varela", sans-serif;
+  margin: 0;
+  font-size: 32px;
+  color: #196fc2;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#titulo-tecnologias {
+  font-family: "Varela", sans-serif;
+  margin: 0;
+  font-size: 32px;
+  color: #196fc2;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#titulo-partners {
+  font-family: "Varela", sans-serif;
+  margin: 0;
+  font-size: 32px;
+  color: white;
   text-align: center;
   text-transform: uppercase;
 }
