@@ -258,14 +258,17 @@ html, body {
   display: inline-block;
 }
 
+.otros-enlaces {
+  text-decoration: none;
+  color: black;
+}
+
 /* Image responsive */
 .img-res {
-  display: block;
-  width: 100vw;
-  height: 100vh;
-  max-width: 100%;
-  max-height: 100%;
   object-fit: cover;
+  width: 200px;
+  height: 150px;
+  float: right;
 }
 
 /* HEADER
@@ -1638,6 +1641,11 @@ html, body {
   display: inline-block;
 }
 
+.enlace-empresas {
+  text-decoration: none;
+  color: white;
+}
+
 .timeline > li > .timeline-panel .timeline-heading .timeline-date {
   padding: 0 10px;
   background-color: #196fc2;
@@ -1649,20 +1657,7 @@ html, body {
 
 .timeline > li > .timeline-panel .timeline-body {
   position: relative;
-  padding: 20px 0;
   min-height: 140px;
-}
-
-.timeline > li > .timeline-panel .timeline-body .timeline-body-thumb {
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  top: 20px;
-}
-
-.timeline > li > .timeline-panel .timeline-body p {
-  padding-left: 120px;
-  margin-bottom: 0;
 }
 
 .timeline > li .timeline-rectangle {
@@ -2040,7 +2035,7 @@ html, body {
 
 /* Sections background: Quote */
 .section-quote {
-  background: url(../img/quote.jpg) center no-repeat fixed;
+  background: url(../img/quote.png) center no-repeat fixed;
 }
 
 .section-quote p {
