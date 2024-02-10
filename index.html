@@ -1090,7 +1090,7 @@
                 <h2 id="titulo-tecnologias"><b>Contáctame</b></h2>
                 <p class="section-subtitle"><span>Incluso para unirme a tu equipo</span></p>
                 <div class="row">
-                    <form action="https://formsubmit.co/alejandrofernandezperez@protonmail.com" method="POST">
+                    <form id="comunicacion-email" action="https://formsubmit.co/alejandrofernandezperez@protonmail.com" method="POST">
                         <div class="col-md-4">
                             <input class="form-control" type="text" name="nombre" placeholder="Nombre y apellidos" required>
                         </div>
@@ -1310,6 +1310,15 @@
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
+    <!-- Ajustes para redirijir al enviar el email -->
+    <script>
+        document.getElementById("comunicacion-email").onsubmit = function() {
+            // Redirige a la URL deseada después de enviar el formulario
+            window.location.href = "https://github.com/soyalexokei/prof";
+            // Devuelve false para evitar que el formulario se envíe de manera tradicional
+            return false;
+        };
+    </script>
     <!-- Google Traductor -->
     <script type="text/javascript">
         function googleTranslateElementInit() {
