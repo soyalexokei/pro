@@ -1090,23 +1090,22 @@
                 <h2 id="titulo-tecnologias"><b>Contáctame</b></h2>
                 <p class="section-subtitle"><span>Incluso para unirme a tu equipo</span></p>
                 <div class="row">
-                    <form>
+                    <form action="https://formsubmit.co/alejandrofernandezperez@protonmail.com" method="POST">
                         <div class="col-md-4">
-                            <input class="form-control" type="text" placeholder="Nombre y apellidos" required>
+                            <input class="form-control" type="text" name="nombre" placeholder="Nombre y apellidos" required>
                         </div>
                         <div class="col-md-4">
-                            <input class="form-control" type="email" placeholder="Correo electrónico" required>
+                            <input class="form-control" type="email" name="correo" placeholder="Correo electrónico" required>
                         </div>
                         <div class="col-md-4">
-                            <input class="form-control" type="text" placeholder="Asunto" required>
+                            <input class="form-control" type="text" name="asunto" placeholder="Asunto" required>
                         </div>
                         <div class="col-sm-12">
-                            <textarea class="form-control" placeholder="Mensaje" required></textarea>
+                            <textarea class="form-control" placeholder="Mensaje" name="mensaje" required></textarea>
                         </div>
-
                         <div class="col-sm-12">
-                            <button class="btn btn-inverted">Enviar</button>
-                        </div>  
+                            <input type="submit" class="btn btn-inverted" value="Enviar">
+                        </div>
                     </form>
                 </div>
             </div>
