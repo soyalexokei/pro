@@ -1090,12 +1090,12 @@
                 <h2 id="titulo-tecnologias"><b>Contáctame</b></h2>
                 <p class="section-subtitle"><span>Incluso para unirme a tu equipo</span></p>
                 <div class="row">
-                    <form id="comunicacion-email">
+                    <form action="https://formspree.io/f/mqkrqelv" method="POST">
                         <div class="col-md-4">
                             <input class="form-control" type="text" name="nombre" placeholder="Nombre y apellidos" required>
                         </div>
                         <div class="col-md-4">
-                            <input class="form-control" type="email" name="correo" placeholder="Correo electrónico" required>
+                            <input class="form-control" type="email" name="email" placeholder="Correo electrónico" required>
                         </div>
                         <div class="col-md-4">
                             <input class="form-control" type="text" name="asunto" placeholder="Asunto" required>
@@ -1103,9 +1103,11 @@
                         <div class="col-sm-12">
                             <textarea class="form-control" placeholder="Mensaje" name="mensaje" required></textarea>
                         </div>
+                        <input type="hidden" name="_subject" value="New query submitted"/>
+                        <input type="hidden" name="cc" value="alejandrofernandezperez@protonmail.com"/>
+                        <input type="hidden" name="_next" value="https://soyalexokei.github.io/prof/"/>
                         <div class="col-sm-12">
                             <input type="submit" class="btn btn-inverted" value="Enviar">
-                            <a id="emailA"></a>
                         </div>
                     </form>
                 </div>
@@ -1311,26 +1313,6 @@
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
-    <!-- Ajustes para redirijir al enviar el email -->
-    <script>
-        const sendMail = document.getElementById('emailA');
-        const form = document.getElementById('comunicacion-email');
-        function handleSendEmail(event) {
-            event.preventDefault();
-            const datos = new FormData(this);
-            sendMail.setAttribute(
-                'href',
-                `mailTo:alejandrofernandezperez@protonmail.com?subject=${datos.get('asunto')}&body=${datos.get('mensaje')}`
-            );
-            sendMail.click();
-        }
-        form.addEventListener("submit", handleSendEmail);
-    </script>
-    <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"
-  ></script>
     <!-- Google Traductor -->
     <script type="text/javascript">
         function googleTranslateElementInit() {
