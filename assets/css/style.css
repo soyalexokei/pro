@@ -74,6 +74,76 @@ html, body {
   border-color: #196fc2;
 }
 
+/*
+ * Testimonios
+ */
+ @import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic);
+
+.alcenter{text-align:left;}
+
+.redz{
+  width:100%;
+  height:100%;
+  background-color: white;
+  position:absolute;
+  z-index:1;
+}
+
+.carousel-control{
+    font-size: 35px;
+    z-index:999;
+    width:5%;
+    margin-right:5%;
+    top: 100px;
+}
+
+.carousel-control.left {
+ background-image: none;
+ filter: none;
+ left: -30px;
+ color: black;
+}
+
+.carousel-control.right {
+    right: 0;
+    left: 280px;
+    background-image: none;
+     filter: none;
+     color: black;
+}
+
+.quote-section{
+  width:100%;
+  margin-top: 30px;
+  position:relative;
+  padding:20px;
+  font-size:12px;
+  border-radius:10px;
+  color: black;
+  background-color: white;
+}
+
+#ql{
+  padding:0px 15px 0px 15px;
+}
+#qr{padding:0px 15px 0px 15px;}
+
+.autor-section{
+  width:100%;
+  margin-top: 30px;
+  color: black;
+  background-color: white;
+  font-size:12px;
+  text-align:center;
+  border-radius:5px;
+  padding:5px;
+}
+
+#foto-persona-testimonio {
+  position: relative;
+  left: 60px;
+}
+
 /* 
  * Rectangle 
  */
