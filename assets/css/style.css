@@ -123,6 +123,10 @@ html, body {
   background-color: white;
 }
 
+#certified-skills {
+  text-align: center;
+}
+
 #ql{
   padding:0px 15px 0px 15px;
 }
@@ -1044,9 +1048,9 @@ html, body {
   display: none;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 900px) {
   /* Section: Skills */
-  .section-skills .col-sm-6 + .col-sm-6 {
+  .section-skills .col-sm-2 + .col-sm-2 {
     margin-top: 40px;
   }
   .section-skills h2 {
@@ -1723,6 +1727,10 @@ html, body {
   z-index: 2;
 }
 
+.img-skill-tool-tech {
+  text-align: center;
+}
+
 .timeline > li > .timeline-panel .timeline-heading {
   background-color: #666;
   line-height: 50px;
@@ -1731,7 +1739,7 @@ html, body {
 
 .timeline > li > .timeline-panel .timeline-heading p {
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 650;
   text-transform: uppercase;
   margin-bottom: 0;
   color: #ffffff;
