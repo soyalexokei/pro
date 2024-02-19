@@ -1,13 +1,3 @@
-/*
- * Theme Name: Pixel Perfect Portfolio
- * Author: Pixel Perfect
- * Author URI/Mail: pixelperfectmk@gmail.com
- * Version: 1.0
- */
-
-
-/* CUSTOM RESETS
-================================================== */
 a, button {
   -webkit-transition: all 0.25s ease-in-out;
   -o-transition: all 0.25s ease-in-out;
@@ -431,74 +421,6 @@ html, body {
   background-color: transparent;
 }
 
-@media only screen and (max-width: 1199px) {
-  /* HEADER */
-  .site-navigation .navbar-nav > li + li > a {
-    margin-left: 15px;
-  }
-  .service p {
-    bottom: 10px;
-  }
-}
-
-@media only screen and (max-width: 991px) {
-  /* HEADER */
-  .site-navigation .navbar-nav > li + li > a {
-    margin-left: 8px;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  /* HEADER */
-  /* Navigation */
-  .site-navigation .navbar-nav {
-    padding-top: 0;
-  }
-  .site-navigation .navbar-toggle {
-    margin: 0 5px 0 0;
-    height: 60px;
-    line-height: 60px;
-    border: 0;
-  }
-  .site-navigation .navbar-toggle .icon-bar {
-    position: relative;
-    background-color: #fff;
-    transition: top 0.25s ease-in-out;
-    -moz-transition: top 0.25s ease-in-out;
-    -webkit-transition: top 0.25s ease-in-out;
-    -o-transition: top 0.25s ease-in-out;
-    -ms-transition: top 0.25s ease-in-out;
-  }
-  .site-navigation .navbar-toggle .icon-bar:first-child {
-    top: 6px;
-  }
-  .site-navigation .navbar-toggle .icon-bar:last-child {
-    top: -6px;
-  }
-  .site-navigation .navbar-toggle.collapsed .icon-bar {
-    top: 0;
-  }
-  .site-navigation .navbar-collapse {
-    position: relative;
-    background-color: #196fc0;
-    z-index: 99;
-    text-align: center;
-    border-top: 0;
-    box-shadow: none;
-  }
-  .site-navigation .navbar-nav {
-    margin: 0;
-  }
-  .site-navigation .navbar-nav > li > a {
-    display: inline-block;
-    margin: 10px 0;
-    padding-bottom: 5px;
-  }
-  .site-navigation .navbar-nav > li + li > a {
-    margin-left: 0;
-  }
-}
-
 .google {
   margin-top: 15px;
 }
@@ -657,17 +579,6 @@ html, body {
   animation-play-state: paused;
 }
 
-@media only screen and (max-width: 767px) {
-  /* HEADER */
-  /* HERO */
-  .hero-content h1 {
-    font-size: 32px;
-  }
-  .hero-content p {
-    margin: 20px auto 0;
-  }
-}
-
 /* SITEMAIN
 ================================================== */
 .site-main {
@@ -786,28 +697,6 @@ html, body {
   background-color: #666;
 }
 
-@media only screen and (max-width: 991px) {
-  /* Sections */
-  .site-section {
-    padding: 80px 0;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  /* Sections */
-  .site-section {
-    padding: 60px 0;
-  }
-  .site-section h2 {
-    font-size: 24px;
-  }
-  .section-subtitle span {
-    display: inline-block;
-    max-width: 230px;
-    font-size: 14px;
-  }
-}
-
 /* Section: Hello */
 .section-hello .row {
   margin-top: 70px;
@@ -859,49 +748,6 @@ html, body {
   font-size: 12px;
 }
 
-@media only screen and (max-width: 1199px) {
-  /* Section: Hello */
-  .main-service {
-    padding: 25px 0;
-  }
-}
-
-@media only screen and (max-width: 991px) {
-  /* Section: Hello */
-  .big-rectangle {
-    height: 170px;
-    width: 170px;
-  }
-  .main-service {
-    padding: 20px 0;
-  }
-  .main-service h3 {
-    font-size: 14px;
-  }
-  .main-service.text-right {
-    padding-right: 75px;
-  }
-  .main-service.text-left {
-    padding-left: 75px;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  /* Section: Hello */
-  .section-hello .row {
-    margin-top: 30px;
-  }
-  .section-hello .col-sm-4 {
-    min-height: 240px;
-  }
-  .section-hello .main-service {
-    min-height: 100%;
-  }
-  .section-hello .main-service p {
-    margin-top: 15px;
-  }
-}
-
 /* Section: About */
 .section-about .row {
   margin-top: 70px;
@@ -928,31 +774,6 @@ html, body {
 
 .feature-about p {
   margin: 30px 0 0;
-}
-
-@media only screen and (max-width: 767px) {
-  .section-about .row {
-    margin-top: 30px;
-  }
-  .section-about .col-xs-6:nth-child(n+3) .feature-about {
-    margin-top: 20px;
-  }
-  .section-about .feature-about h3 {
-    margin-top: 30px;
-  }
-  .section-about .feature-about p {
-    margin-top: 15px;
-  }
-}
-
-@media only screen and (max-width: 479px) {
-  .section-about .col-xs-6 {
-    width: 100%;
-    min-height: 100%;
-  }
-  .section-about .col-xs-6:nth-child(n+2) .feature-about {
-    margin-top: 20px;
-  }
 }
 
 /* Section: Skills */
@@ -1048,17 +869,6 @@ html, body {
   display: none;
 }
 
-@media only screen and (max-width: 900px) {
-  /* Section: Skills */
-  .section-skills .col-sm-2 + .col-sm-2 {
-    margin-top: 40px;
-  }
-  .section-skills h2 {
-    margin-bottom: 20px;
-    font-size: 18px;
-  }
-}
-
 /* Section: Counters */
 .site-section.section-counters {
   padding-bottom: 0;
@@ -1084,26 +894,6 @@ html, body {
 .site-section.section-counters .row p {
   margin: 30px 0 0;
   text-transform: uppercase;
-}
-
-@media only screen and (max-width: 767px) {
-  /* Section: Counters */
-  .section-counters .col-sm-2:nth-child(n+3) {
-    margin-top: 20px;
-  }
-  .section-counters .row p {
-    margin-top: 15px;
-  }
-}
-
-@media only screen and (max-width: 479px) {
-  /* Section: Counters */
-  .section-counters .col-sm-2 {
-    width: 100%;
-  }
-  .section-counters .col-sm-2:nth-child(n+2) {
-    margin-top: 20px;
-  }
 }
 
 /* Section: Services */
@@ -1298,72 +1088,6 @@ html, body {
   z-index: 99;
 }
 
-@media only screen and (max-width: 991px) {
-  /* Section: Services */
-  .section-services .container-fluid {
-    padding: 80px 15px 50px;
-  }
-  .section-services .container-fluid + .container {
-    margin-top: 60px;
-  }
-  .section-services .nav-tabs {
-    margin-top: 50px;
-  }
-  .section-services .carousel-inner {
-    margin-top: 55px;
-  }
-  .section-services .service-info h3 {
-    margin-top: 0;
-  }
-  .section-services img {
-    margin: 30px auto 0;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  /* Section: Services */
-  .section-services .container-fluid {
-    padding: 60px 15px 30px;
-  }
-  .section-services .container-fluid + .container {
-    margin-top: 40px;
-  }
-  .section-services .nav-tabs {
-    margin-top: 30px;
-    min-height: 70px;
-  }
-  .section-services .nav-tabs .col-sm-fifth {
-    height: 70px;
-  }
-  .section-services .carousel-inner {
-    margin-top: 35px;
-  }
-  .section-services .carousel-indicators .active .service .rectangle,
-  .section-services .carousel-indicators a:hover .service .rectangle,
-  .section-services .carousel-indicators .service .rectangle {
-    margin-bottom: 0;
-    height: 28px;
-    width: 28px;
-  }
-  .section-services .carousel-indicators .active .service .rectangle i,
-  .section-services .carousel-indicators a:hover .service .rectangle i,
-  .section-services .carousel-indicators .service .rectangle i {
-    font-size: 14px;
-  }
-  .section-services .col-sm-5 {
-    min-height: 100%;
-  }
-  .section-services .col-sm-7 {
-    position: relative;
-  }
-  .section-services .service-info h3 {
-    font-size: 22px;
-  }
-  .section-services .service-info p {
-    margin: 15px 0 0;
-  }
-}
-
 /* Section: Reviews */
 .site-section.section-reviews {
   padding-bottom: 0;
@@ -1450,26 +1174,6 @@ html, body {
 
 .review .review-author p {
   margin-top: 5px;
-}
-
-@media only screen and (max-width: 767px) {
-  /* Section: Reviews */
-  .section-reviews.site-section .blue-bg {
-    margin-top: 30px;
-    padding: 40px 0;
-  }
-  .section-reviews.site-section .review-carousel {
-    padding: 0 15px;
-  }
-  .section-reviews.site-section .review-carousel .slick.rectangle {
-    top: 45px;
-  }
-  .section-reviews.site-section .review-author {
-    margin-top: 50px;
-  }
-  .section-reviews.site-section .review-author:before {
-    top: -25px;
-  }
 }
 
 /* Section: Team */
@@ -1613,30 +1317,6 @@ html, body {
   width: 30px;
   background-color: #ffffff;
   margin: 0 auto;
-}
-
-@media only screen and (max-width: 991px) {
-  /* Section: Team */
-  .section-team .col-xs-6:nth-child(n+3) {
-    margin-top: 30px;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  /* Section: Team */
-  .team {
-    margin-top: 30px;
-  }
-}
-
-@media only screen and (max-width: 479px) {
-  /* Section: Team */
-  .section-team .col-xs-6 {
-    width: 100%;
-  }
-  .section-team .col-xs-6:nth-child(n+2) {
-    margin-top: 30px;
-  }
 }
 
 /* Section: History */
@@ -1799,87 +1479,6 @@ html, body {
 .timeline > li.timeline-inverted .timeline-panel:before {
   left: 0px;
   right: auto;
-}
-
-@media only screen and (max-width: 767px) {
-  /* Section: History */
-  .section-history {
-    padding: 50px 0;
-  }
-  .section-history h2 {
-    font-size: 22px;
-  }
-  .section-diff-title p {
-    margin-top: 40px;
-  }
-  .section-diff-title p:before {
-    top: -20px;
-  }
-  .timeline {
-    margin: 30px 0 0;
-  }
-  .timeline:before {
-    left: 88%;
-  }
-  .timeline > li + li {
-    margin-top: 30px;
-  }
-  .timeline > li.timeline-start .rectangle, .timeline > li.timeline-end .rectangle {
-    left: 38%;
-  }
-  .timeline > li > .timeline-panel {
-    width: 88%;
-  }
-  .timeline > li > .timeline-panel .timeline-heading p {
-    font-size: 12px;
-  }
-  .timeline > li > .timeline-panel .timeline-heading .timeline-date,
-  .timeline > li > .timeline-panel .timeline-heading .timeline-position {
-    padding: 0 8px;
-  }
-  .timeline > li > .timeline-panel .timeline-heading .timeline-date {
-    float: left;
-  }
-  .timeline > li .timeline-rectangle {
-    left: 76%;
-  }
-  .timeline > li.timeline-inverted .timeline-heading {
-    text-align: left;
-  }
-  .timeline > li.timeline-inverted .timeline-date {
-    float: left;
-  }
-  .timeline > li.timeline-inverted > .timeline-panel {
-    float: left;
-    padding: 0 10px 0 0;
-  }
-  .timeline > li.timeline-inverted > .timeline-panel:before {
-    left: auto;
-    right: 0;
-  }
-}
-
-@media only screen and (max-width: 479px) {
-  .timeline {
-    margin: 30px 0 0;
-  }
-  .timeline:before {
-    left: 50%;
-  }
-  .timeline > li.timeline-start .rectangle, .timeline > li.timeline-end .rectangle {
-    left: auto;
-  }
-  .timeline > li > .timeline-panel {
-    background-color: #f6f6f6;
-    width: 100%;
-    padding-right: 0;
-  }
-  .timeline > li .timeline-panel:before {
-    content: none;
-  }
-  .timeline > li .timeline-rectangle {
-    disply: none;
-  }
 }
 
 /* Section: Portfolio */
@@ -2077,49 +1676,6 @@ html, body {
   visibility: visible;
 }
 
-@media only screen and (max-width: 991px) {
-  /* Section: Portfolio */
-  .portfolio-sorting li a {
-    padding: 0 15px;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  /* Section: Portfolio */
-  .portfolio {
-    margin-top: 30px;
-  }
-  .portfolio-sorting {
-    height: 100%;
-    border-right: 1px solid #f6f6f6;
-    border-left: 1px solid #f6f6f6;
-  }
-  .portfolio-sorting li {
-    float: none;
-    width: 50%;
-  }
-  .portfolio-sorting li:nth-child(even) {
-    margin-left: -4px;
-  }
-  .portfolio-sorting li a {
-    border: 0;
-    width: 100%;
-    padding: 0;
-    text-align: center;
-    font-size: 10px;
-  }
-  .portfolio-sorting li a.active:before, .portfolio-sorting li a:after, .portfolio-sorting li a:hover:after, .portfolio-sorting li a.active::after {
-    content: none;
-  }
-}
-
-@media only screen and (max-width: 479px) {
-  /* Section: Portfolio */
-  .section-works .col-xs-6 {
-    width: 100%;
-  }
-}
-
 /*
  * Sections: Background;
  */
@@ -2203,27 +1759,6 @@ html, body {
   background-color: #ffffff;
 }
 
-@media only screen and (max-width: 767px) {
-  /*
-     * Sections: Background;
-     */
-  .section-background {
-    padding: 100px 0;
-  }
-  .section-background .btn {
-    margin-top: 30px;
-  }
-  .section-quote p {
-    font-size: 28px;
-  }
-  .section-twitter .rectangle + p {
-    margin-top: 40px;
-  }
-  .section-twitter .rectangle + p:before {
-    top: -20px;
-  }
-}
-
 /* Section: Clients */
 .section-clients {
   padding: 80px 0;
@@ -2246,13 +1781,6 @@ html, body {
 .client img {
   display: inline-block;
   height: 80px;
-}
-
-@media only screen and (max-width: 767px) {
-  /* Section: Clients */
-  .section-clients {
-    padding: 40px 0;
-  }
 }
 
 /* Section: Contact */
@@ -2293,20 +1821,6 @@ textarea.form-control {
   margin-top: 50px;
   min-height: 150px;
   resize: none;
-}
-
-@media only screen and (max-width: 767px) {
-  /* Section: Contact */
-  .section-contact .container form {
-    margin-top: 30px;
-  }
-  .section-contact .btn {
-    margin-top: 30px;
-  }
-  .form-control,
-  textarea.form-control {
-    margin-top: 15px;
-  }
 }
 
 /* Section: Social Networks */
@@ -2394,16 +1908,6 @@ textarea.form-control {
   margin-bottom: 0;
 }
 
-@media only screen and (max-width: 767px) {
-  /* FOOTER*/
-  .site-footer .container-fluid {
-    padding: 40px 15px;
-  }
-  .site-footer .container {
-    padding: 40px 15px 80px;
-  }
-}
-
 /* MODALS 
 ================================================== */
 .modal.fade-scale {
@@ -2486,15 +1990,551 @@ textarea.form-control {
   border-width: 1px 0 0 0;
 }
 
-@media only screen and (max-width: 767px) {
-  /* MODALS */
-  .modal-dialog {
-    margin: 30px 30px 10px 10px;
+/***********************************************/
+/* Configuración para los dispositivos móviles */
+/***********************************************/
+@media only screen and (max-width: 600px) {
+  /* Adjustments for mobile devices */
+  .btn {
+    width: 100%; /* Make buttons full width */
+    margin-bottom: 10px; /* Add some spacing between buttons */
   }
+}
+
+@media (max-width: 768px) {
+  /* Estilos específicos para dispositivos móviles */
+  .carousel-control {
+    font-size: 10vw; /* Ajusta el tamaño de fuente en relación con el ancho de la pantalla */
+    top: 5%; /* Ajusta la posición vertical */
+  }
+  
+  .quote-section,
+  .autor-section {
+    width: 80%; /* Reduce el ancho en pantallas más pequeñas */
+    margin: 5% auto; /* Centra verticalmente con menos espacio en la parte superior */
+    font-size: 6vw; /* Ajusta el tamaño de fuente en relación con el ancho de la pantalla */
+    padding: 3vw; /* Ajusta el relleno en relación con el ancho de la pantalla */
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .site-header {
+    height: 40px; /* Adjusted height for smaller screens */
+  }
+  
+  .site-logo {
+    padding: 0 10px; /* Adjusted padding for smaller screens */
+    height: 40px; /* Adjusted height for smaller screens */
+  }
+  
+  .site-logo a {
+    margin-top: 10px; /* Adjusted margin for smaller screens */
+    font-size: 18px; /* Adjusted font size for smaller screens */
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* Navigation */
+  .site-navigation .navbar-nav {
+    padding-top: 5px; /* Reducir el espacio superior */
+  }
+
+  .site-navigation .navbar-nav > li > a {
+    font-size: 14px; /* Ajustar el tamaño del texto */
+    padding: 8px 3px; /* Aumentar el espacio alrededor del texto */
+  }
+
+  .site-navigation .navbar-nav.navbar-right {
+    margin-right: 0;
+  }
+
+  .site-navigation .navbar-nav > li + li > a {
+    margin-left: 5px; /* Reducir el espacio entre elementos */
+  }
+
+  .google {
+    margin-top: 5px; /* Reducir el espacio superior */
+  }
+
+  /* HERO */
+  .hero-content {
+    padding-top: 20vh; /* Reducir el espacio desde la parte superior */
+  }
+
+  .hero-content h1 {
+    font-size: 24px; /* Ajustar el tamaño del título */
+    margin-bottom: 8px; /* Ajustar el espacio inferior */
+  }
+
+  .hero-content p {
+    font-size: 12px; /* Ajustar el tamaño del párrafo */
+    margin-bottom: 15px; /* Ajustar el espacio inferior */
+  }
+
+  .hero-content .hero-job {
+    font-size: 14px; /* Ajustar el tamaño del texto */
+  }
+
+  .hero-content .hero-job-desc {
+    font-size: 10px; /* Ajustar el tamaño del texto */
+    max-width: 90%; /* Limitar el ancho */
+    margin: 0 auto;
+  }
+
+  .hero-arrow {
+    bottom: 5px; /* Reducir el espacio inferior */
+  }
+
+  .hero-arrow a {
+    font-size: 20px; /* Ajustar el tamaño de la flecha */
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .site-section {
+    padding: 30px 0; /* Reduce aún más el relleno para dispositivos móviles */
+  }
+
+  .site-section h2,
+  .section-history h2,
+  #titulo-tecnologias,
+  #titulo-partners {
+    font-size: 20px; /* Reduce más el tamaño del texto para dispositivos móviles */
+  }
+
+  .section-subtitle {
+    font-size: 12px; /* Reduce más el tamaño del texto para dispositivos móviles */
+    line-height: 12px; /* Ajusta la altura de línea para dispositivos móviles */
+  }
+}
+
+/* Para dispositivos móviles y tablets pequeñas */
+@media (max-width: 767px) {
+  /* Section: Hello */
+  .section-hello .row {
+    margin-top: 50px; /* Reducimos el margen superior */
+  }
+
+  .section-hello .col-sm-4 {
+    min-height: auto; /* Eliminamos la altura mínima */
+  }
+
+  .main-service {
+    padding: 25px 0; /* Reducimos el relleno */
+    min-height: auto; /* Eliminamos la altura mínima */
+  }
+
+  .main-service.text-right,
+  .main-service.text-left {
+    padding: 0; /* Eliminamos el relleno lateral */
+  }
+
+  .main-service h3 {
+    font-size: 14px; /* Reducimos el tamaño de fuente */
+  }
+
+  .main-service p {
+    margin: 15px 0 0; /* Ajustamos el margen */
+    font-size: 11px; /* Reducimos el tamaño de fuente */
+  }
+
+  /* Section: About */
+  .section-about .row {
+    margin-top: 50px; /* Reducimos el margen superior */
+  }
+
+  .section-about .col-sm-3 {
+    min-height: auto; /* Eliminamos la altura mínima */
+  }
+
+  .section-about .rectangle i {
+    font-size: 24px; /* Reducimos el tamaño del ícono */
+  }
+
+  .feature-about h3 {
+    margin: 40px 0 0; /* Ajustamos el margen */
+    font-size: 14px; /* Reducimos el tamaño de fuente */
+  }
+
+  .feature-about p {
+    margin: 20px 0 0; /* Ajustamos el margen */
+    font-size: 11px; /* Reducimos el tamaño de fuente */
+  }
+}
+
+/* Para dispositivos móviles y tablets pequeñas */
+@media (max-width: 767px) {
+  /* Section: About */
+  .section-about .row {
+    margin-top: 50px; /* Reducimos el margen superior */
+  }
+
+  .section-about .col-sm-3 {
+    min-height: auto; /* Eliminamos la altura mínima */
+  }
+
+  .section-about .rectangle i {
+    font-size: 24px; /* Reducimos el tamaño del ícono */
+  }
+
+  .feature-about h3 {
+    margin: 40px 0 0; /* Ajustamos el margen */
+    font-size: 14px; /* Reducimos el tamaño de fuente */
+  }
+
+  .feature-about p {
+    margin: 20px 0 0; /* Ajustamos el margen */
+    font-size: 12px; /* Reducimos el tamaño de fuente */
+  }
+
+  /* Section: Skills */
+  .section-skills h2 {
+    font-size: 16px; /* Reducimos el tamaño de fuente */
+    margin-bottom: 30px; /* Ajustamos el margen inferior */
+  }
+
+  .section-skills h2:before {
+    width: 30px; /* Reducimos el ancho */
+  }
+
+  .progress-group p {
+    font-size: 12px; /* Reducimos el tamaño de fuente */
+  }
+
+  .progress-group + .progress-group {
+    margin-top: 15px; /* Ajustamos el margen superior */
+  }
+
+  .progress-bar:before,
+  .progress-bar:after {
+    display: none; /* Ocultamos los pseudo-elementos */
+  }
+
+  .progress-bar span {
+    display: none; /* Ocultamos el texto de progreso */
+  }
+
+  .progressbar-back-text {
+    display: block; /* Mostramos el texto de progreso */
+    font-size: 12px; /* Reducimos el tamaño de fuente */
+    color: #666; /* Cambiamos el color del texto */
+  }
+}
+
+/* Para dispositivos móviles y tablets pequeñas */
+@media (max-width: 767px) {
+  /* Section: Counters */
+  .site-section.section-counters {
+    padding-bottom: 0;
+  }
+
+  .site-section.section-counters .rectangle i,
+  .site-section.section-counters .rectangle span {
+    font-size: 14px; /* Reducimos el tamaño de fuente */
+  }
+
+  .site-section.section-counters .rectangle i {
+    padding-bottom: 10px; /* Reducimos el espacio inferior */
+  }
+
+  .site-section.section-counters .rectangle i + span {
+    padding-top: 10px; /* Reducimos el espacio superior */
+  }
+
+  .site-section.section-counters .row p {
+    margin: 20px 0 0; /* Ajustamos el margen */
+    font-size: 12px; /* Reducimos el tamaño de fuente */
+  }
+
+  /* Section: Services */
+  .section-services.site-section {
+    padding: 0;
+  }
+
+  .section-services .container-fluid {
+    padding: 80px 15px 50px; /* Ajustamos el relleno */
+  }
+
+  .section-services .container-fluid + .container {
+    margin-top: 60px; /* Ajustamos el margen superior */
+  }
+
+  .section-services .col-sm-fifth {
+    width: 25%; /* Ajustamos el ancho */
+  }
+
+  .section-services .nav-tabs {
+    margin: 40px 0 0; /* Ajustamos el margen */
+  }
+
+  .section-services .carousel-inner {
+    margin-top: 50px; /* Ajustamos el margen superior */
+  }
+
+  .section-services .carousel-inner img {
+    border-radius: 8px 8px 0 0; /* Reducimos el radio de la esquina */
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.2); /* Reducimos la sombra */
+  }
+
+  .service p {
+    font-size: 10px; /* Reducimos el tamaño de fuente */
+  }
+
+  .section-services .col-sm-5 {
+    min-height: auto; /* Eliminamos la altura mínima */
+  }
+
+  .service-info h3 {
+    font-size: 24px; /* Reducimos el tamaño de fuente */
+    margin: 15px 0 0; /* Ajustamos el margen */
+  }
+
+  .service-info p {
+    margin: 20px 0 0; /* Ajustamos el margen */
+    font-size: 11px; /* Reducimos el tamaño de fuente */
+  }
+}
+
+@media (max-width: 768px) {
+  .site-section.section-reviews .blue-bg {
+    padding: 50px 0px; /* Reducir el padding para dispositivos móviles */
+  }
+
+  .review-carousel .slick.rectangle {
+    display: block; /* Mostrar los botones de navegación solo en dispositivos móviles */
+  }
+
+  .review-carousel .slick.rectangle.slick-next,
+  .review-carousel .slick.rectangle.slick-prev {
+    top: calc(50% - 15px); /* Alinear los botones de navegación verticalmente */
+  }
+
+  .review p {
+    margin-top: 20px; /* Reducir el margen superior para dispositivos móviles */
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .team {
+    margin-top: 30px;
+  }
+  
+  .team-member {
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .team-member .flipper {
+    -webkit-transition: none;
+    -o-transition: none;
+    -moz-transition: none;
+    transition: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .timeline > li > .timeline-panel {
+    width: 100%; /* Cambiado para ocupar el ancho completo en dispositivos móviles */
+    float: none; /* Eliminado el flotante en dispositivos móviles */
+    margin-left: 0; /* Ajuste del margen izquierdo en dispositivos móviles */
+  }
+
+  .timeline:before {
+    left: 20px; /* Ajuste del margen izquierdo en dispositivos móviles */
+  }
+
+  .timeline > li.timeline-inverted .timeline-panel {
+    float: none; /* Eliminado el flotante en dispositivos móviles */
+    margin-right: 0; /* Ajuste del margen derecho en dispositivos móviles */
+    padding: 0 10px 0 0; /* Ajuste del relleno en dispositivos móviles */
+  }
+
+  .timeline > li.timeline-inverted .timeline-panel:before {
+    left: -9px; /* Ajuste de la posición del elemento antes en dispositivos móviles */
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .portfolio-sorting {
+    height: auto;
+    overflow: hidden;
+  }
+  
+  .portfolio-sorting li a {
+    padding: 0 15px;
+    line-height: 30px;
+    height: 30px;
+  }
+  
+  .portfolio-sorting li a.active:before {
+    bottom: -8px;
+    border-width: 8px 8px 0 8px;
+  }
+  
+  .portfolio-info {
+    height: 50px;
+    transform: translateY(50px);
+    -webkit-transform: translateY(50px);
+    -moz-transform: translateY(50px);
+    -o-transform: translateY(50px);
+    -ms-transform: translateY(50px);
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .portfolio-info h3 {
+    margin: 10px 0 0;
+    font-size: 14px;
+  }
+  
+  .portfolio-info h3 + p {
+    margin: 5px 0 0;
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section-background {
+    padding: 50px 0; /* Ajuste del relleno para pantallas más pequeñas */
+  }
+
+  .section-background p {
+    font-size: 14px; /* Reducción del tamaño de fuente para pantallas más pequeñas */
+  }
+
+  .section-background .btn {
+    margin-top: 20px; /* Ajuste del margen superior para botones en pantallas más pequeñas */
+  }
+}
+
+/* Sections background: Quote */
+.section-quote {
+  background: url(../img/quote.png) center no-repeat fixed;
+}
+
+.section-quote p {
+  margin-top: 0;
+  font-size: 24px; /* Tamaño de fuente ajustado para dispositivos móviles */
+}
+
+.section-quote p span {
+  color: #196fc2;
+}
+
+/* Sections background: Me */
+.section-me {
+  background: url(../img/portfolio-7.jpg) center no-repeat fixed;
+}
+
+.section-me h2 {
+  margin: 0;
+  color: #ffffff;
+  position: relative;
+}
+
+/* Sections background: Twitter */
+.section-twitter {
+  background: url(../img/portfolio-8.jpg) center no-repeat fixed;
+}
+
+.section-twitter .container {
+  max-width: 770px;
+}
+
+.section-twitter .rectangle {
+  margin: 0 auto;
+  box-shadow: none;
+  display: inline-block;
+}
+
+.section-twitter .rectangle i {
+  color: #ffffff;
+}
+
+.section-twitter .rectangle + p {
+  margin-top: 30px;
+}
+
+.section-twitter .rectangle + p:before {
+  content: '';
+  position: absolute;
+  top: -15px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  display: block;
+  width: 30px;
+  height: 1px;
+  background-color: #ffffff;
+}
+
+/* Media query para ajustes en dispositivos móviles para la sección Twitter */
+@media screen and (max-width: 768px) {
+  .section-twitter .rectangle + p {
+    margin-top: 20px; /* Ajuste del margen superior para párrafos en pantallas más pequeñas */
+  }
+
+  .section-twitter .rectangle + p:before {
+    top: -10px; /* Ajuste del posicionamiento del elemento antes del párrafo */
+    width: 20px; /* Ajuste del ancho del elemento antes del párrafo */
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .section-contact .container {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+
+  .section-contact .container form {
+    margin-top: 50px;
+  }
+
+  .form-control {
+    width: 100%;
+  }
+}
+
+/* Section: Social Networks */
+.section-networks {
+  padding: 30px 0;
+  text-align: center;
+}
+
+.section-networks .container {
+  max-width: 460px;
+}
+
+.section-networks a {
+  margin: 10px 8px 5px;
+  color: #ffffff;
+  box-shadow: none;
+}
+
+.section-networks a:hover, .section-networks a:focus {
+  background-color: #ffffff;
+  color: #196fc2;
+}
+
+@media only screen and (max-width: 768px) {
+  .site-footer ul a,
+  .site-footer a {
+    font-size: 8px; /* Reducir aún más el tamaño de fuente en pantallas más pequeñas */
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .modal-header {
+    height: auto; /* Altura automática para adaptarse al contenido */
+  }
+
   .modal-header .rectangle {
-    right: -18px;
-    top: -18px;
-    height: 36px;
-    width: 36px;
+    position: static; /* Posición estática para que se muestre correctamente */
+    margin-top: 10px; /* Margen superior ajustado */
+  }
+
+  .modal-footer .btn,
+  .modal-content .btn {
+    width: auto; /* Ancho automático para ajustarse al contenido */
   }
 }
