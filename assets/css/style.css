@@ -1990,6 +1990,10 @@ textarea.form-control {
   border-width: 1px 0 0 0;
 }
 
+.texto-agenda {
+  text-align: center;
+}
+
 @media only screen and (max-width: 760px) {
   /* Ocultar todo el contenido en dispositivos con un ancho máximo de 768px */
   body {
