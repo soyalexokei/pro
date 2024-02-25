@@ -1994,6 +1994,44 @@ textarea.form-control {
   text-align: center;
 }
 
+/* Carrusel del voluntariado */
+.carrusel-voluntariado {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.carrusel-voluntariado-contenedor {
+  white-space: nowrap;
+  transition: transform 0.3s ease;
+}
+
+.carrusel-voluntariado-contenedor img {
+  display: inline-block;
+  width: 100%;
+}
+
+.flecha-izquierda-pasar, .flecha-derecha-pasar {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 1;
+}
+
+.flecha-izquierda-pasar {
+  left: 0;
+}
+
+.flecha-derecha-pasar {
+  right: 0;
+}
+
 @media only screen and (max-width: 760px) {
   /* Ocultar todo el contenido en dispositivos con un ancho máximo de 768px */
   body {
