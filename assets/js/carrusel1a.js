@@ -20,7 +20,7 @@ window.onload = function() {
       video.src = videos[videoActual-1].src;
       video.type = videos[videoActual-1].type;
       video.controls = true;
-      video.autoplay = true;
+      video.autoplay = false;
       video.width = 300;
       video.height = 400;
       // Limpiar el contenedor antes de agregar el nuevo video

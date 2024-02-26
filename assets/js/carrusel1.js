@@ -1,31 +1,31 @@
-const carruselContenedor = document.getElementById("carrusel-voluntariado-espec1");
-const flechaIzquierda = document.getElementById("flecha-izquierda-pase1");
-const flechaDerecha = document.getElementById("flecha-derecha-pase1");
+const carruselContenedor1 = document.getElementById("carrusel-voluntariado-espec1");
+const flechaIzquierda1 = document.getElementById("flecha-izquierda-pase1");
+const flechaDerecha1 = document.getElementById("flecha-derecha-pase1");
 
-const totalImagenes = 38;
-let imagenActual = 1;
+const totalImagenes1 = 38;
+let imagenActual1 = 1;
 
-function cambiarImagen(n) {
-  if (imagenActual < 1) {
-    imagenActual = totalImagenes;
-  } else if (imagenActual > totalImagenes) {
-    imagenActual = 1;
+function cambiarImagen1(n) {
+  if (imagenActual1 < 1) {
+    imagenActual1 = totalImagenes1;
+  } else if (imagenActual1 > totalImagenes1) {
+    imagenActual1 = 1;
   }
-  carruselContenedor.style.transform = `translateX(-${(imagenActual - 1) * 100}%)`;
+  carruselContenedor1.style.transform = `translateX(-${(imagenActual1 - 1) * 100}%)`;
 }
 
-flechaIzquierda.addEventListener("click", () => {
-  imagenActual--;
-  cambiarImagen(imagenActual);
+flechaIzquierda1.addEventListener("click", () => {
+  imagenActual1--;
+  cambiarImagen1(imagenActual1);
 });
 
-flechaDerecha.addEventListener("click", () => {
-  imagenActual++;
-  cambiarImagen(imagenActual);
+flechaDerecha1.addEventListener("click", () => {
+  imagenActual1++;
+  cambiarImagen1(imagenActual1);
 });
 
-for (let i = 1; i <= totalImagenes; i++) {
-  const imagen = document.createElement("img");
-  imagen.src = `./assets/img/austria${i}.jpg`;
-  carruselContenedor.appendChild(imagen);
+for (let i = 1; i <= totalImagenes1; i++) {
+  const imagen1 = document.createElement("img");
+  imagen1.src = `./assets/img/austria${i}.jpg`;
+  carruselContenedor1.appendChild(imagen1);
 }
