@@ -33,7 +33,7 @@ window.onload = function() {
         }
       
         //-- Crea video.
-        var video2 = document.createElement("video");
+        var video2 = videoContainer2.querySelector("video") || document.createElement("video");
         video2.src = alemania[videoActual2-1].src;
         video2.type = alemania[videoActual2-1].type;
         video2.controls = true;
@@ -42,8 +42,10 @@ window.onload = function() {
         video2.height = 400;
 
         //-- Limpia el contenedor.
-        videoContainer2.innerHTML = '';
-        videoContainer2.appendChild(video2);
+        if (!videoContainer2.querySelector("video")) {
+            videoContainer2.innerHTML = '';
+            videoContainer2.appendChild(video2);
+        }
     }
       
     flechaIzquierda4.addEventListener('click', () => {
