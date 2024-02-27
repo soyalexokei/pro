@@ -1,43 +1,39 @@
-window.onload = function() {
-  var videos = [
-      { src: './assets/img/austria1.mp4', type: 'video/mp4' },
-      { src: './assets/img/austria2.mp4', type: 'video/mp4' },
-      { src: './assets/img/austria3.mp4', type: 'video/mp4' }
-  ];
+const videoContainer1 = document.getElementById('carrusel-voluntariado-espec2');
+const flechaIzquierda2 = document.getElementById("flecha-izquierda-pase2");
+const flechaDerecha2 = document.getElementById("flecha-derecha-pase2");
 
-  var videoActual = 1;
-  const totalVideos = 3;
-  var videoContainer = document.getElementById('carrusel-voluntariado-espec2');
+const totalVideos1 = 3;
+var videoActual1 = 1;
 
-  function playNextVideo(n) {
-    if(videoActual < 1) {
-      videoActual = totalVideos;
-    }else if(videoActual > totalVideos) {
-      videoActual = 1;
-    }
-      // Crear elemento de video
-      var video = document.createElement('video');
-      video.src = videos[videoActual-1].src;
-      video.type = videos[videoActual-1].type;
-      video.controls = true;
-      video.autoplay = false;
-      video.width = 300;
-      video.height = 400;
-      // Limpiar el contenedor antes de agregar el nuevo video
-      videoContainer.innerHTML = '';
-      videoContainer.appendChild(video);
+function playNextVideo1(n) {
+  if(videoActual1 < 1) {
+    videoActual1 = totalVideos1;
+  }else if(videoActual1 > totalVideos1) {
+    videoActual1 = 1;
   }
 
-  // Asociar la función playNextVideo con el clic en las flechas
-  document.getElementById('flecha-izquierda-pase2').addEventListener('click', () => {
-    videoActual--;
-    playNextVideo(videoActual);
-  });
-  document.getElementById('flecha-derecha-pase2').addEventListener('click', () => {
-    videoActual++;
-    playNextVideo(videoActual);
-  });
+  //-- Limpia el contenedor.
+  videoContainer1.innerHTML = '';
 
-  // Reproducir el primer video al cargar la página
-  playNextVideo(videoActual);
-};
+  //-- Crea video.
+  const video1 = document.createElement("video");
+  video1.src = `./assets/img/austria${videoActual1}.mp4`;
+  video1.type = 'video/mp4';
+  video1.controls = true;
+  video1.autoplay = false;
+  video1.width = 300;
+  video1.height = 400;
+  videoContainer1.appendChild(video1);
+}
+
+flechaIzquierda2.addEventListener('click', () => {
+  videoActual1--;
+  playNextVideo1(videoActual1);
+});
+flechaDerecha2.addEventListener('click', () => {
+  videoActual1++;
+  playNextVideo1(videoActual1);
+});
+
+// Reproducir el primer video al cargar la página
+playNextVideo1(videoActual1);

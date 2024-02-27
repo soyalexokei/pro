@@ -5,7 +5,7 @@ const flechaDerecha0 = document.getElementById("flecha-derecha-pase0");
 const totalImagenes0 = 6;
 let imagenActual0 = 1;
 
-function cambiarImagen0(n) {
+function cambiarImagen0(l) {
   if (imagenActual0 < 1) {
     imagenActual0 = totalImagenes0;
   } else if (imagenActual0 > totalImagenes0) {
