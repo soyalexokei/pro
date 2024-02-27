@@ -22,7 +22,7 @@ window.onload = function() {
     const totalVideos1 = 16;
     var videoContainer1 = document.getElementById('carrusel-voluntariado-espec4');
   
-    function playNextVideo(n) {
+    function playNextVideo1(n) {
       if(videoActual1 < 1) {
         videoActual1 = totalVideos1;
       }else if(videoActual1 > totalVideos1) {
@@ -44,13 +44,13 @@ window.onload = function() {
     // Asociar la función playNextVideo con el clic en las flechas
     document.getElementById('flecha-izquierda-pase4').addEventListener('click', () => {
         videoActual1--;
-        playNextVideo(videoActual1);
+        playNextVideo1(videoActual1);
     });
     document.getElementById('flecha-derecha-pase4').addEventListener('click', () => {
         videoActual1++;
-        playNextVideo(videoActual1);
+        playNextVideo1(videoActual1);
     });
   
     // Reproducir el primer video al cargar la página
-    playNextVideo(videoActual1);
+    playNextVideo1(videoActual1);
   };
