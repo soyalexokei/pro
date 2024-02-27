@@ -2,7 +2,7 @@ const videoContainer2 = document.getElementById('carrusel-voluntariado-espec4');
 const flechaIzquierda4 = document.getElementById("flecha-izquierda-pase4");
 const flechaDerecha4 = document.getElementById("flecha-derecha-pase4");
 
-const totalVideos2 = 8;
+const totalVideos2 = 4;
 var videoActual2 = 1;
 
 function playNextVideo2(p) {
