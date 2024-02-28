@@ -1,11 +1,11 @@
 const flechaIzquierda4 = document.getElementById("flecha-izquierda-pase4");
 const flechaDerecha4 = document.getElementById("flecha-derecha-pase4");
 
-const totalVideos2 = 16;
+const totalVideos2 = 9;
 var videoActual2 = 1;
 
-function playerGo(cont) {
-    switch(cont) {
+function playerGo(opciones) {
+    switch(opciones) {
         case 1:
             new YT.Player('carrusel-voluntariado-espec4', {
                 videoId: 'ke9MInBdzH0', // Reemplaza ID_DEL_VIDEO con el ID de tu video de YouTube
@@ -127,4 +127,4 @@ flechaDerecha4.addEventListener('click', () => {
     reproduccionVideos(videoActual2);
 });
 
-playerGo(cont);
+playerGo(videoActual2);
