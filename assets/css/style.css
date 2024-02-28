@@ -2002,6 +2002,18 @@ textarea.form-control {
   overflow: hidden;
 }
 
+.videos-container {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.video {
+  display: inline-block;
+  margin-right: 10px; /* Ajusta el margen entre los videos */
+}
+
 .carrusel-voluntariado-contenedor {
   white-space: nowrap;
   transition: transform 0.3s ease;
