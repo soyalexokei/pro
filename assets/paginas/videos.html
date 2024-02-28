@@ -30,28 +30,28 @@
     <br>
     <br>
     <div class="contenedor-de-los-videos">
-        <iframe width="300" height="400" src=""></iframe>
-        <iframe width="300" height="400" src="https://youtube.com/shorts/ke9MInBdzH0?feature=share"></iframe>
-        <iframe width="300" height="400" src="https://youtube.com/shorts/NH58gQWo9mM?feature=share"></iframe>
-        <iframe width="300" height="400" src="https://youtube.com/shorts/qTxboYDAUlI?feature=share"></iframe>
+        <div id="player1"></div>
+        <div id="player2"></div>
+        <div id="player3"></div>
+        <div id="player4"></div>
     </div>
     <div class="contenedor-de-los-videos">
-        <iframe width="300" height="400" src="https://youtube.com/shorts/N6I4kwdrwJ8?feature=share"></iframe>
-        <iframe width="300" height="400" src="https://youtube.com/shorts/m8u6yeTSMJY?feature=share"></iframe>
-        <iframe width="300" height="400" src="https://youtube.com/shorts/HUWCCp-Gm2w?feature=share"></iframe>
-        <iframe width="300" height="400" src="https://youtube.com/shorts/gutpMrinsBY?feature=share"></iframe>
+        <div id="player5"></div>
+        <div id="player6"></div>
+        <div id="player7"></div>
+        <div id="player8"></div>
     </div>
     <div class="contenedor-de-los-videos">
-        <iframe width="300" height="400" src="https://youtube.com/shorts/Fp-ecbHzHes?feature=share"></iframe>
-        <iframe width="300" height="400" src="https://youtube.com/shorts/MbfkBCP5gNs?feature=share"></iframe>
-        <iframe width="300" height="400" src=""></iframe>
-        <iframe width="300" height="400" src=""></iframe>
+        <div id="player9"></div>
+        <div id="player10"></div>
+        <div id="player11"></div>
+        <div id="player12"></div>
     </div>
     <div class="contenedor-de-los-videos">
-        <iframe width="300" height="400" src=""></iframe>
-        <iframe width="300" height="400" src=""></iframe>
-        <iframe width="300" height="400" src=""></iframe>
-        <iframe width="300" height="400" src=""></iframe>
+        <div id="player13"></div>
+        <div id="player14"></div>
+        <div id="player15"></div>
+        <div id="player16"></div>
     </div>
     <!-- Google Traductor -->
     <script type="text/javascript">
@@ -60,5 +60,100 @@
                 }
     </script>
     <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script>
+        // Función para cargar el reproductor de YouTube
+        function onYouTubeIframeAPIReady() {
+            new YT.Player('player2', {
+                videoId: 'ke9MInBdzH0', // Reemplaza ID_DEL_VIDEO con el ID de tu video de YouTube
+                playerVars: {
+                    'autoplay': 0, // Configura si el video se reproduce automáticamente (0 o 1)
+                    'controls': 1, // Configura si se muestran los controles del reproductor (0 o 1)
+                    'rel': 0, // Configura si se muestran videos relacionados al final (0 o 1)
+                    'showinfo': 0 // Configura si se muestra el título del video y la barra de reproducción al inicio (0 o 1)
+                }
+            });
+            
+            new YT.Player('player3', {
+                videoId: 'NH58gQWo9mM', // Reemplaza ID_DEL_VIDEO con el ID de tu video de YouTube
+                playerVars: {
+                    'autoplay': 0, // Configura si el video se reproduce automáticamente (0 o 1)
+                    'controls': 1, // Configura si se muestran los controles del reproductor (0 o 1)
+                    'rel': 0, // Configura si se muestran videos relacionados al final (0 o 1)
+                    'showinfo': 0 // Configura si se muestra el título del video y la barra de reproducción al inicio (0 o 1)
+                }
+            });
+            
+            new YT.Player('player4', {
+                videoId: 'qTxboYDAUlI', // Reemplaza ID_DEL_VIDEO con el ID de tu video de YouTube
+                playerVars: {
+                    'autoplay': 0, // Configura si el video se reproduce automáticamente (0 o 1)
+                    'controls': 1, // Configura si se muestran los controles del reproductor (0 o 1)
+                    'rel': 0, // Configura si se muestran videos relacionados al final (0 o 1)
+                    'showinfo': 0 // Configura si se muestra el título del video y la barra de reproducción al inicio (0 o 1)
+                }
+            });
+            
+            new YT.Player('player5', {
+                videoId: 'N6I4kwdrwJ8', // Reemplaza ID_DEL_VIDEO con el ID de tu video de YouTube
+                playerVars: {
+                    'autoplay': 0, // Configura si el video se reproduce automáticamente (0 o 1)
+                    'controls': 1, // Configura si se muestran los controles del reproductor (0 o 1)
+                    'rel': 0, // Configura si se muestran videos relacionados al final (0 o 1)
+                    'showinfo': 0 // Configura si se muestra el título del video y la barra de reproducción al inicio (0 o 1)
+                }
+            });
+            
+            new YT.Player('player6', {
+                videoId: 'm8u6yeTSMJY', // Reemplaza ID_DEL_VIDEO con el ID de tu video de YouTube
+                playerVars: {
+                    'autoplay': 0, // Configura si el video se reproduce automáticamente (0 o 1)
+                    'controls': 1, // Configura si se muestran los controles del reproductor (0 o 1)
+                    'rel': 0, // Configura si se muestran videos relacionados al final (0 o 1)
+                    'showinfo': 0 // Configura si se muestra el título del video y la barra de reproducción al inicio (0 o 1)
+                }
+            });
+            
+            new YT.Player('player7', {
+                videoId: 'HUWCCp-Gm2w', // Reemplaza ID_DEL_VIDEO con el ID de tu video de YouTube
+                playerVars: {
+                    'autoplay': 0, // Configura si el video se reproduce automáticamente (0 o 1)
+                    'controls': 1, // Configura si se muestran los controles del reproductor (0 o 1)
+                    'rel': 0, // Configura si se muestran videos relacionados al final (0 o 1)
+                    'showinfo': 0 // Configura si se muestra el título del video y la barra de reproducción al inicio (0 o 1)
+                }
+            });
+
+            new YT.Player('player8', {
+                videoId: 'gutpMrinsBY', // Reemplaza ID_DEL_VIDEO con el ID de tu video de YouTube
+                playerVars: {
+                    'autoplay': 0, // Configura si el video se reproduce automáticamente (0 o 1)
+                    'controls': 1, // Configura si se muestran los controles del reproductor (0 o 1)
+                    'rel': 0, // Configura si se muestran videos relacionados al final (0 o 1)
+                    'showinfo': 0 // Configura si se muestra el título del video y la barra de reproducción al inicio (0 o 1)
+                }
+            });
+
+            new YT.Player('player9', {
+                videoId: 'Fp-ecbHzHes', // Reemplaza ID_DEL_VIDEO con el ID de tu video de YouTube
+                playerVars: {
+                    'autoplay': 0, // Configura si el video se reproduce automáticamente (0 o 1)
+                    'controls': 1, // Configura si se muestran los controles del reproductor (0 o 1)
+                    'rel': 0, // Configura si se muestran videos relacionados al final (0 o 1)
+                    'showinfo': 0 // Configura si se muestra el título del video y la barra de reproducción al inicio (0 o 1)
+                }
+            });
+
+            new YT.Player('player10', {
+                videoId: 'MbfkBCP5gNs', // Reemplaza ID_DEL_VIDEO con el ID de tu video de YouTube
+                playerVars: {
+                    'autoplay': 0, // Configura si el video se reproduce automáticamente (0 o 1)
+                    'controls': 1, // Configura si se muestran los controles del reproductor (0 o 1)
+                    'rel': 0, // Configura si se muestran videos relacionados al final (0 o 1)
+                    'showinfo': 0 // Configura si se muestra el título del video y la barra de reproducción al inicio (0 o 1)
+                }
+            });
+        }
+    </script>
 </body>
 </html>
