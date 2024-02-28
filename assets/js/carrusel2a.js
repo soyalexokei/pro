@@ -17,6 +17,29 @@ function playerGo(ident) {
     });
 }
 
+function obtenerVideoId(index) {
+    switch(index) {
+        case 1:
+            return 'ke9MInBdzH0';
+        case 2:
+            return 'NH58gQWo9mM';
+        case 3:
+            return 'qTxboYDAUlI';
+        case 4:
+            return 'N6I4kwdrwJ8';
+        case 5:
+            return 'm8u6yeTSMJY';
+        case 6:
+            return 'HUWCCp-Gm2w';
+        case 7:
+            return 'gutpMrinsBY';
+        case 8:
+            return 'Fp-ecbHzHes';
+        case 9:
+            return 'MbfkBCP5gNs';
+    }
+}
+
 function reproduccionVideos(cont) {
     if(cont < 1) {
         cont = totalVideos2;
@@ -24,39 +47,9 @@ function reproduccionVideos(cont) {
         cont = 1;
     }
 
-    var videoId;
-
-    switch(cont) {
-        case 1:
-            videoId = 'ke9MInBdzH0';
-            break;
-        case 2:
-            videoId = 'NH58gQWo9mM';
-            break;
-        case 3:
-            videoId = 'qTxboYDAUlI';
-            break;
-        case 4:
-            videoId = 'N6I4kwdrwJ8';
-            break;
-        case 5:
-            videoId = 'm8u6yeTSMJY';
-            break;
-        case 6:
-            videoId = 'HUWCCp-Gm2w';
-            break;
-        case 7:
-            videoId = 'gutpMrinsBY';
-            break;
-        case 8:
-            videoId = 'Fp-ecbHzHes';
-            break;
-        case 9:
-            videoId = 'MbfkBCP5gNs';
-            break;
-    }
-
+    var videoId = obtenerVideoId(cont);
     playerGo(videoId);
+    videoActual2 = cont;
 }
 
 flechaIzquierda4.addEventListener('click', () => {
