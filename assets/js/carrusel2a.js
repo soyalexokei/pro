@@ -3,6 +3,7 @@ const flechaDerecha4 = document.getElementById("flecha-derecha-pase4");
 
 const totalVideos2 = 9;
 var videoActual2 = 1;
+var primerVideoId = 'ke9MInBdzH0';
 
 function playerGo(ident) {
     new YT.Player('carrusel-voluntariado-espec4', {
@@ -67,4 +68,4 @@ flechaDerecha4.addEventListener('click', () => {
     reproduccionVideos(videoActual2);
 });
 
-loadVideoById('ke9MInBdzH0');
+playerGo(primerVideoId);
