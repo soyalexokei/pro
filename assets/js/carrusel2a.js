@@ -67,4 +67,4 @@ flechaDerecha4.addEventListener('click', () => {
     reproduccionVideos(videoActual2);
 });
 
-playerGo(videoActual2);
+loadVideoById('ke9MInBdzH0');
