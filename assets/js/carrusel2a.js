@@ -1,9 +1,9 @@
 const flechaIzquierda4 = document.getElementById("flecha-izquierda-pase4");
 const flechaDerecha4 = document.getElementById("flecha-derecha-pase4");
 
-const totalVideos2 = 9;
+const totalVideos2 = 16;
 var videoActual2 = 1;
-var primerVideoId = 'ke9MInBdzH0';
+var primerVideoId = 'PdxNRQczFw0';
 var player;
 
 function playerGo(ident) {
@@ -25,23 +25,37 @@ function playerGo(ident) {
 function obtenerVideoId(index) {
     switch(index) {
         case 1:
-            return 'ke9MInBdzH0';
+            return 'PdxNRQczFw0';
         case 2:
-            return 'NH58gQWo9mM';
+            return 'ke9MInBdzH0';
         case 3:
-            return 'qTxboYDAUlI';
+            return 'NH58gQWo9mM';
         case 4:
-            return 'N6I4kwdrwJ8';
+            return 'qTxboYDAUlI';
         case 5:
-            return 'm8u6yeTSMJY';
+            return 'N6I4kwdrwJ8';
         case 6:
-            return 'HUWCCp-Gm2w';
+            return 'm8u6yeTSMJY';
         case 7:
-            return 'gutpMrinsBY';
+            return 'HUWCCp-Gm2w';
         case 8:
-            return 'Fp-ecbHzHes';
+            return 'gutpMrinsBY';
         case 9:
+            return 'Fp-ecbHzHes';
+        case 10:
             return 'MbfkBCP5gNs';
+        case 11:
+            return 'oGmZW0v1NwQ';
+        case 12:
+            return '_W3qHpUdrX0';
+        case 13:
+            return 'clOJ8arr8p8';
+        case 14:
+            return 'HaKFuO4M02s';
+        case 15:
+            return 'oLlmVGI7TPE';
+        case 16:
+            return '2VpR7gxzvpw';
     }
 }
 
