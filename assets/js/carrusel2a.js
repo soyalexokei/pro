@@ -4,17 +4,22 @@ const flechaDerecha4 = document.getElementById("flecha-derecha-pase4");
 const totalVideos2 = 9;
 var videoActual2 = 1;
 var primerVideoId = 'ke9MInBdzH0';
+var player;
 
 function playerGo(ident) {
-    new YT.Player('carrusel-voluntariado-espec4', {
-        videoId: ident, // Reemplaza ID_DEL_VIDEO con el ID de tu video de YouTube
-        playerVars: {
-            'autoplay': 0, // Configura si el video se reproduce automáticamente (0 o 1)
-            'controls': 1, // Configura si se muestran los controles del reproductor (0 o 1)
-            'rel': 0, // Configura si se muestran videos relacionados al final (0 o 1)
-            'showinfo': 0 // Configura si se muestra el título del video y la barra de reproducción al inicio (0 o 1)
-        }
-    });
+    if(player) {
+        player.loadVideoById(ident);
+    }else {
+        player = new YT.Player('carrusel-voluntariado-espec4', {
+            videoId: ident, // Reemplaza ID_DEL_VIDEO con el ID de tu video de YouTube
+            playerVars: {
+                'autoplay': 0, // Configura si el video se reproduce automáticamente (0 o 1)
+                'controls': 1, // Configura si se muestran los controles del reproductor (0 o 1)
+                'rel': 0, // Configura si se muestran videos relacionados al final (0 o 1)
+                'showinfo': 0 // Configura si se muestra el título del video y la barra de reproducción al inicio (0 o 1)
+            }
+        });
+    }
 }
 
 function obtenerVideoId(index) {
