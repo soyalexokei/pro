@@ -2055,8 +2055,17 @@ textarea.form-control {
 }
 
 @media only screen and (max-width: 760px) {
-  /* Ocultar todo el contenido en dispositivos con un ancho máximo de 768px */
-  body {
-    display: none;
-  }
+     /* Ocultar todo el contenido en dispositivos con un ancho máximo de 768px */
+     body {
+       display: none;
+     }
+     body::after {
+       content: "Si quieres ver la página, ve al navegador del móvil y voltea el móvil en horizontal o ponlo en vista ordenador. También lo puedes ver desde tu PC // If you want to watch this webpage, go to the Mobile Browser and flip horizontal the device or select "PC view". Also, you can watch it on your PC";
+       display: block;
+       padding: 20px;
+       background-color: #000;
+       color: #fff;
+       font-size: 20px;
+       text-align: center;
+     }
 }
