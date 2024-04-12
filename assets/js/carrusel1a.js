@@ -1,39 +1,29 @@
-const videoContainer1 = document.getElementById('carrusel-voluntariado-espec2');
-const flechaIzquierda2 = document.getElementById("flecha-izquierda-pase2");
-const flechaDerecha2 = document.getElementById("flecha-derecha-pase2");
+var videosIDvoluntariado2 = ["", "", ""];
+var indiceVoluntariado2 = 0;
 
-const totalVideos1 = 3;
-var videoActual1 = 1;
+// Función para agregar videos al carrusel
+function cargarVideos2() {
 
-function playNextVideo1(n) {
-  if(videoActual1 < 1) {
-    videoActual1 = totalVideos1;
-  }else if(videoActual1 > totalVideos1) {
-    videoActual1 = 1;
-  }
-  
-  //-- Crea video.
-  var video1 = document.createElement("video");
-  video1.src = `./assets/img/austria${videoActual1}.mp4`;
-  video1.type = 'video/mp4';
-  video1.controls = true;
-  video1.autoplay = false;
-  video1.width = 300;
-  video1.height = 400;
+    var videosVoluntariado2 = document.getElementById("carrusel-voluntariado-espec2");
+    videosVoluntariado2.innerHTML = "";
 
-  //-- Limpia el contenedor.
-  videoContainer1.innerHTML = '';
-  videoContainer1.appendChild(video1);
+    var iframe = document.createElement("iframe");
+    iframe.src = "https://www.youtube.com/embed/" + videosIDvoluntariado2[indiceVoluntariado2];
+    iframe.allowFullscreen = true;
+    videosVoluntariado2.appendChild(iframe);
 }
 
-flechaIzquierda2.addEventListener('click', () => {
-  videoActual1--;
-  playNextVideo1(videoActual1);
-});
-flechaDerecha2.addEventListener('click', () => {
-    videoActual1++;
-    playNextVideo1(videoActual1);
+document.getElementById("flecha-izquierda-pase2").addEventListener("click", () => {
+  indiceVoluntariado2 = (indiceVoluntariado2 - 1 + videosIDvoluntariado2.length) % videosIDvoluntariado2.length;
+    cargarVideos2();
 });
 
-// Reproducir el primer video al cargar la página
-playNextVideo1(videoActual1);
+document.getElementById("flecha-derecha-pase2").addEventListener("click", () => {
+  indiceVoluntariado2 = (indiceVoluntariado2 + 1) % videosIDvoluntariado2.length;
+    cargarVideos2();
+});
+
+// Llamar a la función para cargar los videos cuando se muestre el modal
+$('#voluntariado4a').on('shown.bs.modal', function () {
+    cargarVideos2();
+});
