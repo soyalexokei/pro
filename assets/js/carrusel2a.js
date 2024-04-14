@@ -2,7 +2,7 @@ var videosIDvoluntariado = ["PdxNRQczFw0", "ke9MInBdzH0", "NH58gQWo9mM", "qTxboY
 var indiceVoluntariado = 0;
 
 // Función para agregar videos al carrusel
-function cargarVideos() {
+function playVideos() {
 
     var videosVoluntariado = document.getElementById("carrusel-voluntariado-espec4");
     videosVoluntariado.innerHTML = "";
@@ -15,15 +15,15 @@ function cargarVideos() {
 
 document.getElementById("flecha-izquierda-pase4").addEventListener("click", () => {
     indiceVoluntariado = (indiceVoluntariado - 1 + videosIDvoluntariado.length) % videosIDvoluntariado.length;
-    cargarVideos();
+    playVideos();
 });
 
 document.getElementById("flecha-derecha-pase4").addEventListener("click", () => {
     indiceVoluntariado = (indiceVoluntariado + 1) % videosIDvoluntariado.length;
-    cargarVideos();
+    playVideos();
 });
 
 // Llamar a la función para cargar los videos cuando se muestre el modal
 $('#voluntariado4a').on('shown.bs.modal', function () {
-    cargarVideos();
+    playVideos();
 });
