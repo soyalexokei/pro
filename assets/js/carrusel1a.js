@@ -24,6 +24,6 @@ document.getElementById("flecha-derecha-pase2").addEventListener("click", () => 
 });
 
 // Llamar a la función para cargar los videos cuando se muestre el modal
-$('#voluntariado4a').on('shown.bs.modal', function () {
+$('#voluntariado3a').on('shown.bs.modal', function () {
     cargarVideos2();
 });
