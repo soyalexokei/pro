@@ -75,7 +75,7 @@ html, body {
   width:100%;
   height:100%;
   background-color: white;
-  position:absolute;
+  position: relative;
   z-index:1;
 }
 
@@ -1502,7 +1502,7 @@ html, body {
 .portfolio-sorting li a {
   position: relative;
   display: inline-block;
-  padding: 0 30px;
+  padding: 0 15px; /* Reducir el padding para móviles */
   line-height: 44px;
   height: 44px;
   border-left: 1px solid #f6f6f6;
@@ -1516,11 +1516,7 @@ html, body {
   border-color: #196fc2;
 }
 
-.portfolio-sorting li a:hover:after, .portfolio-sorting li a.active:after {
-  border-color: #196fc2;
-}
-
-.portfolio-sorting li a:after, .portfolio-sorting li a.acitve:after {
+.portfolio-sorting li a:after, .portfolio-sorting li a.active:after {
   content: '';
   position: absolute;
   top: -1px;
@@ -1674,6 +1670,37 @@ html, body {
   -ms-transform: translateY(0);
   opacity: 1;
   visibility: visible;
+}
+
+/* Estilos específicos para dispositivos móviles */
+
+@media (max-width: 768px) {
+  .portfolio-sorting {
+    height: auto; /* Ajustar altura automáticamente según el contenido */
+    overflow: hidden; /* Evitar desbordamiento horizontal */
+    margin-bottom: 20px; /* Espacio adicional hacia abajo */
+  }
+
+  .portfolio-sorting li a {
+    padding: 0 10px; /* Reducir el padding para móviles */
+  }
+
+  .portfolio-item .portfolio-info {
+    height: 60px; /* Ajustar altura de la información del portafolio */
+    transform: translateY(60px);
+    -webkit-transform: translateY(60px);
+    -moz-transform: translateY(60px);
+    -o-transform: translateY(60px);
+    -ms-transform: translateY(60px);
+  }
+
+  .portfolio-item .portfolio-info h3 {
+    font-size: 14px; /* Reducir el tamaño de fuente para móviles */
+  }
+
+  .portfolio-item .portfolio-info h3 + p {
+    font-size: 11px; /* Reducir el tamaño de fuente para móviles */
+  }
 }
 
 /*
@@ -2052,20 +2079,4 @@ textarea.form-control {
 
 .contenedor-de-los-videos {
   display: inline-block;
-}
-
-@media only screen and (max-width: 760px) {
-     /* Ocultar todo el contenido en dispositivos con un ancho máximo de 768px */
-     body {
-       display: none;
-     }
-     body::after {
-       content: "Si quieres ver la página, ve al navegador del móvil y voltea el móvil en horizontal o ponlo en vista ordenador. También lo puedes ver desde tu PC // If you want to watch this webpage, go to the Mobile Browser and flip horizontal the device or select "PC view". Also, you can watch it on your PC";
-       display: block;
-       padding: 20px;
-       background-color: #000;
-       color: #fff;
-       font-size: 20px;
-       text-align: center;
-     }
 }
