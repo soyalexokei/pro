@@ -23,6 +23,6 @@ document.getElementById("flecha-derecha-pase5").addEventListener("click", () => 
 
 for (let i = 1; i <= totalImagenes2; i++) {
   const imagen2 = document.createElement("img");
-  imagen2.src = `./assets/img/fundtelef${i}.jpg`;
+  imagen2.src = `./assets/img/voluntariados/Cuarto/fundtelef${i}.jpg`;
   carruselContenedor2.appendChild(imagen2);
 }

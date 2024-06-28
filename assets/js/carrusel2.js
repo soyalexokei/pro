@@ -26,6 +26,6 @@ flechaDerecha3.addEventListener("click", () => {
 
 for (let i = 1; i <= totalImagenes3; i++) {
   const imagen3 = document.createElement("img");
-  imagen3.src = `./assets/img/germany${i}.jpg`;
+  imagen3.src = `./assets/img/voluntariados/Tercero/germany${i}.jpg`;
   carruselContenedor3.appendChild(imagen3);
 }

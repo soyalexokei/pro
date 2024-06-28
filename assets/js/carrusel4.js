@@ -24,6 +24,6 @@ document.getElementById("flecha-derecha-pase6").addEventListener("click", () => 
 
 for (let i = 1; i <= totalImagenesYoga; i++) {
   const imagenYoga = document.createElement("img");
-  imagenYoga.src = `./assets/img/ibiza${i}.jpg`;
+  imagenYoga.src = `./assets/img/voluntariados/Quinto/ibiza${i}.jpg`;
   carruselContenedorYoga.appendChild(imagenYoga);
 }
