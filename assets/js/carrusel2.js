@@ -1,31 +1,29 @@
-const carruselContenedor3 = document.getElementById("carrusel-voluntariado-espec3");
-const flechaIzquierda3 = document.getElementById("flecha-izquierda-pase3");
-const flechaDerecha3 = document.getElementById("flecha-derecha-pase3");
+const pantalla2 = document.getElementById("pantalla-voluntariado-proweb-2");
 
-const totalImagenes3 = 25;
-let imagenActual3 = 1;
+const totalImagenes2 = 25;
+let imagenActual2 = 1;
 
-function cambiarImagen3(o) {
-  if (imagenActual3 < 1) {
-    imagenActual3 = totalImagenes3;
-  } else if (imagenActual3 > totalImagenes3) {
-    imagenActual3 = 1;
+function cambiarImagen2(o) {
+  if (imagenActual2 < 1) {
+    imagenActual2 = totalImagenes2;
+  } else if (imagenActual2 > totalImagenes2) {
+    imagenActual2 = 1;
   }
-  carruselContenedor3.style.transform = `translateX(-${(imagenActual3 - 1) * 100}%)`;
+  pantalla2.style.transform = `translateX(-${(imagenActual2 - 1) * 100}%)`;
 }
 
-flechaIzquierda3.addEventListener("click", () => {
-    imagenActual3--;
-    cambiarImagen3(imagenActual3);
+document.getElementById("flecha-izquierda-2").addEventListener("click", () => {
+    imagenActual2--;
+    cambiarImagen2(imagenActual2);
 });
 
-flechaDerecha3.addEventListener("click", () => {
-    imagenActual3++;
-    cambiarImagen3(imagenActual3);
+document.getElementById("flecha-derecha-2").addEventListener("click", () => {
+    imagenActual2++;
+    cambiarImagen2(imagenActual2);
 });
 
-for (let i = 1; i <= totalImagenes3; i++) {
-  const imagen3 = document.createElement("img");
-  imagen3.src = `./assets/img/voluntariados/Tercero/germany${i}.jpg`;
-  carruselContenedor3.appendChild(imagen3);
+for (let i = 1; i <= totalImagenes2; i++) {
+  const imagen2 = document.createElement("img");
+  imagen2.src = `./assets/img/voluntariados/Tercero/germany${i}.jpg`;
+  pantalla2.appendChild(imagen2);
 }

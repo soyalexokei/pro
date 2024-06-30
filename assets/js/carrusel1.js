@@ -1,6 +1,4 @@
-const carruselContenedor1 = document.getElementById("carrusel-voluntariado-espec1");
-const flechaIzquierda1 = document.getElementById("flecha-izquierda-pase1");
-const flechaDerecha1 = document.getElementById("flecha-derecha-pase1");
+const pantalla1 = document.getElementById("pantalla-voluntariado-proweb-1");
 
 const totalImagenes1 = 38;
 let imagenActual1 = 1;
@@ -11,15 +9,15 @@ function cambiarImagen1(m) {
   } else if (imagenActual1 > totalImagenes1) {
     imagenActual1 = 1;
   }
-  carruselContenedor1.style.transform = `translateX(-${(imagenActual1 - 1) * 100}%)`;
+  pantalla1.style.transform = `translateX(-${(imagenActual1 - 1) * 100}%)`;
 }
 
-flechaIzquierda1.addEventListener("click", () => {
+document.getElementById("flecha-izquierda-1").addEventListener("click", () => {
   imagenActual1--;
   cambiarImagen1(imagenActual1);
 });
 
-flechaDerecha1.addEventListener("click", () => {
+document.getElementById("flecha-derecha-1").addEventListener("click", () => {
   imagenActual1++;
   cambiarImagen1(imagenActual1);
 });
@@ -27,5 +25,5 @@ flechaDerecha1.addEventListener("click", () => {
 for (let i = 1; i <= totalImagenes1; i++) {
   const imagen1 = document.createElement("img");
   imagen1.src = `./assets/img/voluntariados/Segundo/austria${i}.jpg`;
-  carruselContenedor1.appendChild(imagen1);
+  pantalla1.appendChild(imagen1);
 }

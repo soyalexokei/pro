@@ -1,28 +1,29 @@
-const carruselContenedor2 = document.getElementById("carrusel-voluntariado-espec5");
-const totalImagenes2 = 1;
-let imagenActual2 = 1;
+const pantalla3 = document.getElementById("pantalla-voluntariado-proweb-3");
 
-function cambiarImagen2(n) {
-  if (imagenActual2 < 1) {
-    imagenActual2 = totalImagenes2;
-  } else if (imagenActual2 > totalImagenes2) {
-    imagenActual2 = 1;
+const totalImagenes3 = 1;
+let imagenActual3 = 1;
+
+function cambiarImagen3(n) {
+  if (imagenActual3 < 1) {
+    imagenActual3 = totalImagenes3;
+  } else if (imagenActual3 > totalImagenes3) {
+    imagenActual3 = 1;
   }
-  carruselContenedor2.style.transform = `translateX(-${(imagenActual2 - 1) * 100}%)`;
+  pantalla3.style.transform = `translateX(-${(imagenActual3 - 1) * 100}%)`;
 }
 
-document.getElementById("flecha-izquierda-pase5").addEventListener("click", () => {
-    imagenActual2--;
-    cambiarImagen2(imagenActual2);
+document.getElementById("flecha-izquierda-3").addEventListener("click", () => {
+    imagenActual3--;
+    cambiarImagen3(imagenActual3);
 });
 
-document.getElementById("flecha-derecha-pase5").addEventListener("click", () => {
-    imagenActual2++;
-    cambiarImagen2(imagenActual2);
+document.getElementById("flecha-derecha-3").addEventListener("click", () => {
+    imagenActual3++;
+    cambiarImagen3(imagenActual3);
 });
 
-for (let i = 1; i <= totalImagenes2; i++) {
-  const imagen2 = document.createElement("img");
-  imagen2.src = `./assets/img/voluntariados/Cuarto/fundtelef${i}.jpg`;
-  carruselContenedor2.appendChild(imagen2);
+for (let i = 1; i <= totalImagenes3; i++) {
+  const imagen3 = document.createElement("img");
+  imagen3.src = `./assets/img/voluntariados/Cuarto/fundtelef${i}.jpg`;
+  pantalla3.appendChild(imagen3);
 }

@@ -1,29 +1,29 @@
-var videosIDvoluntariado2 = ["eyGhyAdtc30", "f0PHhWc2fb8", "Y38JfytAGp4"];
-var indiceVoluntariado2 = 0;
+var videosIDvoluntariadoAustria = ["eyGhyAdtc30", "f0PHhWc2fb8", "Y38JfytAGp4"];
+var indiceVoluntariadoAustria = 0;
 
 // Función para agregar videos al carrusel
-function playVideos2() {
+function empezarConAustria() {
 
-    var videosVoluntariado2 = document.getElementById("carrusel-voluntariado-espec2");
-    videosVoluntariado2.innerHTML = "";
+    var videosVoluntariadoAustria = document.getElementById("pantalla-voluntariado-proweb-1a");
+    videosVoluntariadoAustria.innerHTML = "";
 
     var iframe = document.createElement("iframe");
-    iframe.src = "https://www.youtube.com/embed/" + videosIDvoluntariado2[indiceVoluntariado2];
+    iframe.src = "https://www.youtube.com/embed/" + videosIDvoluntariadoAustria[indiceVoluntariadoAustria];
     iframe.allowFullscreen = true;
-    videosVoluntariado2.appendChild(iframe);
+    videosVoluntariadoAustria.appendChild(iframe);
 }
 
-document.getElementById("flecha-izquierda-pase2").addEventListener("click", () => {
-  indiceVoluntariado2 = (indiceVoluntariado2 - 1 + videosIDvoluntariado2.length) % videosIDvoluntariado2.length;
-  playVideos2();
+document.getElementById("flecha-izquierda-1a").addEventListener("click", () => {
+  indiceVoluntariadoAustria = (indiceVoluntariadoAustria - 1 + videosIDvoluntariadoAustria.length) % videosIDvoluntariadoAustria.length;
+  empezarConAustria();
 });
 
-document.getElementById("flecha-derecha-pase2").addEventListener("click", () => {
-  indiceVoluntariado2 = (indiceVoluntariado2 + 1) % videosIDvoluntariado2.length;
-  playVideos2();
+document.getElementById("flecha-derecha-1a").addEventListener("click", () => {
+  indiceVoluntariadoAustria = (indiceVoluntariadoAustria + 1) % videosIDvoluntariadoAustria.length;
+  empezarConAustria();
 });
 
 // Llamar a la función para cargar los videos cuando se muestre el modal
-$('#voluntariado3a').on('shown.bs.modal', function () {
-  playVideos2();
+$('#voluntariado1a').on('shown.bs.modal', function () {
+  empezarConAustria();
 });

@@ -1,6 +1,4 @@
-const carruselContenedor0 = document.getElementById("carrusel-voluntariado-espec0");
-const flechaIzquierda0 = document.getElementById("flecha-izquierda-pase0");
-const flechaDerecha0 = document.getElementById("flecha-derecha-pase0");
+const pantalla0 = document.getElementById("pantalla-voluntariado-proweb-0");
 
 const totalImagenes0 = 6;
 let imagenActual0 = 1;
@@ -11,15 +9,15 @@ function cambiarImagen0(l) {
   } else if (imagenActual0 > totalImagenes0) {
     imagenActual0 = 1;
   }
-  carruselContenedor0.style.transform = `translateX(-${(imagenActual0 - 1) * 100}%)`;
+  pantalla0.style.transform = `translateX(-${(imagenActual0 - 1) * 100}%)`;
 }
 
-flechaIzquierda0.addEventListener("click", () => {
+document.getElementById("flecha-izquierda-0").addEventListener("click", () => {
   imagenActual0--;
   cambiarImagen0(imagenActual0);
 });
 
-flechaDerecha0.addEventListener("click", () => {
+document.getElementById("flecha-derecha-0").addEventListener("click", () => {
   imagenActual0++;
   cambiarImagen0(imagenActual0);
 });
@@ -27,5 +25,5 @@ flechaDerecha0.addEventListener("click", () => {
 for (let i = 1; i <= totalImagenes0; i++) {
   const imagen0 = document.createElement("img");
   imagen0.src = `./assets/img/voluntariados/Primero/BAM${i}.jpg`;
-  carruselContenedor0.appendChild(imagen0);
+  pantalla0.appendChild(imagen0);
 }
