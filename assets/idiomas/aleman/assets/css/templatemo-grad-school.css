@@ -477,6 +477,16 @@ section.features .col-4 {
 }
 
 
+.cuerpoGramatica {
+  color: black;
+  padding-top: 150px;
+  text-align: justify;
+}
+
+.cuerpoGramatica h1 {
+  text-align: center;
+}
+
 
 /* Why Choosing Us */
 
