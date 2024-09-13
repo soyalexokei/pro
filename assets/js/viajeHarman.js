@@ -1,66 +1,54 @@
+//-- Variables.
+var videosIDviajeHarman = ["","","","","JdPg_ERK6GQ", "uR2VUOp18zY"];
+var indiceViajeHarman = 1;
 var pantallaViajeHarman = document.getElementById("pantalla-viajeHarman");
 var imgViajeHarman = document.createElement("img");
 var iframeViajeHarman = document.createElement("iframe");
+let auxImg = new Image();
 
-var videosIDviajeHarman = [""];
-var indiceViajeHarman = 1;
-const totalViajeHarman = 50;
+//-- Ctes.
+const totalViajeHarman = 6;
 
-function cambiarViajeHarman() {
+function mostrarViajeHarman(auxViajeHarman) {
     
     //-- Limpiar la pantalla.
     pantallaViajeHarman.innerHTML = "";
 
-    //-- Elección de primera foto o última.
-    if (indiceViajeHarman < 1) {
-        indiceViajeHarman = totalViajeHarman;
-    } else if (indiceViajeHarman > totalViajeHarman) {
-    indiceViajeHarman = 1;
-    }
-
-    //-- Elección de img o vídeo.
-    if(imgViajeHarman.src = `./assets/img/formacion/motl/${i}.jpg`) {
-
-    }
-    iframeViajeHarman.src = "https://www.youtube.com/embed/" + videosIDviajeHarman[indiceViajeHarman];
-    iframeViajeHarman.allowFullscreen = true;
-    pantallaViajeHarman.appendChild(iframeViajeHarman);
-}
-
-document.getElementById("left-viajeHarman").addEventListener("click", () => {
-    indiceViajeHarman = (indiceViajeHarman - 1 + videosIDviajeHarman.length) % videosIDviajeHarman.length;
-    cambiarViajeHarman();
-});
-
-document.getElementById("right-viajeHarman").addEventListener("click", () => {
-    indiceViajeHarman = (indiceViajeHarman + 1) % videosIDviajeHarman.length;
-    cambiarViajeHarman();
-});
-
-// Llamar a la función para cargar los videos cuando se muestre el modal
-$('#viajeHarman').on('shown.bs.modal', function () {
-    cambiarViajeHarman();
-});
-
-function cambiarImagenViajeHarman(auxViajeHarman) {
-  pantallaViajeHarman.style.transform = `translateX(-${(indiceViajeHarman - 1) * 100}%)`;
-}
-
-document.getElementById("left-viajeHarman").addEventListener("click", () => {
-    indiceViajeHarman--;
-    cambiarImagenViajeHarman(indiceViajeHarman);
-});
-
-document.getElementById("right-viajeHarman").addEventListener("click", () => {
-    indiceViajeHarman++;
-    cambiarImagenViajeHarman(indiceViajeHarman);
-});
-
-for (let i = 1; i <= totalViajeHarman; i++) {
-    if(imgViajeHarman.src = `./assets/img/formacion/motl/${i}.jpg`) {
-        imgViajeHarman.src = `./assets/img/formacion/motl/${i}.jpg`;
+    //-- Verificar si es una imagen o un vídeo.
+    auxImg.src = `./assets/img/formacion/motl/${auxViajeHarman}.jpg`;
+    auxImg.onload = function() {
+        imgViajeHarman.src = auxImg.src;
         pantallaViajeHarman.appendChild(imgViajeHarman);
-    }else {
-        
+    }
+    auxImg.onerror = function() {
+        iframeViajeHarman.src = "https://www.youtube.com/embed/" + videosIDviajeHarman[auxViajeHarman-1];
+        iframeViajeHarman.allowFullscreen = true;
+        pantallaViajeHarman.appendChild(iframeViajeHarman);
     }
 }
+
+function imgAnteriorViajeHarman() {
+    if(indiceViajeHarman > 1) {
+        indiceViajeHarman--;
+    }else {
+        indiceViajeHarman = totalViajeHarman;
+    }
+    mostrarViajeHarman(indiceViajeHarman);
+}
+
+function imgSiguienteViajeHarman() {
+    if(indiceViajeHarman < totalViajeHarman) {
+        indiceViajeHarman++;
+    }else {
+        indiceViajeHarman = 1;
+    }
+    mostrarViajeHarman(indiceViajeHarman);
+}
+
+//-- Pulsar flecha izquierda.
+document.getElementById("left-viajeHarman").addEventListener("click", imgAnteriorViajeHarman);
+//-- Pulsar flecha derecha.
+document.getElementById("right-viajeHarman").addEventListener("click", imgSiguienteViajeHarman);
+
+//-- Punto de inicio del programa.
+mostrarViajeHarman(indiceViajeHarman);

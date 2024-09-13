@@ -1,244 +1,216 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="Alejandro Fernandez Perez">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-    <title>Curso de Alemán</title>
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="assets/css/fontawesome.css">
-    <link rel="stylesheet" href="assets/css/templatemo-grad-school.css">
-    <link rel="stylesheet" href="assets/css/owl.css">
-    <link rel="stylesheet" href="assets/css/lightbox.css">
-    <!-- Favicon -->
-    <link rel="icon" href="../../../favicon.ico">
-  </head>
-  <body>
-    <!--header-->
-    <header class="main-header clearfix" role="header">
-      <div class="logo"><img src="./assets/images/portada.png"/></div>
-      <nav id="menu" class="main-nav" role="navigation">
-        <ul class="main-menu">
-          <li><a href="#section1">Bienvenida</a></li>
-          <li class="has-submenu"><a href="#">Cursos</a>
-            <ul class="sub-menu">
-              <li><a href="#section2">Nivel A1</a></li>
-              <li><a href="#section3">Nivel A2</a></li>
-              <li><a href="#section4">Nivel B1</a></li>
-            </ul>
-          </li>
-          <li><a href="#location">Localización</a></li>
-          <li><a href="../../../index.html#languages" class='no-animate'>Volver al inicio</a></li>
-          <li><div id="google_translate_element" class="google"></div></li>
-        </ul>
-      </nav>
-    </header>
+<html lang="es">
+    <head>
+        <!-- Metadatos de la web -->
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Free Website Template" name="keywords">
+        <meta content="Free Website Template" name="description">
+        <meta name="author" content="Alejandro Fernandez Perez">
+		<!-- Título de la pestaña de la web -->
+        <title>Curso de Alemán</title>
+		<!-- Favicon -->
+		<link rel="icon" href="../../../favicon.ico">
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Cabecera -->
+        <div class="top-bar">
+            <div class="container">
+                <a href="./index.html"><img src="./img/portada.png"/></a>
+            </div>
+        </div>
+        <!-- Fin de la cabecera -->
 
-    <section class="section main-banner" id="top" data-section="section1">
-        <video autoplay muted loop id="bg-video">
-            <source src="assets/images/course-video.mp4" type="video/mp4" />
-        </video>
+        <!-- Menú -->
+        <div class="nav-bar">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                        <div class="navbar-nav mr-auto">
+                            <a href="#bienvenida" class="nav-item nav-link active">Bienvenida</a>
+                            <div class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" data-toggle="dropdown">Cursos</a>
+                                <div class="dropdown-menu">
+                                    <a href="#cursoA1" class="dropdown-item">Nivel A1</a>
+                                    <a href="#cursoA2" class="dropdown-item">Nivel A2</a>
+                                    <a href="#cursoB1" class="dropdown-item">Nivel B1</a>
+                                </div>
+                            </div>
+                            <a href="#location" class="nav-item nav-link">Localización</a>
+                            <a href="../../../index.html#languages" class="nav-item nav-link">Volver a inicio</a>
+                            <div id="google_translate_element" class="google"></div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Fin del menú -->
 
-        <div class="video-overlay header-text">
-            <div class="caption">
-                <h2>¡Bienvenido al Curso de Alemán!</h2>
-                <div class="main-button">
-                    <div class="scroll-to-section"><a href="#section2">Niveles</a></div>
+        <!-- Sección Bienvenida -->
+        <div class="carousel" id="bienvenida">
+            <div class="container-fluid">
+                <div class="owl-carousel">
+                    <div class="carousel-item">
+                        <div class="carousel-img">
+                            <video autoplay muted loop id="bg-video">
+                                <source src="./img/course-video.mp4" type="video/mp4"/>
+                            </video>
+                        </div>
+                        <div class="carousel-text">
+                            <h1>¡Bienvenido al Curso de Alemán!</h1>
+                            <a class="btn btn-custom" href="#cursoA1">Cursos</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
-
-    <section class="section why-us" data-section="section2">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="section-heading">
-              <h2>Nivel A1</h2>
+        <!-- Fin de la sección Bienvenida -->
+        
+        <!-- Sección Curso A1 -->
+        <div class="about" id="cursoA1">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="about-img">
+                            <img src="./img/nivelA1.png"/>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="section-header text-center">
+                            <h2>Nivel A1</h2>
+                        </div>
+                        <div class="about-content">
+                            <p>Lugar: Escuela Oficial de Idiomas de Boadilla del Monte</p>
+                            <ul>
+                                <li><i class="far fa-check-circle"></i><a href="./paginas/nivela1/gramatica.html">Gramática</a></li>
+                                <li><i class="far fa-check-circle"></i><a href="./paginas/nivela1/vocabulario.html">Vocabulario</a></li>
+                                <li><i class="far fa-check-circle"></i><a href="./paginas/nivela1/co.html">Comprensión Oral</a></li>
+                                <li><i class="far fa-check-circle"></i><a href="./paginas/nivela1/ce.html">Comprensión Escrita</a></li>
+                                <li><i class="far fa-check-circle"></i><a href="./paginas/nivela1/eo.html">Expresión Oral</a></li>
+                                <li><i class="far fa-check-circle"></i><a href="./paginas/nivela1/ee.html">Expresión Escrita</a></li>
+                            </ul>
+                            <a class="btn btn-custom">Tests</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <p style="color: white;">Lugar: E.O.I Boadilla del Monte</p>
-          </div>
-          <div class="col-md-6">
-            <a href='./assets/paginas/nivela1/gramatica.html'>Gramática</a>
-          </div>
-          <div class="col-md-6">
-            <a href='./assets/paginas/nivela1/vocabulario.html'>Vocabulario</a>
-          </div>
-          <div class="col-md-6">
-            <a href='./assets/paginas/nivela1/co.html'>Comprensión Oral</a>
-          </div>
-          <div class="col-md-6">
-            <a href='./assets/paginas/nivela1/ce.html'>Comprensión Escrita</a>
-          </div>
-          <div class="col-md-6">
-            <a href='./assets/paginas/nivela1/eo.html'>Expresión Oral</a>
-          </div>
-          <div class="col-md-6">
-            <a href='./assets/paginas/nivela1/ee.html'>Expresión Escrita</a>
-          </div>
         </div>
-      </div>
-    </section>
+        <!-- Fin de la sección Curso A1 -->
 
-    <section class="section why-us" data-section="section3">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="section-heading">
-              <h2>Nivel A2</h2>
+        <!-- Sección Curso A2 -->
+        <div class="about" id="cursoA2">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="about-img">
+                            <img src="./img/nivelA2.png"/>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="section-header text-center">
+                            <h2>Nivel A2</h2>
+                        </div>
+                        <div class="about-content">
+                            <p>Todavía no está disponible</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="col-md-12">
-            <div id='tabs'>
-              <p style="color: white; text-align: center;">Todavía no disponible</p>
-              <!-- <ul>
-                <li><a href='#'>Gramática</a></li>
-                <li><a href='#'>Vocabulario</a></li>
-                <li><a href='#'>Comprensión Oral</a></li>
-                <li><a href='#'>Comprensión Escrita</a></li>
-                <li><a href='#'>Expresión Oral</a></li>
-                <li><a href='#'>Expresión Escrita</a></li>
-              </ul> -->
-            </div>
-          </div>
         </div>
-      </div>
-    </section>
+        <!-- Fin de la sección Curso A2 -->
 
-    <section class="section why-us" data-section="section4">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="section-heading">
-              <h2>Nivel B1</h2>
+        <!-- Sección Curso B1 -->
+        <div class="about" id="cursoB1">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="about-img">
+                            <img src="./img/nivelB1.png"/>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="section-header text-center">
+                            <h2>Nivel B1</h2>
+                        </div>
+                        <div class="about-content">
+                            <p>Todavía no está disponible</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="col-md-12">
-            <div id='tabs'>
-              <p style="color: white; text-align: center;">Todavía no disponible</p>
-              <!-- <ul>
-                <li><a href='#'>Gramática</a></li>
-                <li><a href='#'>Vocabulario</a></li>
-                <li><a href='#'>Comprensión Oral</a></li>
-                <li><a href='#'>Comprensión Escrita</a></li>
-                <li><a href='#'>Expresión Oral</a></li>
-                <li><a href='#'>Expresión Escrita</a></li>
-              </ul> -->
-            </div>
-          </div>
         </div>
-      </div>
-    </section>
-
-    <section class="section contact" data-section="location">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="section-heading">
-              <h2>Lugar del curso</h2>
+        <!-- Fin de la sección Curso B1 -->
+        
+        <!-- Localización -->
+        <div class="location" id="location">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="section-header text-left">
+                            <h2>Lugar del Curso</h2>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="location-item">
+                                    <i class="fa fa-map-marker-alt"></i>
+                                    <div class="location-text">
+                                        <h3>Escuela Oficial de Idiomas de Boadilla del Monte</h3>
+                                        <p><strong>Dirección:</strong> Victoria Eugenia de Battenberg, 10, 28660 Boadilla del Monte, Madrid, España</p>
+                                        <p><strong>Teléfono:</strong> 91 632 27 33</p>
+                                        <p><strong>Correo electrónico:</strong> eoi.boadilla.boadilla@educa.madrid.org</p>
+                                        <p><strong>Horario:</strong> De Lunes a Viernes, de 14:30 a 20:45</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <iframe src="https://maps.google.com/maps?q=C.%20Victoria%20Eugenia%20de%20Battenberg,%2010,%2028660%20Boadilla%20del%20Monte,%20Madrid&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="422px" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="col-md-6">
-            <div id="textLugar">
-              <h2>Escuela Oficial de Idiomas</h2>
-              <h5>Boadilla del Monte, Madrid, España</h5>
-              <br>
-              <br>
-              <p><b>Correo electrónico:</b> eoi.boadilla.boadilla@educa.madrid.org</p>
-              <p><b>Teléfono:</b> 91 632 27 33</p>
-              <p><b>Horario:</b> Lunes a Viernes, de 14:30 a 20:45</p>
+        </div>
+        <!-- Fin de la localización -->
+
+        <!-- Pie de página -->
+        <div class="footer">
+            <div class="container copyright">
+                <p>Copyright &copy; 2023-2030 <a href="../../../index.html">My Professional WEB</a> - Todos los derechos reservados</p>
             </div>
-          </div>
-          <div class="col-md-6">
-            <div id="map">
-              <iframe src="https://maps.google.com/maps?q=C.%20Victoria%20Eugenia%20de%20Battenberg,%2010,%2028660%20Boadilla%20del%20Monte,%20Madrid&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="422px" frameborder="0" style="border:0" allowfullscreen></iframe>
-            </div>            
-          </div>
         </div>
-      </div>
-    </section>
+        <!-- Fin del pie de página -->
+        
+        <!-- Back to top button -->
+        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <p class="copyright">Copyright &copy; 2023-2030 <a class="fweight-700" href="../../../index.html">My Professional WEB</a> - Todos los derechos reservados</p>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <!-- Scripts -->
-    <!-- Bootstrap core JavaScript -->
-      <script src="vendor/jquery/jquery.min.js"></script>
-      <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-      <script src="assets/js/isotope.min.js"></script>
-      <script src="assets/js/owl-carousel.js"></script>
-      <script src="assets/js/lightbox.js"></script>
-      <script src="assets/js/tabs.js"></script>
-      <script src="assets/js/video.js"></script>
-      <script src="assets/js/slick-slider.js"></script>
-      <script src="assets/js/custom.js"></script>
-      <script>
-          //according to loftblog tut
-          $('.nav li:first').addClass('active');
-
-          var showSection = function showSection(section, isAnimate) {
-            var
-            direction = section.replace(/#/, ''),
-            reqSection = $('.section').filter('[data-section="' + direction + '"]'),
-            reqSectionPos = reqSection.offset().top - 0;
-
-            if (isAnimate) {
-              $('body, html').animate({
-                scrollTop: reqSectionPos },
-              800);
-            } else {
-              $('body, html').scrollTop(reqSectionPos);
-            }
-
-          };
-
-          var checkSection = function checkSection() {
-            $('.section').each(function () {
-              var
-              $this = $(this),
-              topEdge = $this.offset().top - 80,
-              bottomEdge = topEdge + $this.height(),
-              wScroll = $(window).scrollTop();
-              if (topEdge < wScroll && bottomEdge > wScroll) {
-                var
-                currentId = $this.data('section'),
-                reqLink = $('a').filter('[href*=\\#' + currentId + ']');
-                reqLink.closest('li').addClass('active').
-                siblings().removeClass('active');
-              }
-            });
-          };
-
-          $('.main-menu, .scroll-to-section').on('click', 'a', function (e) {
-              // Verifica si el enlace debe tener una excepción, por ejemplo, si tiene la clase "no-animate"
-              if (!$(this).hasClass('no-animate')) {
-                  e.preventDefault(); // Solo previene el comportamiento predeterminado si no tiene la clase "no-animate"
-                  showSection($(this).attr('href'), true); // Ejecuta la animación si no es una excepción
-              }
-          });
-
-          $(window).scroll(function () {
-            checkSection();
-          });
-      </script>
-      <!-- Google Traductor -->
-      <script type="text/javascript">
-        function googleTranslateElementInit() {
-          new google.translate.TranslateElement({pageLanguage: 'es', includedLanguages: 'ca,eu,gl,en,fr,it,pt,de,ar,ru,hi,sr,tr,ja', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, autoDisplay: false}, 'google_translate_element');
-                }
-      </script>
-      <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-  </body>
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+        <!-- Google Traductor -->
+        <script type="text/javascript">
+            function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'es', includedLanguages: 'ca,eu,gl,en,fr,it,pt,de,ar,ru,hi,sr,tr,ja', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, autoDisplay: false}, 'google_translate_element');
+                    }
+        </script>
+        <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    </body>
 </html>
