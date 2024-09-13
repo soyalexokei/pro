@@ -1,5 +1,5 @@
 //-- Variables.
-var videosIDviajeHarman = ["","","","","JdPg_ERK6GQ", "uR2VUOp18zY"];
+var videosIDviajeHarman = ["","","","","",""];
 var indiceViajeHarman = 1;
 var pantallaViajeHarman = document.getElementById("pantalla-viajeHarman");
 var imgViajeHarman = document.createElement("img");
@@ -15,13 +15,14 @@ function mostrarViajeHarman(auxViajeHarman) {
     pantallaViajeHarman.innerHTML = "";
 
     //-- Verificar si es una imagen o un vídeo.
-    auxImg.src = `./assets/img/formacion/motl/${auxViajeHarman}.jpg`;
+    auxImg.src = `./assets/img/${auxViajeHarman}.jpg`;
     auxImg.onload = function() {
         imgViajeHarman.src = auxImg.src;
         pantallaViajeHarman.appendChild(imgViajeHarman);
     }
     auxImg.onerror = function() {
-        iframeViajeHarman.src = "https://www.youtube.com/embed/" + videosIDviajeHarman[auxViajeHarman-1];
+        iframeViajeHarman.src = "https://www.youtube.com/embed/" + videosIDviajeHarman[auxViajeHarman-1] + "?autoplay=1&loop=1&playlist=" + videosIDviajeHarman[auxViajeHarman-1];
+        iframeViajeHarman.allow = "autoplay";
         iframeViajeHarman.allowFullscreen = true;
         pantallaViajeHarman.appendChild(iframeViajeHarman);
     }
