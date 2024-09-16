@@ -1,9 +1,9 @@
 //-- Variables.
 var videosIDvoluntariado1 = ["","","","","","","","","","", //-- En cada fila hay 10.
-"","eyGhyAdtc30","","","f0PHhWc2fb8","","","","","", //-- En cada fila hay 10.
-"","","Y38JfytAGp4","","","","","","","", //-- En cada fila hay 10.
-"","","","","","","","","","", //-- En cada fila hay 10.
-""];
+  "","eyGhyAdtc30","","","f0PHhWc2fb8","","","","","", //-- En cada fila hay 10.
+  "","","Y38JfytAGp4","","","","","","","", //-- En cada fila hay 10.
+  "","","","","","","","","","", //-- En cada fila hay 10.
+  ""];
 var indiceVoluntariado1 = 1;
 var pantallaVoluntariado1 = document.getElementById("pantalla-voluntariado-proweb-1");
 var imgVoluntariado1 = document.createElement("img");

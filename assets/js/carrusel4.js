@@ -1,6 +1,6 @@
 const pantalla4 = document.getElementById("pantalla-voluntariado-proweb-4");
 
-const totalImagenesYoga = 18;
+const totalImagenesYoga = 17;
 let imagenActualYoga = 1;
 
 function cambiarImagenYoga(yg) {
