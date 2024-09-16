@@ -24,6 +24,6 @@ document.getElementById("flecha-derecha-0").addEventListener("click", () => {
 
 for (let i = 1; i <= totalImagenes0; i++) {
   const imagen0 = document.createElement("img");
-  imagen0.src = `./assets/img/voluntariados/Primero/BAM${i}.jpg`;
+  imagen0.src = `./assets/img/voluntariados/Primero/${i}.jpg`;
   pantalla0.appendChild(imagen0);
 }
