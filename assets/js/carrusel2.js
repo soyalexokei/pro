@@ -9,6 +9,10 @@
   var imgVoluntariado2 = document.createElement("img");
   var iframeVoluntariado2 = document.createElement("iframe");
   let auxImgVoluntariado2 = new Image();
+
+  // Variables para gestionar el gesto táctil.
+let empiezaToqueC2 = 0;
+let acabaToqueC2 = 0;
   
   //-- Ctes.
   const totalVoluntariado2 = 41;
@@ -53,11 +57,43 @@
       }
       mostrarVoluntariado2(indiceVoluntariado2);
   }
+
+  // Función para manejar el gesto de deslizamiento
+  function handleSwipeC2() {
+    if (acabaToqueC2 < empiezaToqueC2) {
+      imgSiguienteVoluntariado2();  // Desliza hacia la izquierda, pasa a la siguiente imagen
+    } else if (acabaToqueC2 > empiezaToqueC2) {
+      imgAnteriorVoluntariado2();  // Desliza hacia la derecha, pasa a la imagen anterior
+    }
+  }
   
   //-- Pulsar flecha izquierda.
   document.getElementById("flecha-izquierda-2").addEventListener("click", imgAnteriorVoluntariado2);
   //-- Pulsar flecha derecha.
   document.getElementById("flecha-derecha-2").addEventListener("click", imgSiguienteVoluntariado2);
+
+  // Eventos de teclado (flechas izquierda y derecha).
+  document.addEventListener('keydown', function(event) {
+    if (event.key === 'ArrowLeft') {imgAnteriorVoluntariado2();}
+    else if (event.key === 'ArrowRight') {imgSiguienteVoluntariado2();}
+  });
+
+  // Evento para detectar el inicio del toque
+  pantallaVoluntariado2.addEventListener('touchstart', function(event) {
+    empiezaToqueC2 = event.changedTouches[0].screenX;
+  });
+
+  // Evento para detectar el final del toque
+  pantallaVoluntariado2.addEventListener('touchend', function(event) {
+    acabaToqueC2 = event.changedTouches[0].screenX;
+    handleSwipeC2();
+  });
   
   //-- Punto de inicio del programa.
   mostrarVoluntariado2(indiceVoluntariado2);
+
+  //-- Cargar de inicio las imágenes, para que se visualicen de forma más fluida.
+  for (let i = 1; i <= totalVoluntariado2; i++) {
+    imgVoluntariado2.src = `./assets/img/voluntariados/Tercero/${i}.jpg`;
+    pantallaVoluntariado2.appendChild(imgVoluntariado2);
+  }

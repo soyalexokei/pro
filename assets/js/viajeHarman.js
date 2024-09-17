@@ -3,10 +3,13 @@ var videosIDviajeHarman = ["","","tedzX0xufsM","s3GpWv21uVM","","GiRyIoHuMxY","7
     "","","","","","","","","","", //-- En cada fila hay 10.
     "tLiUptwA3E4","","2yKlY0AHPMk","vTACcj9CGSg",""] //-- En cada fila hay 10.
 var indiceViajeHarman = 1;
-var pantallaViajeHarman = document.getElementById("pantalla-viajeHarman");
+var pantallaViajeHarman = document.getElementById('pantalla-viajeHarman');
 var imgViajeHarman = document.createElement("img");
 var iframeViajeHarman = document.createElement("iframe");
 let auxImg = new Image();
+// Variables para gestionar el gesto táctil.
+let empiezaToque = 0;
+let acabaToque = 0;
 
 //-- Ctes.
 const totalViajeHarman = 25;
@@ -52,10 +55,45 @@ function imgSiguienteViajeHarman() {
     mostrarViajeHarman(indiceViajeHarman);
 }
 
+// Función para manejar el gesto de deslizamiento
+function handleSwipe() {
+    if (acabaToque < empiezaToque) {
+        imgSiguienteViajeHarman();  // Desliza hacia la izquierda, pasa a la siguiente imagen
+    } else if (acabaToque > empiezaToque) {
+        imgAnteriorViajeHarman();  // Desliza hacia la derecha, pasa a la imagen anterior
+    }
+}
+
 //-- Pulsar flecha izquierda.
 document.getElementById("left-viajeHarman").addEventListener("click", imgAnteriorViajeHarman);
 //-- Pulsar flecha derecha.
 document.getElementById("right-viajeHarman").addEventListener("click", imgSiguienteViajeHarman);
 
+// Eventos de teclado (flechas izquierda y derecha).
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'ArrowLeft') {
+        imgAnteriorViajeHarman();
+    } else if (event.key === 'ArrowRight') {
+        imgSiguienteViajeHarman();
+    }
+});
+
+// Evento para detectar el inicio del toque
+pantallaViajeHarman.addEventListener('touchstart', function(event) {
+    empiezaToque = event.changedTouches[0].screenX;
+});
+
+// Evento para detectar el final del toque
+pantallaViajeHarman.addEventListener('touchend', function(event) {
+    acabaToque = event.changedTouches[0].screenX;
+    handleSwipe();
+});
+
 //-- Punto de inicio del programa.
 mostrarViajeHarman(indiceViajeHarman);
+
+//-- Cargar de inicio las imágenes, para que se visualicen de forma más fluida.
+for (let i = 1; i <= totalViajeHarman; i++) {
+    imgViajeHarman.src = `./assets/img/pasantias/viajeUK/${i}.png`;
+    pantallaViajeHarman.appendChild(imgViajeHarman);
+}
