@@ -3,7 +3,7 @@
   "","ke9MInBdzH0","NH58gQWo9mM","qTxboYDAUlI","N6I4kwdrwJ8","m8u6yeTSMJY","","HUWCCp-Gm2w","gutpMrinsBY","Fp-ecbHzHes", //-- En cada fila hay 10.
   "MbfkBCP5gNs","oGmZW0v1NwQ","_W3qHpUdrX0","clOJ8arr8p8","HaKFuO4M02s","","","","","", //-- En cada fila hay 10.
   "","","oLlmVGI7TPE","","","","","","","", //-- En cada fila hay 10.
-  "2VpR7gxzvpw"];
+  "2VpR7gxzvpw"];  //-- En cada fila hay 10.
   var indiceVoluntariado2 = 1;
   var pantallaVoluntariado2 = document.getElementById("pantalla-voluntariado-proweb-2");
   var imgVoluntariado2 = document.createElement("img");
