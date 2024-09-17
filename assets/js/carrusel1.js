@@ -10,10 +10,6 @@ var imgVoluntariado1 = document.createElement("img");
 var iframeVoluntariado1 = document.createElement("iframe");
 let auxImgVoluntariado1 = new Image();
 
-// Variables para gestionar el gesto táctil.
-let empiezaToqueC1 = 0;
-let acabaToqueC1 = 0;
-
 //-- Ctes.
 const totalVoluntariado1 = 41;
 
@@ -58,15 +54,6 @@ function imgSiguienteVoluntariado1() {
     mostrarVoluntariado1(indiceVoluntariado1);
 }
 
-// Función para manejar el gesto de deslizamiento
-function handleSwipeC1() {
-  if (acabaToqueC1 < empiezaToqueC1) {
-    imgSiguienteVoluntariado1();  // Desliza hacia la izquierda, pasa a la siguiente imagen
-  } else if (acabaToqueC1 > empiezaToqueC1) {
-    imgAnteriorVoluntariado1();  // Desliza hacia la derecha, pasa a la imagen anterior
-  }
-}
-
 //-- Pulsar flecha izquierda.
 document.getElementById("flecha-izquierda-1").addEventListener("click", imgAnteriorVoluntariado1);
 //-- Pulsar flecha derecha.
@@ -78,22 +65,5 @@ document.addEventListener('keydown', function(event) {
   else if (event.key === 'ArrowRight') {imgSiguienteVoluntariado1();}
 });
 
-// Evento para detectar el inicio del toque
-pantallaVoluntariado1.addEventListener('touchstart', function(event) {
-  empiezaToqueC1 = event.changedTouches[0].screenX;
-});
-
-// Evento para detectar el final del toque
-pantallaVoluntariado1.addEventListener('touchend', function(event) {
-  acabaToqueC1 = event.changedTouches[0].screenX;
-  handleSwipeC1();
-});
-
 //-- Punto de inicio del programa.
 mostrarVoluntariado1(indiceVoluntariado1);
-
-//-- Cargar de inicio las imágenes, para que se visualicen de forma más fluida.
-for (let i = 1; i <= totalVoluntariado1; i++) {
-  imgVoluntariado1.src = `./assets/img/voluntariados/Segundo/${i}.jpg`;
-  pantallaVoluntariado1.appendChild(imgVoluntariado1);
-}
