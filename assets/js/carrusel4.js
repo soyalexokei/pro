@@ -22,17 +22,6 @@ document.getElementById("flecha-derecha-4").addEventListener("click", () => {
     cambiarImagenYoga(imagenActualYoga);
 });
 
-// Eventos de teclado (flechas izquierda y derecha).
-document.addEventListener('keydown', function(event) {
-  if (event.key === 'ArrowLeft') {
-    imagenActualYoga--;
-    cambiarImagenYoga(imagenActualYoga);
-  } else if (event.key === 'ArrowRight') {
-    imagenActualYoga++;
-    cambiarImagenYoga(imagenActualYoga);
-  }
-});
-
 for (let i = 1; i <= totalImagenesYoga; i++) {
   const imagen4 = document.createElement("img");
   imagen4.src = `./assets/img/voluntariados/Quinto/${i}.jpg`;

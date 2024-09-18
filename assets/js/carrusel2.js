@@ -59,11 +59,11 @@
   //-- Pulsar flecha derecha.
   document.getElementById("flecha-derecha-2").addEventListener("click", imgSiguienteVoluntariado2);
 
-  // Eventos de teclado (flechas izquierda y derecha).
-  document.addEventListener('keydown', function(event) {
-    if (event.key === 'ArrowLeft') {imgAnteriorVoluntariado2();}
-    else if (event.key === 'ArrowRight') {imgSiguienteVoluntariado2();}
-  });
+  //-- Cargar inicialmente las imágenes.
+  for(i=1; i<=totalVoluntariado2; i++) {
+    imgVoluntariado2.src = `./assets/img/voluntariados/Tercero/${i}.jpg`;
+    pantallaVoluntariado2.appendChild(imgVoluntariado2);
+  }
   
   //-- Punto de inicio del programa.
   mostrarVoluntariado2(indiceVoluntariado2);

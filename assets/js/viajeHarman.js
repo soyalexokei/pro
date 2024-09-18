@@ -57,14 +57,11 @@ document.getElementById("left-viajeHarman").addEventListener("click", imgAnterio
 //-- Pulsar flecha derecha.
 document.getElementById("right-viajeHarman").addEventListener("click", imgSiguienteViajeHarman);
 
-// Eventos de teclado (flechas izquierda y derecha).
-document.addEventListener('keydown', function(event) {
-    if (event.key === 'ArrowLeft') {
-        imgAnteriorViajeHarman();
-    } else if (event.key === 'ArrowRight') {
-        imgSiguienteViajeHarman();
-    }
-});
+//-- Cargar inicialmente las imágenes.
+for(i=1; i<=totalViajeHarman; i++) {
+    imgViajeHarman.src = `./assets/img/pasantias/viajeUK/${i}.png`;
+    pantallaViajeHarman.appendChild(imgViajeHarman);
+}
 
 //-- Punto de inicio del programa.
 mostrarViajeHarman(indiceViajeHarman);

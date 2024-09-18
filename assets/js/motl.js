@@ -22,17 +22,6 @@ document.getElementById("right-MOTL").addEventListener("click", () => {
   cambiarImagenMOTL(primeraMOTL);
 });
 
-// Eventos de teclado (flechas izquierda y derecha).
-document.addEventListener('keydown', function(event) {
-  if (event.key === 'ArrowLeft') {
-    primeraMOTL--;
-    cambiarImagenMOTL(primeraMOTL);
-  } else if (event.key === 'ArrowRight') {
-    primeraMOTL++;
-    cambiarImagenMOTL(primeraMOTL);
-  }
-});
-
 for (let i = 1; i <= totalMOTL; i++) {
   const imgMOTL = document.createElement("img");
   imgMOTL.src = `./assets/img/formacion/motl/${i}.jpg`;

@@ -22,17 +22,6 @@ document.getElementById("flecha-derecha-3").addEventListener("click", () => {
     cambiarImagen3(imagenActual3);
 });
 
-// Eventos de teclado (flechas izquierda y derecha).
-document.addEventListener('keydown', function(event) {
-  if (event.key === 'ArrowLeft') {
-    imagenActual3--;
-    cambiarImagen3(imagenActual3);
-  } else if (event.key === 'ArrowRight') {
-    imagenActual3++;
-    cambiarImagen3(imagenActual3);
-  }
-});
-
 for (let i = 1; i <= totalImagenes3; i++) {
   const imagen3 = document.createElement("img");
   imagen3.src = `./assets/img/voluntariados/Cuarto/${i}.jpg`;
