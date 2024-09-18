@@ -58,12 +58,6 @@
   document.getElementById("flecha-izquierda-2").addEventListener("click", imgAnteriorVoluntariado2);
   //-- Pulsar flecha derecha.
   document.getElementById("flecha-derecha-2").addEventListener("click", imgSiguienteVoluntariado2);
-
-  //-- Cargar inicialmente las imágenes.
-  for(i=1; i<=totalVoluntariado2; i++) {
-    imgVoluntariado2.src = `./assets/img/voluntariados/Tercero/${i}.jpg`;
-    pantallaVoluntariado2.appendChild(imgVoluntariado2);
-  }
   
   //-- Punto de inicio del programa.
   mostrarVoluntariado2(indiceVoluntariado2);

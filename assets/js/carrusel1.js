@@ -15,14 +15,14 @@ const totalVoluntariado1 = 41;
 
 function mostrarVoluntariado1(auxVoluntariado1) {
     
-    //-- Limpiar la pantalla.
+    //-- Carga de preloader.
     pantallaVoluntariado1.innerHTML = "";
 
     //-- Verificar si es una imagen o un vídeo.
     auxImgVoluntariado1.src = `./assets/img/voluntariados/Segundo/${auxVoluntariado1}.jpg`;
     auxImgVoluntariado1.onload = function() {
       imgVoluntariado1.src = auxImgVoluntariado1.src;
-        pantallaVoluntariado1.appendChild(imgVoluntariado1);
+      pantallaVoluntariado1.appendChild(imgVoluntariado1);
     }
     auxImgVoluntariado1.onerror = function() {
       iframeVoluntariado1.src = "https://www.youtube.com/embed/" + videosIDvoluntariado1[auxVoluntariado1-1] + "?autoplay=1&loop=1&playlist=" + videosIDvoluntariado1[auxVoluntariado1-1];
@@ -58,12 +58,6 @@ function imgSiguienteVoluntariado1() {
 document.getElementById("flecha-izquierda-1").addEventListener("click", imgAnteriorVoluntariado1);
 //-- Pulsar flecha derecha.
 document.getElementById("flecha-derecha-1").addEventListener("click", imgSiguienteVoluntariado1);
-
-//-- Cargar inicialmente las imágenes.
-for(i=1; i<=totalVoluntariado1; i++) {
-  imgVoluntariado1.src = `./assets/img/voluntariados/Segundo/${i}.jpg`;
-  pantallaVoluntariado1.appendChild(imgVoluntariado1);
-}
 
 //-- Punto de inicio del programa.
 mostrarVoluntariado1(indiceVoluntariado1);

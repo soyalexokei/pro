@@ -57,11 +57,5 @@ document.getElementById("left-viajeHarman").addEventListener("click", imgAnterio
 //-- Pulsar flecha derecha.
 document.getElementById("right-viajeHarman").addEventListener("click", imgSiguienteViajeHarman);
 
-//-- Cargar inicialmente las imágenes.
-for(i=1; i<=totalViajeHarman; i++) {
-    imgViajeHarman.src = `./assets/img/pasantias/viajeUK/${i}.png`;
-    pantallaViajeHarman.appendChild(imgViajeHarman);
-}
-
 //-- Punto de inicio del programa.
 mostrarViajeHarman(indiceViajeHarman);
