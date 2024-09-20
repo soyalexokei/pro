@@ -720,3 +720,7 @@ td {
     font-size: large;
     text-align: center;
 }
+
+.traduccion-banderas {
+    width: 100px;
+}
