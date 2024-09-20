@@ -724,3 +724,8 @@ td {
 .traduccion-banderas {
     width: 100px;
 }
+
+.expresion-escrita {
+    width: 800px;
+    margin: 40px;
+}
