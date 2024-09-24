@@ -734,3 +734,13 @@ td {
     width: 1200px;
     margin: 40px;
 }
+
+#hora-informal {
+    width: 300px;
+}
+
+#figura-redonda {
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+}
