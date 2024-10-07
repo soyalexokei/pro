@@ -26,10 +26,37 @@ body {
 }
 
 .btn-atras {
-    cursor: pointer;
-    border-radius: 6px;
-    background-color: white;
-    color: black;
-    width: 80px;
-    height: 30px;
+  cursor: pointer;
+  border-radius: 6px;
+  background-color: white;
+  color: black;
+  width: 80px;
+  height: 30px;
+}
+
+.modulosIA {
+  border: 1px solid #ccc;
+  background-color: inherit #f1f1f1;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+.modulosIA:hover {
+  background-color: yellow;
+}
+
+#contenidoModulo1 {
+  margin-top: 100px;
+}
+
+#contenidoModulo2 {
+  margin-top: 160px;
+}
+
+.oculto {
+  display: none;
 }
