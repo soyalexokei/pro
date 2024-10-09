@@ -384,7 +384,7 @@ html, body {
 /* 1º SECCIÓN
 ================================================== */
 .hero {
-  background: url(../img/seccion1/fondo.png) center no-repeat;
+  background: url(../img/sobre-mi/fondo.png) center no-repeat;
   height: 100%;
   width: 100%;
   display: table;
