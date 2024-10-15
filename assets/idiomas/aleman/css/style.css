@@ -744,3 +744,28 @@ td {
     width: 25px;
     height: 25px;
 }
+
+.unitsIA {
+    width: 1000px;
+    border: 1px solid #ccc;
+    background-color: inherit #f1f1f1;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+  }
+  
+  .unitsIA:hover {
+    background-color: yellow;
+  }
+
+  .contenidoUnitsIA {
+    width: fit-content;
+    margin-top: 100px;
+  }
+  
+  .oculto {
+    display: none;
+  }
