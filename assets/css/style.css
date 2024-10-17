@@ -2403,3 +2403,25 @@ textarea.form-control {
 .flecha-izquierda-pasar:hover, .flecha-derecha-pasar:hover {
   color: #555;
 }
+
+.moduloIAgenimg {
+  border: 1px solid #ccc;
+  background-color: inherit #f1f1f1;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.moduloIAgenimg:hover {
+  background-color: yellow;
+}
+
+.contenidoEditGenImg {
+  margin-top: 25px;
+}
+
+.oculto {
+  display: none;
+}
