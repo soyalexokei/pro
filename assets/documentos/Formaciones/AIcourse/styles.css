@@ -41,7 +41,7 @@ body {
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 14px 16px;
+  padding: 5px 6px;
   transition: 0.3s;
 }
 
@@ -50,11 +50,19 @@ body {
 }
 
 #contenidoModulo1 {
-  margin-top: 100px;
+  margin-top: 80px;
 }
 
 #contenidoModulo2 {
-  margin-top: 160px;
+  margin-top: 120px;
+}
+
+#contenidoModulo3 {
+  margin-top: -80px;
+}
+
+#contenidoEjerModulo3 {
+  margin-top: 220px;
 }
 
 .oculto {
