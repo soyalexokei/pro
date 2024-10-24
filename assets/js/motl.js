@@ -1,29 +1,43 @@
-const pantallaMOTL = document.getElementById("pantalla-MOTL");
+//-- Variables.
+var imagenesIDmotl = ["W4RMDFC5/1","3RYm1MKp/2","C17D6v12/3","43zpp4Ts/4"];
+var primeraMOTL = 1;
+var pantallaMOTL = document.getElementById("pantalla-MOTL");
+var imgMOTL = document.createElement("img");
 
+//-- Ctes.
 const totalMOTL = 4;
-let primeraMOTL = 1;
 
-function cambiarImagenMOTL(auxMOTL) {
-  if (primeraMOTL < 1) {
-    primeraMOTL = totalMOTL;
-  } else if (primeraMOTL > totalMOTL) {
-    primeraMOTL = 1;
-  }
-  pantallaMOTL.style.transform = `translateX(-${(primeraMOTL - 1) * 100}%)`;
-}
+function mostrarMOTL(auxMOTL) {
+  
+  //-- Limpiar la pantalla.
+  pantallaMOTL.innerHTML = "";
 
-document.getElementById("left-MOTL").addEventListener("click", () => {
-  primeraMOTL--;
-  cambiarImagenMOTL(primeraMOTL);
-});
-
-document.getElementById("right-MOTL").addEventListener("click", () => {
-  primeraMOTL++;
-  cambiarImagenMOTL(primeraMOTL);
-});
-
-for (let i = 1; i <= totalMOTL; i++) {
-  const imgMOTL = document.createElement("img");
-  imgMOTL.src = `./assets/img/formacion/motl/${i}.jpg`;
+  imgMOTL.src = "https://i.postimg.cc/" + imagenesIDmotl[auxMOTL-1] + ".jpg";
   pantallaMOTL.appendChild(imgMOTL);
 }
+
+function imgAnteriorMOTL() {
+  if(primeraMOTL > 1) {
+    primeraMOTL--;
+  }else {
+    primeraMOTL = totalMOTL;
+  }
+  mostrarMOTL(primeraMOTL);
+}
+
+function imgSiguienteMOTL() {
+  if(primeraMOTL < totalMOTL) {
+    primeraMOTL++;
+  }else {
+    primeraMOTL = 1;
+  }
+  mostrarMOTL(primeraMOTL);
+}
+
+//-- Pulsar flecha izquierda.
+document.getElementById("left-MOTL").addEventListener("click", imgAnteriorMOTL);
+//-- Pulsar flecha derecha.
+document.getElementById("right-MOTL").addEventListener("click", imgSiguienteMOTL);
+
+//-- Punto de inicio del programa.
+mostrarMOTL(primeraMOTL);
