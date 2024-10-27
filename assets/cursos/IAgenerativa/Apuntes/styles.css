@@ -37,7 +37,6 @@ body {
 .modulosIA {
   border: 1px solid #ccc;
   background-color: inherit #f1f1f1;
-  float: left;
   border: none;
   outline: none;
   cursor: pointer;
@@ -47,18 +46,6 @@ body {
 
 .modulosIA:hover {
   background-color: yellow;
-}
-
-#contenidoModulo1 {
-  margin-top: 80px;
-}
-
-#contenidoModulo2 {
-  margin-top: 160px;
-}
-
-#contenidoModulo4 {
-  margin-top: 340px;
 }
 
 .oculto {
