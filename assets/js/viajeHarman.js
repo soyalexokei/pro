@@ -1,10 +1,10 @@
 //-- Variables.
 var videosIDviajeHarman = ["","","tedzX0xufsM","s3GpWv21uVM","","GiRyIoHuMxY","7jihgkFH99s","fxJ11BakWaA","","", //-- En cada fila hay 10.
-    "","","","","","","","","","", //-- En cada fila hay 10.
-    "tLiUptwA3E4","","2yKlY0AHPMk","vTACcj9CGSg",""]; //-- En cada fila hay 10.
+"","","","","","","","","","", //-- En cada fila hay 10.
+"tLiUptwA3E4","","2yKlY0AHPMk","vTACcj9CGSg",""]; //-- En cada fila hay 10.
 var imagenesIDviajeHarman = ["dtHkCkk8/1","PrrvNzxX/2","","","9QsDx6B0/5","","","","138grmwb/9","d3Q3kwJH/10",
-    "pTJyLpM5/11","k4mBCWzd/12","5tv6DsP3/13","tJrTFwTX/14","dt1DJsHD/15","hP5vjk6s/16","Y28hcGxJ/17","nh9zQdtJ/18","DzVzQq2b/19","8ChzZj5X/20",
-    "","TwfYFf5d/22","","","Tw0YXFnr/25"];
+"pTJyLpM5/11","k4mBCWzd/12","5tv6DsP3/13","tJrTFwTX/14","dt1DJsHD/15","hP5vjk6s/16","Y28hcGxJ/17","nh9zQdtJ/18","DzVzQq2b/19","8ChzZj5X/20",
+"","TwfYFf5d/22","","","Tw0YXFnr/25"];
 var indiceViajeHarman = 1;
 var pantallaViajeHarman = document.getElementById('pantalla-viajeHarman');
 var imgViajeHarman = document.createElement("img");

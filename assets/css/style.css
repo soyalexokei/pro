@@ -384,7 +384,7 @@ html, body {
 /* 1º SECCIÓN
 ================================================== */
 .hero {
-  background: url(../img/sobre-mi/fondo.png) center no-repeat;
+  background: url(../img/portada.png) center no-repeat;
   height: 100%;
   width: 100%;
   display: table;
@@ -1990,7 +1990,7 @@ html, body {
 
 /* Sections background: Quote */
 .section-quote {
-  background: url(../img/frase-filosofica/fondo.png) center no-repeat fixed;
+  background: url(../img/fondo.png) center no-repeat fixed;
 }
 
 .section-quote p {

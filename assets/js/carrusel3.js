@@ -13,13 +13,13 @@ function cambiarImagen3(n) {
 }
 
 document.getElementById("flecha-izquierda-3").addEventListener("click", () => {
-    imagenActual3--;
-    cambiarImagen3(imagenActual3);
+  imagenActual3--;
+  cambiarImagen3(imagenActual3);
 });
 
 document.getElementById("flecha-derecha-3").addEventListener("click", () => {
-    imagenActual3++;
-    cambiarImagen3(imagenActual3);
+  imagenActual3++;
+  cambiarImagen3(imagenActual3);
 });
 
 for (let i = 1; i <= totalImagenes3; i++) {
