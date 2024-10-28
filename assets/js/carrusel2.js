@@ -42,7 +42,7 @@ function imgAnteriorSammatz() {
   }else {
     indiceSammatz = totalSammatz;
   }
-  mostrarSammatz(indiceVoluntariado2);
+  mostrarSammatz(indiceSammatz);
 }
 
 function imgSiguienteSammatz() {
