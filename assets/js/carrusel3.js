@@ -24,6 +24,6 @@ document.getElementById("flecha-derecha-3").addEventListener("click", () => {
 
 for (let i = 1; i <= totalImagenes3; i++) {
   const imagen3 = document.createElement("img");
-  imagen3.src = `./assets/img/voluntariados/Cuarto/${i}.jpg`;
+  imagen3.src = `./assets/img/voluntariados/${i}.jpg`;
   pantalla3.appendChild(imagen3);
 }

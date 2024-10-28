@@ -1,29 +1,44 @@
-const pantalla4 = document.getElementById("pantalla-voluntariado-proweb-4");
+//-- Variables.
+var imagenesIDibizaYoga = ["05m6Z18Q/1.png","Y0cvkbxM/2.png","tTnsLLWB/3.png","prDpdz08/4.png","yYyD4h3C/5.png","T32pRynL/6.png","pXHm6cTB/7.png","SxZjjyGZ/8.png","DzHZdBHL/9.png","kMx4KNcR/10.png",
+"s2vxht63/11.png","tJH487Xg/12.png","V6tN7XPT/13.png","MKqGDcPP/14.png","vTLZyMBt/15.jpg","cJpx86tc/16.png","Gp832vt2/17.jpg"];
+var primeraIbizaYoga = 1;
+var pantallaIbizaYoga = document.getElementById("pantalla-voluntariado-proweb-4");
+var imgIbizaYoga = document.createElement("img");
 
-const totalImagenesYoga = 17;
-let imagenActualYoga = 1;
+//-- Ctes.
+const totalIbizaYoga = 17;
 
-function cambiarImagenYoga(yg) {
-  if (imagenActualYoga < 1) {
-    imagenActualYoga = totalImagenesYoga;
-  } else if (imagenActualYoga > totalImagenesYoga) {
-    imagenActualYoga = 1;
+function mostrarIbizaYoga(auxIbizaYoga) {
+  
+  //-- Limpiar la pantalla.
+  pantallaIbizaYoga.innerHTML = "";
+
+  imgIbizaYoga.src = "https://i.postimg.cc/" + imagenesIDibizaYoga[auxIbizaYoga-1];
+  pantallaIbizaYoga.appendChild(imgIbizaYoga);
+}
+
+function imgAnteriorIbizaYoga() {
+  if(primeraIbizaYoga > 1) {
+    primeraIbizaYoga--;
+  }else {
+    primeraIbizaYoga = totalIbizaYoga;
   }
-  pantalla4.style.transform = `translateX(-${(imagenActualYoga - 1) * 100}%)`;
+  mostrarIbizaYoga(primeraIbizaYoga);
 }
 
-document.getElementById("flecha-izquierda-4").addEventListener("click", () => {
-    imagenActualYoga--;
-    cambiarImagenYoga(imagenActualYoga);
-});
-
-document.getElementById("flecha-derecha-4").addEventListener("click", () => {
-    imagenActualYoga++;
-    cambiarImagenYoga(imagenActualYoga);
-});
-
-for (let i = 1; i <= totalImagenesYoga; i++) {
-  const imagen4 = document.createElement("img");
-  imagen4.src = `./assets/img/voluntariados/Quinto/${i}.jpg`;
-  pantalla4.appendChild(imagen4);
+function imgSiguienteIbizaYoga() {
+  if(primeraIbizaYoga < totalIbizaYoga) {
+    primeraIbizaYoga++;
+  }else {
+    primeraIbizaYoga = 1;
+  }
+  mostrarIbizaYoga(primeraIbizaYoga);
 }
+
+//-- Pulsar flecha izquierda.
+document.getElementById("flecha-izquierda-4").addEventListener("click", imgAnteriorIbizaYoga);
+//-- Pulsar flecha derecha.
+document.getElementById("flecha-derecha-4").addEventListener("click", imgSiguienteIbizaYoga);
+
+//-- Punto de inicio del programa.
+mostrarIbizaYoga(primeraIbizaYoga);

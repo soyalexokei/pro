@@ -1,29 +1,43 @@
-var pantalla0 = document.getElementById("pantalla-voluntariado-proweb-0");
+//-- Variables.
+var imagenesIDbancoAlimentos = ["jSXDzqd0/1","Wb0F16B4/2","vZM1gxyt/3","MZCfwrr4/4","mrgtVxtc/5","DzpmMCXx/6"];
+var primeraBancoAlimentos = 1;
+var pantallaBancoAlimentos = document.getElementById("pantalla-voluntariado-proweb-0");
+var imgBancoAlimentos = document.createElement("img");
 
-const totalImagenes0 = 6;
-let imagenActual0 = 1;
+//-- Ctes.
+const totalBancoAlimentos = 6;
 
-function cambiarImagen0(l) {
-  if (imagenActual0 < 1) {
-    imagenActual0 = totalImagenes0;
-  } else if (imagenActual0 > totalImagenes0) {
-    imagenActual0 = 1;
+function mostrarBancoAlimentos(auxBancoAlimentos) {
+  
+  //-- Limpiar la pantalla.
+  pantallaBancoAlimentos.innerHTML = "";
+
+  imgBancoAlimentos.src = "https://i.postimg.cc/" + imagenesIDbancoAlimentos[auxBancoAlimentos-1] + ".jpg";
+  pantallaBancoAlimentos.appendChild(imgBancoAlimentos);
+}
+
+function imgAnteriorBancoAlimentos() {
+  if(primeraBancoAlimentos > 1) {
+    primeraBancoAlimentos--;
+  }else {
+    primeraBancoAlimentos = totalBancoAlimentos;
   }
-  pantalla0.style.transform = `translateX(-${(imagenActual0 - 1) * 100}%)`;
+  mostrarBancoAlimentos(primeraBancoAlimentos);
 }
 
-document.getElementById("flecha-izquierda-0").addEventListener("click", () => {
-  imagenActual0--;
-  cambiarImagen0(imagenActual0);
-});
-
-document.getElementById("flecha-derecha-0").addEventListener("click", () => {
-  imagenActual0++;
-  cambiarImagen0(imagenActual0);
-});
-
-for (let i = 1; i <= totalImagenes0; i++) {
-  const imagen0 = document.createElement("img");
-  imagen0.src = `./assets/img/voluntariados/Primero/${i}.jpg`;
-  pantalla0.appendChild(imagen0);
+function imgSiguienteBancoAlimentos() {
+  if(primeraBancoAlimentos < totalBancoAlimentos) {
+    primeraBancoAlimentos++;
+  }else {
+    primeraBancoAlimentos = 1;
+  }
+  mostrarBancoAlimentos(primeraBancoAlimentos);
 }
+
+//-- Pulsar flecha izquierda.
+document.getElementById("flecha-izquierda-0").addEventListener("click", imgAnteriorBancoAlimentos);
+//-- Pulsar flecha derecha.
+document.getElementById("flecha-derecha-0").addEventListener("click", imgSiguienteBancoAlimentos);
+
+//-- Punto de inicio del programa.
+mostrarBancoAlimentos(primeraBancoAlimentos);
