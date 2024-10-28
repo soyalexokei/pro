@@ -27,13 +27,11 @@ function mostrarFalkenCamp(auxFalkenCamp) {
     imgFalkenCamp.src = "https://i.postimg.cc/" + imagenesIDfalkenCamp[auxFalkenCamp-1] + ".jpg";
     pantallaFalkenCamp.appendChild(imgFalkenCamp);
   }else {
-    iframeFalkenCamp.src = "https://www.youtube.com/embed/" + videosIDfalkenCamp[auxFalkenCamp-1] + "?autoplay=1&loop=1&playlist=" + videosIDfalkenCamp[auxFalkenCamp-1];
-    iframeFalkenCamp.allow = "autoplay";
+    iframeFalkenCamp.src = "https://www.youtube.com/embed/" + videosIDfalkenCamp[auxFalkenCamp-1] + "?autoplay=1&loop=1&playlist=" + videosIDfalkenCamp[auxFalkenCamp-1] + "&controls=0&rel=0";
     iframeFalkenCamp.width = "400";
     iframeFalkenCamp.height = "533";
-    iframeFalkenCamp.allowFullscreen = false;
-    iframeFalkenCamp.rel = 0;
-    iframeFalkenCamp.controls = 0;
+    iframeFalkenCamp.setAttribute("allow", "autoplay");
+    iframeFalkenCamp.setAttribute("allowFullscreen", "false");
     pantallaFalkenCamp.appendChild(iframeFalkenCamp);
   }
 }

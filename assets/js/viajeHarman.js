@@ -23,13 +23,11 @@ function mostrarViajeHarman(auxViajeHarman) {
         imgViajeHarman.src = "https://i.postimg.cc/" + imagenesIDviajeHarman[auxViajeHarman-1] + ".png";
         pantallaViajeHarman.appendChild(imgViajeHarman);
     }else {
-        iframeViajeHarman.src = "https://www.youtube.com/embed/" + videosIDviajeHarman[auxViajeHarman-1] + "?autoplay=1&loop=1&playlist=" + videosIDviajeHarman[auxViajeHarman-1];
-        iframeViajeHarman.allow = "autoplay";
+        iframeViajeHarman.src = "https://www.youtube.com/embed/" + videosIDviajeHarman[auxViajeHarman-1] + "?autoplay=1&loop=1&playlist=" + videosIDviajeHarman[auxViajeHarman-1] + "&controls=0&rel=0";
         iframeViajeHarman.width = "400";
         iframeViajeHarman.height = "533";
-        iframeViajeHarman.allowFullscreen = false;
-        iframeViajeHarman.rel = 0;
-        iframeViajeHarman.controls = 0;
+        iframeViajeHarman.setAttribute("allow", "autoplay");
+        iframeViajeHarman.setAttribute("allowFullscreen", "false");
         pantallaViajeHarman.appendChild(iframeViajeHarman);
     }
 }

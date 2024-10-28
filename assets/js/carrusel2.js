@@ -27,13 +27,11 @@ function mostrarSammatz(auxSammatz) {
     imgSammatz.src = "https://i.postimg.cc/" + imagenesIDsammatz[auxSammatz-1];
     pantallaSammatz.appendChild(imgSammatz);
   }else {
-    iframeSammatz.src = "https://www.youtube.com/embed/" + videosIDsammatz[auxSammatz-1] + "?autoplay=1&loop=1&playlist=" + videosIDsammatz[auxSammatz-1];
-    iframeSammatz.allow = "autoplay";
+    iframeSammatz.src = "https://www.youtube.com/embed/" + videosIDsammatz[auxSammatz-1] + "?autoplay=1&loop=1&playlist=" + videosIDsammatz[auxSammatz-1] + "&controls=0&rel=0";
     iframeSammatz.width = "400";
     iframeSammatz.height = "533";
-    iframeSammatz.allowFullscreen = false;
-    iframeSammatz.rel = 0;
-    iframeSammatz.controls = 0;
+    iframeSammatz.setAttribute("allow", "autoplay");
+    iframeSammatz.setAttribute("allowFullscreen", "false");
     pantallaSammatz.appendChild(iframeSammatz);
   }
 }
