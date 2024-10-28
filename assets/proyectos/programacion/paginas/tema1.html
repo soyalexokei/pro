@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>My Professional WEB</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <!-- Favicon -->
+    <link rel="icon" href="../../../../favicon.ico">
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Libraries Stylesheet -->
+    <link href="../lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="../css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 pb-5 mb-5">
+        <div id="header-carousel" class="carousel slide carousel-fade" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" style="min-height: 300px;">
+                    <img class="position-relative w-100" src="../img/portada.png" style="min-height: 300px; object-fit: cover;">
+                    <div class="carousel-caption d-flex align-items-center justify-content-center">
+                        <div class="p-5" style="width: 100%; max-width: 900px;">
+                            <h1 class="display-3 text-white mb-md-4">Hola Mundo</h1>
+                            <br>
+                            <h2 style="text-align: center;"><a href="../index.html">Atrás</a></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+    <!-- SECCIÓN TRADUCTOR GOOGLE -->
+    <div id="google_translate_element" class="google"></div>
+    <!-- FIN DE LA SECCIÓN TRADUCTOR GOOGLE -->
+
+    <!-- Category Start -->
+    <div class="container-fluid py-5">
+        <div class="container pt-5 pb-3">
+            <div class="text-justify mb-5">
+                <h1>Tema 1: Hola Mundo</h1>
+                <br>
+                <br>
+                <p><b>1. Crear e imprimir un <i>¡Hola mundo!</i>:</b></p>
+                <div class="code-container">
+                    <pre><code class="code">
+                        #include < stdio.h>
+
+                        int main (void)
+                        {
+                            printf("\nHello World!\n");
+                            return 0;
+                        }
+                    </code></pre>
+                    <button class="copy-btn">Copiar</button>
+                </div>
+                <p><b>2. Crear una variable entera e imprimir su valor en la pantalla (función printf):</b></p>
+                <div class="code-container">
+                    <pre><code class="code">
+                        #include < stdio.h>
+
+                        int main (void)
+                        {
+                            int num = 2;
+                            printf("\nMy favourite number is = %d\n", num);
+                            return 0;
+                        }
+                    </code></pre>
+                    <button class="copy-btn">Copiar</button>
+                </div>
+                <p><b>3. Crear 3 variables enteras, sumar los valores de las dos primeras, guardar el resultado en la tercera e imprimir su valor en la pantalla:</b></p>
+                <div class="code-container">
+                    <pre><code class="code">
+                        #include < stdio.h>
+
+                        int main (void)
+                        {
+                            int A = 10;
+                            int B = 35;
+                            int sol = A + B;
+                            printf("\nThe addition between A and B is = %d\n", sol);
+                            return 0;
+                        }
+                    </code></pre>
+                    <button class="copy-btn">Copiar</button>
+                </div>
+                <p><b>4. Introducir por teclado el valor de la variable entera (función scanf) e imprimir su valor en la pantalla:</b></p>
+                <div class="code-container">
+                    <pre><code class="code">
+                        #include < stdio.h>
+
+                        int main (void)
+                        {
+                            int num;
+                            printf("\nWrite your favourite integer number: ");
+                            scanf("%d", &num);
+                            printf("\n%d is the number that you chose.\n", num);
+                            return 0;
+                        }
+                    </code></pre>
+                    <button class="copy-btn">Copiar</button>
+                </div>
+                <p><b>5. Introducir por teclado los valores de dos variables enteras e imprimir los resultados de sumarlos, restarlos y multiplicarlos:</b></p>
+                <div class="code-container">
+                    <pre><code class="code">
+                        #include < stdio.h>
+
+                        int main (void)
+                        {
+                            int a; //Variable of the first number.
+                            int b; //Variable of the second number.
+                            int add; //Storage variable of the adding.
+                            int sub; //Storage variable of the subtracting.
+                            int mult; //Storage variable of the multiplying.
+
+                            //Introduce the two numbers.
+                            printf("\nWrite the first integer number: ");
+                            scanf("%d", &a);
+                            printf("Write the second integer number: ");
+                            scanf("%d", &b);
+
+                            //Doing the operations.
+                            add = a + b;
+                            sub = a - b;
+                            mult = a * b;
+
+                            //Print the results.
+                            printf("\nThe result of the adding is = %d", add);
+                            printf("\nThe result of the subtracting is = %d", sub);
+                            printf("\nThe result of the multiplying is = %d\n", mult);
+                            return 0;
+                        }
+                    </code></pre>
+                    <button class="copy-btn">Copiar</button>
+                </div>
+                <p><b>6. Preguntar al usuario para que introduzca por teclado el año actual y el año en que nació, e imprimir la edad que cumplirá este año:</b></p>
+                <div class="code-container">
+                    <pre><code class="code">
+                        #include < stdio.h>
+
+                        int main (void)
+                        {
+                            int year; //Variable of the year where we are.
+                            int born; //Variable of the year when I was born.
+                            int age; //Storage variable of the actual age of the user.
+                        
+                            //Answer the two questions.
+                            printf("\nWhich is the year where we are? : ");
+                            scanf("%d", &year);
+                            printf("Which year were you born? : ");
+                            scanf("%d", &born);
+                        
+                            //Doing the operations.
+                            age = year - born;
+                        
+                            //Print the results.
+                            printf("\nIn %d you are: %d years.\n", year, age);
+                            return 0;
+                        }
+                    </code></pre>
+                    <button class="copy-btn">Copiar</button>
+                </div>
+                <p><b>7. Preguntar al usuario para que introduzca por teclado los años de su madre, su padre y los suyos, e imprimir el total de años vividos por los tres:</b></p>
+                <div class="code-container">
+                    <pre><code class="code">
+                        #include < stdio.h>
+
+                        int main (void)
+                        {
+                            int age1; //Variable of the age of his mother.
+                            int age2; //Variable of the age of his father.
+                            int age3; //Variable of his age.
+                            int totalAges; //Storage variable of how much time have lived them.
+                        
+                            //Answer the two questions.
+                            printf("\nHow old is your mother? : ");
+                            scanf("%d", &age1);
+                            printf("How old is your father? : ");
+                            scanf("%d", &age2);
+                            printf("How old are you? : ");
+                            scanf("%d", &age3);
+                        
+                            //Doing the operations.
+                            totalAges = age1 + age2 + age3;
+                        
+                            //Print the results.
+                            printf("\nThe total years lived by the three of them is: %d years.\n", totalAges);
+                            return 0;
+                        }
+                    </code></pre>
+                    <button class="copy-btn">Copiar</button>
+                </div>
+                <p><b>8. Introducir por teclado dos números (x e y) como variables enteras e imprimir sus valores antes de intercambiarlos.
+                    Luego, intercambiar sus valores para que <i>y</i> se convierta en <i>x</i> y <i>x</i> se convierta en <i>y</i>.
+                    Por último, imprimir sus valores en la pantalla:</b>
+                </p>
+                <img src="../img/Swap_Digits.png"/>
+                <br>
+                <br>
+                <div class="code-container">
+                    <pre><code class="code">
+                        #include < stdio.h>
+
+                        int main (void)
+                        {
+                            //Variables.
+                            int x; //Variable of the first digit.
+                            int y; //Variable of the second digit.
+                            int aux; //Storage variable used by the Bubble Method, as auxiliar.
+                        
+                            //Answer the two questions.
+                            printf("\nWrite the first digit (between 0 to 9): x = ");
+                            scanf("%d", &x);
+                            while((x<0) || (x>9))
+                            {
+                                printf("\tYou have to introduce a number in the first digit between 0 to 9.\n");
+                                printf("Write the first digit (between 0 to 9): x = ");
+                                scanf("%d", &x);
+                            }
+                            printf("Write the second digit (between 0 to 9): y = ");
+                            scanf("%d", &y);
+                            while((y<0) || (y>9))
+                            {
+                                printf("\tYou have to introduce a number in the second digit between 0 to 9.\n");
+                                printf("Write the second digit (between 0 to 9): y = ");
+                                scanf("%d", &y);
+                            }
+                        
+                            //The digits and the number before the swap.
+                            printf("\nBefore applied the Bubble Method: x = %d and y = %d", x, y);
+                            printf("\nAnd the number together is xy = %d%d\n", x, y);
+                        
+                            //Doing the Bubble Method.
+                            aux = x;
+                            x = y;
+                            y = aux;
+                        
+                            //The digits and the number after the swap.
+                            printf("\nAfter applied the Bubble Method: x = %d and y = %d", x, y);
+                            printf("\nAnd the number together is xy = %d%d\n", x, y);
+                            return 0;
+                        }
+                    </code></pre>
+                    <button class="copy-btn">Copiar</button>
+                </div>
+                <p><b>9. Introducir por teclado dos números complejos representados por sus partes reales e imaginarias (ai+b y ci+d).
+                    Calcular e imprimir el resultado de sumar, restar y multiplicar ambos números:</b>
+                </p>
+                <div class="code-container">
+                    <pre><code class="code">
+                        #include < stdio.h>
+
+                        int main (void)
+                        {
+                            //Variables.
+                            int a; //Variable of the real part of the first complex number.
+                            int b; //Variable of the imaginary part of the first complex number.
+                            int c; //Variable of the real part of the second complex number.
+                            int d; //Variable of the imaginary part of the second complex number.
+                        
+                            //Answer the two questions.
+                            printf("\nWrite the real part of the first complex number: a = ");
+                            scanf("%d", &a);
+                            printf("Write the imaginary part of the first complex number: b = ");
+                            scanf("%d", &b);
+                            printf("\nWrite the real part of the second complex number: c = ");
+                            scanf("%d", &c);
+                            printf("Write the imaginary part of the second complex number: d = ");
+                            scanf("%d", &d);
+                        
+                            //Printing the first complex number.
+                            printf("\nFirst complex number = %d + i(%d)", a, b);
+                            //Printing the second complex number.
+                            printf("\nSecond complex number = %d + i(%d)", c, d);
+                        
+                            //Doing the adding of these complex numbers.
+                            int add_real = a + c;
+                            int add_img = b + d;
+                            //Doing the subtracting of these complex numbers.
+                            int sub_real = a - c;
+                            int sub_img = b - d;
+                            //Doing the multiplying of these complex numbers.
+                            int mult_real = a * c;
+                            int mult_img = b * d;
+                        
+                            //The result of the adding.
+                            printf("\nThe final complex number after adding is = %d + i(%d)", add_real, add_img);
+                            //The result of the subtracting.
+                            printf("\nThe final complex number after subtracting is = %d + i(%d)", sub_real, sub_img);
+                            //The result of the multiplying.
+                            printf("\nThe final complex number after multiplying is = %d + i(%d)", mult_real, mult_img);
+                            return 0;
+                        }
+                    </code></pre>
+                    <button class="copy-btn">Copiar</button>
+                </div>
+                <p><b>10. Introducir por teclado: el precio de hacer una fotografía en una tienda de fotografías y el número de fotografías a realizar.
+                    Por último, imprimir el precio total de esas fotografías:</b>
+                </p>
+                <div class="code-container">
+                    <pre><code class="code">
+                        #include < stdio.h>
+
+                        int main (void)
+                        {
+                            //Variables.
+                            int OnePhoto; //Variable of the price of 1 photo.
+                            int NumPhoto; //Variable of the number of photos that the guest wants.
+                            int Total_Price; //Variable of the price of all photos.
+                        
+                            //Dialogue between the cashier of the Photo Studio and the Guest.
+                            printf("\n\n\n       Milotovic Photo Studio         \n");
+                            printf("\nCashier: Welcome to the best Photo-Store in Novi Sad!");
+                            printf("\nGuest: Hi! Could you tell me the price of making a photograph here?");
+                            printf("\nCashier: Yes, of course. The price (in euros) of making a photograph here is: ");
+                            scanf("%d", &OnePhoto);
+                            printf("Guest: Nice! So, I want to make this amount of photos: ");
+                            scanf("%d", &NumPhoto);
+                        
+                            //Doing the operations of the total prices of all photos.
+                            Total_Price = OnePhoto * NumPhoto;
+                        
+                            //Continue the dialogue.
+                            printf("Cashier: Perfect! So, The total price of all is: %d euros.", Total_Price);
+                            printf("\nCashier: Do you want to pay by cash or by card?");
+                            printf("\nGuest: Card, please. I never carry money in my wallet.\n");
+                            return 0;
+                        }
+                    </code></pre>
+                    <button class="copy-btn">Copiar</button>
+                </div>
+                <p><b>11. Calcular la cantidad de comida que se necesita para alimentar a un gato en una semana,
+                    si sabemos que el gato come porciones de 80 g dos veces al día. Calcular también el precio de la comida para gatos de un mes (30 días),
+                    si 10 g de comida para gatos son 3 dinares (moneda de Serbia):</b>
+                </p>
+                <div class="code-container">
+                    <pre><code class="code">
+                        #include < stdio.h>
+
+                        int main (void)
+                        {
+                            //Variables.
+                            int moneyOneWeek; //Variable of the price of feeding a cat for 1 week.
+                            int gramesForOneDay; //Variable of the grames that the cat need for feeding for 1 day.
+                            int gramesForOneWeek; //Variable of the grames that the cat need for feeding for 1 week.
+                            int gramesForOneMonth; //Variable of the grames that the cat need for feeding for 1 month.
+                            int oneWeek = 7; //Variable of the days of one week = 7.
+                            int oneMonth = 30; //Variable of the days of one month = 30.
+                            int gramesFood = 10; //Variable of the grames that you can buy in the market with 3 din.
+                            int priceFood = 3; //Variable of the price that 10 g of cat food cost.
+                            int priceForOneWeek; //Variable of the price of the cat food for 1 week = 7 days.
+                            int priceForOneMonth; //Variable of the price of the cat food for 1 month = 30 days.
+                        
+                            //Dialogue between the cashier of the Pet Shop and the Guest.
+                            printf("\n\n\n       Martin PET SHOP         \n");
+                            printf("\nCashier: Welcome to the best Pet Shop in Novi Sad!");
+                            printf("\nGuest: Hi! I need to feed my cat for a week.");
+                            printf("\nGuest: It needs the following grames per day of its own food: "); //The user can write whatever he/she wants, but 160 g is by default.
+                            scanf("%d", &gramesForOneDay);
+                            printf("Guest: Please, can you help me?");
+                        
+                            //Doing the operations of how much cost to feed the cat for a week.
+                            gramesForOneWeek = gramesForOneDay * oneWeek;
+                            priceForOneWeek = (gramesForOneWeek * priceFood) / gramesFood;
+                        
+                            //Continue the dialogue.
+                            printf("\nCashier: Yes, I can. The price of feeding your cat for a week is: %d din per week.", priceForOneWeek);
+                            printf("\nGuest: Thanks so much! And, which will the price be for a month?");
+                        
+                            //Doing the operations of how much cost to feed the cat for a month.
+                            gramesForOneMonth = gramesForOneDay * oneMonth;
+                            priceForOneMonth = (gramesForOneMonth * priceFood) / gramesFood;
+                        
+                            //Continue the dialogue.
+                            printf("\nCashier: The price of feeding your cat for a month is: %d din per month.", priceForOneMonth);
+                            printf("\nGuest: Thanks so much for your attention! Nice! Here it is the money. See you!");
+                            printf("\nCashier: See you soon! Thanks for buying in our Pet Shop!");
+                            return 0;
+                        }
+                    </code></pre>
+                    <button class="copy-btn">Copiar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Category Start -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white text-center">
+        <br>
+        <br>
+        <p><i class="fa fa-map-marker-alt mr-2"></i>Ubicación: Universidad de Novi Sad - Dr Zorana Đinđića 1, Novi Sad 21000, Vojvodina, Serbia</p>
+        <p><i class="fa fa-phone-alt mr-2"></i>Teléfono: +381 21 485 2056</p>
+        <p><i class="fa fa-envelope mr-2"></i>Correo electrónico: iro.ftn@uns.ac.rs</p>
+        <div class="justify-content-start text-center">
+            <a class="btn btn-outline-light btn-square mr-2" href="https://twitter.com/RektoratUNS" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" width="24" height="24" fill="currentColor">
+                    <path d="M28.15 0H21.5l-3.9 7.5L13.6 0H7.35l6.7 12.3L6 24.25h6.65L18 17.5l5.35 6.75h6.85L22.95 12.3 28.15 0z"/>
+                </svg>                  
+            </a>
+            <a class="btn btn-outline-light btn-square mr-2" href="https://www.facebook.com/UniverzitetuNS" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a class="btn btn-outline-light btn-square mr-2" href="https://www.linkedin.com/school/univerzitet-u-novom-sadu/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a class="btn btn-outline-light btn-square" href="https://www.youtube.com/user/univerzitetnovisad" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+        <br>
+        <br>
+        <p class="m-0 text-white" style="text-align: center;">Copyright &copy; 2023-2030 <a class="fweight-700" href="../../../../index.html">My Professional WEB</a> - Todos los derechos reservados</p>
+        <br>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="../lib/easing/easing.min.js"></script>
+    <script src="../lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="../js/main.js"></script>
+    <script src="../js/copyCode.js"></script>
+
+    <!-- Google Traductor -->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+           new google.translate.TranslateElement({pageLanguage: 'es', includedLanguages: 'ca,eu,gl,en,fr,it,pt,de,ar,ru,hi,sr,tr,ja', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, autoDisplay: false}, 'google_translate_element');
+                }
+    </script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>
