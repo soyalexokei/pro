@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>My Professional WEB</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <!-- Favicon -->
+    <link rel="icon" href="../../../../favicon.ico">
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Libraries Stylesheet -->
+    <link href="../lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="../css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 pb-5 mb-5">
+        <div id="header-carousel" class="carousel slide carousel-fade" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" style="min-height: 300px;">
+                    <img class="position-relative w-100" src="../img/portada.png" style="min-height: 300px; object-fit: cover;">
+                    <div class="carousel-caption d-flex align-items-center justify-content-center">
+                        <div class="p-5" style="width: 100%; max-width: 900px;">
+                            <h1 class="display-3 text-white mb-md-4">Estructuras</h1>
+                            <br>
+                            <h2 style="text-align: center;"><a href="../index.html">Atrás</a></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+    <!-- SECCIÓN TRADUCTOR GOOGLE -->
+    <div id="google_translate_element" class="google"></div>
+    <!-- FIN DE LA SECCIÓN TRADUCTOR GOOGLE -->
+
+    <!-- Category Start -->
+    <div class="container-fluid py-5">
+        <div class="container pt-5 pb-3">
+            <div class="text-justify mb-5">
+                <h1>Tema 9: Estructuras</h1>
+                <br>
+                <br>
+                <p><b>
+                    1. Crear un programa para las evidencias de los estudiantes (matriz con un máximo de 50 estudiantes), donde cada estudiante tenga los siguientes campos:<br>
+                    &emsp; C1) Número de índice (máximo 10 caracteres).<br>
+                    &emsp; C2) Nombre (máximo 10 caracteres).<br>
+                    &emsp; C3) Apellido (máximo 10 caracteres).<br>
+                    &emsp; C4) Calificación promedio.<br><br>
+                    Opciones del programa:<br>
+                    &emsp; Op1) Ingresar los datos de un nuevo estudiante.<br>
+                    &emsp; Op2) Mostrar los datos de todos los estudiantes ingresados.<br>
+                    &emsp; Op3) Buscar un estudiante con el número de índice solicitado.<br>
+                    &emsp; Op4) Cambiar la calificación del estudiante con el número de índice solicitado.<br>
+                    &emsp; Op5) Borrar un estudiante con el número de índice solicitado.<br>
+                    &emsp; Op6) Calificación promedio de todos los estudiantes.<br>
+                    &emsp; Op7) Ordenar a los estudiantes por número de índice (ascendente, ordenación por selección).<br>
+                    &emsp; Op8) Ordenar a los estudiantes por calificación promedio (descendente, ordenación por burbuja).<br>
+                    &emsp; Op0) Fin del programa.
+                </b></p>
+                <div class="code-container">
+                    <pre><code class="code">
+                        #include < stdio.h>
+                        #include < string.h>
+                        #define _CRT_SECURE_NO_WARNINGS
+
+                        //To define ctes....
+                        #define MAX_CHARACTERS 11
+                        #define MAX_STUDENT 50
+
+                        //To define the struct of the student evidence...
+                        typedef struct{
+                            char name[MAX_CHARACTERS];
+                            char surname[MAX_CHARACTERS];
+                            int grade;
+                            int id;
+                        }fourESO;
+
+                        //Headers of the Functions and Procedures...
+                        void newStudentDATA();
+                        void displayStudentDATA();
+                        void searchStudent();
+                        void changeGrade();
+                        void deleteData();
+                        float averageGrade();
+                        void sortIndex();
+                        void sortGrade();
+
+                        //The main program...
+                        void main()
+                        {
+                            //To declare variables...
+                            int option, contStudent = 0;
+                            float average = 0.0;
+
+                            //To declare the struct...
+                            fourESO student[MAX_STUDENT];
+
+                            //Start the Program....
+                            printf("\n");
+                            do{
+                                printf("\n");
+                                printf("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\n");
+                                printf("$$$$$$$$$                  STUDENT EVIDENCE                   $$$$$$$$$\n");
+                                printf("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\n");
+                                printf("$             MENU OF THE PROGRAM:                                    $\n");
+                                printf("$                                                                     $\n");
+                                printf("$ 1. Enter the data for a new student.                                $\n");
+                                printf("$ 2. Display the data of all entered students.                        $\n");
+                                printf("$ 3. Search for a student with requested index number.                $\n");
+                                printf("$ 4. Change the grade of the student with requested index number.     $\n");
+                                printf("$ 5. Erase a student with requested index number.                     $\n");
+                                printf("$ 6. Average grade of all students.                                   $\n");
+                                printf("$ 7. Sort the students by index number (ascending, selection sort).   $\n");
+                                printf("$ 8. Sort the students by average grade (descending, bubble sort).    $\n");
+                                printf("$ 0. End of program.                                                  $\n");
+                                printf("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\n");
+                                printf("Which option do you want to choose? : ");
+                                scanf("%d", &option);
+                                printf("\n");
+                                if(option<0 || option>8)
+                                {
+                                    printf("\nPlease, introduce a correct option!\n\n");
+                                }
+                                else
+                                {
+                                    switch(option)
+                                    {
+                                        case 1:
+                                            newStudentDATA(student, &contStudent);
+                                            break;
+                                        case 2:
+                                            displayStudentDATA(student, &contStudent);
+                                            break;
+                                        case 3:
+                                            searchStudent(student, &contStudent);
+                                            break;
+                                        case 4:
+                                            changeGrade(student, &contStudent);
+                                            break;
+                                        case 5:
+                                            deleteData(student, &contStudent);
+                                            break;
+                                        case 6:
+                                            average = averageGrade(student, &contStudent);
+                                            printf("The Average Score of all Students is: %g", average);
+                                            break;
+                                        case 7:
+                                            sortIndex(student, &contStudent);
+                                            break;
+                                        case 8:
+                                            sortGrade(student, &contStudent);
+                                            break;
+                                        default:
+                                            printf("\nEND OF THE PROGRAM!!!");
+                                            printf("\nGOOD BYE!!!\n\n");
+                                    }
+                                }
+
+                            }while(option != 0);
+                        }
+
+                        //Functions and Procedures...
+                        void newStudentDATA(fourESO student[], int *cont)
+                        {
+                            //To declare variables of the function only.
+                            int score;
+
+                            //Main part of the function.
+                            printf("Introduce the name of the student %d: ", *cont+1);
+                            fflush(stdin);
+                            fgets(student[*cont].name,MAX_CHARACTERS,stdin);
+                            printf("Introduce the surname of the student %d: ", *cont+1);
+                            fflush(stdin);
+                            fgets(student[*cont].surname,MAX_CHARACTERS,stdin);
+                            do{
+                                printf("Introduce the final score of the student %d: ", *cont+1);
+                                scanf("%d", &student[*cont].grade);
+                                score = student[*cont].grade;
+                                if(score < 0 || score > 10)
+                                {
+                                    printf("\n\nPlease, introduce a correct score, between 0 and 10!\n\n");
+                                }
+
+                            }while(score < 0 || score > 10);
+                            printf("Introduce the ID Number of the student %d: ", *cont+1);
+                            scanf("%d", &student[*cont].id);
+                            *cont += 1;
+                            displayStudentDATA(student, cont);
+                        }
+
+                        void displayStudentDATA(fourESO student[], int *cont)
+                        {
+                            //To declare variables of the function only.
+                            int i;
+
+                            //Main part of the function.
+                            printf("");
+                            printf("\n$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\n");
+                            printf("$$$$$$$$$     DATA OF OUR STUDENTS     $$$$$$$$$\n");
+                            printf("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\n\n");
+                            for(i=0; i<*cont; i++)
+                            {
+                                printf("\t\tStudent %d\n", i+1);
+                                printf("Name: %s", student[i].name);
+                                printf("Surname: %s", student[i].surname);
+                                printf("ID Number: %d\n", student[i].id);
+                                printf("Final Score: %d - ", student[i].grade);
+                                if(student[i].grade >= 5 && student[i].grade <= 6)
+                                {
+                                    printf("GRADE C.\n\n");
+                                }
+                                else if(student[i].grade == 7)
+                                {
+                                    printf("GRADE B-.\n\n");
+                                }
+                                else if(student[i].grade == 8)
+                                {
+                                    printf("GRADE B+.\n\n");
+                                }
+                                else if(student[i].grade == 9)
+                                {
+                                    printf("GRADE A-.\n\n");
+                                }
+                                else if(student[i].grade == 10)
+                                {
+                                    printf("GRADE A+.\n\n");
+                                }
+                                else
+                                {
+                                    printf("FAILED.\n\n");
+                                }
+                            }
+                        }
+
+                        void searchStudent(fourESO student[], int *cont)
+                        {
+                            //To declare variables of the function only.
+                            int ident, i, found = 0;
+
+                            //Main part of the function.
+                            printf("Introduce the ID Number of the student that you want to search: ");
+                            scanf("%d", &ident);
+                            for(i=0; i<*cont; i++)
+                            {
+                                if(student[i].id == ident)
+                                {
+                                    found = 1;
+                                    printf("\t\tStudent %d\n", i+1);
+                                    printf("Name: %s", student[i].name);
+                                    printf("Surname: %s", student[i].surname);
+                                    printf("ID Number: %d\n", student[i].id);
+                                    printf("Final Score: %d - ", student[i].grade);
+                                    if(student[i].grade >= 5 && student[i].grade <= 6)
+                                    {
+                                        printf("GRADE C.\n\n");
+                                    }
+                                    else if(student[i].grade == 7)
+                                    {
+                                        printf("GRADE B-.\n\n");
+                                    }
+                                    else if(student[i].grade == 8)
+                                    {
+                                        printf("GRADE B+.\n\n");
+                                    }
+                                    else if(student[i].grade == 9)
+                                    {
+                                        printf("GRADE A-.\n\n");
+                                    }
+                                    else if(student[i].grade == 10)
+                                    {
+                                        printf("GRADE A+.\n\n");
+                                    }
+                                    else
+                                    {
+                                        printf("FAILED.\n\n");
+                                    }
+                                }
+                            }
+                            if(found == 0)
+                            {
+                                printf("\n\nNOT FOUND!!!\n\n");
+                            }
+                        }
+
+                        void changeGrade(fourESO student[], int *cont)
+                        {
+                            //To declare variables of the function only.
+                            int ident, i, found = 0;
+
+                            //Main part of the function.
+                            printf("Introduce the ID Number of the student that you want to change the Final Score: ");
+                            scanf("%d", &ident);
+                            for(i=0; i<*cont; i++)
+                            {
+                                if(student[i].id == ident)
+                                {
+                                    found = 1;
+                                    do{
+                                        printf("Introduce the final score of the student %d: ", i+1);
+                                        scanf("%d", &student[i].grade);
+                                        if(student[i].grade < 0 || student[i].grade > 10)
+                                        {
+                                            printf("\n\nPlease, introduce a correct score, between 0 and 10!\n\n");
+                                        }
+
+                                    }while(student[i].grade < 0 || student[i].grade > 10);
+                                    displayStudentDATA(student, cont);
+                                }
+                            }
+                            if(found == 0)
+                            {
+                                printf("\n\nNOT FOUND!!!\n\n");
+                            }
+                        }
+
+                        void deleteData(fourESO student[], int *cont)
+                        {
+                            //To declare variables of the function only.
+                            int ident, i, j, found = 0;
+
+                            //Main part of the function.
+                            printf("Introduce the ID Number of the student that you want to erase: ");
+                            scanf("%d", &ident);
+                            for(i=0; i<*cont; i++)
+                            {
+                                if(student[i].id == ident)
+                                {
+                                    found = 1;
+                                    if(student[i].id != student[*cont-1].id)
+                                    {
+                                        for(j=i; j<*cont-1; j++)
+                                        {
+                                            student[j] = student[j+1];
+                                        }
+                                    }
+                                    *cont -= 1;
+                                    displayStudentDATA(student, cont);
+                                }
+                            }
+                            if(found == 0)
+                            {
+                                printf("\n\nNOT FOUND!!!\n\n");
+                            }
+                        }
+
+                        float averageGrade(fourESO student[], int *cont)
+                        {
+                            //To declare variables of the function only.
+                            int i;
+                            float average, sum = 0.0, aux, resultAvg;
+
+                            //Main part of the function.
+                            for(i=0; i<*cont; i++)
+                            {
+                                average = (float)student[i].grade;
+                                sum += average;
+                            }
+                            aux = (float)*cont;
+                            resultAvg = sum / aux;
+                            return resultAvg;
+                        }
+
+                        void sortIndex(fourESO student[], int *cont)
+                        {
+                            //To declare variables of the function only.
+                            int i, turns, aux;
+                            char auxStr[MAX_CHARACTERS];
+
+                            //Main part of the function.
+                            for(turns=0; turns<*cont; turns++)
+                            {
+                                for(i=0; i<*cont-1; i++)
+                                {
+                                    if(student[i].id > student[i+1].id)
+                                    {
+                                        //Bubble method of name.
+                                        strcpy(auxStr, student[i].name);
+                                        strcpy(student[i].name,student[i+1].name);
+                                        strcpy(student[i+1].name, auxStr);
+                                        //Bubble method of surname.
+                                        strcpy(auxStr, student[i].surname);
+                                        strcpy(student[i].surname,student[i+1].surname);
+                                        strcpy(student[i+1].surname, auxStr);
+                                        //Bubble method of grade.
+                                        aux = student[i].grade;
+                                        student[i].grade = student[i+1].grade;
+                                        student[i+1].grade = aux;
+                                        //Bubble method of id.
+                                        aux = student[i].id;
+                                        student[i].id = student[i+1].id;
+                                        student[i+1].id = aux;
+                                    }
+                                }
+                            }
+                            displayStudentDATA(student, cont);
+                        }
+
+                        void sortGrade(fourESO student[], int *cont)
+                        {
+                            //To declare variables of the function only.
+                            int i, turns, aux;
+                            char auxStr[MAX_CHARACTERS];
+
+                            //Main part of the function.
+                            for(turns=0; turns<*cont; turns++)
+                            {
+                                for(i=0; i<*cont-1; i++)
+                                {
+                                    if(student[i].grade < student[i+1].grade)
+                                    {
+                                        //Bubble method of name.
+                                        strcpy(auxStr, student[i].name);
+                                        strcpy(student[i].name,student[i+1].name);
+                                        strcpy(student[i+1].name, auxStr);
+                                        //Bubble method of surname.
+                                        strcpy(auxStr, student[i].surname);
+                                        strcpy(student[i].surname,student[i+1].surname);
+                                        strcpy(student[i+1].surname, auxStr);
+                                        //Bubble method of grade.
+                                        aux = student[i].grade;
+                                        student[i].grade = student[i+1].grade;
+                                        student[i+1].grade = aux;
+                                        //Bubble method of id.
+                                        aux = student[i].id;
+                                        student[i].id = student[i+1].id;
+                                        student[i+1].id = aux;
+                                    }
+                                }
+                            }
+                            displayStudentDATA(student, cont);
+                        }
+                    </code></pre>
+                    <button class="copy-btn">Copiar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Category Start -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white text-center">
+        <br>
+        <br>
+        <p><i class="fa fa-map-marker-alt mr-2"></i>Ubicación: Universidad de Novi Sad - Dr Zorana Đinđića 1, Novi Sad 21000, Vojvodina, Serbia</p>
+        <p><i class="fa fa-phone-alt mr-2"></i>Teléfono: +381 21 485 2056</p>
+        <p><i class="fa fa-envelope mr-2"></i>Correo electrónico: iro.ftn@uns.ac.rs</p>
+        <div class="justify-content-start text-center">
+            <a class="btn btn-outline-light btn-square mr-2" href="https://twitter.com/RektoratUNS" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" width="24" height="24" fill="currentColor">
+                    <path d="M28.15 0H21.5l-3.9 7.5L13.6 0H7.35l6.7 12.3L6 24.25h6.65L18 17.5l5.35 6.75h6.85L22.95 12.3 28.15 0z"/>
+                </svg>                  
+            </a>
+            <a class="btn btn-outline-light btn-square mr-2" href="https://www.facebook.com/UniverzitetuNS" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a class="btn btn-outline-light btn-square mr-2" href="https://www.linkedin.com/school/univerzitet-u-novom-sadu/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a class="btn btn-outline-light btn-square" href="https://www.youtube.com/user/univerzitetnovisad" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+        <br>
+        <br>
+        <p class="m-0 text-white" style="text-align: center;">Copyright &copy; 2023-2030 <a class="fweight-700" href="../../../../index.html">My Professional WEB</a> - Todos los derechos reservados</p>
+        <br>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="../lib/easing/easing.min.js"></script>
+    <script src="../lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="../js/main.js"></script>
+    <script src="../js/copyCode.js"></script>
+
+    <!-- Google Traductor -->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+           new google.translate.TranslateElement({pageLanguage: 'es', includedLanguages: 'ca,eu,gl,en,fr,it,pt,de,ar,ru,hi,sr,tr,ja', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, autoDisplay: false}, 'google_translate_element');
+                }
+    </script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>

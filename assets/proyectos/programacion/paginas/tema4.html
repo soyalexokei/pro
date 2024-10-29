@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>My Professional WEB</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <!-- Favicon -->
+    <link rel="icon" href="../../../../favicon.ico">
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Libraries Stylesheet -->
+    <link href="../lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="../css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 pb-5 mb-5">
+        <div id="header-carousel" class="carousel slide carousel-fade" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" style="min-height: 300px;">
+                    <img class="position-relative w-100" src="../img/portada.png" style="min-height: 300px; object-fit: cover;">
+                    <div class="carousel-caption d-flex align-items-center justify-content-center">
+                        <div class="p-5" style="width: 100%; max-width: 900px;">
+                            <h1 class="display-3 text-white mb-md-4">Condiciones</h1>
+                            <br>
+                            <h2 style="text-align: center;"><a href="../index.html">Atrás</a></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+    <!-- SECCIÓN TRADUCTOR GOOGLE -->
+    <div id="google_translate_element" class="google"></div>
+    <!-- FIN DE LA SECCIÓN TRADUCTOR GOOGLE -->
+
+    <!-- Category Start -->
+    <div class="container-fluid py-5">
+        <div class="container pt-5 pb-3">
+            <div class="text-justify mb-5">
+                <h1>Tema 4: Condiciones</h1>
+                <br>
+                <br>
+                <p><b>1. Crear un programa que calcule el valor absoluto de un número, pidiendo al usuario un número y el programa imprimirá su valor absoluto:</b></p>
+                <div class="code-container">
+                    <pre><code class="code">
+                        #include < stdio.h>
+
+                        void main()
+                        {
+                            //To declare the variable of.
+                            int num;
+
+                            //Start the program.....
+                            printf("\n\n$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\n");
+                            printf("$$$$$$$$$$$ ABSOLUTE VALUE $$$$$$$$$$$$\n");
+                            printf("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\n");
+                            printf("Please, introduce a number: ");
+                            scanf("%d", &num);
+
+                            //Doing the conditions and printing the result.
+                            if(num < 0)
+                            {
+                                printf("\n\nYour number is: %d\n\n", -num);
+                            }
+                            else
+                            {
+                                printf("\n\nYour number is: %d\n\n", num);
+                            }
+                        }
+                    </code></pre>
+                    <button class="copy-btn">Copiar</button>
+                </div>
+                <p><b>2. Crear un programa que verifique si el carácter que el usuario ingresó es una letra minúscula, mayúscula, carácter especial o un número:</b></p>
+                <div class="code-container">
+                    <pre><code class="code">
+                        #include < stdio.h>
+
+                        //To declare the consts of ASCII Table.
+                        #define FIRST_CL 'A'
+                        #define LAST_CL 'Z'
+                        #define FIRST_LL 'a'
+                        #define LAST_LL 'z'
+                        #define MIN_NUM '0'
+                        #define MAX_NUM '9'
+                        
+                        void main()
+                        {
+                            //To declare the variable of the character that you enter by the keyboard.
+                            char yourChar;
+                        
+                            //Start the program.....
+                            printf("\n\n$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\n");
+                            printf("$$$$$$$$$$$ TYPE OF CHARACTER $$$$$$$$$$\n\n");
+                            printf("Please, introduce whatever character you want: ");
+                            scanf("%c", &yourChar);
+                        
+                            //Doing the conditions and print the results.
+                            if((yourChar > FIRST_LL) && (yourChar < LAST_LL))
+                            {
+                                //Print that the solution is a lower-case letter.
+                                printf("\n\nYour character %c is a: lower-case letter\n\n", yourChar);
+                            }
+                            else if((yourChar > FIRST_CL) && (yourChar < LAST_CL))
+                            {
+                                //Print that the solution is a capital letter.
+                                printf("\n\nYour character %c is a: capital letter\n\n", yourChar);
+                            }
+                            else if((yourChar > MIN_NUM) && (yourChar < MAX_NUM))
+                            {
+                                //Print that the solution is a number.
+                                printf("\n\nYour character %c is a: number\n\n", yourChar);
+                            }
+                            else
+                            {
+                                //Print that the solution is a special character.
+                                printf("\n\nYour character %c is a: special character\n\n", yourChar);
+                            }
+                        }
+                    </code></pre>
+                    <button class="copy-btn">Copiar</button>
+                </div>
+                <p><b>3. Crear un programa que verifique si el año ingresado es bisiesto o año común. El año se ingresa como un entero:</b></p>
+                <div class="code-container">
+                    <pre><code class="code">
+                        #include < stdio.h>
+
+                        void main()
+                        {
+                            //To declare the variable of the year that you are going to enter.
+                            int typeYear;
+
+                            //Start the program.....
+                            printf("\n\n$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\n");
+                            printf("$$$$$$$$$$$ TYPE OF YEAR $$$$$$$$$$\n\n");
+                            printf("Please, introduce whatever year you want: ");
+                            scanf("%d", &typeYear);
+
+                            //Doing the conditions and print the results.
+                            if((typeYear % 4 == 0 && typeYear % 100 != 0) || (typeYear % 400 == 0))
+                            {
+                                //Print that the solution is leap year.
+                                printf("\n\nYour year %d is a leap year\n\n", typeYear);
+                            }
+                            else
+                            {
+                                //Print that the solution is a common year.
+                                printf("\n\nYour year %d is a common year, so it is not a leap year.\n\n", typeYear);
+                            }
+                        }
+                    </code></pre>
+                    <button class="copy-btn">Copiar</button>
+                </div>
+                <p><b>4. Crear un programa que verifique si la solución de la imagen es positiva o negativa y, si existe o no:</b></p>
+                <img src="../img/operacion.png"/>
+                <br>
+                <br>
+                <div class="code-container">
+                    <pre><code class="code">
+                        #include < stdio.h>
+
+                        void main()
+                        {
+                            //To declare the mystery variable, and a store variable.
+                            float x, sol;
+
+                            //Start the program.....
+                            printf("\n\n$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\n");
+                            printf("$$$$$$$$$$$ Resolve the ecuation $$$$$$$$$$\n");
+                            printf("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\n\n");
+                            printf("Please, introduce a number to obtain a solution: ");
+                            scanf("%f", &x);
+
+                            //Doing the conditions and print the results.
+                            sol = (x-5)*(x-3) / (x-2);
+
+                            if((x-2) == 0)
+                            {
+                                printf("\n\nThe solution of the equation does not exists.\n\n");
+                            }
+                            else if(sol < 0)
+                            {
+                                printf("\n\nThe solution of the equation is (-)negative.\n\n");
+                            }
+                            else
+                            {
+                                printf("\n\nThe solution of the equation is (+)positive.\n\n");
+                            }
+
+                        }
+                    </code></pre>
+                    <button class="copy-btn">Copiar</button>
+                </div>
+                <p><b>
+                    5. Crear un programa que calcule las soluciones de una ecuación cuadrática. El programa solicita parámetros para la ecuación ax2 + bx + cx = 0.
+                    Después, imprime el número de soluciones racionales e irracionales que haya y,
+                    por último, imprime las soluciones x1 y x2:
+                </b></p>
+                <div class="code-container">
+                    <pre><code class="code">
+                        #include < stdio.h>
+                        #include < math.h>
+
+                        void main()
+                        {
+                            //To declare the parameters a, b and c of the quadratic equation: ax2 + bx + c = 0.
+                            float a, b, c;
+                            //To declare the two solutions of the quadratic equation.
+                            float x1, x2;
+                        
+                            //Start the program.....
+                            printf("\n\n$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\n");
+                            printf("$$$$$$$$$$$ RESOLVE THE QUADRATIC EQUATION $$$$$$$$$$\n");
+                            printf("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\n");
+                            printf("Please, introduce a number for the parameter a: ");
+                            scanf("%f", &a);
+                            printf("Please, introduce a number for the parameter b: ");
+                            scanf("%f", &b);
+                            printf("Please, introduce a number for the parameter c: ");
+                            scanf("%f", &c);
+                        
+                            //Doing the conditions and print the results.
+                            x1 = (-b + sqrt(pow(b,2)-4*a*c))/2*a;
+                            x2 = (-b - sqrt(pow(b,2)-4*a*c))/2*a;
+                        
+                            if(a == 0 || b == 0 || c == 0)
+                            {
+                                printf("\n\nIn this case, it is not a quadratic equation.\n\n");
+                            }
+                            else
+                            {
+                                if(pow(b,2)-4*a*c < 0)
+                                {
+                                    printf("\n\nThe solution of the quadratic equation %gx^2 + (%g)x + (%g) = 0 is irrational.\n\n", a, b, c);
+                                }
+                                else
+                                {
+                                    if(x1 == x2)
+                                    {
+                                        printf("\n\nThe solution of the quadratic equation %gx^2 + (%g)x + (%g) = 0 is rational with 1 solution => x1 = x2 = %g\n\n", a, b, c, x1);
+                                    }
+                                    else
+                                    {
+                                        printf("\n\nThe solution of the quadratic equation %gx^2 + (%g)x + (%g) = 0 is rational with 2 solutions => x1 = %g and x2 = %g\n\n", a, b, c, x1, x2);
+                                    }
+                                }
+                            }
+                        }
+                    </code></pre>
+                    <button class="copy-btn">Copiar</button>
+                </div>
+                <p><b>
+                    6. Crear un programa para comprobar si un número es divisible por el segundo número. El usuario introduce ambos
+                    números. Luego, el programa realiza la comprobación e imprime si son divisibles. Si el usuario intenta dividir por cero, imprime un error:
+                </b></p>
+                <div class="code-container">
+                    <pre><code class="code">
+                        #include < stdio.h>
+                        #include < math.h>
+
+                        void main()
+                        {
+                            //To declare the dividend and the dividing variables.
+                            int dividend, dividing;
+                        
+                            //Start the program.....
+                            printf("\n\n$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\n");
+                            printf("$$$$$$$$$$$ DIVISIBLE NUMBERS $$$$$$$$$$$$$$$$$$$$$$$\n");
+                            printf("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\n");
+                            printf("Please, introduce the integer dividend: ");
+                            scanf("%d", &dividend);
+                            printf("Please, introduce the integer dividing: ");
+                            scanf("%d", &dividing);
+                        
+                            //Doing the conditions and print the results.
+                            if((dividing == 0) || (dividend == 0 && dividing == 0))
+                            {
+                                printf("\n\nSYNTAX ERROR!!!!!\n\n");
+                            }
+                            else
+                            {
+                                if(dividend % dividing == 0)
+                                {
+                                    printf("\n\nThe number %d is divisible between the number %d.\n\n", dividend, dividing);
+                                }
+                                else
+                                {
+                                    printf("\n\nThe number %d is NOT divisible between the number %d.\n\n", dividend, dividing);
+                                }
+                            }
+                        }
+                    </code></pre>
+                    <button class="copy-btn">Copiar</button>
+                </div>
+                <p><b>
+                    7. Crear un programa que imprima la calificación de un estudiante en función de su puntaje en el examen:<br>
+                    Entre 0 y 54 => El estudiante suspendió<br>
+                    Entre 55 y 64 => 6<br>
+                    Entre 65 y 74 => 7<br>
+                    Entre 75 y 84 => 8<br>
+                    Entre 85 y 94 => 9<br>
+                    Entre 95 y 100 => 10
+                </b></p>
+                <div class="code-container">
+                    <pre><code class="code">
+                        #include < stdio.h>
+
+                        void main()
+                        {
+                            //To declare the score of the student in a subject.
+                            int score;
+                        
+                            //Start the program.....
+                            printf("\n\n$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\n");
+                            printf("$$$$$$$$$$$ SUBJECT ASSESSMENT $$$$$$$$$$$$$$$$$$$$$$\n");
+                            printf("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\n");
+                            printf("Please, introduce the score, between 0 and 100, of the student in this subject: ");
+                            scanf("%d", &score);
+                        
+                            //Doing the conditions and print the results.
+                            if(score >= 0 && score <= 54)
+                            {
+                                printf("\n\nTHE FINAL SCORE OF THE STUDENT => FAILED\n\n");
+                            }
+                            else if(score >= 55 && score <= 64)
+                            {
+                                printf("\n\nTHE FINAL SCORE OF THE STUDENT => 6: Grade C\n\n");
+                            }
+                            else if(score >= 65 && score <= 74)
+                            {
+                                printf("\n\nTHE FINAL SCORE OF THE STUDENT => 7: Grade B-\n\n");
+                            }
+                            else if(score >= 75 && score <= 84)
+                            {
+                                printf("\n\nTHE FINAL SCORE OF THE STUDENT => 8: Grade B+\n\n");
+                            }
+                            else if(score >= 85 && score <= 94)
+                            {
+                                printf("\n\nTHE FINAL SCORE OF THE STUDENT => 9: Grade A-\n\n");
+                            }
+                            else if(score >= 95 && score <= 100)
+                            {
+                                printf("\n\nTHE FINAL SCORE OF THE STUDENT => 10: Grade A+\n\n");
+                            }
+                            else
+                            {
+                                printf("\n\nPLEASE, ENTER A VALIDATE NUMBER!!!\n\n");
+                            }
+                        }
+                    </code></pre>
+                    <button class="copy-btn">Copiar</button>
+                </div>
+                <p><b>8. Crear un programa que solicite al usuario que ingrese tres números. Luego, el programa imprime los tres números ordenados del menor a mayor:</b></p>
+                <div class="code-container">
+                    <pre><code class="code">
+                        #include < stdio.h>
+
+                        void main()
+                        {
+                            //To declare three variables by the three numbers that the user has to enter.
+                            int num1, num2, num3;
+                        
+                            //Start the program.....
+                            printf("\n\n$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\n");
+                            printf("$$$$$$$$$$$ SORTING OF NUMBERS $$$$$$$$$$$$$$$$$$$$$$\n");
+                            printf("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\n");
+                            printf("Please, introduce the first number: ");
+                            scanf("%d", &num1);
+                            printf("Please, introduce the second number: ");
+                            scanf("%d", &num2);
+                            printf("Please, introduce the third number: ");
+                            scanf("%d", &num3);
+                        
+                            //Doing the conditions and print the results.
+                            if(num1 < num2 && num1 < num3 && num2 < num3)
+                            {
+                                printf("\n\nSolution: %d < %d < %d\n\n", num1, num2, num3);
+                            }
+                            else if(num1 > num2 && num1 < num3)
+                            {
+                                printf("\n\nSolution: %d < %d < %d\n\n", num2, num1, num3);
+                            }
+                            else if(num1 > num2 && num1 > num3 && num2 < num3)
+                            {
+                                printf("\n\nSolution: %d < %d < %d\n\n", num2, num3, num1);
+                            }
+                            else if(num1 > num2 && num1 > num3 && num2 > num3)
+                            {
+                                printf("\n\nSolution: %d < %d < %d\n\n", num3, num2, num1);
+                            }
+                            else if(num1 < num2 && num1 > num3)
+                            {
+                                printf("\n\nSolution: %d < %d < %d\n\n", num3, num1, num2);
+                            }
+                        }
+                    </code></pre>
+                    <button class="copy-btn">Copiar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Category Start -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white text-center">
+        <br>
+        <br>
+        <p><i class="fa fa-map-marker-alt mr-2"></i>Ubicación: Universidad de Novi Sad - Dr Zorana Đinđića 1, Novi Sad 21000, Vojvodina, Serbia</p>
+        <p><i class="fa fa-phone-alt mr-2"></i>Teléfono: +381 21 485 2056</p>
+        <p><i class="fa fa-envelope mr-2"></i>Correo electrónico: iro.ftn@uns.ac.rs</p>
+        <div class="justify-content-start text-center">
+            <a class="btn btn-outline-light btn-square mr-2" href="https://twitter.com/RektoratUNS" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" width="24" height="24" fill="currentColor">
+                    <path d="M28.15 0H21.5l-3.9 7.5L13.6 0H7.35l6.7 12.3L6 24.25h6.65L18 17.5l5.35 6.75h6.85L22.95 12.3 28.15 0z"/>
+                </svg>                  
+            </a>
+            <a class="btn btn-outline-light btn-square mr-2" href="https://www.facebook.com/UniverzitetuNS" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a class="btn btn-outline-light btn-square mr-2" href="https://www.linkedin.com/school/univerzitet-u-novom-sadu/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a class="btn btn-outline-light btn-square" href="https://www.youtube.com/user/univerzitetnovisad" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+        <br>
+        <br>
+        <p class="m-0 text-white" style="text-align: center;">Copyright &copy; 2023-2030 <a class="fweight-700" href="../../../../index.html">My Professional WEB</a> - Todos los derechos reservados</p>
+        <br>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="../lib/easing/easing.min.js"></script>
+    <script src="../lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="../js/main.js"></script>
+    <script src="../js/copyCode.js"></script>
+
+    <!-- Google Traductor -->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+           new google.translate.TranslateElement({pageLanguage: 'es', includedLanguages: 'ca,eu,gl,en,fr,it,pt,de,ar,ru,hi,sr,tr,ja', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, autoDisplay: false}, 'google_translate_element');
+                }
+    </script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>

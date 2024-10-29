@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>My Professional WEB</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <!-- Favicon -->
+    <link rel="icon" href="../../../../favicon.ico">
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Libraries Stylesheet -->
+    <link href="../lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="../css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 pb-5 mb-5">
+        <div id="header-carousel" class="carousel slide carousel-fade" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" style="min-height: 300px;">
+                    <img class="position-relative w-100" src="../img/portada.png" style="min-height: 300px; object-fit: cover;">
+                    <div class="carousel-caption d-flex align-items-center justify-content-center">
+                        <div class="p-5" style="width: 100%; max-width: 900px;">
+                            <h1 class="display-3 text-white mb-md-4">Bucles</h1>
+                            <br>
+                            <h2 style="text-align: center;"><a href="../index.html">Atrás</a></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+    <!-- SECCIÓN TRADUCTOR GOOGLE -->
+    <div id="google_translate_element" class="google"></div>
+    <!-- FIN DE LA SECCIÓN TRADUCTOR GOOGLE -->
+
+    <!-- Category Start -->
+    <div class="container-fluid py-5">
+        <div class="container pt-5 pb-3">
+            <div class="text-justify mb-5">
+                <h1>Tema 5: Bucles</h1>
+                <br>
+                <br>
+                <p><b>1. Hacer un programa que, dependiendo del número entero ingresado (1 a 12), imprima el mes correspondiente:</b></p>
+                <div class="code-container">
+                    <pre><code class="code">
+                        #include < stdio.h>
+
+                        //To declare the consts of the first and last month.
+                        #define FIRST_MONTH 1
+                        #define LAST_MONTH 12
+                        
+                        void main()
+                        {
+                            //To declare the month variable.
+                            int month;
+                        
+                            //Start the program.....
+                            printf("\n\n$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\n");
+                            printf("$$$$$$$$$$$ MONTHS OF A YEAR $$$$$$$$$$$$$$$$$$$$$$$$\n");
+                            printf("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\n");
+                            printf("Please, introduce the number of the month that you want: ");
+                            scanf("%d", &month);
+                        
+                            if((month<FIRST_MONTH) || (month>LAST_MONTH))
+                            {
+                                printf("\n\nPLEASE, INTRODUCE A CORRECT NUMBER OF MONTH!!!!\n\n");
+                            }
+                            else
+                            {
+                                switch(month)
+                                {
+                                    case FIRST_MONTH:
+                                        printf("\n\nYour introduced month is: JANUARY.\n\n");
+                                        break;
+                                    case FIRST_MONTH+1:
+                                        printf("\n\nYour introduced month is: FEBRUARY.\n\n");
+                                        break;
+                                    case FIRST_MONTH+2:
+                                        printf("\n\nYour introduced month is: MARCH.\n\n");
+                                        break;
+                                    case FIRST_MONTH+3:
+                                        printf("\n\nYour introduced month is: APRIL.\n\n");
+                                        break;
+                                    case FIRST_MONTH+4:
+                                        printf("\n\nYour introduced month is: MAY.\n\n");
+                                        break;
+                                    case FIRST_MONTH+5:
+                                        printf("\n\nYour introduced month is: JUNE.\n\n");
+                                        break;
+                                    case LAST_MONTH-5:
+                                        printf("\n\nYour introduced month is: JULY\n\n");
+                                        break;
+                                    case LAST_MONTH-4:
+                                        printf("\n\nYour introduced month is: AUGUST.\n\n");
+                                        break;
+                                    case LAST_MONTH-3:
+                                        printf("\n\nYour introduced month is: SEPTEMBER.\n\n");
+                                        break;
+                                    case LAST_MONTH-2:
+                                        printf("\n\nYour introduced month is: OCTOBER\n\n");
+                                        break;
+                                    case LAST_MONTH-1:
+                                        printf("\n\nYour introduced month is: NOVEMBER.\n\n");
+                                        break;
+                                    default:
+                                        printf("\n\nYour introduced month is: DECEMBER.\n\n");
+                        
+                                }
+                            }
+                        }
+                    </code></pre>
+                    <button class="copy-btn">Copiar</button>
+                </div>
+                <p><b>2. Crear una calculadora que reciba como entrada dos números enteros, un carácter para elegir la operación (+, -, *, /) e imprima el resultado:</b></p>
+                <div class="code-container">
+                    <pre><code class="code">
+                        #include < stdio.h>
+
+                        void main()
+                        {
+                            //To declare the two operating variables, the operator variable and the result variable.
+                            int a, b, result;
+                            char op;
+                            //To declare a logical variable for repeating the process if the user has introduced something wrong.
+                            int logical = 1;
+                        
+                            //Start the program and to do the iteration....
+                            do
+                            {
+                                printf("\n\n$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\n");
+                                printf("$$$$$$$$$$$ CALCULATOR $$$$$$$$$$$$$$$$$$$$$$$$$$\n");
+                                printf("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\n");
+                                printf("Please, introduce the first operating: ");
+                                scanf("%d", &a);
+                                printf("Please, introduce the operator: ");
+                                scanf(" %c", &op);
+                                printf("Please, introduce the second operating: ");
+                                scanf("%d", &b);
+                                switch(op)
+                                {
+                                    case '+':
+                                        result = a + b;
+                                        logical = 1;
+                                        break;
+                                    case '-':
+                                        result = a - b;
+                                        logical = 1;
+                                        break;
+                                    case '*':
+                                        result = a * b;
+                                        logical = 1;
+                                        break;
+                                    case '/':
+                                        if(b == 0)
+                                        {
+                                            printf("\n\nSYNTAX SERBIAN ERROR!!!\n\n");
+                                            logical = 0;
+                                        }
+                                        else
+                                        {
+                                            result = a / b;
+                                            logical = 1;
+                                        }
+                                        break;
+                                    default:
+                                        printf("\n\nPLEASE, INTRODUCE A CORRECT OPERATOR!!!!\n\n");
+                                        logical = 0;
+                                }
+                            }while(logical == 0);
+                        
+                            //To print the solution.....
+                            printf("\n\n%d %c %d = %d\n\n", a, op, b, result);
+                        }
+                    </code></pre>
+                    <button class="copy-btn">Copiar</button>
+                </div>
+                <p><b>3. Hacer un programa que imprima todos los números del 1 al n:</b></p>
+                <div class="code-container">
+                    <pre><code class="code">
+                        #include < stdio.h>
+
+                        void main()
+                        {
+                            //To declare the final number variable.
+                            int num;
+                            //To declare the counter i variable.
+                            int i;
+                        
+                            //Start the program....
+                            printf("\n\n$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\n");
+                            printf("$$$$$$$$$$$ PRINTING NUMBERS $$$$$$$$$$$$$$$$$$$$\n");
+                            printf("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\n");
+                            printf("Please, introduce your final number: ");
+                            scanf("%d", &num);
+                        
+                            //To do the iterations and to print the results....
+                            printf("\n\n");
+                            for(i=1; i<=num; i++)
+                            {
+                                printf(" %d",i);
+                            }
+                            printf("\n\n");
+                        }
+                    </code></pre>
+                    <button class="copy-btn">Copiar</button>
+                </div>
+                <p><b>4. Hacer un programa que imprima todos los números del 1 al n, que sean divisibles por 3:</b></p>
+                <div class="code-container">
+                    <pre><code class="code">
+                        #include < stdio.h>
+
+                        void main()
+                        {
+                            //To declare the final number variable.
+                            int num;
+                            //To declare the counter i variable.
+                            int i;
+                        
+                            //Start the program....
+                            printf("\n\n$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\n");
+                            printf("$$$$$$$$$$$ PRINTING NUMBERS % 3 $$$$$$$$$$$$$$$$\n");
+                            printf("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\n");
+                            printf("Please, introduce your final number: ");
+                            scanf("%d", &num);
+                        
+                            //To do the iterations and to print the results....
+                            printf("\n\n");
+                            for(i=1; i<=num; i++)
+                            {
+                                if(i % 3 == 0)
+                                {
+                                    printf(" %d",i);
+                                }
+                            }
+                            printf("\n\n");
+                        }
+                    </code></pre>
+                    <button class="copy-btn">Copiar</button>
+                </div>
+                <p><b>5. Crear un programa que sume todos los números del 1 al n:</b></p>
+                <div class="code-container">
+                    <pre><code class="code">
+                        #include < stdio.h>
+
+                        void main()
+                        {
+                            //To declare the final number variable.
+                            int num;
+                            //To declare the counter i variable and the sum to add every numbers from 1 until num.
+                            int i, sum = 0;
+
+                            //Start the program....
+                            printf("\n\n$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\n");
+                            printf("$$$$$$$$$$$ PRINTING THE TOTAL SUM $$$$$$$$$$$$$$\n");
+                            printf("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\n");
+                            printf("Please, introduce your final number: ");
+                            scanf("%d", &num);
+
+                            //To do the iteration and to add up every number....
+                            printf("\n\n");
+                            for(i=1; i<=num; i++)
+                            {
+                                sum += i;
+                            }
+
+                            //To print the results....
+                            printf("\n\nThe total of the sum is: %d\n\n",sum);
+                        }
+                    </code></pre>
+                    <button class="copy-btn">Copiar</button>
+                </div>
+                <p><b>6. Crear un programa que calcule el factorial de n:</b></p>
+                <div class="code-container">
+                    <pre><code class="code">
+                        #include < stdio.h>
+
+                        void main()
+                        {
+                            //To declare the entering final number variable.
+                            int num;
+                            //To declare the counter i variable, and the store variable.
+                            int i, store = 1;
+
+                            //Start the program....
+                            printf("\n\n$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\n");
+                            printf("$$$$$$$$$$$ PRINTING THE FACTORIAL $$$$$$$$$$$$$$\n");
+                            printf("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\n");
+                            printf("Please, introduce your factorial number: ");
+                            scanf("%d", &num);
+
+                            //To do the iteration for obtaining the factorial of num.
+                            printf("\n\n");
+                            for(i=2; i<=num; i++)
+                            {
+                                store *= i;
+                            }
+
+                            //To print the results....
+                            printf("\n\n%d! = %d\n\n", num, store);
+
+                        }
+                    </code></pre>
+                    <button class="copy-btn">Copiar</button>
+                </div>
+                <p><b>7. Crear un programa que imprima todos los números de tres dígitos que sean divisibles por el número que obtengas cuando extraigas el segundo dígito ((ABC)%(AC) == 0)</b></p>
+                <div class="code-container">
+                    <pre><code class="code">
+                        #include < stdio.h>
+
+                        void main()
+                        {
+                            //To declare the entering final number variable, and the digits one by one.
+                            int abc, a, b, c;
+                            //To declare the variable without the b digit.
+                            int ac;
+                        
+                            //Start the program....
+                            printf("\n\n");
+                            printf("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
+                            printf("\n");
+                            printf("$$$$$$$$$$$$$$ DIVISIBILITY $$$$$$$$$$$$$$");
+                            printf("\n");
+                            printf("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
+                            printf("\nPlease, introduce a number of 3 digits: ");
+                            scanf("%d", &abc);
+                        
+                            //To do the respective operations and iterations. And print the results....
+                            a = abc / 100;
+                            b = (abc /10) - (a * 10);
+                            c = abc - ((a * 100) + (b * 10));
+                            ac = (a * 10) + c;
+                        
+                            if(abc % ac == 0)
+                            {
+                                printf("\n\n%d is the number that is divisible by %d.\n\n", abc, ac);
+                            }
+                            else
+                            {
+                                printf("\n\nChoose other number of 3 digits, please!!\n\n");
+                            }
+                        }
+                    </code></pre>
+                    <button class="copy-btn">Copiar</button>
+                </div>
+                <p><b>
+                    8. Crear un programa que encuentre el máximo común divisor (MCD) y el mínimo común denominador (MCD)
+                    de dos números (a y b). El MCD se puede encontrar mediante el algoritmo de Euclides, mientras que el mínimo común denominador
+                    se encuentra mediante la fórmula:
+                </b></p>
+                <img src="../img/MCD.png"/>
+                <br>
+                <br>
+                <div class="code-container">
+                    <pre><code class="code">
+                        #include < stdio.h>
+
+                        void main()
+                        {
+                            //To declare two entering numbers as variables for obtaining the GCD and the LCD. Important to declare a auxiliar variable.
+                            int a, b, GCD, LCD, aux;
+                            //To declare reminded variables of a and b.
+                            int num1, num2;
+                        
+                            //Start the program....
+                            printf("\n\n");
+                            printf("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
+                            printf("\n");
+                            printf("$$$$$$$$$$$$$$$ GCD & LCD $$$$$$$$$$$$$$$$");
+                            printf("\n");
+                            printf("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
+                            printf("\nPlease, introduce the number A: ");
+                            scanf("%d", &a);
+                            printf("Please, introduce the number B: ");
+                            scanf("%d", &b);
+                        
+                            num1 = a;
+                            num2 = b;
+                        
+                            //To do the respective iterations of the GCD.
+                            while(b != 0)
+                            {
+                                aux = b;
+                                b = a % b;
+                                a = aux;
+                            }
+                            GCD = a;
+                            LCD = (num1 * num2) / GCD;
+                        
+                            //To print the results....
+                            printf("\n\nThe Greatest Common Divisor (GCD) among %d and %d is %d.\n", num1, num2, GCD);
+                            printf("The Lowest Common Denominator (LCD) among %d and %d is %d.\n\n", num1, num2, LCD);
+                        }
+                    </code></pre>
+                    <button class="copy-btn">Copiar</button>
+                </div>
+                <p><b>9. Crear un programa que le pida al usuario un número entero (n) y luego imprima todos los números del 1 al n que sean divisibles por 17:</b></p>
+                <div class="code-container">
+                    <pre><code class="code">
+                        #include < stdio.h>
+
+                        void main()
+                        {
+                            //To declare a introduced integer number by the user. And to declare the integer counter i for prints out from 1 to num.
+                            int num, i;
+
+                            //Start the program....
+                            printf("\n\n");
+                            printf("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
+                            printf("\n");
+                            printf("$$$$$$$$ DIVISIBLE NUMBERS BY 17 $$$$$$$$$");
+                            printf("\n");
+                            printf("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
+                            printf("\nPlease, introduce a number: ");
+                            scanf("%d", &num);
+
+                            //To do the iterations and to print the results....
+                            printf("\n\n");
+                            for(i=1; i<=num; i++)
+                            {
+                                if(i % 17 == 0)
+                                {
+                                    printf(" %d",i);
+                                }
+                            }
+                            printf("\n\n");
+                        }
+                    </code></pre>
+                    <button class="copy-btn">Copiar</button>
+                </div>
+                <p><b>10. Crear un programa que solicite al usuario un número entero decimal y lo convierta en un número binario:</b></p>
+                <div class="code-container">
+                    <pre><code class="code">
+                        #include < stdio.h>
+
+                        void main()
+                        {
+                            //To declare the variables.
+                            int num, storage_num, binary_num = 0, weight = 1;
+
+                            //Start the program....
+                            printf("\n\n");
+                            printf("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
+                            printf("\n");
+                            printf("$$$$$$$$ CONVERTION FROM DECIMAL TO BINARY $$$$$$$$");
+                            printf("\n");
+                            printf("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
+                            printf("\nPlease, introduce a number: ");
+                            scanf("%d", &num);
+
+                            storage_num = num;
+
+                            //To do the iterations and print the results...
+                            do
+                            {
+                                binary_num = binary_num + weight * (num % 2);
+                                num /= 2;
+                                weight = weight * 10;
+
+                            }while(num >= 1);
+
+                            printf("\n\nThe number %d in binary is: %d\n\n", storage_num, binary_num);
+                        }
+                    </code></pre>
+                    <button class="copy-btn">Copiar</button>
+                </div>
+                <img src="../img/tema5-ejer11.png"/>
+                <br>
+                <br>
+                <div class="code-container">
+                    <pre><code class="code">
+                        #include < stdio.h>
+
+                        void main()
+                        {
+                            //To declare the option of the menu variable. The number of cols and rows variables. The counters i and j.
+                            int option, cols, rows, i, j;
+
+                            //Start the program....
+                            printf("\n\n");
+                            printf("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
+                            printf("\n");
+                            printf("$$$$$$$$ Choose the figure $$$$$$$$");
+                            printf("\n");
+                            printf("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
+                            printf("\n\n");
+                            do
+                            {
+                                printf("###################################");
+                                printf("\n");
+                                printf("############## MENU ###############");
+                                printf("\n");
+                                printf("###################################");
+                                printf("\n");
+                                printf("# 1. Draw a right triangle.       #");
+                                printf("\n");
+                                printf("# 2. Draw an isosceles triangle.  #");
+                                printf("\n");
+                                printf("# 3. Draw a rectangle.            #");
+                                printf("\n");
+                                printf("###################################");
+                                printf("\nPlease, introduce one option: ");
+                                scanf("%d", &option);
+
+                                //To do the iterations and to print the results....
+                                switch(option)
+                                {
+                                    case 1:
+                                        do
+                                        {
+                                            printf("\n\nPlease, introduce the number of rows (min 2): ");
+                                            scanf("%d", &rows);
+                                            if(rows < 2)
+                                            {
+                                                printf("\n\nINCORRECT NUMBER OF ROWS. YOU NEED TO WRITE MORE THAN 1.\n\n");
+                                            }
+                                            else
+                                            {
+                                                printf("\n\n");
+                                                for(i=1; i<=rows; i++)
+                                                {
+                                                    for(j=1; j<=rows; j++)
+                                                    {
+                                                        if(j <= i)
+                                                        {
+                                                            printf("*");
+                                                        }
+                                                        else
+                                                        {
+                                                            printf(" ");
+                                                        }
+                                                    }
+                                                    printf("\n");
+                                                }
+                                                printf("\n\n");
+                                            }
+                                        }while(rows < 2);
+                                        break;
+                                    case 2:
+                                        do
+                                        {
+                                            printf("\n\nPlease, introduce the number of rows (min 2): ");
+                                            scanf("%d", &rows);
+                                            if(rows < 2)
+                                            {
+                                                printf("\n\nINCORRECT NUMBER OF ROWS. YOU NEED TO WRITE MORE THAN 1.\n\n");
+                                            }
+                                            else
+                                            {
+                                                printf("\n\n");
+                                                for(i=1; i<=rows; i++)
+                                                {
+                                                    for(j=1; j < 2*rows; j++)
+                                                    {
+                                                        if(j > (rows - i) && j <= rows)
+                                                        {
+                                                            printf("*");
+                                                        }
+                                                        else if(j < (rows + i) && j > rows)
+                                                        {
+                                                            printf("*");
+                                                        }
+                                                        else
+                                                        {
+                                                            printf(" ");
+                                                        }
+                                                    }
+                                                    printf("\n");
+                                                }
+                                                printf("\n\n");
+                                            }
+                                        }while(rows < 2);
+                                        break;
+                                    case 3:
+                                        do
+                                        {
+                                            printf("\n\nPlease, introduce the number of rows (min 2): ");
+                                            scanf("%d", &rows);
+                                            printf("Please, introduce the number of cols (min 3): ");
+                                            scanf("%d", &cols);
+                                            if(rows < 2 || cols < 3)
+                                            {
+                                                printf("\n\nINCORRECT NUMBER OF ROWS AND/OR COLS. YOU NEED TO WRITE MORE THAN 1 ROW AND MORE THAN 2 COLS.\n\n");
+                                            }
+                                            else
+                                            {
+                                                printf("\n\n");
+                                                for(i=1; i<=rows; i++)
+                                                {
+                                                    for(j=1; j<=cols; j++)
+                                                    {
+                                                        printf("*");
+                                                    }
+                                                    printf("\n");
+                                                }
+                                                printf("\n\n");
+                                            }
+                                        }while(rows < 2 || cols < 3);
+                                        break;
+                                    default:
+                                        printf("\n\nINCORRECT OPTION. PLEASE, INTRODUCE A OPTION BETWEEN 1 TO 3.\n\n");
+                                }
+                            }while(option < 1 || option > 3);
+                        }
+                    </code></pre>
+                    <button class="copy-btn">Copiar</button>
+                </div>
+                <p><b>
+                    12. Crear un programa que escriba los primeros n números de la secuencia de Fibonacci.
+                    Esta secuencia está definida por la imagen, siendo los números iniciales F0 = 0 y F1 = 1:
+                </b></p>
+                <img src="../img/fibonacci.png"/>
+                <br>
+                <br>
+                <div class="code-container">
+                    <pre><code class="code">
+                        #include < stdio.h>
+
+                        void main()
+                        {
+                            //To declare the previous, the actual and an auxiliar variable.
+                            int pre = 0, actual = 1, aux;
+                            //To declare the n numbers that the user wants to introduce by keyboard. And the counter i variable.
+                            int n, i;
+
+                            //Start the program....
+                            printf("\n\n");
+                            printf("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
+                            printf("\n");
+                            printf("$$$$$$$$ Fibonacci sequence $$$$$$$$");
+                            printf("\n");
+                            printf("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
+                            printf("\n");
+                            printf("Please, introduce a number: ");
+                            scanf("%d", &n);
+
+                            //Doing the operations and printing the results...
+                            printf("\n\nThe Fibonacci sequence is: %d,%d", pre, actual);
+                            if(n != 0)
+                            {
+                                printf(",");
+                            }
+                            for(i=1; i<=n; i++)
+                            {
+                                aux = actual;
+                                actual = pre + actual;
+                                pre = aux;
+                                if(i != n)
+                                {
+                                    printf("%d,", actual);
+                                }
+                                else
+                                {
+                                    printf("%d", actual);
+                                }
+                            }
+                            printf("\n\n");
+                        }
+                    </code></pre>
+                    <button class="copy-btn">Copiar</button>
+                </div>
+                <img src="../img/tema5-ejer13.png"/>
+                <br>
+                <br>
+                <div class="code-container">
+                    <pre><code class="code">
+                        #include < stdio.h>
+
+                        #define _CRT_SECURE_NO_WARNINGS
+
+                        void main()
+                        {
+                            //To declare the number variable, and the counters i and j. And aux variable to print from 1 to num.
+                            int num, i, j, blank;
+
+                            //Start the program....
+                            printf("\n\n");
+                            printf("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
+                            printf("\n");
+                            printf("$$$$$$$$ DIAMOND OF NUMBERS $$$$$$$$");
+                            printf("\n");
+                            printf("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
+                            printf("\n");
+
+                            //To do the iterations and to print the results....
+                            do
+                            {
+                                printf("\n\nPlease, introduce a number: ");
+                                scanf("%d", &num);
+                                if(num < 1)
+                                {
+                                    printf("\n\nINCORRECT: YOU CANNOT INTRODUCE A NUMBER LESS THAN 1.\n");
+                                    printf("PLEASE, INTRODUCE AGAIN THE NUMBER.\n\n");
+                                }
+                                else
+                                {
+                                    printf("\n\n");
+                                    blank = num - 1; //To know the number of blanks that there are.
+                                    for(i=1; i<=num; i++)
+                                    {
+                                        for(j=1; j<=blank; j++)
+                                        {
+                                            printf(" ");
+                                        }
+                                        blank--;
+                                        for(j=1; j<=i; j++)
+                                        {
+                                            printf("%d", j);
+                                        }
+                                        for(j=i-1; j>0; j--)
+                                        {
+                                            printf("%d", j);
+                                        }
+                                        printf("\n");
+                                    }
+                                    blank = 1;
+                                    for(i=num-1; i>0; i--)
+                                    {
+                                        for(j=1; j<=blank; j++)
+                                        {
+                                            printf(" ");
+                                        }
+                                        blank++;
+                                        for(j=1; j<=i; j++)
+                                        {
+                                            printf("%d", j);
+                                        }
+                                        for(j=i-1; j>0; j--)
+                                        {
+                                            printf("%d", j);
+                                        }
+                                        printf("\n");
+                                    }
+                                    printf("\n\n");
+                                }
+
+                            }while(num < 1);
+                        }
+                    </code></pre>
+                    <button class="copy-btn">Copiar</button>
+                </div>
+                <img src="../img/tema5-ejer14.png"/>
+                <br>
+                <br>
+                <div class="code-container">
+                    <pre><code class="code">
+                        #include < stdio.h>
+
+                        #define FINAL_NUM 10
+
+                        void main()
+                        {
+                            //To declare the counter i and j variables.
+                            int i, j;
+
+                            //Start the program....
+                            printf("\n\n");
+                            printf("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
+                            printf("\n");
+                            printf("$$$$$$$$$ MULTIPLICATION TABLE $$$$$$$$$");
+                            printf("\n");
+                            printf("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
+                            printf("\n");
+
+                            //Doing the operations and printing the results...
+                            printf("\n\n");
+                            for(i=1; i<=FINAL_NUM; i++)
+                            {
+                                for(j=1; j<=FINAL_NUM; j++)
+                                {
+                                    printf("%4.d", i * j); //%4.d is for organizing the table.
+                                }
+                                printf("\n");
+                            }
+                            printf("\n\n");
+                        }
+                    </code></pre>
+                    <button class="copy-btn">Copiar</button>
+                </div>
+                <img src="../img/tema5-ejer15.png"/>
+                <br>
+                <br>
+                <div class="code-container">
+                    <pre><code class="code">
+                        #include < stdio.h>
+
+                        void main()
+                        {
+                            //To declare a variable for days and for names of the week.
+                            int days, pos_week;
+                            //To declare the counters i and j. And a auxiliar variable to reduce until Sunday.
+                            int i, j, aux;
+                            //To declare the space character.
+                            char space = ' ';
+
+                            //Start the program. Doing the operations and printing the results...
+                            do
+                            {
+                                printf("\n\n");
+                                printf("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
+                                printf("\n");
+                                printf("$$$$$$$$ CALENDAR OF A MONTH $$$$$$$$");
+                                printf("\n");
+                                printf("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
+                                printf("\n");
+                                printf("How many days does the month have? : ");
+                                scanf("%d", &days);
+                                if((days < 28) || (days > 31))
+                                {
+                                    printf("\n\nYou only can introduce the numbers: 28, 29, 30 or 31.\nTRY AGAIN!\n\n");
+                                }
+                                else
+                                {
+                                    do
+                                    {
+                                        printf("###################################");
+                                        printf("\n");
+                                        printf("######### DAYS OF THE WEEK ########");
+                                        printf("\n");
+                                        printf("###################################");
+                                        printf("\n");
+                                        printf("# 1. Monday.                      #");
+                                        printf("\n");
+                                        printf("# 2. Tuesday                      #");
+                                        printf("\n");
+                                        printf("# 3. Wednesday.                   #");
+                                        printf("\n");
+                                        printf("# 4. Thursday.                    #");
+                                        printf("\n");
+                                        printf("# 5. Friday.                      #");
+                                        printf("\n");
+                                        printf("# 6. Saturday.                    #");
+                                        printf("\n");
+                                        printf("# 7. Sunday.                      #");
+                                        printf("\n");
+                                        printf("###################################");
+                                        printf("Which is the first day of the week? : ");
+                                        scanf("%d", &pos_week);
+
+                                        if((pos_week < 1) || (pos_week > 7))
+                                        {
+                                            printf("\n\nTHERE IS NO EXIST THAT DAY OF THE WEEK, SORRY.");
+                                            printf("\nTRY AGAIN!\n\n");
+                                        }
+                                        else
+                                        {
+                                            aux = pos_week;
+                                            printf("\n\n\n");
+                                            printf("  Mon Tue Wed Thu Fri Sat Sun\n");
+                                            for(i=1; i<=pos_week; i++)
+                                            {
+                                                if(i != pos_week)
+                                                {
+                                                    printf("%4.c", space);
+                                                }
+                                                else
+                                                {
+                                                    for(j=1; j<=days; j++)
+                                                    {
+                                                        printf("%4.d", j);
+                                                        if(aux == 7)
+                                                        {
+                                                        printf("\n");
+                                                        aux = 1;
+                                                        }
+                                                        else
+                                                        {
+                                                            aux += 1;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                            printf("\n\n\n");
+                                        }
+                                    }while((pos_week < 1) || (pos_week > 7));
+                                }
+                            }while((days < 28) || (days > 31));
+                        }
+                    </code></pre>
+                    <button class="copy-btn">Copiar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Category Start -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white text-center">
+        <br>
+        <br>
+        <p><i class="fa fa-map-marker-alt mr-2"></i>Ubicación: Universidad de Novi Sad - Dr Zorana Đinđića 1, Novi Sad 21000, Vojvodina, Serbia</p>
+        <p><i class="fa fa-phone-alt mr-2"></i>Teléfono: +381 21 485 2056</p>
+        <p><i class="fa fa-envelope mr-2"></i>Correo electrónico: iro.ftn@uns.ac.rs</p>
+        <div class="justify-content-start text-center">
+            <a class="btn btn-outline-light btn-square mr-2" href="https://twitter.com/RektoratUNS" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" width="24" height="24" fill="currentColor">
+                    <path d="M28.15 0H21.5l-3.9 7.5L13.6 0H7.35l6.7 12.3L6 24.25h6.65L18 17.5l5.35 6.75h6.85L22.95 12.3 28.15 0z"/>
+                </svg>                  
+            </a>
+            <a class="btn btn-outline-light btn-square mr-2" href="https://www.facebook.com/UniverzitetuNS" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a class="btn btn-outline-light btn-square mr-2" href="https://www.linkedin.com/school/univerzitet-u-novom-sadu/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a class="btn btn-outline-light btn-square" href="https://www.youtube.com/user/univerzitetnovisad" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+        <br>
+        <br>
+        <p class="m-0 text-white" style="text-align: center;">Copyright &copy; 2023-2030 <a class="fweight-700" href="../../../../index.html">My Professional WEB</a> - Todos los derechos reservados</p>
+        <br>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="../lib/easing/easing.min.js"></script>
+    <script src="../lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="../js/main.js"></script>
+    <script src="../js/copyCode.js"></script>
+
+    <!-- Google Traductor -->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+           new google.translate.TranslateElement({pageLanguage: 'es', includedLanguages: 'ca,eu,gl,en,fr,it,pt,de,ar,ru,hi,sr,tr,ja', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, autoDisplay: false}, 'google_translate_element');
+                }
+    </script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>
