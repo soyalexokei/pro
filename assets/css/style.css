@@ -1724,7 +1724,7 @@ html, body {
     content: none;
   }
   .timeline > li .timeline-rectangle {
-    disply: none;
+    display: none;
   }
 }
 
@@ -2138,7 +2138,6 @@ html, body {
   border-bottom: 1px solid #dddddd;
   box-shadow: none;
   border-radius: 0;
-  -webkit-appearance: none;
 }
 
 .form-control:focus {
@@ -2415,7 +2414,7 @@ textarea.form-control {
 }
 
 .moduloIAgenimg:hover {
-  background-color: yellow;
+  background-color: transparent;
 }
 
 .contenidoEditGenImg {
@@ -2424,4 +2423,28 @@ textarea.form-control {
 
 .oculto {
   display: none;
+}
+
+/* Mis Habilidades */
+#skills h4 {
+  text-align: center;
+}
+
+.tipoHabilidad {
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+}
+
+.tipoHabilidad img {
+  width: 100%;
+  max-width: 350px;
+}
+
+@media (min-width: 500px) {
+  .tipoHabilidad {
+    display: inline-block;
+    width: 25%;
+    margin: 10px 2%;
+  }
 }
