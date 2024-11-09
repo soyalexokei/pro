@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Kick Blocks</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <!-- Favicon -->
+    <link rel="icon" href="./favicon.ico">
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="../../css/style.css" rel="stylesheet">
+    <!-- Código CSS del videojuego retro. -->
+    <link rel="stylesheet" href="./design.css">
+</head>
+<body>
+    <!-- Category Start -->
+    <div class="container-fluid py-5">
+        <div class="container pt-5 pb-3">
+            <div class="text-center mb-5">
+                <!-- Audio de fondo -->
+                <audio id="audiofondo">
+                    <source src="Sonido_fondo.mp3" type="audio/mpeg">
+                </audio>
+                <!-- Ajustes, instrucciones y niveles -->
+                <h1>Instrucciones del juego:</h1>
+                <table>
+                    <tr>
+                        <th>1º =></th>
+                        <td><p id="resto1">Pulsa la tecla <b><=</b> para mover la raqueta hacia la izquierda</p></td>
+                    </tr>
+                    <tr>
+                        <th>2º =></th>
+                        <td><p id="resto2">Pulsa <b>Tecla espacio</b> para sacar</p></td>
+                    </tr>
+                    <tr>
+                        <th>3º =></th>
+                        <td><p id="resto3">Pulsa la tecla <b>=></b> para mover la raqueta hacia la derecha</p></td>
+                    </tr>
+                </table>
+                <h1>Ajustes del juego:</h1>
+                <table>
+                    <tr>
+                        <th>Play</th>
+                        <th>Reiniciar</th>
+                        <th>Activar/Desactivar Volumen</th>
+                        <th>Control del Volumen</th>
+                        <th>Elige Idioma</th>
+                        <th>Volver a inicio</th>
+                    </tr>
+                    <tr>
+                        <td><div id="inicio"><input type="button" id="play" value="PLAY"></div></td>
+                        <td><div id="reinicio"><input type="button" id="restart" value="REINICIAR" onclick="location.reload()"></div> </td>
+                        <td><input type="button" id="playSound" value="PLAY SOUND"></td>
+                        <td><p id="msg_volum"><input type="range" id="volumen" value="0.1" min="0" max="1" step="0.1"> <span id="displayDesliza"></span></p></td>
+                        <td>
+                            <!-- SECCIÓN TRADUCTOR GOOGLE -->
+                            <div id="google_translate_element" class="google"></div>
+                            <!-- FIN DE LA SECCIÓN TRADUCTOR GOOGLE -->
+                        </td>
+                        <td><a href="../../index.html">Atrás</a></td>
+                    </tr>
+                </table>
+                <h1>Niveles del juego:</h1>
+                <table>
+                    <tr>
+                        <th><input type="button" id="facil" value="FÁCIL"></th>
+                        <th><input type="button" id="medio" value="MEDIO"></th>
+                        <th><input type="button" id="dificil" value="DIFÍCIL"></th>
+                    </tr>
+                </table>
+            </div>
+            <div class="row">
+                <!-- Pantalla del juego -->
+                <canvas id="canvas"></canvas>
+            </div>
+        </div>
+    </div>
+    <!-- Category Start -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white text-center">
+        <br>
+        <p class="m-0 text-white" style="text-align: center;">Copyright &copy; 2023-2030 <a class="fweight-700" href="../../../../../index.html">My Professional WEB</a> - Todos los derechos reservados</p>
+        <br>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="../../lib/easing/easing.min.js"></script>
+    <script src="../../lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="../../js/main.js"></script>
+    <!-- Código JavaScript del videojuego retro. -->
+    <script src="./actions.js" defer></script>
+
+    <!-- Google Traductor -->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+           new google.translate.TranslateElement({pageLanguage: 'es', includedLanguages: 'ca,eu,gl,en,fr,it,pt,de,ar,ru,hi,sr,tr,ja', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, autoDisplay: false}, 'google_translate_element');
+                }
+    </script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>
