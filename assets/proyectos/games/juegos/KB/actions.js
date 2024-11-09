@@ -1,8 +1,3 @@
-// Aquí empieza el programa, con la consola del Navegador Web.
-console.log("Comienza: KICK BLOCKS Game!!!!!!");
-// Empezamos en la fase inicial.
-console.log("Empezamos en la fase inicial 0...");
-
 // Creamos el elemento canvas, que es la pantalla del videojuego, con el ID canvas.
 // Lo almacenamos en la cte pantalla.
 const pantalla = document.getElementById("canvas");
@@ -17,12 +12,12 @@ const paintIT = pantalla.getContext("2d");
 // Sonidos del juego.
 // Creación del elemento para que se escuche el sonido principal de fondo.
 const AUDIO_PRINC = document.getElementById("audiofondo");
-const Sonido_Victoria = new Audio("Winner.mp3");
-const Sonido_Derrota = new Audio("Game_over.mp3");
-const Sonido_Saque = new Audio("Al_sacar.mp3");
-const Sonido_PierdeVida = new Audio("Pierde_vida.mp3");
-const Sonido_Rebote = new Audio("Rebote_bola_raqueta_pared.mp3");
-const Sonido_Romper = new Audio("Romper_ladrillo.mp3");
+const Sonido_Victoria = new Audio("./audios/Winner.mp3");
+const Sonido_Derrota = new Audio("./audios/Game_over.mp3");
+const Sonido_Saque = new Audio("./audios/Al_sacar.mp3");
+const Sonido_PierdeVida = new Audio("./audios/Pierde_vida.mp3");
+const Sonido_Rebote = new Audio("./audios/Rebote_bola_raqueta_pared.mp3");
+const Sonido_Romper = new Audio("./audios/Romper_ladrillo.mp3");
 
 // Creamos el elemento para poder pulsar el botón PLAY e iniciar el juego, a través del ID play.
 const PLAY = document.getElementById("play");
@@ -170,15 +165,15 @@ function soundPrincipal()
 function drawCabecera()
 {
     // Texto sólido de puntuación.
-    paintIT.font = "35px Arial";
+    paintIT.font = "30px Arial";
     paintIT.fillStyle = 'white';
-    paintIT.fillText("Puntuación: ",puntX,puntY);
-    paintIT.fillText(puntuacion, puntX+200,puntY);
+    paintIT.fillText("Points: ",puntX,puntY);
+    paintIT.fillText(puntuacion, puntX+100,puntY);
     // Texto sólido de vidas.
-    paintIT.font = "35px Arial";
+    paintIT.font = "30px Arial";
     paintIT.fillStyle = 'white';
-    paintIT.fillText("Vidas: ",vidX,vidY);
-    paintIT.fillText(vidas, vidX+120,vidY);
+    paintIT.fillText("Lifes: ",vidX,vidY);
+    paintIT.fillText(vidas, vidX+80,vidY);
 }
 
 // Función de la victoria.

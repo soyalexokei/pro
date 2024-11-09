@@ -1,10 +1,3 @@
-/******* Bootstrap Theming ********/
-/*!
- * Bootstrap v4.5.3 (https://getbootstrap.com/)
- * Copyright 2011-2020 The Bootstrap Authors
- * Copyright 2011-2020 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- */
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -268,9 +261,7 @@ select {
 button,
 [type="button"],
 [type="reset"],
-[type="submit"] {
-  -webkit-appearance: button;
-}
+[type="submit"]
 
 button:not(:disabled),
 [type="button"]:not(:disabled),
@@ -334,7 +325,6 @@ progress {
 
 [type="search"] {
   outline-offset: -2px;
-  -webkit-appearance: none;
 }
 
 [type="search"]::-webkit-search-decoration {
@@ -3565,7 +3555,6 @@ input[type="button"].btn-block {
   display: block;
   min-height: 1.5rem;
   padding-left: 1.5rem;
-  color-adjust: exact;
 }
 
 .custom-control-inline {
@@ -9986,4 +9975,78 @@ pre {
 }
 .code-container button:hover {
   background-color: #45a049;
+}
+
+/* Tabla de contenidos */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 8px;
+}
+
+th {
+  background-color: gray;
+  color: white;
+}
+
+td {
+  background-color: white;
+  color: black;
+}
+
+.fondoKB {
+  background-image: url("../juegos/KB/imgs/fondo.jpg");
+}
+
+.fondoKB h1 {
+  color: whitesmoke;
+}
+
+/* Damos estilo a nuestro canvas (lienzo) del videojuego retro. */
+#canvas {
+  background-color: black;
+  border-color:chocolate;
+  border-width: 8px;
+  border-style: solid;
+  border-radius: 15px;
+  /* Para centrar el lienzo. */
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+/* Diseño del botón de PLAY y el de REINICIAR. */
+input {
+  background-color: silver;
+  width: 80px;
+  height: 30px;
+  border-radius: 8px;
+}
+
+/* Media Queries para móviles */
+@media (max-width: 600px) {
+  table {
+    font-size: 14px; /* Texto más pequeño en tablas */
+  }
+  
+  th, td {
+    padding: 6px; /* Reducción de relleno */
+  }
+
+  #canvas {
+    width: 90%; /* Ancho mayor en móviles */
+    max-width: 100%; /* Para asegurarnos de que se adapte a pantallas muy pequeñas */
+  }
+
+  input {
+    width: 70px; /* Botones más pequeños */
+    height: 28px;
+    font-size: 14px; /* Texto reducido en botones */
+  }
 }

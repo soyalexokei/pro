@@ -13,63 +13,69 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <!-- Customized Bootstrap Stylesheet -->
     <link href="../../css/style.css" rel="stylesheet">
-    <!-- Código CSS del videojuego retro. -->
-    <link rel="stylesheet" href="./design.css">
 </head>
-<body>
+<body class="fondoKB">
     <!-- Category Start -->
     <div class="container-fluid py-5">
         <div class="container pt-5 pb-3">
+            <!-- Audio de fondo -->
+            <audio id="audiofondo">
+                <source src="./audios/Sonido_fondo.mp3" type="audio/mpeg">
+            </audio>
             <div class="text-center mb-5">
-                <!-- Audio de fondo -->
-                <audio id="audiofondo">
-                    <source src="Sonido_fondo.mp3" type="audio/mpeg">
-                </audio>
+                <!-- SECCIÓN TRADUCTOR GOOGLE -->
+                <div id="google_translate_element" class="google"></div>
+                <!-- FIN DE LA SECCIÓN TRADUCTOR GOOGLE -->
+            </div>
+            <div class="text-center mb-5">
                 <!-- Ajustes, instrucciones y niveles -->
                 <h1>Instrucciones del juego:</h1>
                 <table>
                     <tr>
-                        <th>1º =></th>
-                        <td><p id="resto1">Pulsa la tecla <b><=</b> para mover la raqueta hacia la izquierda</p></td>
+                        <th>Tecla</th>
+                        <th>Acción que lleva a cabo</th>
                     </tr>
                     <tr>
-                        <th>2º =></th>
-                        <td><p id="resto2">Pulsa <b>Tecla espacio</b> para sacar</p></td>
+                        <td><b><=</b></td>
+                        <td><p>Mueve la raqueta hacia la izquierda</p></td>
                     </tr>
                     <tr>
-                        <th>3º =></th>
-                        <td><p id="resto3">Pulsa la tecla <b>=></b> para mover la raqueta hacia la derecha</p></td>
+                        <td><b>Tecla espacio</b></td>
+                        <td><p>Saque inicial</p></td>
+                    </tr>
+                    <tr>
+                        <td><b>=></b></td>
+                        <td><p>Mueve la raqueta hacia la derecha</p></td>
                     </tr>
                 </table>
+            </div>
+            <div class="text-center mb-5">
                 <h1>Ajustes del juego:</h1>
                 <table>
                     <tr>
                         <th>Play</th>
                         <th>Reiniciar</th>
-                        <th>Activar/Desactivar Volumen</th>
-                        <th>Control del Volumen</th>
-                        <th>Elige Idioma</th>
-                        <th>Volver a inicio</th>
+                        <th>Audio ON</th>
+                        <th>Volumen</th>
+                        <th>Inicio</th>
                     </tr>
                     <tr>
-                        <td><div id="inicio"><input type="button" id="play" value="PLAY"></div></td>
-                        <td><div id="reinicio"><input type="button" id="restart" value="REINICIAR" onclick="location.reload()"></div> </td>
-                        <td><input type="button" id="playSound" value="PLAY SOUND"></td>
-                        <td><p id="msg_volum"><input type="range" id="volumen" value="0.1" min="0" max="1" step="0.1"> <span id="displayDesliza"></span></p></td>
-                        <td>
-                            <!-- SECCIÓN TRADUCTOR GOOGLE -->
-                            <div id="google_translate_element" class="google"></div>
-                            <!-- FIN DE LA SECCIÓN TRADUCTOR GOOGLE -->
-                        </td>
+                        <td><input id="play" type="button" value="Play"></td>
+                        <td><input type="button" value="Reiniciar" onclick="location.reload()"></td>
+                        <td><input id="playSound" type="button" value="ON"></td>
+                        <td><p id="displayDesliza"></p><br><input type="range" id="volumen" value="0.1" min="0" max="1" step="0.1"></td>
                         <td><a href="../../index.html">Atrás</a></td>
                     </tr>
                 </table>
+            </div>
+            <div class="text-center mb-5">
                 <h1>Niveles del juego:</h1>
+                <p>Por defecto es: Fácil</p>
                 <table>
                     <tr>
-                        <th><input type="button" id="facil" value="FÁCIL"></th>
-                        <th><input type="button" id="medio" value="MEDIO"></th>
-                        <th><input type="button" id="dificil" value="DIFÍCIL"></th>
+                        <th><input type="button" id="facil" value="Fácil"></th>
+                        <th><input type="button" id="medio" value="Medio"></th>
+                        <th><input type="button" id="dificil" value="Difícil"></th>
                     </tr>
                 </table>
             </div>
