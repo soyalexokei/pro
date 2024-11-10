@@ -10045,7 +10045,7 @@ input {
   }
 
   input {
-    width: 70px; /* Botones más pequeños */
+    width: 80px; /* Botones más pequeños */
     height: 28px;
     font-size: 14px; /* Texto reducido en botones */
   }

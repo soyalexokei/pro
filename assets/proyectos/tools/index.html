@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es" dir="ltr">
 <head>
     <meta charset="utf-8">
     <title>Proyectos de mi WEB</title>
@@ -11,11 +11,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
+    <!-- Código CSS de la Calculadora. -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
+<!-- Aquí empieza el código de mi calculadora. -->
 <body>
-    <!-- Carousel Start -->
     <div class="container-fluid p-0 pb-5 mb-5">
         <div id="header-carousel" class="carousel slide carousel-fade" data-ride="carousel">
             <div class="carousel-inner">
@@ -23,7 +23,7 @@
                     <img class="position-relative w-100" src="./img/portada.png" style="min-height: 300px; object-fit: cover;">
                     <div class="carousel-caption d-flex align-items-center justify-content-center">
                         <div class="p-5" style="width: 100%; max-width: 900px;">
-                            <h1 class="display-3 text-white mb-md-4">Programación en C</h1>
+                            <h1 class="display-3 text-white mb-md-4">Tech Tools en JS</h1>
                             <br>
                             <h2 style="text-align: center;"><a href="../../../index.html#projects">Atrás</a></h2>
                         </div>
@@ -32,182 +32,45 @@
             </div>
         </div>
     </div>
-    <!-- Carousel End -->
 
-    <!-- SECCIÓN TRADUCTOR GOOGLE -->
-    <div id="google_translate_element" class="google"></div>
-    <!-- FIN DE LA SECCIÓN TRADUCTOR GOOGLE -->
-
-    <!-- Category Start -->
     <div class="container-fluid py-5">
         <div class="container pt-5 pb-3">
             <div class="text-center mb-5">
-                <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">Ejercicios de Programación en C</h5>
-                <p>De una asignatura durante mi experiencia Erasmus+ en Novi Sad (Serbia)</p>
-                <p><b>Asignatura:</b> Fundamentos de la programación</p>
-                <p><b>Guía docente:</b> <i class="fa fa-globe"></i> <a href="https://www.course-catalogue.uns.ac.rs/component/jdownloads/send/4-fakultet-tehnickih-nauka/1712-fundamentals-in-programming" target="_blank">Ver online</a></p>
-                <p><b>Facultad:</b> FTN - Facultad de Ciencias Técnicas (siglas en serbio)</p>
-                <p><b>Universidad:</b> UNS - Universidad de Novi Sad</p>
+                <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">Calculadora Web:</h5>
             </div>
-            <div class="row">
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="cat-item position-relative overflow-hidden rounded mb-2">
-                        <img class="img-fluid" src="./img/contenidos.png"/>
-                        <a class="cat-overlay text-white text-decoration-none" href="./paginas/tema1.html">
-                            <h4 class="text-white font-weight-medium">Hola mundo</h4>
-                            <span>Tema 1</span>
-                        </a>
-                    </div>
+            <div class="calculadora">
+                <div class="pantalla">
+                    <p id="display">0</p>
                 </div>
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="cat-item position-relative overflow-hidden rounded mb-2">
-                        <img class="img-fluid" src="./img/contenidos.png"/>
-                        <a class="cat-overlay text-white text-decoration-none" href="./paginas/tema2.html">
-                            <h4 class="text-white font-weight-medium">Tipos de datos<br>y conversiones</h4>
-                            <span>Tema 2</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="cat-item position-relative overflow-hidden rounded mb-2">
-                        <img class="img-fluid" src="./img/contenidos.png"/>
-                        <a class="cat-overlay text-white text-decoration-none" href="./paginas/tema3.html">
-                            <h4 class="text-white font-weight-medium">Operadores<br>aritméticos</h4>
-                            <span>Tema 3</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="cat-item position-relative overflow-hidden rounded mb-2">
-                        <img class="img-fluid" src="./img/contenidos.png"/>
-                        <a class="cat-overlay text-white text-decoration-none" href="./paginas/tema4.html">
-                            <h4 class="text-white font-weight-medium">Condiciones</h4>
-                            <span>Tema 4</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="cat-item position-relative overflow-hidden rounded mb-2">
-                        <img class="img-fluid" src="./img/contenidos.png"/>
-                        <a class="cat-overlay text-white text-decoration-none" href="./paginas/tema5.html">
-                            <h4 class="text-white font-weight-medium">Bucles</h4>
-                            <span>Tema 5</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="cat-item position-relative overflow-hidden rounded mb-2">
-                        <img class="img-fluid" src="./img/contenidos.png"/>
-                        <a class="cat-overlay text-white text-decoration-none" href="./paginas/tema6.html">
-                            <h4 class="text-white font-weight-medium">Arrays</h4>
-                            <span>Tema 6</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="cat-item position-relative overflow-hidden rounded mb-2">
-                        <img class="img-fluid" src="./img/contenidos.png"/>
-                        <a class="cat-overlay text-white text-decoration-none" href="./paginas/tema7.html">
-                            <h4 class="text-white font-weight-medium">Cadenas de<br>caracteres</h4>
-                            <span>Tema 7</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="cat-item position-relative overflow-hidden rounded mb-2">
-                        <img class="img-fluid" src="./img/contenidos.png"/>
-                        <a class="cat-overlay text-white text-decoration-none" href="./paginas/tema8.html">
-                            <h4 class="text-white font-weight-medium">Funciones</h4>
-                            <span>Tema 8</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="cat-item position-relative overflow-hidden rounded mb-2">
-                        <img class="img-fluid" src="./img/contenidos.png"/>
-                        <a class="cat-overlay text-white text-decoration-none" href="./paginas/tema9.html">
-                            <h4 class="text-white font-weight-medium">Estructuras</h4>
-                            <span>Tema 9</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="cat-item position-relative overflow-hidden rounded mb-2">
-                        <img class="img-fluid" src="./img/contenidos.png"/>
-                        <a class="cat-overlay text-white text-decoration-none" href="./paginas/examFinal.html">
-                            <h4 class="text-white font-weight-medium">Examen Final</h4>
-                            <span>Evaluación</span>
-                        </a>
-                    </div>
+                <div class="botones">
+                    <button class="operador" id="percien" value="0.01">%</button>
+                    <button class="operador" id="potencia2">^2</button>
+                    <button class="operador" id="potencia3">^3</button>
+                    <button class="operador" id="dividir" value="/">/</button>
+                    <button class="digito" value="7">7</button>
+                    <button class="digito" value="8">8</button>
+                    <button class="digito" value="9">9</button>
+                    <button class="operador" id="multiplicar" value="*">x</button>
+                    <button class="digito" value="4">4</button>
+                    <button class="digito" value="5">5</button>
+                    <button class="digito" value="6">6</button>
+                    <button class="operador" id="restar" value="-">-</button>
+                    <button class="digito" value="1">1</button>
+                    <button class="digito" value="2">2</button>
+                    <button class="digito" value="3">3</button>
+                    <button class="operador" id="sumar" value="+">+</button>
+                    <button class="digito" value="0" id="cero">0</button>
+                    <button class="digito" value=".">.</button>
+                    <button class="operador" id="igual">=</button>
+                    <button class="clear" id="clear" value="0">AC</button>
+                    <button class="del" id="del">←</button>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Category Start -->
-
-
-    <!-- Team Start -->
-    <div class="container-fluid py-5">
-        <div class="container pt-5 pb-3">
-            <div class="text-center mb-5">
-                <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">Profesores de la asignatura</h5>
-                <p>A mí me la impartieron en inglés, por ser estudiante de Erasmus+</p>
-            </div>
-            <div class="row">
-                <div class="col-md-6 col-lg-3 text-center team mb-4"></div>
-                <div class="col-md-6 col-lg-3 text-center team mb-4">
-                    <div class="team-item rounded overflow-hidden mb-2">
-                        <div class="team-img position-relative">
-                            <img class="img-fluid" src="./img/Stevan.png"/>
-                            <div class="team-social">
-                                <a class="btn btn-outline-light btn-square mx-1" href="https://www.linkedin.com/in/stevan-stankovski-848b7016/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                            </div>
-                        </div>
-                        <div class="bg-secondary p-4">
-                            <h5>Stevan Stankovski</h5>
-                            <p class="m-0">Univerisity professor and<br>Designer of automated machines and systems</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3 text-center team mb-4">
-                    <div class="team-item rounded overflow-hidden mb-2">
-                        <div class="team-img position-relative">
-                            <img class="img-fluid" src="./img/Ivana.png"/>
-                            <div class="team-social">
-                                <a class="btn btn-outline-light btn-square mx-1" href="https://www.linkedin.com/in/ivana-%C5%A1enk-49499119/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ees%2F&originalSubdomain=rs" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                            </div>
-                        </div>
-                        <div class="bg-secondary p-4">
-                            <h5>Ivana Šenk</h5>
-                            <p class="m-0">Associate Professor at<br>Faculty of Technical Sciences<br>in the University of Novi Sad</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3 text-center team mb-4"></div>
-            </div>
-        </div>
-    </div>
-    <!-- Team End -->
-
 
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-white text-center">
-        <br>
-        <br>
-        <p><i class="fa fa-map-marker-alt mr-2"></i>Ubicación: Universidad de Novi Sad - Dr Zorana Đinđića 1, Novi Sad 21000, Vojvodina, Serbia</p>
-        <p><i class="fa fa-phone-alt mr-2"></i>Teléfono: +381 21 485 2056</p>
-        <p><i class="fa fa-envelope mr-2"></i>Correo electrónico: iro.ftn@uns.ac.rs</p>
-        <div class="justify-content-start text-center">
-            <a class="btn btn-outline-light btn-square mr-2" href="https://twitter.com/RektoratUNS" target="_blank">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" width="24" height="24" fill="currentColor">
-                    <path d="M28.15 0H21.5l-3.9 7.5L13.6 0H7.35l6.7 12.3L6 24.25h6.65L18 17.5l5.35 6.75h6.85L22.95 12.3 28.15 0z"/>
-                </svg>                  
-            </a>
-            <a class="btn btn-outline-light btn-square mr-2" href="https://www.facebook.com/UniverzitetuNS" target="_blank"><i class="fab fa-facebook-f"></i></a>
-            <a class="btn btn-outline-light btn-square mr-2" href="https://www.linkedin.com/school/univerzitet-u-novom-sadu/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-            <a class="btn btn-outline-light btn-square" href="https://www.youtube.com/user/univerzitetnovisad" target="_blank"><i class="fab fa-youtube"></i></a>
-        </div>
-        <br>
         <br>
         <p class="m-0 text-white" style="text-align: center;">Copyright &copy; 2023-2030 <a class="fweight-700" href="../../../index.html">My Professional WEB</a> - Todos los derechos reservados</p>
         <br>
@@ -225,13 +88,7 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-
-    <!-- Google Traductor -->
-    <script type="text/javascript">
-        function googleTranslateElementInit() {
-           new google.translate.TranslateElement({pageLanguage: 'es', includedLanguages: 'ca,eu,gl,en,fr,it,pt,de,ar,ru,hi,sr,tr,ja', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, autoDisplay: false}, 'google_translate_element');
-                }
-    </script>
-    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <!-- Código JavaScript de la calculadora. -->
+    <script src="js/actions.js" defer></script>
 </body>
 </html>

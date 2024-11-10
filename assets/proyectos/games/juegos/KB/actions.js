@@ -21,13 +21,6 @@ const Sonido_Romper = new Audio("./audios/Romper_ladrillo.mp3");
 
 // Creamos el elemento para poder pulsar el botón PLAY e iniciar el juego, a través del ID play.
 const PLAY = document.getElementById("play");
-// Creamos el elemento para poder pulsar el botón PLAY de los ajustes de sonido y, que haya
-// interactividad entre el usuario y el sonido del juego.
-const PLAYSOUND = document.getElementById("playSound");
-// Creamos el elemento para poder ajustar el nivel de volumen que se quiera.
-const DeslizaVol = document.getElementById("volumen");
-// Creamos el elemento para poder ver a que nivel se ha puesto.
-const DisplayVol = document.getElementById("displayDesliza");
 
 // Creamos tres elementos para poder pulsar un botón de entre los tres nivel de dificultad: 
 // Fácil, Medio y Difícil. Por defecto: Fácil.
@@ -158,7 +151,7 @@ function soundPrincipal()
     // Se activa el audio principal del juego retro, desde el principio.
     AUDIO_PRINC.currentTime = 0;
     AUDIO_PRINC.play();
-    AUDIO_PRINC.volume = 0.1;
+    AUDIO_PRINC.volume = 1;
 }
 
 // Función para establecer la cabecera de los textos sólidos.
@@ -458,6 +451,48 @@ function update()
         }
     }
 
+    // Evento para manejar los toques en la pantalla
+    pantalla.addEventListener('touchstart', (event) => {
+        // Obtenemos la posición inicial del dedo
+        const touch = event.touches[0];
+        startX = touch.clientX;
+    });
+
+    pantalla.addEventListener('touchmove', (event) => {
+        // Prevenimos el comportamiento por defecto (scroll)
+        event.preventDefault();
+
+        // Obtenemos la posición actual del dedo
+        const touch = event.touches[0];
+        const deltaX = touch.clientX - startX;
+
+        // Calculamos la nueva posición de la raqueta
+        raqX += deltaX;
+
+        // Limitamos la posición de la raqueta para que no se salga de la pantalla
+        raqX = Math.max(0, Math.min(raqX, pantalla.width - anchoRAQ));
+
+        // Actualizamos la posición inicial para el siguiente movimiento
+        startX = touch.clientX;
+    });
+
+    // Agregar el evento touchstart al canvas
+    canvas.addEventListener('touchstart', (event) => {
+        // Prevenir acciones por defecto (como desplazamiento)
+        event.preventDefault();
+
+        // Comprobar si el juego está en el estado correcto para sacar (ajusta esta condición según tu lógica)
+        if (fase === ESTADO.SAQUE) {
+            // Cambiamos a la fase 2 o del juego.
+            fase = ESTADO.PLAYING;
+            // Se activa el audio de saque.
+            Sonido_Saque.currentTime = 0;
+            Sonido_Saque.play();
+            // Mensaje del saque en consola.
+            console.log("Saque realizado");
+        }
+    });
+
     //-- 2) Borrar la pantalla del juego.
     paintIT.clearRect(0,0,pantalla.width, pantalla.height);
 
@@ -509,24 +544,12 @@ PLAY.onclick = () => {
     }
 }
 
-// Para volver a escuchar el sonido de fondo o el sonido principal.
-PLAYSOUND.onclick = () => {
-    // Llamar a la función del audio principal, para que empiece a sonar dicho audio.
-    soundPrincipal();
-}
-
-// Para ajustar el nivel de volumen del sonido de fondo o sonido principal.
-DeslizaVol.onclick = (ev) => {
-    AUDIO_PRINC.volume = ev.currentTarget.value;
-    DisplayVol.innerHTML = ev.currentTarget.value;
-}
-
 // Para elegir el nivel de dificultad. Por defecto es fácil.
 L_FACIL.onclick = () => {
     if(fase == ESTADO.INIT && velX_bol == VX && velY_bol == VY && CAPAR == 0)
     {
-        velX_bol *= 1;
-        velY_bol *= 1;
+        velX_bol *= 1.4;
+        velY_bol *= 1.4;
         CAPAR = 1;
     }
     else
@@ -538,8 +561,8 @@ L_FACIL.onclick = () => {
 L_MEDIO.onclick = () => {
     if(fase == ESTADO.INIT && velX_bol == VX && velY_bol == VY && CAPAR == 0)
     {
-        velX_bol *= 1.4;
-        velY_bol *= 1.4;
+        velX_bol *= 1.8;
+        velY_bol *= 1.8;
         velX_raq += 10;
     }
     else
@@ -551,8 +574,8 @@ L_MEDIO.onclick = () => {
 L_DIFICIL.onclick = () => {
     if(fase == ESTADO.INIT && velX_bol == VX && velY_bol == VY && CAPAR == 0)
     {
-        velX_bol *= 1.8;
-        velY_bol *= 1.8;
+        velX_bol *= 2.2;
+        velY_bol *= 2.2;
         velX_raq += 20;
     }
     else
