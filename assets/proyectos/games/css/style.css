@@ -10024,9 +10024,10 @@ td {
 /* Diseño del botón de PLAY y el de REINICIAR. */
 input {
   background-color: silver;
-  width: 80px;
+  width: 90px;
   height: 30px;
   border-radius: 8px;
+  text-align: center;
 }
 
 /* Media Queries para móviles */
@@ -10042,11 +10043,5 @@ input {
   #canvas {
     width: 90%; /* Ancho mayor en móviles */
     max-width: 100%; /* Para asegurarnos de que se adapte a pantallas muy pequeñas */
-  }
-
-  input {
-    width: 80px; /* Botones más pequeños */
-    height: 28px;
-    font-size: 14px; /* Texto reducido en botones */
   }
 }
