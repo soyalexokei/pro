@@ -31,6 +31,10 @@ html, body {
   background-color: #196fc2;
 }
 
+.cvs-main {
+  display: inline-block;
+}
+
 /* 
  * Button
  */
@@ -2070,16 +2074,6 @@ html, body {
   }
 }
 
-/* Section: Clients */
-.section-clients {
-  padding: 80px 0;
-  background-color: #004b91;
-}
-
-.section-clients h2 {
-  color: white;
-}
-
 .client {
   height: 85px;
   line-height: 85px;
@@ -2097,13 +2091,6 @@ html, body {
 .client img {
   display: inline-block;
   height: 80px;
-}
-
-@media only screen and (max-width: 767px) {
-  /* Section: Clients */
-  .section-clients {
-    padding: 40px 0;
-  }
 }
 
 /* Section: Contact */
