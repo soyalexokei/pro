@@ -1957,15 +1957,19 @@
                         <h1>Contáctame:</h1>
                         <p>- Incluso para unirme a tu equipo - </p>
                         <div class="input-group">
-                            <input type="text" name="nombre" id="nombre" placeholder="Nombre....." required/>
+                            <label for="nombre">Nombre: <span class="required"></span></label>
+                            <input type="text" name="nombre" id="nombre" placeholder="Alejandro" required/>
                         </div>
                         <div class="input-group">
-                            <input type="text" name="apellidos" id="apellidos" placeholder="Apellidos....." required/>
+                            <label for="apellidos">Apellidos: <span class="required"></span></label>
+                            <input type="text" name="apellidos" id="apellidos" placeholder="Fernández Pérez" required/>
                         </div>
                         <div class="input-group">
-                            <input type="email" name="email" id="email" placeholder="Correo electrónico....." required/>
+                            <label for="email">Correo electrónico: <span class="required"></span></label>
+                            <input type="email" name="email" id="email" placeholder="alejandro@gmail.com" required/>
                         </div>
                         <div class="input-group phone-group">
+                            <label for="telefono">Teléfono/móvil: </label>
                             <select name="codigo" id="codigo" onchange="handleCustomCode(this)">
                                 <option value="" disabled selected>+ Código</option>
                                 <option value="+34">🇪🇸 +34 (España)</option>
@@ -1975,17 +1979,19 @@
                                 <option value="+49">🇩🇪 +49 (Alemania)</option>
                                 <option value="custom">Escribir código...</option>
                             </select>
-                            <input type="text" name="custom-codigo" id="custom-codigo" placeholder="Ej: +123" inputmode="numeric" style="display: none;" oninput="updateCode()"/>
-                            <input type="number" name="telefono" id="telefono" placeholder="Teléfono/Móvil....."/>
+                            <input type="text" name="custom-codigo" id="custom-codigo" placeholder="+229" inputmode="numeric" style="display: none;" oninput="updateCode()"/>
+                            <input type="number" name="telefono" id="telefono" placeholder="6XX XX XX XX"/>
                         </div>
                         <div class="input-group">
-                            <input type="text" name="asunto" id="asunto" placeholder="Asunto....." required/>
+                            <label for="asunto">Asunto: <span class="required"></span></label>
+                            <input type="text" name="asunto" id="asunto" placeholder="Reunión de presentación:" required/>
                         </div>
                         <div class="input-group">
-                            <textarea name="mensaje" id="mensaje" rows="8" placeholder="Mensaje....." required></textarea>
+                            <label for="mensaje">Mensaje: <span class="required"></span></label>
+                            <textarea name="mensaje" id="mensaje" rows="8" placeholder="Estimado....." required></textarea>
                         </div>
                         <div class="input-group">
-                            <label for="captcha">¿Cuál es la suma de 3 + 4?</label>
+                            <label for="captcha">¿Cuál es la suma de 3 + 4? <span class="required"></span></label>
                             <input type="text" id="captcha" name="captcha">
                         </div>
                         <input type="hidden" name="_next" value="https://alejandroprofessionalweb.netlify.app/#contact"/>

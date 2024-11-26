@@ -2520,3 +2520,9 @@ input[type="number"]::-webkit-outer-spin-button {
   background: linear-gradient(135deg, #156ef5, #156ef5);
   transform: scale(1.05);
 }
+
+.required:after {
+  content: "*";
+  color: red;
+  margin-left: 2px;
+}
