@@ -28,7 +28,6 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-    <script async src="https://tally.so/widgets/embed.js"></script>
 </head>
 <body>
     <!-- 1º SECCIÓN -->
@@ -820,7 +819,7 @@
                                 <p>Módulo 5: <a href="./assets/estudios/posgrado/IAgenerativa/Contenido/Modulo5-Generacion-Edición-Audio.pdf" target="_blank" class="otros-enlaces">Generación y edición de audio</a></p>
                                 <p>Módulo 6: <a href="./assets/estudios/posgrado/IAgenerativa/Contenido/Modulo6-Negocio-y-Marketing-con-IA.pdf" target="_blank" class="otros-enlaces">Negocio y marketing con IA</a></p>
                                 <p>Módulo 7: Productividad con IA</p>
-                                <p>Módulo Transversal: <a href="https://youtu.be/-XAvgKuE46M" target="_blank" class="otros-enlaces">Empleabilidad y competencias digitales</a></p>
+                                <p>Módulo Transversal: Empleabilidad y competencias digitales</p>
                                 <p>Módulo 8: <a href="./assets/estudios/posgrado/IAgenerativa/Contenido/Modulo8-Etica-Regulacion-IA.pdf" target="_blank" class="otros-enlaces">Ética y regulación de la IA</a></p>
                                 <p>Módulo 9: Ecosistema Microsoft Copilot</p>
                                 <p><b>Proyecto Final del Curso (PDF en español):</b> <!--<i class="fa fa-globe"></i> <a class="otros-enlaces" href="#" target="_blank"> Ver online</a> --></p>
@@ -1953,11 +1952,16 @@
                 <p class="section-subtitle">
                     <span>- Incluso para unirme a tu equipo - </span>
                 </p>
-                <p>
-                    <button data-tally-open="31b5KO" data-tally-layout="modal" data-tally-width="600">
-                        <img width="50px" src="./assets/contacto/icono-Contacto.png"/>
-                    </button>
-                </p>
+                <iframe 
+                    data-tally-src="https://tally.so/embed/31b5KO?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+                    loading="lazy"
+                    width="100%"
+                    height="100"
+                    frameborder="0"
+                    marginheight="0"
+                    marginwidth="0"
+                    title="Contáctame:">
+                </iframe>
             </div>
         </section>
         <!-- FIN DE LA SECCIÓN DE CONTACTO -->
@@ -2018,5 +2022,22 @@
     <script src="assets/js/script.js"></script>
     <!-- Cambiar de testimonios -->
     <script src="assets/js/testimonios.js"></script>
+    <!-- Configuración del contacto con Tally -->
+    <script>
+        var d=document,w="https://tally.so/widgets/embed.js",
+        v = function()
+        {
+            "undefined"!=typeof
+            Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e)
+            {
+                e.src=e.dataset.tallySrc
+            }))
+        };
+        if("undefined"!=typeof Tally)
+        v();else if(d.querySelector('script[src="'+w+'"]')==null)
+        {
+            var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);
+        }
+    </script>
 </body>
 </html>
