@@ -2435,3 +2435,88 @@ textarea.form-control {
     margin: 10px 2%;
   }
 }
+
+.contact-form-container {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.contact-form h1 {
+  font-size: xx-large;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #1b71d3;
+}
+
+.contact-form p {
+  font-size: medium;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #1b71d3;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 10px;
+  background: none;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  color: black;
+  outline: none;
+}
+
+.input-group input:focus,
+.input-group textarea:focus,
+.input-group input:not(:placeholder-shown),
+.input-group textarea:not(:placeholder-shown) {
+  top: -10px;
+  left: 5px;
+  font-size: 12px;
+  color: black;
+}
+
+#custom-codigo {
+  padding: 10px;
+  background: none;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  color: black;
+  outline: none;
+  width: 120px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+button {
+  background: linear-gradient(135deg, #156ef5, #156ef5);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #156ef5, #156ef5);
+  transform: scale(1.05);
+}
