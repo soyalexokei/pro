@@ -1,9 +1,13 @@
 //-- Variables.
-var btnModGenImg = document.getElementById("btnModGenImg");
-var contenidoGenImg = document.getElementById("contenidoGenImg");
+var cabeceraImagen = document.getElementById("btnModGenImg");
+var contenidoImagen = document.getElementById("contenidoGenImg");
+
+var cabeceraEtica = document.getElementById("btnModEtica");
+var contenidoEtica = document.getElementById("contenidoEtica");
 
 //-- Ocultarlo inicialmente.
-contenidoGenImg.classList.add("oculto");
+contenidoImagen.classList.add("oculto");
+contenidoEtica.classList.add("oculto");
 
 //-- Acción de ocultar/desplegar contenido.
 function despliegCursoIA(contenido) {
@@ -11,6 +15,9 @@ function despliegCursoIA(contenido) {
 }
 
 //-- Acción de darle click al módulo en específico.
-btnModGenImg.addEventListener("click", () => {
-    despliegCursoIA(contenidoGenImg);
+cabeceraImagen.addEventListener("click", () => {
+    despliegCursoIA(contenidoImagen);
+});
+cabeceraEtica.addEventListener("click", () => {
+    despliegCursoIA(contenidoEtica);
 });
