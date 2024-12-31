@@ -66,21 +66,6 @@
                 </table>
             </div>
             <div class="text-center mb-5">
-                <h1>Ajustes del juego:</h1>
-                <table>
-                    <tr>
-                        <th>Play</th>
-                        <th>Reiniciar</th>
-                        <th>Inicio</th>
-                    </tr>
-                    <tr>
-                        <td><input id="play" type="button" value="Play"></td>
-                        <td><input type="button" value="Reiniciar" onclick="location.reload()"></td>
-                        <td><a href="../../index.html">Atrás</a></td>
-                    </tr>
-                </table>
-            </div>
-            <div class="text-center mb-5">
                 <h1>Niveles del juego:</h1>
                 <p>Por defecto es: Fácil</p>
                 <table>
@@ -91,9 +76,36 @@
                     </tr>
                 </table>
             </div>
+            <div class="text-center mb-5">
+                <h1>¡Comienza a jugar!:</h1>
+                <table>
+                    <tr>
+                        <th>Dale a jugar</th>
+                    </tr>
+                    <tr>
+                        <td><input id="play" type="button" value="Play"></td>
+                    </tr>
+                </table>
+            </div>
+            
             <div class="row">
                 <!-- Pantalla del juego -->
                 <canvas id="canvas"></canvas>
+            </div>
+
+            <br><br>
+
+            <div class="text-center mb-5">
+                <table>
+                    <tr>
+                        <th>Reiniciar</th>
+                        <th>Inicio</th>
+                    </tr>
+                    <tr>
+                        <td><input type="button" value="Reiniciar" onclick="location.reload()"></td>
+                        <td><a href="../../index.html">Atrás</a></td>
+                    </tr>
+                </table>
             </div>
         </div>
     </div>

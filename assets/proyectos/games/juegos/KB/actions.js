@@ -174,11 +174,8 @@ function drawVictoria()
 {
     paintIT.font = "25px Arial Black";
     paintIT.fillStyle = 'green';
-    paintIT.fillText(" ¡  M U Y   B I E N  ! ",(pantalla.width-400)/2,pantalla.height/2);
-    paintIT.fillText("LLEGASTE A LA PUNTUACIÓN",(pantalla.width-530)/2,(pantalla.height+100)/2);
-    paintIT.fillText("MÁXIMA DE ",(pantalla.width-210)/2,(pantalla.height+200)/2);
-    paintIT.fillText(puntuacion,(pantalla.width+170)/2,(pantalla.height+200)/2);
-    paintIT.fillText("¡  F E L I C I D A D E S  !",(pantalla.width-450)/2,(pantalla.height+300)/2);
+    paintIT.fillText(" ¡  W I N N E R  ! ",(pantalla.width-400)/2,pantalla.height/2);
+    paintIT.fillText("YOU ARE A MASTER CRACK",(pantalla.width-530)/2,(pantalla.height+100)/2);
 }
 
 // Función de la derrota.
@@ -187,9 +184,7 @@ function drawDerrota()
     paintIT.font = "25px Arial Black";
     paintIT.fillStyle = 'red';
     paintIT.fillText("¡  G A M E   O V E R  !",(pantalla.width-400)/2,pantalla.height/2);
-    paintIT.fillText("EL Nº DE PTOS QUE TE HA QUEDADO",(pantalla.width-570)/2,(pantalla.height+100)/2);
-    paintIT.fillText("HA SIDO DE ",(pantalla.width-210)/2,(pantalla.height+200)/2);
-    paintIT.fillText(punt_max-puntuacion,(pantalla.width+170)/2,(pantalla.height+200)/2);
+    paintIT.fillText(`YOU NEED ${punt_max-puntuacion} POINTS MORE`,(pantalla.width-570)/2,(pantalla.height+100)/2);
 }
 
 // Función para trazar la línea de separación: cabecera de textos - juego en sí,
