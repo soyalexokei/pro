@@ -45,25 +45,28 @@
 
     <div class="container-fluid tm-mt-60">
         <div class="row mb-4 text-center">
-            <h2 class="col-12 tm-text-primary">¿Qué es el Mainframe de IBM Z?</h2>
+            <h2 class="col-12 tm-text-primary">¿Qué es el Sistema Z de IBM?</h2>
         </div>
         <div class="row tm-mb-74 tm-row-1640">
             <div class="col-lg-3 col-md-6 col-12"></div>
             <div class="col-lg-9 col-md-6 col-12">
                 <div class="tm-about-img-text">
                     <p class="mb-4">
-                        Es un conjunto de Sistemas de Computación o Servidores, utilizado para procesar transacciones a gran escala y
-                        diseñado para ejecutar aplicaciones críticas con las siguientes características:<br><br>
+                        Es un conjunto de Mainframes o servidores de datos encargados de procesar transacciones a gran escala y
+                        de ejecutar aplicaciones críticas.
+                    </p>
+                    <p class="mb-4">
+                        Se caracteriza por tener:<br>
                         &emsp; 1. Alta seguridad, ofreciendo cifrado de datos en tiempo real a nivel de hardware.<br>
                         &emsp; 2. Escalabilidad y rendimiento, procesando miles de millones de transacciones por día y siendo capaz de ejecutar
                         simultáneamente miles de aplicaciones bajo diferentes cargas de trabajo, por medio de una arquitectura que permite escalar horizontal
                         y verticalmente sin pérdida de rendimiento. Tipos de cargas de trabajo: OLTP o Batch.<br>
                         &emsp; 3. Alta disponibilidad, funcionando con una disponibilidad del 99.999% y soportando operaciones ininterrumpidas, incluso durante mantenimiento y actualizaciones.<br>
-                        &emsp; 4. Virtualización y contenedores, ejecutando varios Sistemas Operativos (S.O) al mismo tiempo. Es compatible con Linux, Kubernetes y Docker.
+                        &emsp; 4. Virtualización y contenedores, ejecutando varios Sistemas Operativos al mismo tiempo. Es compatible con Linux, Kubernetes y Docker.
                         Ésta última es una plataforma moderna para Cloud híbrida y DevOps.
                     </p>
                     <p class="mb-4">
-                        Su uso se da en:<br><br>
+                        Su uso se da en:<br>
                         &emsp; 1. Bancos, para procesar millones de transacciones diarias.<br>
                         &emsp; 2. Aerolíneas, para gestionar reservas y sistemas de embarque en tiempo real.<br>
                         &emsp; 3. Gobiernos, para gestionar los sistemas de la administración.<br>
@@ -73,10 +76,30 @@
                         Está desarrollado por la empresa estadounidense de <b class="negrita-word">IBM</b>.
                     </p>
                     <p class="mb-4">
-                        No obstante, aunque se asocie a IBM como sistemas clásicos o una marca antigua, el Mainframe de IBM Z es una plataforma moderna, segura, ultraescalable
-                        y con soporte para: Inteligencia Artificial (IA) integrada, contenedores, microservicios, desarrollo de operaciones e integración con APIs REST
-                        y sistemas modernos. Además, está diseñada para ejecutar cargas de trabajo críticas en organizaciones que no pueden permitirse fallos, pérdidas de datos
-                        ni tiempos de espera.
+                        Cuenta con diferentes tipos, de acuerdo a su evolución en el tiempo. El primero fue el zEC12 (2012) y después, vinieron los siguientes,
+                        ordenados cronológicamente:<br>
+                        &emsp; 1. z13 (2015), centrado en analítica en tiempo real y movilidad.<br>
+                        &emsp; 2. z14 (2017), incluye cifrado total de datos o <i>pervasive encryption</i>.<br>
+                        &emsp; 3. z15 (2019), enfocado en nube híbrida y privacidad de datos.<br>
+                        &emsp; 4. z16 (2022), es el primer Mainframe con IA integrada acelerada por hardware.<br>
+                        &emsp; 5. z17 (2024), orientado a IA generativa, aceleración cuántica y seguridad Zero Trust.<br>
+                        Todos ellos tienen integrado contenedores y microservicios, ejecutan cargas de trabajo críticas en organizaciones que no pueden permitirse fallos,
+                        pérdidas de datos o tiempos de espera, se encargan de desarrollar operaciones de E/S y, se integran con APIs REST y sistemas modernos.
+                    </p>
+                    <p class="mb-4">
+                        La arquitectura del sistema Z es híbrida, es decir, la arquitectura software y la de hardware están conectadas entre sí.
+                    </p>
+                    <p class="mb-4">
+                        La arquitectura hardware se compone de:<br>
+                        &emsp; - 2 o 4 switches internos para interconectar los <i>drawers</i>/<i>frames</i>, el hardware de soporte y los canales de E/S duplex,
+                        que se dividen en tres tipos: el CSS, canal que delega cuando detecta alguna E/S; el LCSS, canal virtual lógico; y el PR/SM, virtualizador del hardware.<br>
+                        &emsp; - 1 procesador central <i>Drawer</i> que contiene hasta 4 chips Telum, con 8 núcleos físicos cada uno.<br>
+                        &emsp; - Hasta 6 procesadores distribuidos, si la configuración del procesador central es <i>Multi-drawer</i>.<br>
+                        &emsp; - Hasta 2 elementos de soporte (SE) que permiten gestionar el sistema localmente con funciones como IPL o monitorización.<br>
+                        &emsp; - Sistema de registro o direccionamiento basado en x64.<br>
+                        &emsp; - Subsistemas de canales como OSA (Sistema Adaptado libre) para conectar con almacenamiento de acceso directo DASD y redes externas.<br>
+                        &emsp; - Cuenta con un software de gestión de hardware basado en consola (HMC) para controlar la partición lógica, los IPLs, los logs, la seguridad y las
+                        actualizaciones del sistema.
                     </p>
                 </div>            
             </div>
@@ -96,24 +119,18 @@
             <div class="col-md-6 col-12">
                 <div class="tm-about-2-col">
                     <h2 class="tm-text-primary mb-4">Sistema o Servidor Mainframe de IBM Z</h2>
-                    <img width="500" src="./img/"/>
+                    <img width="250" src="./img/ServidorZ.png"/>
                 </div>                
             </div> 
             <div class="col-md-6 col-12">
                 <div class="tm-about-2-col">
+                    
                     <p class="mb-4">
-                        Es un Servidor de gama alta especializado en procesamiento masivo de datos, donde el primero
-                        fue el zEC12 (2012) y a partir de éste, han habido mejoras, evolucionando así en los siguientes:
-                    </p>
-                    <p class="mb-4">
-                        &emsp; 1. z13 (2015), centrado en analítica en tiempo real y movilidad.<br>
-                        &emsp; 2. z14 (2017), incluye cifrado total de datos o <i>pervasive encryption</i>.<br>
-                        &emsp; 3. z15 (2019), enfocado en nube híbrida y privacidad de datos.<br>
-                        &emsp; 4. z16 (2022), es el primer Mainframe con IA integrada acelerada por hardware (Telum chip).<br>
-                        &emsp; 5. z17 (2024), orientado a IA generativa, aceleración cuántica y seguridad Zero Trust.
-                    </p>
-                    <p class="mb-4">
-                        Su Sistema Operativo (S.O) es el z/OS, usado a través de VPN.
+                        Uno de sus Sistemas Operativos (SS.OO) es el z/OS, o también conocido como MVS, usado a través de la VPN: OpenVPN. Su
+                        formato de almacenamiento en disco basado en el Formato de trackeo CKD (<i>Count</i> <i>Key</i> <i>Data</i>). <i>Count</i> es la
+                        información de control sobre el registro (Ej: R1), <i>Key</i> es la clave que puede usarse para búsqueda (Ej: 001) y <i>Data</i> es el
+                        contenido real del registro (Ej: Juan Pérez). Este formato de trackeo se usa en Datasets VSAM con acceso secuencial, indexado o relativo,
+                        en ficheros de tipo secuencial, en sistemas de archivos gestionados QSAM o BSAM y en sistemas de bajo nivel como spool JES2/JES3 o SMF logs.
                     </p>
                 </div>                
             </div>     
