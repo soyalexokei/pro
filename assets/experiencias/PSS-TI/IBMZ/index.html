@@ -30,6 +30,9 @@
                     <a class="nav-link" href="practicas.html">Prácticas</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="pfinal.html">Proyecto Final</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="../../../../index.html#studies">Atrás</a>
                 </li>
             </ul>
@@ -160,19 +163,44 @@
             <div class="col-md-6 col-12">
                 <div class="tm-about-2-col">
                     <p class="mb-4">
-                        Se estructura en varias capas o niveles funcionales:
+                        Se estructura en cinco capas o niveles funcionales:
                     </p>
                     <p class="mb-4">
-                        1. La Capa de interacción Hardware => es la base física que controla el hardware del Sistema Z e incluye la gestión de memoria,
+                        1. La Interacción Hardware => es la base física que controla el hardware del Sistema Z e incluye la gestión de memoria,
                         los dispositivos de E/S, los tipos de canales y las particiones LPARs.
                     </p>
                     <p class="mb-4">
-                        2. El Core Services => son los servicios básicos del sistema operativo que, incluye: la gestión de procesos y tareas (TCB),
+                        2. El Core Services => son los servicios básicos del sistema operativo, como: la gestión de procesos y tareas (TCB),
                         la gestión de memoria (como la paginación o el direccionamiento virtual), la gestión de almacenamiento en ficheros (como los Datasets, VSAMs o zFS),
                         la planificación de los JOBs del JES2/JES3, el sistema de ficheros (como el MVS, zFS o HFS) y la seguridad RACF.
                     </p>
                     <p class="mb-4">
-                        3. Los Middleware y servicios de plataforma => 
+                        3. Los Middleware y Servicios de Plataforma => son los programas o softwares que conectan las aplicaciones con el
+                        sistema operativo, es decir, los que se encargan de ser intermediarios entre el sistema final y el usuario. Tipos de Middleware:<br>
+                        &emsp; 1. CICS => es el gestor de transacciones online.<br>
+                        &emsp; 2. IMS => es el sistema de gestión de información.<br>
+                        &emsp; 3. DB2 => es la base de datos relacional.<br>
+                        &emsp; 4. WebSphere Application Server => es el servidor de aplicaciones Java EE.<br>
+                        &emsp; 5. MQ => es la mensajería empresarial.
+                    </p>
+                    <p class="mb-4">
+                        4. Las Aplicaciones => son aquéllas desarrolladas por usuarios o empresas. Tipos:<br>
+                        &emsp; 1. Cobol.<br>
+                        &emsp; 2. Java.<br>
+                        &emsp; 3. Assembler.<br>
+                        &emsp; 4. REXX.
+                    </p>
+                    <p class="mb-4">
+                        5. Las Interfaces de Usuario => son modos de visualización para que los usuarios y los administradores interactúen con el sistema. Tipos:<br>
+                        &emsp; 1. TSO/E => es una interfaz de línea de comandos, donde los usuarios ejecutan comandos y programas directamente desde terminales interactivos.<br>
+                        &emsp; 2. ISPF => es una interfaz de paneles de menús y de texto estructurado sobre TSO/E.<br>
+                        &emsp; 3. USS (UNIX System Services) => es un entorno de UNIX dentro de z/OS que ofrece una experiencia <i>Shell</i> similar a la de sistemas UNIX tradicionales.
+                        Hay dos tipos de comandos: ishell y omvs. El primero, abre un menú para explorar el sistema UNIX. El segundo, abre una sesión de línea de comandos tipo <i>Shell</i>.<br>
+                        &emsp; 4. SDSF => es una herramienta integrada en z/OS que permite ver, gestionar y controlar los Jobs que se ejecutan en el sistema para
+                        monitorizar recursos y rendimiento. Se accede escribiendo <i>S</i> a través del ISPF.<br>
+                        &emsp; 5. z/OSMF => es una plataforma de gestión web integrada en z/OS que permite a los administradores y operadores
+                        gestionar y configurar el sistema z/OS de forma moderna, visual e intuitiva, sin necesidad de usar
+                        la línea de comandos de TSO, los paneles de ISPF o los comandos 3270.
                     </p>
                 </div>                
             </div>     
