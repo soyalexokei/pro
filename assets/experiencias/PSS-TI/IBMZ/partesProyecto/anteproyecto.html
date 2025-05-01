@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Final: Anteproyecto</title>
+    <link rel="icon" href="../favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../css/templatemo-style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+                <img width="200" src="../img/logoIBMZ.png"/>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="../pfinal.html">Atrás</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="tm-hero d-flex justify-content-center align-items-center" data-parallax="scroll" data-image-src="../img/cabecera.png">
+        <form class="d-flex tm-search-form">
+            <input class="form-control tm-search-input" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success tm-search-btn" type="submit">
+                <i class="fas fa-search"></i>
+            </button>
+        </form>
+    </div>
+
+    <div class="container-fluid tm-container-content tm-mt-60">
+        <div class="row mb-4"><h2 class="col-12 tm-text-primary">Anteproyecto:</h2></div>
+        <table border="1" cellpadding="10" cellspacing="2" style="text-align: center; border-collapse: collapse; width: 100%; font-family: Arial, sans-serif;">
+            <tr style="border-bottom: 2px solid black;">
+                <th style="width: 30%;"><b>Título =></b></th>
+                <td style="width: 70%;">Aid & Travel</td>
+            </tr>
+            <tr style="border-bottom: 2px solid black;">
+                <th style="width: 30%;"><b>Descripción =></b></th>
+                <td style="width: 70%;">Plataforma de viajes por intercambio solidario</td>
+            </tr>
+            <tr style="border-bottom: 2px solid black;">
+                <th style="width: 30%;"><b>Funcionamiento general =></b></th>
+                <td style="width: 70%;">
+                    Usuarios se registran como anfitriones o viajeros, donde los primeros, ofrecen alojamiento gratuito a cambio de ayuda en tareas
+                    (agricultura, cocina, idiomas, entre otras) y, los segundos, eligen el anfitrión de acuerdo a sus intereses y planes de viaje.
+                    Todo ello, gestionado desde un sistema transaccional en z/OS.
+                </td>
+            </tr>
+            <tr style="border-bottom: 2px solid black;">
+                <th style="width: 30%;"><b>Tecnología de Z usada =></b></th>
+                <td style="width: 70%;">
+                    1. TSO/ISPF + REXX	=> para crear usuarios, anunciar alojamientos y buscar anfitriones.<br>
+                    2. DB2	=> para crear las bases de datos donde almacenar usuarios, viajes, habilidades y los feedbacks.<br>
+                    3. JCL	=> para tener tareas programadas, como generación de informes o limpieza de datos antiguos.<br>
+                    4. z/OS Comm Server	=> para establecer comunicaciones entre el anfitrión y el viajero por medio de un tipo de mensajería básica o API REST simulada.<br>
+                    5. Sysplex	=> para que la aplicación tenga mayor escalabilidad a través de la selección de varios países, regiones o categorías.<br>
+                    6. Utilidades z/OS => para cargar/descargar datos y backups y, para llevar un mantenimiento.
+                </td>
+            </tr>
+            <tr style="border-bottom: 2px solid black;">
+                <th style="width: 30%;"><b>Ventajas =></b></th>
+                <td style="width: 70%;">
+                    1. Es original y con impacto social.<br>
+                    2. Es escalable por regiones, idiomas y tipos de ayuda.<br>
+                    3. Es fácil de explicar y entender por un jurado o empresa.<br>
+                    4. Es ideal para practicar una lógica de negocio compleja.<br>
+                    5. Permite aplicar perfectamente todos los módulos de z/OS.
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <footer class="tm-bg-gray pt-5 pb-3 tm-text-gray tm-footer">
+        <div class="container-fluid tm-container-small">
+            <div class="row">
+                <div class="col-lg-7 col-md-7 col-12 px-5 mb-3">Copyright &copy; 2025-2030 - Todos los derechos reservados</div>
+                <div class="col-lg-5 col-md-5 col-12 px-5 text-right">Diseñado por Alejandro Fernández Pérez</div>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/plugins.js"></script>
+</body>
+</html>
