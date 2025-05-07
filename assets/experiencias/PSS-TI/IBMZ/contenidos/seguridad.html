@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contenidos: Almacenamiento + Backups</title>
+    <title>Contenidos: Seguridad</title>
     <link rel="icon" href="../favicon.ico" type="image/x-icon"/>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../fontawesome/css/all.min.css">
@@ -39,16 +39,61 @@
 
     <div class="container-fluid tm-mt-60">
         <div class="row mb-4 text-center">
-            <h2 class="col-12 tm-text-primary">Almacenamiento + Backups:</h2>
+            <h2 class="col-12 tm-text-primary">Seguridad:</h2>
         </div>
         <div class="row tm-mb-74 tm-row-1640">
-            <div class="col-lg-3 col-md-6 col-12"></div>
+            <div class="col-lg-2 col-md-6 col-12"></div>
             <div class="col-lg-9 col-md-6 col-12">
-                <div class="tm-about-img-text">
-                    <p class="mb-4">
-                        
-                    </p>
-                </div>            
+                El Sistema Z ofrece una de las plataformas más seguras del mundo empresarial, cuya arquitectura está diseñada
+                para tener alta confidencialidad, integridad y disponibilidad.
+                <br><br>
+                Su Seguridad está basada en dos principios clave:
+                <ul>
+                    1. Seguridad por diseño, basado en controles de seguridad integrados en el hardware y el z/OS, minimizando los ataques y reforzando
+                    las barreras contra accesos no autorizados.
+                </ul>
+                <ul>
+                    2. Integridad del sistema, basado en Common Criteria EAL5+, asegurando que ningún usuario pueda modificar funciones críticas del sistema.
+                </ul>
+                <br>
+                Cuenta con tres componentes de seguridad:
+                <ul>
+                    1. RACF: es el módulo de control de accesos del z/OS que permite definir usuarios, grupos, recursos protegidos como datasets
+                    y permisos de acceso. Además, puede trabajar junto a ACF2 o Top Secret.
+                </ul>
+                <ul>
+                    2. SAF: es quien actúa como interfaz entre z/OS y RACF, haciendo que todas las peticiones de acceso pasen por él, validándolas antes de
+                    que sean ejecutadas.
+                </ul> 
+                <ul>
+                    3. Auditoría y trazabilidad: es el conjunto de registros que detectan accesos indebidos o comportamientos sospechosos, pudiéndose integrar
+                    con SIEMs externos o GDPRs.
+                </ul> 
+                <br>
+                Tipos de sistemas de cifrado:
+                <ul>
+                    1. Pervasivo: sistema implementado a nivel de disco, base de datos, red y sistema de archivos y encargado de cifrar datos en reposo
+                    y en tránsito a través de coprocesadores criptográficos internos y sin modificar las aplicaciones.
+                </ul>   
+                <ul>
+                    2. CEX: sistema de tarjetas hardware dedicadas a tareas criptográficas a través de cifrado SSL, firma digital y gestión de claves.
+                </ul>   
+                <ul>
+                    3. Secure Boot/IPL: sistema que verifica que el sistema operativo y el firmware sean auténticos y no modificados antes de iniciar,
+                    protegiendo al arranque del sistema del malware.
+                </ul>
+                <br>
+                Otros tipos de seguridad:
+                <ul>
+                    1. Z Secure Suite: es un conjunto de herramientas para auditar, monitorizar y reforzar la seguridad.
+                </ul>
+                <ul>
+                    2. Seguridad en contenedores Linux on Z: 
+                </ul>
+                <ul>
+                    3. z/OS Container Extensions (zCX): 
+                </ul>
+
             </div>
             <div class="col-lg-2 col-md-6 col-12"></div>
         </div>
