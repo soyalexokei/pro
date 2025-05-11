@@ -28,14 +28,7 @@
         </div>
     </nav>
 
-    <div class="tm-hero d-flex justify-content-center align-items-center" data-parallax="scroll" data-image-src="../img/cabecera.png">
-        <form class="d-flex tm-search-form">
-            <input class="form-control tm-search-input" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success tm-search-btn" type="submit">
-                <i class="fas fa-search"></i>
-            </button>
-        </form>
-    </div>
+    <div class="tm-hero d-flex justify-content-center align-items-center" data-parallax="scroll" data-image-src="../img/cabecera.png"></div>
 
     <div class="container-fluid tm-mt-60">
         <div class="row mb-4 text-center">
@@ -58,8 +51,11 @@
                 <br>
                 Cuenta con tres componentes de seguridad:
                 <ul>
-                    1. RACF: es el módulo de control de accesos del z/OS que permite definir usuarios, grupos, recursos protegidos como datasets
-                    y permisos de acceso. Además, puede trabajar junto a ACF2 o Top Secret.
+                    1. <b>RACF</b>: es el módulo de control de accesos del z/OS que permite definir usuarios, grupos, recursos protegidos como datasets
+                    y permisos de acceso. Puede trabajar junto a ACF2 o Top Secret. Y además, es el encargado de conservar y proteger la información de los
+                    diferentes perfiles de usuario, a través de un sistema de autenticación y autorización llamado Resource Manager que, se encarga de preguntar
+                    al Sistema Operativo de z/OS, si el usuario está permitido o no y, éste a su vez, lo confirma con el RACF. Su administración se lleva a cabo
+                    a través de un archivo <b>.JCL</b>.
                 </ul>
                 <ul>
                     2. SAF: es quien actúa como interfaz entre z/OS y RACF, haciendo que todas las peticiones de acceso pasen por él, validándolas antes de
@@ -67,7 +63,7 @@
                 </ul> 
                 <ul>
                     3. Auditoría y trazabilidad: es el conjunto de registros que detectan accesos indebidos o comportamientos sospechosos, pudiéndose integrar
-                    con SIEMs externos o GDPRs.
+                    con SIEMs externos o sistemas de cumplimiento normativo.
                 </ul> 
                 <br>
                 Tipos de sistemas de cifrado:
@@ -84,16 +80,18 @@
                 </ul>
                 <br>
                 Otros tipos de seguridad:
-                <ul>
-                    1. Z Secure Suite: es un conjunto de herramientas para auditar, monitorizar y reforzar la seguridad.
-                </ul>
-                <ul>
-                    2. Seguridad en contenedores Linux on Z: 
-                </ul>
-                <ul>
-                    3. z/OS Container Extensions (zCX): 
-                </ul>
-
+                <ul>1. Z Secure Suite: es un conjunto de herramientas para auditar, monitorizar y reforzar la seguridad.</ul>
+                <ul>2. Seguridad en contenedores Linux on Z.</ul>
+                <ul>3. z/OS Container Extensions (zCX).</ul>
+                <ul>4. Compatibilidad con estándares de la industria, como ISO/IEC 27001.</ul>
+                <br><br>
+                <p>----------------------------------------------------------------------------------------------------------------------------</p>
+                NOTAS IMPORTANTES:
+                <ul>- IBM Z es seguro por diseño, con cifrado nativo y control de accesos centralizado.</ul>
+                <ul>- RACF es el controlador principal de seguridad.</ul>
+                <ul>- SAF actúa como interfaz entre z/OS y las peticiones de seguridad.</ul>
+                <ul>- IBM Z ofrece cifrado a gran escala (Pervasive Encryption) sin penalizar el rendimiento.</ul>
+                <ul>- IBM Z soporta arranque seguro, control granular de usuarios y auditoría.</ul>
             </div>
             <div class="col-lg-2 col-md-6 col-12"></div>
         </div>

@@ -28,14 +28,7 @@
         </div>
     </nav>
 
-    <div class="tm-hero d-flex justify-content-center align-items-center" data-parallax="scroll" data-image-src="../img/cabecera.png">
-        <form class="d-flex tm-search-form">
-            <input class="form-control tm-search-input" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success tm-search-btn" type="submit">
-                <i class="fas fa-search"></i>
-            </button>
-        </form>
-    </div>
+    <div class="tm-hero d-flex justify-content-center align-items-center" data-parallax="scroll" data-image-src="../img/cabecera.png"></div>
 
     <div class="container-fluid tm-mt-60">
         <div class="row mb-4 text-center">
@@ -45,9 +38,47 @@
             <div class="col-lg-3 col-md-6 col-12"></div>
             <div class="col-lg-9 col-md-6 col-12">
                 <div class="tm-about-img-text">
-                    <p class="mb-4">
-                        
-                    </p>
+                    El Sistema Z es una plataforma preparada para entornos híbridos donde establecer comunicaciones con aplicaciones tradicionales
+                    y con sistemas modernos basados en red, e integrarse 
+                    <br><br>
+                    Cuenta con dos grandes arquitecturas de red:
+                    <ul>
+                        1. <b>La Arquitectura SNA</b>: es la arquitectura de red tradicional, interna y propietaria de IBM.
+                        Diseñada en los años 70. Su uso se ha dado para comunicaciones internas entre terminales, aplicaciones y sistemas.
+                        Sus características relevantes son:
+                        <ul>1. Alta fiabilidad y control.</ul>
+                        <ul>2. Uso estructurado y jerárquico.</ul>
+                        <ul>3. Ideal para entornos cerrados como banca.</ul>
+                        <ul>4. Es un protocolo base para redes VTAM (redes con método de acceso de telecomunicaciones virtuales).</ul>
+                    </ul>
+                    <ul>
+                        2. <b>La Arquitectura TCP/IP</b>: es el protocolo estándar de Internet y redes modernas, soportado por IBM de forma
+                        nativa en z/OS para integrarse con otros servidores, aplicaciones y sistemas. Sus características relevantes son:
+                        <ul>1. Establecer comunicaciones entre el mainframe y los sistemas distribuidos.</ul>
+                        <ul>2. Permitir el acceso desde navegadores, APIs o herramientas DevOps.</ul>
+                        <ul>3. Es compatible con servicios como FTP, HTTP(S), SSH, DNS o correo electrónico.</ul>
+                        <ul>4. Permite exponer aplicaciones tradicionales vía Web Services o APIs RESTful</ul>
+                    </ul>
+                    <br>
+                    Su objetivo final es que la Arquitectura SNA se integre sobre la de TCP/IP, encapsulando así el tráfico de uno dentro de paquetes del otro,
+                    con el objetivo de permitir la interoperabilidad y la migración desde SNA a TCP/IP en muchos sectores del mercado. Aun así, SNA se sigue
+                    usando en aplicaciones críticas de banca, seguros o gobierno.
+                    <br>
+                    Actúa como un Hub de Comunicaciones:
+                    <img width="600" src="../img/contenidos/comunicaciones/HubIBM.jpg"/>
+                    <br><br>
+                    Su seguridad de red y comunicaciones consiste en:
+                    <ul>1. Dar soporte TLS/SSL nativo en TCP/IP.</ul>
+                    <ul>2. Cifrar la red vía IPsec, por medio de los coprocesadores criptográficos.</ul>
+                    <ul>3. Integrarse con RACF para autenticación de red.</ul>
+                    <br><br>
+                    <p>----------------------------------------------------------------------------------------------------------------------------</p>
+                    NOTAS IMPORTANTES:
+                    <ul>SNA es la arquitectura de red clásica de IBM, muy fiable, usada internamente con VTAM y terminales 3270.</ul>
+                    <ul>TCP/IP permite que IBM Z se conecte al mundo moderno (APIs, servicios web, entornos distribuidos).</ul>
+                    <ul>IBM Z actúa como sistema central que comunica y procesa datos entre aplicaciones antiguas y modernas.</ul>
+                    <ul>Se puede securizar todo el tráfico con cifrado y control de accesos (TLS/IPSec + RACF).</ul>
+                    <ul>IBM Z está preparado para infraestructuras híbridas y cloud, por lo que, no es un sistema aislado.</ul>
                 </div>            
             </div>
             <div class="col-lg-2 col-md-6 col-12"></div>

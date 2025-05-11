@@ -43,14 +43,7 @@
         </div>
     </nav>
 
-    <div class="tm-hero d-flex justify-content-center align-items-center" data-parallax="scroll" data-image-src="img/cabecera.png">
-        <form class="d-flex tm-search-form">
-            <input class="form-control tm-search-input" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success tm-search-btn" type="submit">
-                <i class="fas fa-search"></i>
-            </button>
-        </form>
-    </div>
+    <div class="tm-hero d-flex justify-content-center align-items-center" data-parallax="scroll" data-image-src="img/cabecera.png"></div>
 
     <div class="container-fluid tm-mt-60">
         <div class="row mb-4 text-center">
@@ -67,13 +60,13 @@
                     <ul>1. Alta seguridad, ofreciendo cifrado de datos en tiempo real a nivel de hardware, con CryptoExpress y CPACF.</ul>
                     <ul>
                         2. Escalabilidad y rendimiento, procesando millones de transacciones por día y siendo capaz de ejecutar
-                        simultáneamente miles de aplicaciones bajo diferentes cargas de trabajo OLTP o Batch que, no pueden permitirse fallos,
-                        pérdidas de datos o tiempos de espera.
+                        simultáneamente miles de aplicaciones bajo diferentes cargas de trabajo OLTP o Batch Processing (procesamiento por lotes) que,
+                        no pueden permitirse fallos, pérdidas de datos o tiempos de espera.
                     </ul>
                     <ul>3. Alta disponibilidad, funcionando con una disponibilidad cercana al 100% y soportando operaciones ininterrumpidas, incluso durante mantenimiento y actualizaciones.</ul>
                     <ul>4. Virtualización, contenedores y microservicios, ejecutando varios Sistemas Operativos al mismo tiempo y ofreciendo virtualización de recursos.</ul>
                     <ul>5. Compatibilidad con Linux, Kubernetes y Docker.</ul>
-                    <ul>6. Capacidades de multiprogramación y multiprocesamiento.</ul>
+                    <ul>6. Capacidades de multiprogramación y multiprocesamiento, siendo capaz de ejecutar varios programas a la vez.</ul>
                     <ul>7. Capacidad de dar soporte a miles de usuarios simultáneos.</ul>
                     <ul>8. Importancia histórica y empresarial.</ul>
                     <ul>9. Fiabilidad y estabilidad.</ul>
@@ -116,7 +109,11 @@
                         </ul>
                     </li>
                     <li>1 procesador central que contiene hasta 4 chips Telum con 8 núcleos físicos cada uno.</li>
-                    <li>Hasta 6 procesadores distribuidos, si la configuración del procesador central es <i>Multi-drawer</i>, para mayor escalabilidad.</li>
+                    <li>
+                        Hasta 6 procesadores físicos y distribuidos, si la configuración del procesador central es <i>Multi-drawer</i>, para mayor escalabilidad.
+                        Si los 6 están activos (6de6), asignados a una partición lógica (LPAR) y disponibles para su procesamiento, tienen una Latencia
+                        menor o igual a 18 microsegundos (L <= 18 microseg).
+                    </li>
                     <li>
                         Hasta 2 elementos de soporte o terminales locales embebidos que permiten gestionar IPLs, supervisar el estado del sistema y
                         realizar tareas de diagnóstico y actualización.

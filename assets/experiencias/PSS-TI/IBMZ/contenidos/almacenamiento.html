@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contenidos: Almacenamiento + Backups</title>
+    <title>Contenidos: Almacenamiento en z/OS</title>
     <link rel="icon" href="../favicon.ico" type="image/x-icon"/>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../fontawesome/css/all.min.css">
@@ -28,26 +28,181 @@
         </div>
     </nav>
 
-    <div class="tm-hero d-flex justify-content-center align-items-center" data-parallax="scroll" data-image-src="../img/cabecera.png">
-        <form class="d-flex tm-search-form">
-            <input class="form-control tm-search-input" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success tm-search-btn" type="submit">
-                <i class="fas fa-search"></i>
-            </button>
-        </form>
-    </div>
+    <div class="tm-hero d-flex justify-content-center align-items-center" data-parallax="scroll" data-image-src="../img/cabecera.png"></div>
 
     <div class="container-fluid tm-mt-60">
         <div class="row mb-4 text-center">
-            <h2 class="col-12 tm-text-primary">Almacenamiento + Backups:</h2>
+            <h2 class="col-12 tm-text-primary">Almacenamiento de datos en z/OS:</h2>
         </div>
         <div class="row tm-mb-74 tm-row-1640">
             <div class="col-lg-3 col-md-6 col-12"></div>
             <div class="col-lg-9 col-md-6 col-12">
                 <div class="tm-about-img-text">
-                    <p class="mb-4">
-                        
-                    </p>
+                    &emsp;<b>1.1. ¿Qué es un DataSet (DS)? => </b>Es un conjunto de datos o fichero utilizado en z/OS para almacenar y gestionar datos.
+                    Se compone de registros (PSWs) que estan divididos en campos y cada uno de ellos contiene datos, como caracteres. Cada carácter
+                    se posiciona en un campo. Varios registros pueden formar bloques de registros. Un bloque es lo que se transfiere en cada operación de E/S.
+                    <br>
+                    <img width="600" src="../img/contenidos/almacenamiento/datasets.jpg"/>
+                    <br>
+                    &emsp;<b>1.2. Tipos de DataSets:</b>
+                    <ul>A) PS => Fichero secuencial => son registros almacenados uno tras otro, con acceso secuencial.</ul>
+                    <ul>
+                        B) PDS => Fichero particionado => se compone de directorio y miembros, es decir, de ficheros dentro de una carpeta.
+                        Cada miembro es un fichero secuencial. Si borras uno de ellos, su espacio se queda borrado y sin poder volver a utilizarse.
+                    </ul>
+                    <ul>
+                        C) PDSE => Fichero particionado extendido => es una versión avanzada del PDS, reutilizando el espacio automáticamente,
+                        permitiendo más extensiones y sin necesidad de compresión manual. Una diferencia importante con el PDS es que la parte de
+                        los bloques de directorio máximo es <i>No limit</i>.
+                    </ul>
+                    <ul>
+                        D) VSAM => Estructuras que actúan como método de acceso optimizado para almacenamiento en sistemas con memoria virtual.
+                        Su objetivo es mejorar el rendimiento del acceso a datos de los ficheros PS. Para ello, usa técnicas de indexación,
+                        acceso directo y almacenamiento eficiente. Cuenta con cuatro tipos:
+                        <ul>- KSDS => usa una clave para acceso directo.</ul>
+                        <ul>- LDS => mete datos en una base de datos de db2.</ul>
+                        <ul>- ESDS => equivale a un secuencial, pero de VSAM.</ul>
+                        <ul>- RRDS => accede eficientemente por número relativo de registro.</ul>
+                    </ul>
+                    &emsp;<b>1.3. Métodos de acceso:</b>
+                    <br>
+                    Definición => son técnicas para leer y escribir datos.
+                    <br>
+                    Hay dos tipos:
+                    <ul>1. BSAM: es un método de acceso secuencial básico.</ul>
+                    <ul>2. QSAM: es un método de acceso secuencial en cola.</ul>
+                    &emsp;<b>1.4. Reglas en el nombre de un DataSet:</b>
+                    <ul>1. Es una estructura jerárquica, formada por segmentos, donde cada uno está separado por puntos y contiene caracteres.</ul>
+                    <ul>2. Puede tener como máximo 22 segmentos en total.</ul>
+                    <ul>3. Puede tener como máximo 44 caracteres en total, donde los últimos son de seguridad o extras.</ul>
+                    <ul>4. Cada carácter es 1 bit.</ul>
+                    <ul>5. El primer segmento es el HLQ o calificador de alto nivel.</ul>
+                    <ul>- Ejemplo: USER.TEST.PRUEBA.SEQ</ul>
+                    &emsp;<b>1.5. Tipos de formato de registro:</b>
+                    <ul>1. F - Fijo => son registros del mismo tamaño.</ul>
+                    <ul>2. V - Variable => son registros de tamaño variable.</ul>
+                    <ul>3. FB - Fijo Bloqueado => son registros del mismo tamaño agrupados en bloques.</ul>
+                    <ul>4. VB - Variable Bloqueado => son registros de tamaño variable agrupados en bloques.</ul>
+                    <ul>5. U - Indefinido => son registros sin estructura y usados en módulos ejecutables compilados.</ul>
+                    &emsp;<b>1.6. Proceso de creación de un DataSet:</b>
+                    <br><br>
+                    <img width="600" src="../img/contenidos/almacenamiento/creacionDS-1.png"/>
+                    <img width="550" src="../img/contenidos/almacenamiento/creacionDS-2.png"/>
+                    <br><br>
+                    <u>Caso PS:</u>
+                    <br>
+                    <ul>1. El tipo de formato de registro => puede ser F, V, FB o VB.</ul>
+                    <ul>2. La longitud del registro => 80</ul>
+                    <ul>3. El tamaño del bloque => 32720</ul>
+                    <ul>4. La cantidad primaria y secundaria de espacio => TRKS (tracks) / CYLS (cilindros)</ul>
+                    <ul>5. Los bloques de directorio => 0</ul>
+                    <ul>6. La cantidad primaria => 5-15 para TRKS / 1-3 para CYLS</ul>
+                    <ul>7. La cantidad secundaria => 3-5 para TRKS / 1 para CYLS</ul>
+                    <ul>8. El tipo de nombre del DataSet => < se deja en blanco ></ul>
+                    <ul>9. La versión del DataSet => < se deja en blanco ></ul>
+                    <ul>10. El número de generaciones => < se deja en blanco ></ul>
+                    <u>Caso PDS:</u>
+                    <br>
+                    <ul>1. El tipo de formato de registro => puede ser F, V, FB o VB, salvo para ficheros .LOAD que debe ser U.</ul>
+                    <ul>2. La longitud del registro => 80</ul>
+                    <ul>3. El tamaño del bloque => 32720</ul>
+                    <ul>4. La cantidad primaria y secundaria de espacio => TRKS (tracks) / CYLS (cilindros)</ul>
+                    <ul>5. Los bloques de directorio => 20</ul>
+                    <ul>6. La cantidad primaria => 5-15 para TRKS / 1-3 para CYLS</ul>
+                    <ul>7. La cantidad secundaria => 3-5 para TRKS / 1 para CYLS</ul>
+                    <ul>8. El tipo de nombre del DataSet => < se deja en blanco ></ul>
+                    <ul>9. La versión del DataSet => < se deja en blanco ></ul>
+                    <ul>10. El número de generaciones => < se deja en blanco ></ul>
+                    <u>Caso PDSE:</u>
+                    <br>
+                    <ul>1. El tipo de formato de registro => puede ser F, V, FB o VB, salvo para ficheros .LOAD que debe ser U.</ul>
+                    <ul>2. La longitud del registro => 80</ul>
+                    <ul>3. El tamaño del bloque => 32720</ul>
+                    <ul>4. La cantidad primaria y secundaria de espacio => TRKS (tracks) / CYLS (cilindros)</ul>
+                    <ul>5. Los bloques de directorio => 0</ul>
+                    <ul>6. La cantidad primaria => 5-15 para TRKS / 1-3 para CYLS</ul>
+                    <ul>7. La cantidad secundaria => 3-5 para TRKS / 1 para CYLS</ul>
+                    <ul>8. El tipo de nombre del DataSet => LIBRARY</ul>
+                    <ul>9. La versión del DataSet => < se deja en blanco ></ul>
+                    <ul>10. El número de generaciones => < se deja en blanco ></ul>
+                    <u>Caso GDG (datasets generacionales que pueden ser base o catalogados):</u>
+                    <br>
+                    <ul>1. El tipo de formato de registro => puede ser F, V, FB o VB.</ul>
+                    <ul>2. La longitud del registro => 80</ul>
+                    <ul>3. El tamaño del bloque => 32720</ul>
+                    <ul>4. La cantidad primaria y secundaria de espacio => TRKS (tracks) / CYLS (cilindros)</ul>
+                    <ul>5. Los bloques de directorio => 0</ul>
+                    <ul>6. La cantidad primaria => 5-15 para TRKS / 1-3 para CYLS</ul>
+                    <ul>7. La cantidad secundaria => 3-5 para TRKS / 1 para CYLS</ul>
+                    <ul>8. El tipo de nombre del DataSet => GENERATION</ul>
+                    <ul>9. La versión del DataSet => 0</ul>
+                    <ul>
+                        10. El número de generaciones => se gestiona al definir el grupo GDG base usando IDCAMS =>
+                        generación tipo creada: ALLOC DS('MI.GDG.FILE(+1)') NEW ... => G0001V00
+                    </ul>
+                    <br>
+                    &emsp;<b>1.7. El almacenamiento de z/OS:</b>
+                    <br>
+                    <img width="600" src="../img/contenidos/almacenamiento/zOS-storage.jpg"/>
+                    <br>
+                    La <b>Paginación</b> es un mecanismo de gestión de memoria virtual que,
+                    permite al sistema operativo ejecutar programas que requieren de más memoria
+                    de la que está físicamente disponible (Real Frame). Su funcionamiento consiste
+                    en dividir, tanto el espacio de direcciones virtual, como la memoria física,
+                    en bloques de tamaño fijo llamados <b>Páginas</b>.
+                    <br><br>
+                    &emsp;<b>1.8. El Espacio de Direcciones Virtual y DAT:</b>
+                    <br>
+                    <img width="600" src="../img/contenidos/almacenamiento/espacio-dir-virtual.jpg"/>
+                    <br>
+                    DAT = sistema de traducción de direcciones dinámicas.
+                    <br><br>
+                    La trama de direcciones se compone de:
+                    <br>
+                    <ul>- 24 bits => MVS/Mainframe.</ul>
+                    “La Línea”
+                    <ul>- 31 bits => MVS-XA o MVS extendido.</ul>
+                    “La Barra”
+                    <ul>- 64 bits => z/OS.</ul>
+                    <br><br>
+                    &emsp;<b>1.9. Backups o copias de seguridad de datos:</b>
+                    <br>
+                    Pueden ser de tres tipos:
+                    <br>
+                    <ul>1. Volcado de datos (dump) => son copias completas del contenido de memoria o de los datasets.</ul>
+                    <ul>2. Backups periódicos => son copias programadas para proteger datos críticos.</ul>
+                    <ul>
+                        3. Recuperación ante desastre => es una copia integral en otro sistema o ubicación remota para continuidad operativa.
+                        Hay dos tipos comunes de métodos de recuperación:
+                        <ul>A) La restauración desde backup físico.</ul>
+                        <ul>B) Las réplicas remotas y sincronización.</ul>
+                    </ul>
+                    <br>
+                    &emsp;<b>1.10. El formato CKD:</b>
+                    <br>
+                    Es un sistema de organización en disco típico de los Z, donde cada registro contiene:
+                    <ul>- Count => información de control del registro.</ul>
+                    <ul>- Key => clave de búsqueda.</ul>
+                    <ul>- Data => contenido del registro.</ul>
+                    Es usado en DataSets VSAM, en ficheros secuenciales PS, en métodos de acceso y en sistemas como spool JES2/JES3 y registros SMF.
+                    <br><br>
+                    &emsp;<b>1.11. Localización de ficheros:</b>
+                    <br>
+                    El sistema busca el fichero y al leerlo físicamente, lo traduce a nivel lógico para que se pueda procesar.
+                    <br><br>
+                    &emsp;<b>1.12. Medición del uso de un registro:</b>
+                    <br>
+                    Es aproximadamente igual a la variabilidad del blocaje y sus diferentes tipos, de acuerdo con
+                    los diferentes casos de longitud de registros que puede haber.
+                    <br><br>
+                    <p>----------------------------------------------------------------------------------------------------------------------------</p>
+                    NOTA IMPORTANTE:
+                    <br>
+                    Una tecnología de almacenamiento físico de IBM Z es el formato tipo <b>RAID</b>,
+                    usado para organizar discos de forma redundante y eficiente, siendo la base de
+                    que los <b>discos DASD</b> sean rápidos, seguros y disponibles.
+                    <br>
+                    <p>----------------------------------------------------------------------------------------------------------------------------</p>
                 </div>            
             </div>
             <div class="col-lg-2 col-md-6 col-12"></div>
