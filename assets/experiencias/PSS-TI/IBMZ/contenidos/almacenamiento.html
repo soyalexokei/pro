@@ -91,9 +91,9 @@
                     <br><br>
                     <u>Caso PS:</u>
                     <br>
-                    <ul>1. El tipo de formato de registro => puede ser F, V, FB o VB.</ul>
-                    <ul>2. La longitud del registro => 80</ul>
-                    <ul>3. El tamaño del bloque => 32720</ul>
+                    <ul>1. El tipo de formato de registro => puede ser F, V, FB o VB, salvo para las LOAD LIB que debe ser U.</ul>
+                    <ul>2. La longitud del registro => 80 (porque es lo máximo que sabe leer)</ul>
+                    <ul>3. El tamaño del bloque => 0 (para que lo calcule el sistema)</ul>
                     <ul>4. La cantidad primaria y secundaria de espacio => TRKS (tracks) / CYLS (cilindros)</ul>
                     <ul>5. Los bloques de directorio => 0</ul>
                     <ul>6. La cantidad primaria => 5-15 para TRKS / 1-3 para CYLS</ul>
@@ -103,9 +103,9 @@
                     <ul>10. El número de generaciones => < se deja en blanco ></ul>
                     <u>Caso PDS:</u>
                     <br>
-                    <ul>1. El tipo de formato de registro => puede ser F, V, FB o VB, salvo para ficheros .LOAD que debe ser U.</ul>
-                    <ul>2. La longitud del registro => 80</ul>
-                    <ul>3. El tamaño del bloque => 32720</ul>
+                    <ul>1. El tipo de formato de registro => puede ser F, V, FB o VB, salvo para las LOAD LIB que debe ser U.</ul>
+                    <ul>2. La longitud del registro => 80 (porque es lo máximo que sabe leer)</ul>
+                    <ul>3. El tamaño del bloque => 0 (para que lo calcule el sistema)</ul>
                     <ul>4. La cantidad primaria y secundaria de espacio => TRKS (tracks) / CYLS (cilindros)</ul>
                     <ul>5. Los bloques de directorio => 20</ul>
                     <ul>6. La cantidad primaria => 5-15 para TRKS / 1-3 para CYLS</ul>
@@ -115,9 +115,9 @@
                     <ul>10. El número de generaciones => < se deja en blanco ></ul>
                     <u>Caso PDSE:</u>
                     <br>
-                    <ul>1. El tipo de formato de registro => puede ser F, V, FB o VB, salvo para ficheros .LOAD que debe ser U.</ul>
-                    <ul>2. La longitud del registro => 80</ul>
-                    <ul>3. El tamaño del bloque => 32720</ul>
+                    <ul>1. El tipo de formato de registro => puede ser F, V, FB o VB, salvo para las LOAD LIB que debe ser U.</ul>
+                    <ul>2. La longitud del registro => 80 (porque es lo máximo que sabe leer)</ul>
+                    <ul>3. El tamaño del bloque => 0 (para que lo calcule el sistema)</ul>
                     <ul>4. La cantidad primaria y secundaria de espacio => TRKS (tracks) / CYLS (cilindros)</ul>
                     <ul>5. Los bloques de directorio => 0</ul>
                     <ul>6. La cantidad primaria => 5-15 para TRKS / 1-3 para CYLS</ul>
@@ -125,11 +125,12 @@
                     <ul>8. El tipo de nombre del DataSet => LIBRARY</ul>
                     <ul>9. La versión del DataSet => < se deja en blanco ></ul>
                     <ul>10. El número de generaciones => < se deja en blanco ></ul>
+                    Puede tener hasta 126 extensiones.<br><br>
                     <u>Caso GDG (datasets generacionales que pueden ser base o catalogados):</u>
                     <br>
-                    <ul>1. El tipo de formato de registro => puede ser F, V, FB o VB.</ul>
-                    <ul>2. La longitud del registro => 80</ul>
-                    <ul>3. El tamaño del bloque => 32720</ul>
+                    <ul>1. El tipo de formato de registro => puede ser F, V, FB o VB, salvo para las LOAD LIB que debe ser U.</ul>
+                    <ul>2. La longitud del registro => 80 (porque es lo máximo que sabe leer)</ul>
+                    <ul>3. El tamaño del bloque => 0 (para que lo calcule el sistema)</ul>
                     <ul>4. La cantidad primaria y secundaria de espacio => TRKS (tracks) / CYLS (cilindros)</ul>
                     <ul>5. Los bloques de directorio => 0</ul>
                     <ul>6. La cantidad primaria => 5-15 para TRKS / 1-3 para CYLS</ul>
@@ -143,6 +144,9 @@
                     <br>
                     &emsp;<b>1.7. El almacenamiento de z/OS:</b>
                     <br>
+                    Memoria física = Real Frames<br>
+                    Memoria virtual = Virtual Pages<br>
+                    Memoria Auxiliar = Auxiliar Slots como Memoria DASD o Flash<br>
                     <img width="600" src="../img/contenidos/almacenamiento/zOS-storage.jpg"/>
                     <br>
                     La <b>Paginación</b> es un mecanismo de gestión de memoria virtual que,
