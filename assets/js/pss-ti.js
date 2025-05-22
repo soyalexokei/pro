@@ -14,6 +14,8 @@ var videosIDpsstiexperience =
     "",
     "",
     "",
+    "",
+    "",
 ];
 var imagenesIDpsstiexperience =
 [
@@ -30,6 +32,8 @@ var imagenesIDpsstiexperience =
     "https://i.postimg.cc/fRv3jFjg/IMG-20250429-WA0006.png",
     "https://i.postimg.cc/DzySCgxf/IMG-20250429-WA0008.png",
     "https://i.postimg.cc/v8jFpWSq/IMG-20250520-WA0008.png",
+    "https://i.postimg.cc/TwPw2WzN/1.png",
+    "https://i.postimg.cc/mD6rPgRL/2.png",
 ];
 var indicePsstiexperience = 1;
 var pantallaPsstiexperience = document.getElementById('pantalla-psstiexperience');
@@ -37,7 +41,7 @@ var imgPsstiexperience = document.createElement("img");
 var iframePsstiexperience = document.createElement("iframe");
 
 //-- Ctes.
-const totalPsstiexperience = 13;
+const totalPsstiexperience = 15;
 
 function mostrarPsstiexperience(auxPsstiexperience) {
     
