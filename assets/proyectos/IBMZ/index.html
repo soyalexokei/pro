@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IBM Z: Introducción</title>
+    <link rel="icon" href="./favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/templatemo-style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img width="200" src="img/logoIBMZ.png"/>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Introducción</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contenidos.html">Contenidos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../index.html#projects">Atrás</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="tm-hero d-flex justify-content-center align-items-center" data-parallax="scroll" data-image-src="img/cabecera.png"></div>
+
+    <div class="container-fluid tm-mt-60">
+        <div class="row mb-4 text-center">
+            <h2 class="col-12 tm-text-primary">¿Qué es el Sistema Z de IBM?</h2>
+        </div>
+        <div class="row tm-mb-74 tm-row-1640">
+            <div class="col-lg-3 col-md-6 col-12"></div>
+            <div class="col-lg-9 col-md-6 col-12">
+                <div class="tm-about-img-text">
+                    Es un conjunto de Mainframes o servidores de datos encargados de procesar transacciones a gran escala y
+                    de ejecutar aplicaciones críticas. Nació en 1964 y fue desarrollado por la empresa estadounidense de <b class="negrita-word">IBM</b>.
+                    <br><br>
+                    Se caracteriza por tener:
+                    <ul>1. Alta seguridad, ofreciendo cifrado de datos en tiempo real a nivel de hardware, con CryptoExpress y CPACF.</ul>
+                    <ul>
+                        2. Escalabilidad y rendimiento, procesando millones de transacciones por día y siendo capaz de ejecutar
+                        simultáneamente miles de aplicaciones bajo diferentes cargas de trabajo OLTP o Batch Processing (procesamiento por lotes) que,
+                        no pueden permitirse fallos, pérdidas de datos o tiempos de espera.
+                    </ul>
+                    <ul>3. Alta disponibilidad, funcionando con una disponibilidad cercana al 100% y soportando operaciones ininterrumpidas, incluso durante mantenimiento y actualizaciones.</ul>
+                    <ul>4. Virtualización, contenedores y microservicios, ejecutando varios Sistemas Operativos al mismo tiempo y ofreciendo virtualización de recursos.</ul>
+                    <ul>5. Compatibilidad con Linux, Kubernetes y Docker.</ul>
+                    <ul>6. Capacidades de multiprogramación y multiprocesamiento, siendo capaz de ejecutar varios programas a la vez.</ul>
+                    <ul>7. Capacidad de dar soporte a miles de usuarios simultáneos.</ul>
+                    <ul>8. Importancia histórica y empresarial.</ul>
+                    <ul>9. Fiabilidad y estabilidad.</ul>
+                    <ul>10. Capacidad de desarrollar operaciones de E/S.</ul>
+                    <br>
+                    Su uso se da en:
+                    <ul>1. Bancos, para procesar millones de transacciones diarias.</ul>
+                    <ul>2. Aerolíneas, para gestionar reservas y sistemas de embarque en tiempo real.</ul>
+                    <ul>3. Gobiernos, para gestionar los sistemas de la administración.</ul>
+                    <ul>4. Ventas, comercio y logística, para llevar a cabo la trazabilidad y la facturación a gran escala.</ul>
+                    <ul>5. La integración con sistemas modernos y APIs.</ul>
+                    <br>
+                    Cuenta con diferentes tipos, de acuerdo a su evolución en el tiempo:
+                    <ul>1. z9 EC (2005), es el primer escalado a nivel de sistema. Rendimiento de 1.7 GHz.</ul>
+                    <ul>2. z10 EC (2008), es el primero con núcleo de alta frecuencia y caché a 3 niveles. Rendimiento de 4.4 GHz.</ul>
+                    <ul>3. z196 (2010), incluye caché eDRAM, memoria RAIM e integración zBX. Rendimiento de 5.2 GHz.</ul>
+                    <ul>4. zEC12 (2012), centrado en mejorar la caché y en extender la arquitectura para ser más escalable. Rendimiento de 5.5 GHz.</ul>
+                    <ul>
+                        5. z13 (2015), centrado en analítica en tiempo real y movilidad. Rendimiento de 5.0 GHz, pero más potente, consiguiendo a partir de entonces
+                        en adelante, más potencia con menos rendimiento/GHz.
+                    </ul>
+                    <ul>6. z14 (2017), incluye cifrado total de datos o <i>pervasive encryption</i>. Rendimiento de 5.2 GHz.</ul>
+                    <ul>7. z15 (2019), enfocado en nube híbrida y privacidad de datos. Rendimiento de 5.2 GHz.</ul>
+                    <ul>8. z16 (2022), es el primer Mainframe con IA integrada acelerada por hardware. Rendimiento de 5.2 GHz. Aparición del Telum II como procesador</ul>
+                    <ul>9. z17 (2025), orientado a IA generativa, aceleración cuántica y seguridad Zero Trust.</ul>
+                    <br>
+                    Aunque históricamente también existen otros sistemas, como el IBM 701, el IBM 704, el IBM 1401 o el System/360 que, fue el primero que
+                    definió una arquitectura estándar para toda una línea de computadores y es considerado como el <i>primer Mainframe moderno</i> de IBM.
+                    <br><br>
+                    La arquitectura del sistema Z permite escalar horizontal y verticalmente sin pérdida de rendimiento y es híbrida, es decir, la arquitectura software
+                    y la de hardware están conectadas entre sí.
+                    <br><br>
+                    La arquitectura hardware se compone de:
+                    <li>
+                        2 o 4 switches internos que interconectan:
+                        <ul>1. Los <i>Drawers</i>/<i>Frames</i>/Módulos de procesadores.</ul>
+                        <ul>2. El hardware de soporte.</ul>
+                        <ul>
+                            3. Los canales de E/S en modo dúplex que pueden ser de tres tipos:
+                            <ol>A) CSS, canal que delega cuando detecta alguna E/S.</ol>
+                            <ol>B) LCSS, canal virtual lógico.</ol>
+                            <ol>C) PR/SM, virtualizador del hardware.</ol>
+                        </ul>
+                    </li>
+                    <li>1 procesador central que contiene hasta 4 chips Telum con 8 núcleos físicos cada uno.</li>
+                    <li>
+                        Hasta 6 procesadores físicos y distribuidos, si la configuración del procesador central es <i>Multi-drawer</i>, para mayor escalabilidad.
+                        Si los 6 están activos (6de6), asignados a una partición lógica (LPAR) y disponibles para su procesamiento, tienen una Latencia
+                        menor o igual a 18 microsegundos (L <= 18 microseg).
+                    </li>
+                    <li>
+                        Hasta 2 elementos de soporte o terminales locales embebidos que permiten gestionar IPLs, supervisar el estado del sistema y
+                        realizar tareas de diagnóstico y actualización.
+                    </li>
+                    <li>Direccionamiento basado en 64 bits.</li>
+                    <li>
+                        Subsistemas de canal de E/S, como OSA (Adaptador de sistemas abiertos) y FICON, para conectar el sistema con
+                        dispositivos DASD para almacenamiento y redes TCP/IP de alta velocidad.
+                    </li>
+                    <li>
+                        Un software de gestión de hardware basado en consola (HMC) para controlar:
+                        <ul>1. La creación y administración de particiones lógicas (LPARs).</ul>
+                        <ul>2. La ejecución de IPLs.</ul>
+                        <ul>3. La supervisión de logs y alertas.</ul>
+                        <ul>4. La gestión de seguridad y actualizaciones.</ul>
+                    </li>
+                    <br>
+                    La arquitectura software soporta una variedad de Sistemas Operativos (cada uno de ellos en una partición diferente) especializados y diseñados para cubrir distintos
+                    tipos de cargas de trabajo:
+                    <li>
+                        El z/OS, o también conocido como MVS, es el Sistema Operativo principal, con alta disponibilidad, seguridad, escalabilidad,
+                        capacidades avanzadas de virtualización y orientado a cargas de trabajo críticas Batch Processing (procesamiento por lotes) y online.
+                        Su software interactivo es el TSO, basado en paneles.
+                    </li>
+                    <li>
+                        El z/VM, es un Sistema Operativo que permite la creación y gestión de múltiples máquinas virtuales, donde se ejecutan distintos Sistemas Operativos
+                        simultáneamente.
+                    </li>
+                    <li>
+                        El z/VSE, es un Sistema Operativo ligero, pensado para entornos empresariales de menor tamaño que, requieren alta fiabilidad,
+                        pero menor complejidad.
+                    </li>
+                    <li>
+                        El z/TPF, es un Sistema Operativo optimizado para el procesamiento ultra rápido de transacciones de alta frecuencia, usado en sectores como
+                        aerolíneas y banca. Se usa mucho en Francia.
+                    </li>
+                    <li>
+                        Linux on Z, son implementaciones de Linux adaptadas al Sistema Z de IBM, combinando la robustez del Mainframe,
+                        con la flexibilidad del software abierto.
+                    </li>
+                </div>            
+            </div>
+            <div class="col-lg-2 col-md-6 col-12"></div>
+        </div>
+        <div class="row tm-mb-74 tm-row-1640">
+            <div class="col-lg-4 col-md-6 col-12"></div>
+            <div class="col-lg-8 col-md-6 col-12">
+                <img width="600" src="./img/Intro/MainframesZ.png"/>
+                <p class="mb-6">
+                    Mainframes o Servidores de datos del Sistema Z de IBM
+                </p>
+            </div>
+            <div class="col-lg-2 col-md-6 col-12"></div>
+        </div>
+        <div class="row tm-mb-50">
+            <div class="col-md-6 col-12">
+                <div class="tm-about-2-col">
+                    <h2 class="tm-text-primary mb-4">Sistema Operativo de z/OS => </h2>
+                    <img src="./img/Intro/zOS.png"/>
+                </div>                
+            </div> 
+            <div class="col-md-6 col-12">
+                <div class="tm-about-2-col">
+                    Se estructura en cinco capas o niveles funcionales:
+                    <br><br>
+                    1. La Interacción Hardware => es la base física que controla el hardware del Sistema Z e incluye la gestión de memoria,
+                    los dispositivos de E/S, los tipos de canales y las particiones LPARs.
+                    <br><br>
+                    2. El Core Services => son los servicios básicos del sistema operativo, como: la gestión de procesos y tareas (TCB),
+                    la gestión de memoria (como la paginación o el direccionamiento virtual), la gestión de almacenamiento en ficheros (como los Datasets, VSAMs o zFS),
+                    la planificación de los JOBs del JES2/JES3, el sistema de ficheros (como el MVS, zFS o HFS) y la seguridad RACF.
+                    <br><br>
+                    3. Los Middleware y Servicios de Plataforma => son los programas o softwares que conectan las aplicaciones con el
+                    sistema operativo, es decir, los que se encargan de ser intermediarios entre el sistema final y el usuario. Tipos de Middleware:
+                    <ul>1. CICS => es el gestor de transacciones online.</ul>
+                    <ul>2. IMS => es el sistema de gestión de información.</ul>
+                    <ul>3. DB2 => es la base de datos relacional.</ul>
+                    <ul>4. WebSphere Application Server => es el servidor de aplicaciones Java EE.</ul>
+                    <ul>5. MQ => es la mensajería empresarial.</ul>
+                    <br>
+                    4. Las Aplicaciones => son aquéllas desarrolladas por usuarios o empresas. Tipos:
+                    <ul>1. Cobol.</ul>
+                    <ul>2. Java.</ul>
+                    <ul>3. Assembler.</ul>
+                    <ul>4. REXX.</ul>
+                    <br>
+                    5. Las Interfaces de Usuario => son modos de visualización para que los usuarios y los administradores interactúen con el sistema. Tipos:
+                    <ul>1. TSO/E => es una interfaz de línea de comandos, donde los usuarios ejecutan comandos y programas directamente desde terminales interactivos.</ul>
+                    <ul>2. ISPF => es una interfaz de paneles de menús y de texto estructurado sobre TSO/E.</ul>
+                    <ul>
+                        3. USS (UNIX System Services) => es un entorno de UNIX dentro de z/OS que ofrece una experiencia <i>Shell</i> similar a la de sistemas UNIX tradicionales.
+                        Hay dos tipos de comandos: ishell y omvs. El primero, abre un menú para explorar el sistema UNIX. El segundo, abre una sesión de línea de comandos tipo <i>Shell</i>.
+                    </ul>
+                    <ul>
+                        4. SDSF => es una herramienta integrada en z/OS que permite ver, gestionar y controlar los Jobs que se ejecutan en el sistema para
+                        monitorizar recursos y rendimiento. Se accede escribiendo <i>S</i> a través del ISPF.
+                    </ul>
+                    <ul>
+                        5. z/OSMF => es una plataforma de gestión web integrada en z/OS que permite a los administradores y operadores
+                        gestionar y configurar el sistema z/OS de forma moderna, visual e intuitiva, sin necesidad de usar
+                        la línea de comandos de TSO, los paneles de ISPF o los comandos 3270.
+                    </ul>
+                </div>                
+            </div>     
+        </div>
+        <div class="row tm-mb-50">
+            <div class="col-md-6 col-12">
+                <div class="tm-about-2-col">
+                    <h2 class="tm-text-primary mb-4">Procesadores del Sistema Z => </h2>
+                    <img src="./img/Intro/procesadorZ.png"/>
+                </div>                
+            </div> 
+            <div class="col-md-6 col-12">
+                <div class="tm-about-2-col">
+                    Hay cinco tipos:
+                    <br><br>
+                    1. CP (Central Processor): se encarga de ejecutar el núcleo del sistema operativo z/OS y la mayoría de las aplicaciones generales.
+                    <br><br>
+                    2. IFL (Integrated Facility for Linux): se encarga de ejecutar exclusivamente sistemas Linux sobre z/VM o KVM.
+                    <br><br>
+                    3. zIIP (z Integrated Information Processor): se encarga de acelerar cargas específicas como consultas Db2, Java, cifrado XML e IPsec.
+                    <br><br>
+                    4. zAAP (z Application Assist Processor): siempre se ha dedicado a Java, pero ya es obsoleto. Su funcionalidad fue absorbida por zIIP.
+                    <br><br>
+                    5. SAP (System Assist Processor): se encarga de ejecutar operaciones de E/S sin intervención del CP.
+                </div>                
+            </div>     
+        </div>
+    </div>
+
+    <footer class="tm-bg-gray pt-5 pb-3 tm-text-gray tm-footer">
+        <div class="container-fluid tm-container-small">
+            <div class="row">
+                <div class="col-lg-7 col-md-7 col-12 px-5 mb-3">Copyright &copy; 2025-2030 - Todos los derechos reservados</div>
+                <div class="col-lg-5 col-md-5 col-12 px-5 text-right">Diseñado por Alejandro Fernández Pérez</div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/plugins.js"></script>
+</body>
+</html>

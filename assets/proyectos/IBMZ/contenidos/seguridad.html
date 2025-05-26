@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contenidos: Seguridad</title>
+    <link rel="icon" href="../favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../css/templatemo-style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+                <img width="200" src="../img/logoIBMZ.png"/>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="../contenidos.html">Atrás</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="tm-hero d-flex justify-content-center align-items-center" data-parallax="scroll" data-image-src="../img/cabecera.png"></div>
+
+    <div class="container-fluid tm-mt-60">
+        <div class="row mb-4 text-center">
+            <h2 class="col-12 tm-text-primary">Seguridad:</h2>
+        </div>
+        <div class="row tm-mb-74 tm-row-1640">
+            <div class="col-lg-2 col-md-6 col-12"></div>
+            <div class="col-lg-9 col-md-6 col-12">
+                El Sistema Z ofrece una de las plataformas más seguras del mundo empresarial, cuya arquitectura está diseñada
+                para tener alta confidencialidad, integridad y disponibilidad.
+                <br><br>
+                Su Seguridad está basada en dos principios clave:
+                <ul>
+                    1. Seguridad por diseño, basado en controles de seguridad integrados en el hardware y el z/OS, minimizando los ataques y reforzando
+                    las barreras contra accesos no autorizados.
+                </ul>
+                <ul>
+                    2. Integridad del sistema, basado en Common Criteria EAL5+, asegurando que ningún usuario pueda modificar funciones críticas del sistema.
+                </ul>
+                <br>
+                Cuenta con tres componentes de seguridad:
+                <ul>
+                    1. <b>RACF</b>: es el módulo de control de accesos del z/OS que permite definir usuarios, grupos, recursos protegidos como datasets
+                    y permisos de acceso. Puede trabajar junto a ACF2 o Top Secret. Y además, es el encargado de conservar y proteger la información de los
+                    diferentes perfiles de usuario, a través de un sistema de autenticación y autorización llamado Resource Manager que, se encarga de preguntar
+                    al Sistema Operativo de z/OS, si el usuario está permitido o no y, éste a su vez, lo confirma con el RACF. Su administración se lleva a cabo
+                    a través de un archivo <b>.JCL</b>.
+                </ul>
+                <ul>
+                    2. SAF: es quien actúa como interfaz entre z/OS y RACF, haciendo que todas las peticiones de acceso pasen por él, validándolas antes de
+                    que sean ejecutadas.
+                </ul> 
+                <ul>
+                    3. Auditoría y trazabilidad: es el conjunto de registros que detectan accesos indebidos o comportamientos sospechosos, pudiéndose integrar
+                    con SIEMs externos o sistemas de cumplimiento normativo.
+                </ul> 
+                <br>
+                Tipos de sistemas de cifrado:
+                <ul>
+                    1. Pervasivo: sistema implementado a nivel de disco, base de datos, red y sistema de archivos y encargado de cifrar datos en reposo
+                    y en tránsito a través de coprocesadores criptográficos internos y sin modificar las aplicaciones.
+                </ul>   
+                <ul>
+                    2. CEX: sistema de tarjetas hardware dedicadas a tareas criptográficas a través de cifrado SSL, firma digital y gestión de claves.
+                </ul>   
+                <ul>
+                    3. Secure Boot/IPL: sistema que verifica que el sistema operativo y el firmware sean auténticos y no modificados antes de iniciar,
+                    protegiendo al arranque del sistema del malware.
+                </ul>
+                <br>
+                Otros tipos de seguridad:
+                <ul>1. Z Secure Suite: es un conjunto de herramientas para auditar, monitorizar y reforzar la seguridad.</ul>
+                <ul>2. Seguridad en contenedores Linux on Z.</ul>
+                <ul>3. z/OS Container Extensions (zCX).</ul>
+                <ul>4. Compatibilidad con estándares de la industria, como ISO/IEC 27001.</ul>
+                <br><br>
+                <p>----------------------------------------------------------------------------------------------------------------------------</p>
+                NOTAS IMPORTANTES:
+                <ul>- IBM Z es seguro por diseño, con cifrado nativo y control de accesos centralizado.</ul>
+                <ul>- RACF es el controlador principal de seguridad.</ul>
+                <ul>- SAF actúa como interfaz entre z/OS y las peticiones de seguridad.</ul>
+                <ul>- IBM Z ofrece cifrado a gran escala (Pervasive Encryption) sin penalizar el rendimiento.</ul>
+                <ul>- IBM Z soporta arranque seguro, control granular de usuarios y auditoría.</ul>
+            </div>
+            <div class="col-lg-2 col-md-6 col-12"></div>
+        </div>
+    </div>
+
+    <footer class="tm-bg-gray pt-5 pb-3 tm-text-gray tm-footer">
+        <div class="container-fluid tm-container-small">
+            <div class="row">
+                <div class="col-lg-7 col-md-7 col-12 px-5 mb-3">Copyright &copy; 2025-2030 - Todos los derechos reservados</div>
+                <div class="col-lg-5 col-md-5 col-12 px-5 text-right">Diseñado por Alejandro Fernández Pérez</div>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/plugins.js"></script>
+</body>
+</html>
