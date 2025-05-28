@@ -114,9 +114,129 @@
                         _K%: filtrar por todos los datos que tengan una K en 2º posición.
                     </li>
                     <br>
+                    La función coalesce(a,b) => es una función que sustituye el valor a por el b.
+                    <br><br>
+                    <p>----------------------------------------------------------------------------------------------------------------------------</p>
                     Ejercicios:
                     <br><br>
                     <img width="600" src="../img/contenidos/db2/ejer1.png"/>
+                    <br><br>
+                    Respuestas:
+                    <ul>
+                        1. Falso => El orden de las cláusulas en una sentencia SELECT no es arbitrario,
+                        ya que debe seguir una estructura específica para que SQL la entienda correctamente.
+                    </ul>
+                    <ul>
+                        2. C => La cláusula BETWEEN hace que las filas de la tabla de resultados no se ordenen en absoluto.
+                    </ul>
+                    <ul>
+                        3. SELECT y FROM.
+                    </ul>
+                    <ul>
+                        4. Apóstrofes o comillas simples.
+                    </ul>
+                    <ul>
+                        5. La palabra clave LIKE.
+                    </ul>
+                    <ul>
+                        6. Verdadero.
+                    </ul>
+                    <p>----------------------------------------------------------------------------------------------------------------------------</p>
+                    Ejercicios:
+                    <br><br>
+                    <img width="600" src="../img/contenidos/db2/ejer2.png"/>
+                    <br><br>
+                    Respuestas:
+                    <ul>
+                        1. Verdadero => Si no usas condiciones de JOIN, se llevarán a cabo productos cartesianos.
+                    </ul>
+                    <ul>
+                        2. B => La instrucción se ejecuta y el resultado es el producto cartesiano de las tablas.
+                    </ul>
+                    <ul>
+                        3. Para calificar el nombre de las columnas de una manera más sencilla, con nombres más cortos y sin ambigüedad.
+                    </ul>
+                    <p>----------------------------------------------------------------------------------------------------------------------------</p>
+                    Ejercicio ADMT:
+                    <br><br>
+                    <img width="600" src="../img/contenidos/db2/ejer3.png"/>
+                    <br><br>
+                    Respuestas:
+                    <ul>
+                        1. Hay que poner “M” en la interfaz del ISPF > Poner 14 > Poner 7 > Escribir en CMD 1:-DISPLAY DATABASE(*) y darle a intro,
+                        para mostrar todas las bases de datos. Si en la sentencia verde le añades “restricted”, es para mostrarlas en estado restrictivo,
+                        pero como no hay ninguna en estado restrictivo, no hace falta añadir “restricted”.
+                    </ul>
+                    <ul>
+                        2. Ahora escribir en el CMD 2: -DISPLAY DATABASE() SPACENAM(*) y darle a intro, para mostrar.
+                    </ul>
+                    <p>----------------------------------------------------------------------------------------------------------------------------</p>
+                    <br><br>
+                    Hay dos tipos de funciones en SQL:
+                    <ul>
+                        1. Funciones de columna => son aquéllas que devuelven un valor único que representa el resultado de una operación sobre múltiples filas.<br>
+                        Tipos: Sum(), Min(), Max(), Avg(), Count() y Count_Big().<br>
+                        Regla importante: Estas funciones sólo pueden estar en la 1º clausula y en la de HAVING.
+                    </ul>
+                    <ul>
+                        2. Funciones escalares => son aquéllas que devuelven un valor escalar por cada fila de entrada.<br>
+                        Tipos: UPPER(), SUBSTR() y LENGTH().
+                    </ul>
+                    <br>
+                    Otras cláusulas de SQL:
+                    <ul>
+                        1. HAVING => se encarga de calificar los grupos agrupados en GROUP BY. Va antes de esta cláusula última.
+                    </ul>
+                    <ul>
+                        2. GROUP BY => se encarga de agrupar en grupos.
+                    </ul>
+                    <img width="600" src="../img/contenidos/db2/cmd_db.png"/><br>
+                    El cmd 1: muestra todas las bases de datos que hay sin estado restrictivo.<br>
+                    El cmd 2: muestra mi base de datos sin estado restrictivo.<br>
+                    El cmd 3: muestra todos los tablespaces de mi base de datos en estado restrictivo, pero no encuentra nada. Sin estado restrictivo sí encuentra.<br>
+                    El cmd 4: muestra todas las bases de datos que hay en estado restrictivo, pero no encuentra nada.<br>
+                    El cmd 5: muestra todas las utilidades que se hayan creado. En este caso, no se encontró ninguna.
+                    <br><br>
+                    <img width="400" src="../img/contenidos/db2/unionall.png"/><br><br>
+                    En db2 de IBM Z se pueden unir dos queries con UNION ALL. Esto consiste en juntar todas las filas de ambos queries sin duplicados, pero
+                    con columnas del mismo formato.
+                    <br><br>
+                    La preparación y ejecución de un programa en db2, se lleva a cabo a partir de un “Bind plan” o Plan de enlace.
+                    <br><br>
+                    Para copiar contenido de una tabla a otra en db2, hay que irse al panel de bases de datos y poner <i>count</i> en la línea del select.
+                    <br><br>
+                    <p>----------------------------------------------------------------------------------------------------------------------------</p>
+                    Ejercicios:
+                    <br><br>
+                    <img width="600" src="../img/contenidos/db2/ejer4.png"/>
+                    <br><br>
+                    Respuestas:
+                    <ul>
+                        1. Falso => No puede ser arbitrario ya que debe cumplir una serie de reglas.
+                    </ul>
+                    <ul>
+                        2. A => Cuando todas las filas duplicadas tienen que ser eliminadas.
+                    </ul>
+                    <ul>
+                        3. Que las columnas de ambos queries deben tener el mismo formato y el mismo número de columnas.
+                        Y además, el GROUP BY debe ir al final.
+                    </ul>
+                    <p>----------------------------------------------------------------------------------------------------------------------------</p>
+                    Ejercicios:
+                    <br><br>
+                    <img width="600" src="../img/contenidos/db2/ejer5.png"/>
+                    <br><br>
+                    Respuestas:
+                    <ul>
+                        1. Verdadero.
+                    </ul>
+                    <ul>
+                        2. B.
+                    </ul>
+                    <ul>
+                        3. La palabra clave es IN.
+                    </ul>
+                    <p>----------------------------------------------------------------------------------------------------------------------------</p>
                 </div>            
             </div>
             <div class="col-lg-2 col-md-6 col-12"></div>
