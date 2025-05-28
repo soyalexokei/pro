@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contenidos: REXX</title>
+    <link rel="icon" href="../favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../css/templatemo-style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+                <img width="200" src="../img/logoIBMZ.png"/>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="../contenidos.html">Atrás</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="tm-hero d-flex justify-content-center align-items-center" data-parallax="scroll" data-image-src="../img/cabecera.png"></div>
+
+    <div class="container-fluid tm-mt-60">
+        <div class="row mb-4 text-center">
+            <h2 class="col-12 tm-text-primary">REXX:</h2>
+        </div>
+        <div class="row tm-mb-74 tm-row-1640">
+            <div class="col-lg-3 col-md-6 col-12"></div>
+            <div class="col-lg-9 col-md-6 col-12">
+                <div class="tm-about-img-text">
+                    <b>¿Qué es?:</b><br>
+                    Es un lenguaje de programación estricto y de un número infinito de líneas. No diferencia entre minúsculas y mayúsculas.
+                    Cuenta con un sistema orientado a objetos y regina para linux.
+                    <br><br>
+                    <b>Funcionamiento:</b><br>
+                    Crear un código .rexx, desarrollarlo hasta que esté listo, compilarlo y, entonces,
+                    el sistema crea un objeto. A partir de ahí, ese objeto se linkedita y, finalmente, se carga el programa y se almacena.
+                    Lo ideal es almacenar datos del programa de REXX en dos librerías: la de la <i>dlibs</i> y la de los <i>exec</i>.
+                    <br><br>
+                    <b>Sentencias útiles:</b><br>
+                    <ul>1. SAY => para mostrar mensaje en pantalla.</ul>
+                    <ul>2. PARSE PULL => para introducir de teclado.</ul>
+                    <ul>
+                        3. IF....THEN DO<br>
+                        END<br>
+                        ELSE DO<br>
+                        END => para establecer condiciones en un programa.
+                    </ul>
+                    <ul>4. DO WHILE / DO UNTIL => para establecer bucles con condiciones.</ul>
+                    <ul>5. DO FOREVER => para establecer un bucle infinito.</ul>
+                    <ul>6. LEAVE => para salir del bucle infinito.</ul>
+                    <ul>7. EXIT => para salir del programa.</ul>
+                    <ul>8. /* => para abrir un comentario</ul>
+                    <ul>9. */ => para cerrar comentario.</ul>
+                    <br>
+                    <b>Características relevantes:</b><br>
+                    <ul>1. Todo dato es caracter, ya sea número, especial o letra.</ul>
+                    <ul>2. No usar sentencias de REXX como variables.</ul>
+                    <ul>3. Las variables como máximo pueden tener 250 caracteres y pueden ser letras, números y caracteres especiales. No pueden empezar con números.</ul>
+                    <ul>4. PARSE UPPER PULL significa que lo que se introduce de teclado se pone mayúscula. Si no pones UPPER, lo pone como esté.</ul>
+                    <ul>
+                        5. Incluye un <b>Data Stack</b>, que es un buffer de memoria. Cabe la posibilidad de tener más de un data stack, pero en general,
+                        hay que adaptarse con uno únicamente. En el caso del CMS solo se puede tener un data stack de máximo 255 bytes. Su distribución se basa
+                        en hacer <i>PUSH</i> o hacer <i>QUEUE</i> para almacenar elementos, según cómo se quieran almacenar y sacar. <i>PUSH</i> se ordena a través
+                        de LIFO (Last In, First Out), donde el último que entra, es el primero que sale. <i>QUEUE</i> se ordena a través de FIFO (First In, First Out),
+                        donde el primero que entra, es el primero que sale. Ambas son dos maneras de organizar el buffer o data stack, según el interés particular
+                        del usuario o administrador.
+                    </ul>
+                    <br>
+                    <b>Funciones integradas:</b><br>
+                    <li>DATE(): Devuelve la fecha actual.</li>
+                    <li>TIME(): Hora actual.</li>
+                    <li>LENGTH(cadena): Longitud de una cadena.</li>
+                    <li>LEFT(cadena, n): Primeros n caracteres.</li>
+                    <li>RIGHT(cadena, n): Últimos n caracteres.</li>
+                    <li>SUBSTR(cadena, inicio, longitud): Subcadena.</li>
+                    <li>WORDS(cadena): Número de palabras.</li>
+                    <li>WORD(cadena, n): Palabra n.</li>
+                    <li>WORDPOS(palabra, cadena): Posición de palabra.</li>
+                    <li>WORDINDEX(cadena, n): Posición inicial de la palabra n.</li>
+                    <li>SUBWORD(cadena, inicio, n): n palabras desde la posición.</li>
+                    <li>SPACE(cadena): Normaliza espacios.</li>
+                    <li>TRANSLATE(cadena, nuevo, viejo): Sustituye caracteres.</li>
+                    <li>POS(subcadena, cadena): Posición de subcadena.</li>
+                    <li>OVERLAY(nueva, original, inicio): Reemplaza en posición.</li>
+                    <li>INSERT(nueva, original, posición): Inserta texto.</li>
+                    <li>DELSTR(cadena, inicio, longitud): Elimina parte.</li>
+                    <li>JUSTIFY(cadena, ancho, dirección): Alinea texto.</li>
+                    <li>ABBREV(prefijo, cadena): ¿Es prefijo?</li>
+                </div>          
+            </div>
+            <div class="col-lg-2 col-md-6 col-12"></div>
+        </div>
+    </div>
+
+    <footer class="tm-bg-gray pt-5 pb-3 tm-text-gray tm-footer">
+        <div class="container-fluid tm-container-small">
+            <div class="row">
+                <div class="col-lg-7 col-md-7 col-12 px-5 mb-3">Copyright &copy; 2025-2030 - Todos los derechos reservados</div>
+                <div class="col-lg-5 col-md-5 col-12 px-5 text-right">Diseñado por Alejandro Fernández Pérez</div>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/plugins.js"></script>
+</body>
+</html>

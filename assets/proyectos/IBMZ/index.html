@@ -138,7 +138,7 @@
                     </li>
                     <li>
                         El z/VSE, es un Sistema Operativo ligero, pensado para entornos empresariales de menor tamaño que, requieren alta fiabilidad,
-                        pero menor complejidad.
+                        pero menor complejidad. No cuenta con DB2, sino otro parecido. Sí cuenta con MQ y CICS.
                     </li>
                     <li>
                         El z/TPF, es un Sistema Operativo optimizado para el procesamiento ultra rápido de transacciones de alta frecuencia, usado en sectores como
@@ -178,7 +178,8 @@
                     <br><br>
                     2. El Core Services => son los servicios básicos del sistema operativo, como: la gestión de procesos y tareas (TCB),
                     la gestión de memoria (como la paginación o el direccionamiento virtual), la gestión de almacenamiento en ficheros (como los Datasets, VSAMs o zFS),
-                    la planificación de los JOBs del JES2/JES3, el sistema de ficheros (como el MVS, zFS o HFS) y la seguridad RACF.
+                    la planificación de los JOBs del JES2 (se utiliza 2 porque el 1 está desaparecido y el 3 va a desaparecer), el sistema de
+                    ficheros (como el MVS, zFS o HFS) y la seguridad RACF.
                     <br><br>
                     3. Los Middleware y Servicios de Plataforma => son los programas o softwares que conectan las aplicaciones con el
                     sistema operativo, es decir, los que se encargan de ser intermediarios entre el sistema final y el usuario. Tipos de Middleware:
@@ -188,15 +189,21 @@
                     <ul>4. WebSphere Application Server => es el servidor de aplicaciones Java EE.</ul>
                     <ul>5. MQ => es la mensajería empresarial.</ul>
                     <br>
-                    4. Las Aplicaciones => son aquéllas desarrolladas por usuarios o empresas. Tipos:
+                    4. Las Aplicaciones o Lenguajes de Programación => son aquéllos desarrollados por usuarios o empresas. Tipos:
                     <ul>1. Cobol.</ul>
                     <ul>2. Java.</ul>
                     <ul>3. Assembler.</ul>
                     <ul>4. REXX.</ul>
+                    <ul>5. C</ul>
+                    <ul>6. PHP</ul>
+                    <ul>7. JCICS</ul>
                     <br>
                     5. Las Interfaces de Usuario => son modos de visualización para que los usuarios y los administradores interactúen con el sistema. Tipos:
                     <ul>1. TSO/E => es una interfaz de línea de comandos, donde los usuarios ejecutan comandos y programas directamente desde terminales interactivos.</ul>
-                    <ul>2. ISPF => es una interfaz de paneles de menús y de texto estructurado sobre TSO/E.</ul>
+                    <ul>
+                        2. ISPF => es una interfaz de paneles de menús y de texto estructurado sobre TSO/E, que cuenta con TCB o registros de control para saber
+                        quien está ejecutando en el sistema.
+                    </ul>
                     <ul>
                         3. USS (UNIX System Services) => es un entorno de UNIX dentro de z/OS que ofrece una experiencia <i>Shell</i> similar a la de sistemas UNIX tradicionales.
                         Hay dos tipos de comandos: ishell y omvs. El primero, abre un menú para explorar el sistema UNIX. El segundo, abre una sesión de línea de comandos tipo <i>Shell</i>.

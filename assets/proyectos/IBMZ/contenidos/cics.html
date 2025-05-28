@@ -38,8 +38,116 @@
             <div class="col-lg-3 col-md-6 col-12"></div>
             <div class="col-lg-9 col-md-6 col-12">
                 <div class="tm-about-img-text">
-                    
-                </div>            
+                    ¿Qué es un <b>Programa de CICS</b>? Es un conjunto de programas que forman una operación de negocio.
+                    <br><br>
+                    Para entrar al <b>CICS</b>, hay que hacerlo por comandos de TSO/E y poner: <i>logon ciscts61</i> o <i>l cicsts61</i>.
+                    <br><br>
+                    <b>RACF</b> es quien se encarga de verificar el usuario al entrar al <b>CICS</b>.
+                    <br><br>
+                    El <b>CICS</b> arranca en un address space o espacio de direcciones.
+                    <br><br>
+                    El <b>CICS</b> cuenta con TCA o registros de control para saber quien está ejecutando en el sistema.
+                    <br><br>
+                    Se pueden tener varias regiones CICS dentro de un mismo sistema para poder interconectarse entre sí.
+                    Además, puede haber un grupo de sistemas CICS, CICSplex o MRO que funcionan como una única unidad en un entorno.
+                    <br><br>
+                    Hay VSAM de tipo RRDS, que es un tipo de conjunto de datos VSAM que utiliza un número de registros relativos
+                    para identificar y acceder a los registros. Son bastante complejos.
+                    <br><br>
+                    Working storage = almacenamiento de registros en CICS.
+                    <br><br>
+                    ACID = requisitos transaccionales.
+                    <br><br>
+                    <b>CDBI</b> es el comando para establecer conexión en el CICS con su base de datos.
+                    <br><br>
+                    <p>----------------------------------------------------------------------------------------------------------------------------</p>
+                    NOTA IMPORTANTE:<br>
+                    No utilizar la letra C al principio de nombres en el subsistema CICS, ya que está reservado para los comandos.<br>
+                    <p>----------------------------------------------------------------------------------------------------------------------------</p>
+                    <br>
+                    Campos importantes:
+                    <br>
+                    <img width="600" src="../img/contenidos/cics/camposImportantes.png"/>
+                    <br>
+                    <ul>
+                        1. El nombre de la transacción => AADD.
+                    </ul>
+                    <ul>
+                        2. El programa al que llama => DFH$AALL.
+                    </ul>
+                    <br>
+                    Transacciones más usadas y relevantes en <b>CICS</b>:
+                    <br>
+                    <ul>
+                        1. <b>CEMT</b> => se encarga de gestionar, manipular y controlar las transacciones ejecutadas o en ejecución.
+                    </ul>
+                    <ul>
+                        2. <b>CEDA</b> => se encarga de definir recursos, mientras el sistema CICS está activo. Todos los recursos deben
+                        estar asociados a un grupo existente.
+                    </ul>
+                    <ul>
+                        3. <b>CEDA DEF TRANS</b> => se encarga de definir transacciones. 
+                    </ul>
+                    <ul>
+                        4. <b>CMSG</b> => se encarga de enviar mensajes a otros terminales.
+                    </ul>
+                    <ul>
+                        5. <b>CECI</b> => se encarga de analizar sintácticamente un comando correcto y ejecutarlo.
+                    </ul>
+                    <ul>
+                        6. <b>CESF LOGOFF</b> => se encarga de desconectarse del CICS.
+                    </ul>
+                    <ul>
+                        7. <b>CEBR</b> => se encarga de ver el contenido de los almacenamientos temporales.
+                    </ul>
+                    <br>
+                    Para que los recursos del CICS funcionen en el sistema z/OS, no puede existir un recurso sin un grupo.
+                    <br><br>
+                    El ADD es para añadir un grupo a la lista, pudiendo reorganizar el orden (antes/después).
+                    <br><br>
+                    BAS = Servicio de Aplicación de Negocio de CICS.
+                    <br><br>
+                    Proceso de envío de una tarea en CICS consiste en:<br>
+                    <ul>1º) Empezar la tarea.</ul>
+                    <ul>2º) Leer la descarga.</ul>
+                    <ul>3º) Modificar la descarga si se requiere.</ul>
+                    <ul>4º) Enviar el proceso.</ul>
+                    - Si falla, en vez de grabarlo en el fichero de <i>DFHLOG</i>, se graba en el fichero de <i>DFHSHUNT</i>.
+                    <br><br>
+                    <b>¿Cómo se accede a datos?</b>:<br>
+                    - En primer lugar, al Subsistema CICS (en su versión última) se conectan MQ, el Terminal 3270 y Web/IP.
+                    Del Subsistema CICS (en su versión última) se conecta a DB2 y ficheros VSAM. Todo ello, llevado a cabo en el Sistema Operativo de MVS.
+                    Por último, para poder meter comandos DB2, se debe usar la transacción <i>DSNC</i>, quien ejecuta el programa: <i>DFHD2CM1</i>.
+                    <br><br>
+                    <b>¿Qué es una cola de datos transitoria o DCT?:</b><br>
+                    - Es aquélla que define el destino donde se puede enviar datos en cola. Tiene cuatro tipos de destinos:<br>
+                    <ul>1. Remoto => significa que existe en otro fichero secuencial.</ul>
+                    <ul>2. Indirecto => significa que va a un destino controlado por un propio DCT.</ul>
+                    <ul>3. Intrapartición => significa que se encuentra dentro de la región CICS actual.</ul>
+                    <ul>4. Extrapartición => significa que se encuentra fuera de la región CICS actual.</ul>
+                    <br>
+                    La transacción automática <b>ATI</b> sigue la siguiente estructura de comandos:
+                    <br>
+                    <img width="400" src="../img/contenidos/cics/comandosstruct.png"/>
+                    <br><br>
+                    <b>¿Qué quiere decir TS?:</b><br>
+                    - Indica que un almacenamiento temporal es recuperable si está definido. Si llega a su fin o no está definido,
+                    no hay manera de recuperarlo. Aunque siempre se puede definir y crear uno nuevo para suplir su no recuperación.
+                    <br><br>
+                    <b>Diferencias entre DCT y TS:</b><br>
+                    - 4 vs 8-16.<br>
+                    - Colas predefinidas vs no predefinidas.<br>
+                    - Lectura secuencial en ambos.<br>
+                    - Lectura indirecta vs lectura directa.<br>
+                    - No descarga registros vs sí descarga registros.<br>
+                    - Leer registros extra fuera de CICS vs no.
+                    <br><br>
+                    <p><b>----------------------------------------------------------------------------------------------------------------------------</b></p>
+                    <p><b>----------------------------------------------------------------------------------------------------------------------------</b></p>
+                    <b>LABORATORIO/PRÁCTICAS DE CICS:</b>
+                    <br><br>
+                    <iframe src="../documentos/lab-CICS.pdf" width="60%" height="400px"></iframe>
+                </div>          
             </div>
             <div class="col-lg-2 col-md-6 col-12"></div>
         </div>

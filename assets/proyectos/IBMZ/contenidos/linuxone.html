@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contenidos: IBM LinuxOne</title>
+    <link rel="icon" href="../favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../css/templatemo-style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+                <img width="200" src="../img/logoIBMZ.png"/>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="../contenidos.html">Atrás</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="tm-hero d-flex justify-content-center align-items-center" data-parallax="scroll" data-image-src="../img/cabecera.png"></div>
+
+    <div class="container-fluid tm-mt-60">
+        <div class="row mb-4 text-center">
+            <h2 class="col-12 tm-text-primary">IBM LinuxOne:</h2>
+        </div>
+        <div class="row tm-mb-74 tm-row-1640">
+            <div class="col-lg-3 col-md-6 col-12"></div>
+            <div class="col-lg-9 col-md-6 col-12">
+                <div class="tm-about-img-text">
+                    <b>¿Qué es?:</b><br>
+                    Es un sistema independiente del sistema Z de IBM, con aislamiento de cargas.
+                    <br><br>
+                    <b>Características relevantes:</b><br>
+                    <li>
+                        Tiene alta disponibilidad para cualquier tipo de fallo o desastre natural.
+                        Para ello, es importante tener dos CPDs:
+                        <ul>1. CPD1 => principal. Es importante trabajar en el CPD1 y no ir nunca al CPD2.</ul>
+                        <ul>2. CPD2 => para recuperación por desastres naturales.</ul>
+                        Según la Ley Dora de la Unión Europea, no se especifica la distancia mínima que tiene que haber entre CPD1 y CPD2.
+                        Por lo que, cuanto más distancia, más difícil es la sincronización de datos.
+                        Además, se obliga a que haya un aislamiento físico de los mismos.
+                        <br><br>
+                    </li>
+                    <li>Sus tablas de almacenamiento son un elemento externo.</li>
+                    <li>La potencia de sus procesadores va de 1 a 10 W.</li>
+                    <li>Su base de datos es open source y puede usar la de CockroachDB.</li>
+                    <li>Su principal objetivo es tener muchos servidores para reducir el coste del espacio y de la electricidad del CPD.</li>
+                </div> 
+            </div>
+            <div class="col-lg-2 col-md-6 col-12"></div>
+        </div>
+    </div>
+
+    <footer class="tm-bg-gray pt-5 pb-3 tm-text-gray tm-footer">
+        <div class="container-fluid tm-container-small">
+            <div class="row">
+                <div class="col-lg-7 col-md-7 col-12 px-5 mb-3">Copyright &copy; 2025-2030 - Todos los derechos reservados</div>
+                <div class="col-lg-5 col-md-5 col-12 px-5 text-right">Diseñado por Alejandro Fernández Pérez</div>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/plugins.js"></script>
+</body>
+</html>
