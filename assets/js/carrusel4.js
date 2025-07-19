@@ -1,6 +1,24 @@
 //-- Variables.
-var imagenesIDibizaYoga = ["05m6Z18Q/1.png","Y0cvkbxM/2.png","tTnsLLWB/3.png","prDpdz08/4.png","yYyD4h3C/5.png","GpMcbBtm/6.png","pXHm6cTB/7.png","SxZjjyGZ/8.png","DzHZdBHL/9.png","kMx4KNcR/10.png",
-"s2vxht63/11.png","tJH487Xg/12.png","V6tN7XPT/13.png","MKqGDcPP/14.png","vTLZyMBt/15.jpg","cJpx86tc/16.png","Gp832vt2/17.jpg"];
+var imagenesIDibizaYoga =
+[
+  "https://i.postimg.cc/05m6Z18Q/1.png",
+  "https://i.postimg.cc/Y0cvkbxM/2.png",
+  "https://i.postimg.cc/tTnsLLWB/3.png",
+  "https://i.postimg.cc/prDpdz08/4.png",
+  "https://i.postimg.cc/yYyD4h3C/5.png",
+  "https://i.postimg.cc/GpMcbBtm/6.png",
+  "https://i.postimg.cc/pXHm6cTB/7.png",
+  "https://i.postimg.cc/SxZjjyGZ/8.png",
+  "https://i.postimg.cc/DzHZdBHL/9.png",
+  "https://i.postimg.cc/kMx4KNcR/10.png",
+  "https://i.postimg.cc/s2vxht63/11.png",
+  "https://i.postimg.cc/tJH487Xg/12.png",
+  "https://i.postimg.cc/V6tN7XPT/13.png",
+  "https://i.postimg.cc/MKqGDcPP/14.png",
+  "https://i.postimg.cc/vTLZyMBt/15.jpg",
+  "https://i.postimg.cc/cJpx86tc/16.png",
+  "https://i.postimg.cc/qv2N7vQY/17.png"
+];
 var primeraIbizaYoga = 1;
 var pantallaIbizaYoga = document.getElementById("pantalla-voluntariado-proweb-4");
 var imgIbizaYoga = document.createElement("img");
@@ -13,7 +31,7 @@ function mostrarIbizaYoga(auxIbizaYoga) {
   //-- Limpiar la pantalla.
   pantallaIbizaYoga.innerHTML = "";
 
-  imgIbizaYoga.src = "https://i.postimg.cc/" + imagenesIDibizaYoga[auxIbizaYoga-1];
+  imgIbizaYoga.src = imagenesIDibizaYoga[auxIbizaYoga-1];
   pantallaIbizaYoga.appendChild(imgIbizaYoga);
 }
 
