@@ -2251,8 +2251,9 @@
                             <input type="text" id="captcha" name="captcha">
                         </div>
                         <input type="hidden" name="_next" value="https://alejandroprofessionalweb.netlify.app/#contact"/>
-                        <input type="hidden" name="_captcha" value="false">
-                        <input type="text" name="_honey" style="display:none">
+                        <input type="hidden" name="_captcha" value="false"/>
+                        <input type="hidden" name="_autoresponse" value="Mensaje enviado correctamente"/>
+                        <input type="text" name="_honey" style="display:none"/>
                         <button type='submit'>Enviar</button>
                     </form>
                 </div>
@@ -2300,17 +2301,6 @@
                 }
     </script>
     <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-    <!-- Pop Up message contact -->
-    <script>
-        // Verifica si el usuario llegó desde el formulario
-        if (window.location.hash === "#contact") {
-            const popup = document.getElementById('popup-success');
-            popup.style.display = 'block';
-            setTimeout(() => {
-                popup.style.display = 'none';
-            }, 3000);
-        }
-    </script>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -2345,5 +2335,4 @@
         });
     </script>
 </body>
-<div id="popup-success" style="display: none; position: fixed; top: 20px; right: 20px; background-color: #4CAF50; color: white; padding: 15px; border-radius: 5px; z-index: 9999;">Mensaje enviado correctamente</div>
 </html>
