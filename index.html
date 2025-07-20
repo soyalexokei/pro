@@ -513,7 +513,7 @@
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <div class="timeline-position">
-                                    <p>Proyecto de Ingeniería Acústica en Mallorca</p>
+                                    <p>Proyecto acústico en Mallorca</p>
                                 </div>
                                 <div class="timeline-date">
                                     <p>Febrero</p>
@@ -559,7 +559,7 @@
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <div class="timeline-date"><p>Junio</p></div>
-                                <div class="timeline-position"><p>Proyecto de Control AV en Barcelona</p></div>
+                                <div class="timeline-position"><p>Proyecto de control AV en Barcelona</p></div>
                             </div>
                             <div class="timeline-body">
                                 <div class="timeline-body-thumb">
@@ -1170,18 +1170,24 @@
             <div class="container">
                 <h2><b>Mis Habilidades</b></h2>
                 <h4><i class="fa fa-globe"></i> <a class="otros-enlaces" href="./assets/habilidades/professionalSkills-Certified.pdf" target="_blank">Certificación General</a></h4>
-                <a href="./assets/habilidades/tecnologicas/index.html"><div class="tipoHabilidad">
-                    <img src="assets/habilidades/tech.png"/>
+            </div>
+            <div class="skills-content">
+                <a href="./assets/habilidades/tecnologicas/index.html">
+                    <img width="100px" src="assets/habilidades/tech.png"/>
                     <h3>Tecnológicas</h3>
-                </div></a>
-                <a href="./assets/habilidades/sociales/index.html"><div class="tipoHabilidad">
-                    <img src="assets/habilidades/social.png"/>
+                </a>
+                <a href="./assets/habilidades/gestion/index.html">
+                    <img width="100px" src="assets/habilidades/management.png"/>
+                    <h3>De Gestión</h3>
+                </a>
+                <a href="./assets/habilidades/sociales/index.html">
+                    <img width="100px" src="assets/habilidades/social.png"/>
                     <h3>Sociales</h3>
-                </div></a>
-                <a href="./assets/habilidades/deportivas/index.html"><div class="tipoHabilidad">
-                    <img src="assets/habilidades/sport.png"/>
+                </a>
+                <a href="./assets/habilidades/deportivas/index.html">
+                    <img width="100px" src="assets/habilidades/sport.png"/>
                     <h3>Deportivas</h3>
-                </div></a>
+                </a>
             </div>
         </section>
         <!-- FIN DE LA SECCIÓN DE HABILIDADES -->
@@ -2245,6 +2251,9 @@
                             <input type="text" id="captcha" name="captcha">
                         </div>
                         <input type="hidden" name="_next" value="https://alejandroprofessionalweb.netlify.app/#contact"/>
+                        <div id="popup-success"
+                        style="display: none; position: fixed; top: 20px; right: 20px; background-color: #4CAF50;
+                            color: white; padding: 15px; border-radius: 5px; z-index: 9999;">Mensaje enviado correctamente</div>
                         <input type="hidden" name="_captcha" value="false">
                         <input type="text" name="_honey" style="display:none">
                         <button type='submit'>Enviar</button>
@@ -2294,6 +2303,17 @@
                 }
     </script>
     <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <!-- Pop Up message contact -->
+    <script>
+        // Verifica si el usuario llegó desde el formulario
+        if (window.location.hash === "#contact") {
+            const popup = document.getElementById('popup-success');
+            popup.style.display = 'block';
+            setTimeout(() => {
+                popup.style.display = 'none';
+            }, 3000);
+        }
+    </script>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
