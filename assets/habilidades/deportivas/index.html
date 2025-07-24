@@ -52,7 +52,21 @@
                     <a href="https://alejandrocontactweb.netlify.app/" target="_blank"><i class="fa fa-envelope"></i> Pídeme el Título Oficial</a><br>
                     <a href="./documentos/motl/ProyectoFinal-MonitorOTL.pdf" target="_blank"><i class="fa fa-globe"></i> Ver Memoria/Proyecto Final</a><br>
                     <a href="https://youtu.be/1iNqVY6S4qQ" target="_blank"><i class="fa fa-globe"></i> Ver Vídeo del Curso</a><br>
-                    <a href="#" target="_blank"><i class="fa fa-globe"></i> Ver Experiencia Profesional</a>
+                    <a data-toggle="modal" data-target="#monitorExp" class="otros-enlaces"><i class="fa fa-globe"></i> Ver Experiencia Profesional</a>
+                    <div id="monitorExp" class="modal fade fade-scale" role="dialog">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-body" style="text-align: center;">
+                                    <a class="rectangle otros-enlaces" data-dismiss="modal"><i class="fa fa-times"></i></a>
+                                    <div class="carrusel-voluntariado">
+                                        <div class="carrusel-voluntariado-contenedor" id="pantalla-monitorExp"></div>
+                                        <button class="flecha-izquierda-pasar" id="flecha-izquierda-monitorExp">&#10094;</button>
+                                        <button class="flecha-derecha-pasar" id="flecha-derecha-monitorExp">&#10095;</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-lg-3 col-md-6 mb-4">
                     <div class="cat-item position-relative overflow-hidden rounded mb-2">
@@ -175,6 +189,7 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="js/monitorExp.js" type="text/javascript"></script>
 
     <!-- Google Traductor -->
     <script type="text/javascript">

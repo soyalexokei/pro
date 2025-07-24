@@ -5700,7 +5700,7 @@ a.close.disabled {
   position: relative;
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 120%;
   pointer-events: auto;
   background-color: #fff;
   background-clip: padding-box;
@@ -5714,8 +5714,8 @@ a.close.disabled {
   top: 0;
   left: 0;
   z-index: 1040;
-  width: 100vw;
-  height: 100vh;
+  width: 200vw;
+  height: 200vh;
   background-color: #000;
 }
 
@@ -9975,4 +9975,56 @@ pre {
 }
 .code-container button:hover {
   background-color: #45a049;
+}
+
+.carrusel-voluntariado {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.flecha-izquierda-pasar, .flecha-derecha-pasar {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: green;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 1;
+}
+
+.flecha-izquierda-pasar {
+  left: 0;
+}
+
+.flecha-derecha-pasar {
+  right: 0;
+}
+
+.carrusel-voluntariado-contenedor {
+  white-space: nowrap;
+  transition: transform 0.3s ease;
+}
+
+.carrusel-voluntariado-contenedor img {
+  display: inline-block;
+  width: 100%;
+}
+
+.flecha-izquierda-pasar, .flecha-derecha-pasar {
+  font-size: 100px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.flecha-izquierda-pasar:hover, .flecha-derecha-pasar:hover {
+  color: blue;
+}
+
+.otros-enlaces {
+  cursor: pointer;
 }
