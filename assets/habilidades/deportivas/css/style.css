@@ -5700,7 +5700,7 @@ a.close.disabled {
   position: relative;
   display: flex;
   flex-direction: column;
-  width: 120%;
+  width: 100%;
   pointer-events: auto;
   background-color: #fff;
   background-clip: padding-box;
@@ -5714,8 +5714,8 @@ a.close.disabled {
   top: 0;
   left: 0;
   z-index: 1040;
-  width: 200vw;
-  height: 200vh;
+  width: 100vw;
+  height: 100vh;
   background-color: #000;
 }
 
@@ -5745,6 +5745,7 @@ a.close.disabled {
 .modal-title {
   margin-bottom: 0;
   line-height: 1.5;
+  font-size: medium;
 }
 
 .modal-body {
