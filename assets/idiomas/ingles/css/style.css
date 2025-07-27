@@ -1,0 +1,224 @@
+/*******************************/
+/********* General CSS *********/
+/*******************************/
+body {
+    color: #444444;
+    font-weight: 400;
+    background: #ffffff;
+    font-family: 'Barlow', sans-serif;
+}
+
+h1,
+h2, 
+h3, 
+h4,
+h5, 
+h6 {
+    color: #202C45;
+}
+
+a {
+    color: #202C45;
+    transition: .3s;
+}
+
+a:hover,
+a:active,
+a:focus {
+    color: #E81C2E;
+    outline: none;
+    text-decoration: none;
+}
+
+.btn.btn-custom {
+    padding: 10px 30px 12px 30px;
+    text-align: center; 
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+    background: #E81C2E;
+    border: none;
+    border-radius: 60px;
+    box-shadow: inset 0 0 0 0 #202C45;
+    transition: ease-out 0.5s;
+    -webkit-transition: ease-out 0.5s;
+    -moz-transition: ease-out 0.5s;
+}
+
+.btn.btn-custom:hover {
+    color: #E81C2E;
+    background: #202C45;
+    box-shadow: inset 200px 0 0 0 #202C45;
+}
+
+.btn:focus,
+.form-control:focus {
+    box-shadow: none;
+}
+
+.container-fluid {
+    max-width: 1366px;
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+    font-size: inherit;
+    margin-left: 0;
+}
+
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/**********************************/
+/*********** Nav Bar CSS **********/
+/**********************************/
+.nav-bar {
+    text-align: center;
+    background: #202C45;
+}
+
+.nav-bar.nav-sticky {
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+    z-index: 999;
+}
+
+.nav-bar.nav-sticky .navbar {
+    padding: 5px 0;
+}
+
+.navbar-dark .navbar-nav .nav-link,
+.navbar-dark .navbar-nav .nav-link:focus,
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+    color: #ffffff;
+    padding: 15px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+    color: #E81C2E;
+}
+
+.nav-bar .btn.btn-custom {
+    color: #202C45;
+    background: #ffffff;
+    box-shadow: inset 0 0 0 0 #E81C2E;
+}
+
+.nav-bar .btn:hover {
+    color: #ffffff;
+    background: #E81C2E;
+    box-shadow: inset 200px 0 0 0 #E81C2E;
+}
+
+/*******************************/
+/********** About CSS **********/
+/*******************************/
+.about {
+    position: relative;
+    width: 100%;
+    padding: 45px 0 15px 0;
+}
+
+.about .about-content {
+    margin-bottom: 30px;
+}
+
+.about .about-content ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-bottom: 25px;
+}
+
+.about .about-content ul li {
+    margin-bottom: 5px;
+}
+
+.about .about-content ul li i {
+    margin-right: 8px;
+}
+
+.about .container img {
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    background: #ffffff;
+    margin-bottom: 45px;
+}
+
+/* Adaptación para móviles */
+@media screen and (max-width: 768px) {
+    .about {
+        padding: 30px 15px 10px 15px; /* Menos padding horizontal */
+    }
+
+    .about .about-content {
+        margin-bottom: 20px;
+    }
+
+    .about .about-content ul li {
+        font-size: 14px; /* Texto un poco más pequeño si es necesario */
+    }
+
+    .about .container img {
+        min-height: 250px; /* Reducimos altura mínima en móviles */
+        margin-bottom: 30px;
+    }
+}
+
+
+/*******************************/
+/********* Footer CSS **********/
+/*******************************/
+.footer {
+    position: relative;
+    padding: 20px;
+    background: #202C45;
+}
+
+.footer .copyright {
+    text-align: center;
+}
+
+.footer .copyright p {
+    margin: 0;
+    color: #ffffff;
+}
+
+.footer .copyright p a {
+    color: #E81C2E;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.footer .copyright p a:hover {
+    color: #ffffff;
+}
+
+/* Adaptación para móviles */
+@media screen and (max-width: 768px) {
+    .footer {
+        padding: 20px;
+    }
+
+    .footer .copyright p {
+        font-size: 14px; /* Texto más pequeño para móviles */
+        line-height: 1.4;
+    }
+
+    .footer .copyright p a {
+        display: inline-block;
+        word-break: break-word; /* Por si hay enlaces largos */
+    }
+}
