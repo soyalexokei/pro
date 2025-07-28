@@ -1,23 +1,23 @@
 //-- Variables.
 var imagenesIDibizaYoga =
 [
-  "https://i.postimg.cc/05m6Z18Q/1.png",
-  "https://i.postimg.cc/Y0cvkbxM/2.png",
-  "https://i.postimg.cc/tTnsLLWB/3.png",
-  "https://i.postimg.cc/prDpdz08/4.png",
-  "https://i.postimg.cc/yYyD4h3C/5.png",
-  "https://i.postimg.cc/GpMcbBtm/6.png",
-  "https://i.postimg.cc/pXHm6cTB/7.png",
-  "https://i.postimg.cc/SxZjjyGZ/8.png",
-  "https://i.postimg.cc/DzHZdBHL/9.png",
-  "https://i.postimg.cc/kMx4KNcR/10.png",
-  "https://i.postimg.cc/s2vxht63/11.png",
-  "https://i.postimg.cc/tJH487Xg/12.png",
-  "https://i.postimg.cc/V6tN7XPT/13.png",
-  "https://i.postimg.cc/MKqGDcPP/14.png",
-  "https://i.postimg.cc/vTLZyMBt/15.jpg",
-  "https://i.postimg.cc/cJpx86tc/16.png",
-  "https://i.postimg.cc/qv2N7vQY/17.png"
+  "https://i.postimg.cc/d0N8kqJp/1.png",
+  "https://i.postimg.cc/bvwxwGf1/2.png",
+  "https://i.postimg.cc/fRK7scpw/3.png",
+  "https://i.postimg.cc/7ZD1jsBs/4.png",
+  "https://i.postimg.cc/MZCmmK18/5.png",
+  "https://i.postimg.cc/Fs0gW5xk/6.png",
+  "https://i.postimg.cc/0Q3d393D/7.png",
+  "https://i.postimg.cc/kGbFPk3Z/8.png",
+  "https://i.postimg.cc/wxykNsyV/9.png",
+  "https://i.postimg.cc/vBDt34PG/10.png",
+  "https://i.postimg.cc/Hk4zxDc1/11.png",
+  "https://i.postimg.cc/HLY28ZXc/12.png",
+  "https://i.postimg.cc/59TnKmdT/13.png",
+  "https://i.postimg.cc/66yMhmSC/14.png",
+  "https://i.postimg.cc/mhWrK9VC/15.jpg",
+  "https://i.postimg.cc/y8znsYNT/16.png",
+  "https://i.postimg.cc/hPmMk7Kj/17.png",
 ];
 var primeraIbizaYoga = 1;
 var pantallaIbizaYoga = document.getElementById("pantalla-voluntariado-proweb-4");
