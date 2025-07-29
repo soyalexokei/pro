@@ -17,7 +17,7 @@ function mostrarJobsWT(auxJobsWT) {
         <br>
         <h7>Desde Junio 2019 hasta Octubre 2019</h7>
         <br>
-        <h5>Estuve trabajando en Kalahari Resorts & Conventions</h5>
+        <h5>Estuve trabajando en Kalahari Resorts<br>& Conventions</h5>
         <a href="https://www.kalahariresorts.com/wisconsin/" target="_blank"><img src="img/wt2019.png" alt="WT2019-Jobs" style="width: 200px;"/></a>
         <p><b>Programa de trabajo:</b>
           <a  class="otros-enlaces"
@@ -26,18 +26,18 @@ function mostrarJobsWT(auxJobsWT) {
           </a>
         </p>
         <p>En primer lugar, desde Junio 2019 hasta Agosto 2019</p>
-        <p><b>Puesto:</b> Socorrista en<br>un parque acuático indoor y outdoor<br>(Tuve que aprobar un curso teórico-práctico de<br>una semana para poder trabajar)</p>
-        <p><b>Lugar:</b> Wisconsin Dells, Wisconsin, Estados Unidos de América</p>
+        <p><b>Puesto:</b> Socorrista en<br>un parque acuático indoor y outdoor (Tuve<br>que aprobar un curso teórico-práctico de<br>una semana para poder trabajar)</p>
+        <p><b>Lugar:</b> Wisconsin Dells, Wisconsin,<br>Estados Unidos de América</p>
         <p><b>Sector:</b> Seguridad y salud</p>
         <p><b>Tipo de contrato:</b> Contrato por hora</p>
         <p><b>Funciones:</b></p>
-        <p> - Vigilar que los bañistas del parque acuático cumplan las normas</p>
+        <p> - Vigilar que los bañistas del parque acuático cumplan<br>las normas</p>
         <p> - Vigilar que nadie se ahogue y evitarlo si sucediera</p>
-        <p> - Seguir el protocolo de actuación cuando alguien se está ahogando</p>
-        <p> - Llevar un orden en la parte de arriba de una atracción, dejando un<br>margen de seguridad entre bañistas</p>
+        <p> - Seguir el protocolo de actuación cuando alguien se<br>está ahogando</p>
+        <p> - Llevar un orden en la parte de arriba de una atracción,<br>dejando un margen de seguridad<br>entre bañistas</p>
         <p><b>Teléfono:</b> +1 608-254-5466</p>
         <p><b>Correo electrónico:</b> WIGroups@KalahariResorts.com</p>
-        <p><b>Dirección:</b> Kalahari Drive, 1305, Wisconsin Dells 53965, Wisconsin,<br>Estados Unidos de América</p>
+        <p><b>Dirección:</b> Kalahari Drive, 1305, Wisconsin Dells 53965,<br>Wisconsin, Estados Unidos de América</p>
       </div>
     `;
   }else if(auxJobsWT === 2) {
@@ -47,8 +47,8 @@ function mostrarJobsWT(auxJobsWT) {
         <br>
         <p>Y después, desde Agosto 2019 hasta Octubre 2019</p>
         <br>
-        <p><b>Puesto:</b> Dependiente de tienda (con entrevista previa en inglés)</p>
-        <p><b>Lugar:</b> Wisconsin Dells, Wisconsin, Estados Unidos de América</p>
+        <p><b>Puesto:</b> Dependiente de tienda (con entrevista previa<br>en inglés)</p>
+        <p><b>Lugar:</b> Wisconsin Dells, Wisconsin,<br>Estados Unidos de América</p>
         <p><b>Sector:</b> Ventas</p>
         <p><b>Tipo de contrato:</b> Contrato por hora</p>
         <p><b>Tipos de tiendas:</b></p>
@@ -64,7 +64,7 @@ function mostrarJobsWT(auxJobsWT) {
         <p> - Conseguir que la experiencia de compra del cliente<br>sea lo más satisfactoria posible</p>
         <p><b>Teléfono:</b> +1 608-254-5466</p>
         <p><b>Correo electrónico:</b> WIGroups@KalahariResorts.com</p>
-        <p><b>Dirección:</b> Kalahari Drive, 1305, Wisconsin Dells 53965, Wisconsin,<br>Estados Unidos de América</p>
+        <p><b>Dirección:</b> Kalahari Drive, 1305, Wisconsin Dells 53965,<br>Wisconsin, Estados Unidos de América</p>
       </div>
     `;
   }

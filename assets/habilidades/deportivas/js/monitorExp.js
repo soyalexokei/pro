@@ -41,7 +41,7 @@ function mostrarMonitorExp(auxMonitorExp) {
         <p><b>Tipo:</b> Campamento urbano de verano (sin<br>pernocta) para<br>niños/as entre 4 años y 12 años</p>
         <p><b>Tipo de contrato:</b> Contrato por hora</p>
         <p><b>Funciones:</b></p>
-        <p> - Organización y puesta en marcha de<br>actividades lúdico-educativas, deportivas y<br>cooperativas</p>
+        <p> - Organización y puesta en marcha de<br>actividades lúdico-educativas, deportivas<br>y cooperativas</p>
         <p> - Monitor de desayuno, piscolabis y comidas<br>para controlar al grupo de menores</p>
         <p> - Resolución de conflictos que surjan</p>
         <p> - Proactividad durante la duración de la<br>jornada laboral</p>
@@ -69,7 +69,7 @@ function mostrarMonitorExp(auxMonitorExp) {
         <p><b>Tipo:</b> Campamento de verano con pernocta<br>para chavales/as entre 12 años y 17 años</p>
         <p><b>Tipo de contrato:</b> Contrato por hora</p>
         <p><b>Funciones:</b></p>
-        <p> - Organización y puesta en marcha de<br>actividades lúdico-educativas, deportivas, y<br>cooperativas</p>
+        <p> - Organización y puesta en marcha de<br>actividades lúdico-educativas, deportivas,<br>y cooperativas</p>
         <p> - Organización y puesta en marcha de las<br>actividades a realizar cada día</p>
         <p> - Resolución de conflictos que surjan</p>
         <p> - Trabajo diario con los participantes del<br>campamento, incluso control durante la noche</p>
