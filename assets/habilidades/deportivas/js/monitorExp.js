@@ -8,18 +8,23 @@ var imagenesIDmonitorExp =
   "https://i.postimg.cc/hGvXLyMt/4.jpg",
   "https://i.postimg.cc/jSmb1Mt5/5.png",
   "",
-  "https://i.postimg.cc/2y1bS0CD/2132kfjkfjdkf.jpg",
-  "https://i.postimg.cc/BbR8L2v1/3434kjkjvf.jpg",
-  "https://i.postimg.cc/TYW58Nkj/8767jkdfhkdf.jpg",
-  "https://i.postimg.cc/ryHRP29F/987hjdfhkjdkdjfd.jpg",
-  "https://i.postimg.cc/vZsr0dQx/IMG-20180705-114728.jpg"
+  "https://i.postimg.cc/8P03mjwR/IMG-20250730-173041.png",
+  "https://i.postimg.cc/wTvZNh5x/IMG-20250730-173321.png",
+  "https://i.postimg.cc/44wjn89F/IMG-20250730-173514.png",
+  "https://i.postimg.cc/zBz0rr0D/IMG-20250730-173851.png",
+  "https://i.postimg.cc/CKHmX1C6/IMG-20250730-174135.png",
+  "https://i.postimg.cc/dQWSJLbb/IMG-20250730-175717.png",
+  "https://i.postimg.cc/nhmdKTXx/IMG-20250730-175423.png",
+  "https://i.postimg.cc/DzKxxsGX/IMG-20250730-180402.png",
+  "https://i.postimg.cc/ZK27yXKj/IMG-20250730-181857.png",
+  "https://i.postimg.cc/02bXj9xb/IMG-20250730-181843.png",
 ];
 var primeraMonitorExp = 1;
 var pantallaMonitorExp = document.getElementById("pantalla-monitorExp");
 var imgMonitorExp = document.createElement("img");
 
 //-- Ctes.
-const totalMonitorExp = 12;
+const totalMonitorExp = 17;
 
 function mostrarMonitorExp(auxMonitorExp) {
   
