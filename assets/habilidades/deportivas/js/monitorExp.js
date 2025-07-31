@@ -17,14 +17,31 @@ var imagenesIDmonitorExp =
   "https://i.postimg.cc/nhmdKTXx/IMG-20250730-175423.png",
   "https://i.postimg.cc/DzKxxsGX/IMG-20250730-180402.png",
   "https://i.postimg.cc/ZK27yXKj/IMG-20250730-181857.png",
-  "https://i.postimg.cc/02bXj9xb/IMG-20250730-181843.png",
+  "https://i.postimg.cc/k5Xv2v37/IMG-20250731-120746.png",
+  "https://i.postimg.cc/SNPhTDdv/IMG-20250731-120719-860.webp",
+  "https://i.postimg.cc/hGLRGgBk/IMG-20250731-121208.png",
+  "https://i.postimg.cc/YCmwJYyq/IMG-20250731-121410-875.webp",
+  "https://i.postimg.cc/k56FNX4H/IMG-20250731-121447-738.webp",
+  "https://i.postimg.cc/NjPkrrgT/IMG-20250731-122003.png",
+  "https://i.postimg.cc/x1dPCPSn/IMG-20250731-122020.png",
+  "https://i.postimg.cc/rFjJMP3f/IMG-20250731-122801.png",
+  "https://i.postimg.cc/X74LMbHZ/IMG-20250731-122812.png",
+  "https://i.postimg.cc/MZy5rTD2/IMG-20250731-123452.png",
+  "https://i.postimg.cc/BbGgn9JV/IMG-20250731-124645.png",
+  "https://i.postimg.cc/Wz67DW3b/IMG-20250731-125047.png",
+  "https://i.postimg.cc/G2DKRhnD/IMG-20250731-125928.png",
+  "https://i.postimg.cc/nLCTdGd0/IMG-20250731-130913.png",
+  "https://i.postimg.cc/bvWg4SW8/IMG-20250731-130846-074.webp",
+  "https://i.postimg.cc/g2cghW39/IMG-20250731-131258.png",
+  "https://i.postimg.cc/2SH2FKx1/IMG-20250731-131247.png",
+  "https://i.postimg.cc/RVLPqF6Q/IMG-20250731-131316.png"
 ];
 var primeraMonitorExp = 1;
 var pantallaMonitorExp = document.getElementById("pantalla-monitorExp");
 var imgMonitorExp = document.createElement("img");
 
 //-- Ctes.
-const totalMonitorExp = 17;
+const totalMonitorExp = 34;
 
 function mostrarMonitorExp(auxMonitorExp) {
   
