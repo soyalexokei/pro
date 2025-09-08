@@ -32,13 +32,14 @@ var imagenesIDderrotasPadel =
   "https://i.postimg.cc/J0B5NjrN/IMG-20250812-183809.jpg",
   "https://i.postimg.cc/RFYTJgBC/IMG-20250812-183945.jpg",
   "https://i.postimg.cc/14hcJ4XL/IMG-20250812-184355.jpg",
+  "https://i.postimg.cc/vBzqC6RG/IMG-20250908-183137.jpg"
 ];
 var primeraderrotasPadel = 1;
 var pantalladerrotasPadel = document.getElementById("pantalla-derrotasPadel");
 var imgderrotasPadel = document.createElement("img");
 
 //-- Ctes.
-const totalderrotasPadel = 31;
+const totalderrotasPadel = 32;
 
 function mostrarderrotasPadel(auxderrotasPadel) {
   

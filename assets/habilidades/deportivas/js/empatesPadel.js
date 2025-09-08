@@ -10,13 +10,15 @@ var imagenesIDempatesPadel =
   "https://i.postimg.cc/15mzNsvt/IMG-20250812-184006.jpg",
   "https://i.postimg.cc/C5NL6QxS/IMG-20250812-184338.jpg",
   "https://i.postimg.cc/tJy4kjyB/IMG-20250812-184452.jpg",
+  "https://i.postimg.cc/T3gcZWmB/IMG-20250908-183202.jpg",
+  "https://i.postimg.cc/gc7qjKHf/IMG-20250908-183243.jpg"
 ];
 var primeraempatesPadel = 1;
 var pantallaempatesPadel = document.getElementById("pantalla-empatesPadel");
 var imgempatesPadel = document.createElement("img");
 
 //-- Ctes.
-const totalempatesPadel = 9;
+const totalempatesPadel = 11;
 
 function mostrarempatesPadel(auxempatesPadel) {
   

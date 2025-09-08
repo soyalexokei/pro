@@ -41,13 +41,14 @@ var imagenesIDvictoriasPadel =
   "https://i.postimg.cc/NfhDkCWZ/IMG-20250812-184706.jpg",
   "https://i.postimg.cc/rs4JL5th/IMG-20250812-184804.jpg",
   "https://i.postimg.cc/Nf14J7tF/IMG-20250812-184820.jpg",
+  "https://i.postimg.cc/Pf039H9p/IMG-20250908-183226.jpg"
 ];
 var primeravictoriasPadel = 1;
 var pantallavictoriasPadel = document.getElementById("pantalla-victoriasPadel");
 var imgvictoriasPadel = document.createElement("img");
 
 //-- Ctes.
-const totalvictoriasPadel = 40;
+const totalvictoriasPadel = 41;
 
 function mostrarvictoriasPadel(auxvictoriasPadel) {
   
