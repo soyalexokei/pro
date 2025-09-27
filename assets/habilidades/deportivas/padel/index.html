@@ -24,31 +24,31 @@
             <div class="grid grid-cols-2 gap-4 mb-6">
                 <div class="p-4 bg-purple-500 text-white rounded-lg">
                     <h3 class="text-lg">Partidos totales</h3>
-                    <p class="text-2xl font-bold">84</p>
+                    <p class="text-2xl font-bold" id="p_totales"></p>
                 </div>
                 <a data-toggle="modal" data-target="#victoriasPadel" class="p-4 bg-green-500 text-white rounded-lg otros-enlaces">
                     <h3 class="text-lg">Victorias</h3>
-                    <p class="text-2xl font-bold">41</p>
+                    <p class="text-2xl font-bold" id="victorias"></p>
                 </a>
                 <a data-toggle="modal" data-target="#derrotasPadel" class="p-4 bg-red-500 text-white rounded-lg otros-enlaces">
                     <h3 class="text-lg">Derrotas</h3>
-                    <p class="text-2xl font-bold">32</p>
+                    <p class="text-2xl font-bold" id="derrotas"></p>
                 </a>
                 <a data-toggle="modal" data-target="#empatesPadel" class="p-4 bg-yellow-500 text-white rounded-lg otros-enlaces">
                     <h3 class="text-lg">Empates</h3>
-                    <p class="text-2xl font-bold">11</p>
+                    <p class="text-2xl font-bold" id="empates"></p>
                 </a>
                 <div class="p-4 bg-gray-500 text-white rounded-lg">
                     <h3 class="text-lg">Nivel de Playtomic</h3>
-                    <p class="text-2xl font-bold">2,57</p>
+                    <p class="text-2xl font-bold" id="nivel"></p>
                 </div>
                 <div class="p-4 bg-gray-500 text-white rounded-lg">
                     <h3 class="text-lg">Fiabilidad del nivel</h3>
-                    <p class="text-2xl font-bold">Alta - 83,90%</p>
+                    <p class="text-2xl font-bold" id="fiabilidad"></p>
                 </div>
                 <div class="p-4 bg-gray-500 text-white rounded-lg">
-                    <h3 class="text-lg">Eficacia de los últimos 10 partidos</h3>
-                    <p class="text-2xl font-bold">70%</p>
+                    <h3 class="text-lg">Eficacia</h3>
+                    <p class="text-2xl font-bold" id="eficacia"></p>
                 </div>
             </div>
         </div>
@@ -101,26 +101,12 @@
         </div>
     </div>
     <!-- Fin de Modales -->
-    <script>
-        const ctx = document.getElementById('performanceChart').getContext('2d');
-        new Chart(ctx, {
-            type: 'pie',
-            data: {
-                datasets: [{
-                    data: [41, 32, 11],
-                    backgroundColor: ['#34D399', '#EF4444', '#FFEB3B'],
-                }]
-            },
-            options: {
-                responsive: true,
-            }
-        });
-    </script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
     <script src="../js/victoriasPadel.js" type="text/javascript"></script>
     <script src="../js/derrotasPadel.js" type="text/javascript"></script>
     <script src="../js/empatesPadel.js" type="text/javascript"></script>
+    <script src="../js/config.js" type="text/javascript"></script>
     <!-- Google Traductor -->
     <script type="text/javascript">
         function googleTranslateElementInit() {
