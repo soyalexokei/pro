@@ -44,7 +44,8 @@ const mediaPadelVictorias =
   { type: "image", src: "https://i.postimg.cc/NfhDkCWZ/IMG-20250812-184706.jpg" },
   { type: "image", src: "https://i.postimg.cc/rs4JL5th/IMG-20250812-184804.jpg" },
   { type: "image", src: "https://i.postimg.cc/Nf14J7tF/IMG-20250812-184820.jpg" },
-  { type: "image", src: "https://i.postimg.cc/Pf039H9p/IMG-20250908-183226.jpg" }
+  { type: "image", src: "https://i.postimg.cc/Pf039H9p/IMG-20250908-183226.jpg" },
+  { type: "image", src: "https://i.postimg.cc/Pq0J1GDm/IMG-20251006-193204.jpg" },
 ];
 
 let primeravictoriasPadel = 1;
