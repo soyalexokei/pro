@@ -7,12 +7,12 @@ var eficacia = document.getElementById("eficacia")
 const nivel = document.getElementById("nivel")
 const fiabilidad = document.getElementById("fiabilidad")
 
-p_totales.innerHTML = 87
-victorias.innerHTML = 43
+p_totales.innerHTML = 88
+victorias.innerHTML = 44
 derrotas.innerHTML = 33
 empates.innerHTML = 11
-nivel.innerHTML = 2.58
-fiabilidad.innerHTML = "Alta - " + 84.30 + "%"
+nivel.innerHTML = 2.62
+fiabilidad.innerHTML = "Alta - " + 84.43 + "%"
 
 const partidos_totales = parseInt(p_totales.innerHTML)
 const partidos_ganados = parseInt(victorias.innerHTML)
