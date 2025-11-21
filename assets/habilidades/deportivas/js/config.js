@@ -7,19 +7,19 @@ var eficacia = document.getElementById("eficacia")
 const nivel = document.getElementById("nivel")
 const fiabilidad = document.getElementById("fiabilidad")
 
-p_totales.innerHTML = 88
-victorias.innerHTML = 44
-derrotas.innerHTML = 33
-empates.innerHTML = 11
-nivel.innerHTML = 2.62
-fiabilidad.innerHTML = "Alta - " + 84.43 + "%"
+victorias.innerHTML = 46
+derrotas.innerHTML = 35
+empates.innerHTML = 12
+nivel.innerHTML = 2.55
+fiabilidad.innerHTML = "Alta - " + 84.99 + "%"
 
-const partidos_totales = parseInt(p_totales.innerHTML)
 const partidos_ganados = parseInt(victorias.innerHTML)
 const partidos_perdidos = parseInt(derrotas.innerHTML)
 const partidos_empatados = parseInt(empates.innerHTML)
 
-//-- Cálculo de la Eficacia.
+//-- Cálculo de la Eficacia y de partidos totales
+const partidos_totales = partidos_ganados + partidos_perdidos + partidos_empatados
+p_totales.innerHTML = partidos_totales
 eficacia.innerHTML = Math.round((partidos_ganados * 100) / partidos_totales) + "%"
 
 new Chart(ctx, {

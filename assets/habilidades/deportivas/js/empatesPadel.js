@@ -14,7 +14,8 @@ const mediaPadelEmpates =
   { type: "image", src: "https://i.postimg.cc/C5NL6QxS/IMG-20250812-184338.jpg" },
   { type: "image", src: "https://i.postimg.cc/tJy4kjyB/IMG-20250812-184452.jpg" },
   { type: "image", src: "https://i.postimg.cc/T3gcZWmB/IMG-20250908-183202.jpg" },
-  { type: "image", src: "https://i.postimg.cc/gc7qjKHf/IMG-20250908-183243.jpg" }
+  { type: "image", src: "https://i.postimg.cc/gc7qjKHf/IMG-20250908-183243.jpg" },
+  { type: "image", src: "https://i.postimg.cc/mgW6h1pd/IMG-20251121-170041.jpg" },
 ];
 
 let primeraempatesPadel = 1;

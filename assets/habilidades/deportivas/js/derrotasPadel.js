@@ -37,6 +37,8 @@ const mediaPadelDerr =
   { type: "image", src: "https://i.postimg.cc/14hcJ4XL/IMG-20250812-184355.jpg" },
   { type: "image", src: "https://i.postimg.cc/vBzqC6RG/IMG-20250908-183137.jpg" },
   { type: "image", src: "https://i.postimg.cc/x1J6KdFT/IMG-20250929-190205.jpg" },
+  { type: "image", src: "https://i.postimg.cc/7LsFCY2J/IMG-20251121-170025.jpg" },
+  { type: "image", src: "https://i.postimg.cc/q7bPtM3h/IMG-20251121-170116.jpg" },
 ];
 
 let primeraderrotasPadel = 1;
