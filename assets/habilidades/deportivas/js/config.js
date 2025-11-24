@@ -8,10 +8,10 @@ const nivel = document.getElementById("nivel")
 const fiabilidad = document.getElementById("fiabilidad")
 
 victorias.innerHTML = 46
-derrotas.innerHTML = 35
+derrotas.innerHTML = 36
 empates.innerHTML = 12
-nivel.innerHTML = 2.55
-fiabilidad.innerHTML = "Alta - " + 84.99 + "%"
+nivel.innerHTML = 2.50
+fiabilidad.innerHTML = "Alta - " + 85.11 + "%"
 
 const partidos_ganados = parseInt(victorias.innerHTML)
 const partidos_perdidos = parseInt(derrotas.innerHTML)
