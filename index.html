@@ -1,1822 +1,424 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <!-- Ajustes de la página web -->
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta content="width=device-width, initial-scale=1" name="viewport"/>
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta content="Alejandro-Fernandez-Perez" name="author"/>
-    <meta name="theme-color" content="#ffffff">
-    <!-- Cabecera de la página web -->
-    <title>My Professional WEB</title>
-    <!-- Fuentes -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Varela" rel="stylesheet">
-    <!-- Archivo Manifest -->
-    <link rel="manifest" href="assets/img/manifest.json">
-    <!-- Favicon -->
-    <link rel="icon" href="./favicon.ico">
-    <link rel="mask-icon" href="assets/img/safari-pinned-tab.svg" color="#5bbad5">
-    <!-- Estilos CSS -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-    <!-- Configuración JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+  <!-- Configuración general -->
+  <meta charset="utf-8">
+  <meta name="author" content="Alejandro Fernández Pérez">
+  <meta name="description" content="Portfolio profesional de Alejandro Fernández Pérez, Systems Engineer especializado en automatización, modernización mainframe, IoT y soluciones audiovisuales.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Título de la pestaña de la página web -->
+  <title>My Professional WEB</title>
+  <!-- Icono de la pestaña de la página web -->
+  <link rel="icon" href="./favicon.ico">
+  <!-- Otras Configuraciones -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <!-- Estilos CSS -->
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-    <!-- 1º SECCIÓN -->
-    <div id="top" class="hero background-overlay">
-        <div class="hero-content">
-            <h1>Alejandro Fernández Pérez</h1>
-            <p class="hero-job">Systems Engineer en <a href="https://www.accenture.com/es-es" target="_blank"><img width="60px" src="./assets/sobreMi/accenture-logo.png"/></a></p>
+  <!-- Cabecera -->
+  <header class="site-header" data-header>
+    <a class="brand" href="#inicio" aria-label="Inicio">
+      <span>AFP</span>
+      <strong>Alejandro Fernández Pérez</strong>
+    </a>
+    <nav class="nav" aria-label="Navegación principal">
+      <a href="#perfil">Perfil</a>
+      <a href="#experiencia">Experiencia</a>
+      <a href="#holding">Holding</a>
+      <a href="#certificates">Certificaciones</a>
+      <a href="#testimonials">Testimonios</a>
+      <a href="#contacto">Contacto</a>
+      <a href="#volunteers">Voluntariados</a>
+      <a>Idioma:</a><div id="google_translate_element" class="google"></div>
+    </nav>
+    <button class="menu-toggle" data-menu-toggle aria-label="Abrir menú">
+      <i data-lucide="menu"></i>
+    </button>
+  </header>
+  <!-- Resto de la Web -->
+  <main>
+    <!-- Portada -->
+    <section class="hero" id="inicio">
+      <div class="hero-media" aria-hidden="true">
+        <img src="assets/portada/fondo.png"/>
+      </div>
+      <div class="hero-grid">
+        <div class="hero-copy reveal">
+          <p class="lead">"<i>Algunas veces se gana, otras se aprende</i> " - Alejandro (2023)</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#perfil"><i data-lucide="sparkles"></i> Explorar</a>
+          </div>
         </div>
-        <div class="hero-arrow page-scroll home-arrow-down">
-            <a class="" href="#intro"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
+        <aside class="hero-panel reveal" aria-label="Resumen profesional">
+          <div class="current-role">
+            <a href="https://www.accenture.com/es-es" target="_blank"><img src="assets/experiencias/logo8.png"/></a>
+            <div>
+              <span>Rol actual</span>
+              <strong>ALM Engineer</strong>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+    
+    <!-- Perfil -->
+    <section class="section" id="perfil">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Perfil</p>
+        <p>Nacionalidad: española <img width="40px" src="assets/perfil/spanish.png"/></p>
+      </div>
+      <div class="profile-layout">
+        <div class="profile-card reveal">
+          <i data-lucide="calendar"></i>
+          <h3>Horario profesional</h3>
+          <p>Lunes a Viernes</p>
+          <p>09:00 - 14:30</p>
+          <p>16:30 - 18:00</p>
+          <p><a href="#contacto"><i data-lucide="mail"></i></a></p>
         </div>
+        <div class="profile-card reveal">
+          <i data-lucide="briefcase"></i>
+          <h3>Descripción profesional</h3>
+          <p>- Resolutivo, creativo, persistente, dinámico y flexible a cambios</p>
+          <p>- <a href="https://www.linkedin.com/in/alejandrofernandezperezescalante/" target="_blank">Linked<i class="fa-brands fa-linkedin" style="color: #0A66C2;"></i></a></p>
+        </div>
+        <div class="profile-card reveal">
+          <i data-lucide="plane"></i>
+          <h3>Descripción personal</h3>
+          <p>- Alcanzando metas, superando baches, desbloqueando límites y descubriendo el mundo que me rodea</p>
+          <p>- Deporte, socializar y buena alimentación</p>
+          <p>- <a href="https://www.instagram.com/soyalexokei/" target="_blank">Instagram <i class="fa-brands fa-instagram" style="color: #e4195d;"></i></a></p>
+          <p>- <a href="https://alejandropersonalweb.netlify.app/" target="_blank">Web de Viajes <i class="fa-solid fa-plane" style="color: #0e7920;"></i></a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experiencia -->
+    <section class="section split" id="experiencia">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Experiencia</p>
+      </div>
+      <div class="timeline">
+        <article class="timeline-item reveal">
+          <span>05/2025<br>a<br>Actualidad</span>
+          <div>
+            <h3><a href="https://www.accenture.com/es-es" target="_blank">Accenture</a></h3>
+            <p><b>Sector:</b> Tecnologías de la Información (IT)</p>
+            <p><b>Ubicación:</b> Remoto (España)</p>
+            <p><a href="javascript:void(0)" id="career8"><u>Más Información</u></a></p>
+          </div>
+          <span><img src="./assets/experiencias/logo8.png"/></span>
+        </article>
+        <article class="timeline-item reveal">
+          <span>03/2025<br>a<br>05/2025</span>
+          <div>
+            <h3><a href="https://www.pss-ti.com/" target="_blank">PSS TI</a></h3>
+            <p><b>Sector:</b> Tecnologías de la Información (IT)</p>
+            <p><b>Ubicación:</b> Madrid (España)</p>
+            <p><a href="javascript:void(0)" id="career7"><u>Más Información</u></a></p>
+          </div>
+          <span><img src="./assets/experiencias/logo7.png"/></span>
+        </article>
+        <article class="timeline-item reveal">
+          <span>06/2024<br>a<br>10/2024</span>
+          <div>
+            <h3><a href="https://www.algamiberica.com/" target="_blank">Algam Ibérica</a></h3>
+            <p><b>Sector:</b> Programación de Sistemas de Videoconferencia</p>
+            <p><b>Ubicación:</b> Barcelona (España)</p>
+            <p><a href="javascript:void(0)" id="career6"><u>Más Información</u></a></p>
+          </div>
+          <span><img src="./assets/experiencias/logo6.png"/></span>
+        </article>
+        <article class="timeline-item reveal">
+          <span>02/2024<br>a<br>05/2024</span>
+          <div>
+            <h3><a href="https://macustica.com/" target="_blank">Macústica</a></h3>
+            <p><b>Sector:</b> Ingeniería Acústica y Arquitectónica</p>
+            <p><b>Ubicación:</b> Mallorca (España)</p>
+            <p><a href="javascript:void(0)" id="career5"><u>Más Información</u></a></p>
+          </div>
+          <span><img src="./assets/experiencias/logo5.png"/></span>
+        </article>
+        <article class="timeline-item reveal">
+          <span>09/2022<br>a<br>01/2024</span>
+          <div>
+            <h3><a href="https://telefonicatech.com/" target="_blank">Telefónica Tech</a></h3>
+            <p><b>Sector:</b> Ingeniería y Técnica</p>
+            <p><b>Ubicación:</b> Madrid (España)</p>
+            <p><a href="javascript:void(0)" id="career4"><u>Más Información</u></a></p>
+          </div>
+          <span><img src="./assets/experiencias/logo4.png"/></span>
+        </article>    
+        <article class="timeline-item reveal">
+          <span>10/2021<br>a<br>12/2021</span>
+          <div>
+            <h3><a href="https://empresite.eleconomista.es/ESTUDIO-INTERNACIONAL-RITMO-MOVIMIENTO.html" target="_blank">Estudio Internacional Ritmo y Movimiento</a></h3>
+            <p><b>Sector:</b> Educación y formación</p>
+            <p><b>Ubicación:</b> Villaviciosa de Odón (España)</p>
+            <p><a href="javascript:void(0)" id="career3"><u>Más Información</u></a></p>
+          </div>
+          <span><img src="./assets/experiencias/logo3.png"/></span>
+        </article>
+        <article class="timeline-item reveal">
+          <span>09/2021<br>a<br>02/2022</span>
+          <div>
+            <h3><a href="https://www.lcrcom.net/" target="_blank">LCRcom (Grupo Aire)</a></h3>
+            <p><b>Sector:</b> Tecnologías de la Información (IT)</p>
+            <p><b>Ubicación:</b> Madrid (España)</p>
+            <p><a href="javascript:void(0)" id="career2"><u>Más Información</u></a></p>
+          </div>
+          <span><img src="./assets/experiencias/logo2.png"/></span>
+        </article>
+        <article class="timeline-item reveal">
+          <span>09/2017<br>a<br>06/2023</span>
+          <div>
+            <h3><a href="https://www.grupodidactia.es/" target="_blank">Grupo Didactia</a></h3>
+            <p><b>Sector:</b> Educación y formación</p>
+            <p><b>Ubicación:</b> Provincia de Madrid (España)</p>
+            <p><a href="javascript:void(0)" id="career1"><u>Más Información</u></a></p>
+          </div>
+          <span><img src="./assets/experiencias/logo1.png"/></span>
+        </article>
+      </div>
+    </section>
+
+    <!-- Holding -->
+    <section class="section work-band" id="holding">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Holding</p>
+      </div>
+      <div class="project-grid">
+        <article class="project-card reveal">
+          <h3>The Club Coworking</h3>
+          <span><img src="./assets/holding/logo1.png"/></span><br>
+          <p>Espacio de coworking flexible con oficinas, despachos y salas de reuniones para profesionales, autónomos y empresas.</p><br>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3733.6403880165626!2d-3.8772233999999997!3d40.490224399999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd418308829c55f5%3A0x629b461e3ff1417f!2sThe%20Club%20Coworking!5e1!3m2!1ses!2ses!4v1783089145848!5m2!1ses!2ses" width="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+          <p><u>Más Información</u></p>
+        </article>
+        <article class="project-card reveal">
+          <h3>Street Vibes</h3>
+          <span><img src="./assets/holding/logo2.png"/></span>
+          <p>Eventos sociales que conectan personas, culturas y aventuras.</p><br>
+          <p>Ubicación: Locales de Madrid (España)</p><br>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d239138.49162818224!2d-3.844343139177244!3d40.4380986102433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422997800a3c81%3A0xc436dec1618c2269!2sMadrid!5e1!3m2!1ses!2ses!4v1783089535363!5m2!1ses!2ses" width="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+          <p><u>Más Información</u></p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Certificaciones -->
+    <section class="section" id="certificates">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Certificaciones</p>
+      </div>
+      <div class="skills-grid reveal">
+        <span>DGT Permiso B</span>
+        <span>Licenciatura</span>
+        <span>Bachillerato</span>
+        <span>ESO</span>
+        <span>Monitor OTL</span>
+        <span>Python</span>
+        <span>JavaScript</span>
+        <span>Git</span>
+        <span>GitHub</span>
+        <span>GitLab</span>
+        <span>Jenkins</span>
+        <span>IBM Mainframe</span>
+        <span>Draw IO</span>
+        <span>AMX Muse Automator</span>
+        <span>IA Generativa</span>
+      </div>
+    </section>
+    
+    <!-- Testimonios -->
+    <section class="section testimonials" id="testimonials">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Testimonios</p>
+      </div>
+      <div class="quote-meta">
+        <div class="quote-content">
+          <div class="quote-text-container">
+              <span class="quote-text" data-quote-text></span>
+          </div>
+          <div class="quote-image-container">
+              <span class="quote-image" data-quote-image></span>
+          </div>
+        </div>
+        <div class="quote-item">
+          <i data-lucide="user"></i>
+          <span class="quote-author" data-quote-author></span>
+        </div>
+        <div class="quote-item">
+          <i data-lucide="building-2"></i>
+          <span class="quote-company" data-quote-company></span>
+        </div>
+        <div class="quote-item">
+          <i data-lucide="mail"></i>
+          <span class="quote-email" data-quote-email></span>
+        </div>
+        <div class="quote-controls">
+          <button class="quote-control" data-quote-prev aria-label="Testimonio anterior"><i data-lucide="chevron-left"></i></button>
+          <button class="quote-control" data-quote-next aria-label="Testimonio siguiente"><i data-lucide="chevron-right"></i></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section class="contact-section" id="contacto">
+      <div class="contact-inner reveal">
+        <p class="eyebrow">Contacto</p>
+        <h2>Hablemos de sistemas, automatización o nuevos retos tecnológicos.</h2>
+        <p>Una web profesional debe abrir conversaciones, no obligar a leerlo todo. Por eso esta versión prioriza foco, claridad y llamada a la acción.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="https://alejandrocontactweb.netlify.app/" target="_blank" rel="noreferrer"><i data-lucide="mail"></i> Abrir formulario</a>
+          <a class="button secondary" href="#inicio"><i data-lucide="arrow-up"></i> Volver arriba</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Voluntariados -->
+  <section class="section split" id="volunteers">
+    <div class="section-heading reveal">
+      <p class="eyebrow">Voluntariados</p>
     </div>
-    <!-- FIN DE LA 1º SECCIÓN -->
-
-    <!-- SECCIÓN TRADUCTOR GOOGLE -->
-    <div id="google_translate_element" class="google"></div>
-    <!-- FIN DE LA SECCIÓN TRADUCTOR GOOGLE -->
-
-    <!-- CABECERA -->
-    <header id="masthead" class="site-header">
-        <nav id="primary-navigation" class="site-navigation" data-spy="affix">
-            <div class="container">
-                <div class="navbar-header page-scroll">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#portfolio-perfect-collapse" aria-expanded="false" >
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                </div>
-                <div class="main-menu collapse navbar-collapse" id="portfolio-perfect-collapse">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="page-scroll"><a href="#aboutme">Sobre mí</a></li>
-                        <li class="page-scroll"><a href="#experience">Experiencias</a></li>
-                        <li class="page-scroll"><a href="#studies">Estudios</a></li>
-                        <li class="page-scroll"><a href="#skills">Habilidades</a></li>
-                        <li class="page-scroll"><a href="#languages">Idiomas</a></li>
-                        <li class="page-scroll"><a href="#projects">Proyectos</a></li>
-                        <li class="page-scroll"><a href="#volunteers">Voluntariados</a></li>
-                    </ul>
-                </div>
+    <div class="timeline">
+      <article class="timeline-item reveal">
+        <span>Junio 2024</span>
+        <div>
+          <h3><a href="https://www.ibizayoga.com/" target="_blank">Ibiza Yoga</a></h3>
+          <p><b>Sector:</b> Turismo, Hostelería, Espiritualidad y Sostenibilidad</p>
+          <p><b>Ubicación:</b> <a href="https://www.google.com/maps/place/07810+Sant+Joan+de+Labritja,+Illes+Balears/@39.0877843,1.4566045,219m/data=!3m2!1e3!4b1!4m6!3m5!1s0x12993c6c1c8de63f:0xf9f8f5f95a8e5820!8m2!3d39.0877833!4d1.4572482!16s%2Fg%2F11c62yq6nr!5m1!1e1?authuser=0&entry=ttu&g_ep=EgoyMDI2MDYyOS4wIKXMDSoASAFQAw%3D%3D" target="_blank">Ibiza (España)</a></p>
+          <p><a href="#" data-modal-voluntariado5><u>Más Información</u></a></p>
+          <div class="modal" id="voluntariado5">
+            <div class="modal-content">
+              <button class="modal-close" data-modal-close-v5>&times;</button>
+              <p data-modal-text-v5></p>
+              <img data-modal-img-v5/>
+              <video data-modal-video-v5></video>
+              <div class="modal-navigation">
+                <button data-prev-v5><i data-lucide="chevron-left"></i></button>
+                <span data-counter-v5></span>
+                <button data-next-v5><i data-lucide="chevron-right"></i></button>
+              </div>
             </div>
-        </nav>
-    </header>
-    <!-- FIN DE LA CABECERA -->
-
-    <!-- CUERPO DE LA PRO WEB -->
-    <main id="main" class="site-main">
-
-        <!-- SECCIÓN SOBRE MÍ -->
-		<section class="site-section section-hello" id="aboutme">
-			<div class="container">
-				<h2><b>Sobre mí</b></h2>
-                <br>
-                <p class="section-subtitle" style="text-align: center;">- Algunas veces se gana, otras se aprende - </p>
-				<div class="row">
-					<div class="col-sm-4">
-						<div class="main-service text-right">
-							<div class="rectangle">
-								<i class="fa fa-calendar" aria-hidden="true"></i>
-							</div>
-							<h3>Horario profesional</h3>
-							<h5><b>Lunes</b> a <b>Viernes</b></h5>
-                            <h5><b>09:00</b> a <b>14:30</b></h5>
-                            <h5><b>16:00</b> a <b>18:30</b></h5>
-                            <h5>Contáctame por: <i class="fa fa-envelope"></i> <a href="https://alejandrocontactweb.netlify.app/" class="otros-enlaces" target="_blank">Aquí</a></h5>
-						</div>
-                        <div class="main-service text-right">
-                            <div class="rectangle">
-                                <i class="fa fa-comments" aria-hidden="true"></i>
-                            </div>
-                            <h3>Testimonios</h3>
-                            <div id="TestC">
-                                <!-- <div class="carousel-item">
-                                    <p>
-                                        <i class="fa fa-quote-left" id="ql"></i>
-                                        
-                                        <i class="fa fa-quote-right" id="qr"></i>
-                                    </p>
-                                    <p>
-                                        <i class="fa fa-user"></i> Lola Salcedo<br>
-                                        <i class="fa fa-building-o"></i> PSS-TI<br>
-                                        <a href="mailto:lola.salcedo@pss-ti.com" target="_blank" class="otros-enlaces"><i class="fa fa-envelope"></i> Contacto</a>
-                                    <img id="foto-persona-testimonio" src="./assets/sobreMi/testimonios/person11.png"/>
-                                </div> -->
-                                <div class="carousel-item">
-                                    <p>
-                                        <i class="fa fa-quote-left" id="ql"></i>
-                                        Alejandro demostró durante el curso de IA generativa en la EOI un gran compromiso y curiosidad por aprender.
-                                        Destacó por su participación activa, su capacidad de análisis y su cercanía a la hora de compartir ideas con el grupo.
-                                        Estoy seguro de que esas cualidades le ayudarán a seguir creciendo como profesional en el ámbito tecnológico.
-                                        <i class="fa fa-quote-right" id="qr"></i>
-                                    </p>
-                                    <p>
-                                        <i class="fa fa-user"></i> Raúl Ordóñez<br>
-                                        <i class="fa fa-building-o"></i> EOI
-                                        <a href="mailto:hola@raulordonez.com" target="_blank" class="otros-enlaces"><i class="fa fa-envelope"></i> Contacto</a>
-                                    <img id="foto-persona-testimonio" src="./assets/sobreMi/testimonios/person12.png"/>
-                                </div>
-                                <div class="carousel-item">
-                                    <p><i class="fa fa-quote-left" id="ql"></i>He tenido la oportunidad de trabajar con Alejandro en un nuevo proyecto. Muy buena actitud y ganas de trabajar, aprender y crecer laboralmente. Buena relación con sus compañeros y dispuesto siempre a colaborar<i class="fa fa-quote-right" id="qr"></i></p>
-                                    <p>
-                                        <i class="fa fa-user"></i> Manel Puntí<br>
-                                        <i class="fa fa-building-o"></i> CEO de Algam Ibérica<br>
-                                        <a href="mailto:mpunti@algamiberica.com" target="_blank" class="otros-enlaces"><i class="fa fa-envelope"></i> Contacto</a>
-                                    </p>
-                                    <img id="foto-persona-testimonio" src="./assets/sobreMi/testimonios/person2.png"/>
-                                </div>
-                                <div class="carousel-item">
-                                    <p>
-                                        <i class="fa fa-quote-left" id="ql"></i>
-                                        Alejandro es una persona asertiva porque sabe convencer de un buen plan para hacer. Es positivo porque pese a las adversidades, siempre
-                                        tiene la cabeza alta. Además, es un luchador, hasta que no lo consigue, no se rinde.
-                                        <i class="fa fa-quote-right" id="qr"></i>
-                                    </p>
-                                    <p>
-                                        <i class="fa fa-user"></i> María Alastrué<br>
-                                        <i class="fa fa-building-o"></i> Enfermera<br>
-                                        <a href="https://www.instagram.com/mariaalastrue/?hl=en" target="_blank" class="otros-enlaces"><i class="fa fa-instagram"></i></a> Amiga de Alejandro</p>
-                                    <img id="foto-persona-testimonio" src="./assets/sobreMi/testimonios/person10.png"/>
-                                </div>
-                                <div class="carousel-item">
-                                    <p>
-                                        <i class="fa fa-quote-left" id="ql"></i>
-                                        Alejandro es una persona constante, trabajadora y enfocado en sus objetivos. Además, es positivo porque
-                                        busca las ventajas de las cosas, por encima de las contras. Y es buena persona, porque siempre se da a los demás
-                                        y hace por crear un entorno cohesionado.
-                                        <i class="fa fa-quote-right" id="qr"></i>
-                                    </p>
-                                    <p>
-                                        <i class="fa fa-user"></i> Alberto Fernández Pérez<br>
-                                        <i class="fa fa-building-o"></i> Ingeniero Mecánico<br>
-                                        <a href="https://www.linkedin.com/in/alberto-fern%C3%A1ndez-p%C3%A9rez-16569b123/" target="_blank" class="otros-enlaces"><i class="fa fa-linkedin"></i></a> Hermano de Alejandro</p>
-                                    <img id="foto-persona-testimonio" src="./assets/sobreMi/testimonios/person9.png"/>
-                                </div>
-                                <div class="carousel-item">
-                                    <p>
-                                        <i class="fa fa-quote-left" id="ql"></i>
-                                        Álex es una persona extrovertida y proactiva que suele tomar la iniciativa en planes con amigos o proyectos grupales. Además, es
-                                        ambicioso y perseverante porque busca mejorar y alcanzar nuevas metas. Aunque también, es divertido con su entorno cercano y creativo,
-                                        proponiendo ideas, solucionando problemas y en la visión de las cosas.
-                                        <i class="fa fa-quote-right" id="qr"></i>
-                                    </p>
-                                    <p>
-                                        <i class="fa fa-user"></i> Juan Segura<br>
-                                        <i class="fa fa-building-o"></i> Ingeniero Industrial<br>
-                                        <a href="https://www.linkedin.com/in/juansegura1998/?originalSubdomain=es" target="_blank" class="otros-enlaces"><i class="fa fa-linkedin"></i></a> Amigo de Alejandro</p>
-                                    <img id="foto-persona-testimonio" src="./assets/sobreMi/testimonios/person8.png"/>
-                                </div>
-                                <div class="carousel-item active">
-                                    <p><i class="fa fa-quote-left" id="ql"></i>Me tocó ser la supervisora de las Prácticas Curriculares de Alejandro y, puedo decir con certeza, que es un excelente profesional, incluso un diez como persona. Siempre está dispuesto a todo, incluso a ayudar a quién lo necesite. Él sabe que LCRcom es su casa<i class="fa fa-quote-right" id="qr"></i></p>
-                                    <p>
-                                        <i class="fa fa-user"></i> Rita Bereczki<br>
-                                        <i class="fa fa-building-o"></i> LCRcom-Grupo Aire<br>
-                                        <a href="mailto:rita.bereczki@lcrcom.es" target="_blank" class="otros-enlaces"><i class="fa fa-envelope"></i> Contacto</a>
-                                    </p> 
-                                    <img id="foto-persona-testimonio" src="./assets/sobreMi/testimonios/person1.png"/>
-                                </div>
-                                <div class="carousel-item">
-                                    <p>
-                                        <i class="fa fa-quote-left" id="ql"></i>
-                                        Cuando Alejandro realizó su Trabajo de Fin de Grado, fui su tutor. De
-                                        esa época recuerdo su entusiasmo sin límites, y su gran capacidad de
-                                        iniciar proyectos y llevarlos hasta el final. Tanto la idea, como la
-                                        mayor parte del desarrollo de su TFG fueron completamente suyos, y sólo
-                                        tuve que acompañarle en el camino.
-                                        <i class="fa fa-quote-right" id="qr"></i>
-                                    </p>
-                                    <p>
-                                        <i class="fa fa-user"></i> Jesús M. G. Barahona<br>
-                                        <i class="fa fa-building-o"></i> URJC
-                                        <a href="https://floss.social/@jgbarah" target="_blank" class="otros-enlaces"><i class="fa fa-comment"></i> Red Social</a><br>
-                                        <a href="mailto:jesus.gonzalez.barahona@urjc.es" target="_blank" class="otros-enlaces"><i class="fa fa-envelope"></i> Contacto</a><br>
-                                    <img id="foto-persona-testimonio" src="./assets/sobreMi/testimonios/person13.png"/>
-                                </div>
-                                <div class="carousel-item">
-                                    <p><i class="fa fa-quote-left" id="ql"></i>Álex siempre está dispuesto a ayudarte. Le encanta el cacharreo de los Hardware, incluso del software y la programación. Le gusta ir más allá de la oferta en sí <br><br> Dejando el trabajo a un lado, es una persona que sabe divertirse y disfruta como se debe (con cabeza obviamente). Buenas fiestas nos hemos echado Irene, Rafa, Miguel Ángel, él y yo<i class="fa fa-quote-right" id="qr"></i></p>
-                                    <p>
-                                        <i class="fa fa-user"></i> Álvaro Contreras del Río<br>
-                                        <i class="fa fa-building-o"></i> Telefónica Tech<br>
-                                        <a href="mailto:alvaro.contrerasdelrio@telefonica.com" target="_blank" class="otros-enlaces"><i class="fa fa-envelope"></i> Contacto</a>
-                                    </p>
-                                    <img id="foto-persona-testimonio" src="./assets/sobreMi/testimonios/person7.png"/>
-                                </div>
-                                <div class="carousel-item">
-                                    <p><i class="fa fa-quote-left" id="ql"></i>Es una gran persona y un estupendo compañero. Siempre se puede contar con él, es bastante trabajador, es creativo e intenta crear buen ambiente en el equipo<i class="fa fa-quote-right" id="qr"></i></p>
-                                    <p>
-                                        <i class="fa fa-user"></i> Pablo Álvarez<br>
-                                        <i class="fa fa-building-o"></i> LCRcom-Grupo Aire<br>
-                                        <a href="mailto:pablo.a.a1986@gmail.com" target="_blank" class="otros-enlaces"><i class="fa fa-envelope"></i> Contacto</a>
-                                    </p> 
-                                    <img id="foto-persona-testimonio" src="./assets/sobreMi/testimonios/person6.png"/>
-                                </div>
-                                <div class="carousel-item">
-                                    <p><i class="fa fa-quote-left" id="ql"></i>Soy el supervisor de la parte de Corporate de IOT - Telefónica y, por tanto, de Alejandro. He de decir, que salvo algún pequeño despiste que ha tenido, en general, es un trabajador que cumple con todas las ofertas que le llegan, tiene iniciativa, es hábil de mente y frente a problemas que surgen, siempre tiene una salida<i class="fa fa-quote-right" id="qr"></i></p>
-                                    <p>
-                                        <i class="fa fa-user"></i> Eduardo Saiz Colón<br>
-                                        <i class="fa fa-building-o"></i> Telefónica Tech<br>
-                                        <a href="mailto:eduardo.saizcolon@telefonica.com" target="_blank" class="otros-enlaces"><i class="fa fa-envelope"></i> Contacto</a>
-                                    </p>
-                                    <img id="foto-persona-testimonio" src="./assets/sobreMi/testimonios/person5.png"/>
-                                </div>
-                                <div class="carousel-item">
-                                    <p><i class="fa fa-quote-left" id="ql"></i>Conocí a Alejandro porque le di formaciones de la Meet IP. La verdad, es una persona muy perseverante e inteligente, pone los cinco sentidos para enterarse bien y, también, le pone lógica e ingenio al problema que le surge<i class="fa fa-quote-right" id="qr"></i></p>
-                                    <p>
-                                        <i class="fa fa-user"></i> Álvaro Salvador<br>
-                                        <i class="fa fa-building-o"></i> LCRcom-Grupo Aire<br>
-                                        <a href="mailto:alvaro.salvador@lcrcom.es" target="_blank" class="otros-enlaces"><i class="fa fa-envelope"></i> Contacto</a>
-                                    </p>
-                                    <img id="foto-persona-testimonio" src="./assets/sobreMi/testimonios/person4.png"/>
-                                </div>
-                                <div class="carousel-item">
-                                    <p><i class="fa fa-quote-left" id="ql"></i>Un gran compañero, en quien se puede confiar y con quien se puede trabajar a gusto. Sabe cuál es su función y si tiene que preguntar a los que llevamos más años que él en la empresa, pregunta sin tapujos<i class="fa fa-quote-right" id="qr"></i></p>
-                                    <p>
-                                        <i class="fa fa-user"></i> Ruth García Noguera<br>
-                                        <i class="fa fa-building-o"></i> Telefónica Tech<br>
-                                        <a href="mailto:ruth.garcianoguera@telefonica.com" target="_blank" class="otros-enlaces"><i class="fa fa-envelope"></i> Contacto</a>
-                                    </p>
-                                    <img id="foto-persona-testimonio" src="./assets/sobreMi/testimonios/person3.png"/>
-                                </div>
-                                <!--Controles-->
-                                <a class="left carousel-control" href="#TestC" data-slide="prev"><i class="fa fa-chevron-circle-left"></i></a>
-                                <a class="right carousel-control" href="#TestC" data-slide="next"><i class="fa fa-chevron-circle-right"></i></a>
-                                <!--Fin Controles-->
-                            </div>
-                        </div>
-					</div>
-					<div class="col-sm-4">
-						<div class="big-rectangle">
-							<img src="assets/sobreMi/logo-proweb.png"/>
-						</div>
-					</div>
-					<div class="col-sm-4">
-                        <div class="main-service text-left">
-                            <div class="rectangle">
-                                <i class="fa fa-check" aria-hidden="true"></i>
-                            </div>
-                            <h3>Descripción profesional</h3>
-                            <p>Destaco en:</p>
-                            <ul>
-                                <li>Ser resolutivo</li>
-                                <li>Ser creativo</li>
-                                <li>Ser persistente</li>
-                                <li>Adaptabilidad a nuevos proyectos empresariales</li>
-                            </ul>
-                            <a href="https://www.linkedin.com/in/alejandrofernandezperezescalante/" target="_blank"><i class="fa fa-linkedin"></i> Mi Linkedin</a>
-                        </div>
-						<div class="main-service text-left">
-							<div class="rectangle">
-								<i class="fa fa-list" aria-hidden="true"></i>
-							</div>
-							<h3>Descripción personal</h3>
-							<p>
-                                Soy una persona proactiva que le gusta alcanzar metas, emprender y superar cada bache de la vida.
-                                Nací el 30 de marzo de 1997, en Madrid (España - <img class="img-sobremi" src="assets/sobreMi/spanish.png"/>).
-                                <br/>
-                                <br/>
-                                Me encanta viajar, descubrir nuevas culturas, conocer nuevas personas y tener diversas experiencias a lo largo del mundo. Además de hacer deporte, socializar con amigos y tener una buena alimentación y equilibrada.
-                                <br/>
-                                <br/>
-                                Tengo el permiso de conducir y coche propio.
-                            </p>
-                            <br>
-                            <a href="https://www.instagram.com/soyalexokei/" target="_blank"><i class="fa fa-instagram"></i> Mi Instagram</a><br>
-                            <a href="https://alejandropersonalweb.netlify.app/" target="_blank"><i class="fa fa-plane"></i> Mi Web de Viajes</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-        <!-- FIN DE LA SECCIÓN SOBRE MÍ -->
-
-        <!-- SECCIÓN DE LA FRASE FILOSÓFICA -->
-		<section class="section-background section-quote background-overlay text-center">
-			<div class="container">
-				<p><span>Viajar</span> es el medio para encontrar tu <span>camino</span>, <span>descubrir</span> el mundo que te rodea y tu <span>misión</span> en él</p>
-			</div>
-		</section>
-        <!-- FIN DE LA SECCIÓN DE LA FRASE FILOSÓFICA -->
-
-        <!-- SECCIÓN EXPERIENCIA -->
-        <section class="section-history" id="experience">
-            <div class="container">      
-                <div class="text-center section-diff-title">     
-                    <h2><b>Mi Trayectoria Profesional</b></h2>
-                </div>
-                <ul class="timeline">
-                    <li class="timeline-start">
-                        <div class="rectangle"><span>2017</span></div>
-                    </li>
-
-                    <li>
-                        <div class="rectangle timeline-rectangle"></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <div class="timeline-date">
-                                    <p>Septiembre</p>
-                                </div>
-                                <div class="timeline-position">
-                                    <p>Me vinculo a <a class="enlace-empresas" href="https://www.grupodidactia.es/" target="_blank">Grupo Didáctica</a></p>
-                                </div>
-                            </div>
-                            <div class="timeline-body">
-                                <div class="timeline-body-thumb">
-                                    <img src="assets/experiencias/Prof-Particular/empresa.png" class="img-res"/>
-                                </div>
-                                <p><b>Puesto:</b> Profesor particular a domicilio</p>
-                                <p><b>Lugar:</b> Área de la Comunidad de Madrid, España</p>
-                                <p><b>Sector:</b> Educación y formación</p>
-                                <p><b>Tipo de contrato:</b> Contrato por hora</p>
-                                <p><b>Asignaturas a impartir:</b></p>
-                                <p> - Matemáticas de la ESO y Bachillerato</p>
-                                <p> - Física de la ESO y Bachillerato</p>
-                                <p> - Tecnología de la ESO y Bachillerato</p>
-                                <p> - Informática y programación de la ESO y Bachillerato</p>
-                                <p> - Electrotecnia de 4º de la ESO y 1º Bachillerato</p>
-                                <p><b>Alumnos totales:</b> 15</p>
-                                <p><b>Teléfono:</b> 91 591 75 90</p>
-                                <p><b>Correo electrónico:</b> info@grupodidactia.com</p>
-                                <p><b>Sede central de la empresa:</b> Paseo de la Castellana, 194, Madrid 28046, Madrid, España</p>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="timeline-start">
-                        <div class="rectangle"><span>2021</span></div>
-                    </li>
-
-                    <li class="timeline-inverted">
-                        <div class="rectangle timeline-rectangle"></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                               <div class="timeline-position">
-                                    <p>Pasantía en <a class="enlace-empresas" href="https://www.lcrcom.net/" target="_blank">LCRcom</a></p>
-                                </div>
-                                <div class="timeline-date">
-                                    <p>Septiembre</p>
-                                </div>
-                            </div>
-                            <div class="timeline-body">
-                                <div class="timeline-body-thumb">
-                                    <img src="assets/experiencias/LCRcom/empresa.png" class="img-res" alt="empresa2">
-                                </div>
-                                <p><b>Puesto:</b> Ingeniero NOC e IP</p>
-                                <p><b>Idioma:</b> Español e Inglés</p>
-                                <p><b>Tipo de contrato:</b> Contrato de prácticas</p>
-                                <p><b>Sector:</b> Tecnologías de la Información</p>
-                                <p><b>Nota final de las Prácticas Curriculares:</b> 9</p>
-                                <p><b>Acuerdo entre:</b> <a class="otros-enlaces" href="https://www.lcrcom.net/" target="_blank">LCRcom</a> - <a class="otros-enlaces" href="https://gestion2.urjc.es/practicas/home" target="_blank">URJC</a> - Yo</p>
-                                <p><b>Funciones:</b></p>
-                                <p>
-                                    - Comprensión práctica de los protocolos de red<br>
-                                    - Monitorización de las señales de audio<br>
-                                    - Soporte técnico y resolución de incidencias, incluyendo Centralita Virtual Meet IP<br>
-                                    - Supervisión en tiempo real de la infraestructura de red<br>
-                                    - Optimización de Servicios de Telecomunicación<br>
-                                    - Gestión de redes
-                                </p>
-                                <p><b>Teléfono:</b> 91 737 77 77</p>
-                                <p><b>Correos electrónicos:</b> rgpd@airenetworks.es, rrhh@lcrcom.es, rrhh@lcrcom.net y rrhh.comunicados@lcrcom.es</p>
-                                <p><b>Ubicación:</b> Pozuelo de Alarcón, Madrid, España</p>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="rectangle timeline-rectangle"></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <div class="timeline-date">
-                                    <p>Octubre</p>
-                                </div>
-                               <div class="timeline-position">
-                                    <p>Empiezo a trabajar para <a class="enlace-empresas" href="https://envillaviciosadeodon.es/tag/centro-miguel-delibes/" target="_blank">E.I.RyM</a></p>
-                                </div>
-                            </div><!-- /.timeline-heading -->
-                            <div class="timeline-body">
-                                <div class="timeline-body-thumb">
-                                    <img src="assets/experiencias/Prof-Informatica/empresa.png" class="img-res"/>
-                                </div>
-                                <p><b>Puesto:</b> Profesor de informática para adultos</p>
-                                <p><b>Lugar:</b> <a class="otros-enlaces" href="https://envillaviciosadeodon.es/tag/centro-miguel-delibes/" target="_blank">Centro Miguel Delibes, Villaviciosa de Odón, Madrid, España</a></p>
-                                <p><b>Sector:</b> Educación y formación</p>
-                                <p><b>Tipo de contrato:</b> Contrato por hora</p>
-                                <p><b>Grupo de alumnos/as:</b></p>
-                                <p> 1. Grupo de 10 personas de >=65 años que quieren mejorar sus habilidades informáticas para uso diario - Grupo del martes de 10:00 a 12:00</p>
-                                <p> 2. Grupo de 12 personas de >=65 años que quieren mejorar sus habilidades informáticas para uso diario - Grupo del jueves de 10:00 a 12:00</p>
-                                <p><b>Temario impartido:</b></p>
-                                <p> - Uso del ratón</p>
-                                <p> - Uso del teclado</p>
-                                <p> - Uso del explorador de archivos</p>
-                                <p> - Uso del escritorio de Windows</p>
-                                <p> - Uso del correo electrónico de Gmail</p>
-                                <p> - Uso del software Paint</p>
-                                <p> - Uso de las herramientas de ofimática de Microsoft: Word y PowerPoint</p>
-                                <p><b>Nombre real de la empresa que me contrata:</b> Estudio Internacional Ritmo y Movimiento</p>
-                                <p><b>Propietaria de la empresa:</b> Pilar Sánchez Núñez</p>
-                                <p><b>Teléfono:</b> +34 91 616 42 45</p>
-                                <p><b>Correo electrónico:</b> ritmopilar@hotmail.com</p>
-                                <p><b>Domicilio social de la empresa:</b> Calle de Juan de Borbón, 19, Villaviciosa de Odón 28670, Madrid, España</p>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="rectangle timeline-rectangle"></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <div class="timeline-date">
-                                    <p>Diciembre</p>
-                                </div>
-                               <div class="timeline-position">
-                                    <p>Dejo de trabajar para <a class="enlace-empresas" href="https://envillaviciosadeodon.es/tag/centro-miguel-delibes/" target="_blank">E.I.RyM</a></p>
-                                </div><!-- /.timeline-position -->
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="timeline-start">
-                        <div class="rectangle"><span>2022</span></div>
-                    </li>
-
-                    <li class="timeline-inverted">
-                        <div class="rectangle timeline-rectangle"></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                               <div class="timeline-position">
-                                    <p>Fin de la pasantía en <a class="enlace-empresas" href="https://www.lcrcom.net/" target="_blank">LCRcom</a></p>
-                                </div>
-                                <div class="timeline-date">
-                                    <p>Febrero</p>
-                                </div>
-                            </div>
-                            <div class="timeline-body">
-                                <p>Me ofrecieron continuar y un contrato de trabajo indefinido a jornada completa, pero debido a que tenía que irme de Erasmus+ a Novi Sad (Serbia), tuve que rechazarlo</p>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="timeline-inverted">
-                        <div class="rectangle timeline-rectangle"></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <div class="timeline-position">
-                                    <p>Experiencia Erasmus+ (en inglés)</p>
-                                </div>
-                                <div class="timeline-date">
-                                    <p>Febrero</p>
-                                </div>
-                            </div>
-                            <div class="timeline-body">
-                                <div class="timeline-body-thumb">
-                                    <img src="assets/experiencias/Erasmus/logo.png" class="img-res">
-                                </div>
-                                <p><b>Posición:</b> Estudiante de Ciencias, Tecnología e Ingeniería</p>
-                                <p><b>Idioma:</b> Inglés</p>
-                                <p><b>Institución:</b> <a class="otros-enlaces" href="https://www.course-catalogue.uns.ac.rs/course-catalogue/faculty-of-technical-sciences" target="_blank">Facultad de Ciencias Técnicas (FTN)</a> - <a class="otros-enlaces" href="https://www.course-catalogue.uns.ac.rs/course-catalogue/university-of-novi-sad" target="_blank">Universidad de Novi Sad (UNS)</a></p>
-                                <p><b>Duración:</b> 1 semestre (6 meses)</p>
-                                <p><b>Remuneración:</b> 200 € netos / mes</p>
-                                <p><b>Experiencia realizada gracias a:</b> <a class="otros-enlaces" href="https://www.course-catalogue.uns.ac.rs/course-catalogue/university-of-novi-sad" target="_blank">UNS</a> y <a class="otros-enlaces" href="https://www.urjc.es/internacional/erasmus-y-movilidad" target="_blank">URJC</a></p>
-                                <p><b>Asignaturas (30 ECTS):</b></p>
-                                <p> - Informática II <=> Fundamentals in Programming ==> Nota: 8.5</p>
-                                <p> - Protocolos para la Transmisión de Audio y Vídeo en Internet <=> XML & WEB Services ==> Nota: 6.5</p>
-                                <p> - Tratamiento Digital de la Imagen <=> Digital Image Processing ==> Nota: 5.5</p>
-                                <p> - Gráficos y Visualización en 3D <=> Energy & Renewable Energy Sources in Rural Areas ==> Nota: 9.5</p>
-                                <p> - Laboratorio de Tecnologías Audiovisuales en la Web <=> Strategic Planning in Postal Traffic & Telecommunications ==> Nota: 9.5</p>
-                                <p><b>Libro del Erasmus+:</b> <i class="fa fa-globe"></i> <a href="./assets/experiencias/Erasmus/Libro.pdf" class="otros-enlaces" target="_blank">Ver online</a></p>
-                                <p><b>Tarjeta ESN Oficial:</b> <i class="fa fa-globe"></i> <a href="./assets/experiencias/Erasmus/ESN.pdf" class="otros-enlaces" target="_blank">Ver online</a></p>                            
-                                <p><b>Tarjeta de Transporte de Novi Sad:</b> <i class="fa fa-globe"></i> <a href="./assets/experiencias/Erasmus/TransporteNoviSad.pdf" class="otros-enlaces" target="_blank">Ver online</a></p>
-                                <p><b>Teléfonos:</b> +381 21 485 2056 y +34 91 665 50 60</p>
-                                <p><b>Correos electrónicos:</b> darkoste@uns.ac.rs, iro.ftn@uns.ac.rs y ana.arboleya@urjc.es</p>
-                                <p><b>Ubicación:</b> Novi Sad, Vojvodina, Serbia</p>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="timeline-inverted">
-                        <div class="rectangle timeline-rectangle"></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <div class="timeline-position">
-                                    <p>Fin de la Experiencia Erasmus+</p>
-                                </div>
-                                <div class="timeline-date">
-                                    <p>Julio</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="rectangle timeline-rectangle"></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <div class="timeline-date"><p>Septiembre</p></div>
-                               <div class="timeline-position"><p>Empiezo en <a class="enlace-empresas" href="https://telefonicatech.com/" target="_blank">Telefónica Tech</a></p></div>
-                            </div>
-                            <div class="timeline-body">
-                                <div class="timeline-body-thumb">
-                                    <img src="assets/experiencias/telefonicaTech/empresa.png" class="img-res"/>
-                                </div>
-                                <p><b>Puesto:</b> Ingeniero Preventa IoT & Big Data Junior</p>
-                                <p><b>Idioma:</b> Español e Inglés</p>
-                                <p><b>Sector:</b> Ingeniería y Técnica</p>
-                                <p><b>Tipo de contrato:</b> Jornada completa</p>
-                                <p><b>Funciones:</b></p>
-                                <p>
-                                    - Diseño de soluciones tecnológicas<br>
-                                    - Elaboración de propuestas técnicas y económicas<br>
-                                    - Trato con clientes<br>
-                                    - Soporte técnico en la fase de preventa para proyectos de IoT y Big Data en el área corporativa<br>
-                                    - Soluciones de integración AV<br>
-                                    - Preparación de documentación técnica<br>
-                                    - Investigación y actualización de tecnologías IoT & Big Data
-                                </p>
-                                <p><b>Mi presencia en Ferias de Empresa gracias a Telefónica:</b> <a class="otros-enlaces" href="https://www.bitamshow.com/" target="_blank"><b>Feria Bitam</b></a> (en noviembre de 2023) y <a class="otros-enlaces" href="https://www.iseurope.org/" target="_blank"><b>Feria ISE</b></a> (en enero de 2024)</p>
-                                <p><b>Mi experiencia en Telefónica Tech:</b> <i class="fa fa-globe"></i> <a data-toggle="modal" data-target="#telefonicaexperience" class="otros-enlaces">Ver online</a></p>
-                                <div id="telefonicaexperience" class="modal fade fade-scale" role="dialog">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-body" style="text-align: center;">
-                                                <a class="rectangle" data-dismiss="modal"><i class="fa fa-times"></i></a>
-                                                <br>
-                                                <br>
-                                                <h4 class="modal-title">Nota: Si un vídeo no carga, ve al siguiente/anterior y vuelve a ese vídeo para visualizarlo correctamente y sin problema alguno</h4>
-                                                <div class="carrusel-voluntariado">
-                                                    <div class="carrusel-voluntariado-contenedor" id="pantalla-telefonicaexperience"></div>
-                                                    <button class="flecha-izquierda-pasar" id="left-telefonicaexperience">&#10094;</button>
-                                                    <button class="flecha-derecha-pasar" id="right-telefonicaexperience">&#10095;</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p><b>Teléfono:</b> +34 91 592 05 09</p>
-                                <p><b>Correos electrónicos:</b> telefonicaiot@telefonica.com, cristina.velazquezurenda@telefonica.com, cristina.patinogarcia@telefonica.com y preguntanos_peopleiotbd@telefonica.com</p>
-                                <p><b>Ubicación:</b> Edificio Oeste 1, Distrito Telefónica, Madrid, Madrid, España + Remoto</p>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="rectangle timeline-rectangle"></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <div class="timeline-date"><p>Septiembre</p></div>
-                               <div class="timeline-position"><p>Nuevas metas en <a class="enlace-empresas" href="https://www.theclubcoworking.es/" target="_blank">The Club Coworking</a></p></div>
-                            </div>
-                            <div class="timeline-body">
-                                <div class="timeline-body-thumb">
-                                    <img src="assets/experiencias/TCcW-LRM/empresa.png" class="img-res"/>
-                                </div>
-                                <p><b>Puesto:</b> CTO (Chief Technology Officer)</p>
-                                <p><b>Sector:</b> Tecnologías de la Información</p>
-                                <p><b>Idioma:</b> Español</p>
-                                <p><b>Tipo de contrato:</b> Contrato por obra</p>
-                                <p><b>Redes Sociales:</b> <a class="otros-enlaces" href="https://www.instagram.com/theclubcoworking/" target="_blank"><i class="fa fa-instagram"></i></a> <a class="otros-enlaces" href="https://www.linkedin.com/company/theclubcoworking" target="_blank"><i class="fa fa-linkedin"></i></a></p>
-                                <p><b>Funciones:</b></p>
-                                <p>
-                                    - Mantenimiento e instalación de Sistemas CCTV.<br>
-                                    - Mantenimiento y configuración del Sistema de Red.<br>
-                                    - Mantenimiento, instalación, configuración y puesta en marcha de equipos AV.<br>
-                                    - Ayuda y soporte al CEO & Founder de The Club Coworking.<br>
-                                    - Formaciones a técnicos y recepcionistas.<br>
-                                </p>
-                                <p><b>Teléfono:</b> +34 625 50 19 42</p>
-                                <p><b>Correos electrónicos:</b> info@theclubcoworking.es</p>
-                                <p><b>Ubicación:</b> Locales 98 y 110, C.C. BURGOCENTRO I, Las Rozas de Madrid, Madrid, España + Remoto</p>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="timeline-end">
-                        <div class="rectangle"><span>2023</span></div>
-                    </li>
-
-                    <li>
-                        <div class="rectangle timeline-rectangle"></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <div class="timeline-date">
-                                    <p>Junio</p>
-                                </div>
-                                <div class="timeline-position">
-                                    <p>Me desvinculo de <a class="enlace-empresas" href="https://www.grupodidactia.es/" target="_blank">Grupo Didáctica</a></p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="timeline-end">
-                        <div class="rectangle"><span>2024</span></div>
-                    </li>
-
-                    <li>
-                        <div class="rectangle timeline-rectangle"></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <div class="timeline-date">
-                                    <p>Enero</p>
-                                </div>
-                                <div class="timeline-position">
-                                    <p>Acabo con <a class="enlace-empresas" href="https://telefonicatech.com/" target="_blank">Telefónica Tech</a></p>
-                                </div>
-                            </div>
-                            <div class="timeline-body">
-                                <p>
-                                    Debido a que me ofrecieron realizar proyectos de ingeniería acústica arquitectónica y ambiental en Mallorca
-                                    y de programación de sistemas de videoconferencia en Barcelona, viéndolos como una gran oportunidad para no estancarme,
-                                    salir de mi zona de confort, aprender nuevas habilidades, tener nuevas experiencias profesionales y viajar
-                                    por todo el territorio español.
-                                </p>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="timeline-inverted">
-                        <div class="rectangle timeline-rectangle"></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <div class="timeline-position">
-                                    <p>Proyecto acústico en Mallorca</p>
-                                </div>
-                                <div class="timeline-date">
-                                    <p>Febrero</p>
-                                </div>
-                            </div>
-                            <div class="timeline-body">
-                                <div class="timeline-body-thumb">
-                                    <img src="assets/experiencias/Macustica/empresa.png" class="img-res">
-                                </div>
-                                <p><b>Puesto:</b> Ingeniero Acústico Junior</p>
-                                <p><b>Idioma:</b> Inglés y Español</p>
-                                <p><b>En colaboración con:</b> <a class="otros-enlaces" href="https://incaciutat.com/es" target="_blank">Ayto de Inca</a>, <a class="otros-enlaces" href="https://www.urjc.es/todas-las-noticias-de-actualidad/9119-la-urjc-presenta-una-veintena-de-proyectos-empresariales-incubados-en-explorer-24" target="_blank">URJC</a>, <a class="otros-enlaces" href="https://www.bancosantander.es/universidades/emprendimiento" target="_blank">Banco Santander</a> y <a class="otros-enlaces" href="https://macustica.com/" target="_blank">Macustica</a></p>
-                                <p><b>Tiempo total:</b> Febrero - Mayo</p>
-                                <p><b>Remuneración:</b> Sí</p>
-                                <p><b>Sector:</b> Ingeniería y Técnica</p>
-                                <p><b>Funciones:</b></p>
-                                <p> - Estudios acústicos con Immi</p>
-                                <p> - Mediciones sonométricas in situ</p>
-                                <p> - Realización de informes acústicos en Word</p>
-                                <p> - Programación de gráficas y mediciones en Excel</p>
-                                <p> - Entender Reales Decretos acústicos</p>
-                                <p><b>Correo electrónico:</b> info@macustica.com</p>
-                                <p><b>Ubicación:</b> Inca, Mallorca, Islas Baleares, España</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="rectangle timeline-rectangle"></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <div class="timeline-position">
-                                    <p>Fin del Proyecto</p>
-                                </div>
-                                <div class="timeline-date">
-                                    <p>Mayo</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="rectangle timeline-rectangle"></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <div class="timeline-date"><p>Junio</p></div>
-                                <div class="timeline-position"><p>Proyecto de control AV en Barcelona</p></div>
-                            </div>
-                            <div class="timeline-body">
-                                <div class="timeline-body-thumb">
-                                    <img src="assets/experiencias/Algam/empresa.png" class="img-res">
-                                </div>
-                                <p><b>Puesto:</b> Programador de Sistemas de Videoconferencia</p>
-                                <p><b>Idioma:</b> Inglés y Español</p>
-                                <p><b>En colaboración con:</b> <a class="otros-enlaces" href="https://ajuntament.barcelona.cat/es/" target="_blank">Ayto de Barcelona</a>, <a class="otros-enlaces" href="https://www.urjc.es/todas-las-noticias-de-actualidad/9119-la-urjc-presenta-una-veintena-de-proyectos-empresariales-incubados-en-explorer-24" target="_blank">URJC</a>, <a class="otros-enlaces" href="https://www.bancosantander.es/universidades/emprendimiento" target="_blank">Banco Santander</a>, <a class="otros-enlaces" href="https://www.algamiberica.com/" target="_blank">Algam Ibérica</a> y <a class="otros-enlaces" href="https://pro.harman.com/" target="_blank">Harman Pro</a></p>
-                                <p><b>Tiempo total:</b> Junio - Octubre</p>
-                                <p><b>Remuneración:</b> Sí</p>
-                                <p><b>Sector:</b> Ingeniería y Técnica</p>
-                                <p><b>Funciones:</b></p>
-                                <p> - Programación AV de salas de control y videoconferencia con Muse Automator de AMX, basado en JS y Python</p>
-                                <p> - Configuración del sistema de sonido de las salas a través de Audio Architect y DSPs</p>
-                                <p> - Realización de diagramas a través de Draw.IO</p>
-                                <p> - Estudio acústico de salas a través del software DDA JBL</p>
-                                <p> - Entender el funcionamiento de proyectos acústicos y de salas de control AV</p>
-                                <p><b>Viaje de formación de 4 días a Harman Pro (Apsley, Reino Unido):</b> <i class="fa fa-globe"></i> <a data-toggle="modal" data-target="#viajeHarman" class="otros-enlaces">Ver online</a></p>
-                                <div id="viajeHarman" class="modal fade fade-scale" role="dialog">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-body" style="text-align: center;">
-                                                <a class="rectangle" data-dismiss="modal"><i class="fa fa-times"></i></a>
-                                                <br>
-                                                <br>
-                                                <h4 class="modal-title">Nota: Si un vídeo no carga, ve al siguiente/anterior y vuelve a ese vídeo para visualizarlo correctamente y sin problema alguno</h4>
-                                                <div class="carrusel-voluntariado">
-                                                    <div class="carrusel-voluntariado-contenedor" id="pantalla-viajeHarman"></div>
-                                                    <button class="flecha-izquierda-pasar" id="left-viajeHarman">&#10094;</button>
-                                                    <button class="flecha-derecha-pasar" id="right-viajeHarman">&#10095;</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p><b>Teléfono de Algam Ibérica:</b> +34 934 221 811</p>
-                                <p><b>Teléfono de Harman Pro:</b> +44 1 904 343 142</p>
-                                <p><b>Correo electrónico de Algam Ibérica:</b> mpunti@algamiberica.com (CEO)</p>
-                                <p><b>Correo electrónico de Harman Pro:</b> adam.findlay@harman.com (Director de Ingeniería de Ventas EMEA)</p>
-                                <p><b>Ubicación de Algam Ibérica:</b> Sant Andreu, Barcelona, Cataluña, España</p>
-                                <p><b>Ubicación de Harman Pro:</b> Hemel Hempstead, Inglaterra, Reino Unido</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="rectangle timeline-rectangle"></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <div class="timeline-date">
-                                    <p>Octubre</p>
-                                </div>
-                                <div class="timeline-position">
-                                    <p>Fin del Proyecto</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="timeline-end">
-                        <div class="rectangle"><span>2025</span></div>
-                    </li>
-
-                    <li>
-                        <div class="rectangle timeline-rectangle"></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <div class="timeline-date">
-                                    <p>Marzo</p>
-                                </div>
-                                <div class="timeline-position">
-                                    <p>Acabo con <a class="enlace-empresas" href="https://www.theclubcoworking.es/" target="_blank">The Club Coworking</a></p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="timeline-inverted">
-                        <div class="rectangle timeline-rectangle"></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <div class="timeline-position">
-                                    <p>Empiezo el <a class="enlace-empresas" href="https://www.pss-ti.com/talent-campus/" target="_blank">Talent de PSS TI</a></p>
-                                </div>
-                                <div class="timeline-date">
-                                    <p>Marzo</p>
-                                </div>
-                            </div>
-                            <div class="timeline-body">
-                                <div class="timeline-body-thumb">
-                                    <img src="assets/experiencias/PSS-TI/empresa.png" class="img-res">
-                                </div>
-                                <p><b>Puesto:</b> IT Engineer Trainee</p>
-                                <p><b>Idioma:</b> Inglés y Español</p>
-                                <p><b>Sector:</b> Tecnologías de la Información</p>
-                                <p><b>Tipo de contrato:</b> Contrato de formación</p>
-                                <p><b>Calendario del Programa:</b> <i class="fa fa-globe"></i> <a href="./assets/experiencias/PSS-TI/Calendario.pdf" class="otros-enlaces" target="_blank">Ver online</a></p>
-                                <p><b>Funciones y Desarrollo:</b></p>
-                                <p> - Arquitectura Mainframe y z/OS</p>
-                                <p> - JCL y Utilidades del z/OS</p>
-                                <p> - MQ</p>
-                                <p> - DB2</p>
-                                <p> - CICS</p>
-                                <p> - Arquitectura z16 y z17 en <a class="otros-enlaces" href="https://www.ibm.com/es-es" target="_blank">IBM</a></p>
-                                <p> - z/OSMF y ZOWE</p>
-                                <p> - z/CX</p>
-                                <p> - z/OS Comm Server</p>
-                                <p> - Lenguaje de Programación REXX</p>
-                                <p><b>Mi experiencia en PSS TI:</b> <i class="fa fa-globe"></i> <a data-toggle="modal" data-target="#psstiexperience" class="otros-enlaces">Ver online</a></p>
-                                <div id="psstiexperience" class="modal fade fade-scale" role="dialog">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-body" style="text-align: center;">
-                                                <a class="rectangle" data-dismiss="modal"><i class="fa fa-times"></i></a>
-                                                <div class="carrusel-voluntariado">
-                                                    <div class="carrusel-voluntariado-contenedor" id="pantalla-psstiexperience"></div>
-                                                    <button class="flecha-izquierda-pasar" id="left-psstiexperience">&#10094;</button>
-                                                    <button class="flecha-derecha-pasar" id="right-psstiexperience">&#10095;</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p><b>Presentación del Proyecto Final:</b> <i class="fa fa-globe"></i> <a href="./assets/experiencias/PSS-TI/Presentacion.pdf" class="otros-enlaces" target="_blank">Ver online</a></p>
-                                <p><b>Notas del Talent Campus:</b> <i class="fa fa-globe"></i> <a data-toggle="modal" data-target="#notastalent" class="otros-enlaces">Ver online</a></p>
-                                <div id="notastalent" class="modal fade fade-scale" role="dialog">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-body" style="text-align: center;">
-                                                <a class="rectangle" data-dismiss="modal"><i class="fa fa-times"></i></a>
-                                                <div class="carrusel-voluntariado">
-                                                    <div class="carrusel-voluntariado-contenedor" id="pantalla-notastalent"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p><b>Diploma del Talent Campus de PSS TI:</b> <i class="fa fa-envelope"></i> <a href="https://alejandrocontactweb.netlify.app/" target="_blank" class="otros-enlaces">Pedirlo</a> - Apto</p>
-                                <p><b>Teléfono:</b> +34 91 345 10 27</p>
-                                <p><b>Correo electrónico:</b> peopleandtalent@pss-ti.com</p>
-                                <p><b>Ubicación:</b> <a class="otros-enlaces" href="https://maps.app.goo.gl/QBa63tFWuWXorY6SA" target="_blank">Spaces Madrid - Edificio E - 3º planta</a>, Madrid, Madrid, España + Remoto</p>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="timeline-inverted">
-                        <div class="rectangle timeline-rectangle"></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <div class="timeline-position">
-                                    <p>Acabo el <a class="enlace-empresas" href="https://www.pss-ti.com/talent-campus/" target="_blank">Talent de PSS TI</a></p>
-                                </div>
-                                <div class="timeline-date">
-                                    <p>Mayo</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="rectangle timeline-rectangle"></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <div class="timeline-date">
-                                    <p>Mayo</p>
-                                </div>
-                                <div class="timeline-position">
-                                    <p>Empiezo en <a class="enlace-empresas" href="https://www.accenture.com/es-es" target="_blank">Accenture Spain</a></p>
-                                </div>
-                            </div>
-                            <div class="timeline-body">
-                                <div class="timeline-body-thumb">
-                                    <img src="assets/experiencias/Accenture-Spain/empresa.png" class="img-res">
-                                </div>
-                                <p><b>Puesto:</b> Systems, Automation and Mainframe Modernization Engineer</p>
-                                <p><b>Proyecto 1:</b> Allianz Italia ALM</p>
-                                <p><b>Proyecto 2:</b> Gravity Santander</p>
-                                <p><b>Descripción general de ambos proyectos:</b> Modernización del Mainframe</p>
-                                <p><b>Idioma:</b> Inglés y Español</p>
-                                <p><b>Sector:</b> Tecnologías de la Información</p>
-                                <p><b>Tipo de contrato:</b> Jornada completa</p>
-                                <p><b>Funciones:</b></p>
-                                <p> - Integración en el equipo de modernización de sistemas Mainframe</p>
-                                <p> - Diseñar y desarrollar componentes dentro del nuevo ecosistema distribuido</p>
-                                <p> - Soporte técnico a nivel scripting, automatización y procesos asociados a la transición tecnológica</p>
-                                <p> - Colaborar con arquitectos hardware y software para definir la estructura del nuevo entorno</p>
-                                <p> - Interactuar con un equipo multidisciplinar distribuido en varios proyectos de desarrollo</p>
-                                <p><b>Teléfono:</b> +34 91 596 60 00</p>
-                                <p><b>Correo electrónico:</b> a.fernandez.perez@accenture.com</p>
-                                <p><b>Ubicación:</b> Edificio Castellana 85, Madrid, Madrid, España + Remoto</p>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <!-- FIN DE LA SECCIÓN EXPERIENCIA -->
-
-        <!-- SECCIÓN FORMACIÓN ACADÉMICA -->
-        <section class="section-history" id="studies">
-            <div class="container">          
-                <div class="text-center section-diff-title">     
-                    <h2><b>Mi Trayectoria Académica</b></h2>
-                </div> 
-                <ul class="timeline">
-                    <!-- 1º Formación -->
-                    <li class="timeline-start">
-                        <div class="rectangle"><span>2000</span></div>
-                    </li>
-                    <li>
-                        <div class="rectangle timeline-rectangle"></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <div class="timeline-date">
-                                    <p>Septiembre</p>
-                                </div>
-                                <div class="timeline-position">
-                                    <p>Estudiante de Infantil y Primaria</p>
-                                </div>
-                            </div>
-                            <div class="timeline-body">
-                                <div class="timeline-body-thumb">
-                                    <img src="assets/estudios/infantilYprimaria/centro.png" class="img-res"/>
-                                </div>
-                                <p><b>Centro Educativo:</b> <a class="otros-enlaces" href="https://site.educa.madrid.org/cp.principedonfelipe.boadilla/" target="_blank">CEIP Príncipe Don Felipe (En su momento era un CEIP)</a></p>
-                                <p><b>Lugar:</b> Boadilla del Monte, Madrid, España</p>
-                                <p><b>Logo del centro cuando estudiaba en él:</b> <i class="fa fa-globe"></i> <a href="./assets/estudios/infantilYprimaria/logoCEIPPrincipeFelipe.pdf" class="otros-enlaces" target="_blank">Ver online</a></p>
-                                <p><b>Cursos alcanzados:</b></p>
-                                <p> - 1º de Educación Infantil: 2000/01</p>
-                                <p> - <a href="./assets/estudios/infantilYprimaria/Segundo-Ed-Infantil.pdf" class="otros-enlaces" target="_blank">2º de Educación Infantil: 2001/02</a></p>
-                                <p> - 3º de Educación Infantil: 2002/03</p>
-                                <p> - Orla de Graduación de Ed. Infantil (junio 2003): <i class="fa fa-globe"></i> <a href="./assets/estudios/infantilYprimaria/Graduacion-Ed-Infantil.pdf" class="otros-enlaces" target="_blank">Ver online</a></p>
-                                <p> - <a href="./assets/estudios/infantilYprimaria/Primero-Ed-Primaria.pdf" class="otros-enlaces" target="_blank">1º de Educación Primaria: 2003/04</a></p>
-                                <p> - <a href="./assets/estudios/infantilYprimaria/Segundo-Ed-Primaria.pdf" target="_blank" class="otros-enlaces">2º de Educación Primaria: 2004/05</a></p>
-                                <p> - <a href="./assets/estudios/infantilYprimaria/Tercero-Ed-Primaria.pdf" target="_blank" class="otros-enlaces">3º de Educación Primaria: 2005/06</a></p>
-                                <p> - 4º de Educación Primaria: 2006/07</p>
-                                <p> - 5º de Educación Primaria: 2007/08</p>
-                                <p> - <a href="./assets/estudios/infantilYprimaria/Sexto-Ed-Primaria.pdf" class="otros-enlaces" target="_blank">6º de Educación Primaria: 2008/09</a></p>
-                                <p> - Obra de teatro por el final de Ed. Primaria (junio 2009): <i class="fa fa-globe"></i> <a data-toggle="modal" data-target="#teatroPrimaria" class="otros-enlaces">Ver online</a></p>
-                                <div id="teatroPrimaria" class="modal fade fade-scale" role="dialog">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-body" style="text-align: center;">
-                                                <a class="rectangle" data-dismiss="modal"><i class="fa fa-times"></i></a>
-                                                <div class="carrusel-voluntariado">
-                                                    <div class="carrusel-voluntariado-contenedor" id="pantalla-teatroPrimaria"></div>
-                                                    <button class="flecha-izquierda-pasar" id="left-teatroPrimaria">&#10094;</button>
-                                                    <button class="flecha-derecha-pasar" id="right-teatroPrimaria">&#10095;</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p> - Orla de Graduación de Ed. Primaria (junio 2009): <i class="fa fa-globe"></i> <a href="./assets/estudios/infantilYprimaria/Graduacion-Ed-Primaria.pdf" class="otros-enlaces" target="_blank">Ver online</a></p>
-                                <p> - Experiencia de mi Graduación de Primaria (junio 2009): <i class="fa fa-globe"></i> <a data-toggle="modal" data-target="#graduacionPrimaria" class="otros-enlaces">Ver online</a></p>
-                                <div id="graduacionPrimaria" class="modal fade fade-scale" role="dialog">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-body" style="text-align: center;">
-                                                <a class="rectangle" data-dismiss="modal"><i class="fa fa-times"></i></a>
-                                                <div class="carrusel-voluntariado">
-                                                    <div class="carrusel-voluntariado-contenedor" id="pantalla-graduacionPrimaria"></div>
-                                                    <button class="flecha-izquierda-pasar" id="left-graduacionPrimaria">&#10094;</button>
-                                                    <button class="flecha-derecha-pasar" id="right-graduacionPrimaria">&#10095;</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p><b>Teléfono:</b> 91 633 16 26</p>
-                                <p><b>Correo electrónico:</b> secretaria.cp.principedonfelipe.boadilla@educa.madrid.org</p>
-                                <p><b>Dirección:</b> Calle de Juan Carlos I, 40, Boadilla del Monte 28660, Madrid, España</p>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="timeline-start">
-                        <div class="rectangle"><span>2009</span></div>
-                    </li>
-
-                    <li>
-                        <div class="rectangle timeline-rectangle"></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <div class="timeline-date">
-                                    <p>Junio</p>
-                                </div>
-                                <div class="timeline-position">
-                                    <p>Graduado de Infantil y Primaria</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    <!-- Timeline job & description, inverted  --> 
-                    <li class="timeline-inverted">
-                        <div class="rectangle timeline-rectangle"></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                               <div class="timeline-position">
-                                    <p>Estudiante de la E.S.O</p>
-                                </div><!-- /.timeline-position -->
-                                <div class="timeline-date">
-                                    <p>Septiembre</p>
-                                </div>
-                            </div><!-- /.timeline-heading -->
-                            <div class="timeline-body">
-                                <div class="timeline-body-thumb">
-                                    <img src="assets/estudios/eso/centro.png" class="img-res"/>
-                                </div>
-                                <p><b>Centro Educativo:</b> <a class="otros-enlaces" href="https://site.educa.madrid.org/ies.maximotrueba.boadilla/" target="_blank">IES Profesor Máximo Trueba</a></p>
-                                <p><b>Lugar:</b> Boadilla del Monte, Madrid, España</p>
-                                <p><b>Ver Título Oficial:</b> <i class="fa fa-envelope"></i> <a href="https://alejandrocontactweb.netlify.app/" target="_blank" class="otros-enlaces">Pedirlo</a></p>
-                                <p><b>Cursos alcanzados:</b></p>
-                                <p> - <a href="./assets/estudios/eso/PrimeroESO.pdf" target="_blank" class="otros-enlaces">1º de la E.S.O: 2009/10</a></p>
-                                <p> - 2º de la E.S.O: 2010/11</p>
-                                <p> - 3º de la E.S.O: 2011/12</p>
-                                <p> - <a href="./assets/estudios/eso/CuartoESO.pdf" target="_blank" class="otros-enlaces">4º de la E.S.O: 2012/13</a></p>
-                                <p> - Orla de Graduación de la E.S.O (junio 2013): <i class="fa fa-globe"></i> <a href="./assets/estudios/eso/Graduacion.pdf" class="otros-enlaces" target="_blank">Ver online</a></p>
-                                <p> - Diploma de Aprovechamiento: <i class="fa fa-globe"></i> <a href="./assets/estudios/eso/DiplomaAprovechamientoESO.pdf" class="otros-enlaces" target="_blank">Ver online</a></p>
-                                <p><b>Teléfono:</b> 91 632 15 12</p>
-                                <p><b>Correo electrónico:</b> secretaria.ies.maximotrueba.boadilla@educa.madrid.org</p>
-                                <p><b>Dirección:</b> Calle de Santillana del Mar, 22, Boadilla del Monte 28660, Madrid, España</p>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="timeline-start">
-                        <div class="rectangle"><span>2013</span></div>
-                    </li>
-
-                    <li class="timeline-inverted">
-                        <div class="rectangle timeline-rectangle"></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                               <div class="timeline-position">
-                                    <p>Graduado de la E.S.O</p>
-                                </div>
-                                <div class="timeline-date">
-                                    <p>Junio</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="rectangle timeline-rectangle"></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <div class="timeline-date">
-                                    <p>Septiembre</p>
-                                </div>
-                                <div class="timeline-position">
-                                    <p>Estudiante de Bachillerato</p>
-                                </div>
-                            </div>
-                            <div class="timeline-body">
-                                <div class="timeline-body-thumb">
-                                    <img src="assets/estudios/bachillerato/centro.png" class="img-res"/>
-                                </div>
-                                <p><b>Centro Educativo:</b> <a class="otros-enlaces" href="https://site.educa.madrid.org/ies.maximotrueba.boadilla/" target="_blank">IES Profesor Máximo Trueba</a></p>
-                                <p><b>Lugar:</b> Boadilla del Monte, Madrid, España</p>
-                                <p><b>Modalidad:</b> Bachillerato Tecnológico</p>
-                                <p><b>Ver Título Oficial:</b> <i class="fa fa-envelope"></i> <a href="https://alejandrocontactweb.netlify.app/" target="_blank" class="otros-enlaces">Pedirlo</a></p>
-                                <p><b>Cursos alcanzados:</b></p>
-                                <p> - 1º de Bachillerato: 2013/14</p>
-                                <p> - 2º de Bachillerato: 2014/15</p>
-                                <p> - Orla de Graduación de Bachillerato (mayo 2015): <i class="fa fa-globe"></i> <a href="./assets/estudios/bachillerato/Graduacion.pdf" class="otros-enlaces" target="_blank">Ver online</a></p>
-                                <p> - Diploma de Graduación: <i class="fa fa-globe"></i> <a href="./assets/estudios/bachillerato/DiplomaGraduadoBachillerato.pdf" class="otros-enlaces" target="_blank">Ver online</a></p>
-                                <p> - Experiencia de mi Graduación de Bachillerato (mayo 2015): <i class="fa fa-globe"></i> <a data-toggle="modal" data-target="#graduacionBach" class="otros-enlaces">Ver online</a></p>
-                                <div id="graduacionBach" class="modal fade fade-scale" role="dialog">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-body" style="text-align: center;">
-                                                <a class="rectangle" data-dismiss="modal"><i class="fa fa-times"></i></a>
-                                                <div class="carrusel-voluntariado">
-                                                    <div class="carrusel-voluntariado-contenedor" id="pantalla-graduacionBach"></div>
-                                                    <button class="flecha-izquierda-pasar" id="left-graduacionBach">&#10094;</button>
-                                                    <button class="flecha-derecha-pasar" id="right-graduacionBach">&#10095;</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p><b>Examen de la PAU (Prueba de Acceso a la Universidad) de junio de 2015:</b> Aprobado con un 8 sobre 14</p>
-                                <p><b>Teléfono:</b> 91 632 15 12</p>
-                                <p><b>Correo electrónico:</b> secretaria.ies.maximotrueba.boadilla@educa.madrid.org</p>
-                                <p><b>Dirección:</b> Calle de Santillana del Mar, 22, Boadilla del Monte 28660, Madrid, España</p>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="timeline-start">
-                        <div class="rectangle"><span>2015</span></div>
-                    </li>
-
-                    <li>
-                        <div class="rectangle timeline-rectangle"></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <div class="timeline-date">
-                                    <p>Mayo</p>
-                                </div>
-                                <div class="timeline-position">
-                                    <p>Graduado de Bachillerato</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="rectangle timeline-rectangle"></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <div class="timeline-date">
-                                    <p>Junio</p>
-                                </div>
-                                <div class="timeline-position">
-                                    <p>Apto en el Examen de la PAU</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="timeline-end">
-                        <div class="rectangle"><span>2016</span></div>
-                    </li>
-
-                    <li class="timeline-inverted">
-                        <div class="rectangle timeline-rectangle"></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                               <div class="timeline-position">
-                                    <p>Empiezo la Licenciatura</p>
-                                </div>
-                                <div class="timeline-date">
-                                    <p>Septiembre</p>
-                                </div>
-                            </div>
-                            <div class="timeline-body">
-                                <div class="timeline-body-thumb">
-                                    <img src="assets/estudios/licenciatura/centro.png" class="img-res"/>
-                                </div>
-                                <p><b>Grado:</b> <a class="otros-enlaces" href="https://www.urjc.es/estudios/grado/637-ingenieria-en-sistemas-audiovisuales-y-multimedia" target="_blank">Ingeniería en Sistemas Audiovisuales y Multimedia</a></p>
-                                <p><b>Lugar:</b> Campus de Fuenlabrada de la <a href="https://www.urjc.es/" target="_blank" class="otros-enlaces">URJC</a>, Fuenlabrada, Madrid, España</p>
-                                <p><b>Rama del Grado:</b> Telecomunicaciones</p>
-                                <p><b>Escuela Técnica de la URJC a la que pertenece el Grado:</b> Escuela Técnica Superior de Ingeniería de Telecomunicación</p>
-                                <p><b>Ver Título Oficial en español:</b> <i class="fa fa-envelope"></i> <a href="https://alejandrocontactweb.netlify.app/" target="_blank" class="otros-enlaces">Pedirlo</a></p>
-                                <p><b>Ver Título Oficial en inglés:</b> <i class="fa fa-envelope"></i> <a href="https://alejandrocontactweb.netlify.app/" target="_blank" class="otros-enlaces">Pedirlo</a></p>
-                                <p><b>Ver Historial Académico:</b> <i class="fa fa-envelope"></i> <a href="https://alejandrocontactweb.netlify.app/" target="_blank" class="otros-enlaces">Pedirlo</a></p>
-                                <p><b>Ver el Libro de la Licenciatura:</b> <i class="fa fa-envelope"></i> <a href="https://alejandrocontactweb.netlify.app/" target="_blank" class="otros-enlaces">Pedirlo</a></p>
-                                <p><b>El Grado cuenta con 240 ECTS a cursar, que incluyen:</b></p>
-                                <p> 1. Periodo de Asignaturas: desde septiembre/2016 a junio/2021</p>
-                                <p> 2. Periodo de Prácticas Curriculares en Empresa: desde septiembre/2021 a Febrero/2022</p>
-                                <p> 3. Periodo de Experiencia Erasmus+ fuera de España (en inglés): desde Febrero/2022 a julio/2022</p>
-                                <p> 4. Periodo de desarrollo y presentación del Trabajo de Fin de Grado (TFG): desde septiembre/2022 a julio/2023</p>
-                                <p><b>Trabajo de Fin de Grado - TFG (PDF en español):</b> <i class="fa fa-globe"></i> <a href="./assets/estudios/licenciatura/TFGAlejandroFernandezPerez.pdf" class="otros-enlaces" target="_blank">Ver online</a></p>
-                                <p><b>Presentación del TFG (PDF en español):</b> <i class="fa fa-globe"></i> <a href="./assets/estudios/licenciatura/PresentacionTFGAlejandroFernandezPerez.pdf" class="otros-enlaces" target="_blank">Ver online</a></p>
-                                <p><b>Presentación del TFG (PDF en inglés):</b> <i class="fa fa-globe"></i> <a href="./assets/estudios/licenciatura/BA-FinalProject-Presentation.pdf" class="otros-enlaces" target="_blank">Ver online</a></p>
-                                <p><b>Mi tutor de TFG:</b> <i class="fa fa-globe"></i> <a href="./assets/estudios/licenciatura/Mi-Tutor-TFG.png" class="otros-enlaces" target="_blank">Ver online</a></p>
-                                <p><b>Nota de las Prácticas Curriculares en Empresa:</b> 9</p>
-                                <p><b>Nota del Trabajo de Fin de Grado:</b> 9.3</p>
-                                <p><b>Nota media final:</b> 7</p>
-                                <p><b>Vida Universitaria:</b> <i class="fa fa-globe"></i> <a href="https://youtu.be/b6u0MNVwY1g" class="otros-enlaces" target="_blank">Ver online</a></p>
-                                <p><b>Orla de Graduación:</b> <i class="fa fa-globe"></i> <a href="./assets/estudios/licenciatura/Graduacion.pdf" class="otros-enlaces" target="_blank">Ver online</a></p>
-                                <p><b>Experiencia de mi Graduación de la Licenciatura (octubre 2023):</b> <i class="fa fa-globe"></i> <a data-toggle="modal" data-target="#graduacionLicen" class="otros-enlaces">Ver online</a></p>
-                                <div id="graduacionLicen" class="modal fade fade-scale" role="dialog">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-body" style="text-align: center;">
-                                                <a class="rectangle" data-dismiss="modal"><i class="fa fa-times"></i></a>
-                                                <br><br>
-                                                <h4 class="modal-title">Nota: Si un vídeo no carga, ve al siguiente/anterior y vuelve a ese vídeo para visualizarlo correctamente y sin problema alguno</h4>
-                                                <div class="carrusel-voluntariado">
-                                                    <div class="carrusel-voluntariado-contenedor" id="pantalla-graduacionLicen"></div>
-                                                    <button class="flecha-izquierda-pasar" id="left-graduacionLicen">&#10094;</button>
-                                                    <button class="flecha-derecha-pasar" id="right-graduacionLicen">&#10095;</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p><b>Teléfono:</b> 91 665 50 60</p>
-                                <p><b>Correos electrónicos:</b> fuenlabrada.secretariadealumnos@urjc.es, fuenlabrada.gerencia@urjc.es y grado.ingenieriasam@urjc.es</p>
-                                <p><b>Dirección:</b> Camino del Molino, 5, Fuenlabrada 28942, Madrid, España</p>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="timeline-end">
-                        <div class="rectangle"><span>2023</span></div>
-                    </li>
-
-                    <li class="timeline-inverted">
-                        <div class="rectangle timeline-rectangle"></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                               <div class="timeline-position">
-                                    <p>Graduado de la Licenciatura</p>
-                                </div>
-                                <div class="timeline-date">
-                                    <p>Julio</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="timeline-end">
-                        <div class="rectangle"><span>2024</span></div>
-                    </li>
-
-                    <li id="cursoPosgrado">
-                        <div class="rectangle timeline-rectangle"></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <div class="timeline-date">
-                                    <p>Octubre</p>
-                                </div>
-                                <div class="timeline-position">
-                                    <p>Curso de Posgrado</p>
-                                </div>
-                            </div>
-                            <div class="timeline-body">
-                                <div class="timeline-body-thumb">
-                                    <img src="assets/estudios/posgrado/IAgenerativa/logo.png" class="img-res"/>
-                                </div>
-                                <p><b>Nombre completo del estudio:</b> <a class="otros-enlaces" href="https://www.eoi.es/es/cursos/92430/curso-practico-de-ia-generativa-e-ia-enfocada-negocio-presencia-virtual-online-galicia-asturias-cantabria-la-rioja-castilla-leon-valencia-murcia-canarias-y-baleares" target="_blank">IA generativa enfocada a negocio</a></p>
-                                <p><b>Lugar:</b> Online, a través de la plataforma de la <a href="https://campus.eoi.es/" target="_blank" class="otros-enlaces">E.O.I</a></p>
-                                <p><b>Calendario:</b> Del miércoles 2 de octubre al jueves 5 de diciembre</p>
-                                <p><b>Horario:</b> De lunes a viernes de 10:00 a 14:00</p>
-                                <p><b>Duración:</b> 220 h</p>
-                                <p><b>Certificación:</b> <i class="fa fa-globe"></i> <a class="otros-enlaces" href="./assets/estudios/posgrado/IAgenerativa/certificado/diploma-Alejandro.pdf" target="_blank"> Ver online</a></p>
-                                <p><b>Profesores:</b></p>
-                                <p>1. Raúl Ordóñez <a href="https://www.instagram.com/jaspeante/" target="_blank"><i class="fa fa-instagram"></i></a> <a href="https://www.linkedin.com/in/raulordonez/" target="_blank"><i class="fa fa-linkedin"></i></a> <a href="mailto:hola@raulordonez.com" target="_blank"><i class="fa fa-envelope"></i></a> <a href="https://raulordonez.com/" target="_blank"><i class="fa fa-globe"></i></a> <a href="https://www.youtube.com/jasp" target="_blank"><i class="fa fa-youtube"></i></a></p>
-                                <p>2. Javier Albelo <a href="https://www.linkedin.com/in/javier-albelo-45a89132/" target="_blank"><i class="fa fa-linkedin"></i></a> <a href="https://www.youtube.com/watch?v=us1CCu7eHis" target="_blank"><i class="fa fa-youtube"></i></a></p>
-                                <p>3. Fran Bartolomé Valentín-Gamazo <a href="https://www.linkedin.com/in/franbvgamazo/?originalSubdomain=es" target="_blank"><i class="fa fa-linkedin"></i></a> <a href="mailto:franbvg@proton.me" target="_blank"><i class="fa fa-envelope"></i></a> <a href="https://dayonerobot.com/" target="_blank"><i class="fa fa-globe"></i></a></p>
-                                <p>4. Yaye Cáceres <a href="https://www.linkedin.com/in/yayecaceres/" target="_blank"><i class="fa fa-linkedin"></i></a> <a href="mailto:yayecaceres@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a> <a href="https://typeflowai.com/" target="_blank"><i class="fa fa-globe"></i></a> <a href="https://www.youtube.com/channel/UCwyCFDXrH-MbmUnN5myOwOA" target="_blank"><i class="fa fa-youtube"></i></a></p>
-                                <p>5. Esperanza Noronha López <a href="https://www.linkedin.com/in/esperanzanoronhalopez/?originalSubdomain=es" target="_blank"><i class="fa fa-linkedin"></i></a> <a href="mailto:espenoronha@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a> <a href="https://esperanzanoronha.com/" target="_blank"><i class="fa fa-globe"></i></a> <a href="https://www.instagram.com/espenoronha/" target="_blank"><i class="fa fa-instagram"></i></a> <a href="https://twitter.com/espenoronha" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="15" height="15" fill="currentColor"><path d="M28.15 0H21.5l-3.9 7.5L13.6 0H7.35l6.7 12.3L6 24.25h6.65L18 17.5l5.35 6.75h6.85L22.95 12.3 28.15 0z"/></svg></a></p>
-                                <p>6. Efrén J. Rodríguez <a href="https://www.linkedin.com/in/efren-j-rodriguez/?trk=public_profile_samename-profile&originalSubdomain=es" target="_blank"><i class="fa fa-linkedin"></i></a> <a href="mailto:efrenjrodriguez.edu@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a> <a href="https://www.instagram.com/efrenjrodriguez/" target="_blank"><i class="fa fa-instagram"></i></a> <a href="https://twitter.com/efrenjrodriguez" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="15" height="15" fill="currentColor"><path d="M28.15 0H21.5l-3.9 7.5L13.6 0H7.35l6.7 12.3L6 24.25h6.65L18 17.5l5.35 6.75h6.85L22.95 12.3 28.15 0z"/></svg></a></p>
-				                <p>7. Pedro Martín Díaz <a href="https://www.linkedin.com/in/pedro-martin-diaz/" target="_blank"><i class="fa fa-linkedin"></i></a> <a href="mailto:pedromartindiaz@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a> <a href="https://pedromartindiaz.com/" target="_blank"><i class="fa fa-globe"></i></a> <a href="https://www.instagram.com/pedromartindiaz/" target="_blank"><i class="fa fa-instagram"></i></a> <a href="https://twitter.com/pedrovisualeo" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="15" height="15" fill="currentColor"><path d="M28.15 0H21.5l-3.9 7.5L13.6 0H7.35l6.7 12.3L6 24.25h6.65L18 17.5l5.35 6.75h6.85L22.95 12.3 28.15 0z"/></svg></a></p>
-                                <p><b>Contenido del Curso:</b></p>
-                                <p>Módulo 1: <a href="./assets/estudios/posgrado/IAgenerativa/Contenido/Módulo1-Fundamentos-IA.pdf" target="_blank" class="otros-enlaces">Fundamentos de inteligencia artificial</a></p>
-                                <p>Módulo 2: <a href="./assets/estudios/posgrado/IAgenerativa/Contenido/Módulo2-Chatbots-y-Tecnicas-Prompting.pdf" target="_blank" class="otros-enlaces">Chatbots y técnicas de prompting</a></p>
-                                <p class="moduloIAgenimg" id="btnModGenImg">Módulo 3: Generación y edición de imagen</p>
-                                <div class="contenidoEditGenImg" id="contenidoGenImg">
-                                    <p>Módulo 3: Generación y edición de imagen => <a href="./assets/estudios/posgrado/IAgenerativa/Contenido/Modulo3-Generacion-Edicion-Imagen-parte1.pdf" target="_blank" class="otros-enlaces">Parte 1</a></p>
-                                    <p>Módulo 3: Generación y edición de imagen => <a href="./assets/estudios/posgrado/IAgenerativa/Contenido/Modulo3-Generacion-Edicion-Imagen-parte2.pdf" target="_blank" class="otros-enlaces">Parte 2</a></p>
-                                    <p>Módulo 3: Generación y edición de imagen => <a href="./assets/estudios/posgrado/IAgenerativa/Contenido/Modulo3-Generacion-Edicion-Imagen-parte3.pdf" target="_blank" class="otros-enlaces">Parte 3</a></p>
-                                    <p>Módulo 3: Generación y edición de imagen => <a href="./assets/estudios/posgrado/IAgenerativa/Contenido/Modulo3-Generacion-Edicion-Imagen-parte4.pdf" target="_blank" class="otros-enlaces">Parte 4</a></p>
-                                </div>
-                                <br>
-                                <p>Módulo 4: <a href="./assets/estudios/posgrado/IAgenerativa/Contenido/Modulo4-Generacion-Edicion-Video.pdf" target="_blank" class="otros-enlaces">Generación y edición de vídeo</a></p>
-                                <p>Módulo 5: <a href="./assets/estudios/posgrado/IAgenerativa/Contenido/Modulo5-Generacion-Edición-Audio.pdf" target="_blank" class="otros-enlaces">Generación y edición de audio</a></p>
-                                <p>Módulo 6: <a href="./assets/estudios/posgrado/IAgenerativa/Contenido/Modulo6-Negocio-y-Marketing-con-IA.pdf" target="_blank" class="otros-enlaces">Negocio y marketing con IA</a></p>
-                                <p class="moduloIAgenimg" id="btnModProducvidad">Módulo 7: Productividad con IA</p>
-                                <div class="contenidoEditGenImg" id="contenidoProducvidad">
-                                    <p>Módulo 7: Productividad con IA => <a href="./assets/estudios/posgrado/IAgenerativa/Contenido/Modulo7-Productividad-IA-Parte1.pdf" target="_blank" class="otros-enlaces">Parte 1</a></p>
-                                    <p>Módulo 7: Productividad con IA => <a href="./assets/estudios/posgrado/IAgenerativa/Contenido/Modulo7-Productividad-IA-Parte2.pdf" target="_blank" class="otros-enlaces">Parte 2</a></p>
-                                    <p>Módulo 7: Productividad con IA => <a href="./assets/estudios/posgrado/IAgenerativa/Contenido/Modulo7-Productividad-IA-Parte3.pdf" target="_blank" class="otros-enlaces">Parte 3</a></p>
-                                    <p>Módulo 7: Productividad con IA => <a href="./assets/estudios/posgrado/IAgenerativa/Contenido/Modulo7-Productividad-IA-Parte4.pdf" target="_blank" class="otros-enlaces">Parte 4</a></p>
-                                </div>
-                                <br>
-                                <p class="moduloIAgenimg" id="btnModEmpleabilidad">Módulo Transversal: Empleabilidad y competencias digitales</p>
-                                <div class="contenidoEditGenImg" id="contenidoEmpleabilidad">
-                                    <p>Módulo Transversal: Empleabilidad y competencias digitales => <a href="./assets/estudios/posgrado/IAgenerativa/Contenido/ModuloTransversal-Empleabilidad-Parte1.pdf" target="_blank" class="otros-enlaces">Parte 1</a></p>
-                                    <p>Módulo Transversal: Empleabilidad y competencias digitales => <a href="./assets/estudios/posgrado/IAgenerativa/Contenido/ModuloTransversal-Empleabilidad-Parte2.pdf" target="_blank" class="otros-enlaces">Parte 2</a></p>
-                                    <p>Módulo Transversal: Empleabilidad y competencias digitales => <a href="./assets/estudios/posgrado/IAgenerativa/Contenido/ModuloTransversal-Empleabilidad-Parte3.pdf" target="_blank" class="otros-enlaces">Parte 3</a></p>
-                                    <p>Módulo Transversal: Empleabilidad y competencias digitales => <a href="./assets/estudios/posgrado/IAgenerativa/Contenido/ModuloTransversal-Empleabilidad-Parte4.pdf" target="_blank" class="otros-enlaces">Parte 4</a></p>
-                                </div>
-                                <br>
-                                <p class="moduloIAgenimg" id="btnModEtica">Módulo 8: Ética y regulación de la IA</p>
-                                <div class="contenidoEditGenImg" id="contenidoEtica">
-                                    <p>Módulo 8: Ética y regulación de la IA => <a href="./assets/estudios/posgrado/IAgenerativa/Contenido/Modulo8-Etica-Regulacion-IA-Parte1.pdf" target="_blank" class="otros-enlaces">Parte 1</a></p>
-                                    <p>Módulo 8: Ética y regulación de la IA => <a href="./assets/estudios/posgrado/IAgenerativa/Contenido/Modulo8-Etica-Regulacion-IA-Parte2.pdf" target="_blank" class="otros-enlaces">Parte 2</a></p>
-                                    <p>Módulo 8: Ética y regulación de la IA => <a href="./assets/estudios/posgrado/IAgenerativa/Contenido/Modulo8-Etica-Regulacion-IA-Parte3.pdf" target="_blank" class="otros-enlaces">Parte 3</a></p>
-                                    <p>Módulo 8: Ética y regulación de la IA => <a href="./assets/estudios/posgrado/IAgenerativa/Contenido/Modulo8-Etica-Regulacion-IA-Parte4.pdf" target="_blank" class="otros-enlaces">Parte 4</a></p>
-                                    <p>Módulo 8: Ética y regulación de la IA => <a href="./assets/estudios/posgrado/IAgenerativa/Contenido/Modulo8-Etica-Regulacion-IA-Parte5.pdf" target="_blank" class="otros-enlaces">Parte 5</a></p>
-                                </div>
-                                <br>
-                                <p>Módulo 9: <a href="./assets/estudios/posgrado/IAgenerativa/Contenido/Modulo9-Ecosistema-Copilot.pdf" target="_blank" class="otros-enlaces">Ecosistema Microsoft Copilot</a></p>
-                                <p><b>Proyecto Final del Curso (PDF en español):</b> <i class="fa fa-globe"></i> <a class="otros-enlaces" href="./assets/estudios/posgrado/IAgenerativa/ProyectoIA-versionFinal.pdf" target="_blank"> Ver online</a></p>
-                                <p><b>ZIP de la Interfaz Web:</b> <i class="fa fa-download"></i> <a class="otros-enlaces" href="./assets/estudios/posgrado/IAgenerativa/hackAlearning.zip" target="_blank"> Descargar</a></p>
-                                <p><b>Presentación del Proyecto (PDF en español):</b> <i class="fa fa-globe"></i> <a class="otros-enlaces" href="./assets/estudios/posgrado/IAgenerativa/Presentacion-PFIA.pdf" target="_blank"> Ver online</a></p>
-                                <p><b>Dirección de la EOI:</b> Avenida de Gregorio del Amo, 6, Distrito de Moncloa-Aravaca, 28040 Madrid, Madrid, España</p>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="rectangle timeline-rectangle"></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <div class="timeline-date">
-                                    <p>Diciembre</p>
-                                </div>
-                                <div class="timeline-position">
-                                    <p>Apto en el Curso de Posgrado</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <!-- FIN DE LA SECCIÓN FORMACIÓN ACADÉMICA -->
-
-        <!-- SECCIÓN DE HABILIDADES -->
-        <section class="site-section section-works" id="skills">
-            <div class="container">
-                <h2><b>Mis Habilidades</b></h2>
-                <h4><i class="fa fa-globe"></i> <a class="otros-enlaces" href="./assets/habilidades/professionalSkills-Certified.pdf" target="_blank">Certificación General</a></h4>
-            </div>
-            <div class="skills-content">
-                <a href="./assets/habilidades/tecnologicas/index.html">
-                    <img width="100px" src="assets/habilidades/tech.png"/>
-                    <h3>Tecnológicas</h3>
-                </a>
-                <a href="./assets/habilidades/gestion/index.html">
-                    <img width="100px" src="assets/habilidades/management.png"/>
-                    <h3>De Gestión</h3>
-                </a>
-                <a href="./assets/habilidades/sociales/index.html">
-                    <img width="100px" src="assets/habilidades/social.png"/>
-                    <h3>Sociales</h3>
-                </a>
-                <a href="./assets/habilidades/deportivas/index.html">
-                    <img width="100px" src="assets/habilidades/sport.png"/>
-                    <h3>Deportivas</h3>
-                </a>
-            </div>
-        </section>
-        <!-- FIN DE LA SECCIÓN DE HABILIDADES -->
-
-        <!-- SECCIÓN DE IDIOMAS -->
-        <section class="site-section section-works" id="languages">
-            <div class="container">
-                <h2><b>Mis Idiomas</b></h2>
-            </div>
-            <div class="skills-content">
-                <a href="./assets/idiomas/ingles/index.html">
-                    <img width="100px" src="assets/idiomas/english.png"/>
-                    <h4>Inglés</h4>
-                </a>
-                <a href="./assets/idiomas/otros/index.html">
-                    <img width="100px" src="assets/idiomas/other.png"/>
-                    <h4>Otros idiomas</h4>
-                </a>
-            </div>
-        </section>
-        <!-- FIN DE LA SECCIÓN DE IDIOMAS -->
-
-        <!-- SECCIÓN DE PROYECTOS -->
-        <section class="site-section section-works" id="projects">
-            <div class="container">
-                <h2><b>Mis proyectos empresariales y/o personales</b></h2>
-                <div class="portfolio">
-                    <ul class="portfolio-sorting list-inline">
-                        <li><a href="#" class=" active" data-group="all">Todos</a></li>
-                        <li><a href="#" class="" data-group="programming">Programación</a></li>
-                        <li><a href="#" class="" data-group="systems">Sistemas</a></li>
-                        <li><a href="#" class="" data-group="ai">IA</a></li>
-                        <li><a href="#" class="" data-group="acoustics">Acústica</a></li>
-                    </ul>
-                    <div id="grid">
-                        <div class="col-md-3 col-sm-4 col-xs-6" data-groups='["programming"]'>
-                            <div class="portfolio-item">
-                                <div class="portfolio-item-thumb">
-                                    <img src="assets/proyectos/programacion/logo.png" class="img-res">
-                                    <a href="./assets/proyectos/programacion/index.html" class="rectangle">
-                                        <i class="fa fa-plus"></i>
-                                    </a>
-                                </div><!-- /.portfolio-item-thumb  -->
-                                <div class="portfolio-info">
-                                    <h3>Programación en C</h3>
-                                </div><!-- /.portfolio-info  -->
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-4 col-xs-6" data-groups='["ai"]'>
-                            <div class="portfolio-item">
-                                <div class="portfolio-item-thumb">
-                                    <img src="assets/proyectos/herramientasIA/logo.png" class="img-res">
-                                    <a href="./assets/proyectos/herramientasIA/index.html" class="rectangle">
-                                        <i class="fa fa-plus"></i>
-                                    </a>
-                                </div><!-- /.portfolio-item-thumb  -->
-                                <div class="portfolio-info">
-                                    <h3>Herramientas IA</h3>
-                                </div><!-- /.portfolio-info  -->
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-4 col-xs-6" data-groups='["programming"]'>
-                            <div class="portfolio-item">
-                                <div class="portfolio-item-thumb">
-                                    <img src="assets/proyectos/games/logo.png" class="img-res">
-                                    <a href="./assets/proyectos/games/index.html" class="rectangle">
-                                        <i class="fa fa-plus"></i>
-                                    </a>
-                                </div><!-- /.portfolio-item-thumb  -->
-                                <div class="portfolio-info">
-                                    <h3>Juegos en JS</h3>
-                                </div><!-- /.portfolio-info  -->
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-4 col-xs-6" data-groups='["programming"]'>
-                            <div class="portfolio-item">
-                                <div class="portfolio-item-thumb">
-                                    <img src="assets/proyectos/tools/logo.png" class="img-res">
-                                    <a href="./assets/proyectos/tools/index.html" class="rectangle">
-                                        <i class="fa fa-plus"></i>
-                                    </a>
-                                </div><!-- /.portfolio-item-thumb  -->
-                                <div class="portfolio-info">
-                                    <h3>Tech tools en JS</h3>
-                                </div><!-- /.portfolio-info  -->
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-4 col-xs-6" data-groups='["acoustics"]'>
-                            <div class="portfolio-item">
-                                <div class="portfolio-item-thumb">
-                                    <img src="assets/proyectos/acustica/logo.png" class="img-res">
-                                    <a href="./assets/proyectos/acustica/Proyecto-Acustico.pdf" target="_blank" class="rectangle">
-                                        <i class="fa fa-plus"></i>
-                                    </a>
-                                </div><!-- /.portfolio-item-thumb  -->
-                                <div class="portfolio-info">
-                                    <h3>Proyecto Acústico</h3>
-                                </div><!-- /.portfolio-info  -->
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-4 col-xs-6" data-groups='["systems"]'>
-                            <div class="portfolio-item">
-                                <div class="portfolio-item-thumb">
-                                    <img src="assets/proyectos/IBMZ/logo.png" class="img-res">
-                                    <a href="./assets/proyectos/IBMZ/index.html" class="rectangle">
-                                        <i class="fa fa-plus"></i>
-                                    </a>
-                                </div><!-- /.portfolio-item-thumb  -->
-                                <div class="portfolio-info">
-                                    <h3>IBM Z</h3>
-                                </div><!-- /.portfolio-info  -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- FIN DE LA SECCIÓN DE PROYECTOS -->
-
-        <!-- SECCIÓN VOLUNTARIADOS -->
-        <section class="section-history" id="volunteers">
-            <div class="container">          
-                <div class="text-center section-diff-title">     
-                    <h2><b>Mis Voluntariados nacionales e internacionales</b></h2>
-                </div>
-                <ul class="timeline">
-                    <li class="timeline-start">
-                        <div class="rectangle"><span>2016</span></div>
-                    </li>
-                    <li>
-                        <div class="rectangle timeline-rectangle"></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <div class="timeline-position">
-                                    <p>Voluntariado del <a class="enlace-empresas" href="https://bamadrid.org/" target="_blank">Banco de Alimentos (Madrid)</a></p>
-                                </div>
-                            </div>
-                            <div class="timeline-body">
-                                <div class="timeline-body-thumb">
-                                    <img src="assets/voluntariados/bancoAlimentos/logo.png" class="img-res">
-                                </div>
-                                <p><b>Puesto:</b> Voluntario</p>
-                                <p><b>Idioma:</b> Español</p>
-                                <p><b>Tiempo total:</b> Del 18 de noviembre al 20 de noviembre</p>
-                                <p><b>Horario:</b> De 17:00 a 21:00</p>
-                                <p><b>Lugar:</b> <a class="otros-enlaces" href="https://ladespensasupermercados.es/nuevo-supermercado-la-despensa-en-villaviciosa-de-odon/" target="_blank">Mercadona de Villaviciosa de Odón (Ahora La Despensa), Madrid, España</a></p>
-                                <p><b>Sector:</b> Alimentación</p>
-                                <p><b>Funciones:</b></p>
-                                <p> - Recoger comida no perecedera para gente desfavorecida</p>
-                                <p> - Clasificar la comida según el tipo</p>
-                                <p> - Organizar y planificar el proceso por el que se lleva a cabo</p>
-                                <p> - Cooperar y colaborar con todo el equipo de voluntarios</p>
-                                <p><b>Ver online mi experiencia:</b> <i class="fa fa-globe"></i> <a data-toggle="modal" data-target="#voluntariado0" class="otros-enlaces">Pincha aquí</a></p>
-                                <div id="voluntariado0" class="modal fade fade-scale" role="dialog">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-body" style="text-align: center;">
-                                                <a class="rectangle" data-dismiss="modal"><i class="fa fa-times"></i></a>
-                                                <br>
-                                                <br>
-                                                <h4 class="modal-title">Mi experiencia como voluntario del Banco de Alimentos de Madrid</h4>
-                                                <div class="carrusel-voluntariado">
-                                                    <div class="carrusel-voluntariado-contenedor" id="pantalla-voluntariado-proweb-0"></div>
-                                                    <button class="flecha-izquierda-pasar" id="flecha-izquierda-0">&#10094;</button>
-                                                    <button class="flecha-derecha-pasar" id="flecha-derecha-0">&#10095;</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p><b>Teléfono:</b> +34 91 734 63 83</p>
-                                <p><b>Correo electrónico:</b> administracion@bamadrid.org</p>
-                                <p><b>Dirección:</b> Carretera de Colmenar Viejo, Km. 13, 600 (Vía de servicio), Madrid 28049, Madrid, España</p>
-                            </div>
-                        </div>
-                    </li>
-
-                    <!-- Timeline badge --> 
-                    <li class="timeline-start">
-                        <div class="rectangle"><span>2021</span></div>
-                    </li><!-- /.timeline-start -->
-
-                    <!-- Timeline job & description, inverted  --> 
-                    <li class="timeline-inverted">
-                        <div class="rectangle timeline-rectangle"></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                               <div class="timeline-position">
-                                    <p>Voluntariado en <a class="enlace-empresas" href="https://feriencamp-doebriach.at/" target="_blank">Falkencamp Döbriach</a></p>
-                                </div><!-- /.timeline-position -->
-                            </div><!-- /.timeline-heading -->
-                            <div class="timeline-body">
-                                <div class="timeline-body-thumb">
-                                    <img src="assets/voluntariados/falkencamp/logo.png" class="img-res">
-                                </div>
-                                <p><b>Puesto:</b> <a class="otros-enlaces" href="https://www.worldpackers.com/positions/39045" target="_blank">Voluntario, viajero y mochilero</a></p>
-                                <p><b>Agencia de contacto:</b> <a class="otros-enlaces" href="https://www.worldpackers.com/" target="_blank">Worldpackers</a></p>
-                                <p><b>Idioma:</b> Inglés</p>
-                                <p><b>Tiempo total:</b> Del 15 de agosto al 5 de septiembre</p>
-                                <p><b>Sector:</b> Turismo</p>
-                                <p><b>Funciones (lo que ofrezco):</b></p>
-                                <p> - Controlar y alquilar las bicicletas a los huéspedes</p>
-                                <p> - Controlar y alquilar los kayaks (canoas) y los SUPs (tablas de paddle surf) a los huéspedes, utilizados en el lago Millstätter</p>
-                                <p> - Ser bartender en el bar del camping: Heko nights</p>
-                                <p> - Montar, desmontar y limpiar las tiendas de campaña para huéspedes de Falkencamp</p>
-                                <p> - Arreglar y moldear las picas metálicas que sujetan las tiendas de campaña</p>
-                                <p> - Organizar y limpiar el almacén</p>
-                                <p> - Atender en la tienda de bebidas y snacks de la playa del lago</p>
-                                <p> - 5 días de trabajo a la semana (7h/día)</p>
-                                <p> - Hacer que Falkencamp sea un lugar mejor</p>
-                                <p><b>Funciones (lo que obtengo):</b></p>
-                                <p> - Alojamiento en habitación privada/compartida</p>
-                                <p> - 3 comidas al día, servido por catering</p>
-                                <p> - Bicicletas a disposición, con reserva previa gratuita</p>
-                                <p> - Consumo de productos del bar gratis</p>
-                                <p> - Desplazamientos a la estación de tren más cercana</p>
-                                <p> - Elección de una prenda/souvenir gratis</p>
-                                <p> - Descuentos en viajes de tren y en restaurantes</p>
-                                <p> - 2 días libres a la semana</p>
-                                <p><b>Ver online mi experiencia:</b> <i class="fa fa-globe"></i> <a data-toggle="modal" data-target="#voluntariado1" class="otros-enlaces">Pincha aquí</a></p>
-                                <div id="voluntariado1" class="modal fade fade-scale" role="dialog">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-body" style="text-align: center;">
-                                                <a class="rectangle" data-dismiss="modal"><i class="fa fa-times"></i></a>
-                                                <br>
-                                                <h4>Nota: Si un vídeo no carga, ve al siguiente/anterior y vuelve a ese vídeo para visualizarlo correctamente y sin problema alguno</h4>
-                                                <br>
-                                                <h4 class="modal-title">Mi experiencia Worldpackers en Döbriach (Austria)</h4>
-                                                <div class="carrusel-voluntariado">
-                                                    <div class="carrusel-voluntariado-contenedor" id="pantalla-voluntariado-proweb-1"></div>
-                                                    <button class="flecha-izquierda-pasar" id="flecha-izquierda-1">&#10094;</button>
-                                                    <button class="flecha-derecha-pasar" id="flecha-derecha-1">&#10095;</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p><b>Teléfono:</b> 04246 / 7704</p>
-                                <p><b>Correo electrónico:</b> office@feriencamp-doebriach.at</p>
-                                <p><b>Dirección:</b> Glanzer Straße, 66, 9873 Döbriach, Carintia, Austria</p>
-                            </div>
-                        </div>
-                    </li>
-
-                    <!-- Timeline badge --> 
-                    <li class="timeline-start">
-                        <div class="rectangle"><span>2022</span></div>
-                    </li><!-- /.timeline-start -->
-
-                    <li>
-                        <div class="rectangle timeline-rectangle"></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <div class="timeline-position">
-                                    <p>Voluntariado en <a class="enlace-empresas" href="https://michaelshof-sammatz.de/blog/" target="_blank">Michaelshof Sammatz</a></p>
-                                </div>
-                            </div>
-                            <div class="timeline-body">
-                                <div class="timeline-body-thumb">
-                                    <img src="assets/voluntariados/sammatz/logo.png" class="img-res">
-                                </div>
-                                <p><b>Puesto:</b> <a class="otros-enlaces" href="https://www.worldpackers.com/positions/39045" target="_blank">Voluntario, viajero y mochilero</a></p>
-                                <p><b>Agencia de contacto:</b> <a class="otros-enlaces" href="https://www.worldpackers.com/" target="_blank">Worldpackers</a></p>
-                                <p><b>Idioma:</b> Inglés</p>
-                                <p><b>Tiempo total:</b> Del 3 de agosto al 7 de septiembre</p>
-                                <p><b>Sector:</b> Ecología y sostenibilidad</p>
-                                <p><b>Funciones (lo que ofrezco):</b></p>
-                                <p> - Recogida de alimentos de la tierra y conocer técnicas de agricultura</p>
-                                <p> - Ser pinche de cocina: preparar y envasar pepinos pelados para conservar, pelar patatas y otras hortalizas, ayudar a preparar la comida del día, lavar la vajilla y limpiar la cocina</p>
-                                <p> - Ayudar en la elaboración de pan</p>
-                                <p> - Ayudar en la elaboración de quesos y en su envasado</p>
-                                <p> - Ayudar en la construcción de viviendas</p>
-                                <p> - Ayudar en el mantenimiento de los jardines</p>
-                                <p> - Ayudar al pastoreo de las ovejas y del cuidado y limpieza de todos los animales: vacas, un toro, cerdos, cabras, ovejas y caballos</p>
-                                <p> - Ayudar y ser reponedor en la tienda de alimentación</p>
-                                <p> - 5 días de trabajo a la semana (7h/día)</p>
-                                <p> - Hacer que la ecogranja de Sammatz sea un lugar mejor</p>
-                                <p><b>Funciones (lo que obtengo):</b></p>
-                                <p> - Alojamiento en habitación privada/compartida</p>
-                                <p> - Almuerzo diario servido por catering y voluntarios</p>
-                                <p> - Desayuno y cena servido por ti mismo, pero sin coste</p>
-                                <p> - Algunas veces, merienda con café y pastel, lo que se conoce como <i>Kuchen und Kaffee</i></p>
-                                <p> - Bicicletas a disposición, con reserva previa gratuita</p>
-                                <p> - Desplazamientos a la estación de tren más cercana</p>
-                                <p> - Frutas y hortalizas del día y de la tierra a disposición</p>
-                                <p> - Descuentos en viajes de tren y en restaurantes</p>
-                                <p> - 2 días libres a la semana</p>
-                                <p><b>Ver online mi experiencia:</b> <i class="fa fa-globe"></i> <a data-toggle="modal" data-target="#voluntariado2" class="otros-enlaces">Pincha aquí</a></p>
-                                <div id="voluntariado2" class="modal fade fade-scale" role="dialog">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-body" style="text-align: center;">
-                                                <a class="rectangle" data-dismiss="modal"><i class="fa fa-times"></i></a>
-                                                <br>
-                                                <h4>Nota: Si un vídeo no carga, ve al siguiente/anterior y vuelve a ese vídeo para visualizarlo correctamente y sin problema alguno</h4>
-                                                <br>
-                                                <h4 class="modal-title">Mi experiencia Worldpackers en Sammatz (Alemania)</h4>
-                                                <div class="carrusel-voluntariado">
-                                                    <div class="carrusel-voluntariado-contenedor" id="pantalla-voluntariado-proweb-2"></div>
-                                                    <button class="flecha-izquierda-pasar" id="flecha-izquierda-2">&#10094;</button>
-                                                    <button class="flecha-derecha-pasar" id="flecha-derecha-2">&#10095;</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p><b>Teléfono:</b> 05858 970 30</p>
-                                <p><b>Correo electrónico:</b> kontakt@sammatz.de</p>
-                                <p><b>Dirección:</b> Im Dorfe, 11, 29490 Sammatz, Niedersachsen, Alemania</p>
-                            </div>
-                        </div>
-                    </li>
-
-                    <!-- Timeline badge --> 
-                    <li class="timeline-start">
-                        <div class="rectangle"><span>2023</span></div>
-                    </li><!-- /.timeline-start -->
-
-                    <!-- Timeline job & description, inverted  --> 
-                    <li class="timeline-inverted">
-                        <div class="rectangle timeline-rectangle"></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                               <div class="timeline-position">
-                                    <p>Voluntariado de la <a class="enlace-empresas" href="https://espacio.fundaciontelefonica.com/" target="_blank">Fundación Telefónica</a></p>
-                                </div><!-- /.timeline-position -->
-                            </div><!-- /.timeline-heading -->
-                            <div class="timeline-body">
-                                <div class="timeline-body-thumb">
-                                    <img src="assets/voluntariados/reconectados/logo.png" class="img-res">
-                                </div>
-                                <p><b>Puesto:</b> Voluntario</p>
-                                <p><b>Idioma:</b> Español</p>
-                                <p><b>Lugar:</b> Edificio de la Fundación Telefónica de Madrid, Madrid, España</p>
-                                <p><b>Sector:</b> Educación y formación</p>
-                                <p><b>Nombre del programa:</b> <a class="otros-enlaces" href="https://www.fundaciontelefonica.com/voluntarios/reconectados/" target="_blank">Reconectados</a></p>
-                                <p><b>Objetivo principal:</b> Ayudar a la tercera edad a usar sus dispositivos móviles y las nuevas tecnologías de forma más ágil y eficaz</p>
-                                <p><b>Tiempo total:</b> Los jueves: 5, 12, 19 y 26 de octubre</p>
-                                <p><b>Horario:</b> De 10:00 a 13:00</p>
-                                <p><b>Funciones:</b></p>
-                                <p> - Resolución de dudas</p>
-                                <p> - Enseñar dinámicamente y con mucha práctica</p>
-                                <p> - Tener paciencia y repetir la explicación múltiples veces</p>
-                                <p><b>Contenidos del programa:</b> <i class="fa fa-globe"></i> <a href="./assets/voluntariados/reconectados/Contenidos.pdf" class="otros-enlaces" target="_blank">Ver online</a></p>
-                                <p><b>Presentación del programa:</b> <i class="fa fa-globe"></i> <a href="./assets/voluntariados/reconectados/Experiencia-practica-digital.pdf" class="otros-enlaces" target="_blank">Ver online</a></p>
-                                <p><b>Ver online mi experiencia:</b> <i class="fa fa-globe"></i> <a data-toggle="modal" data-target="#voluntariado3" class="otros-enlaces">Pincha aquí</a></p>
-                                <div id="voluntariado3" class="modal fade fade-scale" role="dialog">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-body" style="text-align: center;">
-                                                <a class="rectangle" data-dismiss="modal"><i class="fa fa-times"></i></a>
-                                                <br>
-                                                <br>
-                                                <h4 class="modal-title">Mi experiencia Reconectados de la Fundación Telefónica</h4>
-                                                <div class="carrusel-voluntariado">
-                                                    <div class="carrusel-voluntariado-contenedor" id="pantalla-voluntariado-proweb-3"></div>
-                                                    <button class="flecha-izquierda-pasar" id="flecha-izquierda-3">&#10094;</button>
-                                                    <button class="flecha-derecha-pasar" id="flecha-derecha-3">&#10095;</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p><b>Teléfono:</b> +34 91 498 42 73</p>
-                                <p><b>Teléfono de visitas guiadas:</b> +34 659 15 80 11</p>
-                                <p><b>Dirección:</b> Calle de Fuencarral, 3, Madrid 28004, Madrid, España</p>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="timeline-start"><div class="rectangle"><span>2024</span></div></li>
-
-                    <li>
-                        <div class="rectangle timeline-rectangle"></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                               <div class="timeline-position">
-                                    <p>Voluntariado en <a class="enlace-empresas" href="https://www.ibizayoga.com/" target="_blank">Ibiza Yoga</a></p>
-                                </div>
-                            </div>
-                            <div class="timeline-body">
-                                <div class="timeline-body-thumb">
-                                    <img src="assets/voluntariados/ibizaYoga/logo.png" class="img-res">
-                                </div>
-                                <p><b>Puesto:</b> <a class="otros-enlaces" href="https://www.worldpackers.com/positions/64681" target="_blank">Voluntario, viajero y mochilero</a></p>
-                                <p><b>Idioma:</b> Inglés</p>
-                                <p><b>Agencia de contacto:</b> <a class="otros-enlaces" href="https://www.worldpackers.com/" target="_blank">Worldpackers</a></p>
-                                <p><b>Tiempo total:</b> Mayo - Junio</p>
-                                <p><b>Sector:</b> Turismo, Hostelería, Espiritualidad y Sostenibilidad</p>
-                                <p><b>Funciones (lo que ofrezco):</b></p>
-                                <p> - Ayudar al Chef a preparar el almuerzo</p>
-                                <p> - Encargarse de los Check-In y los Check-Out de los nuevos huéspedes</p>
-                                <p> - Encargarse de la limpieza del Hotel Rural</p>
-                                <p> - Encargarse de la limpieza, orden y adecuación de las habitaciones de los huéspedes</p>
-                                <p> - Hacer la colada del Hotel Rural</p>
-                                <p><b>Funciones (lo que obtengo):</b></p>
-                                <p> - Alojamiento en habitación compartida con separación (estilo hippie)</p>
-                                <p> - Almuerzo diario, servido por el equipo de cocina</p>
-                                <p> - Desayuno y cena por cuenta propia</p>
-                                <p> - Consumo de productos del Hotel Rural gratis</p>
-                                <p> - Wi-Fi gratuito</p>
-                                <p> - Clases de Yoga a 5€ (para huéspedes son 25€)</p>
-                                <p> - Uso gratuito de la lavandería y de la cocina</p>
-                                <p> - 2 días libres a la semana</p>
-                                <p><b>Ver online mi experiencia:</b> <i class="fa fa-globe"></i> <a data-toggle="modal" data-target="#voluntariado4" class="otros-enlaces">Pincha aquí</a></p>
-                                <div id="voluntariado4" class="modal fade fade-scale" role="dialog">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-body" style="text-align: center;">
-                                                <a class="rectangle" data-dismiss="modal"><i class="fa fa-times"></i></a>
-                                                <br>
-                                                <br>
-                                                <h4 class="modal-title">Mi experiencia Worldpackers en Ibiza (España)</h4>
-                                                <div class="carrusel-voluntariado">
-                                                    <div class="carrusel-voluntariado-contenedor" id="pantalla-voluntariado-proweb-4"></div>
-                                                    <button class="flecha-izquierda-pasar" id="flecha-izquierda-4">&#10094;</button>
-                                                    <button class="flecha-derecha-pasar" id="flecha-derecha-4">&#10095;</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p><b>Teléfono:</b> +39 351 7126972</p>
-                                <p><b>Correo electrónico:</b> info@ibizayoga.com & ibizayoga@me.com</p>
-                                <p><b>Dirección:</b> Carrer Benirràs D, 51, 07810 San Juan Bautista, Ibiza, Illes Balears, España</p>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <!-- FIN DE LA SECCIÓN VOLUNTARIADOS -->
-    </main>
-    <!-- FIN DEL CUERPO DE LA PRO WEB -->
-
-    <!-- PIE DE PÁGINA --> 
-    <footer id="colophon" class="site-footer">
-        <div class="container-fluid">
-            <div class="page-scroll">
-                <a href="#top" class="rectangle">
-                    <i class="fa fa-angle-double-up"></i>
-                </a>
-            </div>
+          </div>
         </div>
-        <div class="container text-center">
-            <p class="copyright">Copyright &copy; 2023-2030 <a class="fweight-700" href="./index.html">My Professional WEB</a> - Todos los derechos reservados</p>
+        <span><img src="./assets/voluntariados/logo5.png"/></span>
+      </article>
+      <article class="timeline-item reveal">
+        <span>Octubre 2023</span>
+        <div>
+          <h3><a href="https://espacio.fundaciontelefonica.com/" target="_blank">Fundación Telefónica</a></h3>
+          <p><b>Sector:</b> Educación y formación</p>
+          <p><b>Ubicación:</b> <a href="https://www.google.com/maps/place/Fundaci%C3%B3n+Telef%C3%B3nica/@40.4202271,-3.704248,858m/data=!3m3!1e3!4b1!5s0xd42286111fc3d25:0xd532fe432967eebc!4m6!3m5!1s0xd42288773e68409:0xc24840d3a1213b05!8m2!3d40.420223!4d-3.7016731!16s%2Fg%2F12qhfvnyx!5m1!1e1?authuser=0&entry=ttu&g_ep=EgoyMDI2MDYyOS4wIKXMDSoASAFQAw%3D%3D" target="_blank">Madrid (España)</a></p>
+          <p><a href="#" data-modal-voluntariado4><u>Más Información</u></a></p>
+          <div class="modal" id="voluntariado4">
+            <div class="modal-content">
+              <button class="modal-close" data-modal-close-v4>&times;</button>
+              <p data-modal-text-v4></p>
+              <img data-modal-img-v4/>
+              <video data-modal-video-v4></video>
+              <div class="modal-navigation">
+                <button data-prev-v4><i data-lucide="chevron-left"></i></button>
+                <span data-counter-v4></span>
+                <button data-next-v4><i data-lucide="chevron-right"></i></button>
+              </div>
+            </div>
+          </div>
         </div>
-    </footer>
-    <!-- FIN DEL PIE DE PÁGINA -->
+        <span><img src="./assets/voluntariados/logo4.png"/></span>
+      </article>
+      <article class="timeline-item reveal">
+        <span>Agosto y Septiembre 2022</span>
+        <div>
+          <h3><a href="https://michaelshof-sammatz.de/blog/" target="_blank">Michaelshof Sammatz</a></h3>
+          <p><b>Sector:</b> Ecología y sostenibilidad</p>
+          <p><b>Ubicación:</b> <a href="https://www.google.com/maps/place/Michaelshof+Sammatz/@53.1939118,10.8982782,675m/data=!3m3!1e3!4b1!5s0x47ae3e87139cce09:0xea6c05cc9282a843!4m9!3m8!1s0x47ae3f9757f1e52f:0x7fecffb3795cc08c!5m2!4m1!1i2!8m2!3d53.1939086!4d10.9008531!16s%2Fg%2F11gh9m79mx!5m1!1e1?authuser=0&entry=ttu&g_ep=EgoyMDI2MDYyOS4wIKXMDSoASAFQAw%3D%3D" target="_blank">Sammatz, Niedersachsen (Deutschland)</a></p>
+          <p><a href="#" data-modal-voluntariado3><u>Más Información</u></a></p>
+          <div class="modal" id="voluntariado3">
+            <div class="modal-content">
+              <button class="modal-close" data-modal-close-v3>&times;</button>
+              <p data-modal-text-v3></p>
+              <img data-modal-img-v3/>
+              <video data-modal-video-v3></video>
+              <div class="modal-navigation">
+                <button data-prev-v3><i data-lucide="chevron-left"></i></button>
+                <span data-counter-v3></span>
+                <button data-next-v3><i data-lucide="chevron-right"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <span><img src="./assets/voluntariados/logo3.png"/></span>
+      </article>
+      <article class="timeline-item reveal">
+        <span>Agosto 2021</span>
+        <div>
+          <h3><a href="https://feriencamp-doebriach.at/" target="_blank">Falkencamp</a></h3>
+          <p><b>Sector:</b> Turismo</p>
+          <p><b>Ubicación:</b> <a href="https://www.google.com/maps/place/Gebetsroither+Unterk%C3%BCnfte+am+Falkencamp+D%C3%B6briach+am+Millst%C3%A4ttersee/@46.7711128,13.6534049,209m/data=!3m1!1e3!4m6!3m5!1s0x47709934b4b2983d:0x5417656a709faa7!8m2!3d46.7710404!4d13.6529229!16s%2Fg%2F11k6196ysj!5m1!1e1?authuser=0&entry=ttu&g_ep=EgoyMDI2MDYyOS4wIKXMDSoASAFQAw%3D%3D" target="_blank">Döbriach (Österreich)</a></p>
+          <p><a href="#" data-modal-voluntariado2><u>Más Información</u></a></p>
+          <div class="modal" id="voluntariado2">
+            <div class="modal-content">
+              <button class="modal-close" data-modal-close-v2>&times;</button>
+              <p data-modal-text-v2></p>
+              <img data-modal-img-v2/>
+              <video data-modal-video-v2></video>
+              <div class="modal-navigation">
+                <button data-prev-v2><i data-lucide="chevron-left"></i></button>
+                <span data-counter-v2></span>
+                <button data-next-v2><i data-lucide="chevron-right"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <span><img src="./assets/voluntariados/logo2.png"/></span>
+      </article>
+      <article class="timeline-item reveal">
+        <span>Noviembre 2016</span>
+        <div>
+          <h3><a href="https://bamadrid.org/" target="_blank">Banco de Alimentos</a></h3>
+          <p><b>Sector:</b> Alimentación</p>
+          <p><b>Ubicación:</b> <a href="https://www.google.com/maps/place/C.+Tera,+6,+28670+Villaviciosa+de+Od%C3%B3n,+Madrid/@40.3847255,-3.9324807,146m/data=!3m1!1e3!4m6!3m5!1s0xd419042061beeef:0x159b8b452d92396e!8m2!3d40.3847093!4d-3.9323399!16s%2Fg%2F11cpnkqsrl!5m1!1e1?authuser=0&entry=ttu&g_ep=EgoyMDI2MDYyOS4wIKXMDSoASAFQAw%3D%3D" target="_blank">Villaviciosa de Odón (España)</a></p>
+          <p><a href="#" data-modal-voluntariado1><u>Más Información</u></a></p>
+          <div class="modal" id="voluntariado1">
+            <div class="modal-content">
+              <button class="modal-close" data-modal-close-v1>&times;</button>
+              <p data-modal-text-v1></p>
+              <img data-modal-img-v1/>
+              <video data-modal-video-v1></video>
+              <div class="modal-navigation">
+                <button data-prev-v1><i data-lucide="chevron-left"></i></button>
+                <span data-counter-v1></span>
+                <button data-next-v1><i data-lucide="chevron-right"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <span><img src="./assets/voluntariados/logo1.png"/></span>
+      </article>
+    </div>
+  </section>
 
-    <script src="./assets/js/carrusel0.js" type="text/javascript"></script>
-    <script src="./assets/js/carrusel1.js" type="text/javascript"></script>
-    <script src="./assets/js/carrusel2.js" type="text/javascript"></script>
-    <script src="./assets/js/carrusel3.js" type="text/javascript"></script>
-    <script src="./assets/js/carrusel4.js" type="text/javascript"></script>
-    <script src="./assets/js/viajeHarman.js" type="text/javascript"></script>
-    <script src="./assets/js/telefonica.js" type="text/javascript"></script>
-    <script src="./assets/js/window.js" type="text/javascript"></script>
-    <script src="./assets/js/graduacionBach.js" type="text/javascript"></script>
-    <script src="./assets/js/teatro.js" type="text/javascript"></script>
-    <script src="./assets/js/graduacionPrimaria.js" type="text/javascript"></script>
-    <script src="./assets/js/graduacionLicenciatura.js" type="text/javascript"></script>
-    <script src="./assets/js/pss-ti.js" type="text/javascript"></script>
-    <script src="./assets/js/talentcampus.js" type="text/javascript"></script>
+  <!-- Pie de Página -->
+  <footer><span>Copyright &copy; 2023-2030 - <a href="index.html">My Professional WEB</a> - Todos los derechos reservados</span></footer>
 
-    <!-- Google Traductor -->
-    <script type="text/javascript">
-        function googleTranslateElementInit() {
-           new google.translate.TranslateElement({pageLanguage: 'es', includedLanguages: 'ca,eu,gl,en,fr,it,pt,de,ar,ru,hi,sr,tr,ja', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, autoDisplay: false}, 'google_translate_element');
-                }
-    </script>
-    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <!-- jQuery core js | Do not Delete -->
-    <script src="assets/js/jquery.min.js"></script>
-    <!-- Bootstrap core js | Do not Delete -->
-    <script src="assets/js/bootstrap.min.js"></script>
-    <!-- Bootstrap progressbar JS -->
-    <script src="assets/js/bootstrap-progressbar.min.js"></script>
-    <!-- Count To JS -->
-    <script src="assets/js/jquery.countTo.min.js"></script>
-    <!-- Easing JS -->
-    <script src="assets/js/jquery.easing.min.js"></script>
-    <!-- Shuffle JS -->
-    <script src="assets/js/jquery.shuffle.min.js"></script>
-    <!-- Slick Carousel JS -->
-    <script src="assets/js/slick.min.js"></script>
-    <!-- Touchswipe JS -->
-    <script src="assets/js/touchswipe.min.js"></script>
-    <!-- Custom JS -->
-    <script src="assets/js/script.js"></script>
-    <!-- Cambiar de testimonios -->
-    <script src="assets/js/testimonios.js"></script>
+  <!-- Scripts de conexión -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script src="./assets/testimonios/testimonios.js"></script>
+  <script src="./assets/voluntariados/voluntariados.js"></script>
+
+  <!-- Google Traductor -->
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'es', includedLanguages: 'ca,eu,gl,en,fr,it,pt,de,ar,ru,hi,sr,tr,ja', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, autoDisplay: false}, 'google_translate_element');
+    }
+  </script>
+  <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 </html>
