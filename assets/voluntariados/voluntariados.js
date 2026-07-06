@@ -202,14 +202,53 @@ const voluntariados = [
     pages:[
       {
         text:`
-          <p>Página 1</p>
+          <h3 style="text-align: center;">Mi experiencia como voluntario</h3>
+          <p><b>Tipo de experiencia:</b> <a href="https://www.worldpackers.com/es/positions/51113" target="_blank">Worldpackers</a> - voluntario, viajero y mochilero</p>
+          <p><b>Idioma empleado:</b> Inglés</p>
+          <p><b>Funciones (lo que ofrezco):</b></p>
+          <p> - Recogida de alimentos de la tierra y conocer técnicas de agricultura</p>
+          <p> - Ser pinche de cocina: preparar y envasar pepinos pelados para conservar, pelar patatas y otras hortalizas, ayudar a preparar la comida del día, lavar la vajilla y limpiar la cocina</p>
+          <p> - Ayudar en la elaboración de pan</p>
+          <p> - Ayudar en la elaboración de quesos y en su envasado</p>
+          <p> - Ayudar en la construcción de viviendas</p>
+          <p> - Ayudar en el mantenimiento de los jardines</p>
+          <p> - Ayudar al pastoreo de las ovejas y del cuidado y limpieza de todos los animales: vacas, un toro, cerdos, cabras, ovejas y caballos</p>
+          <p> - Ayudar y ser reponedor en la tienda de alimentación</p>
+          <p> - 5 días de trabajo a la semana (7h/día)</p>
+          <p> - Hacer que la ecogranja de Sammatz sea un lugar mejor</p>
+          <p><b>Funciones (lo que obtengo):</b></p>
+          <p> - Alojamiento en habitación privada/compartida</p>
+          <p> - Almuerzo diario servido por catering y voluntarios</p>
+          <p> - Desayuno y cena servido por ti mismo, pero sin coste</p>
+          <p> - Algunas veces, merienda con café y pastel, lo que se conoce como <i>Kuchen und Kaffee</i></p>
+          <p> - Bicicletas a disposición, con reserva previa gratuita</p>
+          <p> - Desplazamientos a la estación de tren más cercana</p>
+          <p> - Frutas y hortalizas del día y de la tierra a disposición</p>
+          <p> - Descuentos en viajes de tren y en restaurantes</p>
+          <p> - 2 días libres a la semana</p>
         `
       },
       {
         text:`
-          <p>Página 2</p>
+          <h3 style="text-align: center;">Datos de la organización</h3>
+          <p><b>Teléfono:</b> 05858 970 30</p>
+          <p><b>Correo electrónico:</b> kontakt@sammatz.de</p>
+          <p><b>Dirección:</b> Im Dorfe, 11, 29490, Sammatz, Niedersachsen, Deutschland</p>
         `
-      }
+      },{img: "https://i.postimg.cc/ZYGkSPbq/1.jpg"},{img: "https://i.postimg.cc/T3xZyRWM/2.jpg"},{video: "https://www.youtube.com/embed/PdxNRQczFw0"},
+      {img: "https://i.postimg.cc/28hs8qy7/4.jpg"},{img: "https://i.postimg.cc/3xZzmPgy/5.jpg"},{img: "https://i.postimg.cc/Xv7m8Q8s/6.jpg"},
+      {img: "https://i.postimg.cc/fb2FgmqD/7.jpg"},{img: "https://i.postimg.cc/QtFPLCv5/8.jpg"},{img: "https://i.postimg.cc/tT8c9yHc/9.jpg"},
+      {img: "https://i.postimg.cc/5yvR0G42/10.jpg"},{img: "https://i.postimg.cc/SQz5DX6b/11.jpg"},{video: "https://www.youtube.com/embed/ke9MInBdzH0"},
+      {video: "https://www.youtube.com/embed/NH58gQWo9mM"},{video: "https://www.youtube.com/embed/qTxboYDAUlI"},{video: "https://www.youtube.com/embed/N6I4kwdrwJ8"},
+      {video: "https://www.youtube.com/embed/m8u6yeTSMJY"},{img: "https://i.postimg.cc/CLT2tF7B/17.jpg"},{video: "https://www.youtube.com/embed/HUWCCp-Gm2w"},
+      {video: "https://www.youtube.com/embed/gutpMrinsBY"},{video: "https://www.youtube.com/embed/Fp-ecbHzHes"},{video: "https://www.youtube.com/embed/MbfkBCP5gNs"},
+      {video: "https://www.youtube.com/embed/oGmZW0v1NwQ"},{video: "https://www.youtube.com/embed/_W3qHpUdrX0"},{video: "https://www.youtube.com/embed/clOJ8arr8p8"},
+      {video: "https://www.youtube.com/embed/HaKFuO4M02s"},{img: "https://i.postimg.cc/vHrKwp2P/26.jpg"},{img: "https://i.postimg.cc/52fR4nZf/27.jpg"},
+      {img: "https://i.postimg.cc/xdCpHqf7/28.jpg"},{img: "https://i.postimg.cc/qvQZz2Ty/29.jpg"},{img: "https://i.postimg.cc/R0DsT9q0/30.jpg"},
+      {img: "https://i.postimg.cc/DZ4CjDbP/31.jpg"},{img: "https://i.postimg.cc/Gt0XZQFw/32.jpg"},{video: "https://www.youtube.com/embed/oLlmVGI7TPE"},
+      {img: "https://i.postimg.cc/wMhwHm2t/34.jpg"},{img: "https://i.postimg.cc/59v78hJx/35.jpg"},{img: "https://i.postimg.cc/3JTL1tr2/36.jpg"},
+      {img: "https://i.postimg.cc/qMx152gS/37.jpg"},{img: "https://i.postimg.cc/529sdjC0/38.jpg"},{img: "https://i.postimg.cc/K89JZFP5/39.jpg"},
+      {img: "https://i.postimg.cc/VNd4vT4P/40.jpg"},{video: "https://www.youtube.com/embed/2VpR7gxzvpw"}
     ]
   },
   //-- Voluntariado 4
@@ -218,14 +257,28 @@ const voluntariados = [
     pages:[
       {
         text:`
-          <p>Página 1</p>
+          <h3 style="text-align: center;">Mi experiencia como voluntario</h3>
+          <p><b>Nombre del programa:</b> <a href="https://www.fundaciontelefonica.com/voluntarios/reconectados/" target="_blank">Reconectados</a></p>
+          <p><b>Descripción del programa:</b> Ayudar a la tercera edad a usar sus dispositivos móviles y las nuevas tecnologías de forma más ágil y eficaz</p>
+          <p><b>Lugar del programa:</b> Edificio de la Fundación Telefónica de Madrid, Madrid, España</p>
+          <p><b>Contenidos del programa:</b> <i class="fa fa-globe"></i><a href="./assets/voluntariados/Contenidos_Reconectados.pdf" target="_blank">Ver online</a><i class="fa fa-globe"></i></p>
+          <p><b>Presentación del programa:</b> <i class="fa fa-globe"></i><a href="./assets/voluntariados/Experiencia_Practica_Digital.pdf" target="_blank">Ver online</a><i class="fa fa-globe"></i></p>
+          <p><b>Idioma empleado:</b> Español</p>
+          <p><b>Mis funciones en el programa:</b></p>
+          <p> - Resolución de dudas</p>
+          <p> - Enseñar dinámicamente y con mucha práctica</p>
+          <p> - Tener paciencia y repetir la explicación múltiples veces</p>
         `
       },
       {
         text:`
-          <p>Página 2</p>
+          <h3 style="text-align: center;">Datos de la organización</h3>
+          <p><b>Teléfono:</b> +34 91 498 42 73</p>
+          <p><b>Teléfono de visitas guiadas:</b> +34 659 15 80 11</p>
+          <p><b>Dirección:</b> Calle de Fuencarral, 3, Madrid 28004, Madrid, España</p>
         `
-      }
+      },
+      {img: "https://i.postimg.cc/X7g3j1pM/prueba.jpg"},
     ]
   },
   //-- Voluntariado 5
@@ -234,14 +287,39 @@ const voluntariados = [
     pages:[
       {
         text:`
-          <p>Página 1</p>
+          <h3 style="text-align: center;">Mi experiencia como voluntario</h3>
+          <p><b>Tipo de experiencia:</b> <a href="https://www.worldpackers.com/positions/64681" target="_blank">Worldpackers</a> - voluntario, viajero y mochilero</p>
+          <p><b>Idioma empleado:</b> Inglés y Español</p>
+          <p><b>Funciones (lo que ofrezco):</b></p>
+          <p> - Ayudar al Chef a preparar el almuerzo</p>
+          <p> - Encargarse de los Check-In y los Check-Out de los nuevos huéspedes</p>
+          <p> - Encargarse de la limpieza del Hotel Rural</p>
+          <p> - Encargarse de la limpieza, orden y adecuación de las habitaciones de los huéspedes</p>
+          <p> - Hacer la colada del Hotel Rural</p>
+          <p><b>Funciones (lo que obtengo):</b></p>
+          <p> - Alojamiento en habitación compartida con separación (estilo hippie)</p>
+          <p> - Almuerzo diario, servido por el equipo de cocina</p>
+          <p> - Desayuno y cena por cuenta propia</p>
+          <p> - Consumo de productos del Hotel Rural gratis</p>
+          <p> - Wi-Fi gratuito</p>
+          <p> - Clases de Yoga a 5€ (para huéspedes son 25€)</p>
+          <p> - Uso gratuito de la lavandería y de la cocina</p>
+          <p> - 2 días libres a la semana</p>
         `
       },
       {
         text:`
-          <p>Página 2</p>
+          <h3 style="text-align: center;">Datos de la organización</h3>
+          <p><b>Teléfono:</b> +39 351 7126972</p>
+          <p><b>Correo electrónico:</b> info@ibizayoga.com & ibizayoga@me.com</p>
+          <p><b>Dirección:</b> Carrer Benirràs D, 51, 07810 San Juan Bautista, Ibiza, Illes Balears, España</p>
         `
-      }
+      },{img: "https://i.postimg.cc/d0N8kqJp/1.png"},{img: "https://i.postimg.cc/bvwxwGf1/2.png"},
+      {img: "https://i.postimg.cc/fRK7scpw/3.png"},{img: "https://i.postimg.cc/7ZD1jsBs/4.png"},{img: "https://i.postimg.cc/MZCmmK18/5.png"},
+      {img: "https://i.postimg.cc/Fs0gW5xk/6.png"},{img: "https://i.postimg.cc/0Q3d393D/7.png"},{img: "https://i.postimg.cc/kGbFPk3Z/8.png"},
+      {img: "https://i.postimg.cc/wxykNsyV/9.png"},{img: "https://i.postimg.cc/vBDt34PG/10.png"},{img: "https://i.postimg.cc/Hk4zxDc1/11.png"},
+      {img: "https://i.postimg.cc/HLY28ZXc/12.png"},{img: "https://i.postimg.cc/59TnKmdT/13.png"},{img: "https://i.postimg.cc/66yMhmSC/14.png"},
+      {img: "https://i.postimg.cc/mhWrK9VC/15.jpg"},{img: "https://i.postimg.cc/y8znsYNT/16.png"},{img: "https://i.postimg.cc/hPmMk7Kj/17.png"},
     ]
   },
 ];

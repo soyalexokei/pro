@@ -502,7 +502,7 @@ footer {
   border-radius: 8px;
   background:
     linear-gradient(135deg, rgba(11, 107, 203, 0.52), rgba(0, 168, 150, 0.28)),
-    url("assets/contacto/fondo.png") center/cover;
+    url("../contacto/fondo.png") center/cover;
   box-shadow: var(--shadow);
 }
 
