@@ -189,6 +189,20 @@ h3 {
 #perfil img {
   display: inline-block;
 }
+.contact-icons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.contact-icons a {
+  color: blue;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.contact-icons i {
+  font-size: 1.4rem;
+}
 /****************/
 
 /* Portada Web */

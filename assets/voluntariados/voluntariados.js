@@ -6,106 +6,106 @@ const modalLinksv3 = document.querySelectorAll("[data-modal-voluntariado3]");
 const modalLinksv2 = document.querySelectorAll("[data-modal-voluntariado2]");
 const modalLinksv1 = document.querySelectorAll("[data-modal-voluntariado1]");
 
-const modalText1 = document.querySelector("[data-modal-text-v1]");
-const modalText2 = document.querySelector("[data-modal-text-v2]");
-const modalText3 = document.querySelector("[data-modal-text-v3]");
-const modalText4 = document.querySelector("[data-modal-text-v4]");
-const modalText5 = document.querySelector("[data-modal-text-v5]");
+const modalTextv1 = document.querySelector("[data-modal-text-v1]");
+const modalTextv2 = document.querySelector("[data-modal-text-v2]");
+const modalTextv3 = document.querySelector("[data-modal-text-v3]");
+const modalTextv4 = document.querySelector("[data-modal-text-v4]");
+const modalTextv5 = document.querySelector("[data-modal-text-v5]");
 
-const modalClose1 = document.querySelector("[data-modal-close-v1]");
-const modalClose2 = document.querySelector("[data-modal-close-v2]");
-const modalClose3 = document.querySelector("[data-modal-close-v3]");
-const modalClose4 = document.querySelector("[data-modal-close-v4]");
-const modalClose5 = document.querySelector("[data-modal-close-v5]");
+const modalClosev1 = document.querySelector("[data-modal-close-v1]");
+const modalClosev2 = document.querySelector("[data-modal-close-v2]");
+const modalClosev3 = document.querySelector("[data-modal-close-v3]");
+const modalClosev4 = document.querySelector("[data-modal-close-v4]");
+const modalClosev5 = document.querySelector("[data-modal-close-v5]");
 
-const modalCounter1 = document.querySelector("[data-counter-v1]");
-const modalCounter2 = document.querySelector("[data-counter-v2]");
-const modalCounter3 = document.querySelector("[data-counter-v3]");
-const modalCounter4 = document.querySelector("[data-counter-v4]");
-const modalCounter5 = document.querySelector("[data-counter-v5]");
+const modalCounterv1 = document.querySelector("[data-counter-v1]");
+const modalCounterv2 = document.querySelector("[data-counter-v2]");
+const modalCounterv3 = document.querySelector("[data-counter-v3]");
+const modalCounterv4 = document.querySelector("[data-counter-v4]");
+const modalCounterv5 = document.querySelector("[data-counter-v5]");
 
-const modalPrev1 = document.querySelector("[data-prev-v1]");
-const modalPrev2 = document.querySelector("[data-prev-v2]");
-const modalPrev3 = document.querySelector("[data-prev-v3]");
-const modalPrev4 = document.querySelector("[data-prev-v4]");
-const modalPrev5 = document.querySelector("[data-prev-v5]");
+const modalPrevv1 = document.querySelector("[data-prev-v1]");
+const modalPrevv2 = document.querySelector("[data-prev-v2]");
+const modalPrevv3 = document.querySelector("[data-prev-v3]");
+const modalPrevv4 = document.querySelector("[data-prev-v4]");
+const modalPrevv5 = document.querySelector("[data-prev-v5]");
 
-const modalNext1 = document.querySelector("[data-next-v1]");
-const modalNext2 = document.querySelector("[data-next-v2]");
-const modalNext3 = document.querySelector("[data-next-v3]");
-const modalNext4 = document.querySelector("[data-next-v4]");
-const modalNext5 = document.querySelector("[data-next-v5]");
+const modalNextv1 = document.querySelector("[data-next-v1]");
+const modalNextv2 = document.querySelector("[data-next-v2]");
+const modalNextv3 = document.querySelector("[data-next-v3]");
+const modalNextv4 = document.querySelector("[data-next-v4]");
+const modalNextv5 = document.querySelector("[data-next-v5]");
 
-const modalImg1 = document.querySelector("[data-modal-img-v1]");
-const modalImg2 = document.querySelector("[data-modal-img-v2]");
-const modalImg3 = document.querySelector("[data-modal-img-v3]");
-const modalImg4 = document.querySelector("[data-modal-img-v4]");
-const modalImg5 = document.querySelector("[data-modal-img-v5]");
+const modalImgv1 = document.querySelector("[data-modal-img-v1]");
+const modalImgv2 = document.querySelector("[data-modal-img-v2]");
+const modalImgv3 = document.querySelector("[data-modal-img-v3]");
+const modalImgv4 = document.querySelector("[data-modal-img-v4]");
+const modalImgv5 = document.querySelector("[data-modal-img-v5]");
 
-const modalVideo1 = document.querySelector("[data-modal-video-v1]");
-const modalVideo2 = document.querySelector("[data-modal-video-v2]");
-const modalVideo3 = document.querySelector("[data-modal-video-v3]");
-const modalVideo4 = document.querySelector("[data-modal-video-v4]");
-const modalVideo5 = document.querySelector("[data-modal-video-v5]");
+const modalVideov1 = document.querySelector("[data-modal-video-v1]");
+const modalVideov2 = document.querySelector("[data-modal-video-v2]");
+const modalVideov3 = document.querySelector("[data-modal-video-v3]");
+const modalVideov4 = document.querySelector("[data-modal-video-v4]");
+const modalVideov5 = document.querySelector("[data-modal-video-v5]");
 /*************************************************************************************/
 
 /* Modals Elements */
 /*************************************************************************************/
-const modalElements = [
+const modalElementsV = [
   {
     modal: document.getElementById("voluntariado1"),
     links: modalLinksv1,
-    close: modalClose1,
-    text: modalText1,
-    img: modalImg1,
-    video: modalVideo1,
-    counter: modalCounter1,
-    prev: modalPrev1,
-    next: modalNext1
+    close: modalClosev1,
+    text: modalTextv1,
+    img: modalImgv1,
+    video: modalVideov1,
+    counter: modalCounterv1,
+    prev: modalPrevv1,
+    next: modalNextv1
   },
   {
     modal: document.getElementById("voluntariado2"),
     links: modalLinksv2,
-    close: modalClose2,
-    text: modalText2,
-    img: modalImg2,
-    video: modalVideo2,
-    counter: modalCounter2,
-    prev: modalPrev2,
-    next: modalNext2
+    close: modalClosev2,
+    text: modalTextv2,
+    img: modalImgv2,
+    video: modalVideov2,
+    counter: modalCounterv2,
+    prev: modalPrevv2,
+    next: modalNextv2
   },
   {
     modal: document.getElementById("voluntariado3"),
     links: modalLinksv3,
-    close: modalClose3,
-    text: modalText3,
-    img: modalImg3,
-    video: modalVideo3,
-    counter: modalCounter3,
-    prev: modalPrev3,
-    next: modalNext3
+    close: modalClosev3,
+    text: modalTextv3,
+    img: modalImgv3,
+    video: modalVideov3,
+    counter: modalCounterv3,
+    prev: modalPrevv3,
+    next: modalNextv3
   },
   {
     modal: document.getElementById("voluntariado4"),
     links: modalLinksv4,
-    close: modalClose4,
-    text: modalText4,
-    img: modalImg4,
-    video: modalVideo4,
-    counter: modalCounter4,
-    prev: modalPrev4,
-    next: modalNext4
+    close: modalClosev4,
+    text: modalTextv4,
+    img: modalImgv4,
+    video: modalVideov4,
+    counter: modalCounterv4,
+    prev: modalPrevv4,
+    next: modalNextv4
   },
   {
     modal: document.getElementById("voluntariado5"),
     links: modalLinksv5,
-    close: modalClose5,
-    text: modalText5,
-    img: modalImg5,
-    video: modalVideo5,
-    counter: modalCounter5,
-    prev: modalPrev5,
-    next: modalNext5
+    close: modalClosev5,
+    text: modalTextv5,
+    img: modalImgv5,
+    video: modalVideov5,
+    counter: modalCounterv5,
+    prev: modalPrevv5,
+    next: modalNextv5
   }
 ];
 /*************************************************************************************/
@@ -117,8 +117,8 @@ const modalElements = [
 const voluntariados = [
   //-- Voluntariado 1
   {
-    page:0,
-    pages: [
+    pageV:0,
+    pagesV: [
       {
         text:`
           <h3 style="text-align: center;">Mi experiencia como voluntario</h3>
@@ -145,8 +145,8 @@ const voluntariados = [
   },
   //-- Voluntariado 2
   {
-    page:0,
-    pages:[
+    pageV:0,
+    pagesV:[
       {
         text:`
           <h3 style="text-align: center;">Mi experiencia como voluntario</h3>
@@ -198,8 +198,8 @@ const voluntariados = [
   },
   //-- Voluntariado 3
   {
-    page:0,
-    pages:[
+    pageV:0,
+    pagesV:[
       {
         text:`
           <h3 style="text-align: center;">Mi experiencia como voluntario</h3>
@@ -253,8 +253,8 @@ const voluntariados = [
   },
   //-- Voluntariado 4
   {
-    page:0,
-    pages:[
+    pageV:0,
+    pagesV:[
       {
         text:`
           <h3 style="text-align: center;">Mi experiencia como voluntario</h3>
@@ -283,8 +283,8 @@ const voluntariados = [
   },
   //-- Voluntariado 5
   {
-    page:0,
-    pages:[
+    pageV:0,
+    pagesV:[
       {
         text:`
           <h3 style="text-align: center;">Mi experiencia como voluntario</h3>
@@ -325,22 +325,23 @@ const voluntariados = [
 ];
 /*************************************************************************************/
 
+
 /* Renderizar modales */
 /*************************************************************************************/
-function renderModal(index) {
-  const datos = voluntariados[index];
-  const ui = modalElements[index];
-  const page = datos.pages[datos.page];
-  ui.counter.textContent = `${datos.page+1} / ${datos.pages.length}`;
+function renderModalV(indexV) {
+  const datos = voluntariados[indexV];
+  const ui = modalElementsV[indexV];
+  const pageV = datos.pagesV[datos.pageV];
+  ui.counter.textContent = `${datos.pageV+1} / ${datos.pagesV.length}`;
 
-  if(page.text){
-    ui.text.innerHTML = page.text;
+  if(pageV.text){
+    ui.text.innerHTML = pageV.text;
   }else{
     ui.text.innerHTML = "";
   }
 
-  if(page.img){
-    ui.img.src = page.img;
+  if(pageV.img){
+    ui.img.src = pageV.img;
     ui.img.width = "450";
     ui.img.style.display = "block";
   }else{
@@ -348,12 +349,13 @@ function renderModal(index) {
     ui.img.style.display = "none";
   }
 
-  if(page.video){
-    ui.video.src = page.video;
+  if(pageV.video){
+    ui.video.src = pageV.video;
     ui.video.width = "400";
     ui.video.height = "533";
-    ui.video.setAttribute("allow", "autoplay");
-    ui.video.setAttribute("allowFullscreen", "false");
+    ui.video.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share");
+    ui.video.setAttribute("referrerpolicy", "strict-origin-when-cross-origin");
+    ui.video.setAttribute("allowFullscreen", "");
     ui.video.style.display = "block";
   }else{
     ui.video.removeAttribute("src");
@@ -364,12 +366,12 @@ function renderModal(index) {
 
 //-- Abrir modales
 /*************************************************************************************/
-modalElements.forEach( (ui,index) => {
+modalElementsV.forEach( (ui,indexV) => {
   ui.links.forEach(link=>{
-    link.addEventListener("click", (e) => {
-      e.preventDefault();
-      voluntariados[index].page=0;
-      renderModal(index);
+    link.addEventListener("click", (eventV) => {
+      eventV.preventDefault();
+      voluntariados[indexV].pageV=0;
+      renderModalV(indexV);
       ui.modal.classList.add("active");
     });
   });
@@ -378,12 +380,12 @@ modalElements.forEach( (ui,index) => {
 
 //-- Cerrar modales
 /*************************************************************************************/
-modalElements.forEach(ui=>{
+modalElementsV.forEach(ui=>{
   ui.close.addEventListener("click",()=>{
     ui.modal.classList.remove("active");
   });
-  ui.modal.addEventListener("click",(e)=>{
-    if(e.target===ui.modal){
+  ui.modal.addEventListener("click",(eventV)=>{
+    if(eventV.target===ui.modal){
       ui.modal.classList.remove("active");
     }
   });
@@ -392,28 +394,28 @@ modalElements.forEach(ui=>{
 
 // Botón siguiente
 /*************************************************************************************/
-modalElements.forEach((ui,index)=>{
+modalElementsV.forEach((ui,indexV)=>{
   ui.next.addEventListener("click",()=>{
-    const datos = voluntariados[index];
-    datos.page++;
-    if(datos.page>=datos.pages.length){
-      datos.page=0;
+    const datos = voluntariados[indexV];
+    datos.pageV++;
+    if(datos.pageV>=datos.pagesV.length){
+      datos.pageV=0;
     }
-    renderModal(index);
+    renderModalV(indexV);
   });
 });
 /*************************************************************************************/
 
 //-- Botón anterior
 /*************************************************************************************/
-modalElements.forEach((ui,index)=>{
+modalElementsV.forEach((ui,indexV)=>{
   ui.prev.addEventListener("click",()=>{
-    const datos = voluntariados[index];
-    datos.page--;
-    if(datos.page<0){
-        datos.page=datos.pages.length-1;
+    const datos = voluntariados[indexV];
+    datos.pageV--;
+    if(datos.pageV<0){
+        datos.pageV=datos.pagesV.length-1;
     }
-    renderModal(index);
+    renderModalV(indexV);
   });
 });
 /*************************************************************************************/
