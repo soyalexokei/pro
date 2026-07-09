@@ -220,7 +220,7 @@ const experiencias = [
           <h3>Datos de la empresa</h3>
           <p><b>Teléfono:</b> 91 591 75 90</p>
           <p><b>Correo electrónico:</b> info@grupodidactia.com</p>
-          <p><b>Sede:</b> Paseo de la Castellana, 194, Madrid 28046, Madrid, España</p>
+          <p><b>Sede:</b> <a href="https://maps.app.goo.gl/UFSKJctZkS7jTfCk7" target="_blank">Paseo de la Castellana, 194, Chamartín, 28046 Madrid, España</a></p>
         `
       },
       {
@@ -263,7 +263,7 @@ const experiencias = [
           <h3>Datos de la empresa</h3>
           <p><b>Teléfono:</b> 91 737 77 77</p>
           <p><b>Correo electrónico:</b> rgpd@airenetworks.es, rrhh@lcrcom.es, rrhh@lcrcom.net y rrhh.comunicados@lcrcom.es</p>
-          <p><b>Sede:</b> Sede: Calle de Fernando Rey, 8, Pozuelo de Alarcón, Madrid, España</p>
+          <p><b>Sede:</b> <a href="https://maps.app.goo.gl/1cRy69a1xHd3GRfP7" target="_blank">Fernando Rey, 8, 28223 Pozuelo de Alarcón, Madrid, España</a></p>
         `
       },
       {
@@ -286,7 +286,7 @@ const experiencias = [
           <p><b>Tipo de contrato:</b> Contrato por hora</p>
           <p><b>Modo de trabajo:</b> Presencial</p>
           <p><b>Idioma:</b> Español</p>
-          <p><b>Lugar de las clases:</b> <a href="https://envillaviciosadeodon.es/tag/centro-miguel-delibes/" target="_blank">Centro Cultural Miguel Delibes</a> en Villaviciosa de Odón-28670, Madrid, España</p>
+          <p><b>Lugar de las clases:</b> <a href="https://maps.app.goo.gl/tHZr84kPyW75KAmz5" target="_blank">Centro Cultural Miguel Delibes, Torrelaguna, 2, 28670 Villaviciosa de Odón, Madrid, España</a></p>
         `
       },
       {
@@ -314,7 +314,7 @@ const experiencias = [
           <p><b>Propietaria de la empresa:</b> Pilar Sánchez Núñez</p>
           <p><b>Teléfono:</b> 91 616 42 45</p>
           <p><b>Correo electrónico:</b> ritmopilar@hotmail.com</p>
-          <p><b>Sede:</b> Sede: Calle de Juan de Borbón, 19, Villaviciosa de Odón-28670, Madrid, España</p>
+          <p><b>Sede:</b> Sede: <a href="https://maps.app.goo.gl/zgWfcwgWARd6aRSSA" target="_blank">Juan de Borbón, 19, 28670 Villaviciosa de Odón, Madrid, España</a></p>
         `
       },
       {
@@ -364,13 +364,13 @@ const experiencias = [
       },
       {img: "https://i.postimg.cc/ncPb8Ssb/3.jpg"},
       {img: "https://i.postimg.cc/cHC1Mg2f/2.jpg"},
-      {video: "https://www.youtube.com/embed/XQUsgzujU7A"},
+      {video: "https://streamable.com/e/al0ysf"},
       {
         text: `
           <h3>Datos de la empresa</h3>
           <p><b>Teléfono:</b> 91 592 05 09</p>
           <p><b>Correos electrónicos:</b> telefonicaiot@telefonica.com, cristina.velazquezurenda@telefonica.com, cristina.patinogarcia@telefonica.com y preguntanos_peopleiotbd@telefonica.com</p>
-          <p><b>Sede:</b> Edificio Oeste 1, Distrito Telefónica, Madrid, Madrid, España</p>
+          <p><b>Sede:</b> <a href="https://maps.app.goo.gl/unhMBQeq11aKVz2y7" target="_blank">Distrito Telefónica Edificio Oeste 1, Ronda de la Comunicación, S/N, Fuencarral-El Pardo, 28050 Madrid, España</a></p>
         `
       },
       {
@@ -416,7 +416,7 @@ const experiencias = [
           <h3>Datos de la empresa</h3>
           <p><b>Teléfono:</b> +34 692 31 97 67</p>
           <p><b>Correos electrónicos:</b> info@macustica.com</p>
-          <p><b>Sede:</b> Novelista Pérez Galdós, 3, Inca, Mallorca, Islas Baleares, España</p>
+          <p><b>Sede:</b> <a href="https://maps.app.goo.gl/pvzJzhVh5py8qydy6" target="_blank">Pérez Galdós, 3, 07300 Inca, Islas Baleares, España</a></p>
         `
       },
       {
@@ -468,12 +468,12 @@ const experiencias = [
         img: "https://i.postimg.cc/dtHkCkk8/1.png"
       },
       {img: "https://i.postimg.cc/PrrvNzxX/2.png"},
-      {video: "https://www.youtube.com/embed/tedzX0xufsM"},
-      {video: "https://www.youtube.com/embed/s3GpWv21uVM"},
+      {video: "https://streamable.com/e/9zty5h"},
+      {video: "https://streamable.com/e/1y0fpi"},
       {img: "https://i.postimg.cc/9QsDx6B0/5.png"},
-      {video: "https://www.youtube.com/embed/GiRyIoHuMxY"},
-      {video: "https://www.youtube.com/embed/7jihgkFH99s"},
-      {video: "https://www.youtube.com/embed/fxJ11BakWaA"},
+      {video: "https://streamable.com/e/fk8cpg"},
+      {video: "https://streamable.com/e/g6wdtm"},
+      {video: "https://streamable.com/e/k1iqe1"},
       {img: "https://i.postimg.cc/138grmwb/9.png"},
       {img: "https://i.postimg.cc/d3Q3kwJH/10.png"},
       {img: "https://i.postimg.cc/pTJyLpM5/11.png"},
@@ -486,10 +486,10 @@ const experiencias = [
       {img: "https://i.postimg.cc/nh9zQdtJ/18.png"},
       {img: "https://i.postimg.cc/DzVzQq2b/19.png"},
       {img: "https://i.postimg.cc/8ChzZj5X/20.png"},
-      {video: "https://www.youtube.com/embed/tLiUptwA3E4"},
+      {video: "https://streamable.com/e/41qe3z"},
       {img: "https://i.postimg.cc/TwfYFf5d/22.png"},
-      {video: "https://www.youtube.com/embed/2yKlY0AHPMk"},
-      {video: "https://www.youtube.com/embed/vTACcj9CGSg"},
+      {video: "https://streamable.com/e/tpstki"},
+      {video: "https://streamable.com/e/wr0x6s"},
       {img: "https://i.postimg.cc/Tw0YXFnr/25.png"},
       {
         text: `
@@ -498,8 +498,8 @@ const experiencias = [
           <p><b>Teléfono de Harman Pro:</b> +44 1 904 343 142</p>
           <p><b>Correo electrónico de Algam Ibérica:</b> mpunti@algamiberica.com (CEO)</p>
           <p><b>Correo electrónico de Harman Pro:</b> adam.findlay@harman.com (Director de Ingeniería de Ventas EMEA)</p>
-          <p><b>Sede de Algam Ibérica:</b> Carrer de Garcilaso, 11, Sant Andreu - 08027, Barcelona, Cataluña, España</p>
-          <p><b>Sede de Harman Pro:</b> HARMAN, Westside, London Road, Hemel Hempstead HP3 9TD, Reino Unido</p>
+          <p><b>Sede de Algam Ibérica:</b> <a href="https://maps.app.goo.gl/tpjyxcLFqDoqf9Wm6" target="_blank">Garcilaso, 11, Sant Andreu, 08027 Barcelona, España</a></p>
+          <p><b>Sede de Harman Pro:</b> <a href="https://maps.app.goo.gl/uFuiPw5o9useeTax8" target="_blank">HARMAN, Westside, London Road, Hemel Hempstead HP3 9TD, Reino Unido</a></p>
         `
       },
       {
@@ -568,7 +568,7 @@ const experiencias = [
           <h3>Datos de la empresa</h3>
           <p><b>Teléfono:</b> +34 91 345 10 27</p>
           <p><b>Correo electrónico:</b> peopleandtalent@pss-ti.com</p>
-          <p><b>Ubicación:</b> <a href="https://maps.app.goo.gl/QBa63tFWuWXorY6SA" target="_blank">Spaces Madrid - Edificio E - 3º planta</a>, Madrid, España</p>
+          <p><b>Ubicación:</b> <a href="https://maps.app.goo.gl/QBa63tFWuWXorY6SA" target="_blank">Spaces Madrid - Edificio E - 3º planta, Vía de los Poblados, 1, Hortaleza, 28033 Madrid, España</a></p>
         `
       }
     ]
@@ -602,7 +602,7 @@ const experiencias = [
           <h3>Datos de la empresa</h3>
           <p><b>Teléfono:</b> +34 91 596 60 00</p>
           <p><b>Correo electrónico:</b> a.fernandez.perez@accenture.com</p>
-          <p><b>Ubicación:</b> <a href="https://maps.app.goo.gl/7ZYMeNQdo64QAAuv9" target="_blank">P.º de la Castellana, 85</a>, Tetuán, 28046 Madrid, España</p>
+          <p><b>Ubicación:</b> <a href="https://maps.app.goo.gl/iv9Lcj7Sapg59diG7" target="_blank">Paseo de la Castellana, 85, Tetuán, 28046, Madrid, España</a></p>
         `
       }
     ]
@@ -644,6 +644,7 @@ const experiencias = [
           <h3>Datos de la institución universitaria</h3>
           <p><b>Teléfonos:</b> +381 21 485 2056 y +34 91 665 50 60</p>
           <p><b>Correos electrónicos:</b> darkoste@uns.ac.rs, iro.ftn@uns.ac.rs y ana.arboleya@urjc.es</p>
+          <p><b>Sede:</b> <a href="https://maps.app.goo.gl/nWr1PJDAnpiyfQQj8" target="_blank">Zorana Đinđića 1, Novi Sad 21000, Serbia</a></p>
         `
       }
     ]
@@ -668,7 +669,7 @@ function renderModalE(indexE) {
 
   if(pageE.img){
     ui.img.src = pageE.img;
-    ui.img.width = "450";
+    ui.img.width = "500";
     ui.img.style.display = "block";
   }else{
     ui.img.removeAttribute("src");
@@ -677,11 +678,8 @@ function renderModalE(indexE) {
 
   if(pageE.video){
     ui.video.src = pageE.video;
-    ui.video.width = "400";
-    ui.video.height = "533";
-    ui.video.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share");
-    ui.video.setAttribute("referrerpolicy", "strict-origin-when-cross-origin");
-    ui.video.setAttribute("allowFullscreen", "");
+    ui.video.width = "420";
+    ui.video.height = "640";
     ui.video.style.display = "block";
   }else{
     ui.video.removeAttribute("src");

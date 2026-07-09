@@ -671,6 +671,12 @@ footer {
 .modal.active {
   display: flex;
 }
+.modal iframe{
+  display: block;
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  border: 0;
+}
 .modal-content {
   position: relative;
   width: min(800px, 95%);

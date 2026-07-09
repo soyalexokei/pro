@@ -111,8 +111,6 @@ const modalElementsV = [
 /*************************************************************************************/
 
 /* Datos de los voluntariados */
-//-- {img: "https://i.postimg.cc/"},
-//-- {video: "https://www.youtube.com/embed/"},
 /*************************************************************************************/
 const voluntariados = [
   //-- Voluntariado 1
@@ -124,7 +122,7 @@ const voluntariados = [
           <h3 style="text-align: center;">Mi experiencia como voluntario</h3>
           <p><b>Descripción del puesto:</b> Recolección de alimentos no perecederos de clientes voluntarios del supermercado</p>
           <p><b>Idioma empleado:</b> Español</p>
-          <p><b>Supermercado del voluntariado:</b> Mercadona</p>
+          <p><b>Supermercado del voluntariado:</b> <a href="https://maps.app.goo.gl/mWPpN1VKG3GLubEw8" target="_blank">Mercadona</a></p>
           <p><b>Funciones:</b></p>
           <p> - Recoger comida no perecedera para gente desfavorecida.</p>
           <p> - Clasificar la comida según el tipo.</p>
@@ -137,7 +135,7 @@ const voluntariados = [
           <h3 style="text-align: center;">Datos de la organización</h3>
           <p><b>Teléfono:</b> +34 91 734 63 83</p>
           <p><b>Correo electrónico:</b> administracion@bamadrid.org</p>
-          <p><b>Dirección:</b> Carretera de Colmenar Viejo, Km. 13, 600 (Vía de servicio), Madrid 28049, Madrid, España</p>
+          <p><b>Dirección:</b> <a href="https://maps.app.goo.gl/X6eesE1DmDtji6d76" target="_blank">M-607, Colegio San Fernando, Vía de servicio, Km 13, 600, Fuencarral-El Pardo, 28049 Madrid, España</a></p>
         `
       },{img: "https://i.postimg.cc/jSXDzqd0/1.jpg"},{img: "https://i.postimg.cc/Wb0F16B4/2.jpg"},{img: "https://i.postimg.cc/vZM1gxyt/3.jpg"},
       {img: "https://i.postimg.cc/MZCfwrr4/4.jpg"},{img: "https://i.postimg.cc/mrgtVxtc/5.jpg"},{img: "https://i.postimg.cc/DzpmMCXx/6.jpg"}
@@ -178,16 +176,16 @@ const voluntariados = [
           <h3 style="text-align: center;">Datos de la organización</h3>
           <p><b>Teléfono:</b> 04246 / 7704</p>
           <p><b>Correo electrónico:</b> office@feriencamp-doebriach.at</p>
-          <p><b>Dirección:</b> Glanzer Straße, 66, 9873 , Carintia, Austria</p>
+          <p><b>Dirección:</b> <a href="https://maps.app.goo.gl/4gY6SUDMpPEB9E9u7" target="_blank">Glanzer Straße, 66, 9873 , Carintia, Austria</a></p>
         `
       },{img: "https://i.postimg.cc/rF6Gj9x1/1.jpg"},{img: "https://i.postimg.cc/h4QbVYz4/2.jpg"},{img: "https://i.postimg.cc/QdhQGx6V/3.jpg"},
       {img: "https://i.postimg.cc/ZKr8Myx1/4.jpg"},{img: "https://i.postimg.cc/XYLwVShL/5.jpg"},{img: "https://i.postimg.cc/xddL8pV2/6.jpg"},
       {img: "https://i.postimg.cc/N0PmH8Qr/7.jpg"},{img: "https://i.postimg.cc/ydg9XJNp/8.jpg"},{img: "https://i.postimg.cc/vBJnPQgY/9.jpg"},
-      {img: "https://i.postimg.cc/QCcTwR1p/10.jpg"},{img: "https://i.postimg.cc/wxNL1sZ7/11.jpg"},{video: "https://www.youtube.com/embed/eyGhyAdtc30"},
-      {img: "https://i.postimg.cc/BQGDHnfN/13.jpg"},{img: "https://i.postimg.cc/KvrTNhZb/14.jpg"},{video: "https://www.youtube.com/embed/f0PHhWc2fb8"},
+      {img: "https://i.postimg.cc/QCcTwR1p/10.jpg"},{img: "https://i.postimg.cc/wxNL1sZ7/11.jpg"},{video: "https://streamable.com/e/vbl2lf"},
+      {img: "https://i.postimg.cc/BQGDHnfN/13.jpg"},{img: "https://i.postimg.cc/KvrTNhZb/14.jpg"},{video: "https://streamable.com/e/xdao8u"},
       {img: "https://i.postimg.cc/XYjC11JC/16.jpg"},{img: "https://i.postimg.cc/vZ06J7gS/17.jpg"},{img: "https://i.postimg.cc/vmD6b158/18.jpg"},
       {img: "https://i.postimg.cc/3w60RKZX/19.jpg"},{img: "https://i.postimg.cc/SsM2YwZw/20.jpg"},{img: "https://i.postimg.cc/4yRK6Bqn/21.jpg"},
-      {img: "https://i.postimg.cc/Hn0rBb1z/22.jpg"},{video: "https://www.youtube.com/embed/Y38JfytAGp4"},{img: "https://i.postimg.cc/tRFnqGn6/24.jpg"},
+      {img: "https://i.postimg.cc/Hn0rBb1z/22.jpg"},{video: "https://streamable.com/e/44f654"},{img: "https://i.postimg.cc/tRFnqGn6/24.jpg"},
       {img: "https://i.postimg.cc/65w2TbCm/25.jpg"},{img: "https://i.postimg.cc/tC516d5C/26.jpg"},{img: "https://i.postimg.cc/fRRVf327/27.jpg"},
       {img: "https://i.postimg.cc/7ZtfsxdF/28.jpg"},{img: "https://i.postimg.cc/GpB96W1H/29.jpg"},{img: "https://i.postimg.cc/TPZhxtRQ/30.jpg"},
       {img: "https://i.postimg.cc/mDCkg7k4/31.jpg"},{img: "https://i.postimg.cc/7h46GbJ2/32.jpg"},{img: "https://i.postimg.cc/wMkBhHDb/33.jpg"},
@@ -233,22 +231,49 @@ const voluntariados = [
           <h3 style="text-align: center;">Datos de la organización</h3>
           <p><b>Teléfono:</b> 05858 970 30</p>
           <p><b>Correo electrónico:</b> kontakt@sammatz.de</p>
-          <p><b>Dirección:</b> Im Dorfe, 11, 29490, Sammatz, Niedersachsen, Deutschland</p>
+          <p><b>Dirección:</b> <a href="https://maps.app.goo.gl/PMbvYfJ5BiBHcE2i8" target="_blank">Im Dorfe, 11, 29490, Sammatz, Niedersachsen, Deutschland</a></p>
         `
-      },{img: "https://i.postimg.cc/ZYGkSPbq/1.jpg"},{img: "https://i.postimg.cc/T3xZyRWM/2.jpg"},{video: "https://www.youtube.com/embed/PdxNRQczFw0"},
-      {img: "https://i.postimg.cc/28hs8qy7/4.jpg"},{img: "https://i.postimg.cc/3xZzmPgy/5.jpg"},{img: "https://i.postimg.cc/Xv7m8Q8s/6.jpg"},
-      {img: "https://i.postimg.cc/fb2FgmqD/7.jpg"},{img: "https://i.postimg.cc/QtFPLCv5/8.jpg"},{img: "https://i.postimg.cc/tT8c9yHc/9.jpg"},
-      {img: "https://i.postimg.cc/5yvR0G42/10.jpg"},{img: "https://i.postimg.cc/SQz5DX6b/11.jpg"},{video: "https://www.youtube.com/embed/ke9MInBdzH0"},
-      {video: "https://www.youtube.com/embed/NH58gQWo9mM"},{video: "https://www.youtube.com/embed/qTxboYDAUlI"},{video: "https://www.youtube.com/embed/N6I4kwdrwJ8"},
-      {video: "https://www.youtube.com/embed/m8u6yeTSMJY"},{img: "https://i.postimg.cc/CLT2tF7B/17.jpg"},{video: "https://www.youtube.com/embed/HUWCCp-Gm2w"},
-      {video: "https://www.youtube.com/embed/gutpMrinsBY"},{video: "https://www.youtube.com/embed/Fp-ecbHzHes"},{video: "https://www.youtube.com/embed/MbfkBCP5gNs"},
-      {video: "https://www.youtube.com/embed/oGmZW0v1NwQ"},{video: "https://www.youtube.com/embed/_W3qHpUdrX0"},{video: "https://www.youtube.com/embed/clOJ8arr8p8"},
-      {video: "https://www.youtube.com/embed/HaKFuO4M02s"},{img: "https://i.postimg.cc/vHrKwp2P/26.jpg"},{img: "https://i.postimg.cc/52fR4nZf/27.jpg"},
-      {img: "https://i.postimg.cc/xdCpHqf7/28.jpg"},{img: "https://i.postimg.cc/qvQZz2Ty/29.jpg"},{img: "https://i.postimg.cc/R0DsT9q0/30.jpg"},
-      {img: "https://i.postimg.cc/DZ4CjDbP/31.jpg"},{img: "https://i.postimg.cc/Gt0XZQFw/32.jpg"},{video: "https://www.youtube.com/embed/oLlmVGI7TPE"},
-      {img: "https://i.postimg.cc/wMhwHm2t/34.jpg"},{img: "https://i.postimg.cc/59v78hJx/35.jpg"},{img: "https://i.postimg.cc/3JTL1tr2/36.jpg"},
-      {img: "https://i.postimg.cc/qMx152gS/37.jpg"},{img: "https://i.postimg.cc/529sdjC0/38.jpg"},{img: "https://i.postimg.cc/K89JZFP5/39.jpg"},
-      {img: "https://i.postimg.cc/VNd4vT4P/40.jpg"},{video: "https://www.youtube.com/embed/2VpR7gxzvpw"}
+      },{img: "https://i.postimg.cc/ZYGkSPbq/1.jpg"},
+      {img: "https://i.postimg.cc/T3xZyRWM/2.jpg"},
+      {video: "https://streamable.com/e/srym5v"},
+      {img: "https://i.postimg.cc/28hs8qy7/4.jpg"},
+      {img: "https://i.postimg.cc/3xZzmPgy/5.jpg"},
+      {img: "https://i.postimg.cc/Xv7m8Q8s/6.jpg"},
+      {img: "https://i.postimg.cc/fb2FgmqD/7.jpg"},
+      {img: "https://i.postimg.cc/QtFPLCv5/8.jpg"},
+      {img: "https://i.postimg.cc/tT8c9yHc/9.jpg"},
+      {img: "https://i.postimg.cc/5yvR0G42/10.jpg"},
+      {img: "https://i.postimg.cc/SQz5DX6b/11.jpg"},
+      {video: "https://streamable.com/e/33hp9n"},
+      {video: "https://streamable.com/e/399ss1"},
+      {video: "https://streamable.com/e/7iouba"},
+      {video: "https://streamable.com/e/nhtj1p"},
+      {video: "https://streamable.com/e/8lm9xq"},
+      {img: "https://i.postimg.cc/CLT2tF7B/17.jpg"},
+      {video: "https://streamable.com/e/97r4c1"},
+      {video: "https://streamable.com/e/6d33fe"},
+      {video: "https://streamable.com/e/nx4s9f"},
+      {video: "https://streamable.com/e/mcgtbb"},
+      {video: "https://streamable.com/e/whkrj6"},
+      {video: "https://streamable.com/e/pi8ah7"},
+      {video: "https://streamable.com/e/q68fh3"},
+      {video: "https://streamable.com/e/butyzy"},
+      {img: "https://i.postimg.cc/vHrKwp2P/26.jpg"},
+      {img: "https://i.postimg.cc/52fR4nZf/27.jpg"},
+      {img: "https://i.postimg.cc/xdCpHqf7/28.jpg"},
+      {img: "https://i.postimg.cc/qvQZz2Ty/29.jpg"},
+      {img: "https://i.postimg.cc/R0DsT9q0/30.jpg"},
+      {img: "https://i.postimg.cc/DZ4CjDbP/31.jpg"},
+      {img: "https://i.postimg.cc/Gt0XZQFw/32.jpg"},
+      {video: "https://streamable.com/e/oas1fa"},
+      {img: "https://i.postimg.cc/wMhwHm2t/34.jpg"},
+      {img: "https://i.postimg.cc/59v78hJx/35.jpg"},
+      {img: "https://i.postimg.cc/3JTL1tr2/36.jpg"},
+      {img: "https://i.postimg.cc/qMx152gS/37.jpg"},
+      {img: "https://i.postimg.cc/529sdjC0/38.jpg"},
+      {img: "https://i.postimg.cc/K89JZFP5/39.jpg"},
+      {img: "https://i.postimg.cc/VNd4vT4P/40.jpg"},
+      {video: "https://streamable.com/e/yitban"},
     ]
   },
   //-- Voluntariado 4
@@ -275,7 +300,7 @@ const voluntariados = [
           <h3 style="text-align: center;">Datos de la organización</h3>
           <p><b>Teléfono:</b> +34 91 498 42 73</p>
           <p><b>Teléfono de visitas guiadas:</b> +34 659 15 80 11</p>
-          <p><b>Dirección:</b> Calle de Fuencarral, 3, Madrid 28004, Madrid, España</p>
+          <p><b>Dirección:</b> <a href="https://maps.app.goo.gl/Q97euJRGrbybDDHG7" target="_blank">Gran Vía, 28, Centro, 28013 Madrid, España</a></p>
         `
       },
       {img: "https://i.postimg.cc/X7g3j1pM/prueba.jpg"},
@@ -312,7 +337,7 @@ const voluntariados = [
           <h3 style="text-align: center;">Datos de la organización</h3>
           <p><b>Teléfono:</b> +39 351 7126972</p>
           <p><b>Correo electrónico:</b> info@ibizayoga.com & ibizayoga@me.com</p>
-          <p><b>Dirección:</b> Carrer Benirràs D, 51, 07810 San Juan Bautista, Ibiza, Illes Balears, España</p>
+          <p><b>Dirección:</b> <a href="https://maps.app.goo.gl/evEuG5BhMhRDvDoH6" target="_blank">Benirràs D, 51, 07810 Sant Joan de Labritja, Illes Balears, España</a></p>
         `
       },{img: "https://i.postimg.cc/d0N8kqJp/1.png"},{img: "https://i.postimg.cc/bvwxwGf1/2.png"},
       {img: "https://i.postimg.cc/fRK7scpw/3.png"},{img: "https://i.postimg.cc/7ZD1jsBs/4.png"},{img: "https://i.postimg.cc/MZCmmK18/5.png"},
@@ -342,7 +367,7 @@ function renderModalV(indexV) {
 
   if(pageV.img){
     ui.img.src = pageV.img;
-    ui.img.width = "450";
+    ui.img.width = "500";
     ui.img.style.display = "block";
   }else{
     ui.img.removeAttribute("src");
@@ -351,11 +376,8 @@ function renderModalV(indexV) {
 
   if(pageV.video){
     ui.video.src = pageV.video;
-    ui.video.width = "400";
-    ui.video.height = "533";
-    ui.video.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share");
-    ui.video.setAttribute("referrerpolicy", "strict-origin-when-cross-origin");
-    ui.video.setAttribute("allowFullscreen", "");
+    ui.video.width = "420";
+    ui.video.height = "640";
     ui.video.style.display = "block";
   }else{
     ui.video.removeAttribute("src");
