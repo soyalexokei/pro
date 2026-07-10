@@ -176,7 +176,7 @@ const voluntariados = [
           <h3 style="text-align: center;">Datos de la organización</h3>
           <p><b>Teléfono:</b> 04246 / 7704</p>
           <p><b>Correo electrónico:</b> office@feriencamp-doebriach.at</p>
-          <p><b>Dirección:</b> <a href="https://maps.app.goo.gl/4gY6SUDMpPEB9E9u7" target="_blank">Glanzer Straße, 66, 9873 , Carintia, Austria</a></p>
+          <p><b>Dirección:</b> <a href="https://maps.app.goo.gl/4gY6SUDMpPEB9E9u7" target="_blank">Glanzer Straße, 66, 9873 , Kärnten, Österreich</a></p>
         `
       },{img: "https://i.postimg.cc/rF6Gj9x1/1.jpg"},{img: "https://i.postimg.cc/h4QbVYz4/2.jpg"},{img: "https://i.postimg.cc/QdhQGx6V/3.jpg"},
       {img: "https://i.postimg.cc/ZKr8Myx1/4.jpg"},{img: "https://i.postimg.cc/XYLwVShL/5.jpg"},{img: "https://i.postimg.cc/xddL8pV2/6.jpg"},

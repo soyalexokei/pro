@@ -1,5 +1,6 @@
 //-- Declaración de variables
 /*************************************************************************************/
+const modalLinkse10 = document.querySelectorAll("[data-modal-experiencia10]");
 const modalLinkse9 = document.querySelectorAll("[data-modal-experiencia9]");
 const modalLinkse8 = document.querySelectorAll("[data-modal-experiencia8]");
 const modalLinkse7 = document.querySelectorAll("[data-modal-experiencia7]");
@@ -19,6 +20,7 @@ const modalTexte6 = document.querySelector("[data-modal-text-e6]");
 const modalTexte7 = document.querySelector("[data-modal-text-e7]");
 const modalTexte8 = document.querySelector("[data-modal-text-e8]");
 const modalTexte9 = document.querySelector("[data-modal-text-e9]");
+const modalTexte10 = document.querySelector("[data-modal-text-e10]");
 
 const modalClosee1 = document.querySelector("[data-modal-close-e1]");
 const modalClosee2 = document.querySelector("[data-modal-close-e2]");
@@ -29,6 +31,7 @@ const modalClosee6 = document.querySelector("[data-modal-close-e6]");
 const modalClosee7 = document.querySelector("[data-modal-close-e7]");
 const modalClosee8 = document.querySelector("[data-modal-close-e8]");
 const modalClosee9 = document.querySelector("[data-modal-close-e9]");
+const modalClosee10 = document.querySelector("[data-modal-close-e10]");
 
 const modalCountere1 = document.querySelector("[data-counter-e1]");
 const modalCountere2 = document.querySelector("[data-counter-e2]");
@@ -39,6 +42,7 @@ const modalCountere6 = document.querySelector("[data-counter-e6]");
 const modalCountere7 = document.querySelector("[data-counter-e7]");
 const modalCountere8 = document.querySelector("[data-counter-e8]");
 const modalCountere9 = document.querySelector("[data-counter-e9]");
+const modalCountere10 = document.querySelector("[data-counter-e10]");
 
 const modalPreve1 = document.querySelector("[data-prev-e1]");
 const modalPreve2 = document.querySelector("[data-prev-e2]");
@@ -49,6 +53,7 @@ const modalPreve6 = document.querySelector("[data-prev-e6]");
 const modalPreve7 = document.querySelector("[data-prev-e7]");
 const modalPreve8 = document.querySelector("[data-prev-e8]");
 const modalPreve9 = document.querySelector("[data-prev-e9]");
+const modalPreve10 = document.querySelector("[data-prev-e10]");
 
 const modalNexte1 = document.querySelector("[data-next-e1]");
 const modalNexte2 = document.querySelector("[data-next-e2]");
@@ -59,6 +64,7 @@ const modalNexte6 = document.querySelector("[data-next-e6]");
 const modalNexte7 = document.querySelector("[data-next-e7]");
 const modalNexte8 = document.querySelector("[data-next-e8]");
 const modalNexte9 = document.querySelector("[data-next-e9]");
+const modalNexte10 = document.querySelector("[data-next-e10]");
 
 const modalImge1 = document.querySelector("[data-modal-img-e1]");
 const modalImge2 = document.querySelector("[data-modal-img-e2]");
@@ -69,6 +75,7 @@ const modalImge6 = document.querySelector("[data-modal-img-e6]");
 const modalImge7 = document.querySelector("[data-modal-img-e7]");
 const modalImge8 = document.querySelector("[data-modal-img-e8]");
 const modalImge9 = document.querySelector("[data-modal-img-e9]");
+const modalImge10 = document.querySelector("[data-modal-img-e10]");
 
 const modalVideoe1 = document.querySelector("[data-modal-video-e1]");
 const modalVideoe2 = document.querySelector("[data-modal-video-e2]");
@@ -79,6 +86,7 @@ const modalVideoe6 = document.querySelector("[data-modal-video-e6]");
 const modalVideoe7 = document.querySelector("[data-modal-video-e7]");
 const modalVideoe8 = document.querySelector("[data-modal-video-e8]");
 const modalVideoe9 = document.querySelector("[data-modal-video-e9]");
+const modalVideoe10 = document.querySelector("[data-modal-video-e10]");
 /*************************************************************************************/
 
 
@@ -183,6 +191,17 @@ const modalElementsE = [
     counter: modalCountere9,
     prev: modalPreve9,
     next: modalNexte9
+  },
+  {
+    modal: document.getElementById("experiencia10"),
+    links: modalLinkse10,
+    close: modalClosee10,
+    text: modalTexte10,
+    img: modalImge10,
+    video: modalVideoe10,
+    counter: modalCountere10,
+    prev: modalPreve10,
+    next: modalNexte10
   }
 ];
 /*************************************************************************************/
@@ -647,6 +666,87 @@ const experiencias = [
           <p><b>Sede:</b> <a href="https://maps.app.goo.gl/nWr1PJDAnpiyfQQj8" target="_blank">Zorana Đinđića 1, Novi Sad 21000, Serbia</a></p>
         `
       }
+    ]
+  },
+  //-- Experiencia 10
+  {
+    pageE: 0,
+    pagesE: [
+      {
+        text: `
+          <h3>Experiencia Work & Travel de 4 meses</h3>
+          <p><b>Agencia de España:</b> <a href="https://yowork.es/" target="_blank">YoWork</a></p>
+          <p><b>Agencia de EE.UU:</b> <a href="https://allianceabroad.com/es/" target="_blank">Alliance Abroad</a></p>
+          <p><b>Empresa contratante de EE.UU:</b> <a href="https://www.kalahariresorts.com/wisconsin/" target="_blank">Kalahari Resorts & Conventions</a></p>
+          <p><b>Mi alojamiento en EE.UU:</b> <a href="https://maps.app.goo.gl/PzG7fM8U1m9eHqiF6" target="_blank">Bunker Run</a></p>
+          <h4><u>Junio y Julio 2019</u></h4>
+          <ul>
+            <p><b>Puesto:</b> Socorrista en un parque acuático indoor y outdoor</p>
+            <p><b>Requisitos previos:</b> Aprobación de un curso teórico-práctico de una semana</p>
+            <p><b>Sector:</b> Seguridad y salud</p>
+            <p><b>Idioma:</b> Inglés</p>
+            <p><b>Tipo de contrato:</b> Contrato por hora</p>
+            <p><b>Remuneración:</b> 12$ brutos / h</p>
+            <p><b>Funciones:</b></p>
+            <p> - Vigilar que los bañistas del parque acuático cumplan<br>las normas</p>
+            <p> - Vigilar que nadie se ahogue y evitarlo si sucediera</p>
+            <p> - Seguir el protocolo de actuación cuando alguien se<br>está ahogando</p>
+            <p> - Llevar un orden en la parte de arriba de una atracción,<br>dejando un margen de seguridad<br>entre bañistas</p>
+          </ul>
+        `
+      },
+      {
+        text: `
+          <h4><u>Agosto y Septiembre 2019</u></h4>
+          <ul>
+            <p><b>Puesto:</b> Dependiente de las tiendas del Resort</p>
+            <p><b>Requisitos previos:</b> Entrevista técnica y práctica en inglés con el Manager</p>
+            <p><b>Sector:</b> Ventas</p>
+            <p><b>Idioma:</b> Inglés</p>
+            <p><b>Tipo de contrato:</b> Contrato por hora</p>
+            <p><b>Remuneración:</b> 12$ brutos / h</p>
+            <p><b>Tipos de tiendas:</b></p>
+            <p> - Tienda de ropa y juguetes para niños/as</p>
+            <p> - Tienda de ropa de adolescentes y adultos</p>
+            <p> - Tienda de alimentación, snacks, souvenirs y parafarmacia (ultramarinos)</p>
+            <p><b>Funciones (turnos rotatorios):</b></p>
+            <p> - Conseguir el mayor porcentaje de ventas</p>
+            <p> - Ordenar y reponer sus artículos</p>
+            <p> - Mantenerla limpia</p>
+            <p> - Cobrar a los clientes</p>
+            <p> - Convencer, aconsejar y ayudar a los clientes</p>
+            <p> - Conseguir que la experiencia de compra del cliente<br>sea lo más satisfactoria posible</p>
+          </ul>
+        `
+      },
+      {
+        text: `
+          <h4><u>Motivo del cambio de trabajo</u></h4>
+          <ul>
+            <p>
+              Cambié de ser socorrista a dependiente de tienda porque quería mejorar y hablar más en inglés.
+              De socorrista casi no hablaba y éramos muchos hispanos trabajando. Al cambiar al departamento de
+              ventas, cambié a un entorno más nativo (únicamente en inglés) y por ende, pude hablar con más fluidez
+              en inglés y mejorar bastante más.
+            </p>
+          </ul>
+        `
+      },
+      {
+        text: `
+          <h3>Datos de la empresa contratante de EE.UU</h3>
+          <p><b>Teléfono:</b> +1 608-254-5466</p>
+          <p><b>Correo electrónico:</b> WIGroups@KalahariResorts.com</p>
+          <p><b>Sede:</b> <a href="https://maps.app.goo.gl/rVDf6wYUPEkmwfH88" target="_blank">1305 Kalahari Dr, Baraboo, Wisconsin 53913, United States of America</a></p>
+        `
+      },
+      {img: "https://i.postimg.cc/G2LCCfg0/IMG20250613194138714.png"},
+      {img: "https://i.postimg.cc/FKmtyq4f/IMG20250613194600699.png"},
+      {img: "https://i.postimg.cc/D0fyx03X/IMG20250613195750872.png"},
+      {img: "https://i.postimg.cc/5yP9TJfk/IMG20250618192312.png"},
+      {img: "https://i.postimg.cc/tgXqq77m/IMG20250618193921.png"},
+      {img: "https://i.postimg.cc/N040mmWc/IMG20250618192750096.png"},
+      {img: "https://i.postimg.cc/W3v4JS9S/IMG20250618194523377.png"},
     ]
   }
 ];
