@@ -103,105 +103,6 @@ const modalElementsC = [
     counter: modalCounterc1,
     prev: modalPrevc1,
     next: modalNextc1
-  },
-  {
-    modal: document.getElementById("experiencia2"),
-    links: modalLinkse2,
-    close: modalClosee2,
-    text: modalTexte2,
-    img: modalImge2,
-    video: modalVideoe2,
-    counter: modalCountere2,
-    prev: modalPreve2,
-    next: modalNexte2
-  },
-  {
-    modal: document.getElementById("experiencia3"),
-    links: modalLinkse3,
-    close: modalClosee3,
-    text: modalTexte3,
-    img: modalImge3,
-    video: modalVideoe3,
-    counter: modalCountere3,
-    prev: modalPreve3,
-    next: modalNexte3
-  },
-  {
-    modal: document.getElementById("experiencia4"),
-    links: modalLinkse4,
-    close: modalClosee4,
-    text: modalTexte4,
-    img: modalImge4,
-    video: modalVideoe4,
-    counter: modalCountere4,
-    prev: modalPreve4,
-    next: modalNexte4
-  },
-  {
-    modal: document.getElementById("experiencia5"),
-    links: modalLinkse5,
-    close: modalClosee5,
-    text: modalTexte5,
-    img: modalImge5,
-    video: modalVideoe5,
-    counter: modalCountere5,
-    prev: modalPreve5,
-    next: modalNexte5
-  },
-  {
-    modal: document.getElementById("experiencia6"),
-    links: modalLinkse6,
-    close: modalClosee6,
-    text: modalTexte6,
-    img: modalImge6,
-    video: modalVideoe6,
-    counter: modalCountere6,
-    prev: modalPreve6,
-    next: modalNexte6
-  },
-  {
-    modal: document.getElementById("experiencia7"),
-    links: modalLinkse7,
-    close: modalClosee7,
-    text: modalTexte7,
-    img: modalImge7,
-    video: modalVideoe7,
-    counter: modalCountere7,
-    prev: modalPreve7,
-    next: modalNexte7
-  },
-  {
-    modal: document.getElementById("experiencia8"),
-    links: modalLinkse8,
-    close: modalClosee8,
-    text: modalTexte8,
-    img: modalImge8,
-    video: modalVideoe8,
-    counter: modalCountere8,
-    prev: modalPreve8,
-    next: modalNexte8
-  },
-  {
-    modal: document.getElementById("experiencia9"),
-    links: modalLinkse9,
-    close: modalClosee9,
-    text: modalTexte9,
-    img: modalImge9,
-    video: modalVideoe9,
-    counter: modalCountere9,
-    prev: modalPreve9,
-    next: modalNexte9
-  },
-  {
-    modal: document.getElementById("experiencia10"),
-    links: modalLinkse10,
-    close: modalClosee10,
-    text: modalTexte10,
-    img: modalImge10,
-    video: modalVideoe10,
-    counter: modalCountere10,
-    prev: modalPreve10,
-    next: modalNexte10
   }
 ];
 /*************************************************************************************/
@@ -257,7 +158,7 @@ const certificaciones = [
 
 /* Renderizar modales */
 /*************************************************************************************/
-function renderModalE(indexC) {
+function renderModalC(indexC) {
   const datos = certificaciones[indexC];
   const ui = modalElementsC[indexC];
   const pageC = datos.pagesC[datos.pageC];
@@ -297,7 +198,7 @@ modalElementsC.forEach( (ui,indexC) => {
     link.addEventListener("click", (eventC) => {
       eventC.preventDefault();
       experiencias[indexC].pageC=0;
-      renderModalE(indexC);
+      renderModalC(indexC);
       ui.modal.classList.add("active");
     });
   });
@@ -327,7 +228,7 @@ modalElementsC.forEach((ui,indexC)=>{
     if(datos.pageC>=datos.pagesC.length){
       datos.pageC=0;
     }
-    renderModalE(indexC);
+    renderModalC(indexC);
   });
 });
 /*************************************************************************************/
@@ -341,7 +242,7 @@ modalElementsC.forEach((ui,indexC)=>{
     if(datos.pageC<0){
         datos.pageC=datos.pagesC.length-1;
     }
-    renderModalE(indexC);
+    renderModalC(indexC);
   });
 });
 /*************************************************************************************/
