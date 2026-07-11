@@ -10,6 +10,8 @@ const modalLinksc7 = document.querySelectorAll("[data-modal-certificacion7]");
 const modalLinksc8 = document.querySelectorAll("[data-modal-certificacion8]");
 const modalLinksc9 = document.querySelectorAll("[data-modal-certificacion9]");
 const modalLinksc10 = document.querySelectorAll("[data-modal-certificacion10]");
+const modalLinksc11 = document.querySelectorAll("[data-modal-certificacion11]");
+const modalLinksc12 = document.querySelectorAll("[data-modal-certificacion12]");
 
 const modalTextc1 = document.querySelector("[data-modal-text-c1]");
 const modalTextc2 = document.querySelector("[data-modal-text-c2]");
@@ -21,6 +23,8 @@ const modalTextc7 = document.querySelector("[data-modal-text-c7]");
 const modalTextc8 = document.querySelector("[data-modal-text-c8]");
 const modalTextc9 = document.querySelector("[data-modal-text-c9]");
 const modalTextc10 = document.querySelector("[data-modal-text-c10]");
+const modalTextc11 = document.querySelector("[data-modal-text-c11]");
+const modalTextc12 = document.querySelector("[data-modal-text-c12]");
 
 const modalClosec1 = document.querySelector("[data-modal-close-c1]");
 const modalClosec2 = document.querySelector("[data-modal-close-c2]");
@@ -32,6 +36,8 @@ const modalClosec7 = document.querySelector("[data-modal-close-c7]");
 const modalClosec8 = document.querySelector("[data-modal-close-c8]");
 const modalClosec9 = document.querySelector("[data-modal-close-c9]");
 const modalClosec10 = document.querySelector("[data-modal-close-c10]");
+const modalClosec11 = document.querySelector("[data-modal-close-c11]");
+const modalClosec12 = document.querySelector("[data-modal-close-c12]");
 
 const modalCounterc1 = document.querySelector("[data-counter-c1]");
 const modalCounterc2 = document.querySelector("[data-counter-c2]");
@@ -43,6 +49,8 @@ const modalCounterc7 = document.querySelector("[data-counter-c7]");
 const modalCounterc8 = document.querySelector("[data-counter-c8]");
 const modalCounterc9 = document.querySelector("[data-counter-c9]");
 const modalCounterc10 = document.querySelector("[data-counter-c10]");
+const modalCounterc11 = document.querySelector("[data-counter-c11]");
+const modalCounterc12 = document.querySelector("[data-counter-c12]");
 
 const modalPrevc1 = document.querySelector("[data-prev-c1]");
 const modalPrevc2 = document.querySelector("[data-prev-c2]");
@@ -54,6 +62,8 @@ const modalPrevc7 = document.querySelector("[data-prev-c7]");
 const modalPrevc8 = document.querySelector("[data-prev-c8]");
 const modalPrevc9 = document.querySelector("[data-prev-c9]");
 const modalPrevc10 = document.querySelector("[data-prev-c10]");
+const modalPrevc11 = document.querySelector("[data-prev-c11]");
+const modalPrevc12 = document.querySelector("[data-prev-c12]");
 
 const modalNextc1 = document.querySelector("[data-next-c1]");
 const modalNextc2 = document.querySelector("[data-next-c2]");
@@ -65,6 +75,8 @@ const modalNextc7 = document.querySelector("[data-next-c7]");
 const modalNextc8 = document.querySelector("[data-next-c8]");
 const modalNextc9 = document.querySelector("[data-next-c9]");
 const modalNextc10 = document.querySelector("[data-next-c10]");
+const modalNextc11 = document.querySelector("[data-next-c11]");
+const modalNextc12 = document.querySelector("[data-next-c12]");
 
 const modalImgc1 = document.querySelector("[data-modal-img-c1]");
 const modalImgc2 = document.querySelector("[data-modal-img-c2]");
@@ -76,6 +88,8 @@ const modalImgc7 = document.querySelector("[data-modal-img-c7]");
 const modalImgc8 = document.querySelector("[data-modal-img-c8]");
 const modalImgc9 = document.querySelector("[data-modal-img-c9]");
 const modalImgc10 = document.querySelector("[data-modal-img-c10]");
+const modalImgc11 = document.querySelector("[data-modal-img-c11]");
+const modalImgc12 = document.querySelector("[data-modal-img-c12]");
 
 const modalVideoc1 = document.querySelector("[data-modal-video-c1]");
 const modalVideoc2 = document.querySelector("[data-modal-video-c2]");
@@ -87,6 +101,8 @@ const modalVideoc7 = document.querySelector("[data-modal-video-c7]");
 const modalVideoc8 = document.querySelector("[data-modal-video-c8]");
 const modalVideoc9 = document.querySelector("[data-modal-video-c9]");
 const modalVideoc10 = document.querySelector("[data-modal-video-c10]");
+const modalVideoc11 = document.querySelector("[data-modal-video-c11]");
+const modalVideoc12 = document.querySelector("[data-modal-video-c12]");
 /*************************************************************************************/
 
 
@@ -202,6 +218,28 @@ const modalElementsC = [
     counter: modalCounterc10,
     prev: modalPrevc10,
     next: modalNextc10
+  },
+  {
+    modal: document.getElementById("certificacion11"),
+    links: modalLinksc11,
+    close: modalClosec11,
+    text: modalTextc11,
+    img: modalImgc11,
+    video: modalVideoc11,
+    counter: modalCounterc11,
+    prev: modalPrevc11,
+    next: modalNextc11
+  },
+  {
+    modal: document.getElementById("certificacion12"),
+    links: modalLinksc12,
+    close: modalClosec12,
+    text: modalTextc12,
+    img: modalImgc12,
+    video: modalVideoc12,
+    counter: modalCounterc12,
+    prev: modalPrevc12,
+    next: modalNextc12
   }
 ];
 /*************************************************************************************/
@@ -672,6 +710,81 @@ const certificaciones = [
         `
       }
     ]
+  },
+  //-- Certificación 11
+  {
+    pageC: 0,
+    pagesC: [
+      {
+        text: `
+          <h3>Certificación Soft Skills</h3>
+          <p><b>Organizado por:</b> <a href="https://maps.app.goo.gl/L6GM2iBD8GmtNWK5A" target="_blank">Randstad, Vía de los Poblados, 9, Edif Trianón, bloque B, 4ª planta, Hortaleza, 28033 Madrid, España</a></p>
+          <p><b>Modo del curso:</b> Remoto</p>
+          <p><b>Ver título oficial:</b> <i class="fa fa-globe"></i><a href="./assets/certificaciones/soft_skills.pdf" target="_blank">Ver online</a><i class="fa fa-globe"></i></p>
+        `
+      }
+    ]
+  },
+  //-- Certificación 12
+  {
+    pageC: 0,
+    pagesC: [
+      {
+        text: `
+          <h3>Certificación IA Generativa</h3>
+          <p><b>Organizado por:</b> <a href="https://maps.app.goo.gl/tEbeXXdMCEeExwJf8" target="_blank">EOI, Gregorio del Amo, 6, Moncloa - Aravaca, 28040 Madrid, España</a></p>
+          <p><b>Lugar:</b> Online, a través de la plataforma <a href="https://campus.eoi.es/" target="_blank">Campus EOI</a></p>
+          <p><b>Calendario:</b> Del miércoles 2 de octubre de 2024 al jueves 5 de diciembre de 2024</p>
+          <p><b>Horario:</b> De lunes a viernes de 10:00 a 14:00</p>
+          <p><b>Duración:</b> 220 h</p>
+          <p><b>Ver título oficial:</b> <i class="fa fa-globe"></i><a href="./assets/certificaciones/IAgenerativaEOI.pdf" target="_blank">Ver online</a><i class="fa fa-globe"></i></p>
+        `
+      },
+      {
+        text: `<h3>Logo de la empresa</h3>`,
+        img: "./assets/certificaciones/logo_eoi.png"
+      },
+      {
+        text: `
+          <p><b>Profesores:</b></p>
+          <p>1. Raúl Ordóñez <a href="https://www.instagram.com/jaspeante/" target="_blank"><i class="fa-brands fa-instagram"></i></a> <a href="https://www.linkedin.com/in/raulordonez/" target="_blank"><i class="fa-brands fa-linkedin"></i></a> <a href="mailto:hola@raulordonez.com" target="_blank"><i class="fa fa-envelope"></i></a> <a href="https://raulordonez.com/" target="_blank"><i class="fa fa-globe"></i></a> <a href="https://www.youtube.com/jasp" target="_blank"><i class="fa-brands fa-youtube"></i></a></p>
+          <p>2. Javier Albelo <a href="https://www.linkedin.com/in/javier-albelo-45a89132/" target="_blank"><i class="fa-brands fa-linkedin"></i></a> <a href="https://www.youtube.com/watch?v=us1CCu7eHis" target="_blank"><i class="fa-brands fa-youtube"></i></a></p>
+          <p>3. Fran Bartolomé Valentín-Gamazo <a href="https://www.linkedin.com/in/franbvgamazo/?originalSubdomain=es" target="_blank"><i class="fa-brands fa-linkedin"></i></a> <a href="mailto:franbvg@proton.me" target="_blank"><i class="fa fa-envelope"></i></a> <a href="https://dayonerobot.com/" target="_blank"><i class="fa fa-globe"></i></a></p>
+          <p>4. Yaye Cáceres <a href="https://www.linkedin.com/in/yayecaceres/" target="_blank"><i class="fa-brands fa-linkedin"></i></a> <a href="mailto:yayecaceres@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a> <a href="https://typeflowai.com/" target="_blank"><i class="fa fa-globe"></i></a> <a href="https://www.youtube.com/channel/UCwyCFDXrH-MbmUnN5myOwOA" target="_blank"><i class="fa-brands fa-youtube"></i></a></p>
+          <p>5. Esperanza Noronha López <a href="https://www.linkedin.com/in/esperanzanoronhalopez/?originalSubdomain=es" target="_blank"><i class="fa-brands fa-linkedin"></i></a> <a href="mailto:espenoronha@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a> <a href="https://esperanzanoronha.com/" target="_blank"><i class="fa fa-globe"></i></a> <a href="https://www.instagram.com/espenoronha/" target="_blank"><i class="fa-brands fa-instagram"></i></a> <a href="https://twitter.com/espenoronha" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="15" height="15" fill="currentColor"><path d="M28.15 0H21.5l-3.9 7.5L13.6 0H7.35l6.7 12.3L6 24.25h6.65L18 17.5l5.35 6.75h6.85L22.95 12.3 28.15 0z"/></svg></a></p>
+          <p>6. Efrén J. Rodríguez <a href="https://www.linkedin.com/in/efren-j-rodriguez/?trk=public_profile_samename-profile&originalSubdomain=es" target="_blank"><i class="fa-brands fa-linkedin"></i></a> <a href="mailto:efrenjrodriguez.edu@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a> <a href="https://www.instagram.com/efrenjrodriguez/" target="_blank"><i class="fa-brands fa-instagram"></i></a> <a href="https://twitter.com/efrenjrodriguez" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="15" height="15" fill="currentColor"><path d="M28.15 0H21.5l-3.9 7.5L13.6 0H7.35l6.7 12.3L6 24.25h6.65L18 17.5l5.35 6.75h6.85L22.95 12.3 28.15 0z"/></svg></a></p>
+          <p>7. Pedro Martín Díaz <a href="https://www.linkedin.com/in/pedro-martin-diaz/" target="_blank"><i class="fa-brands fa-linkedin"></i></a> <a href="mailto:pedromartindiaz@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a> <a href="https://pedromartindiaz.com/" target="_blank"><i class="fa fa-globe"></i></a> <a href="https://www.instagram.com/pedromartindiaz/" target="_blank"><i class="fa-brands fa-instagram"></i></a> <a href="https://twitter.com/pedrovisualeo" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="15" height="15" fill="currentColor"><path d="M28.15 0H21.5l-3.9 7.5L13.6 0H7.35l6.7 12.3L6 24.25h6.65L18 17.5l5.35 6.75h6.85L22.95 12.3 28.15 0z"/></svg></a></p>
+        `
+      },
+      {
+        text: `
+          <p><b>Contenido del curso:</b></p>
+          <p>Módulo 1: <a href="./assets/certificaciones/CursoIA/Módulo1-Fundamentos-IA.pdf" target="_blank">Fundamentos de inteligencia artificial</a></p>
+          <p>Módulo 2: <a href="./assets/certificaciones/CursoIA/Módulo2-Chatbots-y-Tecnicas-Prompting.pdf" target="_blank">Chatbots y técnicas de prompting</a></p>
+          <p>Módulo 3.1: <a href="./assets/certificaciones/CursoIA/Modulo3-Generacion-Edicion-Imagen-parte1.pdf" target="_blank">Generación y edición de imagen (Parte 1)</a></p>
+          <p>Módulo 3.2: <a href="./assets/certificaciones/CursoIA/Modulo3-Generacion-Edicion-Imagen-parte2.pdf" target="_blank">Generación y edición de imagen (Parte 2)</a></p>
+          <p>Módulo 3.3: <a href="./assets/certificaciones/CursoIA/Modulo3-Generacion-Edicion-Imagen-parte3.pdf" target="_blank">Generación y edición de imagen (Parte 3)</a></p>
+          <p>Módulo 3.4: <a href="./assets/certificaciones/CursoIA/Modulo3-Generacion-Edicion-Imagen-parte4.pdf" target="_blank">Generación y edición de imagen (Parte 4)</a></p>
+          <p>Módulo 4: <a href="./assets/" target="_blank">Generación y edición de vídeo</a></p>
+          <p>Módulo 5: <a href="./assets/" target="_blank">Generación y edición de audio</a></p>
+          <p>Módulo 6: <a href="./assets/" target="_blank">Negocio y marketing con IA</a></p>
+          <p>Módulo 7.1: <a href="./assets/" target="_blank">Productividad con IA (Parte 1)</a></p>
+          <p>Módulo 7.2: <a href="./assets/" target="_blank">Productividad con IA (Parte 2)</a></p>
+          <p>Módulo 7.3: <a href="./assets/" target="_blank">Productividad con IA (Parte 3)</a></p>
+          <p>Módulo 7.4: <a href="./assets/" target="_blank">Productividad con IA (Parte 4)</a></p>
+          <p>Módulo Transversal: <a href="./assets/" target="_blank">Empleabilidad y competencias digitales (Parte 1)</a></p>
+          <p>Módulo Transversal: <a href="./assets/" target="_blank">Empleabilidad y competencias digitales (Parte 2)</a></p>
+          <p>Módulo Transversal: <a href="./assets/" target="_blank">Empleabilidad y competencias digitales (Parte 3)</a></p>
+          <p>Módulo Transversal: <a href="./assets/" target="_blank">Empleabilidad y competencias digitales (Parte 4)</a></p>
+          <p>Módulo 8.1: <a href="./assets/" target="_blank">Ética y regulación de la IA (Parte 1)</a></p>
+          <p>Módulo 8.2: <a href="./assets/" target="_blank">Ética y regulación de la IA (Parte 2)</a></p>
+          <p>Módulo 8.3: <a href="./assets/" target="_blank">Ética y regulación de la IA (Parte 3)</a></p>
+          <p>Módulo 8.4: <a href="./assets/" target="_blank">Ética y regulación de la IA (Parte 4)</a></p>
+          <p>Módulo 8.5: <a href="./assets/" target="_blank">Ética y regulación de la IA (Parte 5)</a></p>
+          <p>Módulo 9: <a href="./assets/" target="_blank">Ecosistema Microsoft Copilot</a></p>
+        `
+      }
+    ]
   }
 ];
 /*************************************************************************************/
@@ -718,7 +831,7 @@ modalElementsC.forEach( (ui,indexC) => {
   ui.links.forEach(link=>{
     link.addEventListener("click", (eventC) => {
       eventC.preventDefault();
-      experiencias[indexC].pageC=0;
+      certificaciones[indexC].pageC=0;
       renderModalC(indexC);
       ui.modal.classList.add("active");
     });
