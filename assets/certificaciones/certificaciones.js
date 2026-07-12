@@ -12,6 +12,8 @@ const modalLinksc9 = document.querySelectorAll("[data-modal-certificacion9]");
 const modalLinksc10 = document.querySelectorAll("[data-modal-certificacion10]");
 const modalLinksc11 = document.querySelectorAll("[data-modal-certificacion11]");
 const modalLinksc12 = document.querySelectorAll("[data-modal-certificacion12]");
+const modalLinksc13 = document.querySelectorAll("[data-modal-certificacion13]");
+const modalLinksc14 = document.querySelectorAll("[data-modal-certificacion14]");
 
 const modalTextc1 = document.querySelector("[data-modal-text-c1]");
 const modalTextc2 = document.querySelector("[data-modal-text-c2]");
@@ -25,6 +27,8 @@ const modalTextc9 = document.querySelector("[data-modal-text-c9]");
 const modalTextc10 = document.querySelector("[data-modal-text-c10]");
 const modalTextc11 = document.querySelector("[data-modal-text-c11]");
 const modalTextc12 = document.querySelector("[data-modal-text-c12]");
+const modalTextc13 = document.querySelector("[data-modal-text-c13]");
+const modalTextc14 = document.querySelector("[data-modal-text-c14]");
 
 const modalClosec1 = document.querySelector("[data-modal-close-c1]");
 const modalClosec2 = document.querySelector("[data-modal-close-c2]");
@@ -38,6 +42,8 @@ const modalClosec9 = document.querySelector("[data-modal-close-c9]");
 const modalClosec10 = document.querySelector("[data-modal-close-c10]");
 const modalClosec11 = document.querySelector("[data-modal-close-c11]");
 const modalClosec12 = document.querySelector("[data-modal-close-c12]");
+const modalClosec13 = document.querySelector("[data-modal-close-c13]");
+const modalClosec14 = document.querySelector("[data-modal-close-c14]");
 
 const modalCounterc1 = document.querySelector("[data-counter-c1]");
 const modalCounterc2 = document.querySelector("[data-counter-c2]");
@@ -51,6 +57,8 @@ const modalCounterc9 = document.querySelector("[data-counter-c9]");
 const modalCounterc10 = document.querySelector("[data-counter-c10]");
 const modalCounterc11 = document.querySelector("[data-counter-c11]");
 const modalCounterc12 = document.querySelector("[data-counter-c12]");
+const modalCounterc13 = document.querySelector("[data-counter-c13]");
+const modalCounterc14 = document.querySelector("[data-counter-c14]");
 
 const modalPrevc1 = document.querySelector("[data-prev-c1]");
 const modalPrevc2 = document.querySelector("[data-prev-c2]");
@@ -64,6 +72,8 @@ const modalPrevc9 = document.querySelector("[data-prev-c9]");
 const modalPrevc10 = document.querySelector("[data-prev-c10]");
 const modalPrevc11 = document.querySelector("[data-prev-c11]");
 const modalPrevc12 = document.querySelector("[data-prev-c12]");
+const modalPrevc13 = document.querySelector("[data-prev-c13]");
+const modalPrevc14 = document.querySelector("[data-prev-c14]");
 
 const modalNextc1 = document.querySelector("[data-next-c1]");
 const modalNextc2 = document.querySelector("[data-next-c2]");
@@ -77,6 +87,8 @@ const modalNextc9 = document.querySelector("[data-next-c9]");
 const modalNextc10 = document.querySelector("[data-next-c10]");
 const modalNextc11 = document.querySelector("[data-next-c11]");
 const modalNextc12 = document.querySelector("[data-next-c12]");
+const modalNextc13 = document.querySelector("[data-next-c13]");
+const modalNextc14 = document.querySelector("[data-next-c14]");
 
 const modalImgc1 = document.querySelector("[data-modal-img-c1]");
 const modalImgc2 = document.querySelector("[data-modal-img-c2]");
@@ -90,6 +102,8 @@ const modalImgc9 = document.querySelector("[data-modal-img-c9]");
 const modalImgc10 = document.querySelector("[data-modal-img-c10]");
 const modalImgc11 = document.querySelector("[data-modal-img-c11]");
 const modalImgc12 = document.querySelector("[data-modal-img-c12]");
+const modalImgc13 = document.querySelector("[data-modal-img-c13]");
+const modalImgc14 = document.querySelector("[data-modal-img-c14]");
 
 const modalVideoc1 = document.querySelector("[data-modal-video-c1]");
 const modalVideoc2 = document.querySelector("[data-modal-video-c2]");
@@ -103,6 +117,8 @@ const modalVideoc9 = document.querySelector("[data-modal-video-c9]");
 const modalVideoc10 = document.querySelector("[data-modal-video-c10]");
 const modalVideoc11 = document.querySelector("[data-modal-video-c11]");
 const modalVideoc12 = document.querySelector("[data-modal-video-c12]");
+const modalVideoc13 = document.querySelector("[data-modal-video-c13]");
+const modalVideoc14 = document.querySelector("[data-modal-video-c14]");
 /*************************************************************************************/
 
 
@@ -240,6 +256,28 @@ const modalElementsC = [
     counter: modalCounterc12,
     prev: modalPrevc12,
     next: modalNextc12
+  },
+  {
+    modal: document.getElementById("certificacion13"),
+    links: modalLinksc13,
+    close: modalClosec13,
+    text: modalTextc13,
+    img: modalImgc13,
+    video: modalVideoc13,
+    counter: modalCounterc13,
+    prev: modalPrevc13,
+    next: modalNextc13
+  },
+  {
+    modal: document.getElementById("certificacion14"),
+    links: modalLinksc14,
+    close: modalClosec14,
+    text: modalTextc14,
+    img: modalImgc14,
+    video: modalVideoc14,
+    counter: modalCounterc14,
+    prev: modalPrevc14,
+    next: modalNextc14
   }
 ];
 /*************************************************************************************/
@@ -788,7 +826,7 @@ const certificaciones = [
         text: `
           <p><b>Proyecto Final:</b> <i class="fa fa-globe"></i><a href="./assets/certificaciones/ProyectoIA-versionFinal.pdf" target="_blank">Ver online</a><i class="fa fa-globe"></i></p>
           <p><b>Presentación del Proyecto Final:</b> <i class="fa fa-globe"></i><a href="./assets/certificaciones/Presentacion-PFIA.pdf" target="_blank">Ver online</a><i class="fa fa-globe"></i></p>
-          <p><b>Más datos del Proyecto Final:</b> <i class="fa fa-download"></i><a href="./assets/certificaciones/hackAlearning.zip" target="_blank">Descargar</a><i class="fa fa-download"></i></p>
+          <p><b>ZIP de la Interfaz Web:</b> <i class="fa fa-download"></i><a href="./assets/certificaciones/hackAlearning.zip" target="_blank">Descargar</a><i class="fa fa-download"></i></p>
         `
       },
       {
@@ -1010,8 +1048,161 @@ const certificaciones = [
             <p>25. <b><a href="https://invideo.io/" target="_blank">Invideo AI</a></b> => herramienta para generar y editar vídeos profesionales de manera rápida y sencilla</p>
             <p>26. <b><a href="https://www.heygen.com/" target="_blank">Heygen AI</a></b> => herramienta para generar y editar vídeos profesionales para facilitar la creación de contenido audiovisual</p>
             <p>27. <b><a href="https://aiapp-es.vidnoz.com/" target="_blank">Vidnoz AI</a></b> => herramienta para generar y editar vídeos profesionales con personas humanas muy reales. Haciendo que la experiencia de usuario sea muy satisfactoria</p>
+            <p>28. <b><a href="https://suno.com/" target="_blank">Suno AI</a></b> => herramienta de IA generativa para generar canciones y pistas de audio personalizadas y adaptadas a diferentes géneros musicales y preferencias del usuario</p>
           </ul>
         `
+      },
+      {
+        text: `
+          <ul>
+            <p>29. <b><a href="https://www.udio.com/" target="_blank">Udio AI</a></b> => herramienta de IA generativa para generar canciones y pistas de audio personalizadas y adaptadas a diferentes géneros musicales y preferencias del usuario</p>
+            <p>30. <b><a href="https://elevenlabs.io/" target="_blank">ElevenLabs</a></b> => herramienta de IA generativa para generar locuciones a partir de ajustes tipo:</p>
+            <ul>
+              <p>1. <b>Model</b>: el modelo que quieres usar para que se ejecute la locución, es decir, la elección del locutor o voz clonada, de acuerdo al idioma, acento y tipo de locución</p>
+              <p>2. <b>Stability</b>: el nivel de emoción en el discurso, es decir, a más nivel, más alegría, a menos nivel, más seriedad</p>
+              <p>3. <b>Similarity</b>: la precisión de la voz clonada o locutor elegido imitando al original</p>
+              <p>4. <b>Style exaggeration</b>: el nivel de exageración de los matices de la voz</p>
+              <p>5. <b>Speaker boost</b>: la intensidad y el volumen de la voz</p>
+            </ul>
+            <p>31. <b><a href="https://podcast.adobe.com/" target="_blank">Adobe Podcast</a></b> => herramienta de IA generativa para generar podcasts</p>
+            <p>32. <b><a href="https://www.cursor.com/" target="_blank">Cursor AI</a></b> => herramienta basada en Visual Studio Code que utiliza la IA generativa para generar código de programación tipo JavaScript, TypeScript, Python, entre otros, con el objetivo de crear un BackEnd</p>
+            <p>33. <b><a href="https://tailwindui.com/templates/spotlight" target="_blank">TailWind AI</a></b> => herramienta que utiliza la IA generativa para generar código de programación tipo HTML, PHP, CSS, entre otros, con el objetivo de crear un FrontEnd</p>
+            <p>34. <b><a href="https://zapier.com/" target="_blank">_zapier</a></b> => herramienta que utiliza la IA generativa para generar código de programación con el objetivo de crear un BackEnd y de desarrollar un chatbot con Open AI, al estilo chatbase</p>
+            <p>35. <b><a href="https://miniapps.ai/Clot" target="_blank">Clot AI</a></b> => modelo de lenguaje de IA desarrollado por Anthropic para la resolución de problemas matemáticos</p>
+            <p>36. <b><a href="https://gamma.app/" target="_blank">Gamma AI</a></b> => herramienta que utiliza la IA generativa para generar presentaciones, documentos, blogs y páginas web estáticas</p>
+            <p>37. <b><a href="https://www.napkin.ai/" target="_blank">Napkin AI</a></b> => herramienta que utiliza la IA generativa para generar presentaciones, storytellings, diagramas de bloques y de otros tipos y, la opción de dibujar con lápiz táctil</p>
+          </ul>
+        `
+      }
+    ]
+  },
+  //-- Certificación 13
+  {
+    pageC: 0,
+    pagesC: [
+      {
+        text: `
+          <h3>Certificación del Talent Campus de PSS-TI</h3>
+          <p><b>Objetivo:</b> <a href="https://www.accenture.com/es-es" target="_blank">Obtención de un puesto de ingeniero de sistemas en Accenture</a></p>
+          <p><b>Duración del Talent:</b> Marzo - Mayo 2025</p>
+          <p><b>Ver título oficial:</b> <i class="fa fa-globe"></i><a href="./assets/certificaciones/Talent-Campus-PSSTI.pdf" target="_blank">Ver online</a><i class="fa fa-globe"></i></p>
+        `
+      },
+      {
+        text: `
+          <h3>Apuntes Web</h3>
+          <p><b>¿Qué es el Sistema Z de IBM?:</b></p>
+          <p>
+            Es un conjunto de Mainframes o servidores de datos encargados de procesar transacciones a gran escala y
+            de ejecutar aplicaciones críticas. Nació en 1964 y fue desarrollado por la empresa estadounidense de IBM
+          </p>
+        `
+      },
+      {
+        text: `
+          <p><b>Características del Sistema Z de IBM:</b></p>
+          <ul>
+            <p>1. Alta seguridad, ofreciendo cifrado de datos en tiempo real a nivel de hardware, con CryptoExpress y CPACF</p>
+            <p>
+              2. Escalabilidad y rendimiento, procesando millones de transacciones por día y siendo capaz de ejecutar
+              simultáneamente miles de aplicaciones bajo diferentes cargas de trabajo OLTP o Batch Processing (procesamiento por lotes) que,
+              no pueden permitirse fallos, pérdidas de datos o tiempos de espera.
+            </p>
+            <p>
+              3. Alta disponibilidad, funcionando con una disponibilidad cercana al 100% y soportando operaciones ininterrumpidas, incluso durante mantenimiento y actualizaciones
+            </p>
+            <p>4. Virtualización, contenedores y microservicios, ejecutando varios Sistemas Operativos al mismo tiempo y ofreciendo virtualización de recursos</p>
+            <p>5. Compatibilidad con Linux, Kubernetes y Docker</p>
+            <p>6. Capacidades de multiprogramación y multiprocesamiento, siendo capaz de ejecutar varios programas a la vez</p>
+            <p>7. Capacidad de dar soporte a miles de usuarios simultáneos</p>
+            <p>8. Importancia histórica y empresarial</p>
+            <p>9. Fiabilidad y estabilidad</p>
+            <p>10. Capacidad de desarrollar operaciones de E/S</p>
+          </ul>
+        `
+      },
+      {
+        text: `
+          <p><b>Usos del Sistema Z de IBM:</b></p>
+          <ul>
+            <p>1. Bancos, para procesar millones de transacciones diarias</p>
+            <p>2. Aerolíneas, para gestionar reservas y sistemas de embarque en tiempo real</p>
+            <p>3. Gobiernos, para gestionar los sistemas de la administración</p>
+            <p>4. Ventas, comercio y logística, para llevar a cabo la trazabilidad y la facturación a gran escala</p>
+            <p>5. La integración con sistemas modernos y APIs</p>
+          </ul>
+        `
+      },
+      {
+        text: `
+          <p><b>Tipos del Sistema Z de IBM:</b></p>
+          <ul>
+            <p>1. z9 EC (2005), es el primer escalado a nivel de sistema. Rendimiento de 1.7 GHz</p>
+            <p>2. z10 EC (2008), es el primero con núcleo de alta frecuencia y caché a 3 niveles. Rendimiento de 4.4 GHz</p>
+            <p>3. z196 (2010), incluye caché eDRAM, memoria RAIM e integración zBX. Rendimiento de 5.2 GHz</p>
+            <p>4. zEC12 (2012), centrado en mejorar la caché y en extender la arquitectura para ser más escalable. Rendimiento de 5.5 GHz</p>
+            <p>
+              5. z13 (2015), centrado en analítica en tiempo real y movilidad. Rendimiento de 5.0 GHz, pero más potente, consiguiendo a partir de entonces
+              en adelante, más potencia con menos rendimiento/GHz
+            </p>
+            <p>6. z14 (2017), incluye cifrado total de datos o <i>pervasive encryption</i>. Rendimiento de 5.2 GHz</p>
+            <p>7. z15 (2019), enfocado en nube híbrida y privacidad de datos. Rendimiento de 5.2 GHz</p>
+            <p>8. z16 (2022), es el primer Mainframe con IA integrada acelerada por hardware. Rendimiento de 5.2 GHz. Aparición del Telum II como procesador</p>
+            <p>9. z17 (2025), orientado a IA generativa, aceleración cuántica y seguridad Zero Trust</p>
+          </ul>
+        `
+      },
+      {
+        text: `
+          <p><b>Composición de la Arquitectura Hardware del Sistema Z de IBM:</b></p>
+          <ul>
+            <p>
+              1. 2 o 4 switches internos que interconectan:
+              <ul>
+                <p>1. Los <i>Drawers</i>/<i>Frames</i>/Módulos de procesadores</p>
+                <p>2. El hardware de soporte</p>
+                <p>3. Los canales de E/S en modo dúplex que pueden ser de tres tipos:</p>
+                <ul>
+                  <p>A) CSS, canal que delega cuando detecta alguna E/S</p>
+                  <p>B) LCSS, canal virtual lógico</p>
+                  <p>C) PR/SM, virtualizador del hardware</p>
+                </ul>
+              </ul>
+            </p>
+            <p>2. 1 procesador central que contiene hasta 4 chips Telum con 8 núcleos físicos cada uno</p>
+            <p>
+              3. Hasta 6 procesadores físicos y distribuidos, si la configuración del procesador central es <i>Multi-drawer</i>, para mayor escalabilidad.
+              Si los 6 están activos (6de6), asignados a una partición lógica (LPAR) y disponibles para su procesamiento, tienen una Latencia
+              menor o igual a 18 microsegundos (L <= 18 microseg)
+            </p>
+          </ul>
+        `
+      }
+    ]
+  },
+  //-- Certificación 14
+  {
+    pageC: 0,
+    pagesC: [
+      {
+        text: `
+          <h3>Certificación B2 de inglés</h3>
+          <p><b>Por medio de:</b> <a href="https://www.britishcouncil.es/en/exam/aptis" target="_blank">British Council - Aptis</a></p>
+          <p>
+            <b>Historial de la obtención del Nivel B2:</b> Estuve estudiando inglés en el <a class="otros-enlaces" href="https://www.britishcouncil.es/" target="_blank">British Council</a> de
+            Villaviciosa de Odón (Madrid, España), donde cursé y aprobé los siguientes niveles: Nivel Pink (2003/04), Nivel Yellow (2004/05),
+            Nivel Red (2005/06), Nivel Junior 1 (2006/07), Nivel Junior 2 (2007/08), Nivel Junior 3 (2008/09), Nivel Junior 4 (2009/10),
+            Nivel Senior 1 (2010/11) y Nivel Senior 2 (2011/12). En total estuve 9 años. Aunque la obtención del nivel B2 oficial lo obtuve en octubre de 2020, después de haber ido a trabajar a Wisconsin Dells
+            (Wisconsin, Estados Unidos) en 2019.
+          </p>
+          <p><b>Ver título oficial:</b> <i class="fa fa-envelope"></i><a href="#contacto">Pedirlo</a><i class="fa fa-envelope"></i></p>
+          <p><b>Certificado enfocado a negocio:</b> <i class="fa fa-globe"></i><a href="./assets/certificaciones/English-for-Companies-Certified.pdf" target="_blank">Ver online</a><i class="fa fa-globe"></i></p>
+          <p><b>Certificado obtenido por Capgemini Engineering:</b> <i class="fa fa-globe"></i><a href="./assets/certificaciones/Certificado-Ingles-Capgemini.pdf" target="_blank">Ver online</a><i class="fa fa-globe"></i></p>
+        `
+      },
+      {
+        text: `<h3>Logo del certificado</h3>`,
+        img: "./assets/certificaciones/logo_B2.png"
       }
     ]
   }

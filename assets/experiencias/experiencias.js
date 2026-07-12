@@ -416,6 +416,7 @@ const experiencias = [
           <p><b>Remuneración:</b> Sí</p>
           <p><b>Modo de trabajo:</b> Presencial</p>
           <p><b>Idioma:</b> Español e Inglés</p>
+          <p><b>Estudio acústico de ejemplo:</b> <i class="fa fa-globe"></i><a href="./assets/experiencias/Estudio-Acustico.pdf" target="_blank">Ver online</a><i class="fa fa-globe"></i></p>
         `
       },
       {
