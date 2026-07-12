@@ -1086,6 +1086,7 @@ const certificaciones = [
           <p><b>Objetivo:</b> <a href="https://www.accenture.com/es-es" target="_blank">Obtención de un puesto de ingeniero de sistemas en Accenture</a></p>
           <p><b>Duración del Talent:</b> Marzo - Mayo 2025</p>
           <p><b>Ver título oficial:</b> <i class="fa fa-globe"></i><a href="./assets/certificaciones/Talent-Campus-PSSTI.pdf" target="_blank">Ver online</a><i class="fa fa-globe"></i></p>
+          <p><b>Práctica de ejemplo de CICS:</b> <i class="fa fa-globe"></i><a href="./assets/certificaciones/lab-CICS.pdf" target="_blank">Ver online</a><i class="fa fa-globe"></i></p>
         `
       },
       {
@@ -1157,7 +1158,7 @@ const certificaciones = [
           <p><b>Composición de la Arquitectura Hardware del Sistema Z de IBM:</b></p>
           <ul>
             <p>
-              1. 2 o 4 switches internos que interconectan:
+              1. Dos o cuatro switches internos que interconectan:
               <ul>
                 <p>1. Los <i>Drawers</i>/<i>Frames</i>/Módulos de procesadores</p>
                 <p>2. El hardware de soporte</p>
@@ -1169,15 +1170,194 @@ const certificaciones = [
                 </ul>
               </ul>
             </p>
-            <p>2. 1 procesador central que contiene hasta 4 chips Telum con 8 núcleos físicos cada uno</p>
+            <p>2. Un procesador central que contiene hasta 4 chips Telum con 8 núcleos físicos cada uno</p>
             <p>
-              3. Hasta 6 procesadores físicos y distribuidos, si la configuración del procesador central es <i>Multi-drawer</i>, para mayor escalabilidad.
-              Si los 6 están activos (6de6), asignados a una partición lógica (LPAR) y disponibles para su procesamiento, tienen una Latencia
+              3. Hasta seis procesadores físicos y distribuidos, si la configuración del procesador central es <i>Multi-drawer</i>, para mayor escalabilidad.
+              Si los seis están activos (6de6), asignados a una partición lógica (LPAR) y disponibles para su procesamiento, tienen una Latencia
               menor o igual a 18 microsegundos (L <= 18 microseg)
+            </p>
+            <p>
+              4. Hasta dos elementos de soporte o terminales locales embebidos que permiten gestionar IPLs, supervisar el estado del sistema y
+              realizar tareas de diagnóstico y actualización
+            </p>
+            <p>5. Direccionamiento basado en 64 bits</p>
+            <p>
+              6. Subsistemas de canal de E/S, como OSA (Adaptador de sistemas abiertos) y FICON, para conectar el sistema con
+              dispositivos DASD para almacenamiento y redes TCP/IP de alta velocidad
+            </p>
+            <p>
+              7. Un software de gestión de hardware basado en consola (HMC) para controlar la creación y administración de particiones lógicas (LPARs), la ejecución de IPLs,
+              la supervisión de logs y alertas y, la gestión de seguridad y actualizaciones
             </p>
           </ul>
         `
-      }
+      },
+      {
+        text: `
+          <p><b>Procesadores del Sistema Z de IBM:</b></p>
+          <ul>
+            <p>1. CP (Central Processor): se encarga de ejecutar el núcleo del sistema operativo z/OS y la mayoría de las aplicaciones generales</p>
+            <p>2. IFL (Integrated Facility for Linux): se encarga de ejecutar exclusivamente sistemas Linux sobre z/VM o KVM</p>
+            <p>3. zIIP (z Integrated Information Processor): se encarga de acelerar cargas específicas como consultas Db2, Java, cifrado XML e IPsec</p>
+            <p>4. zAAP (z Application Assist Processor): siempre se ha dedicado a Java, pero ya es obsoleto. Su funcionalidad fue absorbida por zIIP</p>
+            <p>5. SAP (System Assist Processor): se encarga de ejecutar operaciones de E/S sin intervención del CP</p>
+          </ul>
+        `
+      },
+      {
+        text: `
+          <p><b>Sistemas Operativos del Sistema Z de IBM:</b></p>
+          <ul>
+            <p>
+              1. El z/OS, o también conocido como MVS, es el Sistema Operativo principal, con alta disponibilidad, seguridad, escalabilidad,
+              capacidades avanzadas de virtualización y orientado a cargas de trabajo críticas Batch Processing (procesamiento por lotes) y online.
+              Su software interactivo es el TSO, basado en paneles.
+            </p>
+            <p>
+              2. El z/VM, es un Sistema Operativo que permite la creación y gestión de múltiples máquinas virtuales, donde se ejecutan distintos Sistemas Operativos
+              simultáneamente.
+            </p>
+            <p>
+              3. El z/VSE, es un Sistema Operativo ligero, pensado para entornos empresariales de menor tamaño que, requieren alta fiabilidad,
+              pero menor complejidad. No cuenta con DB2, sino otro parecido. Sí cuenta con MQ y CICS.
+            </p>
+            <p>
+              4. El z/TPF, es un Sistema Operativo optimizado para el procesamiento ultra rápido de transacciones de alta frecuencia, usado en sectores como
+              aerolíneas y banca. Se usa mucho en Francia.
+            </p>
+            <p>
+              5. Linux on Z, son implementaciones de Linux adaptadas al Sistema Z de IBM, combinando la robustez del Mainframe,
+              con la flexibilidad del software abierto.
+            </p>
+          </ul>
+        `
+      },
+      {
+        text: `
+          <p><b>Sistema Operativo de z/OS:</b></p>
+          <img src="./assets/certificaciones/zOS.png"/>
+        `
+      },
+      {
+        text: `
+          <p>Se estructura en cinco capas o niveles funcionales:</p>
+          <ul>
+            <p>
+              1. <u>La Interacción Hardware</u> => es la base física que controla el hardware del Sistema Z e incluye la gestión de memoria,
+              los dispositivos de E/S, los tipos de canales y las particiones LPARs
+            </p>
+            <p>
+              2. <u>El Core Services</u> => son los servicios básicos del sistema operativo, como: la gestión de procesos y tareas (TCB),
+              la gestión de memoria (como la paginación o el direccionamiento virtual), la gestión de almacenamiento en ficheros (como los Datasets, VSAMs o zFS),
+              la planificación de los JOBs del JES2 (se utiliza 2 porque el 1 está desaparecido y el 3 va a desaparecer), el sistema de
+              ficheros (como el MVS, zFS o HFS) y la seguridad RACF
+            </p>
+            <p>
+              3. <u>Los Middleware y Servicios de Plataforma</u> => son los programas o softwares que conectan las aplicaciones con el
+              sistema operativo, es decir, los que se encargan de ser intermediarios entre el sistema final y el usuario. Tipos de Middleware:
+              <ul>
+                <p>1. CICS => es el gestor de transacciones online</p>
+                <p>2. IMS => es el sistema de gestión de información</p>
+                <p>3. DB2 => es la base de datos relacional</p>
+                <p>4. WebSphere Application Server => es el servidor de aplicaciones Java EE</p>
+                <p>5. MQ => es la mensajería empresarial</p>
+              </ul>
+            </p>
+            <p>
+              4. Las Aplicaciones o Lenguajes de Programación => son aquéllos desarrollados por usuarios o empresas. Tipos:
+              <ul>
+                <p>1. Cobol.</p>
+                <p>2. Java.</p>
+                <p>3. Assembler.</p>
+                <p>4. REXX.</p>
+                <p>5. C</p>
+                <p>6. PHP</p>
+                <p>7. JCICS</p>
+              </ul>
+            </p>
+            <p>
+              5. Las Interfaces de Usuario => son modos de visualización para que los usuarios y los administradores interactúen con el sistema. Tipos:
+              <ul>
+                <p>1. TSO/E => es una interfaz de línea de comandos, donde los usuarios ejecutan comandos y programas directamente desde terminales interactivos</p>
+                <p>
+                  2. ISPF => es una interfaz de paneles de menús y de texto estructurado sobre TSO/E, que cuenta con TCB o registros de control para saber
+                  quien está ejecutando en el sistema
+                </p>
+                <p>
+                  3. USS (UNIX System Services) => es un entorno de UNIX dentro de z/OS que ofrece una experiencia <i>Shell</i> similar a la de sistemas UNIX tradicionales.
+                  Hay dos tipos de comandos: ishell y omvs. El primero, abre un menú para explorar el sistema UNIX. El segundo, abre una sesión de línea de comandos tipo <i>Shell</i>
+                </p>
+                <p>
+                  4. SDSF => es una herramienta integrada en z/OS que permite ver, gestionar y controlar los Jobs que se ejecutan en el sistema para
+                  monitorizar recursos y rendimiento. Se accede escribiendo <i>S</i> a través del ISPF
+                </p>
+                <p>
+                  5. z/OSMF => es una plataforma de gestión web integrada en z/OS que permite a los administradores y operadores
+                  gestionar y configurar el sistema z/OS de forma moderna, visual e intuitiva, sin necesidad de usar
+                  la línea de comandos de TSO, los paneles de ISPF o los comandos 3270
+                </p>
+              </ul>
+            </p>
+          </ul>
+        `
+      },
+      {
+        text: `
+          <p><b>La Inteligencia Artificial de IBM:</b></p>
+          <ul>
+            <p><u>Nombre:</u> Watson AI</p>
+            <p><u>Funcionamiento:</u> es una combinación de técnicas de procesamiento del lenguaje natural, aprendizaje automático, razonamiento y una gran base de conocimientos para entender preguntas complejas y encontrar respuestas relevantes</p>
+            <p>
+              <u>Componentes:</u>
+              <ul>
+                <p>1. watsonx.ai: para implementar modelos de IA</p>
+                <p>2. watsonx.data: para almacenar datos</p>
+                <p>3. watsonx.governance: para gestionar flujos de trabajo</p>
+              </ul>
+            </p>
+          </ul>
+          <img src="./assets/certificaciones/ia_ibm.png"/>
+        `
+      },
+      {
+        text: `
+          <p><b>Almacenamiento de datos en z/OS:</b></p>
+          <ul>
+            <p>
+              ¿Qué es un DataSet (DS)?: Es un conjunto de datos o fichero utilizado en z/OS para almacenar y gestionar datos. Se compone de registros (PSWs) que estan divididos en campos
+              y cada uno de ellos contiene datos, como caracteres. Cada carácter se posiciona en un campo. Varios registros pueden formar bloques de registros.
+              Un bloque es lo que se transfiere en cada operación de E/S
+            </p>
+            <p>
+              Tipos de DataSets:
+              <ul>
+                <p>A) PS => Fichero secuencial => son registros almacenados uno tras otro, con acceso secuencial</p>
+                <p>
+                  B) PDS => Fichero particionado => se compone de directorio y miembros, es decir, de ficheros dentro de una carpeta.
+                  Cada miembro es un fichero secuencial. Si borras uno de ellos, su espacio se queda borrado y sin poder volver a utilizarse
+                </p>
+                <p>
+                  C) PDSE => Fichero particionado extendido => es una versión avanzada del PDS, reutilizando el espacio automáticamente,
+                  permitiendo más extensiones y sin necesidad de compresión manual. Una diferencia importante con el PDS es que la parte de
+                  los bloques de directorio máximo es <i>No limit</i>
+                </p>
+                <p>
+                  D) VSAM => Estructuras que actúan como método de acceso optimizado para almacenamiento en sistemas con memoria virtual.
+                  Su objetivo es mejorar el rendimiento del acceso a datos de los ficheros PS. Para ello, usa técnicas de indexación,
+                  acceso directo y almacenamiento eficiente. Cuenta con cuatro tipos:
+                  <ul>
+                    <p>- KSDS => usa una clave para acceso directo</p>
+                    <p>- LDS => mete datos en una base de datos de db2</p>
+                    <p>- ESDS => equivale a un secuencial, pero de VSAM</p>
+                    <p>- RRDS => accede eficientemente por número relativo de registro</p>
+                  </ul>
+                </p>
+              </ul>
+            </p>
+          </ul>
+        `
+      },
+      {img: "./assets/certificaciones/creacionDS-1.png"},{img: "./assets/certificaciones/creacionDS-2.png"}
     ]
   },
   //-- Certificación 14
