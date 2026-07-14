@@ -1729,7 +1729,7 @@ const certificaciones = [
       },
       {
         text: `
-          <p><b>Vocabulario del Nivel A1:</b></p>
+          <h3>Vocabulario del Nivel A1:</h3>
           <p>-------------------------------------------------------------------</p>
           <p>- Nota:                                                            </p>
           <p>* <b>SH</b> => es para hacer el sonido "sch" del alemán            </p>
@@ -4434,519 +4434,1600 @@ const certificaciones = [
       },
       {
         text: `
-          <p><b>Gramática del Nivel A1 (parte 1):</b></p>
+          <h3>Gramática del Nivel A1:</h3>
+          <p><b>1. Estructuras gramaticales - Preguntas:</b></p>
           <ul>
-            <p><b>1. Estructuras gramaticales - Preguntas:</b></p>
             <p><b>W-Frage + Verbo conjugado + Sujeto + Complementos?</b></p>
-            <br>
-            <p><b>2. Estructuras gramaticales - Afirmaciones/Respuestas:</b></p>
+          </ul>
+          <p><b>2. Estructuras gramaticales - Afirmaciones/Respuestas:</b></p>
+          <ul>
             <p>Opción A => <b>Sujeto + Verbo conjugado + Complementos.</b></p>
             <p>Opción B => <b>Complemento + Verbo conjugado + Sujeto + Otros complementos.</b></p>
-            <br>
-            <p><b>3. Tipos de Preguntas:</b></p>
-            <ul>
-              <p>1. Wie? (¿Cómo?) => /vi?/</p>
-              <p>2. Wer? (¿Quién?) => /vea?/</p>
-              <p>3. Wo? (¿Dónde?) => /vo?/</p>
-              <p>4. Woher? (¿De dónde?) => /vojea?/</p>
-              <p>5. Welche? (¿Cuál?) => /velse?/</p>
-              <p>6. Wie viel? (¿Cuánto?) => /vi fil?/</p>
-              <p>7. Was? (¿Qué?) => /vas?/</p>
-              <p>8. Wann? (¿Cuándo?) => /van?/</p>
-              <p>9. Warum? (¿Por qué?) => /vagum?/</p>
-              <p>10. Wohin? (¿A dónde?) => /vojin?/</p>
-            </ul>
-            <br>
-            <p><b>4. Tipos de Sujetos:</b></p>
-            <ul>
-              <p>1. ich (yo) => /ig/</p>
-              <p>2. du (tú) => /du/ - para modo informal</p>
-              <p>3. er (él) => /ea/</p>
-              <p>4. sie (ella) => /sí/</p>
-              <p>5. es (esto/ello) => /es/</p>
-              <p>6. wir (nosotros/as) => /vía/</p>
-              <p>7. ihr (vosotros/as) => /ía/</p>
-              <p>8. sie (ellos/as) => /sí/</p>
-              <p>9. Sie (usted) => /sí/ - para modo formal</p>
-            </ul>
-            <br>
-            <p><b>5. Uso del modo formal:</b> Vorname + Nachname (nombre + apellidos)</p>
-            <p><b>6. Uso del modo informal:</b> Vorname (nombre)</p>
-            <p><b>7. Uso de los complementos de lugar:</b> Llevan delante la preposición ins</p>
-            <p><b>8. Símbolos:</b></p>
-            <ul>
-              <p><b>@</b> => at - /et/</p>
-              <p><b>.</b> => punkt - /punkt/</p>
-              <p><b>-</b> => minus - /minus/</p>
-              <p><b>_</b> => understrich - /undegstrig/</p>
-            </ul>
-            <br>
+          </ul>
+          <p><b>3. Tipos de Preguntas:</b></p>
+          <ul>
+            <p>1. Wie? (¿Cómo?) => /vi?/</p>
+            <p>2. Wer? (¿Quién?) => /vea?/</p>
+            <p>3. Wo? (¿Dónde?) => /vo?/</p>
+            <p>4. Woher? (¿De dónde?) => /vojea?/</p>
+            <p>5. Welche? (¿Cuál?) => /velse?/</p>
+            <p>6. Wie viel? (¿Cuánto?) => /vi fil?/</p>
+            <p>7. Was? (¿Qué?) => /vas?/</p>
+            <p>8. Wann? (¿Cuándo?) => /van?/</p>
+            <p>9. Warum? (¿Por qué?) => /vagum?/</p>
+            <p>10. Wohin? (¿A dónde?) => /vojin?/</p>
+          </ul>
+          <p><b>4. Tipos de Sujetos:</b></p>
+          <ul>
+            <p>1. ich (yo) => /ig/</p>
+            <p>2. du (tú) => /du/ - para modo informal</p>
+            <p>3. er (él) => /ea/</p>
+            <p>4. sie (ella) => /sí/</p>
+            <p>5. es (esto/ello) => /es/</p>
+            <p>6. wir (nosotros/as) => /vía/</p>
+            <p>7. ihr (vosotros/as) => /ía/</p>
+            <p>8. sie (ellos/as) => /sí/</p>
+            <p>9. Sie (usted) => /sí/ - para modo formal</p>
+          </ul>
+          <p><b>5. Uso del modo formal:</b> Vorname + Nachname (nombre + apellidos)</p>
+          <p><b>6. Uso del modo informal:</b> Vorname (nombre)</p>
+          <p><b>7. Uso de los complementos de lugar:</b> Llevan delante la preposición ins</p>
+          <p><b>8. Símbolos:</b></p>
+          <ul>
+            <p><b>@</b> => at - /et/</p>
+            <p><b>.</b> => punkt - /punkt/</p>
+            <p><b>-</b> => minus - /minus/</p>
+            <p><b>_</b> => understrich - /undegstrig/</p>
           </ul>
         `
       },
       {
         text: `
-          <p><b>Gramática del Nivel A1 (parte 2):</b></p>
+          <p><b>9. Alfabeto:</b></p>
           <ul>
-            <p><b>9. Alfabeto:</b></p>
-            <ul>
-              <p>a - /a/</p>
-              <p>b - /be/</p>
-              <p>c - /tse/</p>
-              <p>d - /de/</p>
-              <p>e - /e/</p>
-              <p>f - /ef/</p>
-              <p>g - /gue/</p>
-              <p>h - /ja/</p>
-              <p>i - /i/</p>
-              <p>j - /yot/</p>
-              <p>k - /ka/</p>
-              <p>l - /el/</p>
-              <p>m - /em/</p>
-              <p>n - /en/</p>
-              <p>o - /o/</p>
-              <p>p - /pe/</p>
-              <p>q - /cu/</p>
-              <p>r - /eg/</p>
-              <p>s - /es/</p>
-              <p>t - /ti/</p>
-              <p>u - /u/</p>
-              <p>v - /fau/</p>
-              <p>w - /ve/</p>
-              <p>x - /iks/</p>
-              <p>y - upsilon</p>
-              <p>z - /tset/</p>
-              <p>ä - /ea/</p>
-              <p>ö - /uo/</p>
-              <p>ü - /iu/</p>
-              <p>ß - /estset/</p>
-              <p>---------------------------------</p>
-              <p>Recuerda 1: <b>vocal + h</b> => significa que hay que pronunciarlo como una <b>vocal larga</b></p>
-              <p>Recuerda 2: <b>vocal + ll</b> => significa que hay que pronunciarlo como una <b>vocal corta</b></p>
-            </ul>
+            <p>a - /a/</p>
+            <p>b - /be/</p>
+            <p>c - /tse/</p>
+            <p>d - /de/</p>
+            <p>e - /e/</p>
+            <p>f - /ef/</p>
+            <p>g - /gue/</p>
+            <p>h - /ja/</p>
+            <p>i - /i/</p>
+            <p>j - /yot/</p>
+            <p>k - /ka/</p>
+            <p>l - /el/</p>
+            <p>m - /em/</p>
+            <p>n - /en/</p>
+            <p>o - /o/</p>
+            <p>p - /pe/</p>
+            <p>q - /cu/</p>
+            <p>r - /eg/</p>
+            <p>s - /es/</p>
+            <p>t - /ti/</p>
+            <p>u - /u/</p>
+            <p>v - /fau/</p>
+            <p>w - /ve/</p>
+            <p>x - /iks/</p>
+            <p>y - upsilon</p>
+            <p>z - /tset/</p>
+            <p>ä - /ea/</p>
+            <p>ö - /uo/</p>
+            <p>ü - /iu/</p>
+            <p>ß - /estset/</p>
+            <p>---------------------------------</p>
+            <p>Recuerda: <b>vocal + h</b> => significa que hay que pronunciarlo como una <b>vocal larga</b></p>
+            <p>Recuerda: <b>vocal + ll</b> => significa que hay que pronunciarlo como una <b>vocal corta</b></p>
           </ul>
         `
       },
       {
         text: `
-          <p><b>Gramática del Nivel A1 (parte 3):</b></p>
+          <p><b>10. Números:</b></p>
           <ul>
-            <p><b>10. Números:</b></p>
-            <ul>
-              <p>0 => null => /nul/</p>
-              <p>1 => eins => /ains/</p>
-              <p>2 => zwei => /svai/</p>
-              <p>3 => drei => /drai/</p>
-              <p>4 => vier => /fía/</p>
-              <p>5 => fünf => /funf/</p>
-              <p>6 => sechs => /sex/</p>
-              <p>7 => sieben => /siben/</p>
-              <p>8 => acht => /agt/</p>
-              <p>9 => neun => /noin/</p>
-              <p>10 => zehn => /tsen/</p>
-              <p>11 => elf => /elf/</p>
-              <p>12 => zwölf => /tsuolf/</p>
-              <p>13 => dreizehn => /draitsen/</p>
-              <p>14 => vierzehn => /fíatsen/</p>
-              <p>15 => fünfzehn => /funfsen/</p>
-              <p>16 => sechzehn => /sexsen/</p>
-              <p>17 => siebzehn => /sibsen/</p>
-              <p>18 => achtzehn => /agtsen/</p>
-              <p>19 => neunzehn => /nointsen/</p>
-              <p>20 => zwanzig => /svansic/</p>
-              <p>21-29 => número del 1 al 9 + und + zwanzig</p>
-              <p>30 => dreißig => /draisig/</p>
-              <p>31-39 => número del 1 al 9 + und + dreißig</p>
-              <p>40 => vierzig => /fíatsig/</p>
-              <p>41-49 => número del 1 al 9 + und + vierzig</p>
-              <p>50 => fünfzig => /funfsig/</p>
-              <p>51-59 => número del 1 al 9 + und + fünfzig</p>
-              <p>60 => sechzig => /sexsig/</p>
-              <p>61-69 => número del 1 al 9 + und + sechzig</p>
-              <p>70 => siebzig => /sibsig/</p>
-              <p>71-79 => número del 1 al 9 + und + siebzig</p>
-              <p>80 => achtzig => /agtsig/</p>
-              <p>81-89 => número del 1 al 9 + und + achtzig</p>
-              <p>90 => neunzig => /noinsig/</p>
-              <p>91-99 => número del 1 al 9 + und + neunzig</p>
-              <p>100 => hundert => /jundat/</p>
-              <p>1XX => hundert + número del 1 al 99</p>
-              <p>X00 => número del 2 al 9 + hundert</p>
-              <p>XXX => número del 2 al 9 + hundert + número del 1 al 99</p>
-              <p>1000 => tausend => /tausend/</p>
-              <p>X000 => número del 2 al 9 + tausend</p>
-              <p>XX00 => número del 2 al 9 + tausend + número del 2 al 9 + hundert</p>
-              <p>XXXX => número del 2 al 9 + tausend + número del 2 al 9 + hundert + número del 1 al 99</p>
-              <p>---------------------------------------------------------------------------------------------</p>
-              <p>Recuerda 1: Los años van precedidos de la preposición im</p>
-            </ul>
+            <p>0 => null => /nul/</p>
+            <p>1 => eins => /ains/</p>
+            <p>2 => zwei => /svai/</p>
+            <p>3 => drei => /drai/</p>
+            <p>4 => vier => /fía/</p>
+            <p>5 => fünf => /funf/</p>
+            <p>6 => sechs => /sex/</p>
+            <p>7 => sieben => /siben/</p>
+            <p>8 => acht => /agt/</p>
+            <p>9 => neun => /noin/</p>
+            <p>10 => zehn => /tsen/</p>
+            <p>11 => elf => /elf/</p>
+            <p>12 => zwölf => /tsuolf/</p>
+            <p>13 => dreizehn => /draitsen/</p>
+            <p>14 => vierzehn => /fíatsen/</p>
+            <p>15 => fünfzehn => /funfsen/</p>
+            <p>16 => sechzehn => /sexsen/</p>
+            <p>17 => siebzehn => /sibsen/</p>
+            <p>18 => achtzehn => /agtsen/</p>
+            <p>19 => neunzehn => /nointsen/</p>
+            <p>20 => zwanzig => /svansic/</p>
+            <p>21-29 => número del 1 al 9 + und + zwanzig</p>
+            <p>30 => dreißig => /draisig/</p>
+            <p>31-39 => número del 1 al 9 + und + dreißig</p>
+            <p>40 => vierzig => /fíatsig/</p>
+            <p>41-49 => número del 1 al 9 + und + vierzig</p>
+            <p>50 => fünfzig => /funfsig/</p>
+            <p>51-59 => número del 1 al 9 + und + fünfzig</p>
+            <p>60 => sechzig => /sexsig/</p>
+            <p>61-69 => número del 1 al 9 + und + sechzig</p>
+            <p>70 => siebzig => /sibsig/</p>
+            <p>71-79 => número del 1 al 9 + und + siebzig</p>
+            <p>80 => achtzig => /agtsig/</p>
+            <p>81-89 => número del 1 al 9 + und + achtzig</p>
+            <p>90 => neunzig => /noinsig/</p>
+            <p>91-99 => número del 1 al 9 + und + neunzig</p>
+            <p>100 => hundert => /jundat/</p>
+            <p>1XX => hundert + número del 1 al 99</p>
+            <p>X00 => número del 2 al 9 + hundert</p>
+            <p>XXX => número del 2 al 9 + hundert + número del 1 al 99</p>
+            <p>1000 => tausend => /tausend/</p>
+            <p>X000 => número del 2 al 9 + tausend</p>
+            <p>XX00 => número del 2 al 9 + tausend + número del 2 al 9 + hundert</p>
+            <p>XXXX => número del 2 al 9 + tausend + número del 2 al 9 + hundert + número del 1 al 99</p>
+            <p>---------------------------------------------------------------------------------------------</p>
+            <p>Recuerda: Los años van precedidos de la preposición im</p>
           </ul>
         `
       },
       {
         text: `
-          <p><b>Gramática del Nivel A1 (parte 4):</b></p>
+          <p><b>11. Países e idiomas:</b></p>
           <ul>
-            <p><b>11. Países e idiomas:</b></p>
-            <ul>
-              <p>Land: <b>Deutschland</b> - /doichland/ <br> Sprache: <b>Deutsch</b> - /doich/</p>
-              <p>Land: <b>Algerien</b> - /alguerien/ <br> Sprache: <b>Arabisch</b> - /arabi<b>SH</b>/</p>
-              <p>Land: <b>Österreich</b> - /ustegaig/ <br> Sprache: <b>Deutsch</b> - /doich/</p>
-              <p>Land: <b>die Schweiz</b> - /di <b>SH</b>vais/ <br> Sprache: <b>Französisch</b>, <b>Italienisch</b>, <b>Deutsch</b> und <b>Rätoromanisch</b> - /fransosi<b>SH</b>, italieni<b>SH</b>, doich und guetogomani<b>SH</b>/</p>
-              <p>Land: <b>Frankreich</b> - /frankaig/ <br> Sprache: <b>Französisch</b> - /fransosi<b>SH</b>/</p>
-              <p>Land: <b>Griechenland</b> - /grisinland/ <br> Sprache: <b>Griechisch</b> - /grisi<b>SH</b>/</p>
-              <p>Land: <b>Irland</b> - /igland/ <br> Sprache: <b>Englisch</b> und <b>Irisch</b> - /engli<b>SH</b>/ und /igui<b>SH</b>/</p>
-              <p>Land: <b>Italien</b> - /italien/ <br> Sprache: <b>Italienisch</b> - /italieni<b>SH</b>/</p>
-              <p>Land: <b>Japan</b> - /yapan/ <br> Sprache: <b>Japanisch</b> - /yapani<b>SH</b>/</p>
-              <p>Land: <b>Marokko</b> - /mágoco/ <br> Sprache: <b>Arabisch</b> - /arabi<b>SH</b>/</p>
-              <p>Land: <b>Portugal</b> - /portugal/ <br> Sprache: <b>Portugiesisch</b> - /portuguisi<b>SH</b>/</p>
-              <p>Land: <b>Spanien</b> - /spanien/ <br> Sprache: <b>Spanisch</b> - /spani<b>SH</b>/</p>
-              <p>Land: <b>Brasilien</b> - /brasilien/ <br> Sprache: <b>Portugiesisch</b> - /portuguisi<b>SH</b>/</p>
-              <p>Land: <b>die Türkei</b> - /di tugkai/ <br> Sprache: <b>Türkisch</b> - /tugqui<b>SH</b>/</p>
-              <p>Land: <b>das Vereinigte Königreich</b> - /das vegainicte kunicgraig/ <br> Sprache: <b>Englisch</b> - /engli<b>SH</b>/</p>
-              <p>Land: <b>die USA</b> - /di u es a/ <br> Sprache: <b>Englisch</b> - /engli<b>SH</b>/</p>
-              <p>--------------------------------------------------------------------------------------</p>
-              <p>Recuerda 1: Los países van precedidos de la preposición aus</p>
-              <p>Recuerda 2: Las ciudades, los municipios, los pueblos y los lugares van precedidos de la preposición in</p>
-            </ul>
-            <p><b>12. Aficiones:</b></p>
-            <ul>
-              <p><b>1. Estructura de las frases afirmativas:</b></p>
-              <p><b>Sujeto + Verbo conjugado + Verbo gustar en infinitivo (gern) + Complementos.</b></p>
-              <p>Ejemplo: Er fotografiert gern Landschaften - <i>Le gusta fotografiar paisajes</i></p>
-              <br>
-              <p><b>2. Estructura de las frases negativas:</b></p>
-              <p><b>Sujeto + Verbo conjugado + nicht + Verbo gustar en infinitivo (gern) + Complementos.</b></p>
-              <p>Ejemplo: Sie schwimmt nicht gern während eins Stunde - <i>No la gusta nadar durante una hora</i></p>
-              <br>
-              <p><b>3. Estructura de las frases interrogativas:</b></p>
-              <p><b>W-Frage + Verbo conjugado + Sujeto + Verbo gustar en infinitivo (gern) + Complementos?</b></p>
-              <p>Ejemplo: Reisen ihr gern nach Griechenland? - <i>¿Os gusta viajar a Grecia?</i></p>
-              <br>
-            </ul>
-          </ul>
-        `
-      },
-      {
-        text: `
-          <p><b>Gramática del Nivel A1 (parte 5):</b></p>
-          <ul>
-            <p><b>13. Días de la semana:</b></p>
-            <table>
-              <tr>
-                <th><b>Arbeitszeit</b> - /arbaitssait/ (días laborales)</th>
-                <th><b>Wochenende</b> - /vogenende/ (fin de semana)</th>
-              </tr>
-              <tr>
-                <td><b>Montag</b> - /montac/ (Lunes)</td>
-                <td><b>Samstag</b> - /samstac/ (Sábado)</td>
-              </tr>
-              <tr>
-                <td><b>Dienstag</b> - /dinstac/ (Martes)</td>
-                <td><b>Sonntag</b> - /sontac/ (Domingo)</td>
-              </tr>
-              <tr>
-                <td><b>Mittwoch</b> - /mitvog/ (Miércoles)</td>
-              </tr>
-              <tr>
-                <td><b>Donnerstag</b> - /donerstac/ (Jueves)</td>
-              </tr>
-              <tr>
-                <td><b>Freitag</b> - /fraitac/ (Viernes)</td>
-              </tr>
-            </table>
+            <p>Land: <b>Deutschland</b> - /doichland/ <br> Sprache: <b>Deutsch</b> - /doich/</p>
+            <p>Land: <b>Algerien</b> - /alguerien/ <br> Sprache: <b>Arabisch</b> - /arabi<b>SH</b>/</p>
+            <p>Land: <b>Österreich</b> - /ustegaig/ <br> Sprache: <b>Deutsch</b> - /doich/</p>
+            <p>Land: <b>die Schweiz</b> - /di <b>SH</b>vais/ <br> Sprache: <b>Französisch</b>, <b>Italienisch</b>, <b>Deutsch</b> und <b>Rätoromanisch</b> - /fransosi<b>SH</b>, italieni<b>SH</b>, doich und guetogomani<b>SH</b>/</p>
+            <p>Land: <b>Frankreich</b> - /frankaig/ <br> Sprache: <b>Französisch</b> - /fransosi<b>SH</b>/</p>
+            <p>Land: <b>Griechenland</b> - /grisinland/ <br> Sprache: <b>Griechisch</b> - /grisi<b>SH</b>/</p>
+            <p>Land: <b>Irland</b> - /igland/ <br> Sprache: <b>Englisch</b> und <b>Irisch</b> - /engli<b>SH</b>/ und /igui<b>SH</b>/</p>
+            <p>Land: <b>Italien</b> - /italien/ <br> Sprache: <b>Italienisch</b> - /italieni<b>SH</b>/</p>
+            <p>Land: <b>Japan</b> - /yapan/ <br> Sprache: <b>Japanisch</b> - /yapani<b>SH</b>/</p>
+            <p>Land: <b>Marokko</b> - /mágoco/ <br> Sprache: <b>Arabisch</b> - /arabi<b>SH</b>/</p>
+            <p>Land: <b>Portugal</b> - /portugal/ <br> Sprache: <b>Portugiesisch</b> - /portuguisi<b>SH</b>/</p>
+            <p>Land: <b>Spanien</b> - /spanien/ <br> Sprache: <b>Spanisch</b> - /spani<b>SH</b>/</p>
+            <p>Land: <b>Brasilien</b> - /brasilien/ <br> Sprache: <b>Portugiesisch</b> - /portuguisi<b>SH</b>/</p>
+            <p>Land: <b>die Türkei</b> - /di tugkai/ <br> Sprache: <b>Türkisch</b> - /tugqui<b>SH</b>/</p>
+            <p>Land: <b>das Vereinigte Königreich</b> - /das vegainicte kunicgraig/ <br> Sprache: <b>Englisch</b> - /engli<b>SH</b>/</p>
+            <p>Land: <b>die USA</b> - /di u es a/ <br> Sprache: <b>Englisch</b> - /engli<b>SH</b>/</p>
             <p>--------------------------------------------------------------------------------------</p>
-            <p>Recuerda 1: Los días de la semana van precedidos de la preposición am</p>
-            <p><b>14. Indicaciones:</b></p>
-            <p><img src="./assets/certificaciones/giro_izq.png"/> => links - /links/ - a la izquierda</p>
-            <p><img src="./assets/certificaciones/recto.png"/> => geradeaus - /guegadaus/ - recto</p>
-            <p><img src="./assets/certificaciones/giro_der.png"/> => rechts - /guets/ - a la derecha</p>
+            <p>Recuerda: Los países van precedidos de la preposición aus</p>
+            <p>Recuerda: Las ciudades, los municipios, los pueblos y los lugares van precedidos de la preposición in</p>
+          </ul>
+          <p><b>12. Aficiones:</b></p>
+          <ul>
+            <p><b>1. Estructura de las frases afirmativas:</b></p>
+            <p><b>Sujeto + Verbo conjugado + Verbo gustar en infinitivo (gern) + Complementos.</b></p>
+            <p>Ejemplo: Er fotografiert gern Landschaften - <i>Le gusta fotografiar paisajes</i></p>
+            <br>
+            <p><b>2. Estructura de las frases negativas:</b></p>
+            <p><b>Sujeto + Verbo conjugado + nicht + Verbo gustar en infinitivo (gern) + Complementos.</b></p>
+            <p>Ejemplo: Sie schwimmt nicht gern während eins Stunde - <i>No la gusta nadar durante una hora</i></p>
+            <br>
+            <p><b>3. Estructura de las frases interrogativas:</b></p>
+            <p><b>W-Frage + Verbo conjugado + Sujeto + Verbo gustar en infinitivo (gern) + Complementos?</b></p>
+            <p>Ejemplo: Reisen ihr gern nach Griechenland? - <i>¿Os gusta viajar a Grecia?</i></p>
+            <br>
           </ul>
         `
       },
       {
         text: `
-          <p><b>Gramática del Nivel A1 (parte 6):</b></p>
+          <p><b>13. Días de la semana:</b></p>
+          <table>
+            <tr>
+              <th><b>Arbeitszeit</b> - /arbaitssait/ (días laborales)</th>
+              <th><b>Wochenende</b> - /vogenende/ (fin de semana)</th>
+            </tr>
+            <tr>
+              <td><b>Montag</b> - /montac/ (Lunes)</td>
+              <td><b>Samstag</b> - /samstac/ (Sábado)</td>
+            </tr>
+            <tr>
+              <td><b>Dienstag</b> - /dinstac/ (Martes)</td>
+              <td><b>Sonntag</b> - /sontac/ (Domingo)</td>
+            </tr>
+            <tr>
+              <td><b>Mittwoch</b> - /mitvog/ (Miércoles)</td>
+            </tr>
+            <tr>
+              <td><b>Donnerstag</b> - /donerstac/ (Jueves)</td>
+            </tr>
+            <tr>
+              <td><b>Freitag</b> - /fraitac/ (Viernes)</td>
+            </tr>
+          </table>
+          <p>--------------------------------------------------------------------------------------</p>
+          <p>Recuerda: Los días de la semana van precedidos de la preposición am</p>
+          <p>--------------------------------------------------------------------------------------</p>
+          <p><b>14. Indicaciones:</b></p>
+          <p><img src="./assets/certificaciones/giro_izq.png"/> => links - /links/ - a la izquierda</p>
+          <p><img src="./assets/certificaciones/recto.png"/> => geradeaus - /guegadaus/ - recto</p>
+          <p><img src="./assets/certificaciones/giro_der.png"/> => rechts - /guets/ - a la derecha</p>
+        `
+      },
+      {
+        text: `
+          <p><b>15. Partes de un día:</b></p>
+          <table>
+            <tr>
+              <th>Tramo del día</th>
+              <th>Tramo horario</th>
+              <th>Saludo correspondiente</th>
+            </tr>
+            <tr>
+              <td><b>Dämmerung</b> - /démegunc/ - (madrugada)</td>
+              <td>12 AM - 6 AM</td>
+              <td><b>X</b></td>
+            </tr>
+            <tr>
+              <td><b>Morgen</b> - /moguen/ - (mañana)</td>
+              <td>6 AM - 10 AM</td>
+              <td><b>Guten Morgen</b> - /gun moguen/ - (Buenos días)</td>
+            </tr>
+            <tr>
+              <td><b>Vormittag</b> - /vogmitac/ - (premediodía)</td>
+              <td>10 AM - 12 PM</td>
+              <td><b>Guten Tag</b> - /guten tac/ - (Buenos medio día)</td>
+            </tr>
+            <tr>
+              <td><b>Mittag</b> - /mitac/ - (mediodía)</td>
+              <td>12 PM - 2 PM</td>
+              <td><b>Guten Tag</b> - /guten tac/ - (Buenos medio día)</td>
+            </tr>
+            <tr>
+              <td><b>Nachmittag</b> - /nagmitac/ - (postmediodía)</td>
+              <td>2 PM - 5 PM</td>
+              <td><b>Guten Tag</b> - /guten tac/ - (Buenos medio día)</td>
+            </tr>
+            <tr>
+              <td><b>Abend</b> - /abend/ - (tarde)</td>
+              <td>5 PM - 9 PM</td>
+              <td><b>Guten Abend</b> - /guten abend/ - (Buenas tardes)</td>
+            </tr>
+            <tr>
+              <td><b>Nacht</b> - /nagt/ - (noche)</td>
+              <td>9 PM - 12 AM</td>
+              <td><b>Gute Nacht</b> - /gute nagt/ - (Buenas noches)</td>
+            </tr>
+          </table>
+          <p><b>16. Meses del año:</b></p>
+          <table>
+            <tr>
+              <td><b>Januar</b><br>/yanuag/</td>
+              <td><b>Februar</b><br>/februar/</td>
+              <td><b>März</b><br>/mars/</td>
+              <td><b>April</b><br>/april/</td>
+            </tr>
+            <tr>
+              <td><b>Mai</b><br>/mai/</td>
+              <td><b>Juni</b><br>/yuni/</td>
+              <td><b>Juli</b><br>/yuli/</td>
+              <td><b>August</b><br>/agust/</td>
+            </tr>
+            <tr>
+              <td><b>September</b><br>/september/</td>
+              <td><b>Oktober</b><br>/oktober/</td>
+              <td><b>November</b><br>/november/</td>
+              <td><b>Dezember</b><br>/disember/</td>
+            </tr>
+          </table>
+          <p><b>17. Estaciones del año:</b></p>
+          <table>
+            <tr>
+              <td><b>Frühling</b> <br> /frulinc/</td>
+              <td><b>Sommer</b> <br> /sommeg/</td>
+            </tr>
+            <tr>
+              <td><b>Herbst</b> <br> /jerbst/</td>
+              <td><b>Winter</b> <br> /vinter/</td>
+            </tr>
+          </table>
+          <p>---------------------------------------------------------------</p>
+          <p>Recuerda: Las estaciones y los meses van precedidos de la preposición im</p>
+          <p>---------------------------------------------------------------</p>
+        `
+      },
+      {
+        text: `
+          <p><b>18. Comidas del día:</b></p>
+          <table>
+            <tr>
+              <th>Morgen (mañana)</th>
+              <th>Mittag (mediodía)</th>
+              <th>Nachmittag (postmediodía)</th>
+              <th>Abend (tarde)</th>
+            </tr>
+            <tr>
+              <td><b>Frühstück</b> <br> /frustuk/ <br> (desayuno)</td>
+              <td><b>Mittagessen</b> <br> /mitaguesen/ <br> (comida/almuerzo)</td>
+              <td><b>Kaffee und Kuchen</b> <br> /cafe und cugen/ <br> (merienda)</td>
+              <td><b>Abendessen</b> <br> /abendesen/ <br> (cena)</td>
+            </tr>
+          </table>
+          <p><b>19. Profesiones:</b></p>
+          <table>
+            <tr>
+              <th>Alemán</th>
+              <th>Pronunciación</th>
+              <th>Español</th>
+            </tr>
+            <tr>
+              <td style="background-color: rgb(240, 255, 156);">Taxifahrer</td>
+              <td style="background-color: rgb(240, 255, 156);">/taxif<b>aa</b>gueg/</td>
+              <td style="background-color: rgb(240, 255, 156);">taxista (él)</td>
+            </tr>
+            <tr>
+              <td style="background-color: rgb(240, 255, 156);">Taxifahrerin</td>
+              <td style="background-color: rgb(240, 255, 156);">/taxif<b>aa</b>gueguin/</td>
+              <td style="background-color: rgb(240, 255, 156);">taxista (ella)</td>
+            </tr>
+            <tr>
+              <td style="background-color: rgb(240, 255, 156);">Taxifahreren</td>
+              <td style="background-color: rgb(240, 255, 156);">/taxif<b>aa</b>gueguen/</td>
+              <td style="background-color: rgb(240, 255, 156);">taxistas</td>
+            </tr>
+            <tr>
+              <td style="background-color: rgb(222, 190, 252);">Student</td>
+              <td style="background-color: rgb(222, 190, 252);">/student/</td>
+              <td style="background-color: rgb(222, 190, 252);">estudiante (él)</td>
+            </tr>
+            <tr>
+              <td style="background-color: rgb(222, 190, 252);">Studentin</td>
+              <td style="background-color: rgb(222, 190, 252);">/studentin/</td>
+              <td style="background-color: rgb(222, 190, 252);">estudiante (ella)</td>
+            </tr>
+            <tr>
+              <td style="background-color: rgb(222, 190, 252);">Studenten</td>
+              <td style="background-color: rgb(222, 190, 252);">/studenten/</td>
+              <td style="background-color: rgb(222, 190, 252);">estudiantes</td>
+            </tr>
+            <tr>
+              <td style="background-color: rgb(247, 174, 162);">Arzt</td>
+              <td style="background-color: rgb(247, 174, 162);">/arst/</td>
+              <td style="background-color: rgb(247, 174, 162);">médico (él)</td>
+            </tr>
+            <tr>
+              <td style="background-color: rgb(247, 174, 162);">Ärztin</td>
+              <td style="background-color: rgb(247, 174, 162);">/erstin/</td>
+              <td style="background-color: rgb(247, 174, 162);">médico (ella)</td>
+            </tr>
+            <tr>
+              <td style="background-color: rgb(247, 174, 162);">Ärzte</td>
+              <td style="background-color: rgb(247, 174, 162);">/erste/</td>
+              <td style="background-color: rgb(247, 174, 162);">médicos</td>
+            </tr>
+            <tr>
+              <td style="background-color: rgb(153, 250, 170);">Kellner</td>
+              <td style="background-color: rgb(153, 250, 170);">/quelneg/</td>
+              <td style="background-color: rgb(153, 250, 170);">camarero</td>
+            </tr>
+            <tr>
+              <td style="background-color: rgb(153, 250, 170);">Kellnerin</td>
+              <td style="background-color: rgb(153, 250, 170);">/quelneguin/</td>
+              <td style="background-color: rgb(153, 250, 170);">camarera</td>
+            </tr>
+            <tr>
+              <td style="background-color: rgb(153, 250, 170);">Kellneren</td>
+              <td style="background-color: rgb(153, 250, 170);">/quelneguen/</td>
+              <td style="background-color: rgb(153, 250, 170);">camareros</td>
+            </tr>
+            <tr>
+              <td style="background-color: rgb(106, 247, 228);">Informatiker</td>
+              <td style="background-color: rgb(106, 247, 228);">/infogmatiqueg/</td>
+              <td style="background-color: rgb(106, 247, 228);">informático (él)</td>
+            </tr>
+            <tr>
+              <td style="background-color: rgb(106, 247, 228);">Informatikerin</td>
+              <td style="background-color: rgb(106, 247, 228);">/infogmatiqueguin/</td>
+              <td style="background-color: rgb(106, 247, 228);">informático (ella)</td>
+            </tr>
+            <tr>
+              <td style="background-color: rgb(106, 247, 228);">Informatikers</td>
+              <td style="background-color: rgb(106, 247, 228);">/infogmatiquegs/</td>
+              <td style="background-color: rgb(106, 247, 228);">informáticos</td>
+            </tr>
+            <tr>
+              <td style="background-color: rgb(247, 146, 216);">Ingenieur</td>
+              <td style="background-color: rgb(247, 146, 216);">/inguenieg/</td>
+              <td style="background-color: rgb(247, 146, 216);">ingeniero</td>
+            </tr>
+            <tr>
+              <td style="background-color: rgb(247, 146, 216);">Ingenieurin</td>
+              <td style="background-color: rgb(247, 146, 216);">/inguenieguin/</td>
+              <td style="background-color: rgb(247, 146, 216);">ingeniera</td>
+            </tr>
+            <tr>
+              <td style="background-color: rgb(247, 146, 216);">Ingenieure</td>
+              <td style="background-color: rgb(247, 146, 216);">/ingueniegue/</td>
+              <td style="background-color: rgb(247, 146, 216);">ingenieros</td>
+            </tr>
+            <tr>
+              <td style="background-color: rgb(145, 75, 75);">Lehrer</td>
+              <td style="background-color: rgb(145, 75, 75);">/l<b>ee</b>gueg/</td>
+              <td style="background-color: rgb(145, 75, 75);">profesor</td>
+            </tr>
+            <tr>
+              <td style="background-color: rgb(145, 75, 75);">Lehrerin</td>
+              <td style="background-color: rgb(145, 75, 75);">/l<b>ee</b>gueguin/</td>
+              <td style="background-color: rgb(145, 75, 75);">profesora</td>
+            </tr>
+            <tr>
+              <td style="background-color: rgb(145, 75, 75);">Lehrere</td>
+              <td style="background-color: rgb(145, 75, 75);">/l<b>ee</b>guegue/</td>
+              <td style="background-color: rgb(145, 75, 75);">profesores</td>
+            </tr>
+            <tr>
+              <td style="background-color: rgb(216, 155, 63);">Verkäufer</td>
+              <td style="background-color: rgb(216, 155, 63);">/vercoifeg/</td>
+              <td style="background-color: rgb(216, 155, 63);">dependiente</td>
+            </tr>
+            <tr>
+              <td style="background-color: rgb(216, 155, 63);">Verkäuferin</td>
+              <td style="background-color: rgb(216, 155, 63);">/vercoifeguin/</td>
+              <td style="background-color: rgb(216, 155, 63);">dependienta</td>
+            </tr>
+            <tr>
+              <td style="background-color: rgb(216, 155, 63);">Verkäufere</td>
+              <td style="background-color: rgb(216, 155, 63);">/vercoifegue/</td>
+              <td style="background-color: rgb(216, 155, 63);">dependientes</td>
+            </tr>
+            <tr>
+              <td style="background-color: rgb(238, 228, 228);">Architekt</td>
+              <td style="background-color: rgb(238, 228, 228);">/arquitekt/</td>
+              <td style="background-color: rgb(238, 228, 228);">arquitecto</td>
+            </tr>
+            <tr>
+              <td style="background-color: rgb(238, 228, 228);">Architektin</td>
+              <td style="background-color: rgb(238, 228, 228);">/arquitektin/</td>
+              <td style="background-color: rgb(238, 228, 228);">arquitecta</td>
+            </tr>
+            <tr>
+              <td style="background-color: rgb(238, 228, 228);">Architekten</td>
+              <td style="background-color: rgb(238, 228, 228);">/arquitekten/</td>
+              <td style="background-color: rgb(238, 228, 228);">arquitectos</td>
+            </tr>
+            <tr>
+              <td style="background-color: rgb(106, 57, 219);">Friseur</td>
+              <td style="background-color: rgb(106, 57, 219);">/friseg/</td>
+              <td style="background-color: rgb(106, 57, 219);">peluquero</td>
+            </tr>
+            <tr>
+              <td style="background-color: rgb(106, 57, 219);">Friseurin</td>
+              <td style="background-color: rgb(106, 57, 219);">/friseguin/</td>
+              <td style="background-color: rgb(106, 57, 219);">peluquera</td>
+            </tr>
+            <tr>
+              <td style="background-color: rgb(106, 57, 219);">Friseure</td>
+              <td style="background-color: rgb(106, 57, 219);">/frisegue/</td>
+              <td style="background-color: rgb(106, 57, 219);">peluqueros</td>
+            </tr>
+          </table>
+        `
+      },
+      {
+        text: `
+          <p><b>20. Artículos nominativos:</b> Son aquéllos que están en el sujeto</p>
+          <p><b>21. Artículos acusativos:</b> Son aquéllos que están en el complemento directo del predicato</p>
+          <p><b>22. Artículos dativos:</b> Son aquéllos que están en un complemento del predicato y les precede la preposición mit</p>
+          <p>---------------------------------------------------------------</p>
+          <p><b>23. Artículos determinados nominativos:</b> der [/dea/] (masculino) / das [/das/] (neutro) / die [/di/] (femenino) / die [/di/] (plural)</p>
+          <p><b>24. Artículos indeterminados nominativos:</b> ein [/ain/] (masculino) / ein [/ain/] (neutro) / eine [/aine/] (femenino)</p>
+          <p><b>25. Artículos de negación nominativos:</b> kein [/cain/] (masculino) / kein [/cain/] (neutro) / keine [/caine/] (femenino) / keine [/caine/] (plural)</p>
+          <p>---------------------------------------------------------------</p>
+          <p><b>26. Artículos determinados acusativos:</b> den [/den/] (masculino) / das [/das/] (neutro) / die [/di/] (femenino) / die [/di/] (plural)</p>
+          <p><b>27. Artículos indeterminados acusativos:</b> einen [/ainen/] (masculino) / ein [/ain/] (neutro) / eine [/aine/] (femenino)</p>
+          <p><b>28. Artículos de negación acusativos:</b> keinen [/kainen/] (masculino) / kein [/kain/] (neutro) / keine [/kaine/] (femenino) / keine [/kaine/] (plural)</p>
+          <p>---------------------------------------------------------------</p>
+          <p><b>29. Artículos determinados dativos:</b> mit dem [/mit dem/] (masculino) / mit dem [/mit dem/] (neutro) / mit der [/mit dea/] (femenino) / mit den [/mit den/] (plural)</p>
+          <p><b>30. Artículos indeterminados dativos:</b> mit einem [/mit ainem/] (masculino) / mit einem [/mit ainem/] (neutro) / mit einer [/mit aina/] (femenino)</p>
+          <p><b>31. Artículos de negación dativos:</b> mit keinem [/mit cainem/] (masculino) / mit keinem [/mit cainem/] (neutro) / mit keiner [/mit caina/] (femenino) / mit keinen [/mit cainen/] (plural)</p>
+        `
+      },
+      {
+        text: `
+          <p><b>32. Artículos posesivos nominativos:</b></p>
           <ul>
-            <p><b>15. Partes de un día:</b></p>
-            <table>
-              <tr>
-                <th>Tramo del día</th>
-                <th>Tramo horario</th>
-                <th>Saludo correspondiente</th>
-              </tr>
-              <tr>
-                <td><b>Dämmerung</b> - /démegunc/ - (madrugada)</td>
-                <td>12 AM - 6 AM</td>
-                <td><b>X</b></td>
-              </tr>
-              <tr>
-                <td><b>Morgen</b> - /moguen/ - (mañana)</td>
-                <td>6 AM - 10 AM</td>
-                <td><b>Guten Morgen</b> - /gun moguen/ - (Buenos días)</td>
-              </tr>
-              <tr>
-                <td><b>Vormittag</b> - /vogmitac/ - (premediodía)</td>
-                <td>10 AM - 12 PM</td>
-                <td><b>Guten Tag</b> - /guten tac/ - (Buenos medio día)</td>
-              </tr>
-              <tr>
-                <td><b>Mittag</b> - /mitac/ - (mediodía)</td>
-                <td>12 PM - 2 PM</td>
-                <td><b>Guten Tag</b> - /guten tac/ - (Buenos medio día)</td>
-              </tr>
-              <tr>
-                <td><b>Nachmittag</b> - /nagmitac/ - (postmediodía)</td>
-                <td>2 PM - 5 PM</td>
-                <td><b>Guten Tag</b> - /guten tac/ - (Buenos medio día)</td>
-              </tr>
-              <tr>
-                <td><b>Abend</b> - /abend/ - (tarde)</td>
-                <td>5 PM - 9 PM</td>
-                <td><b>Guten Abend</b> - /guten abend/ - (Buenas tardes)</td>
-              </tr>
-              <tr>
-                <td><b>Nacht</b> - /nagt/ - (noche)</td>
-                <td>9 PM - 12 AM</td>
-                <td><b>Gute Nacht</b> - /gute nagt/ - (Buenas noches)</td>
-              </tr>
-            </table>
-            <p><b>16. Meses del año:</b></p>
-            <table>
-              <tr>
-                <td><b>Januar</b><br>/yanuag/</td>
-                <td><b>Februar</b><br>/februar/</td>
-                <td><b>März</b><br>/mars/</td>
-                <td><b>April</b><br>/april/</td>
-              </tr>
-              <tr>
-                <td><b>Mai</b><br>/mai/</td>
-                <td><b>Juni</b><br>/yuni/</td>
-                <td><b>Juli</b><br>/yuli/</td>
-                <td><b>August</b><br>/agust/</td>
-              </tr>
-              <tr>
-                <td><b>September</b><br>/september/</td>
-                <td><b>Oktober</b><br>/oktober/</td>
-                <td><b>November</b><br>/november/</td>
-                <td><b>Dezember</b><br>/disember/</td>
-              </tr>
-            </table>
-            <p><b>17. Estaciones del año:</b></p>
-            <table>
-              <tr>
-                <td><b>Frühling</b> <br> /frulinc/</td>
-                <td><b>Sommer</b> <br> /sommeg/</td>
-              </tr>
-              <tr>
-                <td><b>Herbst</b> <br> /jerbst/</td>
-                <td><b>Winter</b> <br> /vinter/</td>
-              </tr>
-            </table>
-            <p>---------------------------------------------------------------</p>
-            <p>Recuerda 1: Las estaciones y los meses van precedidos de la preposición im</p>
+            <p>Ich => mein [/main/] (masculino) / mein [/main/] (neutro) / meine [/maine/] (femenino) / meine [/maine/] (plural)</p>
+            <p>Du => dein [/dain/] (masculino) / dein [/dain/] (neutro) / deine [/daine/] (femenino) / deine [/daine/] (plural)</p>
+            <p>Er/Es => sein [/sain/] (masculino) / sein [/sain/] (neutro) / seine [/saine/] (femenino) / seine [/saine/] (plural)</p>
+            <p>Wir => unser [/unser/] (masculino) / unser [/unser/] (neutro) / unsere [/unsegue/] (femenino) / unsere [/unsegue/] (plural)</p>
+            <p>Ihr => euer [/óia/] (masculino) / euer [/óia/] (neutro) / eure [/oigué/] (femenino) / eure [/oigué/] (plural)</p>
+            <p>sie/Sie => ihr [/ía/] (masculino) / ihr [/ía/] (neutro) / ihre [/ígue/] (femenino) / ihre [/ígue/] (plural)</p>
+          </ul>
+          <p><b>33. Artículos posesivos acusativos:</b></p>
+          <ul>
+            <p>Ich => meinen [/mainen/] (masculino) / mein [/main/] (neutro) / meine [/maine/] (femenino) / meine [/maine/] (plural)</p>
+            <p>Du => deinen [/dainen/] (masculino) / dein [/dain/] (neutro) / deine [/daine/] (femenino) / deine [/daine/] (plural)</p>
+            <p>Er/Es => seinen [/sainen/] (masculino) / sein [/sain/] (neutro) / seine [/saine/] (femenino) / seine [/saine/] (plural)</p>
+            <p>Wir => unseren [/unseguen/] (masculino) / unser [/unser/] (neutro) / unsere [/unsegue/] (femenino) / unsere [/unsegue/] (plural)</p>
+            <p>Ihr => euren [/oiguén/] (masculino) / euer [/óia/] (neutro) / eure [/oigué/] (femenino) / eure [/oigué/] (plural)</p>
+            <p>sie/Sie => ihren [/íguen/] (masculino) / ihr [/ía/] (neutro) / ihre [/ígue/] (femenino) / ihre [/ígue/] (plural)</p>
+          </ul>
+          <p><b>34. Artículos posesivos dativos:</b></p>
+          <ul>
+            <p>Ich => mit meinem [/mit mainem/] (masculino) / mit meinem [/mit mainem/] (neutro) / mit meiner [/mit maina/] (femenino) / mit meinen [/mit mainen/] (plural)</p>
+            <p>Du => mit deinem [/mit dainem/] (masculino) / mit deinem [/mit dainem/] (neutro) / mit deiner [/mit daina/] (femenino) / mit deinen [/mit dainen/] (plural)</p>
+            <p>Er/Es => mit seinem [/mit sainem/] (masculino) / mit seinem [/mit sainem/] (neutro) / mit seiner [/mit saina/] (femenino) / mit seinen [/mit sainen/] (plural)</p>
+            <p>Wir => mit unserem [/mit unseguem/] (masculino) / mit unserem [/mit unseguem/] (neutro) / mit unserer [/mit unsegá/] (femenino) / mit unseren [/mit unseguen/] (plural)</p>
+            <p>Ihr => mit euerem [/mit óiguem/] (masculino) / mit euerem [/mit óiguem/] (neutro) / mit eurer [/mit óiga/] (femenino) / mit euren [/mit óiguen/] (plural)</p>
+            <p>sie/Sie => mit ihrem [/mit íaguem/] (masculino) / mit ihrem [/mit íaguem/] (neutro) / mit ihrer [/mit íaga/] (femenino) / mit ihren [/mit íaguen/] (plural)</p>
+          </ul>
+        `
+      },
+      {text: `<p><b>35. Ejercicio de ejemplo con artículos posesivos:</b></p>`, img: "https://i.postimg.cc/hP7SHctZ/posesivos.jpg"},
+      {
+        text: `
+          <p><b>36. La Hora informal:</b></p>
+          <p> En punto => "número en alemán"</p>
+          <p> Y cinco => kurz nach "número en alemán"</p>
+          <p> Y diez => zehn nach "número en alemán"</p>
+          <p> Y cuarto => viertel nach "número en alemán"</p>
+          <p> Y veinte => zwanzig nach "número en alemán"</p>
+          <p> Y veinticinco => fünf vor halb "número en alemán + 1"</p>
+          <p> Y media => halb "número en alemán + 1"</p>
+          <p> Menos veinticinco => fünf nach halb "número en alemán + 1"</p>
+          <p> Menos veinte => zwanzig vor "número en alemán + 1"</p>
+          <p> Menos cuarto => viertel vor "número en alemán + 1"</p>
+          <p> Menos diez => zehn vor "número en alemán + 1"</p>
+          <p> Menos cinco => kurz vor "número en alemán + 1"</p>
+          <p><b>37. La Hora formal:</b></p>
+          <p><b>HH:MM Uhr</b> => /"nº en alemán para expresar la hora" ua "nº en alemán para expresar los minutos"/</p>
+          <p>Ejemplo: <b>14:45 Uhr</b> <br> vierzehn Uhr fünfundvierzig - /fíatsen ua funfundfíatsig/</p>
+          <p>---------------------------------------------------------------</p>
+          <p>Recuerda: Cuando en una oración/frase utilizas días de la semana y horas, primero se escriben los días de la semana y luego, las horas</p>
+          <p>---------------------------------------------------------------</p>
+        `
+      },
+      {
+        text: `
+          <p><b>38. Verbos modales:</b></p>
+          <table>
+            <tr>
+              <th>Estructura de las oraciones afirmativas:</th>
+              <td>Sujeto + Verbo modal conjugado + Complementos + Verbo no modal en infinitivo.</td>
+            </tr>
+            <tr>
+              <th>Estructura de las oraciones negativas:</th>
+              <td>Sujeto + Verbo modal conjugado + Complementos + nicht + Verbo no modal en infinitivo.</td>
+            </tr>
+            <tr>
+              <th>Estructura de las oraciones interrogativas:</th>
+              <td>W-Frage + Verbo modal conjugado + Sujeto + Complementos + Verbo no modal en infinitivo?</td>
+            </tr>
+          </table>
+          <p><b>39. Conjugación de verbos modales en presente:</b></p>
+          <table>
+            <tr>
+              <th></th>
+              <th></th>
+              <th>1º persona del singular</th>
+              <th>2º persona del singular</th>
+              <th>3º persona del singular</th>
+              <th>1º persona del plural</th>
+              <th>2º persona del plural</th>
+              <th>3º persona del plural y usted</th>
+            </tr>
+            <tr>
+              <th>Infinitivo en alemán</th>
+              <th>Traducción en español</th>
+              <td>ich</td>
+              <td>du</td>
+              <td>er/sie/es</td>
+              <td>wir</td>
+              <td>ihr</td>
+              <td>sie/Sie</td>
+            </tr>
+            <tr>
+              <td>müssen</td>
+              <td>deber</td>
+              <td>muss</td>
+              <td>musst</td>
+              <td>muss</td>
+              <td>müssen</td>
+              <td>müsst</td>
+              <td>müssen</td>
+            </tr>
+            <tr>
+              <td>wollen</td>
+              <td>tener que</td>
+              <td>will</td>
+              <td>willst</td>
+              <td>will</td>
+              <td>wollen</td>
+              <td>wollt</td>
+              <td>wollen</td>
+            </tr>
+            <tr>
+              <td>können</td>
+              <td>poder</td>
+              <td>kann</td>
+              <td>kannst</td>
+              <td>kann</td>
+              <td>können</td>
+              <td>könnt</td>
+              <td>können</td>
+            </tr>
+            <tr>
+              <td>möchten</td>
+              <td>desear</td>
+              <td>möchte</td>
+              <td>möchtest</td>
+              <td>möchte</td>
+              <td>möchten</td>
+              <td>möchtet</td>
+              <td>möchten</td>
+            </tr>
+            <tr>
+              <td>dürfen</td>
+              <td>tener permiso</td>
+              <td>darf</td>
+              <td>darfst</td>
+              <td>darf</td>
+              <td>dürfen</td>
+              <td>dürft</td>
+              <td>dürfen</td>
+            </tr>
+            <tr>
+              <td>sollen</td>
+              <td>debería</td>
+              <td>soll</td>
+              <td>sollst</td>
+              <td>soll</td>
+              <td>sollen</td>
+              <td>sollt</td>
+              <td>sollen</td>
+            </tr>
+          </table>
+        `
+      },
+      {
+        text: `
+          <p><b>40. Números ordinales:</b></p>
+          <p>
+            Expresan orden y van precedidas de la preposición Am. Para expresar los meses del año, se haría así:
+            <i>Am N.M</i>, siendo N = día y M = mes
+          </p>
+          <p>Si <b>N < 20</b> => en N se escribe el <b>número + ten</b>, excepto el 1 y el 3 que, sería así: 1. = ers + ten <br> 3. = drit + ten</p>
+          <p>Si <b>N >= 20</b> => en N se escribe el <b>número + sten</b></p>
+          <p>Ejemplo: <b>ersten November</b> oder <b>dreißigsten März</b></p>
+          <p><b>41. Verbos con preverbio:</b></p>
+          <p>Conversión: <b>preverbio</b> + <b>verbo en infinitivo</b> <=> <b>sujeto</b> + <b>verbo conjugado</b> + complemento + <b>preverbio</b></p>
+          <p>Ejemplo: mitkommen <=> ich komme Deutsch jetzt mit || Traducción: <i>entender <=> ya entiendo el alemán</i></p>
+          <p>---------------------------------------------------------------</p>
+          <p>Recuerda: Los <b>verbos con preverbio</b> se acentúan en la <b>1º sílaba</b></p>
+          <p>---------------------------------------------------------------</p>
+          <p>Estructura de oraciones afirmativas:</p>
+          <p><b>sujeto</b> + <b>verbo conjugado</b> + complemento + <b>preverbio</b></p>
+          <p><b>sujeto</b> + <b>preverbio + infinitivo</b> + complemento</p>
+          <p>Estructura de oraciones negativas:</p>
+          <p><b>sujeto</b> + <b>verbo conjugado</b> + complemento + <b>nicht</b> + <b>preverbio</b></p>
+          <p><b>sujeto</b> + <b>preverbio + infinitivo</b> + complemento + <b>nicht</b></p>
+          <p>Estructura de oraciones interrogativas:</p>
+          <p>W-Frage + <b>verbo conjugado</b> + <b>sujeto</b> + complemento + <b>preverbio</b></p>
+          <p>W-Frage + <b>preverbio + infinitivo</b> + <b>sujeto</b> + complemento</p>
+          <p><u>Listado de verbos con preverbio:</u></p>
+          <p>1. mitmachen => apuntarse a => /mitmagen/</p>
+          <p>2. einladen => invitar a => /ainladen/</p>
+          <p>3. anfangen => empezar => /anfanguen/</p>
+          <p>4. abholen => recoger a alguien => /abjolen/</p>
+          <p>5. mitbringen => traer => /mitbringuen/</p>
+          <p>6. einsammeln => recaudar => /ainsammeln/</p>
+          <p>7. anrufen => comunicarse por teléfono => /angufen/</p>
+          <p>8. mitkommen => entender => /mitcomen/</p>
+          <p>9. aufstehen => levantarse => /ofst<b>ee</b>n/</p>
+          <p>10. ausmachen => apagar => /ausmagen/</p>
+          <p>11. mitnehmen => llevar/traer consigo => /mitn<b>ee</b>men/</p>
+          <p>12. aufmachen => abrir => /ofmagen/</p>
+          <p>13. aufschreiben => apuntar/anotar => /of<b>SH</b>gaiben/</p>
+          <p>14. vorlesen => leer en voz alta => /voglisen/</p>
+        `
+      },
+      {
+        text: `
+          <p><b>42. Pronombres: ¿para quién?:</b></p>
+          <p>Son pronombres que van después de <b>für</b></p>
+          <p>Es decir, <b>für</b> + <b>pronombre</b>, que pueden ser los siguientes:</p>
+          <table>
+            <tr>
+              <th>1º persona del singular</th>
+              <th>2º persona del singular</th>
+              <th>3º persona del singular: er/sie/es</th>
+              <th>1º persona del plural</th>
+              <th>2º persona del plural</th>
+              <th>3º persona del plural y usted</th>
+            </tr>
+            <tr>
+              <td>mich</td>
+              <td>dich</td>
+              <td>ihn/sie/es</td>
+              <td>uns</td>
+              <td>euch</td>
+              <td>sie/Sie</td>
+            </tr>
+          </table>
+          <p><b>43. Preposiciones + artículos dativos:</b></p>
+          <p>Cuando se da el caso de una <b>preposición</b> y a continuación un <b>artículo dativo</b>, se hace una <b>contracción</b>, tal que así:</p>
+          <table>
+            <tr>
+              <td>zu + dem = zum</td>
+              <td>zu + der = zur</td>
+            </tr>
+            <tr>
+              <td>bei + dem = beim</td>
+            </tr>
+            <tr>
+              <td>von + dem = vom</td>
+              <td>von + der = vor</td>
+            </tr>
+            <tr>
+              <td>in + dem = im</td>
+            </tr>
+          </table>
+          <p><b>44. Cambios en algunas W-Frage:</b></p>
+          <p>La W-Frage: ¿Quién? => puede ser nominal, acusativa o dativa</p>
+          <p>Si es nominal, es Wer?</p>
+          <p>Si es acusativa, es Wen?</p>
+          <p>Si es dativa, es Wem?</p>
+          <p><b>45. Pronombres: ¿a quién?:</b></p>
+          <p>Son los siguientes pronombres:</p>
+          <table>
+            <tr>
+              <th>1º persona del singular</th>
+              <th>2º persona del singular</th>
+              <th>3º persona del singular: er/sie/es</th>
+              <th>1º persona del plural</th>
+              <th>2º persona del plural</th>
+              <th>3º persona del plural y usted</th>
+            </tr>
+            <tr>
+              <td>mir</td>
+              <td>dir</td>
+              <td>ihm/ihr/ihm</td>
+              <td>uns</td>
+              <td>euch</td>
+              <td>ihnen/Ihnen</td>
+            </tr>
+          </table>
+        `
+      },
+      {
+        text: `
+          <p><b>46. Verbos conjugados en presente:</b></p>
+          <p>(*) I => verbo irregular</p>
+          <p>(*) R => verbo regular</p>
+          <table>
+            <tr>
+              <th>Infinitivo en alemán</th>
+              <th>Traducción en español</th>
+              <th>ich</th>
+              <th>du</th>
+              <th>er/sie/es</th>
+              <th>wir</th>
+              <th>ihr</th>
+              <th>sie/Sie</th>
+            </tr>
+            <tr>
+              <td>sein (I)</td>
+              <td>ser/estar</td>
+              <td>bin</td>
+              <td>bist</td>
+              <td>ist</td>
+              <td>sind</td>
+              <td>seid</td>
+              <td>sind</td>
+            </tr>
+            <tr>
+              <td>heißen (R)</td>
+              <td>llamarse</td>
+              <td>heiße</td>
+              <td>heißt</td>
+              <td>heißt</td>
+              <td>heißen</td>
+              <td>heißt</td>
+              <td>heißen</td>
+            </tr>
+            <tr>
+              <td>wohnen (R)</td>
+              <td>vivir en</td>
+              <td>wohne</td>
+              <td>wohnst</td>
+              <td>wohnt</td>
+              <td>wohnen</td>
+              <td>wohnt</td>
+              <td>wohnen</td>
+            </tr>
+            <tr>
+              <td>kommen (R)</td>
+              <td>venir de</td>
+              <td>komme</td>
+              <td>kommst</td>
+              <td>kommt</td>
+              <td>kommen</td>
+              <td>kommt</td>
+              <td>kommen</td>
+            </tr>
+            <tr>
+              <td>kochen (R)</td>
+              <td>cocinar</td>
+              <td>koche</td>
+              <td>kochst</td>
+              <td>kocht</td>
+              <td>kochen</td>
+              <td>kocht</td>
+              <td>kochen</td>
+            </tr>
+            <tr>
+              <td>arbeiten (R)</td>
+              <td>trabajar</td>
+              <td>arbeite</td>
+              <td>arbeitest</td>
+              <td>arbeitet</td>
+              <td>arbeiten</td>
+              <td>arbeitet</td>
+              <td>arbeiten</td>
+            </tr>
+            <tr>
+              <td>lesen (I)</td>
+              <td>leer</td>
+              <td>lese</td>
+              <td>liest</td>
+              <td>liest</td>
+              <td>lesen</td>
+              <td>lest</td>
+              <td>lesen</td>
+            </tr>
+            <tr>
+              <td>sprechen (I)</td>
+              <td>hablar</td>
+              <td>spreche</td>
+              <td>sprichst</td>
+              <td>spricht</td>
+              <td>sprechen</td>
+              <td>sprecht</td>
+              <td>sprechen</td>
+            </tr>
+            <tr>
+              <td>reisen (R)</td>
+              <td>viajar</td>
+              <td>reise</td>
+              <td>reist</td>
+              <td>reist</td>
+              <td>reisen</td>
+              <td>reist</td>
+              <td>reisen</td>
+            </tr>
+            <tr>
+              <td>singen (R)</td>
+              <td>cantar</td>
+              <td>singe</td>
+              <td>singst</td>
+              <td>singt</td>
+              <td>singen</td>
+              <td>singt</td>
+              <td>singen</td>
+            </tr>
+            <tr>
+              <td>gehen (R)</td>
+              <td>ir</td>
+              <td>gehe</td>
+              <td>gehst</td>
+              <td>geht</td>
+              <td>gehen</td>
+              <td>geht</td>
+              <td>gehen</td>
+            </tr>
+            <tr>
+              <td>joggen (R)</td>
+              <td>correr</td>
+              <td>jogge</td>
+              <td>joggst</td>
+              <td>joggt</td>
+              <td>joggen</td>
+              <td>joggt</td>
+              <td>joggen</td>
+            </tr>
+            <tr>
+              <td>hören (R)</td>
+              <td>escuchar</td>
+              <td>höre</td>
+              <td>hörst</td>
+              <td>hört</td>
+              <td>hören</td>
+              <td>hört</td>
+              <td>hören</td>
+            </tr>
+            <tr>
+              <td>tanzen (R)</td>
+              <td>bailar</td>
+              <td>tanze</td>
+              <td>tanzt</td>
+              <td>tanzt</td>
+              <td>tanzen</td>
+              <td>tanzt</td>
+              <td>tanzen</td>
+            </tr>
+            <tr>
+              <td>lernen (R)</td>
+              <td>aprender</td>
+              <td>lerne</td>
+              <td>lernst</td>
+              <td>lernt</td>
+              <td>lernen</td>
+              <td>lernt</td>
+              <td>lernen</td>
+            </tr>
+            <tr>
+              <td>schwimmen (R)</td>
+              <td>nadar</td>
+              <td>schwimme</td>
+              <td>schwimmst</td>
+              <td>schwimmt</td>
+              <td>schwimmen</td>
+              <td>schwimmt</td>
+              <td>schwimmen</td>
+            </tr>
+            <tr>
+              <td>fotografieren (R)</td>
+              <td>fotografiar</td>
+              <td>fotografiere</td>
+              <td>fotografierst</td>
+              <td>fotografiert</td>
+              <td>fotografieren</td>
+              <td>fotografiert</td>
+              <td>fotografieren</td>
+            </tr>
+            <tr>
+              <td>spielen (R)</td>
+              <td>jugar</td>
+              <td>spiele</td>
+              <td>spielst</td>
+              <td>spielt</td>
+              <td>spielen</td>
+              <td>spielt</td>
+              <td>spielen</td>
+            </tr>
+            <tr>
+              <td>lieben (R)</td>
+              <td>querer a, amar a</td>
+              <td>liebe</td>
+              <td>liebst</td>
+              <td>liebt</td>
+              <td>lieben</td>
+              <td>liebt</td>
+              <td>lieben</td>
+            </tr>
+            <tr>
+              <td>haben (I)</td>
+              <td>tener, haber</td>
+              <td>habe</td>
+              <td>hast</td>
+              <td>hat</td>
+              <td>haben</td>
+              <td>habt</td>
+              <td>haben</td>
+            </tr>
+            <tr>
+              <td>studieren (R)</td>
+              <td>estudiar</td>
+              <td>studiere</td>
+              <td>studierst</td>
+              <td>studiert</td>
+              <td>studieren</td>
+              <td>studiert</td>
+              <td>studieren</td>
+            </tr>
+            <tr>
+              <td>fahren (I)</td>
+              <td>partir a, ir en</td>
+              <td>fahre</td>
+              <td>fährst</td>
+              <td>fährt</td>
+              <td>fahren</td>
+              <td>fahrt</td>
+              <td>fahren</td>
+            </tr>
+            <tr>
+              <td>suchen (R)</td>
+              <td>buscar</td>
+              <td>suche</td>
+              <td>suchst</td>
+              <td>sucht</td>
+              <td>suchen</td>
+              <td>sucht</td>
+              <td>suchen</td>
+            </tr>
+            <tr>
+              <td>essen (I)</td>
+              <td>comer</td>
+              <td>esse</td>
+              <td>isst</td>
+              <td>isst</td>
+              <td>essen</td>
+              <td>esst</td>
+              <td>essen</td>
+            </tr>
+            <tr>
+              <td>kaufen (R)</td>
+              <td>comprar</td>
+              <td>kaufe</td>
+              <td>kaufst</td>
+              <td>kauft</td>
+              <td>kaufen</td>
+              <td>kauft</td>
+              <td>kaufen</td>
+            </tr>
+            <tr>
+              <td>machen (R)</td>
+              <td>hacer</td>
+              <td>mache</td>
+              <td>machst</td>
+              <td>macht</td>
+              <td>machen</td>
+              <td>macht</td>
+              <td>machen</td>
+            </tr>
+            <tr>
+              <td>brauchen (R)</td>
+              <td>necesitar</td>
+              <td>brauche</td>
+              <td>brauchest</td>
+              <td>brauche</td>
+              <td>brauchen</td>
+              <td>brauchet</td>
+              <td>brauchen</td>
+            </tr>
+            <tr>
+              <td>teilen (R)</td>
+              <td>compartir</td>
+              <td>teile</td>
+              <td>teilst</td>
+              <td>teilt</td>
+              <td>teilen</td>
+              <td>teilt</td>
+              <td>teilen</td>
+            </tr>
+            <tr>
+              <td>mögen (I)</td>
+              <td>querer algo</td>
+              <td>mag</td>
+              <td>magst</td>
+              <td>mag</td>
+              <td>mögen</td>
+              <td>mögt</td>
+              <td>mögen</td>
+            </tr>
+            <tr>
+              <td>nehmen (I)</td>
+              <td>tomar/pedir algo</td>
+              <td>nehme</td>
+              <td>nimmst</td>
+              <td>nimmt</td>
+              <td>nehmen</td>
+              <td>nehmt</td>
+              <td>nehmen</td>
+            </tr>
+            <tr>
+              <td>trinken (R)</td>
+              <td>beber</td>
+              <td>trinke</td>
+              <td>trinkst</td>
+              <td>trinkt</td>
+              <td>trinken</td>
+              <td>trinkt</td>
+              <td>trinken</td>
+            </tr>
+            <tr>
+              <td>treffen (I)</td>
+              <td>quedar</td>
+              <td>treffe</td>
+              <td>triffst</td>
+              <td>trifft</td>
+              <td>treffen</td>
+              <td>trefft</td>
+              <td>treffen</td>
+            </tr>
+            <tr>
+              <td>bestellen (R)</td>
+              <td>pedir prestado</td>
+              <td>bestelle</td>
+              <td>bestellst</td>
+              <td>bestellt</td>
+              <td>bestellen</td>
+              <td>bestellt</td>
+              <td>bestellen</td>
+            </tr>
+            <tr>
+              <td>finden (R)</td>
+              <td>encontrar</td>
+              <td>finde</td>
+              <td>findest</td>
+              <td>findet</td>
+              <td>finden</td>
+              <td>findet</td>
+              <td>finden</td>
+            </tr>
+            <tr>
+              <td>duschen (R)</td>
+              <td>ducharse</td>
+              <td>dusche</td>
+              <td>duschst</td>
+              <td>duscht</td>
+              <td>duschen</td>
+              <td>duscht</td>
+              <td>duschen</td>
+            </tr>
+            <tr>
+              <td>besuchen (R)</td>
+              <td>visitar</td>
+              <td>besuche</td>
+              <td>besuchst</td>
+              <td>besucht</td>
+              <td>besuchen</td>
+              <td>besucht</td>
+              <td>besuchen</td>
+            </tr>
+            <tr>
+              <td>frühstücken (R)</td>
+              <td>desayunar</td>
+              <td>frühstücke</td>
+              <td>frühstückst</td>
+              <td>frühstückt</td>
+              <td>frühstücken</td>
+              <td>frühstückt</td>
+              <td>frühstücken</td>
+            </tr>
+            <tr>
+              <td>schlafen (I)</td>
+              <td>dormir</td>
+              <td>schlafe</td>
+              <td>schläfst</td>
+              <td>schläft</td>
+              <td>schlafen</td>
+              <td>schlaft</td>
+              <td>schlafen</td>
+            </tr>
+            <tr>
+              <td>telefonieren (R)</td>
+              <td>hablar por teléfono</td>
+              <td>telefoniere</td>
+              <td>telefonierst</td>
+              <td>telefoniert</td>
+              <td>telefonieren</td>
+              <td>telefoniert</td>
+              <td>telefonieren</td>
+            </tr>
+            <tr>
+              <td>sehen (I)</td>
+              <td>ver</td>
+              <td>sehe</td>
+              <td>siehst</td>
+              <td>sieht</td>
+              <td>sehen</td>
+              <td>seht</td>
+              <td>sehen</td>
+            </tr>
+            <tr>
+              <td>glauben (R)</td>
+              <td>creer</td>
+              <td>glaube</td>
+              <td>glaubst</td>
+              <td>glaubt</td>
+              <td>glauben</td>
+              <td>glaubt</td>
+              <td>glauben</td>
+            </tr>
+            <tr>
+              <td>laden (I)</td>
+              <td>cargar</td>
+              <td>lade</td>
+              <td>lädst</td>
+              <td>lädt</td>
+              <td>laden</td>
+              <td>ladet</td>
+              <td>laden</td>
+            </tr>
+            <tr>
+              <td>fangen (I)</td>
+              <td>agarrar/coger algo</td>
+              <td>fange</td>
+              <td>fängst</td>
+              <td>fängt</td>
+              <td>fangen</td>
+              <td>fangt</td>
+              <td>fangen</td>
+            </tr>
+            <tr>
+              <td>holen (R)</td>
+              <td>recoger a alguien</td>
+              <td>hole</td>
+              <td>holst</td>
+              <td>holt</td>
+              <td>holen</td>
+              <td>holt</td>
+              <td>holen</td>
+            </tr>
+            <tr>
+              <td>rufen (R)</td>
+              <td>llamar</td>
+              <td>rufe</td>
+              <td>rufst</td>
+              <td>ruft</td>
+              <td>rufen</td>
+              <td>ruft</td>
+              <td>rufen</td>
+            </tr>
+            <tr>
+              <td>bezahlen (R)</td>
+              <td>devolver</td>
+              <td>bezahle</td>
+              <td>bezahlst</td>
+              <td>bezahlt</td>
+              <td>bezahlen</td>
+              <td>bezahlt</td>
+              <td>bezahlen</td>
+            </tr>
+            <tr>
+              <td>zahlen (R)</td>
+              <td>pagar</td>
+              <td>zahle</td>
+              <td>zahlst</td>
+              <td>zahlt</td>
+              <td>zahlen</td>
+              <td>zahlt</td>
+              <td>zahlen</td>
+            </tr>
+            <tr>
+              <td>helfen (I)</td>
+              <td>ayudar</td>
+              <td>helfe</td>
+              <td>hilfst</td>
+              <td>hilft</td>
+              <td>helfen</td>
+              <td>helft</td>
+              <td>helfen</td>
+            </tr>
+            <tr>
+              <td>verkaufen (R)</td>
+              <td>vender</td>
+              <td>verkaufe</td>
+              <td>verkaufst</td>
+              <td>verkauft</td>
+              <td>verkaufen</td>
+              <td>verkauft</td>
+              <td>verkaufen</td>
+            </tr>
+            <tr>
+              <td>wieder holen (R)</td>
+              <td>repetir</td>
+              <td>hole wieder</td>
+              <td>holst wieder</td>
+              <td>holt wieder</td>
+              <td>holen wieder</td>
+              <td>holt wieder</td>
+              <td>holen wieder</td>
+            </tr>
+            <tr>
+              <td>sagen (R)</td>
+              <td>decir</td>
+              <td>sage</td>
+              <td>sagst</td>
+              <td>sagt</td>
+              <td>sagen</td>
+              <td>sagt</td>
+              <td>sagen</td>
+            </tr>
+            <tr>
+              <td>planen (R)</td>
+              <td>planificar</td>
+              <td>plane</td>
+              <td>planst</td>
+              <td>plant</td>
+              <td>planen</td>
+              <td>plant</td>
+              <td>planen</td>
+            </tr>
+            <tr>
+              <td>reden (R)</td>
+              <td>charlar</td>
+              <td>rede</td>
+              <td>redest</td>
+              <td>redet</td>
+              <td>reden</td>
+              <td>redet</td>
+              <td>reden</td>
+            </tr>
+            <tr>
+              <td>diskutieren (R)</td>
+              <td>discutir</td>
+              <td>diskutiere</td>
+              <td>diskutierst</td>
+              <td>diskutiert</td>
+              <td>diskutieren</td>
+              <td>diskutiert</td>
+              <td>diskutieren</td>
+            </tr>
+            <tr>
+              <td>bleiben (R)</td>
+              <td>quedarse</td>
+              <td>bleibe</td>
+              <td>bleibst</td>
+              <td>bleibt</td>
+              <td>bleiben</td>
+              <td>bleibt</td>
+              <td>bleiben</td>
+            </tr>
+            <tr>
+              <td>liegen (R)</td>
+              <td>estar tumbado</td>
+              <td>liege</td>
+              <td>liegst</td>
+              <td>liegt</td>
+              <td>liegen</td>
+              <td>liegt</td>
+              <td>liegen</td>
+            </tr>
+          </table>
+        `
+      },
+      {
+        text: `
+          <p><b>46. Verbos conjugados en pretérito/pasado:</b></p>
+          <p>(*) I => verbo irregular</p>
+          <p>(*) R => verbo regular</p>
+          <table>
+            <tr>
+              <th>Infinitivo en alemán</th>
+              <th>Traducción en español</th>
+              <th>ich</th>
+              <th>du</th>
+              <th>er/sie/es</th>
+              <th>wir</th>
+              <th>ihr</th>
+              <th>sie/Sie</th>
+            </tr>
+            <tr>
+              <td>sein (I)</td>
+              <td>ser/estar</td>
+              <td>war</td>
+              <td>warst</td>
+              <td>war</td>
+              <td>waren</td>
+              <td>wart</td>
+              <td>waren</td>
+            </tr>
+            <tr>
+              <td>haben (I)</td>
+              <td>tener/haber</td>
+              <td>hatte</td>
+              <td>hattest</td>
+              <td>hatte</td>
+              <td>hatten</td>
+              <td>hattet</td>
+              <td>hatten</td>
+            </tr>
+          </table>
+          <p><b>47. Imperativo:</b></p>
+          <p>Hay tres tipos:</p>
+          <p>1. <b>Imperativo de la 2º persona del singular</b> => se consigue utilizando la 2º persona del singular de cualquier verbo y quitándole la terminación -st</p>
+          <p>Por ejemplo: Hazlo => Mach o Levántate => Steh auf</p>
+          <p>2. <b>Imperativo de la 2º persona del plural</b> => se consigue añadiendo al imperativo anterior, la terminación -t</p>
+          <p>Por ejemplo: Hacedlo => Macht o Levantaos => Steht auf</p>
+          <p>3. <b>Imperativo de usted</b> => se consigue añadiendo al primer imperativo, la terminación -en + Sie</p>
+          <p>Por ejemplo: Hazlo => Machen Sie o Levántese => Stehen auf Sie</p>
+        `
+      },
+      {
+        text: `
+          <p><b>48. Presente perfecto:</b></p>
+          <p>Se puede hacer con el auxiliar <b>"sein"</b> o el auxiliar <b>"haben"</b></p>
+          <table>
+            <tr>
+              <th>Auxiliar</th>
+              <th>Explicación</th>
+              <th>Oraciones afirmativas</th>
+              <th>Oraciones negativas</th>
+              <th>Oraciones interrogativas</th>
+            </tr>
+            <tr>
+              <td>haben</td>
+              <td>verbo es reflexivo<br>verbo acompaña a acusativo<br>verbo no indica cambio de lugar</td>
+              <td><b>sujeto</b> + <b>su auxiliar conjugado</b> + complemento + <b>participio</b></td>
+              <td><b>sujeto</b> + <b>su auxiliar conjugado</b> + <b>nicht</b> + complemento + <b>participio</b></td>
+              <td>(Op: W-F?) + <b>su auxiliar conjugado</b> + <b>sujeto</b> + complemento + <b>participio</b></td>
+            </tr>
+            <tr>
+              <td>sein</td>
+              <td>verbo es <b>"bleiben"</b>, <b>"sein"</b>, <b>"werden"</b>, <b>"gelingen"</b>, <b>"tauen"</b>, <b>"sterben"</b> und <b>"zerfallen"</b><br>verbo no acompaña a acusativo<br>verbo indica cambio de estado</td>
+              <td><b>sujeto</b> + <b>su auxiliar conjugado</b> + complemento + <b>participio</b></td>
+              <td><b>sujeto</b> + <b>su auxiliar conjugado</b> + <b>nicht</b> + complemento + <b>participio</b></td>
+              <td><b>W-Frage</b> + <b>su auxiliar conjugado</b> + <b>sujeto</b> + complemento + <b>participio</b></td>
+            </tr>
+          </table>
+          <p><b>49. Listado de participios:</b></p>
+          <p>El participio va siempre con el prefijo <b>ge</b></p>
+          <table>
+            <tr>
+              <th>Verbo en infinitivo</th>
+              <th>Auxiliar que utiliza</th>
+              <th>Participio</th>
+            </tr>
+            <tr>
+              <td>nehmen</td>
+              <td>haben</td>
+              <td>genommen</td>
+            </tr>
+            <tr>
+              <td>schlafen</td>
+              <td>haben</td>
+              <td>geschlafen</td>
+            </tr>
+            <tr>
+              <td>schreiben</td>
+              <td>haben</td>
+              <td>geschreiben</td>
+            </tr>
+            <tr>
+              <td>schwimmen</td>
+              <td>haben</td>
+              <td>geschowmmen</td>
+            </tr>
+            <tr>
+              <td>sprechen</td>
+              <td>haben</td>
+              <td>gesprochen</td>
+            </tr>
+            <tr>
+              <td>treffen</td>
+              <td>haben</td>
+              <td>getroffen</td>
+            </tr>
+            <tr>
+              <td>trinken</td>
+              <td>haben</td>
+              <td>getrunken</td>
+            </tr>
+            <tr>
+              <td>wissen</td>
+              <td>haben</td>
+              <td>gewusst</td>
+            </tr>
+            <tr>
+              <td>zurück fahren</td>
+              <td>sein</td>
+              <td>zurück gefähren</td>
+            </tr>
+            <tr>
+              <td>aufstehen</td>
+              <td>sein</td>
+              <td>aufgestanden</td>
+            </tr>
+            <tr>
+              <td>bleiben</td>
+              <td>sein</td>
+              <td>geblieben</td>
+            </tr>
+            <tr>
+              <td>bringen</td>
+              <td>haben</td>
+              <td>gebracht</td>
+            </tr>
+            <tr>
+              <td>denken</td>
+              <td>haben</td>
+              <td>gedacht</td>
+            </tr>
+            <tr>
+              <td>essen</td>
+              <td>haben</td>
+              <td>gegessen</td>
+            </tr>
+            <tr>
+              <td>fahren</td>
+              <td>sein</td>
+              <td>gefähren</td>
+            </tr>
+            <tr>
+              <td>finden</td>
+              <td>haben</td>
+              <td>gefunden</td>
+            </tr>
+            <tr>
+              <td>fliegen</td>
+              <td>sein</td>
+              <td>geflogen</td>
+            </tr>
+            <tr>
+              <td>geben</td>
+              <td>haben</td>
+              <td>gegeben</td>
+            </tr>
+            <tr>
+              <td>gehen</td>
+              <td>sein</td>
+              <td>gegangen</td>
+            </tr>
+            <tr>
+              <td>kennen</td>
+              <td>haben</td>
+              <td>gekannt</td>
+            </tr>
+            <tr>
+              <td>kommen</td>
+              <td>sein</td>
+              <td>gekommen</td>
+            </tr>
+            <tr>
+              <td>laufen</td>
+              <td>sein</td>
+              <td>gelaufen</td>
+            </tr>
+          </table>
+        `
+      },
+      {
+        text: `
+          <h3>Comprensión Escrita del Nivel A1</h3>
+          <ul>
+            <h3>1. El trabajo semanal de Lukas Bucher:</h3>
+            <h5>Instrucciones:</h5>
+            <p>Lee el texto y rellena los huecos con las palabras del recuadro de abajo</p>
+            <h5>Texto a rellenar:</h5>
+            <img src="https://i.postimg.cc/TPKTGxdd/ce1.jpg"/>
+          </ul>
+          <ul>
+            <h3>2. Una sorpresa para Sofía:</h3>
+            <h5>Instrucciones:</h5>
+            <p>Lee el texto y rellena los huecos con las palabras del recuadro de abajo</p>
+            <h5>Texto a rellenar:</h5>
+            <img src="https://i.postimg.cc/mrPTR4LB/ce2.jpg"/>
           </ul>
         `
       },
       {
         text: `
-          <p><b>Gramática del Nivel A1 (parte 7):</b></p>
+          <h3>Comprensión Oral del Nivel A1</h3>
           <ul>
-            <p><b>15. Comidas del día:</b></p>
-            <table>
-              <tr>
-                <th>Morgen (mañana)</th>
-                <th>Mittag (mediodía)</th>
-                <th>Nachmittag (postmediodía)</th>
-                <th>Abend (tarde)</th>
-              </tr>
-              <tr>
-                <td><b>Frühstück</b> <br> /frustuk/ <br> (desayuno)</td>
-                <td><b>Mittagessen</b> <br> /mitaguesen/ <br> (comida/almuerzo)</td>
-                <td><b>Kaffee und Kuchen</b> <br> /cafe und cugen/ <br> (merienda)</td>
-                <td><b>Abendessen</b> <br> /abendesen/ <br> (cena)</td>
-              </tr>
-            </table>
-            <p><b>16. Profesiones:</b></p>
-            <table>
-              <tr>
-                <th>Alemán</th>
-                <th>Pronunciación</th>
-                <th>Español</th>
-              </tr>
-              <tr>
-                <td style="background-color: rgb(240, 255, 156);">Taxifahrer</td>
-                <td style="background-color: rgb(240, 255, 156);">/taxif<b>aa</b>gueg/</td>
-                <td style="background-color: rgb(240, 255, 156);">taxista (él)</td>
-              </tr>
-              <tr>
-                <td style="background-color: rgb(240, 255, 156);">Taxifahrerin</td>
-                <td style="background-color: rgb(240, 255, 156);">/taxif<b>aa</b>gueguin/</td>
-                <td style="background-color: rgb(240, 255, 156);">taxista (ella)</td>
-              </tr>
-              <tr>
-                <td style="background-color: rgb(240, 255, 156);">Taxifahreren</td>
-                <td style="background-color: rgb(240, 255, 156);">/taxif<b>aa</b>gueguen/</td>
-                <td style="background-color: rgb(240, 255, 156);">taxistas</td>
-              </tr>
-              <tr>
-                <td style="background-color: rgb(222, 190, 252);">Student</td>
-                <td style="background-color: rgb(222, 190, 252);">/student/</td>
-                <td style="background-color: rgb(222, 190, 252);">estudiante (él)</td>
-              </tr>
-              <tr>
-                <td style="background-color: rgb(222, 190, 252);">Studentin</td>
-                <td style="background-color: rgb(222, 190, 252);">/studentin/</td>
-                <td style="background-color: rgb(222, 190, 252);">estudiante (ella)</td>
-              </tr>
-              <tr>
-                <td style="background-color: rgb(222, 190, 252);">Studenten</td>
-                <td style="background-color: rgb(222, 190, 252);">/studenten/</td>
-                <td style="background-color: rgb(222, 190, 252);">estudiantes</td>
-              </tr>
-              <tr>
-                <td style="background-color: rgb(247, 174, 162);">Arzt</td>
-                <td style="background-color: rgb(247, 174, 162);">/arst/</td>
-                <td style="background-color: rgb(247, 174, 162);">médico (él)</td>
-              </tr>
-              <tr>
-                <td style="background-color: rgb(247, 174, 162);">Ärztin</td>
-                <td style="background-color: rgb(247, 174, 162);">/erstin/</td>
-                <td style="background-color: rgb(247, 174, 162);">médico (ella)</td>
-              </tr>
-              <tr>
-                <td style="background-color: rgb(247, 174, 162);">Ärzte</td>
-                <td style="background-color: rgb(247, 174, 162);">/erste/</td>
-                <td style="background-color: rgb(247, 174, 162);">médicos</td>
-              </tr>
-              <tr>
-                <td style="background-color: rgb(153, 250, 170);">Kellner</td>
-                <td style="background-color: rgb(153, 250, 170);">/quelneg/</td>
-                <td style="background-color: rgb(153, 250, 170);">camarero</td>
-              </tr>
-              <tr>
-                <td style="background-color: rgb(153, 250, 170);">Kellnerin</td>
-                <td style="background-color: rgb(153, 250, 170);">/quelneguin/</td>
-                <td style="background-color: rgb(153, 250, 170);">camarera</td>
-              </tr>
-              <tr>
-                <td style="background-color: rgb(153, 250, 170);">Kellneren</td>
-                <td style="background-color: rgb(153, 250, 170);">/quelneguen/</td>
-                <td style="background-color: rgb(153, 250, 170);">camareros</td>
-              </tr>
-              <tr>
-                <td style="background-color: rgb(106, 247, 228);">Informatiker</td>
-                <td style="background-color: rgb(106, 247, 228);">/infogmatiqueg/</td>
-                <td style="background-color: rgb(106, 247, 228);">informático (él)</td>
-              </tr>
-              <tr>
-                <td style="background-color: rgb(106, 247, 228);">Informatikerin</td>
-                <td style="background-color: rgb(106, 247, 228);">/infogmatiqueguin/</td>
-                <td style="background-color: rgb(106, 247, 228);">informático (ella)</td>
-              </tr>
-              <tr>
-                <td style="background-color: rgb(106, 247, 228);">Informatikers</td>
-                <td style="background-color: rgb(106, 247, 228);">/infogmatiquegs/</td>
-                <td style="background-color: rgb(106, 247, 228);">informáticos</td>
-              </tr>
-              <tr>
-                <td style="background-color: rgb(247, 146, 216);">Ingenieur</td>
-                <td style="background-color: rgb(247, 146, 216);">/inguenieg/</td>
-                <td style="background-color: rgb(247, 146, 216);">ingeniero</td>
-              </tr>
-              <tr>
-                <td style="background-color: rgb(247, 146, 216);">Ingenieurin</td>
-                <td style="background-color: rgb(247, 146, 216);">/inguenieguin/</td>
-                <td style="background-color: rgb(247, 146, 216);">ingeniera</td>
-              </tr>
-              <tr>
-                <td style="background-color: rgb(247, 146, 216);">Ingenieure</td>
-                <td style="background-color: rgb(247, 146, 216);">/ingueniegue/</td>
-                <td style="background-color: rgb(247, 146, 216);">ingenieros</td>
-              </tr>
-              <tr>
-                <td style="background-color: rgb(145, 75, 75);">Lehrer</td>
-                <td style="background-color: rgb(145, 75, 75);">/l<b>ee</b>gueg/</td>
-                <td style="background-color: rgb(145, 75, 75);">profesor</td>
-              </tr>
-              <tr>
-                <td style="background-color: rgb(145, 75, 75);">Lehrerin</td>
-                <td style="background-color: rgb(145, 75, 75);">/l<b>ee</b>gueguin/</td>
-                <td style="background-color: rgb(145, 75, 75);">profesora</td>
-              </tr>
-              <tr>
-                <td style="background-color: rgb(145, 75, 75);">Lehrere</td>
-                <td style="background-color: rgb(145, 75, 75);">/l<b>ee</b>guegue/</td>
-                <td style="background-color: rgb(145, 75, 75);">profesores</td>
-              </tr>
-              <tr>
-                <td style="background-color: rgb(216, 155, 63);">Verkäufer</td>
-                <td style="background-color: rgb(216, 155, 63);">/vercoifeg/</td>
-                <td style="background-color: rgb(216, 155, 63);">dependiente</td>
-              </tr>
-              <tr>
-                <td style="background-color: rgb(216, 155, 63);">Verkäuferin</td>
-                <td style="background-color: rgb(216, 155, 63);">/vercoifeguin/</td>
-                <td style="background-color: rgb(216, 155, 63);">dependienta</td>
-              </tr>
-              <tr>
-                <td style="background-color: rgb(216, 155, 63);">Verkäufere</td>
-                <td style="background-color: rgb(216, 155, 63);">/vercoifegue/</td>
-                <td style="background-color: rgb(216, 155, 63);">dependientes</td>
-              </tr>
-              <tr>
-                <td style="background-color: rgb(238, 228, 228);">Architekt</td>
-                <td style="background-color: rgb(238, 228, 228);">/arquitekt/</td>
-                <td style="background-color: rgb(238, 228, 228);">arquitecto</td>
-              </tr>
-              <tr>
-                <td style="background-color: rgb(238, 228, 228);">Architektin</td>
-                <td style="background-color: rgb(238, 228, 228);">/arquitektin/</td>
-                <td style="background-color: rgb(238, 228, 228);">arquitecta</td>
-              </tr>
-              <tr>
-                <td style="background-color: rgb(238, 228, 228);">Architekten</td>
-                <td style="background-color: rgb(238, 228, 228);">/arquitekten/</td>
-                <td style="background-color: rgb(238, 228, 228);">arquitectos</td>
-              </tr>
-              <tr>
-                <td style="background-color: rgb(106, 57, 219);">Friseur</td>
-                <td style="background-color: rgb(106, 57, 219);">/friseg/</td>
-                <td style="background-color: rgb(106, 57, 219);">peluquero</td>
-              </tr>
-              <tr>
-                <td style="background-color: rgb(106, 57, 219);">Friseurin</td>
-                <td style="background-color: rgb(106, 57, 219);">/friseguin/</td>
-                <td style="background-color: rgb(106, 57, 219);">peluquera</td>
-              </tr>
-              <tr>
-                <td style="background-color: rgb(106, 57, 219);">Friseure</td>
-                <td style="background-color: rgb(106, 57, 219);">/frisegue/</td>
-                <td style="background-color: rgb(106, 57, 219);">peluqueros</td>
-              </tr>
-            </table>
+            <h3>1. Audio sobre la familia:</h3>
+            <h5>Instrucciones:</h5>
+            <p>Audio sobre <i>Meine Famlie</i> escuchado durante el curso de alemán 2023/24 para poder rellenar los huecos y
+            así practicar la comprensión oral</p>
+            <h5>Ejercicio:</h5>
+            <img src="https://i.postimg.cc/YSHxBrfx/co1.jpg"/>
+          </ul>
+          <ul>
+            <h3>2. Audio sobre el patinaje como afición:</h3>
+            <h5>Instrucciones:</h5>
+            <p>Vídeo de YouTube sobre <i>Mein Hobby ist Inlineskaten</i> escuchado durante el curso de alemán 2023/24 para poder rellenar los huecos y
+            así practicar la comprensión oral</p>
+            <h5>Ejercicio:</h5>
+            <img src="https://i.postimg.cc/d0Y9csmB/co2.jpg"/>
           </ul>
         `
       },
       {
         text: `
-          <p><b>Gramática del Nivel A1 (parte 8):</b></p>
+          <h3>Expresión Escrita del Nivel A1</h3>
           <ul>
-            <p><b>17. Artículos nominativos:</b> Son aquéllos que están en el sujeto</p>
-            <p><b>18. Artículos acusativos:</b> Son aquéllos que están en el complemento directo del predicato</p>
-            <p><b>19. Artículos dativos:</b> Son aquéllos que están en un complemento del predicato y les precede la preposición mit</p>
-            <p>---------------------------------------------------------------</p>
-            <p><b>20. Artículos determinados nominativos:</b> der (masculino) / das (neutro) / die (femenino) / die (plural)</p>
-            <p><b>21. Artículos indeterminados nominativos:</b> ein (masculino) / ein (neutro) / eine (femenino)</p>
-            <p><b>22. Artículos de negación nominativos:</b> kein (masculino) / kein (neutro) / keine (femenino) / keine (plural)</p>
-            <p>---------------------------------------------------------------</p>
-            <p><b>23. Artículos determinados acusativos:</b> den (masculino) / das (neutro) / die (femenino) / die (plural)</p>
-            <p><b>24. Artículos indeterminados acusativos:</b> einen (masculino) / ein (neutro) / eine (femenino)</p>
-            <p><b>25. Artículos de negación acusativos:</b> keinen (masculino) / kein (neutro) / keine (femenino) / keine (plural)</p>
-            <p>---------------------------------------------------------------</p>
-            <p><b>26. Artículos determinados dativos:</b> mit dem (masculino) / mit dem (neutro) / mit der (femenino) / mit den (plural)</p>
-            <p><b>27. Artículos indeterminados dativos:</b> mit einem (masculino) / mit einem (neutro) / mit einer (femenino)</p>
-            <p><b>28. Artículos de negación dativos:</b> mit keinem (masculino) / mit keinem (neutro) / mit keiner (femenino) / mit keinen (plural)</p>
+            <h3>1. Idiomas, países y ciudades:</h3>
+            <img src="https://i.postimg.cc/g073s3kz/ee1.jpg"/>
+          </ul>
+          <ul>
+            <h3>2. Descripción personal y profesional:</h3>
+            <h5>Instrucciones:</h5>
+            <p>Conceptos clave para la redacción: Nombre (Name) | País (Land) | Lugar de residencia (Wohnort) | Edad (Alter) | Profesión (Beruf) | Idiomas (Sprachen) | Aficiones (Hobbys)</p>
+            <p>Recordatorio:</p>
+            <p>1. Todos los sustantivos empiezan con mayúscula</p>
+            <p>2. El verbo conjugado siempre va en la segunda posición de la oración o frase</p>
+            <p>3. Es importante utilizar conectores</p>
+            <p>Ejemplos:</p>
+            <img src="https://i.postimg.cc/Bvz2p2QZ/ee2a.jpg"/>
+            <h5>Redacción:</h5>
+            <img src="https://i.postimg.cc/tgcFkFCJ/ee2b.jpg"/>
           </ul>
         `
       }
