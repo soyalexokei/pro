@@ -334,8 +334,7 @@ footer {
   padding: 26px;
 }
 
-.profile-card svg,
-.project-card svg {
+.profile-card svg {
   width: 32px;
   height: 32px;
   margin-bottom: 28px;

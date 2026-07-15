@@ -6030,6 +6030,215 @@ const certificaciones = [
             <img src="https://i.postimg.cc/tgcFkFCJ/ee2b.jpg"/>
           </ul>
         `
+      },
+      {
+        text: `
+          <ul>
+            <h3>3. Hábitos alimentarios:</h3>
+            <h5>Instrucciones:</h5>
+            <p>Conceptos clave para la redacción:</p>
+            <p>1. Tipo de desayuno en la mayoría de los casos</p>
+            <p>2. Tipo de comida y bebida al mediodía en la mayoría de los casos</p>
+            <p>3. Tipo de cena en la mayoría de los casos</p>
+            <p>Recordatorio:</p>
+            <p>1. Todos los sustantivos empiezan con mayúscula</p>
+            <p>2. El verbo conjugado siempre va en la segunda posición de la oración o frase</p>
+            <p>3. Es importante utilizar conectores</p>
+            <p>4. El complemento de tiempo va en 1º posición o en 3º</p>
+            <h5>Redacción:</h5>
+            <img src="https://i.postimg.cc/QMzcmcxM/ee3.jpg"/>
+          </ul>
+          <ul>
+            <h3>4. Estación favorita del año:</h3>
+            <h5>Instrucciones:</h5>
+            <p>Recordatorio:</p>
+            <p>1. Todos los sustantivos empiezan con mayúscula</p>
+            <p>2. El verbo conjugado siempre va en la segunda posición de la oración o frase</p>
+            <p>3. Es importante utilizar conectores</p>
+            <p>4. El artículo del sustantivo en su correcta forma</p>
+            <h5>Redacción:</h5>
+            <img src="https://i.postimg.cc/9MqZnzrc/ee4.jpg"/>
+          </ul>
+        `
+      },
+      {
+        text: `
+          <ul>
+            <h3>5. Sobre mi familia:</h3>
+            <h5>Instrucciones:</h5>
+            <p>Recordatorio:</p>
+            <p>1. Todos los sustantivos empiezan con mayúscula</p>
+            <p>2. El verbo conjugado siempre va en la segunda posición de la oración o frase</p>
+            <p>3. Es importante utilizar conectores</p>
+            <p>4. El artículo del sustantivo en su correcta forma</p>
+            <h5>Redacción:</h5>
+            <img src="https://i.postimg.cc/0QJDBrb8/ee5.jpg"/>
+          </ul>
+          <ul>
+            <h3>6. Sucesos de Eva:</h3>
+            <h5>Instrucciones:</h5>
+            <p>Descripción de los sucesos de los últimos años en la vida de Eva</p>
+            <h5>Recordatorio:</h5>
+            <p>1. Todos los sustantivos empiezan con mayúscula</p>
+            <p>2. El verbo conjugado siempre va en la segunda posición de la oración o frase</p>
+            <p>3. Es importante utilizar conectores</p>
+            <p>4. El artículo del sustantivo en su correcta forma</p>
+            <p>5. Uso del Presente Perfecto de forma correcta</p>
+            <h5>Redacción:</h5>
+            <img src="https://i.postimg.cc/bJ2kBdss/ee6.jpg"/>
+          </ul>
+        `
+      },
+      {
+        text: `
+          <ul>
+            <h3>7. Mi vivienda:</h3>
+            <h5>Instrucciones:</h5>
+            <p>Descripción de mi vivienda desde la entrada a los balcones</p>
+            <h5>Recordatorio:</h5>
+            <p>1. Todos los sustantivos empiezan con mayúscula</p>
+            <p>2. El verbo conjugado siempre va en la segunda posición de la oración o frase</p>
+            <p>3. Es importante utilizar conectores</p>
+            <p>4. El artículo del sustantivo en su correcta forma</p>
+            <h5>Redacción:</h5>
+            <img src="https://i.postimg.cc/TwWg4hpd/ee7.jpg"/>
+          </ul>
+          <ul>
+            <h3>8. Celebración de cumpleaños con amigos:</h3>
+            <h5>Instrucciones:</h5>
+            <p>Escribe un e-mail a tus amigos para comunicarles que vas a celebrar tu cumpleaños</p>
+            <p>
+              Debes tener en cuenta la siguiente información:<br>
+              1. Cuándo va a ser<br>
+              2. A qué hora va a comenzar<br>
+              3. A quién vas a invitar
+            </p>
+            <p>
+              Palabras a usar:<br>
+              hoffentlich - anrufen - mitbringen - mitkommen - feiern - können - möchten - der Ausflug
+            </p>
+            <img src="https://i.postimg.cc/bJ2kBdsS/ee8a.jpg"/>
+            <img src="https://i.postimg.cc/bJ2kBdsG/ee8b.jpg"/>
+            <h5>Recordatorio:</h5>
+            <p>1. Todos los sustantivos empiezan con mayúscula</p>
+            <p>2. El verbo conjugado siempre va en la segunda posición de la oración o frase</p>
+            <p>3. Es importante utilizar conectores</p>
+            <p>4. El artículo del sustantivo en su correcta forma</p>
+            <p>5. Uso de verbos modales</p>
+            <p>6. Uso de verbos con preverbio</p>
+            <p>7. Empezar la oración tanto con el sujeto como con un complemento de tiempo</p>
+            <img src="https://i.postimg.cc/cH8wb6rg/ee8c.jpg"/>
+            <h5>Redacción:</h5>
+            <img src="https://i.postimg.cc/XJydzXpc/ee8d.jpg"/>
+          </ul>
+        `
+      },
+      {
+        text: `
+          <h3>Expresión Oral del Nivel A1</h3>
+          <p><b>1. Presentación informal:</b></p>
+          <p style="background-color: rgba(187, 223, 30, 1);">Mario: Wie heißt du? - /Vi jaist du?/ - (¿Cómo te llamas?)</p>
+          <p style="background-color: rgba(32, 228, 235, 1);">Alicia: Ich heiße Alicia. Und dir? - /ig jaise Alicia. Und día?/ - (Me llamo Alicia. ¿Y tú?)</p>
+          <p style="background-color: rgba(187, 223, 30, 1);">Mario: Ich heiße Mario. Und wer ist er? - /ig jaise Mario. Und vea ist eg?/ - (Me llamo Mario. ¿Y quién es él?)</p>
+          <p style="background-color: rgba(32, 228, 235, 1);">Alicia: Das ist Ricardo - /das ist Ricardo/ - (Éste es Ricardo)</p>
+          <p style="background-color: rgba(187, 223, 30, 1);">Mario: Wie geht's? - /Vi guets?/ - (¿Cómo va?)</p>
+          <p style="background-color: rgba(32, 228, 235, 1);">Alicia: Danke, sehr gut. Und dir? - /danke, s<b>ee</b>a gut. Und día?/ - (Gracias, muy bien. ¿Y tú?)</p>
+          <p style="background-color: rgba(187, 223, 30, 1);">Mario: Danke, auch sehr gut. Tschüs - /danke, aug s<b>ee</b>a gut. tch<b>uu</b>s/ - (Gracias, también muy bien. Chao)</p>
+          <p style="background-color: rgba(32, 228, 235, 1);">Alicia: Tschüs - /tch<b>uu</b>s/ - (Chao)</p>
+          <p><b>2. Presentación formal:</b></p>
+          <p style="background-color: rgba(84, 136, 71, 1);">Markus: Wie ist ihr Name? - /vi ist ia name?/ - (¿Cómo es su nombre?)</p>
+          <p style="background-color: rgba(177, 87, 91, 1);">Rodrigo: Mein Name ist Rodrigo Hernández. Und deins? - /mai name ist Rodrigo Hernández. Und deins?/ - (Mi nombre es Rodrigo Hernández. ¿Y el suyo?)</p>
+          <p style="background-color: rgba(84, 136, 71, 1);">Markus: Mein Name ist Markus Kroos. Wie geht es Ihnen? - /mai name ist Markus Kroos. ¿Vi guet es inen?/ - (Mi nombre es Markus Kroos. ¿Cómo está usted?)</p>
+          <p style="background-color: rgba(177, 87, 91, 1);">Rodrigo: Danke, es geht so. Und Ihnen? - /danke, es guet so. Und inen?/ - (Gracias, voy tirando. ¿Y usted?)</p>
+          <p style="background-color: rgba(84, 136, 71, 1);">Markus: Danke, auch es geht so. Auf Wiedersehen - /danke, aug es guet so. Of vídagsen/ - (Gracias, también voy tirando. Adiós)</p>
+          <p style="background-color: rgba(177, 87, 91, 1);">Rodrigo: Auf Wiedersehen - /Of vídagsen/ - (Adiós)</p>
+        `
+      },
+      {
+        text: `
+          <p><b>3. Comprando en el supermercado:</b></p>
+          <p style="background-color: rgba(187, 223, 30, 1);">Verkäufer: Guten Tag euch allen! Heute wir haben neu Förderungen in die Wurst</p>
+          <p style="background-color: rgba(32, 228, 235, 1);">Kunde: Guten Tag! Ich möchte 500 g von Gëmuse, 2 Gurken, 250 g von Fleisch und einen Käse nehmen, bitte</p>
+          <p style="background-color: rgba(187, 223, 30, 1);">Verkäufer: Entschuldigung! Was mögen Sie von Fleisch?</p>
+          <p style="background-color: rgba(32, 228, 235, 1);">Kunde: 250 g, bitte</p>
+          <p style="background-color: rgba(187, 223, 30, 1);">Verkäufer: Alles Klar! Einen moment.... Hier ist es! Möchten Sie noch etwas?</p>
+          <p style="background-color: rgba(32, 228, 235, 1);">Kunde: Nein, danke. Wie viel kostet die Kauf?</p>
+          <p style="background-color: rgba(187, 223, 30, 1);">Verkäufer: Es ist 17,46€</p>
+          <p style="background-color: rgba(32, 228, 235, 1);">Kunde: Hier bitte, danke</p>
+          <p style="background-color: rgba(187, 223, 30, 1);">Verkäufer: Danke, Auf Wiedersehen</p>
+          <p style="background-color: rgba(32, 228, 235, 1);">Kunde: Auf Wiedersehen</p>
+          <p><b>4. Turismo por Viena:</b></p>
+          <p style="background-color: rgba(84, 136, 71, 1);">Sergio Carrasco: Entschuldigung, wo ist bitte der Donauturm?</p>
+          <p style="background-color: rgba(177, 87, 91, 1);">Julia Stadler: Guten Tag! Das ist ganz einfach, hier, gehen Sie rechts, dann es kommt Kaiserstraße, da gehen Sie links, danach immer geradeaus und dann ist der Donauturm</p>
+          <p style="background-color: rgba(84, 136, 71, 1);">Sergio Carrasco: Also hier rechts bis Kaiserstraße, dann links und danach immer geradeaus. Das ist der Donauturm?</p>
+          <p style="background-color: rgba(177, 87, 91, 1);">Julia Stadler: Ja, genau</p>
+          <p style="background-color: rgba(84, 136, 71, 1);">Sergio Carrasco: Und....Da kann ich die Eintrittskarte zahlen?</p>
+          <p style="background-color: rgba(177, 87, 91, 1);">Julia Stadler: Ja, natürlich, aber mit Bankkarte</p>
+          <p style="background-color: rgba(84, 136, 71, 1);">Sergio Carrasco: In Ordnung, keine problem. Wie viel kostet es?</p>
+          <p style="background-color: rgba(177, 87, 91, 1);">Julia Stadler: 12,68€</p>
+          <p style="background-color: rgba(84, 136, 71, 1);">Sergio Carrasco: Gut, super. Vielen dank</p>
+          <p style="background-color: rgba(177, 87, 91, 1);">Julia Stadler: Bitte, Auf Wiedersehen</p>
+          <p style="background-color: rgba(84, 136, 71, 1);">Sergio Carrasco: Auf Wiedersehen</p>
+        `
+      },
+      {
+        text: `
+          <p><b>5. Pidiendo en un restaurante:</b></p>
+          <p style="background-color: rgba(187, 223, 30, 1);">Kellnerin: Hallo! Was möchten Sie trinken?</p>
+          <p style="background-color: rgba(32, 228, 235, 1);">Marco Müller: Hallo! Für mich ein Bierkrug, bitte</p>
+          <p style="background-color: rgba(187, 223, 30, 1);">Kellnerin: Einverstanden, und was möchten Sie essen?</p>
+          <p style="background-color: rgba(32, 228, 235, 1);">Marco Müller: Ich nehme bitte Tomatensuppe und Schnitzel mit Pommes</p>
+          <p style="background-color: rgba(187, 223, 30, 1);">Kellnerin: Ja, natürlich. Ein Bierkrug, Tomatensuppe und Schnitzel mit Pommes. Das macht 22,45€</p>
+          <p style="background-color: rgba(32, 228, 235, 1);">Marco Müller: Hier 25€, stimmt so, bitte</p>
+          <p style="background-color: rgba(187, 223, 30, 1);">Kellnerin: Vielen dank</p>
+          <p style="background-color: rgba(32, 228, 235, 1);">Marco Müller: Bitte, Auf Wiedersehen</p>
+          <p style="background-color: rgba(187, 223, 30, 1);">Kellnerin: Auf Wiedersehen</p>
+          <p><b>6. En el médico:</b></p>
+          <p style="background-color: rgba(84, 136, 71, 1);">Arzt: Guten Morgen! Was tut Ihnen weh?</p>
+          <p style="background-color: rgba(177, 87, 91, 1);">Krank: Mir ist schlecht</p>
+          <p style="background-color: rgba(84, 136, 71, 1);">Arzt: Haben Sie Fieber?</p>
+          <p style="background-color: rgba(177, 87, 91, 1);">Krank: Nein, mein Bauch tut weh</p>
+          <p style="background-color: rgba(84, 136, 71, 1);">Arzt: Damals, müssen Sie eine Diät machen</p>
+          <p style="background-color: rgba(177, 87, 91, 1);">Krank: Einverstanden, wie lange muss ich mit dem Diät sein?</p>
+          <p style="background-color: rgba(84, 136, 71, 1);">Arzt: 4 Tage</p>
+          <p style="background-color: rgba(177, 87, 91, 1);">Krank: Danke schön. Auf Wiedersehen</p>
+          <p style="background-color: rgba(84, 136, 71, 1);">Arzt: Auf Wiedersehen</p>
+        `
+      },
+      {
+        text: `
+          <p><b>7. Planes de amigos:</b></p>
+          <p style="background-color: rgba(84, 136, 71, 1);">Alejandro: Hallo, Claudia! Wie geht es dir?</p>
+          <p style="background-color: rgba(177, 87, 91, 1);">Claudia: Es geht so, danke. Und dir?</p>
+          <p style="background-color: rgba(84, 136, 71, 1);">Alejandro: Sehr gut, danke. Möchtest du ins Kino gehen?</p>
+          <p style="background-color: rgba(177, 87, 91, 1);">Claudia: Ja, genau</p>
+          <p style="background-color: rgba(84, 136, 71, 1);">Alejandro: Was Film möchtest du sehen?</p>
+          <p style="background-color: rgba(177, 87, 91, 1);">Claudia: Ich kenne eine lustige Komödie</p>
+          <p style="background-color: rgba(84, 136, 71, 1);">Alejandro: Ja, natürlich. Wie lange dauert es?</p>
+          <p style="background-color: rgba(177, 87, 91, 1);">Claudia: 2 Stunde 15 Minuten</p>
+          <p style="background-color: rgba(84, 136, 71, 1);">Alejandro: Einverstanden. Wie viel kostet die Eintrittskarte?</p>
+          <p style="background-color: rgba(177, 87, 91, 1);">Claudia: 7€ für Person</p>
+          <p style="background-color: rgba(84, 136, 71, 1);">Alejandro: Klar. An welchem Tag und zu welcher Stund möchtest du gehen?</p>
+          <p style="background-color: rgba(177, 87, 91, 1);">Claudia: Am Freitag um viertel nach acht</p>
+          <p style="background-color: rgba(84, 136, 71, 1);">Alejandro: Super. Bis bald!</p>
+          <p style="background-color: rgba(177, 87, 91, 1);">Claudia: Bis bald!</p>
+        `
+      },
+      {
+        text: `
+          <h3>Tests/Exámenes del Nivel A1</h3>
+          <p><b>1. Test del tema 1 y 2:</b></p>
+          <img src="https://i.postimg.cc/KvdX6Hqk/temas1-2.png"/>
+          <p><b>2. Test del tema 3 y 4:</b></p>
+          <img src="https://i.postimg.cc/NfWh3zJT/temas3-4.png"/>
+        `
+      },
+      {
+        text: `
+          <h3>Libros usados en el Nivel A1</h3>
+          <img src="https://i.postimg.cc/vHpRJNqZ/kursbuch.png"/>
+          <img src="https://i.postimg.cc/WbQRBHWb/ubungsbuch.png"/>
+        `
       }
     ]
   }
