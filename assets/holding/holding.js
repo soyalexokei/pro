@@ -17,6 +17,15 @@ const modalPrevh2 = document.querySelector("[data-prev-h2]");
 const modalNexth2 = document.querySelector("[data-next-h2]");
 const modalImgh2 = document.querySelector("[data-modal-img-h2]");
 const modalVideoh2 = document.querySelector("[data-modal-video-h2]");
+
+const modalLinksh3 = document.querySelectorAll("[data-modal-holding3]");
+const modalTexth3 = document.querySelector("[data-modal-text-h3]");
+const modalCloseh3 = document.querySelector("[data-modal-close-h3]");
+const modalCounterh3 = document.querySelector("[data-counter-h3]");
+const modalPrevh3 = document.querySelector("[data-prev-h3]");
+const modalNexth3 = document.querySelector("[data-next-h3]");
+const modalImgh3 = document.querySelector("[data-modal-img-h3]");
+const modalVideoh3 = document.querySelector("[data-modal-video-h3]");
 /*************************************************************************************/
 
 /* Modals Elements */
@@ -43,6 +52,17 @@ const modalElementsHold = [
     counter: modalCounterh2,
     prev: modalPrevh2,
     next: modalNexth2
+  },
+  {
+    modal: document.getElementById("holding3"),
+    links: modalLinksh3,
+    close: modalCloseh3,
+    text: modalTexth3,
+    img: modalImgh3,
+    video: modalVideoh3,
+    counter: modalCounterh3,
+    prev: modalPrevh3,
+    next: modalNexth3
   }
 ]
 /*************************************************************************************/
@@ -70,6 +90,30 @@ const holdings = [
         text: `
           <p><b>Descripción:</b> Eventos sociales que conectan personas, culturas y aventuras</p><br>
           <p><b>Ubicación:</b> <a href="https://maps.app.goo.gl/oi9XKHWX9ETs3JTS6" target="_blank">Locales por la Provincia de Madrid (España)</a></p>
+        `
+      }
+    ]
+  },
+  //-- Holding 3
+  {
+    pageH:0,
+    pagesH: [
+      {
+        text: `
+          <p><b>Descripción:</b> Laboratorio tecnológico dedicado a la automatización de empresas con IA</p><br>
+          <p><b>Ubicación:</b> Online</p>
+        `
+      },
+      {
+        text: `
+          <h3>Proyectos Web</h3>
+          <p><b>Descripción:</b> Consisten en proyectos de programación web en JavaScript, HTML y CSS</p>
+          <p><b>Listado de proyectos:</b></p>
+          <ul>
+            <p><b>1. Calculadora Web:</b> <a href="./assets/holding/proyecto1/index.html">Acceder</a></p>
+            <p><b>2. Kick Blocks Game:</b> <a href="./assets/holding/proyecto2/index.html">Acceder</a></p>
+            <img src="./assets/holding/logo_KickBlocks.png"/>
+          </ul>
         `
       }
     ]
