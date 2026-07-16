@@ -474,6 +474,10 @@ const experiencias = [
         `
       },
       {
+        text: `<p><b>Carta profesional de mi puesto:</b></p>`,
+        img: "https://i.postimg.cc/4y6t9wDp/me-at-algam.png"
+      },
+      {
         text: `
           <p><b>Viaje de formación de 4 días a Harman Pro (Apsley, Reino Unido):</b></p>
           <p>
