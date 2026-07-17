@@ -638,11 +638,12 @@ const experiencias = [
       {
         text: `
           <h3>Semestre de Erasmus+</h3>
-          <p><b>Institución:</b> <a href="https://www.course-catalogue.uns.ac.rs/course-catalogue/faculty-of-technical-sciences" target="_blank">Facultad de Ciencias Técnicas (FTN)</a> - <a href="https://www.course-catalogue.uns.ac.rs/course-catalogue/university-of-novi-sad" target="_blank">Universidad de Novi Sad (UNS)</a></p>
+          <p><b>Institución (siglas en español):</b> <a href="https://www.course-catalogue.uns.ac.rs/course-catalogue/faculty-of-technical-sciences" target="_blank">Facultad de Ciencias Técnicas (FTN)</a> - <a href="https://www.course-catalogue.uns.ac.rs/course-catalogue/university-of-novi-sad" target="_blank">Universidad de Novi Sad (UNS)</a></p>
+          <p><b>Institución (siglas en serbio):</b> <a href="https://www.course-catalogue.uns.ac.rs/course-catalogue/faculty-of-technical-sciences" target="_blank">Fakultet Tehničkih Nauka (FTN)</a> - <a href="https://www.course-catalogue.uns.ac.rs/course-catalogue/university-of-novi-sad" target="_blank">Univerzitet u Novom Sadu (UNS)</a></p>
           <p><b>Duración:</b> 1 semestre (6 meses)</p>
           <p><b>Idioma:</b> Inglés</p>
           <p><b>Remuneración:</b> 200 € netos / mes</p>
-          <p><b>Experiencia realizada gracias a:</b> <a class="otros-enlaces" href="https://www.course-catalogue.uns.ac.rs/course-catalogue/university-of-novi-sad" target="_blank">UNS</a> y <a class="otros-enlaces" href="https://www.urjc.es/internacional/erasmus-y-movilidad" target="_blank">URJC</a></p>
+          <p><b>Experiencia realizada gracias a:</b> <a href="https://www.course-catalogue.uns.ac.rs/course-catalogue/university-of-novi-sad" target="_blank">UNS</a> y <a href="https://www.urjc.es/internacional/erasmus-y-movilidad" target="_blank">URJC</a></p>
         `
       },
       {
@@ -653,6 +654,16 @@ const experiencias = [
           <p> - Tratamiento Digital de la Imagen <=> Digital Image Processing ==> Nota: 5.5</p>
           <p> - Gráficos y Visualización en 3D <=> Energy & Renewable Energy Sources in Rural Areas ==> Nota: 9.5</p>
           <p> - Laboratorio de Tecnologías Audiovisuales en la Web <=> Strategic Planning in Postal Traffic & Telecommunications ==> Nota: 9.5</p>
+        `
+      },
+      {
+        text: `
+          <p><b>Proyecto Web de la asignatura de Fundamentals in Programming:</b></p>
+          <ul>
+            <p><b>Descripción:</b> Asignatura de programación en C</p>
+            <p><b>Guía docente:</b> <i class="fa fa-globe"></i><a href="https://www.course-catalogue.uns.ac.rs/component/jdownloads/send/4-fakultet-tehnickih-nauka/1712-fundamentals-in-programming" target="_blank">Ver online</a><i class="fa fa-globe"></i></p>
+            <p><b>Acceso a la web:</b> <i class="fa fa-globe"></i><a href="./assets/experiencias/Erasmus/index.html">Ver online</a><i class="fa fa-globe"></i></p>
+          </ul>
         `
       },
       {
