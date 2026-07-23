@@ -331,11 +331,16 @@ const certificaciones = [
       {
         text: `
           <h3>Mi permiso de conducir en España y la Unión Europea</h3>
+          <p><b>Ver permiso:</b> <i class="fa fa-envelope"></i><a href="#contacto">Pedirlo</a><i class="fa fa-envelope"></i></p>
           <p><b>Tipo de permiso:</b> B</p>
           <p><b>Permisos extras incluidos:</b> AM y A1</p>
           <p><b>Fecha de expedición:</b> 26/01/2016</p>
           <p><b>Fecha de expiración:</b> 26/01/2036</p>
-          <p><b>Ver permiso:</b> <i class="fa fa-envelope"></i><a href="#contacto">Pedirlo</a><i class="fa fa-envelope"></i></p>
+          <p><b>Controles de alcoholemia:</b> 1</p>
+          <p><b>Resultados de los controles de alcoholemia:</b></p>
+          <ul>
+            <p>1º Control de alcoholemia => 22/07/2026 - 21:55 => Resultado: 0.0</p>
+          </ul>
         `
       },
       {
