@@ -621,6 +621,9 @@ const experiencias = [
           <p> - Interactuar con un equipo multidisciplinar distribuido en varios proyectos de desarrollo</p>
         `
       },
+      {img: "https://i.postimg.cc/5yqmqzxf/IMG-20260803-171106-708.webp"},
+      {img: "https://i.postimg.cc/wMckcN66/IMG-20260511-154753.jpg"},
+      {video: "https://streamable.com/e/60gr5n"},
       {
         text: `
           <h3>Datos de la empresa</h3>
