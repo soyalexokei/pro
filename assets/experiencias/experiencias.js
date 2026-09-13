@@ -87,6 +87,17 @@ const modalVideoe7 = document.querySelector("[data-modal-video-e7]");
 const modalVideoe8 = document.querySelector("[data-modal-video-e8]");
 const modalVideoe9 = document.querySelector("[data-modal-video-e9]");
 const modalVideoe10 = document.querySelector("[data-modal-video-e10]");
+
+const loader_exp1 = document.getElementById("loader-e1");
+const loader_exp2 = document.getElementById("loader-e2");
+const loader_exp3 = document.getElementById("loader-e3");
+const loader_exp4 = document.getElementById("loader-e4");
+const loader_exp5 = document.getElementById("loader-e5");
+const loader_exp6 = document.getElementById("loader-e6")
+const loader_exp7 = document.getElementById("loader-e7");
+const loader_exp8 = document.getElementById("loader-e8");
+const loader_exp9 = document.getElementById("loader-e9");
+const loader_exp10 = document.getElementById("loader-e10");
 /*************************************************************************************/
 
 
@@ -102,7 +113,8 @@ const modalElementsE = [
     video: modalVideoe1,
     counter: modalCountere1,
     prev: modalPreve1,
-    next: modalNexte1
+    next: modalNexte1,
+    loader: loader_exp1
   },
   {
     modal: document.getElementById("experiencia2"),
@@ -113,7 +125,8 @@ const modalElementsE = [
     video: modalVideoe2,
     counter: modalCountere2,
     prev: modalPreve2,
-    next: modalNexte2
+    next: modalNexte2,
+    loader: loader_exp2
   },
   {
     modal: document.getElementById("experiencia3"),
@@ -124,7 +137,8 @@ const modalElementsE = [
     video: modalVideoe3,
     counter: modalCountere3,
     prev: modalPreve3,
-    next: modalNexte3
+    next: modalNexte3,
+    loader: loader_exp3
   },
   {
     modal: document.getElementById("experiencia4"),
@@ -135,7 +149,8 @@ const modalElementsE = [
     video: modalVideoe4,
     counter: modalCountere4,
     prev: modalPreve4,
-    next: modalNexte4
+    next: modalNexte4,
+    loader: loader_exp4
   },
   {
     modal: document.getElementById("experiencia5"),
@@ -146,7 +161,8 @@ const modalElementsE = [
     video: modalVideoe5,
     counter: modalCountere5,
     prev: modalPreve5,
-    next: modalNexte5
+    next: modalNexte5,
+    loader: loader_exp5
   },
   {
     modal: document.getElementById("experiencia6"),
@@ -157,7 +173,8 @@ const modalElementsE = [
     video: modalVideoe6,
     counter: modalCountere6,
     prev: modalPreve6,
-    next: modalNexte6
+    next: modalNexte6,
+    loader: loader_exp6
   },
   {
     modal: document.getElementById("experiencia7"),
@@ -168,7 +185,8 @@ const modalElementsE = [
     video: modalVideoe7,
     counter: modalCountere7,
     prev: modalPreve7,
-    next: modalNexte7
+    next: modalNexte7,
+    loader: loader_exp7
   },
   {
     modal: document.getElementById("experiencia8"),
@@ -179,7 +197,8 @@ const modalElementsE = [
     video: modalVideoe8,
     counter: modalCountere8,
     prev: modalPreve8,
-    next: modalNexte8
+    next: modalNexte8,
+    loader: loader_exp8
   },
   {
     modal: document.getElementById("experiencia9"),
@@ -190,7 +209,8 @@ const modalElementsE = [
     video: modalVideoe9,
     counter: modalCountere9,
     prev: modalPreve9,
-    next: modalNexte9
+    next: modalNexte9,
+    loader: loader_exp9
   },
   {
     modal: document.getElementById("experiencia10"),
@@ -201,7 +221,8 @@ const modalElementsE = [
     video: modalVideoe10,
     counter: modalCountere10,
     prev: modalPreve10,
-    next: modalNexte10
+    next: modalNexte10,
+    loader: loader_exp10
   }
 ];
 /*************************************************************************************/
@@ -534,106 +555,6 @@ const experiencias = [
       }
     ]
   },
-  //-- Experiencia 7
-  {
-    pageE: 0,
-    pagesE: [
-      {
-        text: `
-          <h3>IT Engineer Trainee</h3>
-          <p><b>Tipo de contrato:</b> Contrato de formación</p>
-          <p><b>Modo de trabajo:</b> Híbrido (Presencial + Remoto)</p>
-          <p><b>Idioma:</b> Inglés y Español</p>
-          <p><b>Calendario del Programa:</b> <i class="fa fa-globe"></i><a href="./assets/experiencias/Calendario_PSS_TI.pdf" target="_blank">Ver online</a><i class="fa fa-globe"></i></p>
-        `
-      },
-      {
-        text: `
-          <p><b>Funciones y Desarrollo:</b></p>
-          <p> - Arquitectura Mainframe y z/OS</p>
-          <p> - JCL y Utilidades del z/OS</p>
-          <p> - MQ</p>
-          <p> - DB2</p>
-          <p> - CICS</p>
-          <p> - Arquitectura z16 y z17 en <a class="otros-enlaces" href="https://www.ibm.com/es-es" target="_blank">IBM</a></p>
-          <p> - z/OSMF y ZOWE</p>
-          <p> - z/CX</p>
-          <p> - z/OS Comm Server</p>
-          <p> - Lenguaje de Programación REXX</p>
-        `
-      },
-      {
-        text: `<p><b>Mi experiencia en PSS TI:</b></p>`,
-        img: "https://i.postimg.cc/7LGJdYwd/IMG-20250324-WA0004.png"
-      },
-      {img: "https://i.postimg.cc/P5F8S8s1/IMG-20250324-WA0009.png"},
-      {img: "https://i.postimg.cc/02Pmjs0K/IMG-20250324-WA0015.jpg"},
-      {img: "https://i.postimg.cc/Wb8ZJH5W/IMG-20250324-WA0017.jpg"},
-      {img: "https://i.postimg.cc/g20ZyH5Y/IMG-20250327-WA0009.png"},
-      {img: "https://i.postimg.cc/nVvBnzBt/IMG-20250327-WA0011.jpg"},
-      {img: "https://i.postimg.cc/YSMjq48C/Config-Mainframe1.png"},
-      {img: "https://i.postimg.cc/xd58k0Fy/Config-Mainframe2.png"},
-      {img: "https://i.postimg.cc/GmkHCPFf/Config-Mainframe3.png"},
-      {img: "https://i.postimg.cc/fb2J19Pc/IMG-20250429-WA0005.png"},
-      {img: "https://i.postimg.cc/fRv3jFjg/IMG-20250429-WA0006.png"},
-      {img: "https://i.postimg.cc/DzySCgxf/IMG-20250429-WA0008.png"},
-      {img: "https://i.postimg.cc/v8jFpWSq/IMG-20250520-WA0008.png"},
-      {img: "https://i.postimg.cc/TwPw2WzN/1.png"},
-      {img: "https://i.postimg.cc/mD6rPgRL/2.png"},
-      {
-        text: `
-          <p><b>Presentación del Proyecto Final:</b> <i class="fa fa-globe"></i><a href="./assets/experiencias/Presentacion_PSS_TI.pdf" target="_blank">Ver online</a><i class="fa fa-globe"></i></p>
-          <p><b>Notas del Talent Campus:</b> <i class="fa fa-globe"></i><a href="./assets/experiencias/Notas_Talent_Campus.png" target="_blank">Ver online</a><i class="fa fa-globe"></i></p>
-          <p><b>Diploma del Talent Campus de PSS TI:</b> <i class="fa fa-envelope"></i><a href="#contacto">Pedirlo</a><i class="fa fa-envelope"></i> - Apto</p>
-        `
-      },
-      {
-        text: `
-          <h3>Datos de la empresa</h3>
-          <p><b>Teléfono:</b> +34 91 345 10 27</p>
-          <p><b>Correo electrónico:</b> peopleandtalent@pss-ti.com</p>
-          <p><b>Ubicación:</b> <a href="https://maps.app.goo.gl/QBa63tFWuWXorY6SA" target="_blank">Spaces Madrid - Edificio E - 3º planta, Vía de los Poblados, 1, Hortaleza, 28033 Madrid, España</a></p>
-        `
-      }
-    ]
-  },
-  //-- Experiencia 8
-  {
-    pageE: 0,
-    pagesE: [
-      {
-        text: `
-          <h3>ALM Engineer</h3>
-          <p><b>Tipo de contrato:</b> Jornada completa</p>
-          <p><b>Modo de trabajo:</b> Remoto</p>
-          <p><b>Idioma:</b> Inglés y Español</p>
-          <p><b>Proyecto/Cliente:</b> Allianz Italia</p>
-          <p><b>Departamento:</b> Migration & Mainframe Modernization</p>
-        `
-      },
-      {
-        text: `
-          <p><b>Funciones:</b></p>
-          <p> - Integración en el equipo de modernización de sistemas Mainframe</p>
-          <p> - Diseñar y desarrollar componentes dentro del nuevo ecosistema distribuido</p>
-          <p> - Soporte técnico a nivel scripting, automatización y procesos asociados a la transición tecnológica</p>
-          <p> - Colaborar con arquitectos hardware y software para definir la estructura del nuevo entorno</p>
-          <p> - Interactuar con un equipo multidisciplinar distribuido en varios proyectos de desarrollo</p>
-        `
-      },
-      {img: "https://i.postimg.cc/5yqmqzxf/IMG-20260803-171106-708.webp"},
-      {img: "https://i.postimg.cc/wMckcN66/IMG-20260511-154753.jpg"},
-      {video: "https://streamable.com/e/60gr5n"},
-      {
-        text: `
-          <h3>Datos de la empresa</h3>
-          <p><b>Teléfono:</b> +34 91 596 60 00</p>
-          <p><b>Correo electrónico:</b> a.fernandez.perez@accenture.com</p>
-          <p><b>Ubicación:</b> <a href="https://maps.app.goo.gl/iv9Lcj7Sapg59diG7" target="_blank">Paseo de la Castellana, 85, Tetuán, 28046, Madrid, España</a></p>
-        `
-      }
-    ]
-  },
   //-- Experiencia 9
   {
     pageE: 0,
@@ -778,6 +699,22 @@ function renderModalE(indexE) {
   const datos = experiencias[indexE];
   const ui = modalElementsE[indexE];
   const pageE = datos.pagesE[datos.pageE];
+
+  function mostrarLoader() {
+    if (ui.loader) {
+      ui.loader.style.display = "block";
+    }
+    
+    ui.img.style.display = "none";
+    ui.video.style.display = "none";
+  }
+  
+  function ocultarLoader() {
+    if (ui.loader) {
+      ui.loader.style.display = "none";
+    }
+  }
+
   ui.counter.textContent = `${datos.pageE+1} / ${datos.pagesE.length}`;
 
   if(pageE.text){
@@ -786,23 +723,47 @@ function renderModalE(indexE) {
     ui.text.innerHTML = "";
   }
 
-  if(pageE.img){
-    ui.img.src = pageE.img;
-    ui.img.width = "500";
-    ui.img.style.display = "block";
-  }else{
-    ui.img.removeAttribute("src");
-    ui.img.style.display = "none";
-  }
+  ui.img.removeAttribute("src");
+  ui.img.style.display = "none";
+  ui.video.removeAttribute("src");
+  ui.video.style.display = "none";
 
-  if(pageE.video){
-    ui.video.src = pageE.video;
-    ui.video.width = "420";
-    ui.video.height = "640";
-    ui.video.style.display = "block";
-  }else{
-    ui.video.removeAttribute("src");
-    ui.video.style.display = "none";
+  if (pageE.img) {
+    mostrarLoader();
+    const urlImagen = pageE.img;
+    const imagenPrecarga = new Image();
+    imagenPrecarga.onload = () => {
+      if ( experiencias[indexE].pageE !== datos.pageE || pageE.img !== urlImagen ) {
+        return;
+      }
+      ui.img.src = urlImagen;
+      ui.img.width = "500px"
+      ui.img.style.display = "block";
+      ocultarLoader();
+    };
+    imagenPrecarga.onerror = () => {
+      if ( experiencias[indexE].pageE !== datos.pageE || pageE.img !== urlImagen ) {
+        return;
+      }
+      ui.img.removeAttribute("src");
+      ui.img.style.display = "none";
+      ocultarLoader();
+      console.error("Error al cargar la imagen:", urlImagen);
+    };
+    imagenPrecarga.src = urlImagen;
+  } else if (pageE.video) {
+    mostrarLoader();
+    const urlVideo = pageE.video;
+    ui.video.src = urlVideo;
+    ui.video.onload = () => {
+      if ( experiencias[indexE].pageE !== datos.pageE || pageE.video !== urlVideo ) {
+        return;
+      }
+      ui.video.style.display = "block";
+      ocultarLoader();
+    };
+  } else {
+    ocultarLoader();
   }
 }
 /*************************************************************************************/
