@@ -1,9 +1,5 @@
 //-- Declaración de variables
 /*************************************************************************************/
-const modalLinksc1 = document.querySelectorAll("[data-modal-certificacion1]");
-const modalLinksc2 = document.querySelectorAll("[data-modal-certificacion2]");
-const modalLinksc3 = document.querySelectorAll("[data-modal-certificacion3]");
-const modalLinksc4 = document.querySelectorAll("[data-modal-certificacion4]");
 const modalLinksc5 = document.querySelectorAll("[data-modal-certificacion5]");
 const modalLinksc6 = document.querySelectorAll("[data-modal-certificacion6]");
 const modalLinksc7 = document.querySelectorAll("[data-modal-certificacion7]");
@@ -17,10 +13,6 @@ const modalLinksc14 = document.querySelectorAll("[data-modal-certificacion14]");
 const modalLinksc15 = document.querySelectorAll("[data-modal-certificacion15]");
 const modalLinksc16 = document.querySelectorAll("[data-modal-certificacion16]");
 
-const modalTextc1 = document.querySelector("[data-modal-text-c1]");
-const modalTextc2 = document.querySelector("[data-modal-text-c2]");
-const modalTextc3 = document.querySelector("[data-modal-text-c3]");
-const modalTextc4 = document.querySelector("[data-modal-text-c4]");
 const modalTextc5 = document.querySelector("[data-modal-text-c5]");
 const modalTextc6 = document.querySelector("[data-modal-text-c6]");
 const modalTextc7 = document.querySelector("[data-modal-text-c7]");
@@ -324,201 +316,6 @@ const modalElementsC = [
 /* Datos de los voluntariados */
 /*************************************************************************************/
 const certificaciones = [
-  //-- Certificación 1
-  {
-    pageC: 0,
-    pagesC: [
-      {
-        text: `
-          <h3>Mi permiso de conducir en España y la Unión Europea</h3>
-          <p><b>Ver permiso:</b> <i class="fa fa-envelope"></i><a href="#contacto">Pedirlo</a><i class="fa fa-envelope"></i></p>
-          <p><b>Tipo de permiso:</b> B</p>
-          <p><b>Permisos extras incluidos:</b> AM y A1</p>
-          <p><b>Fecha de expedición:</b> 26/01/2016</p>
-          <p><b>Fecha de expiración:</b> 26/01/2036</p>
-          <p><b>Controles de alcoholemia:</b> 1</p>
-          <p><b>Resultados de los controles de alcoholemia:</b></p>
-          <ul>
-            <p>1º Control de alcoholemia => 22/07/2026 - 21:55 => Resultado: 0.0</p>
-          </ul>
-        `
-      },
-      {
-        text: `
-          <h3>Con mi primer coche:</h3>
-          <p><b>Tipo de vehículo:</b> Volkswagen Golf IV (manual y diesel)</p>
-          <p><b>Tipo de adquisición:</b> Compra por 3000€ (2º mano)</p>
-        `,
-        img: "https://i.postimg.cc/pV4dj5hX/Primer-coche.png"
-      },
-      {
-        text: `
-          <h3>Mi segundo coche:</h3>
-          <p><b>Tipo de vehículo:</b> Volkswagen Polo 2021 (automático y gasolina)</p>
-          <p><b>Tipo de adquisición:</b> Renting de 200€/mes (opción a compra y todo incluido)</p>
-          <p><b>Resolución final:</b> No compra - Quería el nuevo Volkswagen Golf</p>
-        `,
-        img: "https://i.postimg.cc/nVSJ5Xvh/Segundo-coche.png"
-      },
-      {
-        text: `
-          <h3>Mi coche actual:</h3>
-          <p><b>Tipo de vehículo:</b> Volkswagen Golf 2025 (manual y diesel)</p>
-          <p><b>Tipo de adquisición:</b> Renting de 385€/mes (opción a compra y todo incluido)</p>
-        `,
-        img: "https://i.postimg.cc/ZnPZXHZ9/Tercer-coche.png"
-      },
-    ]
-  },
-  //-- Certificación 2
-  {
-    pageC: 0,
-    pagesC: [
-      {
-        text: `
-          <h3>Mi Licenciatura o Carrera Universitaria</h3>
-          <p><b>Licenciatura:</b> <a href="https://www.urjc.es/estudios/grado/637-ingenieria-en-sistemas-audiovisuales-y-multimedia" target="_blank">Ingeniería en Sistemas Audiovisuales y Multimedia</a></p>
-          <p><b>Rama de la Licenciatura:</b> Telecomunicaciones</p>
-          <p><b>Campus universitario:</b> <a href="https://maps.app.goo.gl/FLMAsusBbyKdD83J7" target="_blank">URJC Fuenlabrada, Camino del Molino, 5, 28942 Fuenlabrada, Madrid, España</a></p>
-          <p><b>Ver título oficial en español:</b> <i class="fa fa-envelope"></i><a href="#contacto">Pedirlo</a><i class="fa fa-envelope"></i></p>
-          <p><b>Ver título oficial en inglés:</b> <i class="fa fa-envelope"></i><a href="#contacto">Pedirlo</a><i class="fa fa-envelope"></i></p>
-          <p><b>Ver el historial académico:</b> <i class="fa fa-envelope"></i><a href="#contacto">Pedirlo</a><i class="fa fa-envelope"></i></p>
-          <p><b>Ver el libro de la Licenciatura:</b> <i class="fa fa-globe"></i><a href="./assets/certificaciones/Libro-Licenciatura.pdf" target="_blank">Ver online</a><i class="fa fa-globe"></i></p>
-        `
-      },
-      {
-        text: `<h3>Logo de la Universidad</h3>`,
-        img: "./assets/certificaciones/logo_uni.png"
-      },
-      {
-        text: `
-          <p><b>Mi periodo universitario se llevo a cabo en 4 etapas:</b></p>
-          <p> 1. Periodo de Asignaturas: desde septiembre/2016 a junio/2021</p>
-          <p> 2. Periodo de Prácticas Curriculares en Empresa: desde septiembre/2021 a Febrero/2022</p>
-          <p> 3. Periodo de Experiencia Erasmus+ fuera de España (en inglés): desde Febrero/2022 a julio/2022</p>
-          <p> 4. Periodo de desarrollo y presentación del Trabajo de Fin de Grado (TFG): desde septiembre/2022 a julio/2023</p>
-        `
-      },
-      {
-        text: `
-          <p><b>Trabajo de Fin de Grado - TFG:</b> <i class="fa fa-globe"></i><a href="./assets/certificaciones/TFGAlejandroFernandezPerez.pdf" target="_blank">Ver online</a><i class="fa fa-globe"></i></p>
-          <p><b>Presentación del TFG (en español):</b> <i class="fa fa-globe"></i><a href="./assets/certificaciones/PresentacionTFGAlejandroFernandezPerez.pdf" target="_blank">Ver online</a><i class="fa fa-globe"></i></p>
-          <p><b>Presentación del TFG (en inglés):</b> <i class="fa fa-globe"></i><a href="./assets/certificaciones/BA-FinalProject-Presentation.pdf" target="_blank">Ver online</a><i class="fa fa-globe"></i></p>
-          <p><b>Mi tutor de TFG:</b> <i class="fa fa-globe"></i><a href="./assets/certificaciones/Mi-Tutor-TFG.png" target="_blank">Ver online</a><i class="fa fa-globe"></i></p>
-          <p><b>Nota de mis Prácticas Curriculares en Empresa:</b> 9</p>
-          <p><b>Nota de mi Trabajo de Fin de Grado:</b> 9.3</p>
-          <p><b>Nota media final:</b> 7</p>
-          <p><b>Orla de Graduación:</b> <i class="fa fa-globe"></i><a href="./assets/certificaciones/Graduacion.pdf" target="_blank">Ver online</a><i class="fa fa-globe"></i></p>
-        `
-      },
-      {
-        text: `<h3>Foto mía graduado 1</h3>`,
-        img: "./assets/certificaciones/graduado1.jpg"
-      },
-      {
-        text: `<h3>Foto mía graduado 2</h3>`,
-        img: "./assets/certificaciones/graduado2.jpg"
-      },
-      {
-        text: `<h3>Mi Vida Universitaria</h3>`,
-        video: "https://streamable.com/e/snd0v3"
-      },
-      {
-        text: `<h3>Experiencia en mi Acto de Graduación (octubre 2023)</h3>`,
-        img: "https://i.postimg.cc/jjM17tbv/01.jpg"
-      },
-      {img: "https://i.postimg.cc/XYcmn91R/02.jpg"},   
-      {img: "https://i.postimg.cc/qq3DSKCZ/03.jpg"},  
-      {img: "https://i.postimg.cc/9XRkr6Nt/04.jpg"},  
-      {img: "https://i.postimg.cc/pT71sCyF/05.jpg"},
-      {video: "https://streamable.com/e/4eybtc"},
-      {img: "https://i.postimg.cc/nhZSSCV0/07.jpg"},  
-      {img: "https://i.postimg.cc/SKS5RjwJ/08.jpg"},
-      {video: "https://streamable.com/e/vna4cl"},
-      {img: "https://i.postimg.cc/HLkZHRyM/10.jpg"},
-      {video: "https://streamable.com/e/mpmsrf"},
-      {img: "https://i.postimg.cc/ZK6DLrmW/12.jpg"},
-      {img: "https://i.postimg.cc/XNRzFsRM/13.jpg"},  
-      {img: "https://i.postimg.cc/nzMPKgVx/14.jpg"},
-      {
-        text: `
-          <h3>Datos de contacto de la URJC</h3>
-          <p><b>Teléfono:</b> 91 665 50 60</p>
-          <p><b>Correos electrónicos:</b> fuenlabrada.secretariadealumnos@urjc.es, fuenlabrada.gerencia@urjc.es y grado.ingenieriasam@urjc.es</p>
-        `
-      }
-    ]
-  },
-  //-- Certificación 3
-  {
-    pageC: 0,
-    pagesC: [
-      {
-        text: `
-          <h3>Bachillerato</h3>
-          <p><b>Centro Educativo:</b> <a href="https://maps.app.goo.gl/gWNBuUwKEQbjnYfR7" target="_blank">IES Profesor Máximo Trueba, Santillana del Mar, 22, 28660 Boadilla del Monte, Madrid, España</a></p>
-          <p><b>Modalidad:</b> Bachillerato Tecnológico</p>
-          <p><b>Ver título oficial:</b> <i class="fa fa-envelope"></i><a href="#contacto">Pedirlo</a><i class="fa fa-envelope"></i></p>
-          <p><b>Cursos alcanzados:</b></p>
-          <p> - 1º de Bachillerato: 2013/14</p>
-          <p> - 2º de Bachillerato: 2014/15</p>
-          <p><b>Orla de Graduación (mayo 2015):</b> <i class="fa fa-globe"></i><a href="./assets/certificaciones/Graduacion_Bachillerato.pdf" target="_blank">Ver online</a><i class="fa fa-globe"></i></p>
-          <p><b>Diploma de Graduación:</b> <i class="fa fa-globe"></i><a href="./assets/certificaciones/DiplomaGraduadoBachillerato.pdf" target="_blank">Ver online</a><i class="fa fa-globe"></i></p>
-          <p><b>Examen de la PAU (Prueba de Acceso a la Universidad) de junio de 2015:</b> Aprobado con un 8 sobre 14</p>
-        `
-      },
-      {
-        text: `<h3>Logo del Instituto</h3>`,
-        img: "./assets/certificaciones/logo_tuto.png"
-      },
-      {
-        text: `<h3>Experiencia en mi Acto de Graduación (mayo 2015)</h3>`,
-        img: "https://i.postimg.cc/8CPjtQj7/1.png"
-      },
-      {img: "https://i.postimg.cc/K8bK3gbr/2.png"},
-      {img: "https://i.postimg.cc/pXzhdJwL/3.png"},
-      {img: "https://i.postimg.cc/RZTW7VVr/4.png"},
-      {img: "https://i.postimg.cc/G3ZTr5Sf/5.png"},
-      {
-        text: `
-          <h3>Datos de contacto del Instituto</h3>
-          <p><b>Teléfono:</b> 91 632 15 12</p>
-          <p><b>Correo electrónico:</b> secretaria.ies.maximotrueba.boadilla@educa.madrid.org</p>
-        `
-      }
-    ]
-  },
-  //-- Certificación 4
-  {
-    pageC: 0,
-    pagesC: [
-      {
-        text: `
-          <h3>Educación Secundaria Obligatoria (ESO)</h3>
-          <p><b>Centro Educativo:</b> <a href="https://maps.app.goo.gl/gWNBuUwKEQbjnYfR7" target="_blank">IES Profesor Máximo Trueba, Santillana del Mar, 22, 28660 Boadilla del Monte, Madrid, España</a></p>
-          <p><b>Ver título oficial:</b> <i class="fa fa-envelope"></i><a href="#contacto">Pedirlo</a><i class="fa fa-envelope"></i></p>
-          <p><b>Cursos alcanzados:</b></p>
-          <p> - <a href="./assets/certificaciones/PrimeroESO.pdf" target="_blank">1º de la E.S.O: 2009/10</a></p>
-          <p> - 2º de la E.S.O: 2010/11</p>
-          <p> - 3º de la E.S.O: 2011/12</p>
-          <p> - <a href="./assets/certificaciones/CuartoESO.pdf" target="_blank">4º de la E.S.O: 2012/13</a></p>
-          <p><b>Orla de Graduación de la E.S.O (junio 2013):</b> <i class="fa fa-globe"></i><a href="./assets/certificaciones/Graduacion_ESO.pdf" target="_blank">Ver online</a><i class="fa fa-globe"></i></p>
-          <p><b>Diploma de Aprovechamiento:</b> <i class="fa fa-globe"></i><a href="./assets/certificaciones/DiplomaAprovechamientoESO.pdf" target="_blank">Ver online</a><i class="fa fa-globe"></i></p>
-        `
-      },
-      {
-        text: `<h3>Logo del Instituto</h3>`,
-        img: "./assets/certificaciones/logo_tuto.png"
-      },
-      {
-        text: `
-          <h3>Datos de contacto del Instituto</h3>
-          <p><b>Teléfono:</b> 91 632 15 12</p>
-          <p><b>Correo electrónico:</b> secretaria.ies.maximotrueba.boadilla@educa.madrid.org</p>
-        `
-      }
-    ]
-  },
   //-- Certificación 5
   {
     pageC: 0,
@@ -803,32 +600,6 @@ const certificaciones = [
           <p><b>Modo del curso:</b> Remoto</p>
           <p><b>Ver título oficial:</b> <i class="fa fa-globe"></i><a href="./assets/certificaciones/soft_skills.pdf" target="_blank">Ver online</a><i class="fa fa-globe"></i></p>
         `
-      }
-    ]
-  },
-  //-- Certificación 14
-  {
-    pageC: 0,
-    pagesC: [
-      {
-        text: `
-          <h3>Certificación B2 de inglés</h3>
-          <p><b>Por medio de:</b> <a href="https://www.britishcouncil.es/en/exam/aptis" target="_blank">British Council - Aptis</a></p>
-          <p>
-            <b>Historial de la obtención del Nivel B2:</b> Estuve estudiando inglés en el <a class="otros-enlaces" href="https://www.britishcouncil.es/" target="_blank">British Council</a> de
-            Villaviciosa de Odón (Madrid, España), donde cursé y aprobé los siguientes niveles: Nivel Pink (2003/04), Nivel Yellow (2004/05),
-            Nivel Red (2005/06), Nivel Junior 1 (2006/07), Nivel Junior 2 (2007/08), Nivel Junior 3 (2008/09), Nivel Junior 4 (2009/10),
-            Nivel Senior 1 (2010/11) y Nivel Senior 2 (2011/12). En total estuve 9 años. Aunque la obtención del nivel B2 oficial lo obtuve en octubre de 2020, después de haber ido a trabajar a Wisconsin Dells
-            (Wisconsin, Estados Unidos) en 2019.
-          </p>
-          <p><b>Ver título oficial:</b> <i class="fa fa-envelope"></i><a href="#contacto">Pedirlo</a><i class="fa fa-envelope"></i></p>
-          <p><b>Certificado enfocado a negocio:</b> <i class="fa fa-globe"></i><a href="./assets/certificaciones/English-for-Companies-Certified.pdf" target="_blank">Ver online</a><i class="fa fa-globe"></i></p>
-          <p><b>Certificado obtenido por Capgemini Engineering:</b> <i class="fa fa-globe"></i><a href="./assets/certificaciones/Certificado-Ingles-Capgemini.pdf" target="_blank">Ver online</a><i class="fa fa-globe"></i></p>
-        `
-      },
-      {
-        text: `<h3>Logo del certificado</h3>`,
-        img: "./assets/certificaciones/logo_B2.png"
       }
     ]
   },
