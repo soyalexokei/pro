@@ -14,7 +14,7 @@ let pendingImageE7 = null;
 /* DATOS DE LA EXPERIENCIA */
 /****************************************************/
 const experiencia_proE7 = {
-  nombre: "Experiencia en Accenture",
+  nombre: "Experiencia en PSS TI",
   medios: [
     {
       type: "text",
@@ -46,9 +46,8 @@ const experiencia_proE7 = {
       type: "text",
       content:`
         <p><b>Mi experiencia en PSS TI:</b></p>
-      `,
-      type: "image",
-      src: "https://i.postimg.cc/7LGJdYwd/IMG-20250324-WA0004.png"
+        <img src="https://i.postimg.cc/7LGJdYwd/IMG-20250324-WA0004.png"/>
+      `
     },
     {type: "image", src: "https://i.postimg.cc/P5F8S8s1/IMG-20250324-WA0009.png"},
     {type: "image", src: "https://i.postimg.cc/02Pmjs0K/IMG-20250324-WA0015.jpg"},
