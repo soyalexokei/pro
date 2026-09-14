@@ -1,49 +1,29 @@
 /****************************************************/
 /* ELEMENTOS DEL VOLUNTARIADO */
 /****************************************************/
-const viewerC7 = document.getElementById("mediaViewerC7");
-const prevBtnC7 = document.getElementById("prevBtnC7");
-const nextBtnC7 = document.getElementById("nextBtnC7");
-const mediaIndexC7 = document.getElementById("mediaIndexC7");
-const totalMediaC7 = document.getElementById("totalMediaC7");
-const loaderC7 = document.getElementById("loader-c7");
-let currentMediaC7 = 0;
-let pendingImageC7 = null;
+const viewerC13 = document.getElementById("mediaViewerC13");
+const prevBtnC13 = document.getElementById("prevBtnC13");
+const nextBtnC13 = document.getElementById("nextBtnC13");
+const mediaIndexC13 = document.getElementById("mediaIndexC13");
+const totalMediaC13 = document.getElementById("totalMediaC13");
+const loaderC13 = document.getElementById("loader-c13");
+let currentMediaC13 = 0;
+let pendingImageC13 = null;
 
 /****************************************************/
 /* DATOS DEL VOLUNTARIADO */
 /****************************************************/
-const certificadoC7 = {
+const certificadoC13 = {
   nombre: "Certificado: Adobe After Effects",
   medios: [
     {
       type: "text",
       content:`
-        <h3>Educación Secundaria Obligatoria (ESO)</h3>
-        <p><b>Centro Educativo:</b> <a href="https://maps.app.goo.gl/gWNBuUwKEQbjnYfR7" target="_blank">IES Profesor Máximo Trueba, Santillana del Mar, 22, 28660 Boadilla del Monte, Madrid, España</a></p>
-        <p><b>Ver título oficial:</b> <i class="fa fa-envelope"></i><a href="../../../index.html#contacto">Pedirlo</a><i class="fa fa-envelope"></i></p>
-        <p><b>Cursos alcanzados:</b></p>
-        <p> - <a href="PrimeroESO.pdf" target="_blank">1º de la E.S.O: 2009/10</a></p>
-        <p> - 2º de la E.S.O: 2010/11</p>
-        <p> - 3º de la E.S.O: 2011/12</p>
-        <p> - <a href="CuartoESO.pdf" target="_blank">4º de la E.S.O: 2012/13</a></p>
-        <p><b>Orla de Graduación de la E.S.O (junio 2013):</b> <i class="fa fa-globe"></i><a href="Graduacion_ESO.pdf" target="_blank">Ver online</a><i class="fa fa-globe"></i></p>
-        <p><b>Diploma de Aprovechamiento:</b> <i class="fa fa-globe"></i><a href="DiplomaAprovechamientoESO.pdf" target="_blank">Ver online</a><i class="fa fa-globe"></i></p>
-      `
-    },
-    {
-      type: "text",
-      content:`
-        <h3>Logo del Instituto</h3>
-        <img src="logo_tuto.png"/>
-      `
-    },
-    {
-      type: "text",
-      content:`
-        <h3>Datos de contacto del Instituto</h3>
-        <p><b>Teléfono:</b> 91 632 15 12</p>
-        <p><b>Correo electrónico:</b> secretaria.ies.maximotrueba.boadilla@educa.madrid.org</p>
+        <h3>Certificación Adobe After Effects</h3>
+        <p><b>Organizado por:</b> <a href="https://share.google/b2EtrJ6jZuuxrszqd" target="_blank">CUESA-URJC</a></p>
+        <p><b>Lugar del curso:</b> <a href="https://maps.app.goo.gl/Jasttnmqg2LKnVxy8" target="_blank">Camino del Molino, 5, 28942 Fuenlabrada, Madrid, España</a></p>
+        <p><b>Modo del curso:</b> Presencial</p>
+        <p><b>Ver título oficial:</b> <i class="fa fa-globe"></i><a href="Certificacion-Ae.pdf" target="_blank">Ver online</a><i class="fa fa-globe"></i></p>
       `
     }
   ]
@@ -55,67 +35,67 @@ const certificadoC7 = {
 /****************************************************/
 /* RENDER DEL VISOR */
 /****************************************************/
-function mostrarLoaderC7() {
-  loaderC7.style.display = "block";
-  viewerC7.style.display = "none";
+function mostrarLoaderC13() {
+  loaderC13.style.display = "block";
+  viewerC13.style.display = "none";
 }
 
-function ocultarLoaderC7() {
-  loaderC7.style.display = "none";
+function ocultarLoaderC13() {
+  loaderC13.style.display = "none";
 }
 
-function cargarImagenC7(url) {
+function cargarImagenC13(url) {
   if (!url) {
-    viewerC7.innerHTML = "";
-    viewerC7.style.display = "none";
-    ocultarLoaderC7();
+    viewerC13.innerHTML = "";
+    viewerC13.style.display = "none";
+    ocultarLoaderC13();
     return;
   }
 
-  mostrarLoaderC7();
+  mostrarLoaderC13();
 
   const img = new Image();
-  pendingImageC7 = img;
+  pendingImageC13 = img;
 
   img.onload = () => {
     // Si mientras cargaba se solicitó otra imagen, cancelamos esta
-    if (pendingImageC7 !== img) return;
+    if (pendingImageC13 !== img) return;
 
-    viewerC7.innerHTML = "";
-    viewerC7.appendChild(img);
+    viewerC13.innerHTML = "";
+    viewerC13.appendChild(img);
 
-    viewerC7.style.display = "block";
-    ocultarLoaderC7();
+    viewerC13.style.display = "block";
+    ocultarLoaderC13();
 
-    pendingImageC7 = null;
+    pendingImageC13 = null;
   };
 
   img.onerror = () => {
-    if (pendingImageC7 !== img) return;
+    if (pendingImageC13 !== img) return;
 
-    viewerC7.innerHTML = "<p>Error al cargar la imagen.</p>";
-    viewerC7.style.display = "block";
-    ocultarLoaderC7();
+    viewerC13.innerHTML = "<p>Error al cargar la imagen.</p>";
+    viewerC13.style.display = "block";
+    ocultarLoaderC13();
 
-    pendingImageC7 = null;
+    pendingImageC13 = null;
   };
 
   img.src = url;
 }
 
-function renderMediaC7() {
-  const media = certificadoC7.medios[currentMediaC7];
-  viewerC7.innerHTML="";
+function renderMediaC13() {
+  const media = certificadoC13.medios[currentMediaC13];
+  viewerC13.innerHTML="";
 
   /******** IMAGEN ********/
   if(media.type==="image") {
-    cargarImagenC7(media.src);
+    cargarImagenC13(media.src);
   }
 
   /******** VIDEO ********/
   else if (media.type === "video") {
 
-    ocultarLoaderC7();
+    ocultarLoaderC13();
 
     const iframe = document.createElement("iframe");
     iframe.src = media.src;
@@ -125,8 +105,8 @@ function renderMediaC7() {
     iframe.allow = "autoplay; encrypted-media";
     iframe.allowFullscreen = true;
 
-    viewerC7.style.display = "block";
-    viewerC7.appendChild(iframe);
+    viewerC13.style.display = "block";
+    viewerC13.appendChild(iframe);
   }
 
   /******** TEXTO ********/
@@ -134,43 +114,43 @@ function renderMediaC7() {
     const div=document.createElement("div");
     div.className="viewer-text";
     div.innerHTML=media.content;
-    viewerC7.appendChild(div);
+    viewerC13.appendChild(div);
   }
   /******** CONTADOR ********/
-  mediaIndexC7.value=currentMediaC7+1;
-  totalMediaC7.textContent = certificadoC7.medios.length;
+  mediaIndexC13.value=currentMediaC13+1;
+  totalMediaC13.textContent = certificadoC13.medios.length;
 }
 
 /****************************************************/
 /* SIGUIENTE */
 /****************************************************/
-nextBtnC7.addEventListener("click", () => {
-  currentMediaC7++;
-  if(currentMediaC7 >= certificadoC7.medios.length) {
-    currentMediaC7=0;
+nextBtnC13.addEventListener("click", () => {
+  currentMediaC13++;
+  if(currentMediaC13 >= certificadoC13.medios.length) {
+    currentMediaC13=0;
   }
-  renderMediaC7();
+  renderMediaC13();
 });
 
 /****************************************************/
 /* ANTERIOR */
 /****************************************************/
-prevBtnC7.addEventListener("click",()=>{
-  currentMediaC7--;
-  if(currentMediaC7 < 0) {
-    currentMediaC7 = certificadoC7.medios.length-1;
+prevBtnC13.addEventListener("click",()=>{
+  currentMediaC13--;
+  if(currentMediaC13 < 0) {
+    currentMediaC13 = certificadoC13.medios.length-1;
   }
-  renderMediaC7();
+  renderMediaC13();
 });
 
 /****************************************************/
 /* SALTAR A PÁGINA */
 /****************************************************/
-mediaIndexC7.addEventListener("change", () => {
-  const value=Number(mediaIndexC7.value);
-  if(value>=1 && value<=certificadoC7.medios.length) {
-    currentMediaC7=value-1;
-    renderMediaC7();
+mediaIndexC13.addEventListener("change", () => {
+  const value=Number(mediaIndexC13.value);
+  if(value>=1 && value<=certificadoC13.medios.length) {
+    currentMediaC13=value-1;
+    renderMediaC13();
   }
 });
 
@@ -179,14 +159,14 @@ mediaIndexC7.addEventListener("change", () => {
 /****************************************************/
 document.addEventListener("keydown",(e)=>{
   if(e.key==="ArrowRight"){
-    nextBtnC7.click();
+    nextBtnC13.click();
   }
   if(e.key==="ArrowLeft"){
-    prevBtnC7.click();
+    prevBtnC13.click();
   }
 });
 
 /****************************************************/
 /* INICIO */
 /****************************************************/
-renderMediaC7();
+renderMediaC13();

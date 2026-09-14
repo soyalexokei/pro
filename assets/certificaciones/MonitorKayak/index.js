@@ -1,49 +1,38 @@
 /****************************************************/
 /* ELEMENTOS DEL VOLUNTARIADO */
 /****************************************************/
-const viewerC7 = document.getElementById("mediaViewerC7");
-const prevBtnC7 = document.getElementById("prevBtnC7");
-const nextBtnC7 = document.getElementById("nextBtnC7");
-const mediaIndexC7 = document.getElementById("mediaIndexC7");
-const totalMediaC7 = document.getElementById("totalMediaC7");
-const loaderC7 = document.getElementById("loader-c7");
-let currentMediaC7 = 0;
-let pendingImageC7 = null;
+const viewerC10 = document.getElementById("mediaViewerC10");
+const prevBtnC10 = document.getElementById("prevBtnC10");
+const nextBtnC10 = document.getElementById("nextBtnC10");
+const mediaIndexC10 = document.getElementById("mediaIndexC10");
+const totalMediaC10 = document.getElementById("totalMediaC10");
+const loaderC10 = document.getElementById("loader-c10");
+let currentMediaC10 = 0;
+let pendingImageC10 = null;
 
 /****************************************************/
 /* DATOS DEL VOLUNTARIADO */
 /****************************************************/
-const certificadoC7 = {
+const certificadoC10 = {
   nombre: "Certificado: Monitor de Kayak y SUP",
   medios: [
     {
       type: "text",
       content:`
-        <h3>Educación Secundaria Obligatoria (ESO)</h3>
-        <p><b>Centro Educativo:</b> <a href="https://maps.app.goo.gl/gWNBuUwKEQbjnYfR7" target="_blank">IES Profesor Máximo Trueba, Santillana del Mar, 22, 28660 Boadilla del Monte, Madrid, España</a></p>
-        <p><b>Ver título oficial:</b> <i class="fa fa-envelope"></i><a href="../../../index.html#contacto">Pedirlo</a><i class="fa fa-envelope"></i></p>
-        <p><b>Cursos alcanzados:</b></p>
-        <p> - <a href="PrimeroESO.pdf" target="_blank">1º de la E.S.O: 2009/10</a></p>
-        <p> - 2º de la E.S.O: 2010/11</p>
-        <p> - 3º de la E.S.O: 2011/12</p>
-        <p> - <a href="CuartoESO.pdf" target="_blank">4º de la E.S.O: 2012/13</a></p>
-        <p><b>Orla de Graduación de la E.S.O (junio 2013):</b> <i class="fa fa-globe"></i><a href="Graduacion_ESO.pdf" target="_blank">Ver online</a><i class="fa fa-globe"></i></p>
-        <p><b>Diploma de Aprovechamiento:</b> <i class="fa fa-globe"></i><a href="DiplomaAprovechamientoESO.pdf" target="_blank">Ver online</a><i class="fa fa-globe"></i></p>
+        <h3>Curso de Monitor de Kayak y SUP</h3>
+        <p><b>Organiza:</b> <a href="https://maps.app.goo.gl/Xb8g5Df2ik8XSJR27" target="_blank">Asdon Aventura, Las Eras, 8, Poveda de la Sierra, 19463 Guadalajara, España</a></p>
+        <p><b>Lugar del curso:</b> <a href="https://maps.app.goo.gl/sBaoNStF6Yingjhf7" target="_blank">Río Alberche, s/n, 28696 Pelayos de la Presa, Madrid, España</a></p>
+        <p><b>Periodo del Curso:</b> Dos fines de semana de mayo 2021</p>
+        <p><b>Ver título oficial:</b> <i class="fa fa-globe"></i><a href="titulo_kayak_sup.pdf" target="_blank">Ver online</a><i class="fa fa-globe"></i></p>
+        <p><b>Teléfonos de la empresa organizadora:</b> +34 667 759 645 y +34 616 250 495</p>
+        <p><b>Correo electrónico de la empresa organizadora:</b> info@asdonaventura.com</p>
       `
     },
     {
       type: "text",
       content:`
-        <h3>Logo del Instituto</h3>
-        <img src="logo_tuto.png"/>
-      `
-    },
-    {
-      type: "text",
-      content:`
-        <h3>Datos de contacto del Instituto</h3>
-        <p><b>Teléfono:</b> 91 632 15 12</p>
-        <p><b>Correo electrónico:</b> secretaria.ies.maximotrueba.boadilla@educa.madrid.org</p>
+        <h3>Logo de la empresa + Background del curso</h3>
+        <img src="kayak-y-padelSurf.png"/>
       `
     }
   ]
@@ -55,67 +44,67 @@ const certificadoC7 = {
 /****************************************************/
 /* RENDER DEL VISOR */
 /****************************************************/
-function mostrarLoaderC7() {
-  loaderC7.style.display = "block";
-  viewerC7.style.display = "none";
+function mostrarLoaderC10() {
+  loaderC10.style.display = "block";
+  viewerC10.style.display = "none";
 }
 
-function ocultarLoaderC7() {
-  loaderC7.style.display = "none";
+function ocultarLoaderC10() {
+  loaderC10.style.display = "none";
 }
 
-function cargarImagenC7(url) {
+function cargarImagenC10(url) {
   if (!url) {
-    viewerC7.innerHTML = "";
-    viewerC7.style.display = "none";
-    ocultarLoaderC7();
+    viewerC10.innerHTML = "";
+    viewerC10.style.display = "none";
+    ocultarLoaderC10();
     return;
   }
 
-  mostrarLoaderC7();
+  mostrarLoaderC10();
 
   const img = new Image();
-  pendingImageC7 = img;
+  pendingImageC10 = img;
 
   img.onload = () => {
     // Si mientras cargaba se solicitó otra imagen, cancelamos esta
-    if (pendingImageC7 !== img) return;
+    if (pendingImageC10 !== img) return;
 
-    viewerC7.innerHTML = "";
-    viewerC7.appendChild(img);
+    viewerC10.innerHTML = "";
+    viewerC10.appendChild(img);
 
-    viewerC7.style.display = "block";
-    ocultarLoaderC7();
+    viewerC10.style.display = "block";
+    ocultarLoaderC10();
 
-    pendingImageC7 = null;
+    pendingImageC10 = null;
   };
 
   img.onerror = () => {
-    if (pendingImageC7 !== img) return;
+    if (pendingImageC10 !== img) return;
 
-    viewerC7.innerHTML = "<p>Error al cargar la imagen.</p>";
-    viewerC7.style.display = "block";
-    ocultarLoaderC7();
+    viewerC10.innerHTML = "<p>Error al cargar la imagen.</p>";
+    viewerC10.style.display = "block";
+    ocultarLoaderC10();
 
-    pendingImageC7 = null;
+    pendingImageC10 = null;
   };
 
   img.src = url;
 }
 
-function renderMediaC7() {
-  const media = certificadoC7.medios[currentMediaC7];
-  viewerC7.innerHTML="";
+function renderMediaC10() {
+  const media = certificadoC10.medios[currentMediaC10];
+  viewerC10.innerHTML="";
 
   /******** IMAGEN ********/
   if(media.type==="image") {
-    cargarImagenC7(media.src);
+    cargarImagenC10(media.src);
   }
 
   /******** VIDEO ********/
   else if (media.type === "video") {
 
-    ocultarLoaderC7();
+    ocultarLoaderC10();
 
     const iframe = document.createElement("iframe");
     iframe.src = media.src;
@@ -125,8 +114,8 @@ function renderMediaC7() {
     iframe.allow = "autoplay; encrypted-media";
     iframe.allowFullscreen = true;
 
-    viewerC7.style.display = "block";
-    viewerC7.appendChild(iframe);
+    viewerC10.style.display = "block";
+    viewerC10.appendChild(iframe);
   }
 
   /******** TEXTO ********/
@@ -134,43 +123,43 @@ function renderMediaC7() {
     const div=document.createElement("div");
     div.className="viewer-text";
     div.innerHTML=media.content;
-    viewerC7.appendChild(div);
+    viewerC10.appendChild(div);
   }
   /******** CONTADOR ********/
-  mediaIndexC7.value=currentMediaC7+1;
-  totalMediaC7.textContent = certificadoC7.medios.length;
+  mediaIndexC10.value=currentMediaC10+1;
+  totalMediaC10.textContent = certificadoC10.medios.length;
 }
 
 /****************************************************/
 /* SIGUIENTE */
 /****************************************************/
-nextBtnC7.addEventListener("click", () => {
-  currentMediaC7++;
-  if(currentMediaC7 >= certificadoC7.medios.length) {
-    currentMediaC7=0;
+nextBtnC10.addEventListener("click", () => {
+  currentMediaC10++;
+  if(currentMediaC10 >= certificadoC10.medios.length) {
+    currentMediaC10=0;
   }
-  renderMediaC7();
+  renderMediaC10();
 });
 
 /****************************************************/
 /* ANTERIOR */
 /****************************************************/
-prevBtnC7.addEventListener("click",()=>{
-  currentMediaC7--;
-  if(currentMediaC7 < 0) {
-    currentMediaC7 = certificadoC7.medios.length-1;
+prevBtnC10.addEventListener("click",()=>{
+  currentMediaC10--;
+  if(currentMediaC10 < 0) {
+    currentMediaC10 = certificadoC10.medios.length-1;
   }
-  renderMediaC7();
+  renderMediaC10();
 });
 
 /****************************************************/
 /* SALTAR A PÁGINA */
 /****************************************************/
-mediaIndexC7.addEventListener("change", () => {
-  const value=Number(mediaIndexC7.value);
-  if(value>=1 && value<=certificadoC7.medios.length) {
-    currentMediaC7=value-1;
-    renderMediaC7();
+mediaIndexC10.addEventListener("change", () => {
+  const value=Number(mediaIndexC10.value);
+  if(value>=1 && value<=certificadoC10.medios.length) {
+    currentMediaC10=value-1;
+    renderMediaC10();
   }
 });
 
@@ -179,14 +168,14 @@ mediaIndexC7.addEventListener("change", () => {
 /****************************************************/
 document.addEventListener("keydown",(e)=>{
   if(e.key==="ArrowRight"){
-    nextBtnC7.click();
+    nextBtnC10.click();
   }
   if(e.key==="ArrowLeft"){
-    prevBtnC7.click();
+    prevBtnC10.click();
   }
 });
 
 /****************************************************/
 /* INICIO */
 /****************************************************/
-renderMediaC7();
+renderMediaC10();

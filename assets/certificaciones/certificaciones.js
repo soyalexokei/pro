@@ -1,230 +1,3 @@
-const certificaciones = [
-  //-- Certificación 6
-  {
-    pageC: 0,
-    pagesC: [
-      {
-        text: `
-          <h3>Curso de Monitor de Ocio y Tiempo Libre</h3>
-          <p><b>Organiza:</b> <a href="https://maps.app.goo.gl/QnbAnTh6U4i8aN2K7" target="_blank">ISADIA Aventura, María Teresa, 11, Salamanca, 28028 Madrid, España</a></p>
-          <p><b>Lugar del curso:</b> <a href="https://maps.app.goo.gl/31KWtftYKaKv5CdZA" target="_blank">Universidad Europea de Madrid, Tajo, s/n, 28670 Villaviciosa de Odón, Madrid, España</a></p>
-          <p><b>Periodo del Curso:</b> Todos los fines de semana de febrero, marzo y abril de 2017</p>
-          <p><b>Ver título oficial:</b> <i class="fa fa-envelope"></i><a href="#contacto">Pedirlo</a><i class="fa fa-envelope"></i></p>
-          <p><b>Memoria/Proyecto Final del Curso:</b> <i class="fa fa-globe"></i><a href="./assets/certificaciones/ProyectoFinal-MonitorOTL.pdf" target="_blank">Ver online</a><i class="fa fa-globe"></i></p>
-          <p><b>Teléfono de la empresa organizadora:</b> +34 657 51 00 87</p>
-          <p><b>Correo electrónico de la empresa organizadora:</b> info@isadia-aventura.com</p>
-        `
-      },
-      {
-        text: `<h3>Logo del Curso</h3>`,
-        img: "./assets/certificaciones/logo_motl.png"
-      },
-      {
-        text: `<h3>Vídeo del Curso</h3>`,
-        video: "https://streamable.com/e/9teayc"
-      },
-      {
-        text: `
-          <h3>Mis experiencias laborales como Monitor de OTL</h3>
-          <h4><u>1º Experiencia</u></h4>
-          <ul>
-            <p><b>Periodo:</b> Desde mediados de junio 2017 hasta finales de julio 2017</p>
-            <p><b>Puesto:</b> Monitor de campamento urbano</p>
-            <p><b>Empresa contratante:</b> <a href="https://www.dnmo.es/" target="_blank">Dinamo 8 Educación, Cultura y Deportes</a></p>
-            <p><b>Lugar de trabajo:</b> <a href="https://maps.app.goo.gl/DDPAQ33WULPz9K3v8" target="_blank">CEIP Ángel González, Humanes de Madrid, 12, 28914 Leganés, Madrid, España</a></p>
-            <p><b>Sector:</b> Educación y tiempo libre</p>
-            <p><b>Tipo de campamento:</b> Urbano de verano, sin pernocta y para niños/as entre 4 años y 12 años</p>
-            <p><b>Tipo de contrato:</b> Contrato por hora</p>
-            <p><b>Funciones:</b></p>
-            <p> - Organización y puesta en marcha de<br>actividades lúdico-educativas, deportivas<br>y cooperativas</p>
-            <p> - Monitor de desayuno, piscolabis y comidas<br>para controlar al grupo de menores</p>
-            <p> - Resolución de conflictos que surjan</p>
-            <p> - Proactividad durante la duración de la<br>jornada laboral</p>
-            <p> - Entretenimiento y organización del tiempo<br>libre del grupo</p>
-            <p> - Enseñanza de valores al grupo</p>
-            <p> - Liderar el grupo</p>
-            <p><b>Teléfono de la empresa:</b> 91 591 49 54</p>
-            <p><b>Correo electrónico de la empresa:</b> info@dnmo.es</p>
-            <p><b>Sede de la empresa:</b> <a href="https://maps.app.goo.gl/DJ4MAzkqbHteYiZd9" target="_blank">Mercedes Rodríguez, 11, Carabanchel, 28044 Madrid, España</a></p>
-          </ul>
-        `
-      },
-      {
-        text: `<h3>Logo de la 1º Experiencia</h3>`,
-        img: "./assets/certificaciones/motl_exp1.png"
-      },
-      {
-        text: `<h3>Sobre la 1º Experiencia</h3>`,
-        img: "https://i.postimg.cc/jj1LZHkQ/1.jpg"
-      },
-      {img: "https://i.postimg.cc/XYQZySfP/2.jpg"},
-      {img: "https://i.postimg.cc/hj7hwXkF/3.jpg"},
-      {img: "https://i.postimg.cc/hGvXLyMt/4.jpg"},
-      {img: "https://i.postimg.cc/jSmb1Mt5/5.png"},
-      {
-        text: `
-          <h4><u>2º Experiencia</u></h4>
-          <ul>
-            <p><b>Periodo:</b> Durante todo el mes de julio 2018</p>
-            <p><b>Puesto:</b> Monitor de campamento con pernocta</p>
-            <p><b>Empresa contratante:</b> <a href="https://www.encantaria.com/" target="_blank">Encantaria</a></p>
-            <p><b>Lugar de trabajo:</b> <a href="https://maps.app.goo.gl/aeKDyFfZmWuHVaAE6" target="_blank">Avenida Ordesa, 5, 22370 Broto, Huesca, España</a></p>
-            <p><b>Sector:</b> Educación y tiempo libre</p>
-            <p><b>Tipo de campamento:</b> Con pernocta de verano para chavales/as entre 12 años y 17 años</p>
-            <p><b>Tipo de contrato:</b> Contrato por hora</p>
-            <p><b>Funciones:</b></p>
-            <p> - Organización y puesta en marcha de<br>actividades lúdico-educativas, deportivas,<br>y cooperativas</p>
-            <p> - Organización y puesta en marcha de las<br>actividades a realizar cada día</p>
-            <p> - Resolución de conflictos que surjan</p>
-            <p> - Trabajo diario con los participantes del<br>campamento, incluso control durante la noche</p>
-            <p> - Organización y puesta en marcha de<br>excursiones por las cercanías de Broto:<br>Monte Perdido y el Valle de Ordesa</p>
-            <p> - Enseñanza de valores a los participantes del<br>campamento</p>
-            <p> - Coliderar todos los grupos, junto a<br>compañeros monitores</p>
-            <p><b>Teléfono de la empresa:</b> +34 618 46 01 64</p>
-            <p><b>Correo electrónico de la empresa:</b> encantaria@encantaria.com</p>
-            <p><b>Sede de la empresa:</b> <a href="https://maps.app.goo.gl/kpBck7CMbPtu5bwg9" target="_blank">Cabañera Real, 7, 22520 Fraga, Huesca, España</a></p>
-          </ul>
-        `
-      },
-      {
-        text: `<h3>Logo de la 2º Experiencia</h3>`,
-        img: "./assets/certificaciones/motl_exp2.png"
-      },
-      {
-        text: `<h3>Sobre la 2º Experiencia</h3>`,
-        img: "https://i.postimg.cc/8P03mjwR/IMG-20250730-173041.png"
-      },
-      {img: "https://i.postimg.cc/wTvZNh5x/IMG-20250730-173321.png"},
-      {img: "https://i.postimg.cc/44wjn89F/IMG-20250730-173514.png"},
-      {img: "https://i.postimg.cc/zBz0rr0D/IMG-20250730-173851.png"},
-      {img: "https://i.postimg.cc/CKHmX1C6/IMG-20250730-174135.png"},
-      {img: "https://i.postimg.cc/dQWSJLbb/IMG-20250730-175717.png"},
-      {img: "https://i.postimg.cc/nhmdKTXx/IMG-20250730-175423.png"},
-      {img: "https://i.postimg.cc/DzKxxsGX/IMG-20250730-180402.png"},
-      {img: "https://i.postimg.cc/ZK27yXKj/IMG-20250730-181857.png"},
-      {img: "https://i.postimg.cc/k5Xv2v37/IMG-20250731-120746.png"},
-      {img: "https://i.postimg.cc/SNPhTDdv/IMG-20250731-120719-860.webp"},
-      {img: "https://i.postimg.cc/hGLRGgBk/IMG-20250731-121208.png"},
-      {img: "https://i.postimg.cc/YCmwJYyq/IMG-20250731-121410-875.webp"},
-      {img: "https://i.postimg.cc/k56FNX4H/IMG-20250731-121447-738.webp"},
-      {img: "https://i.postimg.cc/NjPkrrgT/IMG-20250731-122003.png"},
-      {img: "https://i.postimg.cc/x1dPCPSn/IMG-20250731-122020.png"},
-      {img: "https://i.postimg.cc/rFjJMP3f/IMG-20250731-122801.png"},
-      {img: "https://i.postimg.cc/X74LMbHZ/IMG-20250731-122812.png"},
-      {img: "https://i.postimg.cc/MZy5rTD2/IMG-20250731-123452.png"},
-      {img: "https://i.postimg.cc/BbGgn9JV/IMG-20250731-124645.png"},
-      {img: "https://i.postimg.cc/Wz67DW3b/IMG-20250731-125047.png"},
-      {img: "https://i.postimg.cc/G2DKRhnD/IMG-20250731-125928.png"},
-      {img: "https://i.postimg.cc/nLCTdGd0/IMG-20250731-130913.png"},
-      {img: "https://i.postimg.cc/bvWg4SW8/IMG-20250731-130846-074.webp"},
-      {img: "https://i.postimg.cc/g2cghW39/IMG-20250731-131258.png"},
-      {img: "https://i.postimg.cc/2SH2FKx1/IMG-20250731-131247.png"},
-      {img: "https://i.postimg.cc/RVLPqF6Q/IMG-20250731-131316.png"}
-    ]
-  },
-  //-- Certificación 7
-  {
-    pageC: 0,
-    pagesC: [
-      {
-        text: `
-          <h3>Curso de Monitor de Kayak y SUP</h3>
-          <p><b>Organiza:</b> <a href="https://maps.app.goo.gl/Xb8g5Df2ik8XSJR27" target="_blank">Asdon Aventura, Las Eras, 8, Poveda de la Sierra, 19463 Guadalajara, España</a></p>
-          <p><b>Lugar del curso:</b> <a href="https://maps.app.goo.gl/sBaoNStF6Yingjhf7" target="_blank">Río Alberche, s/n, 28696 Pelayos de la Presa, Madrid, España</a></p>
-          <p><b>Periodo del Curso:</b> Dos fines de semana de mayo 2021</p>
-          <p><b>Ver título oficial:</b> <i class="fa fa-globe"></i><a href="./assets/certificaciones/titulo_kayak_sup.pdf" target="_blank">Ver online</a><i class="fa fa-globe"></i></p>
-          <p><b>Teléfonos de la empresa organizadora:</b> +34 667 759 645 y +34 616 250 495</p>
-          <p><b>Correo electrónico de la empresa organizadora:</b> info@asdonaventura.com</p>
-        `
-      },
-      {
-        text: `<h3>Logo de la empresa + Background del curso</h3>`,
-        img: "./assets/certificaciones/kayak-y-padelSurf.png"
-      }
-    ]
-  },
-  //-- Certificación 8
-  {
-    pageC: 0,
-    pagesC: [
-      {
-        text: `
-          <h3>Certificación Dante Audinate N1</h3>
-          <p><b>Modo del curso:</b> Remoto</p>
-          <p><b>Ver título oficial:</b> <i class="fa fa-globe"></i><a href="./assets/certificaciones/Certificacion-Dante-Audinate-1.pdf" target="_blank">Ver online</a><i class="fa fa-globe"></i></p>
-        `
-      },
-      {
-        text: `
-          <h3>Certificación Dante Audinate N2</h3>
-          <p><b>Modo del curso:</b> Remoto</p>
-          <p><b>Ver título oficial:</b> <i class="fa fa-globe"></i><a href="./assets/certificaciones/Certificacion-Dante-Audinate-2.pdf" target="_blank">Ver online</a><i class="fa fa-globe"></i></p>
-        `
-      },
-      {
-        text: `
-          <h3>Certificación Dante Audinate N3</h3>
-          <p><b>Modo del curso:</b> Remoto</p>
-          <p><b>Ver título oficial:</b> <i class="fa fa-globe"></i><a href="./assets/certificaciones/Certificacion-Dante-Audinate-3.pdf" target="_blank">Ver online</a><i class="fa fa-globe"></i></p>
-        `
-      },
-      {
-        text: `
-          <h3>Certificación Dante Audinate AV</h3>
-          <p><b>Modo del curso:</b> Remoto</p>
-          <p><b>Ver título oficial:</b> <i class="fa fa-globe"></i><a href="./assets/certificaciones/Certificacion-Dante-Audinate-4.pdf" target="_blank">Ver online</a><i class="fa fa-globe"></i></p>
-        `
-      }
-    ]
-  },
-  //-- Certificación 9
-  {
-    pageC: 0,
-    pagesC: [
-      {
-        text: `
-          <h3>Certificación Sistemas USB</h3>
-          <p><b>Organizado por:</b> <a href="https://maps.app.goo.gl/b1HdfeXqyRMeVLz6A" target="_blank">Crestron, Santa Leonor, 65, Edif A, Planta 4, San Blas-Canillejas, 28037 Madrid, España</a></p>
-          <p><b>Modo del curso:</b> Presencial</p>
-          <p><b>Ver título oficial:</b> <i class="fa fa-globe"></i><a href="./assets/certificaciones/Certificado-USB-Crestron.pdf" target="_blank">Ver online</a><i class="fa fa-globe"></i></p>
-          <p><b>Contenidos de la certificación:</b> <i class="fa fa-globe"></i><a href="./assets/certificaciones/SistemasUSB-Crestron.pdf" target="_blank">Ver online</a><i class="fa fa-globe"></i></p>
-        `
-      }
-    ]
-  },
-  //-- Certificación 10
-  {
-    pageC: 0,
-    pagesC: [
-      {
-        text: `
-          <h3>Certificación Adobe After Effects</h3>
-          <p><b>Organizado por:</b> <a href="https://share.google/b2EtrJ6jZuuxrszqd" target="_blank">CUESA-URJC</a></p>
-          <p><b>Lugar del curso:</b> <a href="https://maps.app.goo.gl/Jasttnmqg2LKnVxy8" target="_blank">Camino del Molino, 5, 28942 Fuenlabrada, Madrid, España</a></p>
-          <p><b>Modo del curso:</b> Presencial</p>
-          <p><b>Ver título oficial:</b> <i class="fa fa-globe"></i><a href="./assets/certificaciones/Certificacion-Ae.pdf" target="_blank">Ver online</a><i class="fa fa-globe"></i></p>
-        `
-      }
-    ]
-  },
-  //-- Certificación 11
-  {
-    pageC: 0,
-    pagesC: [
-      {
-        text: `
-          <h3>Certificación Soft Skills</h3>
-          <p><b>Organizado por:</b> <a href="https://maps.app.goo.gl/L6GM2iBD8GmtNWK5A" target="_blank">Randstad, Vía de los Poblados, 9, Edif Trianón, bloque B, 4ª planta, Hortaleza, 28033 Madrid, España</a></p>
-          <p><b>Modo del curso:</b> Remoto</p>
-          <p><b>Ver título oficial:</b> <i class="fa fa-globe"></i><a href="./assets/certificaciones/soft_skills.pdf" target="_blank">Ver online</a><i class="fa fa-globe"></i></p>
-        `
-      }
-    ]
-  },
-  //-- Certificación 15
-  {
-    pageC: 0,
-    pagesC: [
       {
         text: `
           <h3>Certificación A1 de serbio</h3>
@@ -492,9 +265,24 @@ const certificaciones = [
           <p>1000 => /gilyada/</p>
         `
       }
-    ]
-  },
-  //-- Certificación 16
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   {
     pageC: 0,
     pagesC: [
@@ -5039,5 +4827,3 @@ const certificaciones = [
       }
     ]
   }
-];
-/*************************************************************************************/
