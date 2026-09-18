@@ -51,6 +51,10 @@ const experiencia_proE8 = {
       src: "https://streamable.com/e/60gr5n"
     },
     {
+      type: "image",
+      src: "https://i.postimg.cc/50RtySjF/IMG-20260918-151158-559.webp"
+    },
+    {
       type: "text",
       content:`
         <h3>Datos de la empresa</h3>
