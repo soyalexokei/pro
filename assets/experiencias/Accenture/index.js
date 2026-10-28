@@ -38,28 +38,24 @@ const experiencia_proE8 = {
         <p> - Interactuar con un equipo multidisciplinar distribuido en varios proyectos de desarrollo</p>
       `
     },
-    {
-      type: "image",
-      src: "https://i.postimg.cc/5yqmqzxf/IMG-20260803-171106-708.webp"
-    },
-    {
-      type: "image",
-      src: "https://i.postimg.cc/wMckcN66/IMG-20260511-154753.jpg"
-    },
-    {
-      type: "video",
-      src: "https://streamable.com/e/60gr5n"
-    },
-    {
-      type: "image",
-      src: "https://i.postimg.cc/50RtySjF/IMG-20260918-151158-559.webp"
-    },
+    { type: "image", src: "https://i.postimg.cc/5yqmqzxf/IMG-20260803-171106-708.webp"},
+    { type: "image", src: "https://i.postimg.cc/wMckcN66/IMG-20260511-154753.jpg"},
+    { type: "video", src: "https://streamable.com/e/60gr5n"},
+    { type: "image", src: "https://i.postimg.cc/50RtySjF/IMG-20260918-151158-559.webp"},
+    { type: "image", src: "https://i.postimg.cc/4dMrz4HT/Halloween-FY27-Background-0.png"},
+    { type: "image", src: "https://i.postimg.cc/HnyF3Gbs/Halloween-FY27-Background-1.png"},
+    { type: "image", src: "https://i.postimg.cc/50GZw9Qx/Halloween-FY27-Background-2.png"},
+    { type: "image", src: "https://i.postimg.cc/HnyF3GXf/Halloween-FY27-Background-3.png"},
+    { type: "image", src: "https://i.postimg.cc/wMmnFKDM/Halloween-FY27-Background-4.png"},
+    { type: "image", src: "https://i.postimg.cc/k4ZkxMRM/Halloween-FY27-Background-5.png"},
+    { type: "image", src: "https://i.postimg.cc/mkHKVxCv/Halloween-FY27-Background-6.png"},
     {
       type: "text",
       content:`
         <h3>Datos de la empresa</h3>
         <p><b>Teléfono:</b> +34 91 596 60 00</p>
         <p><b>Correo electrónico:</b> a.fernandez.perez@accenture.com</p>
+        <p><b>Contacto con Accenture:</b> <a href="https://www.accenture.com/es-es/about/contact-us" target="_blank">Contacta por aquí</a></p>
         <p><b>Ubicación:</b> <a href="https://maps.app.goo.gl/iv9Lcj7Sapg59diG7" target="_blank">Paseo de la Castellana, 85, Tetuán, 28046, Madrid, España</a></p>
       `
     }
