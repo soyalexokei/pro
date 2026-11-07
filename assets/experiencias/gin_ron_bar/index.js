@@ -36,7 +36,7 @@ const experiencia_proE9 = {
         <p>- Cobro a clientes</p>
       `
     },
-    { type: "image", src: "/assets/experiencias/gin_ron_bar/Bar_X_fuera.jpeg"},
+    { type: "image", src: "https://github.com/soyalexokei/pro/blob/main/assets/experiencias/gin_ron_bar/Bar_X_fuera.jpeg"},
     {
       type: "text",
       content:`
