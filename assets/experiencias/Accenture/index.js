@@ -19,7 +19,7 @@ const experiencia_proE8 = {
     {
       type: "text",
       content:`
-        <h3>ALM Engineer</h3>
+        <h3>Application Lifecycle Management Engineer</h3>
         <p><b>Tipo de contrato:</b> Jornada completa</p>
         <p><b>Modo de trabajo:</b> Remoto</p>
         <p><b>Idioma:</b> Inglés y Español</p>
@@ -38,6 +38,30 @@ const experiencia_proE8 = {
         <p> - Interactuar con un equipo multidisciplinar distribuido en varios proyectos de desarrollo</p>
       `
     },
+    {
+      type: "text",
+      content:`
+        <p><b>Herramientas usadas:</b></p>
+        <p> - z/OS by Mainframe</p>
+        <p> - Rocket Software/Microfocus</p>
+        <p> - Microfocus Enterprise Developer - Eclipse</p>
+        <p> - DB2 by Mainframe</p>
+        <p> - JCL by Mainframe</p>
+        <p> - CICS by Mainframe</p>
+        <p> - GitHub Actions</p>
+        <p> - GitHub CI/CD</p>
+        <p> - Gitlab CI/CD</p>
+        <p> - Scripting with Python, SH and BAT</p>
+        <p> - Development with C programming</p>
+        <p> - IP networks and SSH</p>
+        <p> - RACF Security</p>
+        <p> - AWS Linux Virtual Machines</p>
+        <p> - GPAM</p>
+        <p> - SharePoint</p>
+        <p> - Excel and Word for Documentation</p>
+        <p> - Technical Issues and Troubleshooting</p>
+      `
+    },
     { type: "image", src: "https://i.postimg.cc/5yqmqzxf/IMG-20260803-171106-708.webp"},
     { type: "image", src: "https://i.postimg.cc/wMckcN66/IMG-20260511-154753.jpg"},
     { type: "video", src: "https://streamable.com/e/60gr5n"},
@@ -54,8 +78,7 @@ const experiencia_proE8 = {
       content:`
         <h3>Datos de la empresa</h3>
         <p><b>Teléfono:</b> +34 91 596 60 00</p>
-        <p><b>Correo electrónico:</b> a.fernandez.perez@accenture.com</p>
-        <p><b>Contacto con Accenture:</b> <a href="https://www.accenture.com/es-es/about/contact-us" target="_blank">Contacta por aquí</a></p>
+        <p><b>Plataforma de contacto:</b> <a href="https://www.accenture.com/es-es/about/contact-us" target="_blank">Contacta por aquí</a></p>
         <p><b>Ubicación:</b> <a href="https://maps.app.goo.gl/iv9Lcj7Sapg59diG7" target="_blank">Paseo de la Castellana, 85, Tetuán, 28046, Madrid, España</a></p>
       `
     }
