@@ -34,9 +34,10 @@ const experiencia_proE9 = {
         <p>- Limpieza del local</p>
         <p>- Preparación de cachimbas</p>
         <p>- Cobro a clientes</p>
+        <p>- Atención al público</p>
       `
     },
-    { type: "image", src: "https://github.com/soyalexokei/pro/blob/main/assets/experiencias/gin_ron_bar/Bar_X_fuera.jpeg"},
+    { type: "image", src: "https://i.postimg.cc/VkwmkyXT/Bar-X-fuera.jpg"},
     {
       type: "text",
       content:`
