@@ -402,8 +402,14 @@ footer {
 
 #certification-js-html-css {
   background-image: url("../certificaciones/js_html_css/JS_HTML_CSS.png");
-  width: 100%;
   height: 100%;
+  width: 100%;
+}
+
+#certification-gen-ai {
+  background-image: url("../certificaciones/masterIAgen/genAI.png");
+  height: 100%;
+  width: 100%;
 }
 
 .work-band {

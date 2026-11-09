@@ -23,19 +23,40 @@ const experiencia_proE8 = {
         <p><b>Tipo de contrato:</b> Jornada completa</p>
         <p><b>Modo de trabajo:</b> Remoto</p>
         <p><b>Idioma:</b> Inglés y Español</p>
+        <p><b>Departamento de pertenencia en Accenture:</b> Migration & Mainframe Modernization</p>
         <p><b>Proyecto/Cliente:</b> Allianz Italia</p>
-        <p><b>Departamento:</b> Migration & Mainframe Modernization</p>
+        <p><b>Departamento del Proyecto/Cliente:</b> Application Lifecycle Management</p>
       `
     },
     {
       type: "text",
       content:`
-        <p><b>Funciones:</b></p>
+        <p><b>Funciones generales:</b></p>
         <p> - Integración en el equipo de modernización de sistemas Mainframe</p>
         <p> - Diseñar y desarrollar componentes dentro del nuevo ecosistema distribuido</p>
         <p> - Soporte técnico a nivel scripting, automatización y procesos asociados a la transición tecnológica</p>
         <p> - Colaborar con arquitectos hardware y software para definir la estructura del nuevo entorno</p>
         <p> - Interactuar con un equipo multidisciplinar distribuido en varios proyectos de desarrollo</p>
+      `
+    },
+    {
+      type: "text",
+      content:`
+        <p><b>Funciones técnicas:</b></p>
+        <p> - Desarrollo y depuración de scripts de Python, BAT y SH</p>
+        <p> - Manejo de Git</p>
+        <p> - Manejo de GitLab y GitHub</p>
+        <p> - Manejo de Jenkins</p>
+        <p> - Manejo de creación de entornos y runners para la ejecución de workflows y/o GitHub Actions</p>
+        <p> - Desarrollo y depuración de workflows de GitHub Actions</p>
+        <p> - Configuración de máquinas virtuales AWS por medio de Linux</p>
+        <p> - Uso de Putty</p>
+        <p> - Uso de archivos COBOL, JCL y DDL</p>
+        <p> - Uso de DB2</p>
+        <p> - Uso de la herramienta de MicroFocus Enterprise Developer (MFED), a través de Remote Desktop</p>
+        <p> - Creación de documentación para explicar todos los desarrollos y depuraciones creadas</p>
+        <p> - Manejo de las Wikis de GitHub</p>
+        <p> - Uso del software de GPAM para administrar máquinas virtuales de Linux</p>
       `
     },
     {
