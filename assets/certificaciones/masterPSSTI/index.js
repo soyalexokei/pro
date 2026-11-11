@@ -14,15 +14,16 @@ let pendingImageC2 = null;
 /* DATOS DEL VOLUNTARIADO */
 /****************************************************/
 const certificadoC2 = {
-  nombre: "Master: PSS-TI",
+  nombre: "Certificación",
   medios: [
     {
       type: "text",
       content:`
-        <h3>Certificación del Talent Campus de PSS-TI</h3>
+        <h3>Certificación Oficial de IBM Z y Sistemas Mainframe</h3>
+        <p><b>Por medio del:</b> Talent Campus de <a href="https://www.pss-ti.com/" target="_blank">PSS-TI</a></p>
         <p><b>Objetivo:</b> <a href="https://www.accenture.com/es-es" target="_blank">Obtención de un puesto de ingeniero de sistemas en Accenture</a></p>
-        <p><b>Duración del Talent:</b> Marzo - Mayo 2025</p>
-        <p><b>Ver título oficial:</b> <i class="fa fa-globe"></i><a href="Talent-Campus-PSSTI.pdf" target="_blank">Ver online</a><i class="fa fa-globe"></i></p>
+        <p><b>Duración del Talent Campus:</b> Marzo - Mayo 2025</p>
+        <p><b>Ver título oficial:</b> <i class="fa fa-globe"></i><a href="Certificado.pdf" target="_blank">Ver online</a><i class="fa fa-globe"></i></p>
         <p><b>Práctica de ejemplo de CICS:</b> <i class="fa fa-globe"></i><a href="lab-CICS.pdf" target="_blank">Ver online</a><i class="fa fa-globe"></i></p>
       `
     },

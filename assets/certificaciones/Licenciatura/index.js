@@ -14,15 +14,16 @@ let pendingImageC5 = null;
 /* DATOS DEL VOLUNTARIADO */
 /****************************************************/
 const certificadoC5 = {
-  nombre: "Licenciatura: Ing. Telecomunicaciones",
+  nombre: "Carrera Universitaria",
   medios: [
     {
       type: "text",
       content:`
-        <h3>Mi Licenciatura o Carrera Universitaria</h3>
+        <h3>Título Oficial de mi Carrera Universitaria o Licenciatura</h3>
         <p><b>Licenciatura:</b> <a href="https://www.urjc.es/estudios/grado/637-ingenieria-en-sistemas-audiovisuales-y-multimedia" target="_blank">Ingeniería en Sistemas Audiovisuales y Multimedia</a></p>
         <p><b>Rama de la Licenciatura:</b> Telecomunicaciones</p>
         <p><b>Campus universitario:</b> <a href="https://maps.app.goo.gl/FLMAsusBbyKdD83J7" target="_blank">URJC Fuenlabrada, Camino del Molino, 5, 28942 Fuenlabrada, Madrid, España</a></p>
+        <p><b>Web de la Universidad:</b> <a href="https://www.urjc.es/" target="_blank">Universidad Rey Juan Carlos</a></p>
         <p><b>Ver título oficial en español:</b> <i class="fa fa-envelope"></i><a href="../../../index.html#contacto">Pedirlo</a><i class="fa fa-envelope"></i></p>
         <p><b>Ver título oficial en inglés:</b> <i class="fa fa-envelope"></i><a href="../../../index.html#contacto">Pedirlo</a><i class="fa fa-envelope"></i></p>
         <p><b>Ver el historial académico:</b> <i class="fa fa-envelope"></i><a href="../../../index.html#contacto">Pedirlo</a><i class="fa fa-envelope"></i></p>

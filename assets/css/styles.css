@@ -406,8 +406,16 @@ footer {
   background-image: url("../certificaciones/js_html_css/logo.png");
 }
 
+#certification-ibm-z {
+  background-image: url("../certificaciones/masterPSSTI/logo.png");
+}
+
 #certification-gen-ai {
   background-image: url("../certificaciones/masterIAgen/logo.png");
+}
+
+#certification-bachelor-degree {
+  background-image: url("../certificaciones/Licenciatura/logo.png");
 }
 
 #certification-b2-english {
