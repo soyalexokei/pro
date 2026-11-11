@@ -14,12 +14,12 @@ let pendingImageC1 = null;
 /* DATOS DEL VOLUNTARIADO */
 /****************************************************/
 const certificadoC1 = {
-  nombre: "Master: IA Generativa",
+  nombre: "Certificación",
   medios: [
     {
       type: "text",
       content:`
-        <h3>Certificación en IA Generativa</h3>
+        <h3>Certificación Oficial en IA Generativa</h3>
         <p><b>Web de la formación:</b> <a href="https://www.eoi.es/es/cursos/92430/curso-practico-de-ia-generativa-e-ia-enfocada-negocio-presencia-virtual-online-galicia-asturias-cantabria-la-rioja-castilla-leon-valencia-murcia-canarias-y-baleares" target="_blank">Acceso</a></p>
         <p><b>Organizado por:</b> <a href="https://maps.app.goo.gl/tEbeXXdMCEeExwJf8" target="_blank">EOI, Gregorio del Amo, 6, Moncloa - Aravaca, 28040 Madrid, España</a></p>
         <p><b>Lugar:</b> Online, a través de la plataforma <a href="https://campus.eoi.es/" target="_blank">Campus EOI</a></p>

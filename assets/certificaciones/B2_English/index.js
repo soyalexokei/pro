@@ -14,12 +14,12 @@ let pendingImageC3 = null;
 /* DATOS DEL VOLUNTARIADO */
 /****************************************************/
 const certificadoC3 = {
-  nombre: "Certificado: B2 de inglés",
+  nombre: "Certificación",
   medios: [
     {
       type: "text",
       content:`
-        <h3>Certificación B2 de inglés</h3>
+        <h3>Certificación Oficial del B2 de inglés</h3>
         <p><b>Por medio de:</b> <a href="https://www.britishcouncil.es/en/exam/aptis" target="_blank">British Council - Aptis</a></p>
         <p>
           <b>Historial de la obtención del Nivel B2:</b> Estuve estudiando inglés en el <a class="otros-enlaces" href="https://www.britishcouncil.es/" target="_blank">British Council</a> de
@@ -31,13 +31,6 @@ const certificadoC3 = {
         <p><b>Ver título oficial:</b> <i class="fa fa-envelope"></i><a href="../../../index.html#contacto">Pedirlo</a><i class="fa fa-envelope"></i></p>
         <p><b>Certificado enfocado a negocio:</b> <i class="fa fa-globe"></i><a href="English-for-Companies-Certified.pdf" target="_blank">Ver online</a><i class="fa fa-globe"></i></p>
         <p><b>Certificado obtenido por Capgemini Engineering:</b> <i class="fa fa-globe"></i><a href="Certificado-Ingles-Capgemini.pdf" target="_blank">Ver online</a><i class="fa fa-globe"></i></p>
-      `
-    },
-    {
-      type: "text",
-      content:`
-        <h3>Logo del certificado</h3>
-        <img src="logo_B2.png"/>
       `
     }
   ]

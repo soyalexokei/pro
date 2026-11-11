@@ -14,16 +14,16 @@ let pendingImagejshtmlcss = null;
 /* DATOS DEL VOLUNTARIADO */
 /****************************************************/
 const certificadojshtmlcss = {
-  nombre: "Certificación JS, HTML y CSS",
+  nombre: "Certificación",
   medios: [
     {
       type: "text",
       content:`
-        <h3>Certificación oficial de JavaScript, HTML y CSS</h3>
+        <h3>Certificación Oficial de JavaScript, HTML y CSS</h3>
         <p><b>Documentación JS:</b> <i class="fa fa-globe"></i><a href="https://developer.mozilla.org/es/docs/Web/JavaScript" target="_blank">Ver online</a><i class="fa fa-globe"></i></p>
         <p><b>Documentación HTML:</b> <i class="fa fa-globe"></i><a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank">Ver online</a><i class="fa fa-globe"></i></p>
         <p><b>Documentación CSS:</b> <i class="fa fa-globe"></i><a href="https://developer.mozilla.org/es/docs/Web/CSS" target="_blank">Ver online</a><i class="fa fa-globe"></i></p>
-        <p><b>Ver título oficial:</b> <i class="fa fa-globe"></i><a href="Certificado_JS_HTML_CSS.pdf" target="_blank">Ver online</a><i class="fa fa-globe"></i></p>
+        <p><b>Ver título oficial:</b> <i class="fa fa-globe"></i><a href="certificado.pdf" target="_blank">Ver online</a><i class="fa fa-globe"></i></p>
         <p><b>Proyecto 1:</b> <i class="fa fa-globe"></i><a href="proyecto1/index.html">Calculadora Web</a><i class="fa fa-globe"></i></p>
         <p><b>Proyecto 2:</b> <i class="fa fa-globe"></i><a href="proyecto2/index.html">Kick Blocks Game</a><i class="fa fa-globe"></i></p>
       `

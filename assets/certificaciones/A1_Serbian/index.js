@@ -14,18 +14,18 @@ let pendingImageC15 = null;
 /* DATOS DEL VOLUNTARIADO */
 /****************************************************/
 const certificadoC15 = {
-  nombre: "Certificado: A1 de serbio",
+  nombre: "Certificación",
   medios: [
     {
       type: "text",
       content:`
-        <h3>Certificación A1 de serbio</h3>
+        <h3>Certificación Oficial del A1 de serbio</h3>
         <p><b>Por medio de:</b> <a href="https://www.uns.ac.rs/index.php/en/" target="_blank">Universidad de Novi Sad</a></p>
         <p><b>Modo del curso:</b> Presencial</p>
         <p><b>Periodo del curso:</b> 02/2022 - 07/2022</p>
         <p>
           <b>Historial de la obtención del Nivel A1:</b> Mientras estuve de Erasmus+ en Novi Sad (Serbia) de febrero 2022 a julio 2022, hice un curso del nivel A1 para conocer el idioma local,
-          aunque el idioma principal durante mi estancia era el inglés principalmente
+          aunque el idioma principal durante mi estancia era el inglés principalmente.
         </p>
       `
     },

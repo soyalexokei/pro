@@ -14,12 +14,12 @@ let pendingImageC16 = null;
 /* DATOS DEL VOLUNTARIADO */
 /****************************************************/
 const certificadoC16 = {
-  nombre: "Certificado: A1 de alemán",
+  nombre: "Certificación",
   medios: [
     {
       type: "text",
       content:`
-        <h3>Certificación A1 de alemán</h3>
+        <h3>Certificación Oficial del A1 de alemán</h3>
         <p><b>Por medio de:</b> <a href="https://www.educa2.madrid.org/web/centro.eoi.boadilla.boadilla" target="_blank">Escuela Oficial de Idiomas de Boadilla del Monte</a></p>
         <p><b>Modo del curso:</b> Presencial</p>
         <p><b>Periodo del curso:</b> 2023/24</p>
@@ -2971,9 +2971,9 @@ const certificadoC16 = {
         <p>Recuerda: Los días de la semana van precedidos de la preposición am</p>
         <p>--------------------------------------------------------------------------------------</p>
         <p><b>14. Indicaciones:</b></p>
-        <p><img src="giro_izq.png"/> => links - /links/ - a la izquierda</p>
-        <p><img src="recto.png"/> => geradeaus - /guegadaus/ - recto</p>
-        <p><img src="giro_der.png"/> => rechts - /guets/ - a la derecha</p>
+        <p>====> links - /links/ - a la izquierda</p>
+        <p>====> geradeaus - /guegadaus/ - recto</p>
+        <p>====> rechts - /guets/ - a la derecha</p>
       `
     },
     {
