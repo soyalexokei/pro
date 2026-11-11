@@ -24,6 +24,7 @@ const certificadoC16 = {
         <p><b>Modo del curso:</b> Presencial</p>
         <p><b>Periodo del curso:</b> 2023/24</p>
         <p><b>Profesora:</b> Yolanda Gutiérrez - ygutierrezdefrancisco@educa.madrid.org</p>
+        <p><b>Ver título oficial:</b> <i class="fa fa-globe"></i><a href="Certificate.pdf" target="_blank">Ver online</a><i class="fa fa-globe"></i></p>
       `
     },
     {

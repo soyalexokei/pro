@@ -23,7 +23,7 @@ const certificadoC4 = {
         <p><b>Tipo de permiso:</b> B</p>
         <p><b>Permisos extras incluidos:</b> AM y A1</p>
         <p><b>Certificado por:</b> <a href="https://sede.dgt.gob.es/es/permisos-de-conducir/" target="_blank">DGT</a></p>
-        <p><b>Ver permiso:</b> <i class="fa fa-envelope"></i><a href="../../../index.html#contacto">Pedirlo</a><i class="fa fa-envelope"></i></p>
+        <p><b>Ver permiso:</b> <i class="fa fa-globe"></i><a href="Certificado.pdf" target="_blank">Ver online</a><i class="fa fa-globe"></i></p>
         <p><b>Fecha de expedición:</b> 26/01/2016</p>
         <p><b>Fecha de expiración:</b> 26/01/2036</p>
         <p><b>Controles de alcoholemia:</b> 1</p>

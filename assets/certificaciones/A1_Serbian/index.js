@@ -27,6 +27,7 @@ const certificadoC15 = {
           <b>Historial de la obtención del Nivel A1:</b> Mientras estuve de Erasmus+ en Novi Sad (Serbia) de febrero 2022 a julio 2022, hice un curso del nivel A1 para conocer el idioma local,
           aunque el idioma principal durante mi estancia era el inglés principalmente.
         </p>
+        <p><b>Ver título oficial:</b> <i class="fa fa-globe"></i><a href="Certificate.pdf" target="_blank">Ver online</a><i class="fa fa-globe"></i></p>
       `
     },
     {

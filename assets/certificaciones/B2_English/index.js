@@ -28,7 +28,7 @@ const certificadoC3 = {
           Nivel Senior 1 (2010/11) y Nivel Senior 2 (2011/12). En total estuve 9 años. Aunque la obtención del nivel B2 oficial lo obtuve en octubre de 2020, después de haber ido a trabajar a Wisconsin Dells
           (Wisconsin, Estados Unidos) en 2019.
         </p>
-        <p><b>Ver título oficial:</b> <i class="fa fa-envelope"></i><a href="../../../index.html#contacto">Pedirlo</a><i class="fa fa-envelope"></i></p>
+        <p><b>Ver título oficial:</b> <i class="fa fa-globe"></i><a href="Certificate-No-DNI.pdf" target="_blank">Ver online</a><i class="fa fa-globe"></i></p>
         <p><b>Certificado enfocado a negocio:</b> <i class="fa fa-globe"></i><a href="English-for-Companies-Certified.pdf" target="_blank">Ver online</a><i class="fa fa-globe"></i></p>
         <p><b>Certificado obtenido por Capgemini Engineering:</b> <i class="fa fa-globe"></i><a href="Certificado-Ingles-Capgemini.pdf" target="_blank">Ver online</a><i class="fa fa-globe"></i></p>
       `
