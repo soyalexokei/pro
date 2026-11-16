@@ -20,6 +20,7 @@ const certificadoC11 = {
       type: "text",
       content:`
         <h3>Certificación Dante Audinate N1</h3>
+        <p><b>Web oficial:</b> <i class="fa fa-globe"></i><a href="https://www.audinate.com/" target="_blank">Ver online</a><i class="fa fa-globe"></i></p>
         <p><b>Modo del curso:</b> Remoto</p>
         <p><b>Ver título oficial:</b> <i class="fa fa-globe"></i><a href="Certificacion-Dante-Audinate-1.pdf" target="_blank">Ver online</a><i class="fa fa-globe"></i></p>
       `

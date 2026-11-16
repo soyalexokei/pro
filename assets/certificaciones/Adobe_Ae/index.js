@@ -22,6 +22,7 @@ const certificadoC13 = {
         <h3>Certificación Adobe After Effects</h3>
         <p><b>Organizado por:</b> <a href="https://share.google/b2EtrJ6jZuuxrszqd" target="_blank">CUESA-URJC</a></p>
         <p><b>Lugar del curso:</b> <a href="https://maps.app.goo.gl/Jasttnmqg2LKnVxy8" target="_blank">Camino del Molino, 5, 28942 Fuenlabrada, Madrid, España</a></p>
+        <p><b>Web oficial del software:</b> <i class="fa fa-globe"></i><a href="https://www.adobe.com/es/products/aftereffects.html" target="_blank">Ver online</a><i class="fa fa-globe"></i></p>
         <p><b>Modo del curso:</b> Presencial</p>
         <p><b>Ver título oficial:</b> <i class="fa fa-globe"></i><a href="Certificacion-Ae.pdf" target="_blank">Ver online</a><i class="fa fa-globe"></i></p>
       `

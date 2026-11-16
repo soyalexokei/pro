@@ -21,6 +21,7 @@ const certificadoC14 = {
       content:`
         <h3>Certificación Soft Skills</h3>
         <p><b>Organizado por:</b> <a href="https://maps.app.goo.gl/L6GM2iBD8GmtNWK5A" target="_blank">Randstad, Vía de los Poblados, 9, Edif Trianón, bloque B, 4ª planta, Hortaleza, 28033 Madrid, España</a></p>
+        <p><b>Web oficial:</b> <i class="fa fa-globe"></i><a href="https://www.randstad.es/" target="_blank">Ver online</a><i class="fa fa-globe"></i></p>
         <p><b>Modo del curso:</b> Remoto</p>
         <p><b>Ver título oficial:</b> <i class="fa fa-globe"></i><a href="soft_skills.pdf" target="_blank">Ver online</a><i class="fa fa-globe"></i></p>
       `

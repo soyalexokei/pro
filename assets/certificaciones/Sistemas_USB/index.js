@@ -21,6 +21,7 @@ const certificadoC12 = {
       content:`
         <h3>Certificación Sistemas USB</h3>
         <p><b>Organizado por:</b> <a href="https://maps.app.goo.gl/b1HdfeXqyRMeVLz6A" target="_blank">Crestron, Santa Leonor, 65, Edif A, Planta 4, San Blas-Canillejas, 28037 Madrid, España</a></p>
+        <p><b>Web oficial:</b> <i class="fa fa-globe"></i><a href="https://www.crestron.com/" target="_blank">Ver online</a><i class="fa fa-globe"></i></p>
         <p><b>Modo del curso:</b> Presencial</p>
         <p><b>Ver título oficial:</b> <i class="fa fa-globe"></i><a href="Certificado-USB-Crestron.pdf" target="_blank">Ver online</a><i class="fa fa-globe"></i></p>
         <p><b>Contenidos de la certificación:</b> <i class="fa fa-globe"></i><a href="SistemasUSB-Crestron.pdf" target="_blank">Ver online</a><i class="fa fa-globe"></i></p>

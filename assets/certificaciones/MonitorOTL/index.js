@@ -25,15 +25,9 @@ const certificadoC9 = {
         <p><b>Periodo del Curso:</b> Todos los fines de semana de febrero, marzo y abril de 2017</p>
         <p><b>Ver título oficial:</b> <i class="fa fa-envelope"></i><a href="../../../index.html#contacto">Pedirlo</a><i class="fa fa-envelope"></i></p>
         <p><b>Memoria/Proyecto Final del Curso:</b> <i class="fa fa-globe"></i><a href="ProyectoFinal-MonitorOTL.pdf" target="_blank">Ver online</a><i class="fa fa-globe"></i></p>
+        <p><b>Web de la empresa organizadora:</b> <i class="fa fa-globe"></i><a href="https://isadia-aventura.com/actividades/curso-de-monitor-de-ocio-y-tiempo-libre/" target="_blank">Ver online</a><i class="fa fa-globe"></i></p>
         <p><b>Teléfono de la empresa organizadora:</b> +34 657 51 00 87</p>
         <p><b>Correo electrónico de la empresa organizadora:</b> info@isadia-aventura.com</p>
-      `
-    },
-    {
-      type: "text",
-      content:`
-        <h3>Logo del Curso</h3>
-        <img src="logo_motl.png"/>
       `
     },
     {
@@ -49,11 +43,8 @@ const certificadoC9 = {
         <h3>Mis experiencias laborales como Monitor de OTL</h3>
         <h4><u>1º Experiencia</u></h4>
         <ul>
-          <p><b>Periodo:</b> Desde mediados de junio 2017 hasta finales de julio 2017</p>
           <p><b>Puesto:</b> Monitor de campamento urbano</p>
-          <p><b>Empresa contratante:</b> <a href="https://www.dnmo.es/" target="_blank">Dinamo 8 Educación, Cultura y Deportes</a></p>
           <p><b>Lugar de trabajo:</b> <a href="https://maps.app.goo.gl/DDPAQ33WULPz9K3v8" target="_blank">CEIP Ángel González, Humanes de Madrid, 12, 28914 Leganés, Madrid, España</a></p>
-          <p><b>Sector:</b> Educación y tiempo libre</p>
           <p><b>Tipo de campamento:</b> Urbano de verano, sin pernocta y para niños/as entre 4 años y 12 años</p>
           <p><b>Tipo de contrato:</b> Contrato por hora</p>
           <p><b>Funciones:</b></p>

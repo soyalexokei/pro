@@ -434,6 +434,30 @@ footer {
   background-image: url("../certificaciones/dgt_B/logo.png");
 }
 
+#certification-dante {
+  background-image: url("../certificaciones/Dante_Audinate/logo.png");
+}
+
+#certification-crestron {
+  background-image: url("../certificaciones/Sistemas_USB/logo.png");
+}
+
+#certification-Ae {
+  background-image: url("../certificaciones/Adobe_Ae/logo.png");
+}
+
+#certification-soft-skills {
+  background-image: url("../certificaciones/Soft_Skills/logo.png");
+}
+
+#certification-sup-kayak {
+  background-image: url("../certificaciones/MonitorKayak/logo.png");
+}
+
+#certification-monitor-otl {
+  background-image: url("../certificaciones/MonitorOTL/logo.png");
+}
+
 .work-band {
   width: 100%;
   max-width: none;
