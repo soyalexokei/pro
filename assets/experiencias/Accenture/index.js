@@ -101,6 +101,8 @@ const experiencia_proE8 = {
         <p><b>Teléfono:</b> +34 91 596 60 00</p>
         <p><b>Plataforma de contacto:</b> <a href="https://www.accenture.com/es-es/about/contact-us" target="_blank">Contacta por aquí</a></p>
         <p><b>Ubicación:</b> <a href="https://maps.app.goo.gl/iv9Lcj7Sapg59diG7" target="_blank">Paseo de la Castellana, 85, Tetuán, 28046, Madrid, España</a></p>
+        <img src="Devolución_PC_Accenture_1.jpg" style="width: 100%;">
+        <img src="Devolución_PC_Accenture_2.jpg" style="width: 100%;">
       `
     }
   ]
