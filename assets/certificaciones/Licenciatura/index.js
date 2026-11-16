@@ -24,9 +24,9 @@ const certificadoC5 = {
         <p><b>Rama de la Licenciatura:</b> Telecomunicaciones</p>
         <p><b>Campus universitario:</b> <a href="https://maps.app.goo.gl/FLMAsusBbyKdD83J7" target="_blank">URJC Fuenlabrada, Camino del Molino, 5, 28942 Fuenlabrada, Madrid, España</a></p>
         <p><b>Web de la Universidad:</b> <a href="https://www.urjc.es/" target="_blank">Universidad Rey Juan Carlos</a></p>
-        <p><b>Ver título oficial en español:</b> <i class="fa fa-envelope"></i><a href="../../../index.html#contacto">Pedirlo</a><i class="fa fa-envelope"></i></p>
-        <p><b>Ver título oficial en inglés:</b> <i class="fa fa-envelope"></i><a href="../../../index.html#contacto">Pedirlo</a><i class="fa fa-envelope"></i></p>
-        <p><b>Ver el historial académico:</b> <i class="fa fa-envelope"></i><a href="../../../index.html#contacto">Pedirlo</a><i class="fa fa-envelope"></i></p>
+        <p><b>Ver título oficial en español:</b> <i class="fa fa-globe"></i><a href="Certificado.pdf" target="_blank">Ver online</a><i class="fa fa-globe"></i></p>
+        <p><b>Ver título oficial en inglés:</b> <i class="fa fa-globe"></i><a href="Certificate.pdf" target="_blank">Ver online</a><i class="fa fa-globe"></i></p>
+        <p><b>Ver el historial académico:</b> <i class="fa fa-globe"></i><a href="Historial.pdf" target="_blank">Ver online</a><i class="fa fa-globe"></i></p>
         <p><b>Ver el libro de la Licenciatura:</b> <i class="fa fa-globe"></i><a href="Libro-Licenciatura.pdf" target="_blank">Ver online</a><i class="fa fa-globe"></i></p>
       `
     },
@@ -126,7 +126,7 @@ const certificadoC5 = {
         <h3>Bachillerato</h3>
         <p><b>Centro Educativo:</b> <a href="https://maps.app.goo.gl/gWNBuUwKEQbjnYfR7" target="_blank">IES Profesor Máximo Trueba, Santillana del Mar, 22, 28660 Boadilla del Monte, Madrid, España</a></p>
         <p><b>Modalidad:</b> Bachillerato Tecnológico</p>
-        <p><b>Ver título oficial:</b> <i class="fa fa-envelope"></i><a href="../../../index.html#contacto">Pedirlo</a><i class="fa fa-envelope"></i></p>
+        <p><b>Ver título oficial:</b> <i class="fa fa-globe"></i><a href="Certificado_Bachillerato.pdf" target="_blank">Ver online</a><i class="fa fa-globe"></i></p>
         <p><b>Cursos alcanzados:</b></p>
         <p> - 1º de Bachillerato: 2013/14</p>
         <p> - 2º de Bachillerato: 2014/15</p>
@@ -174,7 +174,7 @@ const certificadoC5 = {
       content:`
         <h3>Educación Secundaria Obligatoria (ESO)</h3>
         <p><b>Centro Educativo:</b> <a href="https://maps.app.goo.gl/gWNBuUwKEQbjnYfR7" target="_blank">IES Profesor Máximo Trueba, Santillana del Mar, 22, 28660 Boadilla del Monte, Madrid, España</a></p>
-        <p><b>Ver título oficial:</b> <i class="fa fa-envelope"></i><a href="../../../index.html#contacto">Pedirlo</a><i class="fa fa-envelope"></i></p>
+        <p><b>Ver título oficial:</b> <i class="fa fa-globe"></i><a href="Certificado_ESO.pdf" target="_blank">Ver online</a><i class="fa fa-globe"></i></p>
         <p><b>Cursos alcanzados:</b></p>
         <p> - <a href="PrimeroESO.pdf" target="_blank">1º de la E.S.O: 2009/10</a></p>
         <p> - 2º de la E.S.O: 2010/11</p>
@@ -213,7 +213,6 @@ const certificadoC5 = {
       content:`
         <h3>Educación Primaria Básica (EPB)</h3>
         <p><b>Centro Educativo:</b> <a href="https://maps.app.goo.gl/C33NUr3LMaqS5E6B8" target="_blank">CEIP Príncipe Don Felipe, Juan Carlos I, 40, 28660 Boadilla del Monte, Madrid, España</a></p>
-        <p><b>Ver título oficial:</b> <i class="fa fa-envelope"></i><a href="../../../index.html#contacto">Pedirlo</a><i class="fa fa-envelope"></i></p>
         <p><b>Cursos alcanzados:</b></p>
         <p> - 1º de Educación Infantil: 2000/01</p>
         <p> - <a href="Segundo-Ed-Infantil.pdf" target="_blank">2º de Educación Infantil: 2001/02</a></p>

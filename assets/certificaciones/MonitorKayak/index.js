@@ -23,7 +23,7 @@ const certificadoC10 = {
         <p><b>Organiza:</b> <a href="https://maps.app.goo.gl/Xb8g5Df2ik8XSJR27" target="_blank">Asdon Aventura, Las Eras, 8, Poveda de la Sierra, 19463 Guadalajara, España</a></p>
         <p><b>Lugar del curso:</b> <a href="https://maps.app.goo.gl/sBaoNStF6Yingjhf7" target="_blank">Río Alberche, s/n, 28696 Pelayos de la Presa, Madrid, España</a></p>
         <p><b>Periodo del Curso:</b> Dos fines de semana de mayo 2021</p>
-        <p><b>Ver título oficial:</b> <i class="fa fa-globe"></i><a href="titulo_kayak_sup.pdf" target="_blank">Ver online</a><i class="fa fa-globe"></i></p>
+        <p><b>Ver título oficial:</b> <i class="fa fa-globe"></i><a href="Certificado.pdf" target="_blank">Ver online</a><i class="fa fa-globe"></i></p>
         <p><b>Web oficial de la empresa organizadora:</b> <i class="fa fa-globe"></i><a href="https://asdonaventura.com/multiaventura/index.php" target="_blank">Ver online</a><i class="fa fa-globe"></i></p>
         <p><b>Teléfonos de la empresa organizadora:</b> +34 667 759 645 y +34 616 250 495</p>
         <p><b>Correo electrónico de la empresa organizadora:</b> info@asdonaventura.com</p>

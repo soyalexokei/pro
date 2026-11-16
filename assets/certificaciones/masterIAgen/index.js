@@ -26,7 +26,7 @@ const certificadoC1 = {
         <p><b>Calendario:</b> Del miércoles 2 de octubre de 2024 al jueves 5 de diciembre de 2024</p>
         <p><b>Horario:</b> De lunes a viernes de 10:00 a 14:00</p>
         <p><b>Duración:</b> 220 h</p>
-        <p><b>Ver título oficial:</b> <i class="fa fa-globe"></i><a href="IAgenerativaEOI.pdf" target="_blank">Ver online</a><i class="fa fa-globe"></i></p>
+        <p><b>Ver título oficial:</b> <i class="fa fa-globe"></i><a href="Certificado.pdf" target="_blank">Ver online</a><i class="fa fa-globe"></i></p>
       `
     },
     {

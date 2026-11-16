@@ -14,7 +14,7 @@ let pendingImageE9 = null;
 /* DATOS DE LA EXPERIENCIA */
 /****************************************************/
 const experiencia_proE9 = {
-  nombre: "Experiencia en Estudio Internacional Ritmo y Movimiento",
+  nombre: "Experiencia en Gin & Ron Disco Pub",
   medios: [
     {
       type: "text",
