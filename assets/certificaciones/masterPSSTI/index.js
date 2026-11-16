@@ -22,11 +22,54 @@ const certificadoC2 = {
         <h3>Certificación Oficial de IBM Z y Sistemas Mainframe</h3>
         <p><b>Por medio del:</b> Talent Campus de <a href="https://www.pss-ti.com/" target="_blank">PSS-TI</a></p>
         <p><b>Objetivo:</b> <a href="https://www.accenture.com/es-es" target="_blank">Obtención de un puesto de ingeniero de sistemas en Accenture</a></p>
+        <p><b>Tipo de contrato:</b> Contrato de formación</p>
+        <p><b>Modo de trabajo:</b> Híbrido (Presencial + Remoto)</p>
+        <p><b>Idioma:</b> Inglés y Español</p>
         <p><b>Duración del Talent Campus:</b> Marzo - Mayo 2025</p>
+        <p><b>Calendario del Programa:</b> <i class="fa fa-globe"></i><a href="Calendario_PSS_TI.pdf" target="_blank">Ver online</a><i class="fa fa-globe"></i></p>
         <p><b>Ver título oficial:</b> <i class="fa fa-globe"></i><a href="Certificado.pdf" target="_blank">Ver online</a><i class="fa fa-globe"></i></p>
         <p><b>Práctica de ejemplo de CICS:</b> <i class="fa fa-globe"></i><a href="lab-CICS.pdf" target="_blank">Ver online</a><i class="fa fa-globe"></i></p>
+        <p><b>Presentación del Proyecto Final:</b> <i class="fa fa-globe"></i><a href="Presentacion_PSS_TI.pdf" target="_blank">Ver online</a><i class="fa fa-globe"></i></p>
+        <p><b>Notas del Talent Campus:</b> <i class="fa fa-globe"></i><a href="Notas_Talent_Campus.png" target="_blank">Ver online</a><i class="fa fa-globe"></i></p>
       `
     },
+    {
+      type: "text",
+      content:`
+        <p><b>Funciones y Desarrollo:</b></p>
+        <p> - Arquitectura Mainframe y z/OS</p>
+        <p> - JCL y Utilidades del z/OS</p>
+        <p> - MQ</p>
+        <p> - DB2</p>
+        <p> - CICS</p>
+        <p> - Arquitectura z16 y z17 en <a class="otros-enlaces" href="https://www.ibm.com/es-es" target="_blank">IBM</a></p>
+        <p> - z/OSMF y ZOWE</p>
+        <p> - z/CX</p>
+        <p> - z/OS Comm Server</p>
+        <p> - Lenguaje de Programación REXX</p>
+      `
+    },
+    {
+      type: "text",
+      content:`
+        <p><b>Mi experiencia en PSS TI:</b></p>
+        <img src="https://i.postimg.cc/7LGJdYwd/IMG-20250324-WA0004.png"/>
+      `
+    },
+    {type: "image", src: "https://i.postimg.cc/P5F8S8s1/IMG-20250324-WA0009.png"},
+    {type: "image", src: "https://i.postimg.cc/02Pmjs0K/IMG-20250324-WA0015.jpg"},
+    {type: "image", src: "https://i.postimg.cc/Wb8ZJH5W/IMG-20250324-WA0017.jpg"},
+    {type: "image", src: "https://i.postimg.cc/g20ZyH5Y/IMG-20250327-WA0009.png"},
+    {type: "image", src: "https://i.postimg.cc/nVvBnzBt/IMG-20250327-WA0011.jpg"},
+    {type: "image", src: "https://i.postimg.cc/YSMjq48C/Config-Mainframe1.png"},
+    {type: "image", src: "https://i.postimg.cc/xd58k0Fy/Config-Mainframe2.png"},
+    {type: "image", src: "https://i.postimg.cc/GmkHCPFf/Config-Mainframe3.png"},
+    {type: "image", src: "https://i.postimg.cc/fb2J19Pc/IMG-20250429-WA0005.png"},
+    {type: "image", src: "https://i.postimg.cc/fRv3jFjg/IMG-20250429-WA0006.png"},
+    {type: "image", src: "https://i.postimg.cc/DzySCgxf/IMG-20250429-WA0008.png"},
+    {type: "image", src: "https://i.postimg.cc/v8jFpWSq/IMG-20250520-WA0008.png"},
+    {type: "image", src: "https://i.postimg.cc/TwPw2WzN/1.png"},
+    {type: "image", src: "https://i.postimg.cc/mD6rPgRL/2.png"},
     {
       type: "text",
       content:`
@@ -307,7 +350,16 @@ const certificadoC2 = {
       `
     },
     {type: "image", src: "creacionDS-1.png"},
-    {type: "image", src: "creacionDS-2.png"}
+    {type: "image", src: "creacionDS-2.png"},
+    {
+      type: "text",
+      content:`
+        <h3>Datos de la organización de la certificación</h3>
+        <p><b>Teléfono:</b> +34 91 345 10 27</p>
+        <p><b>Correo electrónico:</b> peopleandtalent@pss-ti.com</p>
+        <p><b>Ubicación:</b> <a href="https://maps.app.goo.gl/QBa63tFWuWXorY6SA" target="_blank">Spaces Madrid - Edificio E - 3º planta, Vía de los Poblados, 1, Hortaleza, 28033 Madrid, España</a></p>
+      `
+    },
   ]
 };
 

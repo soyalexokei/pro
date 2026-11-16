@@ -106,9 +106,181 @@ const certificadoC5 = {
       content:`
         <h3>Datos de contacto de la URJC</h3>
         <p><b>Teléfono:</b> 91 665 50 60</p>
-        <p><b>Correos electrónicos:</b> fuenlabrada.secretariadealumnos@urjc.es, fuenlabrada.gerencia@urjc.es y grado.ingenieriasam@urjc.es</p>
+        <p><b>Correo electrónico 1:</b> fuenlabrada.secretariadealumnos@urjc.es</p>
+        <p><b>Correo electrónico 2:</b> fuenlabrada.gerencia@urjc.es</p>
+        <p><b>Correo electrónico 3:</b> grado.ingenieriasam@urjc.es</p>
       `
-    }
+    },
+    {
+      type: "text",
+      content:`
+        <h3 style="text-align: center;">Mi Carrera Universitaria o Licenciatura</h3>
+        <h3 style="text-align: center;">no fue posible</h3>
+        <h3 style="text-align: center;">sin la obtención del</h3>
+        <h3 style="text-align: center;">Bachillerato</h3>
+      `
+    },
+    {
+      type: "text",
+      content:`
+        <h3>Bachillerato</h3>
+        <p><b>Centro Educativo:</b> <a href="https://maps.app.goo.gl/gWNBuUwKEQbjnYfR7" target="_blank">IES Profesor Máximo Trueba, Santillana del Mar, 22, 28660 Boadilla del Monte, Madrid, España</a></p>
+        <p><b>Modalidad:</b> Bachillerato Tecnológico</p>
+        <p><b>Ver título oficial:</b> <i class="fa fa-envelope"></i><a href="../../../index.html#contacto">Pedirlo</a><i class="fa fa-envelope"></i></p>
+        <p><b>Cursos alcanzados:</b></p>
+        <p> - 1º de Bachillerato: 2013/14</p>
+        <p> - 2º de Bachillerato: 2014/15</p>
+        <p><b>Orla de Graduación (mayo 2015):</b> <i class="fa fa-globe"></i><a href="Graduacion_Bachillerato.pdf" target="_blank">Ver online</a><i class="fa fa-globe"></i></p>
+        <p><b>Diploma de Graduación:</b> <i class="fa fa-globe"></i><a href="DiplomaGraduadoBachillerato.pdf" target="_blank">Ver online</a><i class="fa fa-globe"></i></p>
+        <p><b>Examen de la PAU (Prueba de Acceso a la Universidad) de junio de 2015:</b> Aprobado con un 8 sobre 14</p>
+      `
+    },
+    {
+      type: "text",
+      content:`
+        <h3>Logo del Instituto</h3>
+        <img src="logo_tuto.png"/>
+      `
+    },
+    {
+      type: "text",
+      content:`
+        <h3>Experiencia en mi Acto de Graduación (mayo 2015)</h3>
+        <img src="https://i.postimg.cc/8CPjtQj7/1.png"/>
+      `
+    },
+    {type: "image", src: "https://i.postimg.cc/K8bK3gbr/2.png"},
+    {type: "image", src: "https://i.postimg.cc/pXzhdJwL/3.png"},
+    {type: "image", src: "https://i.postimg.cc/RZTW7VVr/4.png"},
+    {type: "image", src: "https://i.postimg.cc/G3ZTr5Sf/5.png"},
+    {
+      type: "text",
+      content:`
+        <h3>Datos de contacto del Instituto</h3>
+        <p><b>Teléfono:</b> 91 632 15 12</p>
+        <p><b>Correo electrónico:</b> secretaria.ies.maximotrueba.boadilla@educa.madrid.org</p>
+      `
+    },
+    {
+      type: "text",
+      content:`
+        <h3 style="text-align: center;">La obtención del Bachillerato</h3>
+        <h3 style="text-align: center;">no fue posible</h3>
+        <h3 style="text-align: center;">sin la obtención de la ESO</h3>
+      `
+    },
+    {
+      type: "text",
+      content:`
+        <h3>Educación Secundaria Obligatoria (ESO)</h3>
+        <p><b>Centro Educativo:</b> <a href="https://maps.app.goo.gl/gWNBuUwKEQbjnYfR7" target="_blank">IES Profesor Máximo Trueba, Santillana del Mar, 22, 28660 Boadilla del Monte, Madrid, España</a></p>
+        <p><b>Ver título oficial:</b> <i class="fa fa-envelope"></i><a href="../../../index.html#contacto">Pedirlo</a><i class="fa fa-envelope"></i></p>
+        <p><b>Cursos alcanzados:</b></p>
+        <p> - <a href="PrimeroESO.pdf" target="_blank">1º de la E.S.O: 2009/10</a></p>
+        <p> - 2º de la E.S.O: 2010/11</p>
+        <p> - 3º de la E.S.O: 2011/12</p>
+        <p> - <a href="CuartoESO.pdf" target="_blank">4º de la E.S.O: 2012/13</a></p>
+        <p><b>Orla de Graduación de la E.S.O (junio 2013):</b> <i class="fa fa-globe"></i><a href="Graduacion_ESO.pdf" target="_blank">Ver online</a><i class="fa fa-globe"></i></p>
+        <p><b>Diploma de Aprovechamiento:</b> <i class="fa fa-globe"></i><a href="DiplomaAprovechamientoESO.pdf" target="_blank">Ver online</a><i class="fa fa-globe"></i></p>
+      `
+    },
+    {
+      type: "text",
+      content:`
+        <h3>Logo del Instituto</h3>
+        <img src="logo_tuto.png"/>
+      `
+    },
+    {
+      type: "text",
+      content:`
+        <h3>Datos de contacto del Instituto</h3>
+        <p><b>Teléfono:</b> 91 632 15 12</p>
+        <p><b>Correo electrónico:</b> secretaria.ies.maximotrueba.boadilla@educa.madrid.org</p>
+      `
+    },
+    {
+      type: "text",
+      content:`
+        <h3 style="text-align: center;">La obtención de la ESO</h3>
+        <h3 style="text-align: center;">no fue posible</h3>
+        <h3 style="text-align: center;">sin la obtención de</h3>
+        <h3 style="text-align: center;">la Educación Primaria e Infantil</h3>
+      `
+    },
+    {
+      type: "text",
+      content:`
+        <h3>Educación Primaria Básica (EPB)</h3>
+        <p><b>Centro Educativo:</b> <a href="https://maps.app.goo.gl/C33NUr3LMaqS5E6B8" target="_blank">CEIP Príncipe Don Felipe, Juan Carlos I, 40, 28660 Boadilla del Monte, Madrid, España</a></p>
+        <p><b>Ver título oficial:</b> <i class="fa fa-envelope"></i><a href="../../../index.html#contacto">Pedirlo</a><i class="fa fa-envelope"></i></p>
+        <p><b>Cursos alcanzados:</b></p>
+        <p> - 1º de Educación Infantil: 2000/01</p>
+        <p> - <a href="Segundo-Ed-Infantil.pdf" target="_blank">2º de Educación Infantil: 2001/02</a></p>
+        <p> - 3º de Educación Infantil: 2002/03</p>
+        <p> - Orla de Graduación de Ed. Infantil (junio 2003): <i class="fa fa-globe"></i><a href="Graduacion-Ed-Infantil.pdf" target="_blank">Ver online</a><i class="fa fa-globe"></i></p>
+        <p> - <a href="Primero-Ed-Primaria.pdf" target="_blank">1º de Educación Primaria: 2003/04</a></p>
+        <p> - <a href="Segundo-Ed-Primaria.pdf" target="_blank">2º de Educación Primaria: 2004/05</a></p>
+        <p> - <a href="Tercero-Ed-Primaria.pdf" target="_blank">3º de Educación Primaria: 2005/06</a></p>
+        <p> - 4º de Educación Primaria: 2006/07</p>
+        <p> - 5º de Educación Primaria: 2007/08</p>
+        <p> - <a href="Sexto-Ed-Primaria.pdf" target="_blank">6º de Educación Primaria: 2008/09</a></p>
+        <p> - Orla de Graduación de Ed. Primaria (junio 2009): <i class="fa fa-globe"></i><a href="Graduacion-Ed-Primaria.pdf" target="_blank">Ver online</a><i class="fa fa-globe"></i></p>
+      `
+    },
+    {
+      type: "text",
+      content:`
+        <h3>Logo del Colegio durante mi presencia</h3>
+        <img src="logo_anterior.png"/>
+      `
+    },
+    {
+      type: "text",
+      content:`
+        <h3>Logo del Colegio actual</h3>
+        <img src="logo_posterior.png"/>
+      `
+    },
+    {
+      type: "text",
+      content:`
+        <h3>Obra de teatro por el final de Ed. Primaria (junio 2009)</h3>
+        <img src="https://i.postimg.cc/x1DvdMDP/01.jpg"/>
+      `
+    },
+    {type: "image", src: "https://i.postimg.cc/Y9Mk2Xbw/02.jpg"},
+    {type: "image", src: "https://i.postimg.cc/7YT1DXc6/03.jpg"},  
+    {type: "image", src: "https://i.postimg.cc/J0sNsQzp/04.jpg"},  
+    {type: "image", src: "https://i.postimg.cc/fy1xm03D/05.jpg"},  
+    {type: "image", src: "https://i.postimg.cc/nVWK6N3g/06.jpg"},  
+    {type: "image", src: "https://i.postimg.cc/8zfTZfjx/07.jpg"},  
+    {type: "image", src: "https://i.postimg.cc/KYXxwcTj/08.jpg"},  
+    {type: "image", src: "https://i.postimg.cc/FKjN4tbZ/09.jpg"},  
+    {type: "image", src: "https://i.postimg.cc/tTkbshMn/10.jpg"},  
+    {type: "image", src: "https://i.postimg.cc/qqZdLp0k/11.jpg"},  
+    {type: "image", src: "https://i.postimg.cc/prdHzpwG/12.jpg"},  
+    {type: "image", src: "https://i.postimg.cc/59P11SzZ/13.jpg"},
+    {
+      type: "text",
+      content:`
+        <h3>Experiencia en mi Acto de Graduación de Primaria (junio 2009)</h3>
+        <img src="https://i.postimg.cc/s2S7C20N/01.jpg"/>
+      `
+    },
+    {type: "image", src: "https://i.postimg.cc/MpgVLBtB/02.jpg"},  
+    {type: "image", src: "https://i.postimg.cc/ry9GpKF6/03.jpg"},  
+    {type: "image", src: "https://i.postimg.cc/hPy996dp/04.jpg"},  
+    {type: "image", src: "https://i.postimg.cc/8PPRfNj7/05.jpg"},  
+    {type: "image", src: "https://i.postimg.cc/0yz7ZnGx/06.jpg"},
+    {
+      type: "text",
+      content:`
+        <h3>Datos de contacto del Colegio</h3>
+        <p><b>Teléfono:</b> 91 633 16 26</p>
+        <p><b>Correo electrónico:</b> secretaria.cp.principedonfelipe.boadilla@educa.madrid.org</p>
+      `
+    },
   ]
 };
 
