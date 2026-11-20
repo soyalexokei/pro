@@ -101,10 +101,41 @@ const experiencia_proE8 = {
         <p><b>Teléfono:</b> +34 91 596 60 00</p>
         <p><b>Plataforma de contacto:</b> <a href="https://www.accenture.com/es-es/about/contact-us" target="_blank">Contacta por aquí</a></p>
         <p><b>Ubicación:</b> <a href="https://maps.app.goo.gl/iv9Lcj7Sapg59diG7" target="_blank">Paseo de la Castellana, 85, Tetuán, 28046, Madrid, España</a></p>
-        <img src="Devolución_PC_Accenture_1.jpg" style="width: 100%;">
-        <img src="Devolución_PC_Accenture_2.jpg" style="width: 100%;">
       `
-    }
+    },
+    {
+      type: "text",
+      content:`
+        <h3>Fin del contrato</h3>
+        <p>
+          <b>Motivo:</b> Nosotros desde Application Lifecycle Management para Allianz Italia íbamos muy bien y por delante, pero
+          debido a que el Go Live del proyecto se ha ido retrasando, primero de septiembre 2026 a octubre, luego noviembre, a continuación
+          febrero 2027, después marzo 2027 y, ya van por septiembre 2027, me comunicaron que iban justos para seguir pagando sueldos en este proyecto,
+          e hicieron una criva de personal, donde me incluyeron (porque era externo de Accenture). Quien me lo comunicó, fue mi Manager Rubén y,
+          él me dijo que me iban a reubicar en otro proyecto, ya que era un buen perfil, con buenas habilidades técnicas y muchas ganas de crecer profesionalmente.
+          Pero la empresa externa dependiente de Accenture, PSS-TI, me comunicó el día 6 de noviembre de 2026 que no encontraron ningún proyecto para mí y que,
+          a partir de entonces, concluía mi relación laboral con ellos.
+        </p>
+        <p>
+          Esto me ha afectado mucho, ya que estaba muy contento en el proyecto y con el equipo, pero entiendo que es una situación que escapa de mi control y
+          no dependía de mí. Yo lo he dado todo y Accenture lo sabe, ya que me lo han dicho en varias ocasiones.
+          Aun así, agradezco la oportunidad que me brindaron y espero poder volver a trabajar con ellos en el futuro.
+        </p>
+      `
+    },
+    {
+      type: "text",
+      content:`
+        <h3>Devolución del equipo informático (PC + cargador)</h3>
+        <p>Solicitud para confirmar el lugar, el día y la hora de la devolución:</p>
+        <img src="https://i.postimg.cc/TwSbZK75/Devolucion-PC-Accenture-1.jpg"/>
+        <img src="https://i.postimg.cc/W3KZQdWD/Devolucion-PC-Accenture-2.jpg"/>
+        <p>Respuesta de Accenture:</p>
+        <img src="https://i.postimg.cc/k4ZSk212/IMGkdfoldkfdn.jpg"/>
+        <p>Mi respuesta de confirmación a la devolución:</p>
+        <img src="https://i.postimg.cc/4xBKvy9n/Diseno-sin-titulo-page-0001.jpg"/>
+      `
+    },
   ]
 };
 
